@@ -1,0 +1,26 @@
+{
+ "run": "A finetune",
+ "phases": {
+  "finetune": {
+   "G": 512,
+   "micro": 32,
+   "spe": 1098,
+   "total": 10980,
+   "epochs": 10.0,
+   "warmup": 500
+  }
+ },
+ "world": 2,
+ "precision": "fp32",
+ "finished": true,
+ "state": {
+  "phase": "finetune",
+  "step": 10980,
+  "epoch": 10,
+  "batch": 30,
+  "best": 0.8087557603686636
+ },
+ "model_commit": "a1ad2b611d2014dd8c11fe94670fec3bef7f7e32",
+ "data_commit": "04f45a71a1af00f3dad4877ec2a91970f7fc42bd",
+ "torch": "2.11.0+cu128"
+}

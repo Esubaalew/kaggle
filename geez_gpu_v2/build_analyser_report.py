@@ -1,5 +1,5 @@
 """Report: Ge'ez ByT5 morphological analyser, GPU run A (fine-tune only). Reads the run files directly."""
-import json, re, os
+import json, re, os, collections
 import numpy as np
 import matplotlib
 matplotlib.use('Agg')
@@ -32,7 +32,10 @@ for line in open(K + 'log_a/eval_log.jsonl'):
     if line.strip():
         r = json.loads(line)
         if r['step'] not in [x['step'] for x in evals_a]: evals_a.append(r)
+evals_a = [json.loads(l) for l in open(K + 'geez_gpu_v2/out_v6_full/eval_log.jsonl') if l.strip()]   # all 11 evaluations
 evals_a.sort(key=lambda r: r['step'])
+best_eval = max(evals_a, key=lambda r: r['dev_score'])
+TEST = json.load(open('test_report_04f45a7.json')); TEST_NOW = json.load(open('test_report_2c67ac1.json'))
 evals_b = [json.loads(l) for l in open(K + 'log_b/eval_log.jsonl') if l.strip()]
 loss = np.array(loss)
 
@@ -55,15 +58,16 @@ gap = lambda x, y: (np.insert(np.asarray(x, float), np.searchsorted(x, 5000), np
 a1.plot(*gap(loss[:, 0], loss[:, 1]), color=CA, lw=0.9, marker='.', ms=2.5)
 a1.set_yscale('log'); a1.set_xlabel('optimiser step'); a1.set_ylabel('training loss (log scale)')
 a1.axvspan(3676, 7530, color='#dddddd', lw=0)
-a1.text(5600, 0.5, 'session 2\nlog not\ndownloaded', ha='center', va='center', fontsize=6.5, color='#555555')
+a1.text(5600, 0.5, 'session 2\nloss log not\ndownloaded', ha='center', va='center', fontsize=6.5, color='#555555')
 a1.set_title('Training loss falls from 5.7 to about 0.01', loc='left')
 a1.set_yticks([0.01, 0.1, 1, 5]); a1.set_yticklabels(['0.01', '0.1', '1', '5']); a1.margins(x=0.02)
 steps = [r['step'] for r in evals_a]
 for key, lab, mk in [('dev_root', 'root accuracy', 'o'), ('dev_pos', 'part of speech', 's'), ('dev_exact', 'full analysis exact', '^')]:
-    a2.plot(*gap(steps, [100 * r[key] for r in evals_a]), color=CA, marker=mk, ms=3.5, lw=1.0)
+    a2.plot(steps, [100 * r[key] for r in evals_a], color=CA, marker=mk, ms=3.5, lw=1.0)
     a2.plot([r['step'] for r in evals_b], [100 * r[key] for r in evals_b], color=CB, marker=mk, ms=3.5, lw=0.9, ls='--', mfc='white')
     a2.text(11250, 100 * evals_a[-1][key], lab, va='center', fontsize=6.5, color=CA)
-a2.axvspan(3676, 7530, color='#dddddd', lw=0)
+a2.axvline(best_eval['step'], color='#888888', lw=0.7, ls=':')
+a2.text(best_eval['step'] + 150, 76.5, 'selected\ncheckpoint', fontsize=6.5, color='#555555')
 a2.set_xlim(0, 15500); a2.set_xticks([0, 2500, 5000, 7500, 10000])
 a2.set_xlabel('optimiser step'); a2.set_ylabel('dev accuracy (%)'); a2.set_ylim(58, 95)
 a2.set_title('Dev accuracy plateaus after about 3,000 steps', loc='left')
@@ -128,11 +132,11 @@ n_params = None
 story = [P("Ge'ez Morphological Analyser (ByT5): Training Report, Run A", H1),
          P(f"geez-morphology-model commit {info['model_commit'][:7]} &middot; geez-dataset commit {info['data_commit'][:7]} &middot; "
            f"Kaggle notebook esubechekol/geez-byt5-gpu-v2-a &middot; report built 18 October 2026", S),
-         P(f"<b>Result.</b> Run A trained to completion ({ph['total']:,} steps, {ph['epochs']:.0f} epochs). The selected checkpoint "
-           f"analyses held-out Ge'ez words with <b>{pct(root)} root accuracy</b>, <b>{pct(exact)} exact full analysis</b> (root and every feature) "
-           f"and <b>{pct(pos)} part-of-speech accuracy</b> on {an_n:,} held-out validation words whose roots never occur in training. "
-           f"This model is the planned label source for the next translation experiments. These are validation numbers used for model selection; "
-           f"the separate held-out test set (2,310 pairs) has not been scored yet.", BOX)]
+         P(f"<b>Result.</b> Run A trained to completion ({ph['total']:,} steps, {ph['epochs']:.0f} epochs); the checkpoint kept is from step "
+           f"{best_eval['step']:,}. On the <b>held-out test set</b> ({TEST['words']:,} words whose roots never occur in training) it reaches "
+           f"<b>{pct(TEST['analyze_total']['root'])} root accuracy</b>, <b>{pct(TEST['analyze_total']['exact'])} exact full analysis</b> (root and every feature) "
+           f"and <b>{pct(TEST['pos_total']['exact'])} part-of-speech accuracy</b> (selection score {TEST['score']:.3f}, against {info['state']['best']:.3f} on validation). "
+           f"This model is the label source for the next translation experiments.", BOX)]
 
 story += [P('1. What the model does', H2),
           P(f"The analyser reads one Ge'ez word, character by character (bytes), and writes its morphological analysis as text. "
@@ -176,17 +180,17 @@ story += [P('2. Training data', H2),
 
 story += [PageBreak(), P('3. Training curve', H2),
           Image('fig_training.png', width=17 * cm, height=17 * cm * 2.7 / 7.0),
-          P('<b>Figure 1.</b> (a) Training loss per logged step. (b) Validation accuracy every 1,000 steps for run A (solid) and the cancelled run B '
-            '(dashed, steps 1,000&ndash;3,000 only). The grey band marks session 2 (steps 3,677&ndash;7,530), whose log and evaluations have not been '
-            'downloaded; the best checkpoint was selected inside this band (selection score 0.8088, above every logged evaluation).', S),
-          table([['Step'] + [f"{r['step']:,}" for r in evals_a],
-                 ['Root accuracy'] + [pct(r['dev_root']) for r in evals_a],
-                 ['Exact analysis'] + [pct(r['dev_exact']) for r in evals_a],
-                 ['Part of speech'] + [pct(r['dev_pos']) for r in evals_a],
-                 ['Selection score'] + [f"{r['dev_score']:.4f}" for r in evals_a]],
-                [2.6 * cm] + [2.05 * cm] * len(evals_a)),
-          P(f"Validation accuracy rises quickly to step 3,000 and then changes by less than one point. The final step (10,980) scores "
-            f"{evals_a[-1]['dev_score']:.4f}, slightly below the best checkpoint ({info['state']['best']:.4f}), so the last epochs mainly fit the "
+          P(f'<b>Figure 1.</b> (a) Training loss per logged step; the grey band marks session 2 (steps 3,677&ndash;7,530), whose training-loss log was not downloaded. '
+            f'(b) Validation accuracy every 1,000 steps for run A (solid) and the cancelled run B (dashed, steps 1,000&ndash;3,000 only). '
+            f'The dotted line marks the selected checkpoint (step {best_eval["step"]:,}, selection score {best_eval["dev_score"]:.4f}).', S),
+          table([['Step'] + [f"{r['step'] // 1000}k" if r['step'] % 1000 == 0 else f"{r['step']:,}" for r in evals_a],
+                 ['Root'] + [f"{100 * r['dev_root']:.1f}" for r in evals_a],
+                 ['Exact'] + [f"{100 * r['dev_exact']:.1f}" for r in evals_a],
+                 ['POS'] + [f"{100 * r['dev_pos']:.1f}" for r in evals_a],
+                 ['Score'] + [f"{r['dev_score']:.3f}" for r in evals_a]],
+                [1.6 * cm] + [1.38 * cm] * len(evals_a), fs=7.2),
+          P(f"Validation accuracy (in %, 1,736 words) rises quickly to step 3,000 and then moves by less than one point. The best score comes at step "
+            f"{best_eval['step']:,} ({best_eval['dev_score']:.4f}); the final step scores {evals_a[-1]['dev_score']:.4f}, so the last half of training mainly fits the "
             f"training set further (loss about 0.01) without improving held-out words. Run B matched run A at step 3,000 on root accuracy "
             f"({pct(evals_b[-1]['dev_root'])} both) but was lower on exact analysis ({pct(evals_b[-1]['dev_exact'])} vs {pct(evals_a[2]['dev_exact'])}); "
             f"B was cancelled, so no conclusion about pretraining is drawn.")]
@@ -201,7 +205,7 @@ gold = cls_rows('gold_val'); uni = cls_rows('unified_val')
 ex = lambda rows, mn=20: [float(r[3][:-1]) for r in rows if r[1] >= mn]
 g_lo, g_hi = min(ex(gold)), max(ex(gold)); u_lo, u_hi = min(ex(uni)), max(ex(uni))
 noun_tot = sum(conf['noun'].values()); noun_adj = conf['noun'].get('adjective', 0); inf_tot = sum(conf['infinitive'].values()); inf_noun = conf['infinitive'].get('noun', 0)
-story += [PageBreak(), P('4. Results of the selected checkpoint', H2),
+story += [PageBreak(), P('4. Validation results of the selected checkpoint', H2),
           P(f"Validation words come from two sources: <b>gold paradigm</b> cells (hand-checked tables) and <b>book/unified</b> rows "
             f"(forms transcribed from printed sources). Root accuracy counts the predicted root only; exact analysis requires the root and every feature to be right."),
           table([['Source / class', 'Words', 'Root', 'Exact analysis', 'Part of speech']] +
@@ -212,27 +216,55 @@ story += [PageBreak(), P('4. Results of the selected checkpoint', H2),
           Image('fig_pos_confusion.png', width=15.5 * cm, height=15.5 * cm * 3.0 / 6.2),
           P('<b>Figure 2.</b> Part-of-speech confusion on validation words (classes with at least 4 words; counts in cells, colour = share of the true class).', S)]
 
-story += [P('5. What the numbers mean', H2),
-          P('&bull; <b>Roots are reliable.</b> 92% of held-out words get the right root, including words whose root was never seen in training. '
+def test_cls(R, slc, min_n=1):
+    SLT = R['by_slice_task_class']; out = []
+    rows_ = {k.split('/')[2]: v for k, v in SLT.items() if k.startswith(f'{slc}/analyze/')}
+    for c, v in sorted(rows_.items(), key=lambda kv: -kv[1]['n']):
+        if v['n'] < min_n: continue
+        pv = SLT.get(f'{slc}/pos/{c}')
+        out.append([c, v['n'], pct(v['root'] / v['n']), pct(v['exact'] / v['n']), pct(pv['exact'] / pv['n']) if pv else '-'])
+    return out
+def slice_tot(R, slc):
+    SLT = R['by_slice_task_class']; a = collections.Counter(); q = collections.Counter()
+    for k, v in SLT.items():
+        if k.startswith(f'{slc}/analyze/'): a.update(v)
+        if k.startswith(f'{slc}/pos/'): q.update(v)
+    return [f'<b>all {slc.split("_")[0]} test</b>', f"{a['n']:,}", pct(a['root'] / a['n']), pct(a['exact'] / a['n']), pct(q['exact'] / q['n'])]
+story += [PageBreak(), P('5. Held-out test results', H2),
+          P(f"The test split was scored once, with the selected checkpoint and the same greedy decoding and scoring rule as validation, on the dataset "
+            f"snapshot the model was trained on (geez-dataset 04f45a7). Its roots never occur in training (leakage audit CLEAN)."),
+          table([['Source / class', 'Words', 'Root', 'Exact analysis', 'Part of speech']] +
+                [['<b>gold paradigms</b>', '', '', '', '']] + test_cls(TEST, 'gold_test') + [slice_tot(TEST, 'gold_test')] +
+                [['<b>book / unified rows</b>', '', '', '', '']] + test_cls(TEST, 'unified_test', 5) + [slice_tot(TEST, 'unified_test')] +
+                [['<b>all test words</b>', f"{TEST['words']:,}", f"<b>{pct(TEST['analyze_total']['root'])}</b>", f"<b>{pct(TEST['analyze_total']['exact'])}</b>",
+                  f"<b>{pct(TEST['pos_total']['exact'])}</b>"]],
+                [4.2 * cm, 1.8 * cm, 2.6 * cm, 3.4 * cm, 3.0 * cm]),
+          P(f"Book classes with fewer than 5 test words are omitted from the class rows but counted in the totals. "
+            f"Re-scoring on the current dataset (2c67ac1, {TEST_NOW['words']:,} words after later corrections) gives root {pct(TEST_NOW['analyze_total']['root'])}, "
+            f"exact {pct(TEST_NOW['analyze_total']['exact'])} and part of speech {pct(TEST_NOW['pos_total']['exact'])}, the same within 0.3 points.", S),
+          P(f"<b>Validation vs test.</b> Test is {100 * (root - TEST['analyze_total']['root']):.1f} points lower on root accuracy and "
+            f"{100 * (exact - TEST['analyze_total']['exact']):.1f} points lower on exact analysis than validation. Part of the gap is expected, because "
+            f"validation chose the checkpoint; the test numbers are the ones to report.")]
+
+story += [P('6. What the numbers mean', H2),
+          P(f'&bull; <b>Roots are reliable.</b> {100 * TEST["analyze_total"]["root"]:.0f}% of test words get the right root, although no test root occurs in training. '
             'This is the property the translation memory needs, because memory slots are tied to roots.<br/>'
             f'&bull; <b>Full analyses are harder.</b> {100*exact:.0f}% are exactly right. Gold paradigm cells are easier ({g_lo:.0f}&ndash;{g_hi:.0f}% by class) than book rows ({u_lo:.0f}&ndash;{u_hi:.0f}% for classes with at least 20 words), which are more varied and closer to running text.<br/>'
             f'&bull; <b>Weak spots.</b> Infinitives are almost always tagged as nouns ({inf_noun} of {inf_tot}); nouns are tagged as adjectives in {noun_adj} of {noun_tot} cases; '
             'pronouns, prepositions and demonstratives are rare in training (under 0.2% of samples each) and are often wrong.<br/>'
             '&bull; <b>Over-fitting is mild.</b> Training loss keeps falling to about 0.01 while validation stays flat after about 3,000 steps; '
             'about a third of the compute would have given almost the same model.'),
-          P('6. Limitations', H2),
-          P('1. All numbers are validation numbers, and the same set chose the checkpoint, so they are slightly optimistic. The 2,310-pair test set has not been scored.<br/>'
-            '2. The session-2 log (steps 3,677&ndash;7,530), including the evaluation that selected the best checkpoint, has not been downloaded.<br/>'
-            '3. The model weights are not in the local folder: out_v6/best/ holds only the configuration and tokenizer files.<br/>'
-            '4. Validation words are dictionary and paradigm forms, not words in running sentences; accuracy on AGE sentences can be lower, especially for names and clitics.<br/>'
-            '5. Run B (with Ge\'ez pretraining) was cancelled, so the effect of pretraining is unknown.'),
-          P('7. Next steps', H2),
-          P('1. Download best/ with its weights and the session-2 log (eval_log.jsonl).<br/>'
-            '2. Score the held-out test set once with the selected checkpoint.<br/>'
-            '3. Re-label the AGE corpus with this model and compare the new labels with the older analyser labels used so far in the translation experiments '
-            '(coverage, agreement, root changes), then rebuild the memory label caches from it.<br/>'
-            '4. Use its part-of-speech output as an additional signal for translation (for example, a part-of-speech slot bank or word-order features).<br/>'
-            '5. Run B on TPU once the TPU runtime is stable, and compare A and B at matched steps.')]
+          P('7. Limitations', H2),
+          P('1. Test and validation words are dictionary and paradigm forms, not words in running sentences; accuracy on AGE sentences can be lower, especially for names and clitics.<br/>'
+            '2. The session-2 training-loss log (steps 3,677&ndash;7,530) was not downloaded; its evaluations are included (eval_log.jsonl).<br/>'
+            '3. Synthetic forms dominate training (85% of word pairs), and verbs make up 75% of samples, which explains the weaker results on rare classes.<br/>'
+            '4. Run B (with Ge\'ez pretraining) was cancelled, so the effect of pretraining is unknown.'),
+          P('8. Next steps', H2),
+          P('1. Re-label the AGE corpus with this model and compare the new labels with the older analyser labels used so far in the translation experiments '
+            '(coverage, agreement, root changes), then rebuild the memory label caches from it (translation run G3).<br/>'
+            '2. Use its part-of-speech output as an additional signal for translation (for example, a part-of-speech slot bank or word-order features).<br/>'
+            '3. Add training data for the weak classes (infinitives, pronouns, prepositions, demonstratives).<br/>'
+            '4. Run B on TPU and compare A and B at matched steps.')]
 
 
 def footer(c, doc):
