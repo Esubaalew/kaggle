@@ -1,0 +1,71 @@
+{
+ "best_epoch": 37,
+ "chrF_char_full_dev": 18.286092037820467,
+ "chrF++_full_dev": 17.090249495264203,
+ "BLEU_greedy_full_dev": 1.458894611845099,
+ "beam5_nr4": {
+  "chrF_char": 19.754917587625986,
+  "chrF++": 18.762236753532108,
+  "BLEU": 3.0928680100968253
+ },
+ "n_dev": 1685,
+ "probe_root": {
+  "all_types": {
+   "consistency": 0.7646520072211551,
+   "permutation": 0.25113378739150144,
+   "perm_sd": 0.0008669568174532116,
+   "p_value": 0.004975124378109453,
+   "n_roots": 894,
+   "n_types": 5566,
+   "slots_used": 975,
+   "top10_slot_share": 0.0639597556593604
+  },
+  "gate_probe": {
+   "mean_gate_rooted": 0.6000560658566669,
+   "n_rooted_tokens": 8257,
+   "mean_gate_rootless": 0.14256529636539056,
+   "n_rootless_tokens": 3646,
+   "mean_gate_out_of_bank": 0.4890797341311104,
+   "n_out_of_bank_tokens": 3499,
+   "mean_gate_unknown": 0.0,
+   "n_unknown_tokens": 0
+  },
+  "unseen_with_siblings": {
+   "consistency": 0.7519255780537429,
+   "permutation": 0.2190898117563884,
+   "perm_sd": 0.001003329459234664,
+   "p_value": 0.004975124378109453,
+   "n_roots": 693,
+   "n_types": 4805,
+   "slots_used": 817,
+   "top10_slot_share": 0.07263267429760666
+  },
+  "n_unseen_types": 2032,
+  "unseen_slot_accuracy": 0.5792322834645669
+ },
+ "probe_pattern": {
+  "all_types": {
+   "consistency": 0.835890042769565,
+   "permutation": 0.2026874627455878,
+   "perm_sd": 0.0053528294991297505,
+   "p_value": 0.004975124378109453,
+   "n_roots": 63,
+   "n_types": 3947,
+   "slots_used": 63,
+   "top10_slot_share": 0.5695464910058272
+  },
+  "unseen_with_siblings": {
+   "consistency": 0.835890042769565,
+   "permutation": 0.2026874627455878,
+   "perm_sd": 0.0053528294991297505,
+   "p_value": 0.004975124378109453,
+   "n_roots": 63,
+   "n_types": 3947,
+   "slots_used": 63,
+   "top10_slot_share": 0.5695464910058272
+  },
+  "n_unseen_types": 1214,
+  "unseen_slot_accuracy": 0.7042833607907742
+ },
+ "seconds": 123
+}

@@ -1,0 +1,170 @@
+{
+ "n_dev": 1685,
+ "chrF_char": {
+  "plain_bpe_s11": 15.84,
+  "plain_bpe_s22": 16.46,
+  "plain_bpe_s33": 17.32,
+  "bpe_aux_s11": 17.98,
+  "bpe_aux_s22": 18.21,
+  "bpe_aux_s33": 17.72,
+  "gmm_s11": 19.59,
+  "gmm_s22": 19.75,
+  "gmm_s33": 19.03
+ },
+ "mean_chrF_char": {
+  "plain_bpe": 16.54,
+  "bpe_aux": 17.97,
+  "gmm": 19.46
+ },
+ "contrasts": {
+  "gmm - bpe_aux": {
+   "diff": 1.491,
+   "ci95": [
+    1.245,
+    1.734
+   ],
+   "p_le0": 0.0,
+   "per_seed_gap": [
+    1.608,
+    1.549,
+    1.316
+   ],
+   "seed_t_df2": 16.71,
+   "seed_p_two_sided": 0.0036
+  },
+  "gmm - plain_bpe": {
+   "diff": 2.923,
+   "ci95": [
+    2.637,
+    3.202
+   ],
+   "p_le0": 0.0,
+   "per_seed_gap": [
+    3.753,
+    3.3,
+    1.716
+   ],
+   "seed_t_df2": 4.73,
+   "seed_p_two_sided": 0.0419
+  },
+  "bpe_aux - plain_bpe": {
+   "diff": 1.432,
+   "ci95": [
+    1.155,
+    1.718
+   ],
+   "p_le0": 0.0,
+   "per_seed_gap": [
+    2.145,
+    1.75,
+    0.4
+   ],
+   "seed_t_df2": 2.71,
+   "seed_p_two_sided": 0.1134
+  }
+ },
+ "probe_root_gmm": {
+  "11": {
+   "all_types": {
+    "consistency": 0.7530875346547017,
+    "permutation": 0.25123400630827775,
+    "perm_sd": 0.0008075741961172857,
+    "p_value": 0.004975124378109453,
+    "n_roots": 894,
+    "n_types": 5566,
+    "slots_used": 979,
+    "top10_slot_share": 0.0637800934243622
+   },
+   "gate_probe": {
+    "mean_gate_rooted": 0.6136486762907887,
+    "n_rooted_tokens": 8257,
+    "mean_gate_rootless": 0.16100135715949096,
+    "n_rootless_tokens": 3646,
+    "mean_gate_out_of_bank": 0.554208787294942,
+    "n_out_of_bank_tokens": 3499,
+    "mean_gate_unknown": 0.0,
+    "n_unknown_tokens": 0
+   },
+   "unseen_with_siblings": {
+    "consistency": 0.7413359121455042,
+    "permutation": 0.219185593248303,
+    "perm_sd": 0.001002749759313267,
+    "p_value": 0.004975124378109453,
+    "n_roots": 693,
+    "n_types": 4805,
+    "slots_used": 824,
+    "top10_slot_share": 0.07242455775234131
+   },
+   "n_unseen_types": 2032,
+   "unseen_slot_accuracy": 0.5585629921259843
+  },
+  "22": {
+   "all_types": {
+    "consistency": 0.7646520072211551,
+    "permutation": 0.25113378739150144,
+    "perm_sd": 0.0008669568174532116,
+    "p_value": 0.004975124378109453,
+    "n_roots": 894,
+    "n_types": 5566,
+    "slots_used": 975,
+    "top10_slot_share": 0.0639597556593604
+   },
+   "gate_probe": {
+    "mean_gate_rooted": 0.6000560658566669,
+    "n_rooted_tokens": 8257,
+    "mean_gate_rootless": 0.14256529636539056,
+    "n_rootless_tokens": 3646,
+    "mean_gate_out_of_bank": 0.4890797341311104,
+    "n_out_of_bank_tokens": 3499,
+    "mean_gate_unknown": 0.0,
+    "n_unknown_tokens": 0
+   },
+   "unseen_with_siblings": {
+    "consistency": 0.7519255780537429,
+    "permutation": 0.2190898117563884,
+    "perm_sd": 0.001003329459234664,
+    "p_value": 0.004975124378109453,
+    "n_roots": 693,
+    "n_types": 4805,
+    "slots_used": 817,
+    "top10_slot_share": 0.07263267429760666
+   },
+   "n_unseen_types": 2032,
+   "unseen_slot_accuracy": 0.5792322834645669
+  },
+  "33": {
+   "all_types": {
+    "consistency": 0.7137858943250561,
+    "permutation": 0.2514143284367515,
+    "perm_sd": 0.0009354188628429064,
+    "p_value": 0.004975124378109453,
+    "n_roots": 894,
+    "n_types": 5566,
+    "slots_used": 954,
+    "top10_slot_share": 0.06485806683435141
+   },
+   "gate_probe": {
+    "mean_gate_rooted": 0.601407597245475,
+    "n_rooted_tokens": 8257,
+    "mean_gate_rootless": 0.18421150860082905,
+    "n_rootless_tokens": 3646,
+    "mean_gate_out_of_bank": 0.5567044471674014,
+    "n_out_of_bank_tokens": 3499,
+    "mean_gate_unknown": 0.0,
+    "n_unknown_tokens": 0
+   },
+   "unseen_with_siblings": {
+    "consistency": 0.6976093374390786,
+    "permutation": 0.21947838953241536,
+    "perm_sd": 0.0009752012359977025,
+    "p_value": 0.004975124378109453,
+    "n_roots": 693,
+    "n_types": 4805,
+    "slots_used": 802,
+    "top10_slot_share": 0.07346514047866805
+   },
+   "n_unseen_types": 2032,
+   "unseen_slot_accuracy": 0.515748031496063
+  }
+ }
+}
