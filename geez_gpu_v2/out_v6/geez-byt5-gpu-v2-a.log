@@ -1,0 +1,146 @@
+[{"stream_name":"stdout","time":7.301740479,"data":"torch 2.11.0+cu128, CUDA available True, GPU count 2\n"}
+,{"stream_name":"stdout","time":7.318222917,"data":"GPU 0: Tesla T4, 14.6 GB\n"}
+,{"stream_name":"stdout","time":7.318244511,"data":"GPU 1: Tesla T4, 14.6 GB\n"}
+,{"stream_name":"stdout","time":16.151784504,"data":"transformers 5.16.1\n"}
+,{"stream_name":"stdout","time":16.261504524,"data":"using Kaggle-extracted folder /kaggle/input/datasets/esubechekol/geez-morphology-gpu-v2/model/model\n"}
+,{"stream_name":"stdout","time":16.476264572,"data":"using Kaggle-extracted folder /kaggle/input/datasets/esubechekol/geez-morphology-gpu-v2/geez-dataset/geez-dataset\n"}
+,{"stream_name":"stdout","time":18.064817604,"data":"MODEL commit a1ad2b611d2014dd8c11fe94670fec3bef7f7e32\n"}
+,{"stream_name":"stdout","time":18.064860938,"data":"DATA commit  04f45a71a1af00f3dad4877ec2a91970f7fc42bd\n"}
+,{"stream_name":"stdout","time":18.089699802,"data":"previous checkpoints: /kaggle/input/geez-byt5-gpu-v2-a/ckpt\n"}
+,{"stream_name":"stdout","time":18.089772504,"data":"launching DDP on 2 GPUs: torchrun --nproc_per_node 2\n"}
+,{"stream_name":"stderr","time":19.87025507,"data":"\n"}
+,{"stream_name":"stderr","time":19.870280178,"data":"*****************************************\n"}
+,{"stream_name":"stderr","time":19.870284477,"data":"Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. \n"}
+,{"stream_name":"stderr","time":19.870289974,"data":"*****************************************\n"}
+,{"stream_name":"stdout","time":36.951526337,"data":"RUN A\n"}
+,{"stream_name":"stdout","time":36.951551595,"data":"MODEL commit a1ad2b611d2014dd8c11fe94670fec3bef7f7e32\n"}
+,{"stream_name":"stdout","time":36.951556658,"data":"DATA commit  04f45a71a1af00f3dad4877ec2a91970f7fc42bd\n"}
+,{"stream_name":"stdout","time":36.951560923,"data":"world size 2, device cuda, torch 2.11.0+cu128\n"}
+,{"stream_name":"stdout","time":36.951778086,"data":"GPU 0: Tesla T4\n"}
+,{"stream_name":"stdout","time":36.951788238,"data":"GPU 1: Tesla T4\n"}
+,{"stream_name":"stdout","time":51.561000512,"data":"RESULT: CLEAN (exact roots and pairs)\n"}
+,{"stream_name":"stdout","time":51.574550222,"data":"train samples 562403, dev rows 3472: synthetic 118131, gold_verb 1727, gold_nominal 6168, unified_book 10002, dictionary 1080, dictionary_verb 59, word_without_root 32, extra_synthetic 247\n"}
+,{"stream_name":"stderr","time":51.802600632,"data":"/usr/local/lib/python3.13/dist-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.\n"}
+,{"stream_name":"stderr","time":51.802631096,"data":"  return func(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":51.803877393,"data":"[rank0]:[W1017 18:48:31.011750092 ProcessGroupNCCL.cpp:5188] Guessing device ID based on global rank. This can cause a hang if rank to GPU mapping is heterogeneous. You can specify device_id in init_process_group()\n"}
+,{"stream_name":"stdout","time":52.448312394,"data":"LOAD CHECK train 562,403 (expect 562,403), dev 3,472 (expect 3,472), leak audit CLEAN\n"}
+,{"stream_name":"stdout","time":52.448339872,"data":"LOAD CHECK OK\n"}
+,{"stream_name":"stdout","time":52.448364908,"data":"PHASE finetune: 512 rows/step, steps/epoch 1098, epochs 10.0, total steps 10980, warmup 500\n"}
+,{"stream_name":"stderr","time":52.964164656,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stderr","time":60.881692563,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stderr","time":64.528706578,"data":"\rLoading weights:   0%|          | 0/172 [00:00\u003c?, ?it/s]\rLoading weights:   0%|          | 0/172 [00:00\u003c?, ?it/s]\rLoading weights: 100%|██████████| 172/172 [00:00\u003c00:00, 7621.74it/s]\n"}
+,{"stream_name":"stderr","time":64.536169964,"data":"\rLoading weights: 100%|██████████| 172/172 [00:00\u003c00:00, 15461.55it/s]\n"}
+,{"stream_name":"stderr","time":64.541775363,"data":"[transformers] The tied weights mapping and config for this model specifies to tie shared.weight to lm_head.weight, but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config with `tie_word_embeddings=False` to silence this warning.\n"}
+,{"stream_name":"stderr","time":64.545670183,"data":"[transformers] The tied weights mapping and config for this model specifies to tie shared.weight to lm_head.weight, but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config with `tie_word_embeddings=False` to silence this warning.\n"}
+,{"stream_name":"stdout","time":75.868932962,"data":"RESUMED from /kaggle/input/geez-byt5-gpu-v2-a/ckpt/step_007530.pt: phase finetune, step 7530 (epoch 6, batch 960)\n"}
+,{"stream_name":"stdout","time":80.415981779,"data":"=== PHASE finetune: micro-batch 32 x 2 GPU(s) x 8 accumulation = 512 rows/step, precision fp32, from step 7530/10980\n"}
+,{"stream_name":"stdout","time":98.396854848,"data":"[finetune] step 7531/10980 epoch 6 loss 0.0113 lr 3.96e-04 0.056 steps/s elapsed 0.03h ETA finetune 17.20h, this session 11.22h (~9781 steps by the session stop)\n"}
+,{"stream_name":"stdout","time":297.367477243,"data":"[finetune] step 7550/10980 epoch 6 loss 0.0073 lr 3.95e-04 0.095 steps/s elapsed 0.08h ETA finetune 10.33h, this session 10.33h (~10980 steps by the session stop)\n"}
+,{"stream_name":"stdout","time":785.018558426,"data":"[finetune] step 7600/10980 epoch 6 loss 0.0160 lr 3.90e-04 0.103 steps/s elapsed 0.22h ETA finetune 9.45h, this session 9.45h (~10980 steps by the session stop)\n"}
+,{"stream_name":"stdout","time":1328.856057457,"data":"[finetune] step 7650/10980 epoch 6 loss 0.0132 lr 3.86e-04 0.092 steps/s elapsed 0.37h ETA finetune 9.62h, this session 9.62h (~10980 steps by the session stop)\n"}
+,{"stream_name":"stdout","time":1891.16038496,"data":"checkpoint saved ckpt/step_007699.pt\n"}
+,{"stream_name":"stdout","time":1895.87910306,"data":"[finetune] step 7700/10980 epoch 7 loss 0.0208 lr 3.82e-04 0.088 steps/s elapsed 0.53h ETA finetune 9.73h, this session 9.73h (~10980 steps by the session stop)\n"}
+,{"stream_name":"stdout","time":2432.240457948,"data":"[finetune] step 7750/10980 epoch 7 loss 0.0129 lr 3.77e-04 0.093 steps/s elapsed 0.68h ETA finetune 9.59h, this session 9.59h (~10980 steps by the session stop)\n"}
+,{"stream_name":"stdout","time":2917.048189495,"data":"[finetune] step 7800/10980 epoch 7 loss 0.0120 lr 3.73e-04 0.103 steps/s elapsed 0.81h ETA finetune 9.28h, this session 9.28h (~10980 steps by the session stop)\n"}
+,{"stream_name":"stdout","time":3456.779477604,"data":"[finetune] step 7850/10980 epoch 7 loss 0.0171 lr 3.69e-04 0.093 steps/s elapsed 0.96h ETA finetune 9.17h, this session 9.17h (~10980 steps by the session stop)\n"}
+,{"stream_name":"stdout","time":3693.750091042,"data":"checkpoint saved ckpt/step_007872.pt\n"}
+,{"stream_name":"stdout","time":4033.62732161,"data":"[finetune] step 7900/10980 epoch 7 loss 0.0100 lr 3.65e-04 0.087 steps/s elapsed 1.12h ETA finetune 9.14h, this session 9.14h (~10980 steps by the session stop)\n"}
+,{"stream_name":"stdout","time":4601.444803084,"data":"[finetune] step 7950/10980 epoch 7 loss 0.0110 lr 3.60e-04 0.088 steps/s elapsed 1.28h ETA finetune 9.06h, this session 9.06h (~10980 steps by the session stop)\n"}
+,{"stream_name":"stdout","time":5167.973774818,"data":"[finetune] step 8000/10980 epoch 7 loss 0.0163 lr 3.56e-04 0.088 steps/s elapsed 1.44h ETA finetune 8.96h, this session 8.96h (~10980 steps by the session stop)\n"}
+,{"stream_name":"stdout","time":5186.048624743,"data":"eval {\"dev_exact\": 0.6998847926267281, \"dev_root\": 0.9130184331797235, \"dev_pos\": 0.8611751152073732, \"dev_score\": 0.8064516129032258, \"step\": 8000}\n"}
+,{"stream_name":"stdout","time":5499.705325216,"data":"checkpoint saved ckpt/step_008031.pt\n"}
+,{"stream_name":"stdout","time":5683.399240111,"data":"[finetune] step 8050/10980 epoch 7 loss 0.0150 lr 3.52e-04 0.097 steps/s elapsed 1.58h ETA finetune 8.77h, this session 8.77h (~10980 steps by the session stop)\n"}
+,{"stream_name":"stdout","time":6182.655220895,"data":"[finetune] step 8100/10980 epoch 7 loss 0.0139 lr 3.47e-04 0.100 steps/s elapsed 1.72h ETA finetune 8.56h, this session 8.56h (~10980 steps by the session stop)\n"}
+,{"stream_name":"stdout","time":6853.29556671,"data":"[finetune] step 8150/10980 epoch 7 loss 0.0227 lr 3.43e-04 0.075 steps/s elapsed 1.90h ETA finetune 8.59h, this session 8.59h (~10980 steps by the session stop)\n"}
+,{"stream_name":"stdout","time":7305.127469728,"data":"checkpoint saved ckpt/step_008196.pt\n"}
+,{"stream_name":"stdout","time":7361.814106437,"data":"[finetune] step 8200/10980 epoch 7 loss 0.0191 lr 3.39e-04 0.098 steps/s elapsed 2.04h ETA finetune 8.39h, this session 8.39h (~10980 steps by the session stop)\n"}
+,{"stream_name":"stdout","time":7883.151239175,"data":"[finetune] step 8250/10980 epoch 7 loss 0.0120 lr 3.34e-04 0.096 steps/s elapsed 2.19h ETA finetune 8.22h, this session 8.22h (~10980 steps by the session stop)\n"}
+,{"stream_name":"stdout","time":8405.674438154,"data":"[finetune] step 8300/10980 epoch 7 loss 0.0093 lr 3.30e-04 0.096 steps/s elapsed 2.33h ETA finetune 8.05h, this session 8.05h (~10980 steps by the session stop)\n"}
+,{"stream_name":"stdout","time":8915.056720738,"data":"[finetune] step 8350/10980 epoch 7 loss 0.0185 lr 3.26e-04 0.098 steps/s elapsed 2.48h ETA finetune 7.87h, this session 7.87h (~10980 steps by the session stop)\n"}
+,{"stream_name":"stdout","time":9118.248149872,"data":"checkpoint saved ckpt/step_008370.pt\n"}
+,{"stream_name":"stdout","time":9442.205201795,"data":"[finetune] step 8400/10980 epoch 7 loss 0.0220 lr 3.22e-04 0.095 steps/s elapsed 2.62h ETA finetune 7.71h, this session 7.71h (~10980 steps by the session stop)\n"}
+,{"stream_name":"stdout","time":9969.480799814,"data":"[finetune] step 8450/10980 epoch 7 loss 0.0161 lr 3.17e-04 0.095 steps/s elapsed 2.77h ETA finetune 7.55h, this session 7.55h (~10980 steps by the session stop)\n"}
+,{"stream_name":"stdout","time":10537.003475197,"data":"[finetune] step 8500/10980 epoch 7 loss 0.0129 lr 3.13e-04 0.088 steps/s elapsed 2.93h ETA finetune 7.43h, this session 7.43h (~10980 steps by the session stop)\n"}
+,{"stream_name":"stdout","time":10926.364426086,"data":"checkpoint saved ckpt/step_008537.pt\n"}
+,{"stream_name":"stdout","time":11039.411388807,"data":"[finetune] step 8550/10980 epoch 7 loss 0.0178 lr 3.09e-04 0.100 steps/s elapsed 3.07h ETA finetune 7.25h, this session 7.25h (~10980 steps by the session stop)\n"}
+,{"stream_name":"stdout","time":11603.098070095,"data":"[finetune] step 8600/10980 epoch 7 loss 0.0128 lr 3.04e-04 0.089 steps/s elapsed 3.22h ETA finetune 7.12h, this session 7.12h (~10980 steps by the session stop)\n"}
+,{"stream_name":"stdout","time":12134.12007582,"data":"[finetune] step 8650/10980 epoch 7 loss 0.0130 lr 3.00e-04 0.094 steps/s elapsed 3.37h ETA finetune 6.97h, this session 6.97h (~10980 steps by the session stop)\n"}
+,{"stream_name":"stdout","time":12675.556864453,"data":"[finetune] step 8700/10980 epoch 7 loss 0.0251 lr 2.96e-04 0.092 steps/s elapsed 3.52h ETA finetune 6.82h, this session 6.82h (~10980 steps by the session stop)\n"}
+,{"stream_name":"stdout","time":12731.340099207,"data":"checkpoint saved ckpt/step_008705.pt\n"}
+,{"stream_name":"stdout","time":13213.670979476,"data":"[finetune] step 8750/10980 epoch 7 loss 0.0189 lr 2.92e-04 0.093 steps/s elapsed 3.67h ETA finetune 6.67h, this session 6.67h (~10980 steps by the session stop)\n"}
+,{"stream_name":"stdout","time":13725.966052149,"data":"[finetune] step 8800/10980 epoch 8 loss 0.0244 lr 2.87e-04 0.098 steps/s elapsed 3.81h ETA finetune 6.51h, this session 6.51h (~10980 steps by the session stop)\n"}
+,{"stream_name":"stdout","time":14328.291871911,"data":"[finetune] step 8850/10980 epoch 8 loss 0.0071 lr 2.83e-04 0.083 steps/s elapsed 3.98h ETA finetune 6.39h, this session 6.39h (~10980 steps by the session stop)\n"}
+,{"stream_name":"stdout","time":14546.271051686,"data":"checkpoint saved ckpt/step_008870.pt\n"}
+,{"stream_name":"stdout","time":14902.882372169,"data":"[finetune] step 8900/10980 epoch 8 loss 0.0209 lr 2.79e-04 0.087 steps/s elapsed 4.14h ETA finetune 6.25h, this session 6.25h (~10980 steps by the session stop)\n"}
+,{"stream_name":"stdout","time":15469.0909562,"data":"[finetune] step 8950/10980 epoch 8 loss 0.0246 lr 2.74e-04 0.088 steps/s elapsed 4.30h ETA finetune 6.11h, this session 6.11h (~10980 steps by the session stop)\n"}
+,{"stream_name":"stdout","time":16028.667061295,"data":"[finetune] step 9000/10980 epoch 8 loss 0.0184 lr 2.70e-04 0.089 steps/s elapsed 4.45h ETA finetune 5.97h, this session 5.97h (~10980 steps by the session stop)\n"}
+,{"stream_name":"stdout","time":16046.623579853,"data":"eval {\"dev_exact\": 0.6935483870967742, \"dev_root\": 0.9182027649769585, \"dev_pos\": 0.8508064516129032, \"dev_score\": 0.8058755760368663, \"step\": 9000}\n"}
+,{"stream_name":"stdout","time":16357.040930252,"data":"checkpoint saved ckpt/step_009028.pt\n"}
+,{"stream_name":"stdout","time":16552.076240276,"data":"[finetune] step 9050/10980 epoch 8 loss 0.0143 lr 2.66e-04 0.096 steps/s elapsed 4.60h ETA finetune 5.81h, this session 5.81h (~10980 steps by the session stop)\n"}
+,{"stream_name":"stdout","time":17097.368569531,"data":"[finetune] step 9100/10980 epoch 8 loss 0.0154 lr 2.61e-04 0.092 steps/s elapsed 4.75h ETA finetune 5.66h, this session 5.66h (~10980 steps by the session stop)\n"}
+,{"stream_name":"stdout","time":17680.740238214,"data":"[finetune] step 9150/10980 epoch 8 loss 0.0189 lr 2.57e-04 0.086 steps/s elapsed 4.91h ETA finetune 5.52h, this session 5.52h (~10980 steps by the session stop)\n"}
+,{"stream_name":"stdout","time":18167.641947574,"data":"checkpoint saved ckpt/step_009197.pt\n"}
+,{"stream_name":"stdout","time":18205.152985451,"data":"[finetune] step 9200/10980 epoch 8 loss 0.0172 lr 2.53e-04 0.095 steps/s elapsed 5.06h ETA finetune 5.37h, this session 5.37h (~10980 steps by the session stop)\n"}
+,{"stream_name":"stdout","time":18748.497551261,"data":"[finetune] step 9250/10980 epoch 8 loss 0.0100 lr 2.49e-04 0.092 steps/s elapsed 5.21h ETA finetune 5.22h, this session 5.22h (~10980 steps by the session stop)\n"}
+,{"stream_name":"stdout","time":19267.334568355,"data":"[finetune] step 9300/10980 epoch 8 loss 0.0112 lr 2.44e-04 0.096 steps/s elapsed 5.35h ETA finetune 5.06h, this session 5.06h (~10980 steps by the session stop)\n"}
+,{"stream_name":"stdout","time":19777.994563309,"data":"[finetune] step 9350/10980 epoch 8 loss 0.0150 lr 2.40e-04 0.098 steps/s elapsed 5.49h ETA finetune 4.90h, this session 4.90h (~10980 steps by the session stop)\n"}
+,{"stream_name":"stdout","time":19975.659945362,"data":"checkpoint saved ckpt/step_009370.pt\n"}
+,{"stream_name":"stdout","time":20285.979114003,"data":"[finetune] step 9400/10980 epoch 8 loss 0.0084 lr 2.36e-04 0.098 steps/s elapsed 5.63h ETA finetune 4.74h, this session 4.74h (~10980 steps by the session stop)\n"}
+,{"stream_name":"stdout","time":20832.352719209,"data":"[finetune] step 9450/10980 epoch 8 loss 0.0177 lr 2.31e-04 0.092 steps/s elapsed 5.79h ETA finetune 4.59h, this session 4.59h (~10980 steps by the session stop)\n"}
+,{"stream_name":"stdout","time":21393.888524193,"data":"[finetune] step 9500/10980 epoch 8 loss 0.0182 lr 2.27e-04 0.089 steps/s elapsed 5.94h ETA finetune 4.45h, this session 4.45h (~10980 steps by the session stop)\n"}
+,{"stream_name":"stdout","time":21787.534390608,"data":"checkpoint saved ckpt/step_009542.pt\n"}
+,{"stream_name":"stdout","time":21876.036069964,"data":"[finetune] step 9550/10980 epoch 8 loss 0.0084 lr 2.23e-04 0.104 steps/s elapsed 6.08h ETA finetune 4.29h, this session 4.29h (~10980 steps by the session stop)\n"}
+,{"stream_name":"stdout","time":22524.105501361,"data":"[finetune] step 9600/10980 epoch 8 loss 0.0107 lr 2.19e-04 0.077 steps/s elapsed 6.26h ETA finetune 4.16h, this session 4.16h (~10980 steps by the session stop)\n"}
+,{"stream_name":"stdout","time":23053.892195743,"data":"[finetune] step 9650/10980 epoch 8 loss 0.0116 lr 2.14e-04 0.094 steps/s elapsed 6.40h ETA finetune 4.00h, this session 4.00h (~10980 steps by the session stop)\n"}
+,{"stream_name":"stdout","time":23535.470895269,"data":"[finetune] step 9700/10980 epoch 8 loss 0.0141 lr 2.10e-04 0.104 steps/s elapsed 6.54h ETA finetune 3.84h, this session 3.84h (~10980 steps by the session stop)\n"}
+,{"stream_name":"stdout","time":23596.19200075,"data":"checkpoint saved ckpt/step_009704.pt\n"}
+,{"stream_name":"stdout","time":24027.120962516,"data":"[finetune] step 9750/10980 epoch 8 loss 0.0168 lr 2.06e-04 0.102 steps/s elapsed 6.67h ETA finetune 3.69h, this session 3.69h (~10980 steps by the session stop)\n"}
+,{"stream_name":"stdout","time":24524.148503424,"data":"[finetune] step 9800/10980 epoch 8 loss 0.0080 lr 2.01e-04 0.101 steps/s elapsed 6.81h ETA finetune 3.53h, this session 3.53h (~10980 steps by the session stop)\n"}
+,{"stream_name":"stdout","time":25030.341848079,"data":"[finetune] step 9850/10980 epoch 8 loss 0.0139 lr 1.97e-04 0.099 steps/s elapsed 6.95h ETA finetune 3.38h, this session 3.38h (~10980 steps by the session stop)\n"}
+,{"stream_name":"stdout","time":25399.102439425,"data":"checkpoint saved ckpt/step_009885.pt\n"}
+,{"stream_name":"stdout","time":25569.981811185,"data":"[finetune] step 9900/10980 epoch 9 loss 0.0234 lr 1.93e-04 0.093 steps/s elapsed 7.10h ETA finetune 3.23h, this session 3.23h (~10980 steps by the session stop)\n"}
+,{"stream_name":"stdout","time":26133.65251514,"data":"[finetune] step 9950/10980 epoch 9 loss 0.0086 lr 1.88e-04 0.089 steps/s elapsed 7.26h ETA finetune 3.08h, this session 3.08h (~10980 steps by the session stop)\n"}
+,{"stream_name":"stdout","time":26676.27447175,"data":"[finetune] step 10000/10980 epoch 9 loss 0.0088 lr 1.84e-04 0.092 steps/s elapsed 7.41h ETA finetune 2.93h, this session 2.93h (~10980 steps by the session stop)\n"}
+,{"stream_name":"stdout","time":26693.950820329,"data":"eval {\"dev_exact\": 0.690668202764977, \"dev_root\": 0.9158986175115207, \"dev_pos\": 0.8554147465437788, \"dev_score\": 0.8032834101382489, \"step\": 10000}\n"}
+,{"stream_name":"stdout","time":27210.246967814,"data":"checkpoint saved ckpt/step_010048.pt\n"}
+,{"stream_name":"stdout","time":27237.724433064,"data":"[finetune] step 10050/10980 epoch 9 loss 0.0173 lr 1.80e-04 0.089 steps/s elapsed 7.57h ETA finetune 2.78h, this session 2.78h (~10980 steps by the session stop)\n"}
+,{"stream_name":"stdout","time":27757.251302919,"data":"[finetune] step 10100/10980 epoch 9 loss 0.0088 lr 1.76e-04 0.096 steps/s elapsed 7.71h ETA finetune 2.63h, this session 2.63h (~10980 steps by the session stop)\n"}
+,{"stream_name":"stdout","time":28350.618219645,"data":"[finetune] step 10150/10980 epoch 9 loss 0.0208 lr 1.71e-04 0.084 steps/s elapsed 7.87h ETA finetune 2.49h, this session 2.49h (~10980 steps by the session stop)\n"}
+,{"stream_name":"stdout","time":28893.128883379,"data":"[finetune] step 10200/10980 epoch 9 loss 0.0115 lr 1.67e-04 0.092 steps/s elapsed 8.03h ETA finetune 2.34h, this session 2.34h (~10980 steps by the session stop)\n"}
+,{"stream_name":"stdout","time":29027.273075937,"data":"checkpoint saved ckpt/step_010212.pt\n"}
+,{"stream_name":"stdout","time":29423.309031562,"data":"[finetune] step 10250/10980 epoch 9 loss 0.0136 lr 1.63e-04 0.094 steps/s elapsed 8.17h ETA finetune 2.19h, this session 2.19h (~10980 steps by the session stop)\n"}
+,{"stream_name":"stdout","time":29915.768049484,"data":"[finetune] step 10300/10980 epoch 9 loss 0.0161 lr 1.58e-04 0.102 steps/s elapsed 8.31h ETA finetune 2.03h, this session 2.03h (~10980 steps by the session stop)\n"}
+,{"stream_name":"stdout","time":30447.336305417,"data":"[finetune] step 10350/10980 epoch 9 loss 0.0083 lr 1.54e-04 0.094 steps/s elapsed 8.46h ETA finetune 1.88h, this session 1.88h (~10980 steps by the session stop)\n"}
+,{"stream_name":"stdout","time":30836.637828456,"data":"checkpoint saved ckpt/step_010384.pt\n"}
+,{"stream_name":"stdout","time":31012.187413836,"data":"[finetune] step 10400/10980 epoch 9 loss 0.0145 lr 1.50e-04 0.089 steps/s elapsed 8.61h ETA finetune 1.74h, this session 1.74h (~10980 steps by the session stop)\n"}
+,{"stream_name":"stdout","time":31519.419968744,"data":"[finetune] step 10450/10980 epoch 9 loss 0.0132 lr 1.46e-04 0.099 steps/s elapsed 8.76h ETA finetune 1.59h, this session 1.59h (~10980 steps by the session stop)\n"}
+,{"stream_name":"stdout","time":32014.563906634,"data":"[finetune] step 10500/10980 epoch 9 loss 0.0108 lr 1.41e-04 0.101 steps/s elapsed 8.89h ETA finetune 1.43h, this session 1.43h (~10980 steps by the session stop)\n"}
+,{"stream_name":"stdout","time":32582.445777227,"data":"[finetune] step 10550/10980 epoch 9 loss 0.0059 lr 1.37e-04 0.088 steps/s elapsed 9.05h ETA finetune 1.29h, this session 1.29h (~10980 steps by the session stop)\n"}
+,{"stream_name":"stdout","time":32646.794806153,"data":"checkpoint saved ckpt/step_010557.pt\n"}
+,{"stream_name":"stdout","time":33145.833643196,"data":"[finetune] step 10600/10980 epoch 9 loss 0.0179 lr 1.33e-04 0.089 steps/s elapsed 9.21h ETA finetune 1.14h, this session 1.14h (~10980 steps by the session stop)\n"}
+,{"stream_name":"stdout","time":33663.555734288,"data":"[finetune] step 10650/10980 epoch 9 loss 0.0103 lr 1.28e-04 0.097 steps/s elapsed 9.35h ETA finetune 0.99h, this session 0.99h (~10980 steps by the session stop)\n"}
+,{"stream_name":"stdout","time":34161.545128741,"data":"[finetune] step 10700/10980 epoch 9 loss 0.0200 lr 1.24e-04 0.100 steps/s elapsed 9.49h ETA finetune 0.84h, this session 0.84h (~10980 steps by the session stop)\n"}
+,{"stream_name":"stdout","time":34463.466860434,"data":"checkpoint saved ckpt/step_010729.pt\n"}
+,{"stream_name":"stdout","time":34709.773277962,"data":"[finetune] step 10750/10980 epoch 9 loss 0.0142 lr 1.20e-04 0.091 steps/s elapsed 9.64h ETA finetune 0.69h, this session 0.69h (~10980 steps by the session stop)\n"}
+,{"stream_name":"stdout","time":35242.200889629,"data":"[finetune] step 10800/10980 epoch 9 loss 0.0164 lr 1.15e-04 0.094 steps/s elapsed 9.79h ETA finetune 0.54h, this session 0.54h (~10980 steps by the session stop)\n"}
+,{"stream_name":"stdout","time":35757.244525448,"data":"[finetune] step 10850/10980 epoch 9 loss 0.0190 lr 1.11e-04 0.097 steps/s elapsed 9.93h ETA finetune 0.39h, this session 0.39h (~10980 steps by the session stop)\n"}
+,{"stream_name":"stdout","time":36209.515087466,"data":"[finetune] step 10900/10980 epoch 9 loss 0.0091 lr 1.07e-04 0.111 steps/s elapsed 10.06h ETA finetune 0.24h, this session 0.24h (~10980 steps by the session stop)\n"}
+,{"stream_name":"stdout","time":36281.910997987,"data":"checkpoint saved ckpt/step_010906.pt\n"}
+,{"stream_name":"stdout","time":36702.572951937,"data":"[finetune] step 10950/10980 epoch 9 loss 0.0134 lr 1.03e-04 0.101 steps/s elapsed 10.19h ETA finetune 0.09h, this session 0.09h (~10980 steps by the session stop)\n"}
+,{"stream_name":"stdout","time":36997.794001898,"data":"[finetune] step 10980/10980 epoch 10 loss 0.0090 lr 1.00e-04 0.102 steps/s elapsed 10.28h ETA finetune 0.00h, this session 0.00h (~10980 steps by the session stop)\n"}
+,{"stream_name":"stdout","time":37015.508925843,"data":"eval {\"dev_exact\": 0.6912442396313364, \"dev_root\": 0.9153225806451613, \"dev_pos\": 0.8519585253456221, \"dev_score\": 0.8032834101382489, \"step\": 10980}\n"}
+,{"stream_name":"stdout","time":37017.206253974,"data":"checkpoint saved ckpt/step_010980.pt\n"}
+,{"stream_name":"stdout","time":37017.207234997,"data":"TRAINING DONE at finetune step 10980, best dev_score 0.8088\n"}
+,{"stream_name":"stdout","time":37017.995487059,"data":"final greedy dev report (sharded across ranks)\n"}
+,{"stream_name":"stderr","time":37020.790376458,"data":"\rLoading weights:   0%|          | 0/172 [00:00\u003c?, ?it/s]\rLoading weights:   0%|          | 0/172 [00:00\u003c?, ?it/s]\rLoading weights:   7%|▋         | 12/172 [00:00\u003c00:03, 45.27it/s]\rLoading weights:   7%|▋         | 12/172 [00:00\u003c00:03, 49.78it/s]\rLoading weights:  15%|█▌        | 26/172 [00:00\u003c00:02, 66.69it/s]\rLoading weights:  15%|█▌        | 26/172 [00:00\u003c00:02, 63.51it/s]\rLoading weights:  23%|██▎       | 40/172 [00:00\u003c00:01, 69.58it/s]\rLoading weights:  23%|██▎       | 40/172 [00:00\u003c00:01, 71.55it/s]\rLoading weights:  31%|███▏      | 54/172 [00:00\u003c00:01, 74.98it/s]\rLoading weights:  31%|███▏      | 54/172 [00:00\u003c00:01, 73.68it/s]\rLoading weights:  39%|███▉      | 67/172 [00:00\u003c00:01, 72.93it/s]\rLoading weights:  39%|███▉      | 67/172 [00:00\u003c00:01, 72.63it/s]\rLoading weights:  44%|████▍     | 76/172 [00:01\u003c00:01, 75.83it/s]\rLoading weights:  45%|████▍     | 77/172 [00:01\u003c00:01, 73.06it/s]\rLoading weights:  49%|████▉     | 85/172 [00:01\u003c00:01, 68.55it/s]\rLoading weights:  49%|████▉     | 84/172 [00:01\u003c00:01, 64.98it/s]\rLoading weights:  54%|█████▍    | 93/172 [00:01\u003c00:01, 68.58it/s]\rLoading weights:  54%|█████▍    | 93/172 [00:01\u003c00:01, 68.06it/s]\rLoading weights:  59%|█████▉    | 102/172 [00:01\u003c00:01, 66.80it/s]\rLoading weights:  59%|█████▉    | 102/172 [00:01\u003c00:01, 66.57it/s]\rLoading weights:  63%|██████▎   | 109/172 [00:01\u003c00:00, 66.11it/s]\rLoading weights:  63%|██████▎   | 109/172 [00:01\u003c00:00, 66.53it/s]\rLoading weights:  67%|██████▋   | 116/172 [00:01\u003c00:00, 61.98it/s]\rLoading weights:  67%|██████▋   | 116/172 [00:01\u003c00:00, 62.23it/s]\rLoading weights:  72%|███████▏  | 123/172 [00:01\u003c00:00, 54.16it/s]\rLoading weights:  72%|███████▏  | 123/172 [00:01\u003c00:00, 54.05it/s]\rLoading weights:  75%|███████▌  | 129/172 [00:02\u003c00:00, 48.80it/s]\rLoading weights:  75%|███████▌  | 129/172 [00:02\u003c00:00, 48.85it/s]\rLoading weights:  80%|████████  | 138/172 [00:02\u003c00:00, 53.15it/s]\rLoading weights:  80%|████████  | 138/172 [00:02\u003c00:00, 53.13it/s]\rLoading weights:  84%|████████▎ | 144/172 [00:02\u003c00:00, 54.46it/s]\rLoading weights:  84%|████████▎ | 144/172 [00:02\u003c00:00, 54.49it/s]\rLoading weights:  87%|████████▋ | 150/172 [00:02\u003c00:00, 49.63it/s]\rLoading weights:  87%|████████▋ | 150/172 [00:02\u003c00:00, 49.66it/s]\rLoading weights:  91%|█████████ | 156/172 [00:02\u003c00:00, 49.07it/s]\rLoading weights:  91%|█████████ | 156/172 [00:02\u003c00:00, 49.03it/s]\rLoading weights:  96%|█████████▌| 165/172 [00:02\u003c00:00, 55.49it/s]\rLoading weights:  96%|█████████▌| 165/172 [00:02\u003c00:00, 55.53it/s]\rLoading weights: 100%|██████████| 172/172 [00:02\u003c00:00, 62.78it/s]\rLoading weights: 100%|██████████| 172/172 [00:02\u003c00:00, 62.23it/s]\n"}
+,{"stream_name":"stderr","time":37020.790561998,"data":"\n"}
+,{"stream_name":"stderr","time":37020.810482624,"data":"[transformers] The tied weights mapping and config for this model specifies to tie shared.weight to lm_head.weight, but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config with `tie_word_embeddings=False` to silence this warning.\n"}
+,{"stream_name":"stderr","time":37020.825960202,"data":"[transformers] The tied weights mapping and config for this model specifies to tie shared.weight to lm_head.weight, but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config with `tie_word_embeddings=False` to silence this warning.\n"}
+,{"stream_name":"stdout","time":38884.088759193,"data":"dev_report {\"n\": 1736, \"exact\": 0.6964285714285714, \"root\": 0.9210829493087558}\n"}
+,{"stream_name":"stderr","time":38890.915229008,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":38890.915258461,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":38891.138519864,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":38891.138550504,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":38891.873619704,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":38892.875698837,"data":"[NbConvertApp] Writing 438205 bytes to __results__.html\n"}
+]

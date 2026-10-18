@@ -1,0 +1,582 @@
+[{"stream_name":"stderr","time":7.160953267,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.161004076,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.161008199,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.161010569,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":7.788623788,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.788653644,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.788658659,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.788662351,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":8.923065468,"data":"{\n"}
+,{"stream_name":"stdout","time":8.923090859,"data":" \"run_mode\": \"final\",\n"}
+,{"stream_name":"stdout","time":8.923096243,"data":" \"run_name\": \"\",\n"}
+,{"stream_name":"stdout","time":8.923100592,"data":" \"stable_run_name\": true,\n"}
+,{"stream_name":"stdout","time":8.923105156,"data":" \"morphology_repo\": \"\",\n"}
+,{"stream_name":"stdout","time":8.923109279,"data":" \"morphology_commit\": \"7fcf43283fe21b9b91fba87fec6fa8b78473aeda\",\n"}
+,{"stream_name":"stdout","time":8.923113398,"data":" \"dataset_repo\": \"\",\n"}
+,{"stream_name":"stdout","time":8.923117327,"data":" \"dataset_commit\": \"0aa5bdb3518ea264a2f8f0c23508d2648e63bb21\",\n"}
+,{"stream_name":"stdout","time":8.923121409,"data":" \"bundle_dir\": \"auto\",\n"}
+,{"stream_name":"stdout","time":8.923125286,"data":" \"bundle_search_dirs\": [\n"}
+,{"stream_name":"stdout","time":8.923129255,"data":"  \"/kaggle/input\"\n"}
+,{"stream_name":"stdout","time":8.923133263,"data":" ],\n"}
+,{"stream_name":"stdout","time":8.923137009,"data":" \"work_dir\": \"/kaggle/working\",\n"}
+,{"stream_name":"stdout","time":8.923141264,"data":" \"code_dir\": \"/tmp/geez_code\",\n"}
+,{"stream_name":"stdout","time":8.923145721000001,"data":" \"local_trainer_dir\": \"/tmp/geez_trainer_checkpoints\",\n"}
+,{"stream_name":"stdout","time":8.923150053,"data":" \"keep_previous_checkpoint_minutes\": 0,\n"}
+,{"stream_name":"stdout","time":8.923154025,"data":" \"resume_search_dirs\": [\n"}
+,{"stream_name":"stdout","time":8.923188613,"data":"  \"/kaggle/input\"\n"}
+,{"stream_name":"stdout","time":8.923194168,"data":" ],\n"}
+,{"stream_name":"stdout","time":8.923198301,"data":" \"resume_from\": \"\",\n"}
+,{"stream_name":"stdout","time":8.923206049000001,"data":" \"save_every_minutes\": 30.0,\n"}
+,{"stream_name":"stdout","time":8.923210572,"data":" \"time_budget_hours\": 11.25,\n"}
+,{"stream_name":"stdout","time":8.923215123,"data":" \"trainer\": {\n"}
+,{"stream_name":"stdout","time":8.923219485,"data":"  \"epochs\": 3,\n"}
+,{"stream_name":"stdout","time":8.923223919,"data":"  \"lr\": 0.001,\n"}
+,{"stream_name":"stdout","time":8.923228178,"data":"  \"warmup_ratio\": 0.0\n"}
+,{"stream_name":"stdout","time":8.923232749,"data":" },\n"}
+,{"stream_name":"stdout","time":8.923237039,"data":" \"recipe\": {\n"}
+,{"stream_name":"stdout","time":8.923241378,"data":"  \"optimizer\": \"adafactor\",\n"}
+,{"stream_name":"stdout","time":8.923245962,"data":"  \"lr_schedule\": \"constant\",\n"}
+,{"stream_name":"stdout","time":8.923250615,"data":"  \"dropout\": 0.1,\n"}
+,{"stream_name":"stdout","time":8.923266871,"data":"  \"label_smoothing\": null\n"}
+,{"stream_name":"stdout","time":8.923271671,"data":" },\n"}
+,{"stream_name":"stdout","time":8.923275615,"data":" \"trainer_extra_args\": \"\",\n"}
+,{"stream_name":"stdout","time":8.923279984,"data":" \"max_source_bytes\": \"auto\",\n"}
+,{"stream_name":"stdout","time":8.923284397,"data":" \"max_target_bytes\": \"auto\",\n"}
+,{"stream_name":"stdout","time":8.923288685,"data":" \"val_every_steps\": 250,\n"}
+,{"stream_name":"stdout","time":8.923293004,"data":" \"val_limit\": 0,\n"}
+,{"stream_name":"stdout","time":8.923297185,"data":" \"efficiency\": {\n"}
+,{"stream_name":"stdout","time":8.923301223,"data":"  \"precision\": \"fp32\",\n"}
+,{"stream_name":"stdout","time":8.923305637,"data":"  \"loss_guard\": true,\n"}
+,{"stream_name":"stdout","time":8.923309799,"data":"  \"group_by_length\": true,\n"}
+,{"stream_name":"stdout","time":8.923313996,"data":"  \"effective_batch\": 128,\n"}
+,{"stream_name":"stdout","time":8.923318148,"data":"  \"per_device_batch\": \"auto\",\n"}
+,{"stream_name":"stdout","time":8.923322439,"data":"  \"ddp\": false,\n"}
+,{"stream_name":"stdout","time":8.923326704,"data":"  \"early_stopping\": {\n"}
+,{"stream_name":"stdout","time":8.923330888,"data":"   \"metric\": \"val_root_accuracy\",\n"}
+,{"stream_name":"stdout","time":8.923335248,"data":"   \"patience\": 4,\n"}
+,{"stream_name":"stdout","time":8.923339724,"data":"   \"min_delta\": 0.0\n"}
+,{"stream_name":"stdout","time":8.923344465,"data":"  }\n"}
+,{"stream_name":"stdout","time":8.923348811,"data":" },\n"}
+,{"stream_name":"stdout","time":8.923352924,"data":" \"probe\": {\n"}
+,{"stream_name":"stdout","time":8.923357195,"data":"  \"steps\": 30\n"}
+,{"stream_name":"stdout","time":8.923361232,"data":" }\n"}
+,{"stream_name":"stdout","time":8.923365219,"data":"}\n"}
+,{"stream_name":"stdout","time":12.244936735,"data":"\u001b[?25l   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m0.0/12.6 MB\u001b[0m \u001b[31m?\u001b[0m eta \u001b[36m-:--:--\u001b[0m\r\u001b[2K   \u001b[91m━━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[90m╺\u001b[0m\u001b[90m━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m6.8/12.6 MB\u001b[0m \u001b[31m203.3 MB/s\u001b[0m eta \u001b[36m0:00:01\u001b[0m\r\u001b[2K   \u001b[91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[91m╸\u001b[0m \u001b[32m12.6/12.6 MB\u001b[0m \u001b[31m199.6 MB/s\u001b[0m eta \u001b[36m0:00:01\u001b[0m\r\u001b[2K   \u001b[91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[91m╸\u001b[0m \u001b[32m12.6/12.6 MB\u001b[0m \u001b[31m199.6 MB/s\u001b[0m eta \u001b[36m0:00:01\u001b[0m\r\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m12.6/12.6 MB\u001b[0m \u001b[31m97.5 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n"}
+,{"stream_name":"stdout","time":12.244993895,"data":"\u001b[?25h\u001b[?25l   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m0.0/394.3 kB\u001b[0m \u001b[31m?\u001b[0m eta \u001b[36m-:--:--\u001b[0m\r\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m394.3/394.3 kB\u001b[0m \u001b[31m15.9 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n"}
+,{"stream_name":"stdout","time":12.29563176,"data":"\u001b[?25h\u001b[?25l   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m0.0/846.4 kB\u001b[0m \u001b[31m?\u001b[0m eta \u001b[36m-:--:--\u001b[0m\r\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m846.4/846.4 kB\u001b[0m \u001b[31m36.3 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\r\n"}
+,{"stream_name":"stdout","time":44.587278839,"data":"\u001b[?25htorch 2.11.0+cu128 cuda 12.8 | transformers 5.19.0 | accelerate 1.15.0 | GPUs [('Tesla T4', (7, 5)), ('Tesla T4', (7, 5))]\r\n"}
+,{"stream_name":"stdout","time":47.576427004,"data":"index, name, memory.total [MiB]\r\n"}
+,{"stream_name":"stdout","time":47.576470127,"data":"0, Tesla T4, 15360 MiB\r\n"}
+,{"stream_name":"stdout","time":47.576475556,"data":"1, Tesla T4, 15360 MiB\r\n"}
+,{"stream_name":"stdout","time":47.744589513,"data":"Writing /tmp/geez_launcher/geez_training_launcher.py\n"}
+,{"stream_name":"stdout","time":47.760053098,"data":"Writing /tmp/geez_launcher/trainer_wrapper.py\n"}
+,{"stream_name":"stdout","time":47.774871866,"data":"Writing /tmp/geez_launcher/fit_test.py\n"}
+,{"stream_name":"stdout","time":47.952551611,"data":"=== byt5_7fcf432_0aa5bdb_final  (final run)  started 2026-10-08 14:08 EAT\r\n"}
+,{"stream_name":"stdout","time":47.952585269,"data":"Outputs: /kaggle/working/byt5_7fcf432_0aa5bdb_final\r\n"}
+,{"stream_name":"stdout","time":53.134576155,"data":"Versions: {\"python\": \"3.13.15\", \"torch\": \"2.11.0+cu128\", \"transformers\": \"5.19.0\", \"cuda\": \"12.8\", \"gpus\": [\"Tesla T4\", \"Tesla T4\"]}\r\n"}
+,{"stream_name":"stdout","time":53.134613901,"data":"Bundles found in /kaggle/input/geez-morphology-training-inputs\r\n"}
+,{"stream_name":"stdout","time":53.185229297,"data":"Bundle geez-morphology_7fcf432.bundle: 772,357 bytes, sha256 matches SHA256SUMS.txt (0s)\r\n"}
+,{"stream_name":"stdout","time":53.69314611,"data":"Bundle geez-dataset_0aa5bdb.bundle: 25,805,512 bytes, sha256 matches SHA256SUMS.txt (1s)\r\n"}
+,{"stream_name":"stdout","time":53.693190132,"data":"Getting /kaggle/input/geez-morphology-training-inputs/geez-morphology_7fcf432.bundle at 7fcf43283fe21b9b91fba87fec6fa8b78473aeda\r\n"}
+,{"stream_name":"stdout","time":53.693196712,"data":"$ git -c init.defaultBranch=main clone -q --no-checkout /kaggle/input/geez-morphology-training-inputs/geez-morphology_7fcf432.bundle /tmp/geez_code/geez-morphology\r\n"}
+,{"stream_name":"stdout","time":53.896653128,"data":"$ git -C /tmp/geez_code/geez-morphology checkout -q --detach 7fcf43283fe21b9b91fba87fec6fa8b78473aeda\r\n"}
+,{"stream_name":"stdout","time":53.896703429,"data":"$ git -C /tmp/geez_code/geez-morphology rev-parse HEAD\r\n"}
+,{"stream_name":"stdout","time":53.896709997,"data":"    HEAD = 7fcf43283fe21b9b91fba87fec6fa8b78473aeda\r\n"}
+,{"stream_name":"stdout","time":53.89671529,"data":"Getting /kaggle/input/geez-morphology-training-inputs/geez-dataset_0aa5bdb.bundle at 0aa5bdb3518ea264a2f8f0c23508d2648e63bb21\r\n"}
+,{"stream_name":"stdout","time":53.896720442,"data":"$ git -c init.defaultBranch=main clone -q --no-checkout /kaggle/input/geez-morphology-training-inputs/geez-dataset_0aa5bdb.bundle /tmp/geez_code/geez-dataset\r\n"}
+,{"stream_name":"stdout","time":59.578316844,"data":"$ git -C /tmp/geez_code/geez-dataset checkout -q --detach 0aa5bdb3518ea264a2f8f0c23508d2648e63bb21\r\n"}
+,{"stream_name":"stdout","time":60.288872284,"data":"$ git -C /tmp/geez_code/geez-dataset rev-parse HEAD\r\n"}
+,{"stream_name":"stdout","time":60.28890023,"data":"    HEAD = 0aa5bdb3518ea264a2f8f0c23508d2648e63bb21\r\n"}
+,{"stream_name":"stdout","time":60.288916149,"data":"$ /usr/bin/python3 generate_synthetic_data.py --help\r\n"}
+,{"stream_name":"stdout","time":60.441226995,"data":"$ /usr/bin/python3 generate_synthetic_data.py --dataset_dir /tmp/geez_code/geez-dataset --output_dir /tmp/geez_code/regenerated_synthetic --no_mirror\r\n"}
+,{"stream_name":"stdout","time":65.370518191,"data":"Generator generate_synthetic_data.py: done in 5s\r\n"}
+,{"stream_name":"stdout","time":65.370545813,"data":"$ git -C /tmp/geez_code/geez-dataset status --porcelain\r\n"}
+,{"stream_name":"stdout","time":65.877975045,"data":"  regenerated/synthetic_morphology_analyze.jsonl: 136408 lines, sha256 9fa508005f66ea577a31d119bb20182729bd44f6ef0d88716dac5f40d55ef759\r\n"}
+,{"stream_name":"stdout","time":65.979469138,"data":"  regenerated/synthetic_morphology_train.jsonl: 136408 lines, sha256 7664ebb73528546cbf3713e8c32f6b10253783eeb632447f02dea2877e217498\r\n"}
+,{"stream_name":"stdout","time":66.081316496,"data":"  dataset/data/paradigms/synthetic_morphology_train.jsonl: sha256 e4c4cdb95a6d64d21e62bc3fbb712149d9d2c59abc068ff26e977b3a948dd670\r\n"}
+,{"stream_name":"stdout","time":66.081344422,"data":"sha256: no expected values listed for this commit pair; relying on the splitter --check below. Add the values above to KNOWN_SYNTHETIC_SHA256 once reviewed.\r\n"}
+,{"stream_name":"stdout","time":66.081349462,"data":"$ /usr/bin/python3 split_heldout_synthetic.py --help\r\n"}
+,{"stream_name":"stdout","time":66.132306584,"data":"$ /usr/bin/python3 split_heldout_synthetic.py --full_dir /tmp/geez_code/regenerated_synthetic --dataset_dir /tmp/geez_code/geez-dataset --check\r\n"}
+,{"stream_name":"stdout","time":76.035514418,"data":"    held out: 13106 lines, 114 roots; per split {'test': 4317, 'val': 8789}\r\n"}
+,{"stream_name":"stdout","time":76.035545486,"data":"    of these, held out as the same root up to spelling: 4584 lines, 39 roots\r\n"}
+,{"stream_name":"stdout","time":76.035550856,"data":"    near-duplicates of gold val/test forms dropped from the training pair: 16 lines, 14 roots\r\n"}
+,{"stream_name":"stdout","time":76.035555379,"data":"    lines whose surface form is a gold val/test form: 0\r\n"}
+,{"stream_name":"stdout","time":76.035559674,"data":"    training lines whose folded surface form is a folded gold val/test form: 0\r\n"}
+,{"stream_name":"stdout","time":76.035563908,"data":"    training lines whose folded root is a folded gold val/test root: 0\r\n"}
+,{"stream_name":"stdout","time":76.035568629,"data":"    split == dataset files\r\n"}
+,{"stream_name":"stdout","time":76.035573604,"data":"Splitter split_heldout_synthetic.py --check: passed\r\n"}
+,{"stream_name":"stdout","time":76.035578183,"data":"$ /usr/bin/python3 train_byt5_morphology.py --help\r\n"}
+,{"stream_name":"stdout","time":76.136847674,"data":"$ /usr/bin/python3 train_byt5_morphology.py --dataset_dir /tmp/geez_code/geez-dataset --load_only --export_dir /tmp/geez_code/exported_pairs\r\n"}
+,{"stream_name":"stdout","time":79.596451177,"data":"    Reading synthetic pairs from /tmp/geez_code/geez-dataset/data/paradigms/synthetic_morphology_train.jsonl\r\n"}
+,{"stream_name":"stdout","time":79.596480445,"data":"    Read 8237 Merho Ges gold-train pairs from /tmp/geez_code/geez-dataset/data/paradigms/merho_ges_gold_train.jsonl\r\n"}
+,{"stream_name":"stdout","time":79.596486005,"data":"    Read 1119 dictionary noun and adjective pairs from /tmp/geez_code/geez-dataset/data/lexicon/classical_dictionary_kidane_wold.jsonl\r\n"}
+,{"stream_name":"stdout","time":79.596491154,"data":"    Read 57 words without root from /tmp/geez_code/geez-morphology/data/closed_class_words_without_root.tsv\r\n"}
+,{"stream_name":"stdout","time":79.596495949,"data":"    Gold-train load counts:\r\n"}
+,{"stream_name":"stdout","time":79.596510713,"data":"      loaded: 8237\r\n"}
+,{"stream_name":"stdout","time":79.596514462,"data":"      not loaded: flagged (merho_ges_gold_flagged_rows.tsv): 9\r\n"}
+,{"stream_name":"stdout","time":79.596518131,"data":"      not loaded: row has no root: 926\r\n"}
+,{"stream_name":"stdout","time":79.596521615,"data":"    Dictionary load counts:\r\n"}
+,{"stream_name":"stdout","time":79.596527575,"data":"      headwords with conflicting roots: 16\r\n"}
+,{"stream_name":"stdout","time":79.596531146,"data":"      loaded: 1119\r\n"}
+,{"stream_name":"stdout","time":79.596534621,"data":"      not loaded: definition names a Greek source: 311\r\n"}
+,{"stream_name":"stdout","time":79.596538189,"data":"      not loaded: duplicate (form, target): 146\r\n"}
+,{"stream_name":"stdout","time":79.596541729,"data":"      not loaded: entry cannot be checked: 1\r\n"}
+,{"stream_name":"stdout","time":79.596545202,"data":"      not loaded: form is a gold val/test form: 11\r\n"}
+,{"stream_name":"stdout","time":79.596548736,"data":"      not loaded: form is a gold val/test form up to spelling: 1\r\n"}
+,{"stream_name":"stdout","time":79.596552187,"data":"      not loaded: form is in the gold train file: 398\r\n"}
+,{"stream_name":"stdout","time":79.596556122,"data":"      not loaded: headword does not hold the root's radicals: 993\r\n"}
+,{"stream_name":"stdout","time":79.596559767,"data":"      not loaded: headword has conflicting roots: 8\r\n"}
+,{"stream_name":"stdout","time":79.596563048,"data":"      not loaded: headword is a word without root: 23\r\n"}
+,{"stream_name":"stdout","time":79.596566464,"data":"      not loaded: headword is not one Ge'ez word: 343\r\n"}
+,{"stream_name":"stdout","time":79.596569894,"data":"      not loaded: headword is the root's 3ms perfect: 61\r\n"}
+,{"stream_name":"stdout","time":79.596573308,"data":"      not loaded: headword_type artifact: 381\r\n"}
+,{"stream_name":"stdout","time":79.596576595,"data":"      not loaded: headword_type character: 40\r\n"}
+,{"stream_name":"stdout","time":79.596579937,"data":"      not loaded: headword_type phrase: 488\r\n"}
+,{"stream_name":"stdout","time":79.59658343,"data":"      not loaded: no root: 26\r\n"}
+,{"stream_name":"stdout","time":79.59658686,"data":"      not loaded: pos adverb: 2\r\n"}
+,{"stream_name":"stdout","time":79.596590412,"data":"      not loaded: pos conjunction: 1\r\n"}
+,{"stream_name":"stdout","time":79.596593935,"data":"      not loaded: pos missing: 544\r\n"}
+,{"stream_name":"stdout","time":79.596597379,"data":"      not loaded: pos name: 136\r\n"}
+,{"stream_name":"stdout","time":79.596600819,"data":"      not loaded: pos particle: 74\r\n"}
+,{"stream_name":"stdout","time":79.59660428,"data":"      not loaded: pos preposition: 1\r\n"}
+,{"stream_name":"stdout","time":79.596607774,"data":"      not loaded: pos pronoun: 4\r\n"}
+,{"stream_name":"stdout","time":79.596611362,"data":"      not loaded: pos verb: 3885\r\n"}
+,{"stream_name":"stdout","time":79.596614797,"data":"      not loaded: root has 2 radicals: 1440\r\n"}
+,{"stream_name":"stdout","time":79.596618307,"data":"      not loaded: root has 5 radicals: 142\r\n"}
+,{"stream_name":"stdout","time":79.596621701,"data":"      not loaded: root is a gold val/test root: 171\r\n"}
+,{"stream_name":"stdout","time":79.596625301,"data":"      not loaded: root is a root of the held-out synthetic lines: 63\r\n"}
+,{"stream_name":"stdout","time":79.596628894,"data":"      not loaded: root is not 2-5 letters: 254\r\n"}
+,{"stream_name":"stdout","time":79.596633597,"data":"      not loaded: root not on the synthetic allow-list: 2168\r\n"}
+,{"stream_name":"stdout","time":79.596640549,"data":"    Words-without-root load counts:\r\n"}
+,{"stream_name":"stdout","time":79.596644141,"data":"      loaded: 57\r\n"}
+,{"stream_name":"stdout","time":79.596647524,"data":"    Synthetic pairs: 123286. Gold-train pairs: 8237. Dictionary pairs: 1006 train, 112 eval. Words without root: 57.\r\n"}
+,{"stream_name":"stdout","time":79.596651297,"data":"    Gold upsampling: verbs x4, nouns and adjectives x5. Prefixes: one per task.\r\n"}
+,{"stream_name":"stdout","time":79.596655021,"data":"    Train: 151403 pairs (synthetic 110957, gold_verb 7208, gold_nominal 32175, dictionary 1006, word_without_root 57). Eval: 12329 synthetic pairs; dictionary_nominal: 112 pairs.\r\n"}
+,{"stream_name":"stdout","time":79.596658964,"data":"    Exported train/eval pairs to /tmp/geez_code/exported_pairs\r\n"}
+,{"stream_name":"stdout","time":80.912588674,"data":"Held-out roots: 114 roots in data/synthetic/, 1120 in the synthetic train file, overlap 0\r\n"}
+,{"stream_name":"stdout","time":80.912613714,"data":"Gold val/test roots: 306; synthetic roots the trainer loaded: 1121; overlap 0\r\n"}
+,{"stream_name":"stdout","time":80.912618153,"data":"Held-out test-roots list: 185 roots; overlap with loaded synthetic roots 0\r\n"}
+,{"stream_name":"stdout","time":81.928590446,"data":"$ /usr/bin/python3 /tmp/geez_code/gold_target_lengths.py /tmp/geez_code/geez-dataset\r\n"}
+,{"stream_name":"stdout","time":82.081318095,"data":"Lengths in UTF-8 bytes (ByT5 uses one token per byte plus an end token; Ge'ez letters are 3 bytes):\r\n"}
+,{"stream_name":"stdout","time":82.081348534,"data":"  eval_pairs_dictionary_nominal.jsonl: longest input 21, longest target 21\r\n"}
+,{"stream_name":"stdout","time":82.081352569,"data":"  eval_pairs_synthetic.jsonl: longest input 36, longest target 92\r\n"}
+,{"stream_name":"stdout","time":82.081356089,"data":"  train_pairs.jsonl: longest input 36, longest target 107\r\n"}
+,{"stream_name":"stdout","time":82.081359569,"data":"  longest target: root: ነ-ቀ-ለ-ቀ-ለ | tense: past | person: 2 | gender: m | number: p | stem: causative | object: 1cs\r\n"}
+,{"stream_name":"stdout","time":82.081368854,"data":"  gold val targets: longest 100; gold test targets: longest 105\r\n"}
+,{"stream_name":"stdout","time":82.081372207,"data":"  the trainer has no length flag; its fixed limit(s) in the source: [128]\r\n"}
+,{"stream_name":"stdout","time":82.081388478,"data":"  evaluate_gold.py generates up to 128 tokens; longest gold target needs 106\r\n"}
+,{"stream_name":"stdout","time":82.081392837,"data":"  the trainer's tokenized training pairs are checked against these (no truncation) when it starts\r\n"}
+,{"stream_name":"stdout","time":82.081396994,"data":"Data check passed; written to data_check.txt\r\n"}
+,{"stream_name":"stdout","time":82.081401181,"data":"Precision: fp32 (the trainer's own setting)\r\n"}
+,{"stream_name":"stdout","time":82.588152817,"data":"$ /usr/bin/python3 /tmp/geez_launcher/fit_test.py --model google/byt5-small --precision fp32 --in_len 37 --tgt_len 108 --limit_fraction 0.85 --optimizer adafactor\r\n"}
+,{"stream_name":"stdout","time":125.60199404,"data":"Fit test (fp32, adafactor, longest pair 37/108 tokens, limit 85% of 14.6 GB): batch 16: 3.4 GB, batch 32: 5.6 GB, batch 64: 10.0 GB, batch 128: out of memory (no) -\u003e largest 64\r\n"}
+,{"stream_name":"stdout","time":125.602033099,"data":"Train pairs 151403; effective batch 128 = 64 per GPU x 2 accumulation x 1 GPU(s); 1183 steps per epoch; 3549 steps in this run; checkpoint every 250 steps; length-grouped batches on; train on GPU(s) [0], score val on [1]\r\n"}
+,{"stream_name":"stdout","time":125.602040819,"data":"Recipe: lr 0.001, warmup ratio 0.0, epochs 3; optimizer Adafactor (HF optim=adafactor: scale_parameter=False, relative_step=False, warmup_init=False); lr schedule constant at 0.001; dropout 0.1 (set on the model's dropout layers if it differs from the model's own)\r\n"}
+,{"stream_name":"stdout","time":125.602051614,"data":"Gold val scoring: every 250 steps on all rows\r\n"}
+,{"stream_name":"stdout","time":125.602054517,"data":"Early stopping on val_root_accuracy (generated, gold val): patience 4 val pass(es), min_delta 0.0\r\n"}
+,{"stream_name":"stdout","time":125.602057304,"data":"No earlier checkpoint: starting from google/byt5-small\r\n"}
+,{"stream_name":"stdout","time":125.602060263,"data":"Timed saves: if 30 min pass without a save, the trainer saves, stops and is restarted at once from that save (so a disconnect loses at most about that much training)\r\n"}
+,{"stream_name":"stdout","time":125.602063137,"data":"Starting the trainer at 2026-10-08 14:10 EAT\r\n"}
+,{"stream_name":"stdout","time":135.552723101,"data":"[wrapper] precision fp32; length-grouped batches on; loss guard on; TrainingArguments overrides {'train_sampling_strategy': 'group_by_length', 'optim': 'adafactor', 'lr_scheduler_type': 'constant'}\r\n"}
+,{"stream_name":"stdout","time":135.552756228,"data":"Reading synthetic pairs from /tmp/geez_code/geez-dataset/data/paradigms/synthetic_morphology_train.jsonl\r\n"}
+,{"stream_name":"stdout","time":136.770810728,"data":"Read 8237 Merho Ges gold-train pairs from /tmp/geez_code/geez-dataset/data/paradigms/merho_ges_gold_train.jsonl\r\n"}
+,{"stream_name":"stdout","time":137.685609607,"data":"Read 1119 dictionary noun and adjective pairs from /tmp/geez_code/geez-dataset/data/lexicon/classical_dictionary_kidane_wold.jsonl\r\n"}
+,{"stream_name":"stdout","time":137.837723836,"data":"Read 57 words without root from /tmp/geez_code/geez-morphology/data/closed_class_words_without_root.tsv\r\n"}
+,{"stream_name":"stdout","time":137.888743444,"data":"Gold-train load counts:\r\n"}
+,{"stream_name":"stdout","time":137.888773417,"data":"  loaded: 8237\r\n"}
+,{"stream_name":"stdout","time":137.888776413,"data":"  not loaded: flagged (merho_ges_gold_flagged_rows.tsv): 9\r\n"}
+,{"stream_name":"stdout","time":137.88877906,"data":"  not loaded: row has no root: 926\r\n"}
+,{"stream_name":"stdout","time":137.888781379,"data":"Dictionary load counts:\r\n"}
+,{"stream_name":"stdout","time":137.888783681,"data":"  headwords with conflicting roots: 16\r\n"}
+,{"stream_name":"stdout","time":137.888785998,"data":"  loaded: 1119\r\n"}
+,{"stream_name":"stdout","time":137.888788143,"data":"  not loaded: definition names a Greek source: 311\r\n"}
+,{"stream_name":"stdout","time":137.888790693,"data":"  not loaded: duplicate (form, target): 146\r\n"}
+,{"stream_name":"stdout","time":137.888792979,"data":"  not loaded: entry cannot be checked: 1\r\n"}
+,{"stream_name":"stdout","time":137.888795628,"data":"  not loaded: form is a gold val/test form: 11\r\n"}
+,{"stream_name":"stdout","time":137.888810976,"data":"  not loaded: form is a gold val/test form up to spelling: 1\r\n"}
+,{"stream_name":"stdout","time":137.888815052,"data":"  not loaded: form is in the gold train file: 398\r\n"}
+,{"stream_name":"stdout","time":137.888819202,"data":"  not loaded: headword does not hold the root's radicals: 993\r\n"}
+,{"stream_name":"stdout","time":137.88882294,"data":"  not loaded: headword has conflicting roots: 8\r\n"}
+,{"stream_name":"stdout","time":137.888827176,"data":"  not loaded: headword is a word without root: 23\r\n"}
+,{"stream_name":"stdout","time":137.888830989,"data":"  not loaded: headword is not one Ge'ez word: 343\r\n"}
+,{"stream_name":"stdout","time":137.888834201,"data":"  not loaded: headword is the root's 3ms perfect: 61\r\n"}
+,{"stream_name":"stdout","time":137.888837589,"data":"  not loaded: headword_type artifact: 381\r\n"}
+,{"stream_name":"stdout","time":137.888862849,"data":"  not loaded: headword_type character: 40\r\n"}
+,{"stream_name":"stdout","time":137.888865801,"data":"  not loaded: headword_type phrase: 488\r\n"}
+,{"stream_name":"stdout","time":137.888867937,"data":"  not loaded: no root: 26\r\n"}
+,{"stream_name":"stdout","time":137.888870091,"data":"  not loaded: pos adverb: 2\r\n"}
+,{"stream_name":"stdout","time":137.888872191,"data":"  not loaded: pos conjunction: 1\r\n"}
+,{"stream_name":"stdout","time":137.888874334,"data":"  not loaded: pos missing: 544\r\n"}
+,{"stream_name":"stdout","time":137.888876484,"data":"  not loaded: pos name: 136\r\n"}
+,{"stream_name":"stdout","time":137.888878624,"data":"  not loaded: pos particle: 74\r\n"}
+,{"stream_name":"stdout","time":137.888880776,"data":"  not loaded: pos preposition: 1\r\n"}
+,{"stream_name":"stdout","time":137.888882919,"data":"  not loaded: pos pronoun: 4\r\n"}
+,{"stream_name":"stdout","time":137.888885196,"data":"  not loaded: pos verb: 3885\r\n"}
+,{"stream_name":"stdout","time":137.888887404,"data":"  not loaded: root has 2 radicals: 1440\r\n"}
+,{"stream_name":"stdout","time":137.888889562,"data":"  not loaded: root has 5 radicals: 142\r\n"}
+,{"stream_name":"stdout","time":137.888891839,"data":"  not loaded: root is a gold val/test root: 171\r\n"}
+,{"stream_name":"stdout","time":137.888894627,"data":"  not loaded: root is a root of the held-out synthetic lines: 63\r\n"}
+,{"stream_name":"stdout","time":137.888909449,"data":"  not loaded: root is not 2-5 letters: 254\r\n"}
+,{"stream_name":"stdout","time":137.888913431,"data":"  not loaded: root not on the synthetic allow-list: 2168\r\n"}
+,{"stream_name":"stdout","time":137.888917405,"data":"Words-without-root load counts:\r\n"}
+,{"stream_name":"stdout","time":137.888921384,"data":"  loaded: 57\r\n"}
+,{"stream_name":"stdout","time":137.939240163,"data":"Synthetic pairs: 123286. Gold-train pairs: 8237. Dictionary pairs: 1006 train, 112 eval. Words without root: 57.\r\n"}
+,{"stream_name":"stdout","time":137.939269467,"data":"Gold upsampling: verbs x4, nouns and adjectives x5. Prefixes: one per task.\r\n"}
+,{"stream_name":"stdout","time":137.939275495,"data":"Train: 151403 pairs (synthetic 110957, gold_verb 7208, gold_nominal 32175, dictionary 1006, word_without_root 57). Eval: 12329 synthetic pairs; dictionary_nominal: 112 pairs.\r\n"}
+,{"stream_name":"stdout","time":138.040935684,"data":"Device: cuda x1 (Tesla T4). Precision: fp32.\r\n"}
+,{"stream_name":"stdout","time":138.040965288,"data":"Effective batch: 64 x 2 accum x 1 device(s) = 128\r\n"}
+,{"stream_name":"stdout","time":138.040970588,"data":"Starting from the pretrained model (no checkpoint found).\r\n"}
+,{"stream_name":"stdout","time":138.040974568,"data":"Optimizer steps: 3549. Warmup: 0. Save every 250.\r\n"}
+,{"stream_name":"stdout","time":138.346862165,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\r\n"}
+,{"stream_name":"stdout","time":138.652731473,"data":"Loading weights:   0%|          | 0/172 [00:00\u003c?, ?it/s]\r\n"}
+,{"stream_name":"stdout","time":138.652764185,"data":"[transformers] The tied weights mapping and config for this model specifies to tie shared.weight to lm_head.weight, but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config with `tie_word_embeddings=False` to silence this warning.\r\n"}
+,{"stream_name":"stdout","time":139.262448437,"data":"[wrapper] dropout 0.1 (the model's own)\r\n"}
+,{"stream_name":"stdout","time":171.760600534,"data":"[wrapper] longest tokenized input 37 (pairs need 37), labels 108 (pairs need 108); checked in 33s\r\n"}
+,{"stream_name":"stdout","time":201.925812196,"data":"0%|          | 0/3549 [00:00\u003c?, ?it/s]\r\n"}
+,{"stream_name":"stdout","time":201.925837156,"data":"[wrapper] optimizer Adafactor {'lr': 0.001, 'eps': (1e-30, 0.001), 'weight_decay': 0.0, 'scale_parameter': False, 'relative_step': False, 'warmup_init': False}; lr schedule SchedulerType.CONSTANT; label smoothing 0.0; dropout 0.1\r\n"}
+,{"stream_name":"stdout","time":265.932194068,"data":"0%|          | 15/3549 [00:59\u003c4:03:52,  4.14s/it]\r\n"}
+,{"stream_name":"stdout","time":289.33630417,"data":"[speed] 2026-10-08 14:12 EAT: step 21/3549, 0.25 steps/s (3.95 s/step); ETA 3h52m for the remaining steps, finishing about 2026-10-08 18:04 EAT (training steps only; the per-epoch eval passes add a little)\r\n"}
+,{"stream_name":"stdout","time":328.843977763,"data":"1%|          | 32/3549 [02:03\u003c3:31:14,  3.60s/it]\r\n"}
+,{"stream_name":"stdout","time":389.728711825,"data":"1%|▏         | 49/3549 [03:04\u003c3:19:14,  3.42s/it]\r\n"}
+,{"stream_name":"stdout","time":389.728780356,"data":"{'loss': '0.7168', 'grad_norm': '0.6773', 'learning_rate': '0.001', 'epoch': '0.04227'}\r\n"}
+,{"stream_name":"stdout","time":450.713442836,"data":"2%|▏         | 64/3549 [04:04\u003c3:51:57,  3.99s/it]\r\n"}
+,{"stream_name":"stdout","time":510.89284914,"data":"2%|▏         | 80/3549 [05:05\u003c3:32:28,  3.67s/it]\r\n"}
+,{"stream_name":"stdout","time":571.755323782,"data":"3%|▎         | 97/3549 [06:06\u003c3:18:40,  3.45s/it]\r\n"}
+,{"stream_name":"stdout","time":578.349581777,"data":"{'loss': '0.1616', 'grad_norm': '0.321', 'learning_rate': '0.001', 'epoch': '0.08453'}\r\n"}
+,{"stream_name":"stdout","time":635.116812733,"data":"3%|▎         | 113/3549 [07:09\u003c3:45:18,  3.93s/it]\r\n"}
+,{"stream_name":"stdout","time":698.749960302,"data":"4%|▎         | 130/3549 [08:13\u003c3:28:40,  3.66s/it]\r\n"}
+,{"stream_name":"stdout","time":759.800221988,"data":"4%|▍         | 147/3549 [09:14\u003c3:15:57,  3.46s/it]\r\n"}
+,{"stream_name":"stdout","time":766.447895526,"data":"{'loss': '0.1211', 'grad_norm': '0.4918', 'learning_rate': '0.001', 'epoch': '0.1268'}\r\n"}
+,{"stream_name":"stdout","time":823.481237982,"data":"5%|▍         | 163/3549 [10:17\u003c3:42:39,  3.95s/it]\r\n"}
+,{"stream_name":"stdout","time":884.375325611,"data":"5%|▌         | 179/3549 [11:18\u003c3:28:02,  3.70s/it]\r\n"}
+,{"stream_name":"stdout","time":945.667690551,"data":"6%|▌         | 196/3549 [12:20\u003c3:14:50,  3.49s/it]\r\n"}
+,{"stream_name":"stdout","time":955.616106837,"data":"{'loss': '0.07918', 'grad_norm': '0.2917', 'learning_rate': '0.001', 'epoch': '0.1691'}\r\n"}
+,{"stream_name":"stdout","time":1008.360758247,"data":"6%|▌         | 212/3549 [13:22\u003c3:39:36,  3.95s/it]\r\n"}
+,{"stream_name":"stdout","time":1068.910494667,"data":"6%|▋         | 228/3549 [14:23\u003c3:24:10,  3.69s/it]\r\n"}
+,{"stream_name":"stdout","time":1130.752413802,"data":"7%|▋         | 245/3549 [15:25\u003c3:16:14,  3.56s/it]\r\n"}
+,{"stream_name":"stdout","time":1144.140434275,"data":"{'loss': '0.06058', 'grad_norm': '0.2521', 'learning_rate': '0.001', 'epoch': '0.2113'}\r\n"}
+,{"stream_name":"stdout","time":1176.326375811,"data":"[save] checkpoint-250 copied to /kaggle/working/byt5_7fcf432_0aa5bdb_final/last_checkpoint in 1s\r\n"}
+,{"stream_name":"stdout","time":1190.995625569,"data":"[speed] 2026-10-08 14:27 EAT: step 260/3549, 0.27 steps/s (3.77 s/step); ETA 3h26m for the remaining steps, finishing about 2026-10-08 17:54 EAT (training steps only; the per-epoch eval passes add a little)\r\n"}
+,{"stream_name":"stdout","time":1190.995673984,"data":"7%|▋         | 260/3549 [16:25\u003c3:39:12,  4.00s/it]\r\n"}
+,{"stream_name":"stdout","time":1252.636180914,"data":"8%|▊         | 276/3549 [17:27\u003c3:23:40,  3.73s/it]\r\n"}
+,{"stream_name":"stdout","time":1314.754711156,"data":"8%|▊         | 293/3549 [18:29\u003c3:18:37,  3.66s/it]\r\n"}
+,{"stream_name":"stdout","time":1334.854097998,"data":"{'loss': '0.0486', 'grad_norm': '0.1758', 'learning_rate': '0.001', 'epoch': '0.2536'}\r\n"}
+,{"stream_name":"stdout","time":1376.223835701,"data":"9%|▊         | 309/3549 [19:30\u003c3:37:02,  4.02s/it]\r\n"}
+,{"stream_name":"stdout","time":1437.72808007,"data":"9%|▉         | 325/3549 [20:32\u003c3:20:22,  3.73s/it]\r\n"}
+,{"stream_name":"stdout","time":1500.432965021,"data":"10%|▉         | 342/3549 [21:34\u003c3:17:31,  3.70s/it]\r\n"}
+,{"stream_name":"stdout","time":1524.084692493,"data":"{'loss': '0.04405', 'grad_norm': '0.3264', 'learning_rate': '0.001', 'epoch': '0.2959'}\r\n"}
+,{"stream_name":"stdout","time":1561.325022834,"data":"10%|█         | 358/3549 [22:35\u003c3:33:22,  4.01s/it]\r\n"}
+,{"stream_name":"stdout","time":1622.99371271,"data":"11%|█         | 374/3549 [23:37\u003c3:17:55,  3.74s/it]\r\n"}
+,{"stream_name":"stdout","time":1685.659720669,"data":"11%|█         | 391/3549 [24:40\u003c3:13:34,  3.68s/it]\r\n"}
+,{"stream_name":"stdout","time":1712.872303,"data":"{'loss': '0.03127', 'grad_norm': '0.1628', 'learning_rate': '0.001', 'epoch': '0.3381'}\r\n"}
+,{"stream_name":"stdout","time":1746.401426799,"data":"11%|█▏        | 407/3549 [25:40\u003c3:32:07,  4.05s/it]\r\n"}
+,{"stream_name":"stdout","time":1808.639545358,"data":"12%|█▏        | 423/3549 [26:43\u003c3:18:04,  3.80s/it]\r\n"}
+,{"stream_name":"stdout","time":1871.444197912,"data":"12%|█▏        | 440/3549 [27:45\u003c3:11:13,  3.69s/it]\r\n"}
+,{"stream_name":"stdout","time":1902.440347111,"data":"{'loss': '0.03948', 'grad_norm': '0.1443', 'learning_rate': '0.001', 'epoch': '0.3804'}\r\n"}
+,{"stream_name":"stdout","time":1931.625248222,"data":"13%|█▎        | 456/3549 [28:45\u003c3:27:29,  4.03s/it]\r\n"}
+,{"stream_name":"stdout","time":1979.77127973,"data":"[val] epoch_00p21_step_250: root 81.2% (952/1173), exact match 33.0% (387/1173) in 804s  \u003c- best so far\r\n"}
+,{"stream_name":"stdout","time":1994.180024013,"data":"13%|█▎        | 472/3549 [29:48\u003c3:17:33,  3.85s/it]\r\n"}
+,{"stream_name":"stdout","time":2056.888837643,"data":"14%|█▍        | 489/3549 [30:51\u003c3:07:40,  3.68s/it]\r\n"}
+,{"stream_name":"stdout","time":2091.350746974,"data":"[speed] 2026-10-08 14:42 EAT: step 499/3549, 0.27 steps/s (3.77 s/step); ETA 3h11m for the remaining steps, finishing about 2026-10-08 17:54 EAT (training steps only; the per-epoch eval passes add a little)\r\n"}
+,{"stream_name":"stdout","time":2091.350788241,"data":"{'loss': '0.02863', 'grad_norm': '0.1218', 'learning_rate': '0.001', 'epoch': '0.4227'}\r\n"}
+,{"stream_name":"stdout","time":2118.25995713,"data":"14%|█▍        | 505/3549 [31:52\u003c3:30:14,  4.14s/it]\r\n"}
+,{"stream_name":"stdout","time":2121.725718249,"data":"[save] checkpoint-500 copied to /kaggle/working/byt5_7fcf432_0aa5bdb_final/last_checkpoint in 0s\r\n"}
+,{"stream_name":"stdout","time":2121.767881949,"data":"[save] removed last_checkpoint.previous/ (the newer copy has had time to upload)\r\n"}
+,{"stream_name":"stdout","time":2180.956001005,"data":"15%|█▍        | 521/3549 [32:55\u003c3:15:03,  3.87s/it]\r\n"}
+,{"stream_name":"stdout","time":2243.629253636,"data":"15%|█▌        | 538/3549 [33:58\u003c3:04:51,  3.68s/it]\r\n"}
+,{"stream_name":"stdout","time":2282.230270471,"data":"{'loss': '0.02568', 'grad_norm': '0.198', 'learning_rate': '0.001', 'epoch': '0.4649'}\r\n"}
+,{"stream_name":"stdout","time":2307.628472001,"data":"16%|█▌        | 555/3549 [35:01\u003c3:21:49,  4.04s/it]\r\n"}
+,{"stream_name":"stdout","time":2370.499931333,"data":"16%|█▌        | 571/3549 [36:04\u003c3:13:18,  3.89s/it]\r\n"}
+,{"stream_name":"stdout","time":2432.970321721,"data":"17%|█▋        | 588/3549 [37:07\u003c3:01:18,  3.67s/it]\r\n"}
+,{"stream_name":"stdout","time":2471.572012693,"data":"{'loss': '0.03054', 'grad_norm': '0.1211', 'learning_rate': '0.001', 'epoch': '0.5072'}\r\n"}
+,{"stream_name":"stdout","time":2493.256377865,"data":"17%|█▋        | 604/3549 [38:07\u003c3:21:19,  4.10s/it]\r\n"}
+,{"stream_name":"stdout","time":2556.357200081,"data":"17%|█▋        | 620/3549 [39:10\u003c3:12:10,  3.94s/it]\r\n"}
+,{"stream_name":"stdout","time":2619.034880279,"data":"18%|█▊        | 637/3549 [40:13\u003c2:58:34,  3.68s/it]\r\n"}
+,{"stream_name":"stdout","time":2660.751993215,"data":"{'loss': '0.02144', 'grad_norm': '0.1563', 'learning_rate': '0.001', 'epoch': '0.5495'}\r\n"}
+,{"stream_name":"stdout","time":2682.03925634,"data":"18%|█▊        | 654/3549 [41:16\u003c3:15:34,  4.05s/it]\r\n"}
+,{"stream_name":"stdout","time":2745.195073673,"data":"19%|█▉        | 670/3549 [42:19\u003c3:09:37,  3.95s/it]\r\n"}
+,{"stream_name":"stdout","time":2807.740459179,"data":"19%|█▉        | 687/3549 [43:22\u003c2:55:22,  3.68s/it]\r\n"}
+,{"stream_name":"stdout","time":2849.873351275,"data":"{'loss': '0.02158', 'grad_norm': '0.1184', 'learning_rate': '0.001', 'epoch': '0.5917'}\r\n"}
+,{"stream_name":"stdout","time":2871.095863242,"data":"20%|█▉        | 704/3549 [44:25\u003c3:11:29,  4.04s/it]\r\n"}
+,{"stream_name":"stdout","time":2875.464608572,"data":"[val] epoch_00p42_step_500: root 84.5% (991/1173), exact match 60.1% (705/1173) in 745s  \u003c- best so far\r\n"}
+,{"stream_name":"stdout","time":2934.356171916,"data":"20%|██        | 720/3549 [45:28\u003c3:06:56,  3.96s/it]\r\n"}
+,{"stream_name":"stdout","time":2993.179095264,"data":"[speed] 2026-10-08 14:57 EAT: step 736/3549, 0.26 steps/s (3.79 s/step); ETA 2h57m for the remaining steps, finishing about 2026-10-08 17:55 EAT (training steps only; the per-epoch eval passes add a little)\r\n"}
+,{"stream_name":"stdout","time":2996.879995329,"data":"21%|██        | 737/3549 [46:31\u003c2:52:24,  3.68s/it]\r\n"}
+,{"stream_name":"stdout","time":3038.955526161,"data":"{'loss': '0.02227', 'grad_norm': '0.1158', 'learning_rate': '0.001', 'epoch': '0.634'}\r\n"}
+,{"stream_name":"stdout","time":3056.921279247,"data":"21%|██        | 753/3549 [47:31\u003c3:13:27,  4.15s/it]\r\n"}
+,{"stream_name":"stdout","time":3067.173482659,"data":"[save] checkpoint-750 copied to /kaggle/working/byt5_7fcf432_0aa5bdb_final/last_checkpoint in 0s\r\n"}
+,{"stream_name":"stdout","time":3067.223954736,"data":"[save] removed last_checkpoint.previous/ (the newer copy has had time to upload)\r\n"}
+,{"stream_name":"stdout","time":3120.296404574,"data":"22%|██▏       | 769/3549 [48:34\u003c3:02:17,  3.93s/it]\r\n"}
+,{"stream_name":"stdout","time":3182.850406318,"data":"22%|██▏       | 786/3549 [49:37\u003c2:48:33,  3.66s/it]\r\n"}
+,{"stream_name":"stdout","time":3228.292249583,"data":"{'loss': '0.02112', 'grad_norm': '0.111', 'learning_rate': '0.001', 'epoch': '0.6762'}\r\n"}
+,{"stream_name":"stdout","time":3245.591327045,"data":"23%|██▎       | 803/3549 [50:39\u003c3:05:54,  4.06s/it]\r\n"}
+,{"stream_name":"stdout","time":3308.80910761,"data":"23%|██▎       | 819/3549 [51:43\u003c2:59:16,  3.94s/it]\r\n"}
+,{"stream_name":"stdout","time":3371.804272561,"data":"24%|██▎       | 836/3549 [52:46\u003c2:47:16,  3.70s/it]\r\n"}
+,{"stream_name":"stdout","time":3417.659936441,"data":"{'loss': '0.02098', 'grad_norm': '0.202', 'learning_rate': '0.001', 'epoch': '0.7185'}\r\n"}
+,{"stream_name":"stdout","time":3435.062019029,"data":"24%|██▍       | 853/3549 [53:49\u003c3:03:21,  4.08s/it]\r\n"}
+,{"stream_name":"stdout","time":3498.682654781,"data":"24%|██▍       | 869/3549 [54:52\u003c2:56:39,  3.95s/it]\r\n"}
+,{"stream_name":"stdout","time":3561.487805096,"data":"25%|██▍       | 886/3549 [55:55\u003c2:44:03,  3.70s/it]\r\n"}
+,{"stream_name":"stdout","time":3607.088991044,"data":"{'loss': '0.02288', 'grad_norm': '0.1053', 'learning_rate': '0.001', 'epoch': '0.7608'}\r\n"}
+,{"stream_name":"stdout","time":3624.237021747,"data":"25%|██▌       | 903/3549 [56:58\u003c2:58:14,  4.04s/it]\r\n"}
+,{"stream_name":"stdout","time":3688.180465546,"data":"26%|██▌       | 919/3549 [58:02\u003c2:55:02,  3.99s/it]\r\n"}
+,{"stream_name":"stdout","time":3750.961287063,"data":"26%|██▋       | 936/3549 [59:05\u003c2:40:30,  3.69s/it]\r\n"}
+,{"stream_name":"stdout","time":3796.52851741,"data":"{'loss': '0.02341', 'grad_norm': '0.09746', 'learning_rate': '0.001', 'epoch': '0.803'}\r\n"}
+,{"stream_name":"stdout","time":3813.841930509,"data":"27%|██▋       | 953/3549 [1:00:07\u003c2:55:04,  4.05s/it]\r\n"}
+,{"stream_name":"stdout","time":3869.439742275,"data":"[val] epoch_00p63_step_750: root 85.1% (998/1173), exact match 56.8% (666/1173) in 783s  \u003c- best so far\r\n"}
+,{"stream_name":"stdout","time":3877.294442999,"data":"27%|██▋       | 969/3549 [1:01:11\u003c2:49:14,  3.94s/it]\r\n"}
+,{"stream_name":"stdout","time":3895.932061934,"data":"[speed] 2026-10-08 15:12 EAT: step 974/3549, 0.26 steps/s (3.79 s/step); ETA 2h42m for the remaining steps, finishing about 2026-10-08 17:55 EAT (training steps only; the per-epoch eval passes add a little)\r\n"}
+,{"stream_name":"stdout","time":3940.161490791,"data":"28%|██▊       | 986/3549 [1:02:14\u003c2:37:26,  3.69s/it]\r\n"}
+,{"stream_name":"stdout","time":3985.684706128,"data":"{'loss': '0.01985', 'grad_norm': '0.103', 'learning_rate': '0.001', 'epoch': '0.8453'}\r\n"}
+,{"stream_name":"stdout","time":4003.85024382,"data":"28%|██▊       | 1003/3549 [1:03:17\u003c2:56:01,  4.15s/it]\r\n"}
+,{"stream_name":"stdout","time":4012.689176103,"data":"[save] checkpoint-1000 copied to /kaggle/working/byt5_7fcf432_0aa5bdb_final/last_checkpoint in 0s\r\n"}
+,{"stream_name":"stdout","time":4012.739938996,"data":"[save] removed last_checkpoint.previous/ (the newer copy has had time to upload)\r\n"}
+,{"stream_name":"stdout","time":4066.972657433,"data":"29%|██▊       | 1019/3549 [1:04:21\u003c2:45:31,  3.93s/it]\r\n"}
+,{"stream_name":"stdout","time":4129.281564049,"data":"29%|██▉       | 1036/3549 [1:05:23\u003c2:33:17,  3.66s/it]\r\n"}
+,{"stream_name":"stdout","time":4174.56204203,"data":"{'loss': '0.01776', 'grad_norm': '0.1076', 'learning_rate': '0.001', 'epoch': '0.8876'}\r\n"}
+,{"stream_name":"stdout","time":4191.776594264,"data":"30%|██▉       | 1053/3549 [1:06:25\u003c2:47:07,  4.02s/it]\r\n"}
+,{"stream_name":"stdout","time":4254.87136873,"data":"30%|███       | 1069/3549 [1:07:29\u003c2:42:10,  3.92s/it]\r\n"}
+,{"stream_name":"stdout","time":4317.196509392,"data":"31%|███       | 1086/3549 [1:08:31\u003c2:30:30,  3.67s/it]\r\n"}
+,{"stream_name":"stdout","time":4362.621934429,"data":"{'loss': '0.01754', 'grad_norm': '0.09066', 'learning_rate': '0.001', 'epoch': '0.9298'}\r\n"}
+,{"stream_name":"stdout","time":4379.875960471,"data":"31%|███       | 1103/3549 [1:09:33\u003c2:44:31,  4.04s/it]\r\n"}
+,{"stream_name":"stdout","time":4443.190306489,"data":"32%|███▏      | 1119/3549 [1:10:37\u003c2:39:35,  3.94s/it]\r\n"}
+,{"stream_name":"stdout","time":4505.953921637,"data":"32%|███▏      | 1136/3549 [1:11:40\u003c2:28:06,  3.68s/it]\r\n"}
+,{"stream_name":"stdout","time":4551.530932615,"data":"{'loss': '0.01653', 'grad_norm': '0.08969', 'learning_rate': '0.001', 'epoch': '0.9721'}\r\n"}
+,{"stream_name":"stdout","time":4568.519659633,"data":"32%|███▏      | 1153/3549 [1:12:42\u003c2:37:40,  3.95s/it]\r\n"}
+,{"stream_name":"stdout","time":4630.161229976,"data":"33%|███▎      | 1169/3549 [1:13:44\u003c2:27:22,  3.72s/it]\r\n"}
+,{"stream_name":"stdout","time":4690.440680101,"data":"9%|▉         | 18/193 [00:10\u003c01:47,  1.63it/s]\u001b[A\r\n"}
+,{"stream_name":"stdout","time":4723.074788251,"data":"[val] epoch_00p85_step_1000: root 83.2% (976/1173), exact match 67.9% (797/1173) in 703s\r\n"}
+,{"stream_name":"stdout","time":4750.497679586,"data":"61%|██████    | 118/193 [01:10\u003c00:46,  1.63it/s]\u001b[A\r\n"}
+,{"stream_name":"stdout","time":4793.868268675,"data":"\u001b[A{'eval_loss': '0.004551', 'eval_runtime': '115.3', 'eval_samples_per_second': '106.9', 'eval_steps_per_second': '1.673', 'epoch': '1'}\r\n"}
+,{"stream_name":"stdout","time":4794.215660076,"data":"                                                 \u001b[A\r\n"}
+,{"stream_name":"stdout","time":4794.5723453,"data":"\u001b[A{'eval_dictionary_nominal_loss': '0.02802', 'eval_dictionary_nominal_runtime': '0.6675', 'eval_dictionary_nominal_samples_per_second': '167.8', 'eval_dictionary_nominal_steps_per_second': '2.996', 'epoch': '1'}\r\n"}
+,{"stream_name":"stdout","time":4799.499956444,"data":"                                             \u001b[A\r\n"}
+,{"stream_name":"stdout","time":4803.71575968,"data":"[speed] 2026-10-08 15:28 EAT: step 1184/3549, 0.23 steps/s (4.33 s/step); ETA 2h50m for the remaining steps, finishing about 2026-10-08 18:18 EAT (training steps only; the per-epoch eval passes add a little)\r\n"}
+,{"stream_name":"stdout","time":4812.044954833,"data":"33%|███▎      | 1186/3549 [1:16:46\u003c14:05:21, 21.46s/it]\r\n"}
+,{"stream_name":"stdout","time":4863.70533593,"data":"{'loss': '0.018', 'grad_norm': '0.02706', 'learning_rate': '0.001', 'epoch': '1.014'}\r\n"}
+,{"stream_name":"stdout","time":4875.5259142,"data":"34%|███▍      | 1202/3549 [1:17:49\u003c2:36:32,  4.00s/it]\r\n"}
+,{"stream_name":"stdout","time":4937.679564651,"data":"34%|███▍      | 1219/3549 [1:18:52\u003c2:21:23,  3.64s/it]\r\n"}
+,{"stream_name":"stdout","time":5000.579705017,"data":"35%|███▍      | 1236/3549 [1:19:54\u003c2:35:25,  4.03s/it]\r\n"}
+,{"stream_name":"stdout","time":5052.645451487,"data":"{'loss': '0.01589', 'grad_norm': '0.03597', 'learning_rate': '0.001', 'epoch': '1.057'}\r\n"}
+,{"stream_name":"stdout","time":5062.446391282,"data":"35%|███▌      | 1251/3549 [1:20:56\u003c2:54:26,  4.55s/it]\r\n"}
+,{"stream_name":"stdout","time":5078.195877805,"data":"[save] checkpoint-1250 copied to /kaggle/working/byt5_7fcf432_0aa5bdb_final/last_checkpoint in 0s\r\n"}
+,{"stream_name":"stdout","time":5078.29694767,"data":"[save] removed last_checkpoint.previous/ (the newer copy has had time to upload)\r\n"}
+,{"stream_name":"stdout","time":5125.639643492,"data":"36%|███▌      | 1268/3549 [1:22:00\u003c2:20:05,  3.69s/it]\r\n"}
+,{"stream_name":"stdout","time":5188.167319875,"data":"36%|███▌      | 1285/3549 [1:23:01\u003c2:27:46,  3.92s/it]\r\n"}
+,{"stream_name":"stdout","time":5243.428140864,"data":"{'loss': '0.0155', 'grad_norm': '0.02607', 'learning_rate': '0.001', 'epoch': '1.099'}\r\n"}
+,{"stream_name":"stdout","time":5251.202647784,"data":"37%|███▋      | 1301/3549 [1:24:05\u003c2:26:36,  3.91s/it]\r\n"}
+,{"stream_name":"stdout","time":5313.642138513,"data":"37%|███▋      | 1318/3549 [1:25:08\u003c2:15:58,  3.66s/it]\r\n"}
+,{"stream_name":"stdout","time":5375.859041478,"data":"38%|███▊      | 1335/3549 [1:26:09\u003c2:23:30,  3.89s/it]\r\n"}
+,{"stream_name":"stdout","time":5431.376320298,"data":"{'loss': '0.016', 'grad_norm': '0.02679', 'learning_rate': '0.001', 'epoch': '1.141'}\r\n"}
+,{"stream_name":"stdout","time":5439.118107975,"data":"38%|███▊      | 1351/3549 [1:27:13\u003c2:23:51,  3.93s/it]\r\n"}
+,{"stream_name":"stdout","time":5502.015865539,"data":"39%|███▊      | 1368/3549 [1:28:16\u003c2:13:20,  3.67s/it]\r\n"}
+,{"stream_name":"stdout","time":5564.76753525,"data":"39%|███▉      | 1385/3549 [1:29:18\u003c2:21:28,  3.92s/it]\r\n"}
+,{"stream_name":"stdout","time":5620.378654186,"data":"{'loss': '0.01473', 'grad_norm': '0.02023', 'learning_rate': '0.001', 'epoch': '1.183'}\r\n"}
+,{"stream_name":"stdout","time":5628.230837369,"data":"39%|███▉      | 1401/3549 [1:30:22\u003c2:21:11,  3.94s/it]\r\n"}
+,{"stream_name":"stdout","time":5691.29373744,"data":"40%|███▉      | 1418/3549 [1:31:25\u003c2:10:55,  3.69s/it]\r\n"}
+,{"stream_name":"stdout","time":5705.993020125,"data":"[speed] 2026-10-08 15:43 EAT: step 1422/3549, 0.26 steps/s (3.79 s/step); ETA 2h14m for the remaining steps, finishing about 2026-10-08 17:57 EAT (training steps only; the per-epoch eval passes add a little)\r\n"}
+,{"stream_name":"stdout","time":5754.002348822,"data":"40%|████      | 1435/3549 [1:32:27\u003c2:17:51,  3.91s/it]\r\n"}
+,{"stream_name":"stdout","time":5795.404456695,"data":"[val] epoch_01p06_step_1250: root 86.6% (1016/1173), exact match 70.0% (821/1173) in 712s  \u003c- best so far\r\n"}
+,{"stream_name":"stdout","time":5809.519155086,"data":"{'loss': '0.01462', 'grad_norm': '0.03106', 'learning_rate': '0.001', 'epoch': '1.226'}\r\n"}
+,{"stream_name":"stdout","time":5817.337982148,"data":"41%|████      | 1451/3549 [1:33:31\u003c2:17:56,  3.94s/it]\r\n"}
+,{"stream_name":"stdout","time":5880.139515131,"data":"41%|████▏     | 1468/3549 [1:34:34\u003c2:07:29,  3.68s/it]\r\n"}
+,{"stream_name":"stdout","time":5942.772264258,"data":"42%|████▏     | 1485/3549 [1:35:36\u003c2:15:18,  3.93s/it]\r\n"}
+,{"stream_name":"stdout","time":5998.414346735,"data":"{'loss': '0.01577', 'grad_norm': '0.04801', 'learning_rate': '0.001', 'epoch': '1.268'}\r\n"}
+,{"stream_name":"stdout","time":6007.086508666,"data":"42%|████▏     | 1501/3549 [1:36:41\u003c2:22:51,  4.19s/it]\r\n"}
+,{"stream_name":"stdout","time":6023.693628586,"data":"[save] checkpoint-1500 copied to /kaggle/working/byt5_7fcf432_0aa5bdb_final/last_checkpoint in 0s\r\n"}
+,{"stream_name":"stdout","time":6023.79684714,"data":"[save] removed last_checkpoint.previous/ (the newer copy has had time to upload)\r\n"}
+,{"stream_name":"stdout","time":6069.73331877,"data":"43%|████▎     | 1518/3549 [1:37:44\u003c2:04:20,  3.67s/it]\r\n"}
+,{"stream_name":"stdout","time":6132.123002076,"data":"43%|████▎     | 1535/3549 [1:38:45\u003c2:11:57,  3.93s/it]\r\n"}
+,{"stream_name":"stdout","time":6187.405693567,"data":"{'loss': '0.01578', 'grad_norm': '0.04588', 'learning_rate': '0.001', 'epoch': '1.31'}\r\n"}
+,{"stream_name":"stdout","time":6195.247939717,"data":"44%|████▎     | 1551/3549 [1:39:49\u003c2:11:05,  3.94s/it]\r\n"}
+,{"stream_name":"stdout","time":6258.138334199,"data":"44%|████▍     | 1568/3549 [1:40:52\u003c2:01:57,  3.69s/it]\r\n"}
+,{"stream_name":"stdout","time":6320.758961331,"data":"45%|████▍     | 1585/3549 [1:41:54\u003c2:08:37,  3.93s/it]\r\n"}
+,{"stream_name":"stdout","time":6376.059927243,"data":"{'loss': '0.01434', 'grad_norm': '0.0441', 'learning_rate': '0.001', 'epoch': '1.352'}\r\n"}
+,{"stream_name":"stdout","time":6383.762450207,"data":"45%|████▌     | 1601/3549 [1:42:58\u003c2:06:57,  3.91s/it]\r\n"}
+,{"stream_name":"stdout","time":6446.27775519,"data":"46%|████▌     | 1618/3549 [1:44:00\u003c1:57:39,  3.66s/it]\r\n"}
+,{"stream_name":"stdout","time":6508.588623706,"data":"46%|████▌     | 1635/3549 [1:45:02\u003c2:04:24,  3.90s/it]\r\n"}
+,{"stream_name":"stdout","time":6564.084623129,"data":"{'loss': '0.01575', 'grad_norm': '0.03555', 'learning_rate': '0.001', 'epoch': '1.395'}\r\n"}
+,{"stream_name":"stdout","time":6571.890199234,"data":"47%|████▋     | 1651/3549 [1:46:06\u003c2:04:34,  3.94s/it]\r\n"}
+,{"stream_name":"stdout","time":6608.937349425,"data":"[speed] 2026-10-08 15:58 EAT: step 1661/3549, 0.26 steps/s (3.78 s/step); ETA 1h58m for the remaining steps, finishing about 2026-10-08 17:57 EAT (training steps only; the per-epoch eval passes add a little)\r\n"}
+,{"stream_name":"stdout","time":6634.622262731,"data":"47%|████▋     | 1668/3549 [1:47:09\u003c1:55:06,  3.67s/it]\r\n"}
+,{"stream_name":"stdout","time":6697.371501996,"data":"47%|████▋     | 1685/3549 [1:48:11\u003c2:01:27,  3.91s/it]\r\n"}
+,{"stream_name":"stdout","time":6753.040070581,"data":"{'loss': '0.02147', 'grad_norm': '0.02778', 'learning_rate': '0.001', 'epoch': '1.437'}\r\n"}
+,{"stream_name":"stdout","time":6760.885662467,"data":"48%|████▊     | 1701/3549 [1:49:15\u003c2:01:28,  3.94s/it]\r\n"}
+,{"stream_name":"stdout","time":6763.071267774,"data":"[val] epoch_01p27_step_1500: root 82.9% (972/1173), exact match 67.3% (789/1173) in 726s\r\n"}
+,{"stream_name":"stdout","time":6823.830448176,"data":"48%|████▊     | 1718/3549 [1:50:18\u003c1:52:18,  3.68s/it]\r\n"}
+,{"stream_name":"stdout","time":6886.43954523,"data":"49%|████▉     | 1735/3549 [1:51:20\u003c1:59:36,  3.96s/it]\r\n"}
+,{"stream_name":"stdout","time":6942.107965557,"data":"{'loss': '0.01613', 'grad_norm': '0.02749', 'learning_rate': '0.001', 'epoch': '1.479'}\r\n"}
+,{"stream_name":"stdout","time":6950.779136791,"data":"49%|████▉     | 1751/3549 [1:52:24\u003c2:06:31,  4.22s/it]\r\n"}
+,{"stream_name":"stdout","time":6969.195786314,"data":"[save] checkpoint-1750 copied to /kaggle/working/byt5_7fcf432_0aa5bdb_final/last_checkpoint in 0s\r\n"}
+,{"stream_name":"stdout","time":6969.246635712,"data":"[save] removed last_checkpoint.previous/ (the newer copy has had time to upload)\r\n"}
+,{"stream_name":"stdout","time":7012.008945122,"data":"50%|████▉     | 1767/3549 [1:53:26\u003c1:51:08,  3.74s/it]\r\n"}
+,{"stream_name":"stdout","time":7073.482914533,"data":"50%|█████     | 1784/3549 [1:54:27\u003c1:48:05,  3.67s/it]\r\n"}
+,{"stream_name":"stdout","time":7133.330964411,"data":"{'loss': '0.01341', 'grad_norm': '0.02074', 'learning_rate': '0.001', 'epoch': '1.522'}\r\n"}
+,{"stream_name":"stdout","time":7137.219293811,"data":"51%|█████     | 1800/3549 [1:55:31\u003c1:54:48,  3.94s/it]\r\n"}
+,{"stream_name":"stdout","time":7200.611307842,"data":"51%|█████     | 1817/3549 [1:56:35\u003c1:46:20,  3.68s/it]\r\n"}
+,{"stream_name":"stdout","time":7262.89812058,"data":"52%|█████▏    | 1834/3549 [1:57:36\u003c1:46:54,  3.74s/it]\r\n"}
+,{"stream_name":"stdout","time":7322.814092359,"data":"{'loss': '0.01399', 'grad_norm': '0.02097', 'learning_rate': '0.001', 'epoch': '1.564'}\r\n"}
+,{"stream_name":"stdout","time":7326.709103117,"data":"52%|█████▏    | 1850/3549 [1:58:40\u003c1:51:43,  3.95s/it]\r\n"}
+,{"stream_name":"stdout","time":7389.827822503,"data":"53%|█████▎    | 1867/3549 [1:59:44\u003c1:43:10,  3.68s/it]\r\n"}
+,{"stream_name":"stdout","time":7452.080626436,"data":"53%|█████▎    | 1884/3549 [2:00:45\u003c1:43:45,  3.74s/it]\r\n"}
+,{"stream_name":"stdout","time":7512.230247964,"data":"[speed] 2026-10-08 16:13 EAT: step 1899/3549, 0.26 steps/s (3.80 s/step); ETA 1h44m for the remaining steps, finishing about 2026-10-08 17:57 EAT (training steps only; the per-epoch eval passes add a little)\r\n"}
+,{"stream_name":"stdout","time":7512.230284215,"data":"54%|█████▎    | 1899/3549 [2:01:46\u003c1:48:57,  3.96s/it]\r\n"}
+,{"stream_name":"stdout","time":7512.230301556,"data":"{'loss': '0.01386', 'grad_norm': '0.02575', 'learning_rate': '0.001', 'epoch': '1.606'}\r\n"}
+,{"stream_name":"stdout","time":7575.526276877,"data":"54%|█████▍    | 1916/3549 [2:02:49\u003c1:39:59,  3.67s/it]\r\n"}
+,{"stream_name":"stdout","time":7636.324661349,"data":"54%|█████▍    | 1933/3549 [2:03:49\u003c1:30:13,  3.35s/it]\r\n"}
+,{"stream_name":"stdout","time":7696.676189213,"data":"55%|█████▍    | 1948/3549 [2:04:50\u003c1:46:21,  3.99s/it]\r\n"}
+,{"stream_name":"stdout","time":7700.611358079,"data":"{'loss': '0.01414', 'grad_norm': '0.03209', 'learning_rate': '0.001', 'epoch': '1.648'}\r\n"}
+,{"stream_name":"stdout","time":7717.224844171,"data":"[val] epoch_01p48_step_1750: root 85.8% (1006/1173), exact match 70.2% (823/1173) in 744s\r\n"}
+,{"stream_name":"stdout","time":7756.759417686,"data":"55%|█████▌    | 1964/3549 [2:05:51\u003c1:37:28,  3.69s/it]\r\n"}
+,{"stream_name":"stdout","time":7817.480381918,"data":"56%|█████▌    | 1981/3549 [2:06:52\u003c1:29:32,  3.43s/it]\r\n"}
+,{"stream_name":"stdout","time":7877.552892446,"data":"56%|█████▌    | 1996/3549 [2:07:51\u003c1:42:02,  3.94s/it]\r\n"}
+,{"stream_name":"stdout","time":7889.368769548,"data":"{'loss': '0.01282', 'grad_norm': '0.01538', 'learning_rate': '0.001', 'epoch': '1.691'}\r\n"}
+,{"stream_name":"stdout","time":7914.715314134,"data":"[save] checkpoint-2000 copied to /kaggle/working/byt5_7fcf432_0aa5bdb_final/last_checkpoint in 0s\r\n"}
+,{"stream_name":"stdout","time":7914.750283021,"data":"[save] removed last_checkpoint.previous/ (the newer copy has had time to upload)\r\n"}
+,{"stream_name":"stdout","time":7938.68729803,"data":"57%|█████▋    | 2012/3549 [2:08:53\u003c1:34:39,  3.70s/it]\r\n"}
+,{"stream_name":"stdout","time":7999.974245364,"data":"57%|█████▋    | 2029/3549 [2:09:54\u003c1:28:02,  3.48s/it]\r\n"}
+,{"stream_name":"stdout","time":8063.021388081,"data":"58%|█████▊    | 2045/3549 [2:10:57\u003c1:39:11,  3.96s/it]\r\n"}
+,{"stream_name":"stdout","time":8078.896901658,"data":"{'loss': '0.01344', 'grad_norm': '0.02626', 'learning_rate': '0.001', 'epoch': '1.733'}\r\n"}
+,{"stream_name":"stdout","time":8123.918984507,"data":"58%|█████▊    | 2061/3549 [2:11:58\u003c1:31:22,  3.68s/it]\r\n"}
+,{"stream_name":"stdout","time":8185.808421673,"data":"59%|█████▊    | 2078/3549 [2:13:00\u003c1:26:59,  3.55s/it]\r\n"}
+,{"stream_name":"stdout","time":8248.786785631,"data":"59%|█████▉    | 2094/3549 [2:14:02\u003c1:38:13,  4.05s/it]\r\n"}
+,{"stream_name":"stdout","time":8268.463750723,"data":"{'loss': '0.01305', 'grad_norm': '0.02794', 'learning_rate': '0.001', 'epoch': '1.775'}\r\n"}
+,{"stream_name":"stdout","time":8310.070607734,"data":"59%|█████▉    | 2110/3549 [2:15:04\u003c1:29:07,  3.72s/it]\r\n"}
+,{"stream_name":"stdout","time":8372.050761446,"data":"60%|█████▉    | 2127/3549 [2:16:06\u003c1:25:44,  3.62s/it]\r\n"}
+,{"stream_name":"stdout","time":8414.254663355,"data":"[speed] 2026-10-08 16:28 EAT: step 2138/3549, 0.27 steps/s (3.77 s/step); ETA 1h28m for the remaining steps, finishing about 2026-10-08 17:56 EAT (training steps only; the per-epoch eval passes add a little)\r\n"}
+,{"stream_name":"stdout","time":8434.029382648,"data":"60%|██████    | 2143/3549 [2:17:08\u003c1:33:15,  3.98s/it]\r\n"}
+,{"stream_name":"stdout","time":8457.61051364,"data":"{'loss': '0.01834', 'grad_norm': '0.02209', 'learning_rate': '0.001', 'epoch': '1.817'}\r\n"}
+,{"stream_name":"stdout","time":8495.039363251,"data":"61%|██████    | 2159/3549 [2:18:09\u003c1:25:39,  3.70s/it]\r\n"}
+,{"stream_name":"stdout","time":8557.478596843,"data":"61%|██████▏   | 2176/3549 [2:19:12\u003c1:24:34,  3.70s/it]\r\n"}
+,{"stream_name":"stdout","time":8618.735746084,"data":"62%|██████▏   | 2192/3549 [2:20:12\u003c1:30:01,  3.98s/it]\r\n"}
+,{"stream_name":"stdout","time":8631.721321366,"data":"[val] epoch_01p69_step_2000: root 87.0% (1021/1173), exact match 71.6% (840/1173) in 704s  \u003c- best so far\r\n"}
+,{"stream_name":"stdout","time":8646.128876054,"data":"{'loss': '0.01471', 'grad_norm': '0.03419', 'learning_rate': '0.001', 'epoch': '1.86'}\r\n"}
+,{"stream_name":"stdout","time":8679.924542196,"data":"62%|██████▏   | 2208/3549 [2:21:14\u003c1:22:44,  3.70s/it]\r\n"}
+,{"stream_name":"stdout","time":8742.358307153,"data":"63%|██████▎   | 2225/3549 [2:22:16\u003c1:20:46,  3.66s/it]\r\n"}
+,{"stream_name":"stdout","time":8803.143416295,"data":"63%|██████▎   | 2241/3549 [2:23:17\u003c1:27:50,  4.03s/it]\r\n"}
+,{"stream_name":"stdout","time":8834.80834575,"data":"{'loss': '0.01236', 'grad_norm': '0.01736', 'learning_rate': '0.001', 'epoch': '1.902'}\r\n"}
+,{"stream_name":"stdout","time":8860.163702657,"data":"[save] checkpoint-2250 copied to /kaggle/working/byt5_7fcf432_0aa5bdb_final/last_checkpoint in 0s\r\n"}
+,{"stream_name":"stdout","time":8860.26535491,"data":"[save] removed last_checkpoint.previous/ (the newer copy has had time to upload)\r\n"}
+,{"stream_name":"stdout","time":8865.760434288,"data":"64%|██████▎   | 2257/3549 [2:24:20\u003c1:20:56,  3.76s/it]\r\n"}
+,{"stream_name":"stdout","time":8928.163872963,"data":"64%|██████▍   | 2274/3549 [2:25:22\u003c1:18:05,  3.68s/it]\r\n"}
+,{"stream_name":"stdout","time":8988.792439415,"data":"65%|██████▍   | 2290/3549 [2:26:22\u003c1:24:32,  4.03s/it]\r\n"}
+,{"stream_name":"stdout","time":9024.213590933,"data":"{'loss': '0.01242', 'grad_norm': '0.01894', 'learning_rate': '0.001', 'epoch': '1.944'}\r\n"}
+,{"stream_name":"stdout","time":9050.777349465,"data":"65%|██████▍   | 2306/3549 [2:27:25\u003c1:18:20,  3.78s/it]\r\n"}
+,{"stream_name":"stdout","time":9113.510348234,"data":"65%|██████▌   | 2323/3549 [2:28:27\u003c1:15:32,  3.70s/it]\r\n"}
+,{"stream_name":"stdout","time":9177.278227457,"data":"66%|██████▌   | 2340/3549 [2:29:31\u003c1:19:53,  3.96s/it]\r\n"}
+,{"stream_name":"stdout","time":9211.621023934,"data":"{'loss': '0.02185', 'grad_norm': '0.01987', 'learning_rate': '0.001', 'epoch': '1.986'}\r\n"}
+,{"stream_name":"stdout","time":9237.371965395,"data":"66%|██████▋   | 2356/3549 [2:30:31\u003c1:13:19,  3.69s/it]\r\n"}
+,{"stream_name":"stdout","time":9297.463300546,"data":"22%|██▏       | 42/193 [00:24\u003c01:27,  1.74it/s]\u001b[A\r\n"}
+,{"stream_name":"stdout","time":9357.550218584,"data":"74%|███████▍  | 143/193 [01:24\u003c00:27,  1.81it/s]\u001b[A\r\n"}
+,{"stream_name":"stdout","time":9387.189142944,"data":"\u001b[A{'eval_loss': '0.003633', 'eval_runtime': '115.6', 'eval_samples_per_second': '106.6', 'eval_steps_per_second': '1.669', 'epoch': '2'}\r\n"}
+,{"stream_name":"stdout","time":9387.189196252,"data":"[speed] 2026-10-08 16:44 EAT: step 2366/3549, 0.27 steps/s (3.75 s/step); ETA 1h14m for the remaining steps, finishing about 2026-10-08 17:58 EAT (training steps only; the per-epoch eval passes add a little)\r\n"}
+,{"stream_name":"stdout","time":9387.546523625,"data":"                                                 \u001b[A\r\n"}
+,{"stream_name":"stdout","time":9387.973437951,"data":"\u001b[A{'eval_dictionary_nominal_loss': '0.0117', 'eval_dictionary_nominal_runtime': '0.7207', 'eval_dictionary_nominal_samples_per_second': '155.4', 'eval_dictionary_nominal_steps_per_second': '2.775', 'epoch': '2'}\r\n"}
+,{"stream_name":"stdout","time":9392.73105104,"data":"                                             \u001b[A\r\n"}
+,{"stream_name":"stdout","time":9417.628009635,"data":"67%|██████▋   | 2372/3549 [2:33:31\u003c3:17:12, 10.05s/it]\r\n"}
+,{"stream_name":"stdout","time":9480.777861903,"data":"67%|██████▋   | 2388/3549 [2:34:35\u003c1:15:36,  3.91s/it]\r\n"}
+,{"stream_name":"stdout","time":9521.413919321,"data":"{'loss': '0.01114', 'grad_norm': '0.04185', 'learning_rate': '0.001', 'epoch': '2.029'}\r\n"}
+,{"stream_name":"stdout","time":9543.495979171,"data":"68%|██████▊   | 2405/3549 [2:35:37\u003c1:10:20,  3.69s/it]\r\n"}
+,{"stream_name":"stdout","time":9603.495483512,"data":"68%|██████▊   | 2421/3549 [2:36:37\u003c1:15:46,  4.03s/it]\r\n"}
+,{"stream_name":"stdout","time":9612.575323683,"data":"[val] epoch_01p90_step_2250: root 86.5% (1015/1173), exact match 71.1% (834/1173) in 740s\r\n"}
+,{"stream_name":"stdout","time":9666.162411214,"data":"69%|██████▊   | 2437/3549 [2:37:40\u003c1:11:31,  3.86s/it]\r\n"}
+,{"stream_name":"stdout","time":9710.232568642,"data":"{'loss': '0.01155', 'grad_norm': '0.02311', 'learning_rate': '0.001', 'epoch': '2.071'}\r\n"}
+,{"stream_name":"stdout","time":9728.698586365,"data":"69%|██████▉   | 2454/3549 [2:38:43\u003c1:07:37,  3.71s/it]\r\n"}
+,{"stream_name":"stdout","time":9792.20807769,"data":"70%|██████▉   | 2471/3549 [2:39:46\u003c1:12:32,  4.04s/it]\r\n"}
+,{"stream_name":"stdout","time":9854.609797015,"data":"70%|███████   | 2487/3549 [2:40:49\u003c1:08:31,  3.87s/it]\r\n"}
+,{"stream_name":"stdout","time":9898.550024535,"data":"{'loss': '0.01124', 'grad_norm': '0.03428', 'learning_rate': '0.001', 'epoch': '2.113'}\r\n"}
+,{"stream_name":"stdout","time":9915.542635665,"data":"71%|███████   | 2503/3549 [2:41:49\u003c1:09:56,  4.01s/it]\r\n"}
+,{"stream_name":"stdout","time":9925.708961905,"data":"[save] checkpoint-2500 copied to /kaggle/working/byt5_7fcf432_0aa5bdb_final/last_checkpoint in 0s\r\n"}
+,{"stream_name":"stdout","time":9925.759066251,"data":"[save] removed last_checkpoint.previous/ (the newer copy has had time to upload)\r\n"}
+,{"stream_name":"stdout","time":9978.926297134,"data":"71%|███████   | 2520/3549 [2:42:53\u003c1:09:37,  4.06s/it]\r\n"}
+,{"stream_name":"stdout","time":10042.332925519,"data":"71%|███████▏  | 2536/3549 [2:43:56\u003c1:07:04,  3.97s/it]\r\n"}
+,{"stream_name":"stdout","time":10090.189401295,"data":"{'loss': '0.01098', 'grad_norm': '0.02284', 'learning_rate': '0.001', 'epoch': '2.156'}\r\n"}
+,{"stream_name":"stdout","time":10104.753726271,"data":"72%|███████▏  | 2553/3549 [2:44:59\u003c1:00:40,  3.65s/it]\r\n"}
+,{"stream_name":"stdout","time":10167.583058373,"data":"72%|███████▏  | 2570/3549 [2:46:01\u003c1:05:34,  4.02s/it]\r\n"}
+,{"stream_name":"stdout","time":10230.84939695,"data":"73%|███████▎  | 2586/3549 [2:47:05\u003c1:02:47,  3.91s/it]\r\n"}
+,{"stream_name":"stdout","time":10278.89148281,"data":"{'loss': '0.01081', 'grad_norm': '0.02033', 'learning_rate': '0.001', 'epoch': '2.198'}\r\n"}
+,{"stream_name":"stdout","time":10289.933315158,"data":"[speed] 2026-10-08 16:59 EAT: step 2602/3549, 0.26 steps/s (3.80 s/step); ETA 0h59m for the remaining steps, finishing about 2026-10-08 17:59 EAT (training steps only; the per-epoch eval passes add a little)\r\n"}
+,{"stream_name":"stdout","time":10293.644969613,"data":"73%|███████▎  | 2603/3549 [2:48:08\u003c58:10,  3.69s/it]\r\n"}
+,{"stream_name":"stdout","time":10357.13402998,"data":"74%|███████▍  | 2620/3549 [2:49:11\u003c1:03:03,  4.07s/it]\r\n"}
+,{"stream_name":"stdout","time":10420.477656949,"data":"74%|███████▍  | 2636/3549 [2:50:14\u003c59:55,  3.94s/it]\r\n"}
+,{"stream_name":"stdout","time":10468.61409331,"data":"{'loss': '0.01061', 'grad_norm': '0.01894', 'learning_rate': '0.001', 'epoch': '2.24'}\r\n"}
+,{"stream_name":"stdout","time":10483.320944984,"data":"75%|███████▍  | 2653/3549 [2:51:17\u003c55:02,  3.69s/it]\r\n"}
+,{"stream_name":"stdout","time":10546.672498738,"data":"75%|███████▌  | 2670/3549 [2:52:20\u003c59:27,  4.06s/it]\r\n"}
+,{"stream_name":"stdout","time":10609.979057353,"data":"76%|███████▌  | 2686/3549 [2:53:24\u003c57:26,  3.99s/it]\r\n"}
+,{"stream_name":"stdout","time":10651.201079422,"data":"[val] epoch_02p11_step_2500: root 86.4% (1014/1173), exact match 71.2% (835/1173) in 708s\r\n"}
+,{"stream_name":"stdout","time":10657.776383483,"data":"{'loss': '0.01049', 'grad_norm': '0.04588', 'learning_rate': '0.001', 'epoch': '2.282'}\r\n"}
+,{"stream_name":"stdout","time":10672.401124483,"data":"76%|███████▌  | 2703/3549 [2:54:26\u003c51:43,  3.67s/it]\r\n"}
+,{"stream_name":"stdout","time":10735.468083421,"data":"77%|███████▋  | 2720/3549 [2:55:29\u003c55:11,  4.00s/it]\r\n"}
+,{"stream_name":"stdout","time":10798.388084561,"data":"77%|███████▋  | 2736/3549 [2:56:32\u003c53:05,  3.92s/it]\r\n"}
+,{"stream_name":"stdout","time":10845.969441913,"data":"{'loss': '0.01075', 'grad_norm': '0.05911', 'learning_rate': '0.001', 'epoch': '2.325'}\r\n"}
+,{"stream_name":"stdout","time":10861.396718059,"data":"78%|███████▊  | 2753/3549 [2:57:35\u003c50:00,  3.77s/it]\r\n"}
+,{"stream_name":"stdout","time":10871.199225363,"data":"[save] checkpoint-2750 copied to /kaggle/working/byt5_7fcf432_0aa5bdb_final/last_checkpoint in 0s\r\n"}
+,{"stream_name":"stdout","time":10871.297221812,"data":"[save] removed last_checkpoint.previous/ (the newer copy has had time to upload)\r\n"}
+,{"stream_name":"stdout","time":10924.3453233,"data":"78%|███████▊  | 2770/3549 [2:58:38\u003c52:30,  4.04s/it]\r\n"}
+,{"stream_name":"stdout","time":10987.371557707,"data":"79%|███████▊  | 2786/3549 [2:59:41\u003c50:20,  3.96s/it]\r\n"}
+,{"stream_name":"stdout","time":11035.192230982,"data":"{'loss': '0.0113', 'grad_norm': '0.03819', 'learning_rate': '0.001', 'epoch': '2.367'}\r\n"}
+,{"stream_name":"stdout","time":11049.913968205,"data":"79%|███████▉  | 2803/3549 [3:00:44\u003c45:54,  3.69s/it]\r\n"}
+,{"stream_name":"stdout","time":11113.73460483,"data":"79%|███████▉  | 2820/3549 [3:01:47\u003c49:40,  4.09s/it]\r\n"}
+,{"stream_name":"stdout","time":11176.679489773,"data":"80%|███████▉  | 2836/3549 [3:02:50\u003c46:37,  3.92s/it]\r\n"}
+,{"stream_name":"stdout","time":11191.221427603,"data":"[speed] 2026-10-08 17:14 EAT: step 2840/3549, 0.26 steps/s (3.79 s/step); ETA 0h44m for the remaining steps, finishing about 2026-10-08 17:59 EAT (training steps only; the per-epoch eval passes add a little)\r\n"}
+,{"stream_name":"stdout","time":11224.202028917,"data":"{'loss': '0.01095', 'grad_norm': '0.05429', 'learning_rate': '0.001', 'epoch': '2.409'}\r\n"}
+,{"stream_name":"stdout","time":11238.969887194,"data":"80%|████████  | 2853/3549 [3:03:53\u003c42:53,  3.70s/it]\r\n"}
+,{"stream_name":"stdout","time":11302.24631267,"data":"81%|████████  | 2870/3549 [3:04:56\u003c45:57,  4.06s/it]\r\n"}
+,{"stream_name":"stdout","time":11364.792076723,"data":"81%|████████▏ | 2886/3549 [3:05:59\u003c43:22,  3.93s/it]\r\n"}
+,{"stream_name":"stdout","time":11412.517341842,"data":"{'loss': '0.01109', 'grad_norm': '0.03432', 'learning_rate': '0.001', 'epoch': '2.451'}\r\n"}
+,{"stream_name":"stdout","time":11427.233307102,"data":"82%|████████▏ | 2903/3549 [3:07:01\u003c39:27,  3.66s/it]\r\n"}
+,{"stream_name":"stdout","time":11490.624756794,"data":"82%|████████▏ | 2920/3549 [3:08:04\u003c42:21,  4.04s/it]\r\n"}
+,{"stream_name":"stdout","time":11553.066765348,"data":"83%|████████▎ | 2936/3549 [3:09:07\u003c39:53,  3.91s/it]\r\n"}
+,{"stream_name":"stdout","time":11592.523156541,"data":"[val] epoch_02p32_step_2750: root 86.7% (1017/1173), exact match 71.5% (839/1173) in 701s\r\n"}
+,{"stream_name":"stdout","time":11600.56265398,"data":"{'loss': '0.01078', 'grad_norm': '0.0284', 'learning_rate': '0.001', 'epoch': '2.494'}\r\n"}
+,{"stream_name":"stdout","time":11615.244314162,"data":"83%|████████▎ | 2953/3549 [3:10:09\u003c36:23,  3.66s/it]\r\n"}
+,{"stream_name":"stdout","time":11678.300550307,"data":"84%|████████▎ | 2970/3549 [3:11:12\u003c38:52,  4.03s/it]\r\n"}
+,{"stream_name":"stdout","time":11740.983913009,"data":"84%|████████▍ | 2986/3549 [3:12:15\u003c36:39,  3.91s/it]\r\n"}
+,{"stream_name":"stdout","time":11788.484471305,"data":"{'loss': '0.01126', 'grad_norm': '0.02234', 'learning_rate': '0.001', 'epoch': '2.536'}\r\n"}
+,{"stream_name":"stdout","time":11803.792115449,"data":"85%|████████▍ | 3003/3549 [3:13:18\u003c34:12,  3.76s/it]\r\n"}
+,{"stream_name":"stdout","time":11816.732758265,"data":"[save] checkpoint-3000 copied to /kaggle/working/byt5_7fcf432_0aa5bdb_final/last_checkpoint in 0s\r\n"}
+,{"stream_name":"stdout","time":11816.783832627,"data":"[save] removed last_checkpoint.previous/ (the newer copy has had time to upload)\r\n"}
+,{"stream_name":"stdout","time":11867.216781342,"data":"85%|████████▌ | 3020/3549 [3:14:21\u003c35:55,  4.07s/it]\r\n"}
+,{"stream_name":"stdout","time":11930.675629991,"data":"86%|████████▌ | 3036/3549 [3:15:24\u003c34:02,  3.98s/it]\r\n"}
+,{"stream_name":"stdout","time":11978.552784378,"data":"{'loss': '0.0108', 'grad_norm': '0.05082', 'learning_rate': '0.001', 'epoch': '2.578'}\r\n"}
+,{"stream_name":"stdout","time":11993.153782271,"data":"86%|████████▌ | 3053/3549 [3:16:27\u003c30:17,  3.66s/it]\r\n"}
+,{"stream_name":"stdout","time":12056.531026054,"data":"87%|████████▋ | 3070/3549 [3:17:30\u003c32:15,  4.04s/it]\r\n"}
+,{"stream_name":"stdout","time":12091.839189228,"data":"[speed] 2026-10-08 17:29 EAT: step 3079/3549, 0.27 steps/s (3.77 s/step); ETA 0h29m for the remaining steps, finishing about 2026-10-08 17:59 EAT (training steps only; the per-epoch eval passes add a little)\r\n"}
+,{"stream_name":"stdout","time":12118.892286462,"data":"87%|████████▋ | 3086/3549 [3:18:33\u003c30:10,  3.91s/it]\r\n"}
+,{"stream_name":"stdout","time":12166.356138851,"data":"{'loss': '0.01083', 'grad_norm': '0.03547', 'learning_rate': '0.001', 'epoch': '2.62'}\r\n"}
+,{"stream_name":"stdout","time":12180.895502828,"data":"87%|████████▋ | 3103/3549 [3:19:35\u003c27:05,  3.64s/it]\r\n"}
+,{"stream_name":"stdout","time":12244.523199866,"data":"88%|████████▊ | 3120/3549 [3:20:38\u003c29:16,  4.09s/it]\r\n"}
+,{"stream_name":"stdout","time":12308.064944016,"data":"88%|████████▊ | 3136/3549 [3:21:42\u003c27:23,  3.98s/it]\r\n"}
+,{"stream_name":"stdout","time":12356.125306425,"data":"{'loss': '0.01025', 'grad_norm': '0.01674', 'learning_rate': '0.001', 'epoch': '2.663'}\r\n"}
+,{"stream_name":"stdout","time":12371.03105868,"data":"89%|████████▉ | 3153/3549 [3:22:45\u003c24:29,  3.71s/it]\r\n"}
+,{"stream_name":"stdout","time":12434.250766991,"data":"89%|████████▉ | 3170/3549 [3:23:48\u003c25:23,  4.02s/it]\r\n"}
+,{"stream_name":"stdout","time":12496.913060658,"data":"90%|████████▉ | 3186/3549 [3:24:51\u003c23:39,  3.91s/it]\r\n"}
+,{"stream_name":"stdout","time":12536.270317954,"data":"[val] epoch_02p54_step_3000: root 86.6% (1016/1173), exact match 71.4% (837/1173) in 703s\r\n"}
+,{"stream_name":"stdout","time":12536.49156797,"data":"[early stop] val_root_accuracy has not improved for 4 val pass(es) (patience 4): asking the trainer to save and stop\r\n"}
+,{"stream_name":"stdout","time":12536.593443486,"data":"[!] SIGTERM received: saving a checkpoint at the end of this step, then exiting.\r\n"}
+,{"stream_name":"stdout","time":12556.980085258,"data":"13%|█▎        | 26/193 [00:15\u003c01:37,  1.72it/s]\u001b[A\r\n"}
+,{"stream_name":"stdout","time":12566.31046596,"data":"[val] checkpoint-3198: not a scheduled val save (a timed save or a stop); not scored\r\n"}
+,{"stream_name":"stdout","time":12567.261543547,"data":"[save] checkpoint-3198 copied to /kaggle/working/byt5_7fcf432_0aa5bdb_final/last_checkpoint in 0s\r\n"}
+,{"stream_name":"stdout","time":12567.312252536,"data":"[save] removed last_checkpoint.previous/ (the newer copy has had time to upload)\r\n"}
+,{"stream_name":"stdout","time":12617.538049917,"data":"66%|██████▌   | 127/193 [01:15\u003c00:37,  1.77it/s]\u001b[A\r\n"}
+,{"stream_name":"stdout","time":12656.118974245,"data":"\u001b[A{'eval_loss': '0.003311', 'eval_runtime': '115.6', 'eval_samples_per_second': '106.6', 'eval_steps_per_second': '1.669', 'epoch': '2.703'}\r\n"}
+,{"stream_name":"stdout","time":12656.461096142,"data":"                                                 \u001b[A\r\n"}
+,{"stream_name":"stdout","time":12656.816816755,"data":"\u001b[A{'eval_dictionary_nominal_loss': '0.01812', 'eval_dictionary_nominal_runtime': '0.6877', 'eval_dictionary_nominal_samples_per_second': '162.9', 'eval_dictionary_nominal_steps_per_second': '2.908', 'epoch': '2.703'}\r\n"}
+,{"stream_name":"stdout","time":12656.968691545,"data":"                                             \u001b[A\r\n"}
+,{"stream_name":"stdout","time":12656.968728556,"data":"{'train_runtime': '1.246e+04', 'train_samples_per_second': '32.86', 'train_steps_per_second': '0.257', 'train_loss': '0.03386', 'epoch': '2.703'}\r\n"}
+,{"stream_name":"stdout","time":12656.968734713,"data":"Stopped by SIGTERM at step 3198; checkpoint saved in /tmp/geez_trainer_checkpoints/byt5_7fcf432_0aa5bdb_final. Rerun the same command to resume.\r\n"}
+,{"stream_name":"stdout","time":12658.795702742,"data":"Trainer exited with code 0 at 2026-10-08 17:38 EAT\r\n"}
+,{"stream_name":"stdout","time":12658.795746731,"data":"[speed] this session: 0.26 steps/s over 3197 steps (time spent restarting after timed saves not included)\r\n"}
+,{"stream_name":"stdout","time":12684.170895953,"data":"last_epoch_weights/ \u003c- /tmp/geez_trainer_checkpoints/byt5_7fcf432_0aa5bdb_final/checkpoint-3198\r\n"}
+,{"stream_name":"stdout","time":12684.170951399,"data":"$ /usr/bin/python3 evaluate_gold.py --system byt5 --model_dir /kaggle/working/byt5_7fcf432_0aa5bdb_final/best_weights_by_val_score --dataset_dir /tmp/geez_code/geez-dataset --split test --out_json /kaggle/working/byt5_7fcf432_0aa5bdb_final/scores_test_details.json\r\n"}
+,{"stream_name":"stdout","time":13644.426950055,"data":"[test] root 87.2% (1359/1558) -\u003e scores_test.txt\r\n"}
+,{"stream_name":"stdout","time":13644.426995562,"data":"Finished 2026-10-08 17:55 EAT; this session 3h46m. Training finished.\r\n"}
+,{"stream_name":"stdout","time":13654.199476793,"data":"SHA256SUMS.txt: 62 files\r\n"}
+,{"stream_name":"stderr","time":13657.651268071,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":13657.651335767,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":13657.847375571,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":13657.847433409,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":13658.685965095,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":13658.822925824,"data":"[NbConvertApp] Writing 198464 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":13661.403417907,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":13662.293899022,"data":"[NbConvertApp] Writing 934226 bytes to __results__.html\n"}
+]

@@ -1,0 +1,33 @@
+{
+ "run": "gmm_free_s11",
+ "system": "gmm_free",
+ "seed": 11,
+ "labels": "analyser",
+ "model": "facebook/nllb-200-distilled-600M",
+ "src_lang": "tir_Ethi",
+ "tgt_lang": "amh_Ethi",
+ "mem_layers": [
+  3,
+  7
+ ],
+ "aux_weight": null,
+ "new_params": 8046082,
+ "nllb_params": 615073792,
+ "trainable_params": 360764930,
+ "best_epoch": 8,
+ "best_dev_loss": 1.8979634855152954,
+ "train_seconds": 2221,
+ "dev_beam5_nr4": {
+  "chrF_char": 32.420564107627555,
+  "chrF++": 31.328843142081915,
+  "BLEU": 12.255360544235314
+ },
+ "probe": {
+  "own_slot_seen": 0.0016994416120417577,
+  "n_seen": 12357,
+  "own_slot_unseen": 0.00853658536585366,
+  "n_unseen": 820,
+  "majority_class_rate": 0.03316384609546938
+ },
+ "seconds": 2376
+}

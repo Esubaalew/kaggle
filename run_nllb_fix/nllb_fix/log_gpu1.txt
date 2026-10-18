@@ -1,0 +1,178 @@
+[gpu1] Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[gpu1] gmm_s22 train 13932 dev 1741 device cuda n_root 256 n_pat 17
+[gpu1] Loading weights:   0%|          | 0/512 [00:00<?, ?it/s]Loading weights: 100%|██████████| 512/512 [00:00<00:00, 13331.87it/s]
+[gpu1] Traceback (most recent call last):
+[gpu1]   File "/kaggle/working/pack/nllb_mt.py", line 686, in <module>
+[gpu1]     main()
+[gpu1]     ~~~~^^
+[gpu1]   File "/kaggle/working/pack/nllb_mt.py", line 616, in main
+[gpu1]     total, l_tr = sysm.loss(src, wid, root, pat, lab, dec_in, 0.1)
+[gpu1]                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[gpu1]   File "/kaggle/working/pack/nllb_mt.py", line 360, in loss
+[gpu1]     total = total + grounding_loss(self.mems, root, pat, ground_w=self.aux_weight)
+[gpu1]                     ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[gpu1]   File "/kaggle/working/pack/nllb_mt.py", line 197, in grounding_loss
+[gpu1]     gate_bces.append(F.binary_cross_entropy(
+[gpu1]                      ~~~~~~~~~~~~~~~~~~~~~~^
+[gpu1]         gl[valid_word].clamp(1e-6, 1.0 - 1e-6),
+[gpu1]         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[gpu1]         has_root_target[valid_word]))
+[gpu1]         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[gpu1]   File "/usr/local/lib/python3.13/dist-packages/torch/nn/functional.py", line 3574, in binary_cross_entropy
+[gpu1]     return torch._C._nn.binary_cross_entropy(input, target, weight, reduction_enum)
+[gpu1]            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[gpu1] RuntimeError: torch.nn.functional.binary_cross_entropy and torch.nn.BCELoss are unsafe to autocast.
+[gpu1] Many models use a sigmoid layer right before the binary cross entropy layer.
+[gpu1] In this case, combine the two layers using torch.nn.functional.binary_cross_entropy_with_logits
+[gpu1] or torch.nn.BCEWithLogitsLoss.  binary_cross_entropy_with_logits and BCEWithLogits are
+[gpu1] safe to autocast.
+[gpu1] Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[gpu1] gmm_free_s22 train 13932 dev 1741 device cuda n_root 256 n_pat 17
+[gpu1] Loading weights:   0%|          | 0/512 [00:00<?, ?it/s]Loading weights: 100%|██████████| 512/512 [00:00<00:00, 13074.96it/s]
+[gpu1]   ep 1 step 100/3648 train_ce 4.7613 (57s)
+[gpu1]   ep 1 step 200/3648 train_ce 4.5355 (116s)
+[gpu1]   ep 1 step 300/3648 train_ce 4.3830 (175s)
+[gpu1]   ep 1 step 400/3648 train_ce 4.2596 (233s)
+[gpu1] epoch 1 dev_loss 2.2968 (277s)
+[gpu1]   ep 2 step 500/3648 train_ce 3.7366 (309s)
+[gpu1]   ep 2 step 600/3648 train_ce 3.7149 (367s)
+[gpu1]   ep 2 step 700/3648 train_ce 3.7067 (426s)
+[gpu1]   ep 2 step 800/3648 train_ce 3.6746 (484s)
+[gpu1]   ep 2 step 900/3648 train_ce 3.6565 (543s)
+[gpu1] epoch 2 dev_loss 2.0920 (561s)
+[gpu1]   ep 3 step 1000/3648 train_ce 3.4685 (617s)
+[gpu1]   ep 3 step 1100/3648 train_ce 3.4776 (676s)
+[gpu1]   ep 3 step 1200/3648 train_ce 3.4658 (735s)
+[gpu1]   ep 3 step 1300/3648 train_ce 3.4562 (794s)
+[gpu1] epoch 3 dev_loss 2.0041 (845s)
+[gpu1]   ep 4 step 1400/3648 train_ce 3.3391 (867s)
+[gpu1]   ep 4 step 1500/3648 train_ce 3.3200 (926s)
+[gpu1]   ep 4 step 1600/3648 train_ce 3.3294 (985s)
+[gpu1]   ep 4 step 1700/3648 train_ce 3.3122 (1043s)
+[gpu1]   ep 4 step 1800/3648 train_ce 3.3164 (1102s)
+[gpu1] epoch 4 dev_loss 1.9590 (1127s)
+[gpu1]   ep 5 step 1900/3648 train_ce 3.1992 (1175s)
+[gpu1]   ep 5 step 2000/3648 train_ce 3.2074 (1233s)
+[gpu1]   ep 5 step 2100/3648 train_ce 3.2228 (1291s)
+[gpu1]   ep 5 step 2200/3648 train_ce 3.2270 (1351s)
+[gpu1] epoch 5 dev_loss 1.9205 (1409s)
+[gpu1]   ep 6 step 2300/3648 train_ce 3.1788 (1425s)
+[gpu1]   ep 6 step 2400/3648 train_ce 3.1921 (1484s)
+[gpu1]   ep 6 step 2500/3648 train_ce 3.1801 (1543s)
+[gpu1]   ep 6 step 2600/3648 train_ce 3.1687 (1600s)
+[gpu1]   ep 6 step 2700/3648 train_ce 3.1632 (1659s)
+[gpu1] epoch 6 dev_loss 1.9101 (1691s)
+[gpu1]   ep 7 step 2800/3648 train_ce 3.1163 (1732s)
+[gpu1]   ep 7 step 2900/3648 train_ce 3.1363 (1791s)
+[gpu1]   ep 7 step 3000/3648 train_ce 3.1166 (1849s)
+[gpu1]   ep 7 step 3100/3648 train_ce 3.1142 (1908s)
+[gpu1] epoch 7 dev_loss 1.8980 (1973s)
+[gpu1]   ep 8 step 3200/3648 train_ce 3.0139 (1982s)
+[gpu1]   ep 8 step 3300/3648 train_ce 3.1425 (2042s)
+[gpu1]   ep 8 step 3400/3648 train_ce 3.1012 (2099s)
+[gpu1]   ep 8 step 3500/3648 train_ce 3.0839 (2157s)
+[gpu1]   ep 8 step 3600/3648 train_ce 3.0859 (2216s)
+[gpu1] epoch 8 dev_loss 1.8971 (2255s)
+[gpu1] [transformers] Both `max_new_tokens` (=38) and `max_length`(=200) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[gpu1] [transformers] Both `max_new_tokens` (=44) and `max_length`(=200) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[gpu1] [transformers] Both `max_new_tokens` (=48) and `max_length`(=200) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[gpu1] [transformers] Both `max_new_tokens` (=50) and `max_length`(=200) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[gpu1] [transformers] Both `max_new_tokens` (=54) and `max_length`(=200) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[gpu1] [transformers] Both `max_new_tokens` (=56) and `max_length`(=200) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[gpu1] [transformers] Both `max_new_tokens` (=56) and `max_length`(=200) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[gpu1] [transformers] Both `max_new_tokens` (=58) and `max_length`(=200) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[gpu1] [transformers] Both `max_new_tokens` (=60) and `max_length`(=200) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[gpu1] [transformers] Both `max_new_tokens` (=60) and `max_length`(=200) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[gpu1] [transformers] Both `max_new_tokens` (=62) and `max_length`(=200) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[gpu1] [transformers] Both `max_new_tokens` (=64) and `max_length`(=200) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[gpu1] [transformers] Both `max_new_tokens` (=66) and `max_length`(=200) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[gpu1] [transformers] Both `max_new_tokens` (=68) and `max_length`(=200) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[gpu1] [transformers] Both `max_new_tokens` (=68) and `max_length`(=200) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[gpu1] [transformers] Both `max_new_tokens` (=70) and `max_length`(=200) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[gpu1] [transformers] Both `max_new_tokens` (=72) and `max_length`(=200) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[gpu1] [transformers] Both `max_new_tokens` (=72) and `max_length`(=200) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[gpu1] [transformers] Both `max_new_tokens` (=74) and `max_length`(=200) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[gpu1] [transformers] Both `max_new_tokens` (=76) and `max_length`(=200) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[gpu1] [transformers] Both `max_new_tokens` (=76) and `max_length`(=200) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[gpu1] [transformers] Both `max_new_tokens` (=78) and `max_length`(=200) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[gpu1] [transformers] Both `max_new_tokens` (=78) and `max_length`(=200) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[gpu1] [transformers] Both `max_new_tokens` (=80) and `max_length`(=200) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[gpu1] [transformers] Both `max_new_tokens` (=80) and `max_length`(=200) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[gpu1] [transformers] Both `max_new_tokens` (=82) and `max_length`(=200) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[gpu1] [transformers] Both `max_new_tokens` (=82) and `max_length`(=200) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[gpu1] [transformers] Both `max_new_tokens` (=84) and `max_length`(=200) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[gpu1] [transformers] Both `max_new_tokens` (=84) and `max_length`(=200) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[gpu1] [transformers] Both `max_new_tokens` (=86) and `max_length`(=200) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[gpu1] [transformers] Both `max_new_tokens` (=86) and `max_length`(=200) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[gpu1] [transformers] Both `max_new_tokens` (=88) and `max_length`(=200) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[gpu1] [transformers] Both `max_new_tokens` (=88) and `max_length`(=200) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[gpu1] [transformers] Both `max_new_tokens` (=90) and `max_length`(=200) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[gpu1] [transformers] Both `max_new_tokens` (=90) and `max_length`(=200) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[gpu1] [transformers] Both `max_new_tokens` (=92) and `max_length`(=200) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[gpu1] [transformers] Both `max_new_tokens` (=92) and `max_length`(=200) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[gpu1] [transformers] Both `max_new_tokens` (=94) and `max_length`(=200) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[gpu1] [transformers] Both `max_new_tokens` (=94) and `max_length`(=200) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[gpu1] [transformers] Both `max_new_tokens` (=96) and `max_length`(=200) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[gpu1] [transformers] Both `max_new_tokens` (=98) and `max_length`(=200) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[gpu1] [transformers] Both `max_new_tokens` (=98) and `max_length`(=200) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[gpu1] [transformers] Both `max_new_tokens` (=100) and `max_length`(=200) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[gpu1] [transformers] Both `max_new_tokens` (=100) and `max_length`(=200) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[gpu1] [transformers] Both `max_new_tokens` (=102) and `max_length`(=200) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[gpu1] [transformers] Both `max_new_tokens` (=102) and `max_length`(=200) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[gpu1] [transformers] Both `max_new_tokens` (=104) and `max_length`(=200) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[gpu1] [transformers] Both `max_new_tokens` (=106) and `max_length`(=200) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[gpu1] [transformers] Both `max_new_tokens` (=106) and `max_length`(=200) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[gpu1] [transformers] Both `max_new_tokens` (=108) and `max_length`(=200) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[gpu1] [transformers] Both `max_new_tokens` (=110) and `max_length`(=200) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[gpu1] [transformers] Both `max_new_tokens` (=112) and `max_length`(=200) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[gpu1] [transformers] Both `max_new_tokens` (=112) and `max_length`(=200) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[gpu1] [transformers] Both `max_new_tokens` (=116) and `max_length`(=200) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[gpu1] [transformers] Both `max_new_tokens` (=118) and `max_length`(=200) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[gpu1] [transformers] Both `max_new_tokens` (=118) and `max_length`(=200) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[gpu1] [transformers] Both `max_new_tokens` (=120) and `max_length`(=200) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[gpu1] [transformers] Both `max_new_tokens` (=122) and `max_length`(=200) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[gpu1] [transformers] Both `max_new_tokens` (=124) and `max_length`(=200) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[gpu1] [transformers] Both `max_new_tokens` (=126) and `max_length`(=200) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[gpu1] [transformers] Both `max_new_tokens` (=128) and `max_length`(=200) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[gpu1] [transformers] Both `max_new_tokens` (=132) and `max_length`(=200) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[gpu1] [transformers] Both `max_new_tokens` (=134) and `max_length`(=200) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[gpu1] [transformers] Both `max_new_tokens` (=136) and `max_length`(=200) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[gpu1] [transformers] Both `max_new_tokens` (=140) and `max_length`(=200) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[gpu1] [transformers] Both `max_new_tokens` (=146) and `max_length`(=200) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[gpu1] [transformers] Both `max_new_tokens` (=148) and `max_length`(=200) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[gpu1] [transformers] Both `max_new_tokens` (=152) and `max_length`(=200) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[gpu1] [transformers] Both `max_new_tokens` (=158) and `max_length`(=200) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[gpu1] [transformers] Both `max_new_tokens` (=168) and `max_length`(=200) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[gpu1] [transformers] Both `max_new_tokens` (=184) and `max_length`(=200) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[gpu1] [transformers] Both `max_new_tokens` (=206) and `max_length`(=200) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[gpu1] [transformers] Both `max_new_tokens` (=256) and `max_length`(=200) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[gpu1] gmm_free_s22 dev {'chrF_char': 32.44, 'chrF++': 31.34, 'BLEU': 12.1} (151s)
+[gpu1]   probe {'own_slot_seen': 0.009577464788732394, 'n_seen': 7100, 'own_slot_unseen': 0.0022148394241417496, 'n_unseen': 903, 'majority_class_rate': 0.05397975759090341, 'mean_gate_rooted': 0.8333254161749044, 'n_rooted': 8003, 'mean_gate_rootless': 0.9464162417138468, 'n_rootless': 17553}
+[gpu1] Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[gpu1] gmm_wide_s22 train 13932 dev 1741 device cuda n_root 1024 n_pat 17
+[gpu1] Loading weights:   0%|          | 0/512 [00:00<?, ?it/s]Loading weights: 100%|██████████| 512/512 [00:00<00:00, 13553.50it/s]
+[gpu1] Traceback (most recent call last):
+[gpu1]   File "/kaggle/working/pack/nllb_mt.py", line 686, in <module>
+[gpu1]     main()
+[gpu1]     ~~~~^^
+[gpu1]   File "/kaggle/working/pack/nllb_mt.py", line 616, in main
+[gpu1]     total, l_tr = sysm.loss(src, wid, root, pat, lab, dec_in, 0.1)
+[gpu1]                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[gpu1]   File "/kaggle/working/pack/nllb_mt.py", line 360, in loss
+[gpu1]     total = total + grounding_loss(self.mems, root, pat, ground_w=self.aux_weight)
+[gpu1]                     ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[gpu1]   File "/kaggle/working/pack/nllb_mt.py", line 197, in grounding_loss
+[gpu1]     gate_bces.append(F.binary_cross_entropy(
+[gpu1]                      ~~~~~~~~~~~~~~~~~~~~~~^
+[gpu1]         gl[valid_word].clamp(1e-6, 1.0 - 1e-6),
+[gpu1]         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[gpu1]         has_root_target[valid_word]))
+[gpu1]         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[gpu1]   File "/usr/local/lib/python3.13/dist-packages/torch/nn/functional.py", line 3574, in binary_cross_entropy
+[gpu1]     return torch._C._nn.binary_cross_entropy(input, target, weight, reduction_enum)
+[gpu1]            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[gpu1] RuntimeError: torch.nn.functional.binary_cross_entropy and torch.nn.BCELoss are unsafe to autocast.
+[gpu1] Many models use a sigmoid layer right before the binary cross entropy layer.
+[gpu1] In this case, combine the two layers using torch.nn.functional.binary_cross_entropy_with_logits
+[gpu1] or torch.nn.BCEWithLogitsLoss.  binary_cross_entropy_with_logits and BCEWithLogits are
+[gpu1] safe to autocast.

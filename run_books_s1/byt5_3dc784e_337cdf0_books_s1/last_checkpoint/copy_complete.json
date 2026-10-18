@@ -1,0 +1,17 @@
+{
+ "checkpoint": "checkpoint-3663",
+ "files": {
+  "checkpoint-3663/trainer_state.json": 14313,
+  "checkpoint-3663/generation_config.json": 142,
+  "checkpoint-3663/optimizer.pt": 1937867,
+  "checkpoint-3663/rng_state.pth": 14645,
+  "checkpoint-3663/training_args.bin": 5393,
+  "checkpoint-3663/config.json": 848,
+  "checkpoint-3663/added_tokens.json": 3018,
+  "checkpoint-3663/tokenizer_config.json": 28276,
+  "checkpoint-3663/scheduler.pt": 1465,
+  "checkpoint-3663/model.safetensors": 1198571496,
+  "run_info.json": 5003
+ },
+ "written_EAT": "2026-10-11 21:53:51"
+}

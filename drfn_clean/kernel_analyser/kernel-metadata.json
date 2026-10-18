@@ -1,0 +1,21 @@
+{
+  "id": "esubalewchekol/drfn-clean-analyser",
+  "title": "drfn-clean-analyser",
+  "code_file": "drfn-clean-analyser.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "keywords": [
+    "gpu"
+  ],
+  "dataset_sources": [
+    "esubalewchekol/drfn-clean-pack"
+  ],
+  "kernel_sources": [],
+  "competition_sources": [],
+  "model_sources": [],
+  "machine_shape": "NvidiaTeslaT4"
+}

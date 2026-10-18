@@ -1,0 +1,20 @@
+{
+ "run": "zeroshot",
+ "system": "zeroshot",
+ "seed": 0,
+ "labels": "analyser",
+ "model": "facebook/nllb-200-distilled-600M",
+ "src_lang": "tir_Ethi",
+ "tgt_lang": "amh_Ethi",
+ "mem_layers": null,
+ "new_params": 0,
+ "nllb_params": 615073792,
+ "dev_loss": 3.7434122612102882,
+ "train_seconds": 11,
+ "dev_beam5_nr4": {
+  "chrF_char": 13.52372011355398,
+  "chrF++": 11.332211234398883,
+  "BLEU": 0.5516397011205251
+ },
+ "seconds": 196
+}

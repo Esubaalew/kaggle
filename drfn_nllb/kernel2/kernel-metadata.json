@@ -1,0 +1,21 @@
+{
+  "id": "esubalewchekol/drfn-nllb2",
+  "title": "drfn-nllb2",
+  "code_file": "drfn-nllb2.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "keywords": [
+    "gpu"
+  ],
+  "dataset_sources": [
+    "esubalewchekol/drfn-nllb-pack"
+  ],
+  "kernel_sources": [],
+  "competition_sources": [],
+  "model_sources": [],
+  "machine_shape": "NvidiaTeslaT4"
+}

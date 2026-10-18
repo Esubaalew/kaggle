@@ -1,0 +1,42 @@
+{
+ "run": "gmm_s22",
+ "system": "gmm",
+ "seed": 22,
+ "labels": "analyser",
+ "model": "facebook/nllb-200-distilled-600M",
+ "src_lang": "tir_Ethi",
+ "tgt_lang": "amh_Ethi",
+ "mem_layers": [
+  3,
+  7
+ ],
+ "new_params": 8046082,
+ "nllb_params": 615073792,
+ "trainable_params": 360764930,
+ "best_epoch": 7,
+ "best_dev_loss": 1.8793151693486354,
+ "train_seconds": 2305,
+ "dev_beam5_nr4": {
+  "chrF_char": 32.4436725520345,
+  "chrF++": 31.34006526692263,
+  "BLEU": 12.077559480698122
+ },
+ "probe": {
+  "own_slot_seen": 0.9988670389253055,
+  "n_seen": 12357,
+  "own_slot_unseen": 0.9560975609756097,
+  "n_unseen": 820,
+  "majority_class_rate": 0.03316384609546938
+ },
+ "slot_swap": {
+  "n_items": 600,
+  "routed_to_own_root": 0.9983333333333333,
+  "mean_gate": 0.9817450904846191,
+  "success_swap": 0.0,
+  "success_self": 0.0,
+  "keep_r_self": 1.0,
+  "keep_r_swap": 0.96,
+  "keep_r_kill": 0.9633333333333334
+ },
+ "seconds": 2685
+}

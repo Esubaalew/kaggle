@@ -1,0 +1,79 @@
+{
+ "run": "gmm_analyser_s22",
+ "variant": "gmm",
+ "best_epoch": 52,
+ "source_dir": "/kaggle/input/notebooks/esubalewchekol/drfn-clean-overnight/pack/runs/gmm_analyser_s22",
+ "decode": {
+  "beam5_nr4": {
+   "chrF_char": 14.654895631975629,
+   "chrF++": 14.46280340993905,
+   "BLEU": 4.197189328944576,
+   "seconds": 48
+  },
+  "beam5": {
+   "chrF_char": 13.747549978746312,
+   "chrF++": 13.516748488598001,
+   "BLEU": 3.7994890664267187,
+   "seconds": 68
+  },
+  "beam1_nr4": {
+   "chrF_char": 14.55417850378184,
+   "chrF++": 14.326893471959746,
+   "BLEU": 3.3269368369625667,
+   "seconds": 17
+  }
+ },
+ "ablation": {
+  "unlinked": {
+   "n_tokens": 39386,
+   "nll_on": 5.459734194347524,
+   "nll_off": 5.510516660554764,
+   "delta": 0.050782466207239786
+  },
+  "50+": {
+   "n_tokens": 1889,
+   "nll_on": 3.633761787940934,
+   "nll_off": 3.7618548185396947,
+   "delta": 0.1280930305987608
+  },
+  "5-49": {
+   "n_tokens": 743,
+   "nll_on": 5.204957838849607,
+   "nll_off": 5.341675818437763,
+   "delta": 0.13671797958815604
+  },
+  "unseen": {
+   "n_tokens": 125,
+   "nll_on": 6.154318801283837,
+   "nll_off": 6.359150707185268,
+   "delta": 0.20483190590143205
+  },
+  "1-4": {
+   "n_tokens": 280,
+   "nll_on": 5.16616839919838,
+   "nll_off": 5.330706842177149,
+   "delta": 0.1645384429787685
+  },
+  "all": {
+   "n_tokens": 42423,
+   "nll_on": 5.3740746216013315,
+   "nll_off": 5.431009354174349,
+   "delta": 0.05693473257301793
+  }
+ },
+ "slot_swap": {
+  "n_items": 700,
+  "routed_to_own_root": 1.0,
+  "mean_gate": 0.916821534952947,
+  "success_swap": 0.005714285714285714,
+  "success_self": 0.0,
+  "keep_r_self": 1.0,
+  "keep_r_swap": 0.83,
+  "keep_r_kill": 0.9042857142857142,
+  "tf_delta_nll_root_tokens": 0.2201514007532611,
+  "n_root_tokens": 871,
+  "tf_delta_nll_other_tokens": -0.00663072834296636,
+  "n_other_tokens": 16388
+ },
+ "seconds": 162
+}

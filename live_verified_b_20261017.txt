@@ -1,0 +1,56 @@
+[{"stream_name":"stdout","time":9.39085891,"data":"torch 2.11.0+cu128, CUDA available True, GPU count 2\n"}
+,{"stream_name":"stdout","time":9.409099721,"data":"GPU 0: Tesla T4, 14.6 GB\n"}
+,{"stream_name":"stdout","time":9.409162183,"data":"GPU 1: Tesla T4, 14.6 GB\n"}
+,{"stream_name":"stdout","time":20.861808025,"data":"transformers 5.16.1\n"}
+,{"stream_name":"stdout","time":21.939001897,"data":"using Kaggle-extracted folder /kaggle/input/datasets/esubechekol/geez-morphology-gpu-v2/model/model\n"}
+,{"stream_name":"stdout","time":26.310585162,"data":"using Kaggle-extracted folder /kaggle/input/datasets/esubechekol/geez-morphology-gpu-v2/geez-dataset/geez-dataset\n"}
+,{"stream_name":"stdout","time":41.105479611,"data":"MODEL commit a1ad2b611d2014dd8c11fe94670fec3bef7f7e32\n"}
+,{"stream_name":"stdout","time":41.105518951,"data":"DATA commit  04f45a71a1af00f3dad4877ec2a91970f7fc42bd\n"}
+,{"stream_name":"stdout","time":41.153362641,"data":"previous checkpoints: /kaggle/input/geez-byt5-gpu-v2-b/ckpt\n"}
+,{"stream_name":"stdout","time":41.153409203,"data":"launching DDP on 2 GPUs: torchrun --nproc_per_node 2\n"}
+,{"stream_name":"stderr","time":43.159643086,"data":"\n"}
+,{"stream_name":"stderr","time":43.159693965,"data":"*****************************************\n"}
+,{"stream_name":"stderr","time":43.159702421,"data":"Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. \n"}
+,{"stream_name":"stderr","time":43.159711005,"data":"*****************************************\n"}
+,{"stream_name":"stdout","time":63.245627748,"data":"RUN B\n"}
+,{"stream_name":"stdout","time":63.245677938,"data":"MODEL commit a1ad2b611d2014dd8c11fe94670fec3bef7f7e32\n"}
+,{"stream_name":"stdout","time":63.245684627,"data":"DATA commit  04f45a71a1af00f3dad4877ec2a91970f7fc42bd\n"}
+,{"stream_name":"stdout","time":63.245691097,"data":"world size 2, device cuda, torch 2.11.0+cu128\n"}
+,{"stream_name":"stdout","time":63.245841832,"data":"GPU 0: Tesla T4\n"}
+,{"stream_name":"stdout","time":63.245861681,"data":"GPU 1: Tesla T4\n"}
+,{"stream_name":"stdout","time":78.381728649,"data":"RESULT: CLEAN (exact roots and pairs)\n"}
+,{"stream_name":"stdout","time":78.397391855,"data":"train samples 562403, dev rows 3472: synthetic 118131, gold_verb 1727, gold_nominal 6168, unified_book 10002, dictionary 1080, dictionary_verb 59, word_without_root 32, extra_synthetic 247\n"}
+,{"stream_name":"stderr","time":78.636074405,"data":"/usr/local/lib/python3.13/dist-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.\n"}
+,{"stream_name":"stderr","time":78.636102759,"data":"  return func(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":78.643997242,"data":"[rank0]:[W1017 05:31:28.295965761 ProcessGroupNCCL.cpp:5188] Guessing device ID based on global rank. This can cause a hang if rank to GPU mapping is heterogeneous. You can specify device_id in init_process_group()\n"}
+,{"stream_name":"stdout","time":79.413987004,"data":"LOAD CHECK train 562,403 (expect 562,403), dev 3,472 (expect 3,472), leak audit CLEAN\n"}
+,{"stream_name":"stdout","time":79.414035058,"data":"LOAD CHECK OK\n"}
+,{"stream_name":"stdout","time":81.626775959,"data":"PRETRAIN CORPUS 16,181 lines, 1,410,781 bytes\n"}
+,{"stream_name":"stdout","time":86.912175534,"data":"PRETRAIN chunks per epoch 6,204\n"}
+,{"stream_name":"stdout","time":86.912220065,"data":"PHASE pretrain: 512 rows/step, steps/epoch 12, epochs 6.0, total steps 72, warmup 7\n"}
+,{"stream_name":"stdout","time":86.912225973,"data":"PHASE finetune: 512 rows/step, steps/epoch 1098, epochs 10.0, total steps 10980, warmup 500\n"}
+,{"stream_name":"stderr","time":87.13776136,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stderr","time":87.146698532,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stderr","time":90.841546647,"data":"\rLoading weights:   0%|          | 0/172 [00:00\u003c?, ?it/s]\rLoading weights:   0%|          | 0/172 [00:00\u003c?, ?it/s]\rLoading weights: 100%|██████████| 172/172 [00:00\u003c00:00, 14166.33it/s]\n"}
+,{"stream_name":"stderr","time":90.843233604,"data":"\rLoading weights: 100%|██████████| 172/172 [00:00\u003c00:00, 12076.61it/s]\n"}
+,{"stream_name":"stderr","time":90.860906665,"data":"[transformers] The tied weights mapping and config for this model specifies to tie shared.weight to lm_head.weight, but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config with `tie_word_embeddings=False` to silence this warning.\n"}
+,{"stream_name":"stderr","time":90.860926818,"data":"[transformers] The tied weights mapping and config for this model specifies to tie shared.weight to lm_head.weight, but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config with `tie_word_embeddings=False` to silence this warning.\n"}
+,{"stream_name":"stdout","time":110.507347768,"data":"RESUMED from /kaggle/input/geez-byt5-gpu-v2-b/ckpt/step_1fi_003685.pt: phase finetune, step 3685 (epoch 3, batch 400)\n"}
+,{"stream_name":"stdout","time":193.511585967,"data":"=== PHASE finetune: micro-batch 32 x 2 GPU(s) x 8 accumulation = 512 rows/step, precision fp32, from step 3685/10980\n"}
+,{"stream_name":"stdout","time":209.643607281,"data":"[finetune] step 3686/10980 epoch 3 loss 0.0231 lr 7.26e-04 0.062 steps/s elapsed 0.06h ETA finetune 32.64h, this session 11.19h (~6187 steps by the session stop)\n"}
+,{"stream_name":"stdout","time":311.70633755,"data":"[finetune] step 3700/10980 epoch 3 loss 0.0092 lr 7.25e-04 0.137 steps/s elapsed 0.09h ETA finetune 15.93h, this session 11.16h (~8801 steps by the session stop)\n"}
+,{"stream_name":"stdout","time":809.104135004,"data":"[finetune] step 3750/10980 epoch 3 loss 0.0323 lr 7.21e-04 0.101 steps/s elapsed 0.22h ETA finetune 19.02h, this session 11.03h (~7941 steps by the session stop)\n"}
+,{"stream_name":"stdout","time":1276.027342747,"data":"[finetune] step 3800/10980 epoch 3 loss 0.0201 lr 7.17e-04 0.107 steps/s elapsed 0.35h ETA finetune 18.77h, this session 10.90h (~7967 steps by the session stop)\n"}
+,{"stream_name":"stdout","time":1709.947154856,"data":"[finetune] step 3850/10980 epoch 3 loss 0.0145 lr 7.12e-04 0.115 steps/s elapsed 0.47h ETA finetune 18.20h, this session 10.78h (~8070 steps by the session stop)\n"}
+,{"stream_name":"stdout","time":2004.19857183,"data":"checkpoint saved ckpt/step_1fi_003883.pt\n"}
+,{"stream_name":"stdout","time":2186.399211278,"data":"[finetune] step 3900/10980 epoch 3 loss 0.0208 lr 7.08e-04 0.105 steps/s elapsed 0.61h ETA finetune 18.23h, this session 10.64h (~8033 steps by the session stop)\n"}
+,{"stream_name":"stdout","time":2701.249493248,"data":"[finetune] step 3950/10980 epoch 3 loss 0.0203 lr 7.04e-04 0.097 steps/s elapsed 0.75h ETA finetune 18.48h, this session 10.50h (~7944 steps by the session stop)\n"}
+,{"stream_name":"stdout","time":3237.886622902,"data":"[finetune] step 4000/10980 epoch 3 loss 0.0240 lr 6.99e-04 0.093 steps/s elapsed 0.90h ETA finetune 18.74h, this session 10.35h (~7855 steps by the session stop)\n"}
+,{"stream_name":"stdout","time":3254.21594901,"data":"eval {\"dev_exact\": 0.6860599078341014, \"dev_root\": 0.9089861751152074, \"dev_pos\": 0.8629032258064516, \"dev_score\": 0.7975230414746544, \"step\": 4000}\n"}
+,{"stream_name":"stdout","time":3257.026496517,"data":"best/ updated (dev_score 0.7975)\n"}
+,{"stream_name":"stdout","time":3258.982204433,"data":"checkpoint saved ckpt/step_1fi_004000.pt (best updated)\n"}
+,{"stream_name":"stdout","time":3802.541928151,"data":"[finetune] step 4050/10980 epoch 3 loss 0.0443 lr 6.95e-04 0.089 steps/s elapsed 1.06h ETA finetune 19.03h, this session 10.19h (~7761 steps by the session stop)\n"}
+,{"stream_name":"stdout","time":4330.169982278,"data":"[finetune] step 4100/10980 epoch 3 loss 0.0214 lr 6.91e-04 0.095 steps/s elapsed 1.20h ETA finetune 19.05h, this session 10.05h (~7728 steps by the session stop)\n"}
+,{"stream_name":"stdout","time":4842.627341483,"data":"[finetune] step 4150/10980 epoch 3 loss 0.0216 lr 6.87e-04 0.098 steps/s elapsed 1.34h ETA finetune 18.97h, this session 9.91h (~7716 steps by the session stop)\n"}
+,{"stream_name":"stdout","time":5075.00907314,"data":"checkpoint saved ckpt/step_1fi_004172.pt\n"}
+]

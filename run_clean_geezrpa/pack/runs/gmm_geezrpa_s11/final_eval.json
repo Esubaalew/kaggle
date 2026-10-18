@@ -1,0 +1,55 @@
+{
+ "best_epoch": 58,
+ "chrF_char_full_dev": 13.07688574672059,
+ "chrF++_full_dev": 12.821420291505762,
+ "n_dev": 1741,
+ "probe_root": {
+  "all_types": {
+   "consistency": 0.9709493309429125,
+   "permutation": 0.2502897487835726,
+   "perm_sd": 0.0035061211208713998,
+   "p_value": 0.004975124378109453,
+   "n_roots": 205,
+   "n_types": 1758,
+   "slots_used": 255,
+   "top10_slot_share": 0.17804323094425484
+  },
+  "unseen_with_siblings": {
+   "consistency": 0.9459862657752184,
+   "permutation": 0.16282985813724615,
+   "perm_sd": 0.0049626323345799365,
+   "p_value": 0.004975124378109453,
+   "n_roots": 101,
+   "n_types": 1309,
+   "slots_used": 113,
+   "top10_slot_share": 0.23911382734912145
+  },
+  "n_unseen_types": 251,
+  "unseen_slot_accuracy": 0.8167330677290837
+ },
+ "probe_pattern": {
+  "all_types": {
+   "consistency": 0.9452189020717088,
+   "permutation": 0.3811076321082758,
+   "perm_sd": 0.02053929989010092,
+   "p_value": 0.004975124378109453,
+   "n_roots": 14,
+   "n_types": 9582,
+   "slots_used": 14,
+   "top10_slot_share": 0.9937382592360676
+  },
+  "unseen_with_siblings": {
+   "consistency": 0.9370126093707271,
+   "permutation": 0.3651621847566568,
+   "perm_sd": 0.010885144609193381,
+   "p_value": 0.004975124378109453,
+   "n_roots": 11,
+   "n_types": 9547,
+   "slots_used": 11,
+   "top10_slot_share": 0.9971718864564785
+  },
+  "n_unseen_types": 3003,
+  "unseen_slot_accuracy": 0.8344988344988346
+ },
+ "seconds": 101
+}

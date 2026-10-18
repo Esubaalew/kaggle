@@ -1,0 +1,34 @@
+dev 1741 train 13932
+runs on this shard: ['bpe_aux_analyser_s22', 'bpe_aux_geezrpa_s11_wstok', 'cmm_spec_analyser_s11', 'cmm_spec_geezrpa_s11', 'gmm_analyser_s22', 'gmm_dec_free_analyser_s11', 'gmm_geezrpa_s11', 'plain_bpe_geezrpa_s11']
+bpe_aux_analyser_s22           beam5_nr4  chrF 15.49 BLEU 4.70 (50s)
+bpe_aux_analyser_s22           beam5      chrF 14.65 BLEU 4.57 (72s)
+bpe_aux_analyser_s22           beam1_nr4  chrF 15.10 BLEU 4.07 (16s)
+bpe_aux_geezrpa_s11_wstok      beam5_nr4  chrF 15.17 BLEU 4.36 (48s)
+bpe_aux_geezrpa_s11_wstok      beam5      chrF 14.20 BLEU 3.68 (66s)
+bpe_aux_geezrpa_s11_wstok      beam1_nr4  chrF 14.99 BLEU 3.33 (17s)
+cmm_spec_analyser_s11          beam5_nr4  chrF 15.26 BLEU 4.53 (43s)
+cmm_spec_analyser_s11          beam5      chrF 14.53 BLEU 4.60 (63s)
+cmm_spec_analyser_s11          beam1_nr4  chrF 15.00 BLEU 4.02 (15s)
+  ablation {'unlinked': 0.0067, '50+': -0.043, '5-49': 0.0006, 'unseen': -0.0149, '1-4': -0.0148, 'all': 0.0042}
+cmm_spec_geezrpa_s11           beam5_nr4  chrF 14.95 BLEU 4.29 (44s)
+cmm_spec_geezrpa_s11           beam5      chrF 14.09 BLEU 4.15 (65s)
+cmm_spec_geezrpa_s11           beam1_nr4  chrF 14.78 BLEU 4.04 (16s)
+  ablation {'unlinked': 0.0118, '50+': -0.0217, '5-49': 0.0193, 'unseen': -0.0082, '1-4': -0.0419, 'all': 0.0102}
+gmm_analyser_s22               beam5_nr4  chrF 14.65 BLEU 4.20 (48s)
+gmm_analyser_s22               beam5      chrF 13.75 BLEU 3.80 (68s)
+gmm_analyser_s22               beam1_nr4  chrF 14.55 BLEU 3.33 (17s)
+  ablation {'unlinked': 0.0508, '50+': 0.1281, '5-49': 0.1367, 'unseen': 0.2048, '1-4': 0.1645, 'all': 0.0569}
+  swap {'n_items': 700, 'routed_to_own_root': 1.0, 'mean_gate': 0.9168, 'success_swap': 0.0057, 'success_self': 0.0, 'keep_r_self': 1.0, 'keep_r_swap': 0.83, 'keep_r_kill': 0.9043, 'tf_delta_nll_root_tokens': 0.2202, 'n_root_tokens': 871, 'tf_delta_nll_other_tokens': -0.0066, 'n_other_tokens': 16388}
+gmm_dec_free_analyser_s11      beam5_nr4  chrF 14.87 BLEU 4.12 (46s)
+gmm_dec_free_analyser_s11      beam5      chrF 13.89 BLEU 3.74 (72s)
+gmm_dec_free_analyser_s11      beam1_nr4  chrF 14.76 BLEU 3.56 (19s)
+  ablation {'unlinked': 0.0444, '50+': 0.1599, '5-49': 0.1629, 'unseen': 0.1629, '1-4': 0.1791, 'all': 0.0528}
+  swap {'n_items': 700, 'routed_to_own_root': 1.0, 'mean_gate': 0.9803, 'success_swap': 0.0014, 'success_self': 0.0, 'keep_r_self': 1.0, 'keep_r_swap': 0.8229, 'keep_r_kill': 0.9043, 'tf_delta_nll_root_tokens': 0.3027, 'n_root_tokens': 888, 'tf_delta_nll_other_tokens': -0.005, 'n_other_tokens': 16514}
+gmm_geezrpa_s11                beam5_nr4  chrF 14.52 BLEU 4.27 (47s)
+gmm_geezrpa_s11                beam5      chrF 13.65 BLEU 3.87 (67s)
+gmm_geezrpa_s11                beam1_nr4  chrF 14.50 BLEU 3.64 (17s)
+  ablation {'unlinked': 0.0403, '50+': 0.101, '5-49': 0.1637, 'unseen': 0.0554, '1-4': 0.1536, 'all': 0.0447}
+  swap {'n_items': 700, 'routed_to_own_root': 1.0, 'mean_gate': 0.8931, 'success_swap': 0.0, 'success_self': 0.0, 'keep_r_self': 1.0, 'keep_r_swap': 0.8357, 'keep_r_kill': 0.9329, 'tf_delta_nll_root_tokens': 0.2897, 'n_root_tokens': 898, 'tf_delta_nll_other_tokens': -0.0046, 'n_other_tokens': 16638}
+plain_bpe_geezrpa_s11          beam5_nr4  chrF 13.44 BLEU 3.54 (49s)
+plain_bpe_geezrpa_s11          beam5      chrF 12.81 BLEU 3.47 (70s)
+plain_bpe_geezrpa_s11          beam1_nr4  chrF 13.45 BLEU 3.21 (17s)

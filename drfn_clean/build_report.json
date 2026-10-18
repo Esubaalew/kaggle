@@ -1,0 +1,51 @@
+{
+ "source_pack": "/Users/esubalew/is/researcher/kaggle/drfn_grounded/pack",
+ "fixes": {
+  "train": {
+   "pairs": 13932,
+   "skipped_lines": 0,
+   "amharic_invisible_chars_removed": 58326,
+   "geez_tokens_with_glued_punct": 6798,
+   "geez_types_before": 43703,
+   "geez_types_after": 40928,
+   "amharic_types_before": 57842,
+   "amharic_types_after": 45937
+  },
+  "dev": {
+   "pairs": 1741,
+   "skipped_lines": 0,
+   "amharic_invisible_chars_removed": 6863,
+   "geez_tokens_with_glued_punct": 816,
+   "geez_types_before": 10223,
+   "geez_types_after": 9867,
+   "amharic_types_before": 12030,
+   "amharic_types_after": 10553
+  }
+ },
+ "labels_geezrpa": {
+  "source": "/Users/esubalew/is/researcher/kaggle/drfn_grounded/pack/data/geezrpa_label_cache_k256.json",
+  "source_sha": "90c58874ce14",
+  "root_classes": 256,
+  "pattern_classes": 17,
+  "entries_before": 41983,
+  "entries_after": 41983,
+  "train_word_tokens_with_root_before": 0.4626,
+  "train_word_tokens_with_root_after": 0.4765
+ },
+ "labels_analyser": {
+  "source": "/Users/esubalew/is/researcher/kaggle/run_drfn_labels/pack/runs/shared/analyser_labels.json",
+  "source_sha": "65dc81e47d84",
+  "root_classes": 256,
+  "pattern_classes": 17,
+  "entries_before": 42414,
+  "entries_after": 41361,
+  "train_word_tokens_with_root_before": 0.5472,
+  "train_word_tokens_with_root_after": 0.5598
+ },
+ "tokenizer": {
+  "sha": "fa9e468ffc5c",
+  "vocab": 16000,
+  "dev_amharic_roundtrip_exact": "1740/1741",
+  "train_amharic_pieces": 329332
+ }
+}

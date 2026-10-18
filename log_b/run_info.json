@@ -1,0 +1,37 @@
+{
+ "run": "B pretrain+finetune",
+ "phases": {
+  "pretrain": {
+   "G": 512,
+   "micro": 8,
+   "spe": 12,
+   "total": 72,
+   "epochs": 6.0,
+   "warmup": 7
+  },
+  "finetune": {
+   "G": 512,
+   "micro": 32,
+   "spe": 1098,
+   "total": 10980,
+   "epochs": 10.0,
+   "warmup": 500
+  }
+ },
+ "world": 2,
+ "precision": "fp32",
+ "finished": false,
+ "state": {
+  "phase": "finetune",
+  "step": 3685,
+  "epoch": 3,
+  "batch": 400,
+  "best": 0.7903225806451613,
+  "done_phases": [
+   "pretrain"
+  ]
+ },
+ "model_commit": "a1ad2b611d2014dd8c11fe94670fec3bef7f7e32",
+ "data_commit": "04f45a71a1af00f3dad4877ec2a91970f7fc42bd",
+ "torch": "2.11.0+cu128"
+}

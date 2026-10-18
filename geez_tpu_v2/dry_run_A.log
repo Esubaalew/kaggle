@@ -1,0 +1,16 @@
+RESULT: CLEAN (exact roots and pairs)
+train samples 400, dev rows 48: synthetic 118131, gold_verb 1727, gold_nominal 6168, unified_book 9998, dictionary 2787, dictionary_verb 59, word_without_root 31, extra_synthetic 0
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/172 [00:00<?, ?it/s]Loading weights: 100%|██████████| 172/172 [00:00<00:00, 44280.65it/s]
+[transformers] The tied weights mapping and config for this model specifies to tie shared.weight to lm_head.weight, but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config with `tie_word_embeddings=False` to silence this warning.
+device cpu x1, bf16 False, global batch 8, steps/epoch 50, total steps 6
+step 1/6 epoch 0 loss 5.8953 lr 1.00e-03 5.744s/step elapsed 0.00h
+step 2/6 epoch 0 loss 4.3437 lr 1.00e-03 1.759s/step elapsed 0.01h
+eval {"dev_exact": 0.0, "dev_root": 0.0, "dev_pos": 0.0, "dev_score": 0.0, "step": 3}
+best/ updated (dev_score 0.0000)
+step 4/6 epoch 0 loss 5.4550 lr 5.50e-04 4.546s/step elapsed 0.01h
+step 6/6 epoch 0 loss 3.1705 lr 1.00e-04 2.134s/step elapsed 0.01h
+eval {"dev_exact": 0.0, "dev_root": 0.0, "dev_pos": 0.0, "dev_score": 0.0, "step": 6}
+Loading weights:   0%|          | 0/172 [00:00<?, ?it/s]Loading weights:  71%|███████   | 122/172 [00:00<00:00, 1204.18it/s]Loading weights: 100%|██████████| 172/172 [00:00<00:00, 1223.12it/s]
+[transformers] The tied weights mapping and config for this model specifies to tie shared.weight to lm_head.weight, but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config with `tie_word_embeddings=False` to silence this warning.
+dev_report {"n": 7, "exact": 0.0, "root": 0.0}

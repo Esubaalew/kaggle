@@ -1,0 +1,27 @@
+{
+ "run": "plain_bpe_geezrpa_s33",
+ "variant": "plain_bpe",
+ "best_epoch": 36,
+ "source_dir": "runs/plain_bpe_geezrpa_s33",
+ "decode": {
+  "beam5_nr4": {
+   "chrF_char": 13.194241007059288,
+   "chrF++": 12.880553368841872,
+   "BLEU": 3.2262775590934374,
+   "seconds": 50
+  },
+  "beam5": {
+   "chrF_char": 12.496757639377522,
+   "chrF++": 12.184078318938148,
+   "BLEU": 3.0041948406810475,
+   "seconds": 71
+  },
+  "beam1_nr4": {
+   "chrF_char": 13.349917620038742,
+   "chrF++": 13.03738816355278,
+   "BLEU": 2.852377766179396,
+   "seconds": 19
+  }
+ },
+ "seconds": 140
+}

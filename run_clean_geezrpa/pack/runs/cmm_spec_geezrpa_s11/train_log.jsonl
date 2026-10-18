@@ -1,0 +1,437 @@
+{"step": 50, "epoch": 0, "trans": 9.1028, "root": 5.2995, "pattern": 1.9176, "entropy": 4.8501, "balance": 0.0004, "lr": 6.25e-05}
+{"step": 100, "epoch": 0, "trans": 8.3443, "root": 4.5767, "pattern": 1.865, "entropy": 4.8498, "balance": 0.0004, "lr": 0.000125}
+{"step": 150, "epoch": 0, "trans": 7.8915, "root": 3.6901, "pattern": 1.7756, "entropy": 4.8477, "balance": 0.0014, "lr": 0.0001875}
+{"step": 200, "epoch": 0, "trans": 7.8905, "root": 3.2746, "pattern": 1.894, "entropy": 4.8328, "balance": 0.0077, "lr": 0.00025}
+{"step": 250, "epoch": 0, "trans": 7.8499, "root": 2.2384, "pattern": 1.7352, "entropy": 4.603, "balance": 0.1547, "lr": 0.0003125}
+{"step": 300, "epoch": 0, "trans": 7.9108, "root": 2.205, "pattern": 1.6805, "entropy": 4.136, "balance": 0.4831, "lr": 0.000375}
+{"step": 350, "epoch": 0, "trans": 7.6803, "root": 1.6977, "pattern": 1.6677, "entropy": 3.8396, "balance": 0.7056, "lr": 0.00043750000000000006}
+{"step": 400, "epoch": 0, "trans": 7.7811, "root": 1.0694, "pattern": 1.5063, "entropy": 3.6103, "balance": 0.9063, "lr": 0.0005}
+{"epoch": 0, "dev_loss": 7.233610565398084, "dev_chrf": 4.661520936847789}
+{"step": 450, "epoch": 1, "trans": 7.7105, "root": 1.1825, "pattern": 1.533, "entropy": 3.752, "balance": 0.7348, "lr": 0.0005}
+{"step": 500, "epoch": 1, "trans": 7.5034, "root": 1.2638, "pattern": 1.3843, "entropy": 3.3457, "balance": 1.1217, "lr": 0.0005}
+{"step": 550, "epoch": 1, "trans": 7.5374, "root": 1.1127, "pattern": 1.4936, "entropy": 3.5194, "balance": 0.8665, "lr": 0.0005}
+{"step": 600, "epoch": 1, "trans": 7.6816, "root": 0.9424, "pattern": 1.4809, "entropy": 3.5712, "balance": 0.7243, "lr": 0.0005}
+{"step": 650, "epoch": 1, "trans": 7.4178, "root": 1.2446, "pattern": 1.2128, "entropy": 3.3147, "balance": 0.9174, "lr": 0.0005}
+{"step": 700, "epoch": 1, "trans": 7.4329, "root": 0.7178, "pattern": 1.2278, "entropy": 3.156, "balance": 0.9953, "lr": 0.0005}
+{"step": 750, "epoch": 1, "trans": 7.2939, "root": 0.8846, "pattern": 1.3281, "entropy": 2.4937, "balance": 1.6225, "lr": 0.0005}
+{"step": 800, "epoch": 1, "trans": 7.2318, "root": 0.6229, "pattern": 1.1677, "entropy": 2.3664, "balance": 1.5323, "lr": 0.0005}
+{"step": 850, "epoch": 1, "trans": 7.4877, "root": 0.9401, "pattern": 1.2417, "entropy": 2.7236, "balance": 1.1136, "lr": 0.0005}
+{"epoch": 1, "dev_loss": 6.769598170438763, "dev_chrf": 5.10503235929514}
+{"step": 900, "epoch": 2, "trans": 7.4268, "root": 0.7969, "pattern": 1.2471, "entropy": 2.163, "balance": 1.7282, "lr": 0.0005}
+{"step": 950, "epoch": 2, "trans": 7.1448, "root": 0.8065, "pattern": 1.258, "entropy": 2.1533, "balance": 1.6104, "lr": 0.0005}
+{"step": 1000, "epoch": 2, "trans": 7.0777, "root": 0.7855, "pattern": 1.1856, "entropy": 2.4426, "balance": 1.2911, "lr": 0.0005}
+{"step": 1050, "epoch": 2, "trans": 7.2965, "root": 0.7977, "pattern": 1.2437, "entropy": 2.0051, "balance": 1.6899, "lr": 0.0005}
+{"step": 1100, "epoch": 2, "trans": 7.1198, "root": 0.5649, "pattern": 1.1005, "entropy": 2.3609, "balance": 1.2829, "lr": 0.0005}
+{"step": 1150, "epoch": 2, "trans": 7.2014, "root": 0.7492, "pattern": 1.1141, "entropy": 2.1583, "balance": 1.4683, "lr": 0.0005}
+{"step": 1200, "epoch": 2, "trans": 6.9947, "root": 0.8154, "pattern": 1.0279, "entropy": 2.0555, "balance": 1.4948, "lr": 0.0005}
+{"step": 1250, "epoch": 2, "trans": 7.0462, "root": 0.5424, "pattern": 1.08, "entropy": 1.8619, "balance": 1.7494, "lr": 0.0005}
+{"step": 1300, "epoch": 2, "trans": 7.2205, "root": 0.462, "pattern": 1.1756, "entropy": 1.773, "balance": 1.8026, "lr": 0.0005}
+{"epoch": 2, "dev_loss": 6.44293453828964, "dev_chrf": 5.05535030408595}
+{"step": 1350, "epoch": 3, "trans": 6.8338, "root": 0.6947, "pattern": 1.0982, "entropy": 1.8138, "balance": 1.7572, "lr": 0.0005}
+{"step": 1400, "epoch": 3, "trans": 6.7887, "root": 0.5476, "pattern": 1.0536, "entropy": 1.8484, "balance": 1.6494, "lr": 0.0005}
+{"step": 1450, "epoch": 3, "trans": 6.7495, "root": 0.4907, "pattern": 0.9588, "entropy": 2.0919, "balance": 1.3682, "lr": 0.0005}
+{"step": 1500, "epoch": 3, "trans": 6.8483, "root": 0.4728, "pattern": 1.1295, "entropy": 1.91, "balance": 1.5635, "lr": 0.0005}
+{"step": 1550, "epoch": 3, "trans": 6.6623, "root": 0.3756, "pattern": 0.9139, "entropy": 1.851, "balance": 1.6135, "lr": 0.0005}
+{"step": 1600, "epoch": 3, "trans": 6.8198, "root": 0.5538, "pattern": 1.1036, "entropy": 1.821, "balance": 1.624, "lr": 0.0005}
+{"step": 1650, "epoch": 3, "trans": 6.657, "root": 0.8346, "pattern": 1.0485, "entropy": 1.6314, "balance": 1.8261, "lr": 0.0005}
+{"step": 1700, "epoch": 3, "trans": 6.7486, "root": 0.46, "pattern": 0.9313, "entropy": 1.4972, "balance": 1.954, "lr": 0.0005}
+{"epoch": 3, "dev_loss": 6.189541502015334, "dev_chrf": 5.829260959032753}
+{"step": 1750, "epoch": 4, "trans": 6.5918, "root": 0.4071, "pattern": 0.9789, "entropy": 1.6097, "balance": 1.8029, "lr": 0.0005}
+{"step": 1800, "epoch": 4, "trans": 6.6933, "root": 0.2951, "pattern": 0.8813, "entropy": 1.6653, "balance": 1.7423, "lr": 0.0005}
+{"step": 1850, "epoch": 4, "trans": 6.5993, "root": 0.289, "pattern": 0.9185, "entropy": 1.4277, "balance": 2.0285, "lr": 0.0005}
+{"step": 1900, "epoch": 4, "trans": 6.487, "root": 0.45, "pattern": 0.9707, "entropy": 1.3657, "balance": 2.1554, "lr": 0.0005}
+{"step": 1950, "epoch": 4, "trans": 6.4579, "root": 0.3752, "pattern": 0.9671, "entropy": 1.299, "balance": 2.192, "lr": 0.0005}
+{"step": 2000, "epoch": 4, "trans": 6.6124, "root": 0.4462, "pattern": 0.9869, "entropy": 1.5541, "balance": 1.8254, "lr": 0.0005}
+{"step": 2050, "epoch": 4, "trans": 6.5389, "root": 0.3568, "pattern": 0.8515, "entropy": 1.6303, "balance": 1.698, "lr": 0.0005}
+{"step": 2100, "epoch": 4, "trans": 6.6469, "root": 0.3206, "pattern": 0.8621, "entropy": 1.4303, "balance": 1.9109, "lr": 0.0005}
+{"step": 2150, "epoch": 4, "trans": 6.4098, "root": 0.2347, "pattern": 0.9805, "entropy": 1.5736, "balance": 1.7333, "lr": 0.0005}
+{"epoch": 4, "dev_loss": 5.995348693720572, "dev_chrf": 6.0145083605571}
+{"step": 2200, "epoch": 5, "trans": 6.4848, "root": 0.2951, "pattern": 0.8524, "entropy": 1.5216, "balance": 1.7727, "lr": 0.0005}
+{"step": 2250, "epoch": 5, "trans": 6.3192, "root": 0.4154, "pattern": 0.7662, "entropy": 1.5281, "balance": 1.7621, "lr": 0.0005}
+{"step": 2300, "epoch": 5, "trans": 6.3628, "root": 0.6499, "pattern": 0.9282, "entropy": 1.336, "balance": 1.9576, "lr": 0.0005}
+{"step": 2350, "epoch": 5, "trans": 6.3334, "root": 0.3418, "pattern": 0.7117, "entropy": 1.3453, "balance": 1.9555, "lr": 0.0005}
+{"step": 2400, "epoch": 5, "trans": 6.2304, "root": 0.355, "pattern": 0.846, "entropy": 1.5039, "balance": 1.752, "lr": 0.0005}
+{"step": 2450, "epoch": 5, "trans": 6.4587, "root": 0.2987, "pattern": 0.8134, "entropy": 1.3738, "balance": 1.8969, "lr": 0.0005}
+{"step": 2500, "epoch": 5, "trans": 6.0913, "root": 0.3653, "pattern": 1.0208, "entropy": 1.4655, "balance": 1.7794, "lr": 0.0005}
+{"step": 2550, "epoch": 5, "trans": 6.0809, "root": 0.3943, "pattern": 0.7166, "entropy": 1.2952, "balance": 1.9748, "lr": 0.0005}
+{"step": 2600, "epoch": 5, "trans": 6.3916, "root": 0.4144, "pattern": 0.8703, "entropy": 1.2756, "balance": 1.9579, "lr": 0.0005}
+{"epoch": 5, "dev_loss": 5.813541629545857, "dev_chrf": 5.344914841361505}
+{"step": 2650, "epoch": 6, "trans": 6.3581, "root": 0.4567, "pattern": 0.8537, "entropy": 1.6665, "balance": 1.4876, "lr": 0.0005}
+{"step": 2700, "epoch": 6, "trans": 5.7998, "root": 0.3228, "pattern": 0.7838, "entropy": 1.4799, "balance": 1.6612, "lr": 0.0005}
+{"step": 2750, "epoch": 6, "trans": 6.084, "root": 0.3404, "pattern": 0.938, "entropy": 1.4606, "balance": 1.7212, "lr": 0.0005}
+{"step": 2800, "epoch": 6, "trans": 6.1532, "root": 0.4503, "pattern": 0.8901, "entropy": 1.4924, "balance": 1.6668, "lr": 0.0005}
+{"step": 2850, "epoch": 6, "trans": 6.1557, "root": 0.4011, "pattern": 0.7985, "entropy": 1.3913, "balance": 1.7638, "lr": 0.0005}
+{"step": 2900, "epoch": 6, "trans": 5.9913, "root": 0.3139, "pattern": 0.8007, "entropy": 1.2883, "balance": 1.924, "lr": 0.0005}
+{"step": 2950, "epoch": 6, "trans": 6.0022, "root": 0.3574, "pattern": 0.8382, "entropy": 1.4664, "balance": 1.6506, "lr": 0.0005}
+{"step": 3000, "epoch": 6, "trans": 6.3315, "root": 0.3913, "pattern": 0.8647, "entropy": 1.1602, "balance": 2.0022, "lr": 0.0005}
+{"step": 3050, "epoch": 6, "trans": 6.3293, "root": 0.3583, "pattern": 0.7562, "entropy": 1.2099, "balance": 1.9252, "lr": 0.0005}
+{"epoch": 6, "dev_loss": 5.673942141119329, "dev_chrf": 6.178070719721522}
+{"step": 3100, "epoch": 7, "trans": 6.0108, "root": 0.2414, "pattern": 0.731, "entropy": 1.2614, "balance": 1.8487, "lr": 0.0005}
+{"step": 3150, "epoch": 7, "trans": 5.9957, "root": 0.358, "pattern": 0.8016, "entropy": 1.2449, "balance": 1.8909, "lr": 0.0005}
+{"step": 3200, "epoch": 7, "trans": 5.9511, "root": 0.3027, "pattern": 0.8478, "entropy": 1.1636, "balance": 2.0, "lr": 0.0005}
+{"step": 3250, "epoch": 7, "trans": 5.9511, "root": 0.2367, "pattern": 0.8446, "entropy": 1.3174, "balance": 1.7748, "lr": 0.0005}
+{"step": 3300, "epoch": 7, "trans": 5.7925, "root": 0.2725, "pattern": 0.7627, "entropy": 1.2768, "balance": 1.8039, "lr": 0.0005}
+{"step": 3350, "epoch": 7, "trans": 5.8928, "root": 0.2754, "pattern": 0.7736, "entropy": 1.2196, "balance": 1.8415, "lr": 0.0005}
+{"step": 3400, "epoch": 7, "trans": 5.9534, "root": 0.4399, "pattern": 0.7424, "entropy": 1.4089, "balance": 1.6478, "lr": 0.0005}
+{"step": 3450, "epoch": 7, "trans": 6.0013, "root": 0.252, "pattern": 0.7663, "entropy": 1.2494, "balance": 1.8121, "lr": 0.0005}
+{"epoch": 7, "dev_loss": 5.578958793456085, "dev_chrf": 7.190645314057313}
+{"step": 3500, "epoch": 8, "trans": 5.6255, "root": 0.1483, "pattern": 0.7939, "entropy": 0.971, "balance": 2.1909, "lr": 0.0005}
+{"step": 3550, "epoch": 8, "trans": 5.7848, "root": 0.2042, "pattern": 0.6165, "entropy": 1.2932, "balance": 1.7314, "lr": 0.0005}
+{"step": 3600, "epoch": 8, "trans": 5.6058, "root": 0.3457, "pattern": 0.6191, "entropy": 0.9576, "balance": 2.2244, "lr": 0.0005}
+{"step": 3650, "epoch": 8, "trans": 6.0757, "root": 0.2004, "pattern": 0.7622, "entropy": 0.9764, "balance": 2.1685, "lr": 0.0005}
+{"step": 3700, "epoch": 8, "trans": 6.0292, "root": 0.4244, "pattern": 0.9037, "entropy": 1.1576, "balance": 1.8741, "lr": 0.0005}
+{"step": 3750, "epoch": 8, "trans": 5.6969, "root": 0.322, "pattern": 0.7616, "entropy": 1.0071, "balance": 2.0529, "lr": 0.0005}
+{"step": 3800, "epoch": 8, "trans": 5.6421, "root": 0.2187, "pattern": 0.7682, "entropy": 1.1055, "balance": 1.899, "lr": 0.0005}
+{"step": 3850, "epoch": 8, "trans": 5.7906, "root": 0.3566, "pattern": 0.8588, "entropy": 1.2386, "balance": 1.7304, "lr": 0.0005}
+{"step": 3900, "epoch": 8, "trans": 5.8022, "root": 0.2199, "pattern": 0.8966, "entropy": 0.9567, "balance": 2.1114, "lr": 0.0005}
+{"epoch": 8, "dev_loss": 5.524438595100767, "dev_chrf": 7.614005776811851}
+{"step": 3950, "epoch": 9, "trans": 5.7486, "root": 0.2146, "pattern": 0.6445, "entropy": 1.0153, "balance": 1.9861, "lr": 0.0005}
+{"step": 4000, "epoch": 9, "trans": 5.6366, "root": 0.3163, "pattern": 0.8501, "entropy": 1.1107, "balance": 1.8743, "lr": 0.0005}
+{"step": 4050, "epoch": 9, "trans": 5.6503, "root": 0.2754, "pattern": 0.8293, "entropy": 1.0644, "balance": 1.9344, "lr": 0.0005}
+{"step": 4100, "epoch": 9, "trans": 5.6363, "root": 0.1979, "pattern": 0.6428, "entropy": 1.1048, "balance": 1.8528, "lr": 0.0005}
+{"step": 4150, "epoch": 9, "trans": 5.6983, "root": 0.399, "pattern": 0.7127, "entropy": 1.1931, "balance": 1.7509, "lr": 0.0005}
+{"step": 4200, "epoch": 9, "trans": 5.5112, "root": 0.2102, "pattern": 0.6181, "entropy": 1.1181, "balance": 1.7999, "lr": 0.0005}
+{"step": 4250, "epoch": 9, "trans": 5.5991, "root": 0.2215, "pattern": 0.7049, "entropy": 0.9639, "balance": 1.996, "lr": 0.0005}
+{"step": 4300, "epoch": 9, "trans": 5.5009, "root": 0.2974, "pattern": 0.716, "entropy": 1.077, "balance": 1.8474, "lr": 0.0005}
+{"step": 4350, "epoch": 9, "trans": 5.8864, "root": 0.2986, "pattern": 0.7307, "entropy": 1.2227, "balance": 1.6639, "lr": 0.0005}
+{"epoch": 9, "dev_loss": 5.447659548639498, "dev_chrf": 7.697945455099919}
+{"step": 4400, "epoch": 10, "trans": 5.5952, "root": 0.279, "pattern": 0.6837, "entropy": 1.2239, "balance": 1.6468, "lr": 0.0005}
+{"step": 4450, "epoch": 10, "trans": 5.5592, "root": 0.2242, "pattern": 0.6692, "entropy": 1.2112, "balance": 1.6712, "lr": 0.0005}
+{"step": 4500, "epoch": 10, "trans": 5.6719, "root": 0.168, "pattern": 0.8261, "entropy": 1.1133, "balance": 1.7565, "lr": 0.0005}
+{"step": 4550, "epoch": 10, "trans": 5.7383, "root": 0.3681, "pattern": 0.8619, "entropy": 1.0722, "balance": 1.8151, "lr": 0.0005}
+{"step": 4600, "epoch": 10, "trans": 5.5263, "root": 0.2228, "pattern": 0.5975, "entropy": 1.039, "balance": 1.8252, "lr": 0.0005}
+{"step": 4650, "epoch": 10, "trans": 5.7659, "root": 0.2885, "pattern": 0.7303, "entropy": 1.0067, "balance": 1.8861, "lr": 0.0005}
+{"step": 4700, "epoch": 10, "trans": 5.6534, "root": 0.2033, "pattern": 0.7323, "entropy": 0.9256, "balance": 1.9727, "lr": 0.0005}
+{"step": 4750, "epoch": 10, "trans": 5.6476, "root": 0.1898, "pattern": 0.6759, "entropy": 1.2079, "balance": 1.6261, "lr": 0.0005}
+{"epoch": 10, "dev_loss": 5.435469044548968, "dev_chrf": 7.975952718823493}
+{"step": 4800, "epoch": 11, "trans": 5.4412, "root": 0.3187, "pattern": 0.7756, "entropy": 1.0435, "balance": 1.8432, "lr": 0.0005}
+{"step": 4850, "epoch": 11, "trans": 5.5817, "root": 0.2108, "pattern": 0.6543, "entropy": 1.0193, "balance": 1.8118, "lr": 0.0005}
+{"step": 4900, "epoch": 11, "trans": 5.4169, "root": 0.202, "pattern": 0.7421, "entropy": 1.0477, "balance": 1.7912, "lr": 0.0005}
+{"step": 4950, "epoch": 11, "trans": 5.4611, "root": 0.3115, "pattern": 0.7854, "entropy": 1.0534, "balance": 1.7725, "lr": 0.0005}
+{"step": 5000, "epoch": 11, "trans": 5.3974, "root": 0.257, "pattern": 0.7029, "entropy": 0.9708, "balance": 1.87, "lr": 0.0005}
+{"step": 5050, "epoch": 11, "trans": 5.5494, "root": 0.2481, "pattern": 0.7312, "entropy": 0.9714, "balance": 1.8877, "lr": 0.0005}
+{"step": 5100, "epoch": 11, "trans": 5.5025, "root": 0.2966, "pattern": 0.836, "entropy": 0.9809, "balance": 1.8809, "lr": 0.0005}
+{"step": 5150, "epoch": 11, "trans": 5.5712, "root": 0.2344, "pattern": 0.8121, "entropy": 1.0072, "balance": 1.8177, "lr": 0.0005}
+{"step": 5200, "epoch": 11, "trans": 5.6079, "root": 0.1926, "pattern": 0.7214, "entropy": 1.0992, "balance": 1.7, "lr": 0.0005}
+{"epoch": 11, "dev_loss": 5.379915051457528, "dev_chrf": 7.898039122838157}
+{"step": 5250, "epoch": 12, "trans": 5.3643, "root": 0.2417, "pattern": 0.7809, "entropy": 1.0667, "balance": 1.7157, "lr": 0.0005}
+{"step": 5300, "epoch": 12, "trans": 5.3444, "root": 0.2098, "pattern": 0.5974, "entropy": 1.0748, "balance": 1.7045, "lr": 0.0005}
+{"step": 5350, "epoch": 12, "trans": 5.5135, "root": 0.2156, "pattern": 0.6528, "entropy": 0.9506, "balance": 1.8336, "lr": 0.0005}
+{"step": 5400, "epoch": 12, "trans": 5.3301, "root": 0.2141, "pattern": 0.7451, "entropy": 0.9633, "balance": 1.8077, "lr": 0.0005}
+{"step": 5450, "epoch": 12, "trans": 5.3149, "root": 0.2111, "pattern": 0.6741, "entropy": 1.1338, "balance": 1.59, "lr": 0.0005}
+{"step": 5500, "epoch": 12, "trans": 5.493, "root": 0.2429, "pattern": 0.7324, "entropy": 0.8983, "balance": 1.8894, "lr": 0.0005}
+{"step": 5550, "epoch": 12, "trans": 5.4042, "root": 0.1238, "pattern": 0.6713, "entropy": 1.0382, "balance": 1.7054, "lr": 0.0005}
+{"step": 5600, "epoch": 12, "trans": 5.3957, "root": 0.1242, "pattern": 0.7573, "entropy": 1.0994, "balance": 1.6269, "lr": 0.0005}
+{"step": 5650, "epoch": 12, "trans": 5.3686, "root": 0.1389, "pattern": 0.687, "entropy": 0.9602, "balance": 1.7999, "lr": 0.0005}
+{"epoch": 12, "dev_loss": 5.354360794076147, "dev_chrf": 7.929599677712254}
+{"step": 5700, "epoch": 13, "trans": 5.3101, "root": 0.1286, "pattern": 0.6704, "entropy": 1.1523, "balance": 1.5436, "lr": 0.0005}
+{"step": 5750, "epoch": 13, "trans": 5.5053, "root": 0.2328, "pattern": 0.8457, "entropy": 0.975, "balance": 1.783, "lr": 0.0005}
+{"step": 5800, "epoch": 13, "trans": 5.3756, "root": 0.1374, "pattern": 0.7497, "entropy": 1.0694, "balance": 1.648, "lr": 0.0005}
+{"step": 5850, "epoch": 13, "trans": 5.2743, "root": 0.0977, "pattern": 0.7288, "entropy": 1.033, "balance": 1.709, "lr": 0.0005}
+{"step": 5900, "epoch": 13, "trans": 5.0965, "root": 0.155, "pattern": 0.5787, "entropy": 1.0248, "balance": 1.7015, "lr": 0.0005}
+{"step": 5950, "epoch": 13, "trans": 5.2061, "root": 0.2163, "pattern": 0.6342, "entropy": 1.0816, "balance": 1.5755, "lr": 0.0005}
+{"step": 6000, "epoch": 13, "trans": 5.3523, "root": 0.2161, "pattern": 0.6663, "entropy": 0.9558, "balance": 1.7632, "lr": 0.0005}
+{"step": 6050, "epoch": 13, "trans": 5.4238, "root": 0.2313, "pattern": 0.6675, "entropy": 1.012, "balance": 1.6579, "lr": 0.0005}
+{"step": 6100, "epoch": 13, "trans": 5.4159, "root": 0.1859, "pattern": 0.6659, "entropy": 0.9628, "balance": 1.7591, "lr": 0.0005}
+{"epoch": 13, "dev_loss": 5.344828522938, "dev_chrf": 8.500348730427564}
+{"step": 6150, "epoch": 14, "trans": 5.2805, "root": 0.1216, "pattern": 0.6799, "entropy": 0.818, "balance": 2.0111, "lr": 0.0005}
+{"step": 6200, "epoch": 14, "trans": 5.2544, "root": 0.1386, "pattern": 0.6488, "entropy": 0.9581, "balance": 1.7821, "lr": 0.0005}
+{"step": 6250, "epoch": 14, "trans": 5.1593, "root": 0.0574, "pattern": 0.6918, "entropy": 0.8689, "balance": 1.842, "lr": 0.0005}
+{"step": 6300, "epoch": 14, "trans": 5.3979, "root": 0.2315, "pattern": 0.7844, "entropy": 0.9218, "balance": 1.797, "lr": 0.0005}
+{"step": 6350, "epoch": 14, "trans": 5.4362, "root": 0.1261, "pattern": 0.6794, "entropy": 0.8824, "balance": 1.8185, "lr": 0.0005}
+{"step": 6400, "epoch": 14, "trans": 5.3848, "root": 0.1208, "pattern": 0.6554, "entropy": 1.0542, "balance": 1.6016, "lr": 0.0005}
+{"step": 6450, "epoch": 14, "trans": 5.2297, "root": 0.2329, "pattern": 0.7137, "entropy": 1.0667, "balance": 1.5654, "lr": 0.0005}
+{"step": 6500, "epoch": 14, "trans": 5.2966, "root": 0.2322, "pattern": 0.6652, "entropy": 0.999, "balance": 1.645, "lr": 0.0005}
+{"epoch": 14, "dev_loss": 5.316647343358933, "dev_chrf": 8.539761593706114}
+{"step": 6550, "epoch": 15, "trans": 5.018, "root": 0.2938, "pattern": 0.5884, "entropy": 0.9666, "balance": 1.6453, "lr": 0.0005}
+{"step": 6600, "epoch": 15, "trans": 4.972, "root": 0.1594, "pattern": 0.6354, "entropy": 0.8697, "balance": 1.8271, "lr": 0.0005}
+{"step": 6650, "epoch": 15, "trans": 5.237, "root": 0.1575, "pattern": 0.6719, "entropy": 0.8935, "balance": 1.7934, "lr": 0.0005}
+{"step": 6700, "epoch": 15, "trans": 5.0005, "root": 0.1082, "pattern": 0.727, "entropy": 0.9477, "balance": 1.7135, "lr": 0.0005}
+{"step": 6750, "epoch": 15, "trans": 5.1549, "root": 0.1565, "pattern": 0.6238, "entropy": 1.0244, "balance": 1.5641, "lr": 0.0005}
+{"step": 6800, "epoch": 15, "trans": 5.1851, "root": 0.2719, "pattern": 0.5961, "entropy": 1.0265, "balance": 1.545, "lr": 0.0005}
+{"step": 6850, "epoch": 15, "trans": 5.0113, "root": 0.048, "pattern": 0.6692, "entropy": 1.0226, "balance": 1.57, "lr": 0.0005}
+{"step": 6900, "epoch": 15, "trans": 5.1802, "root": 0.3505, "pattern": 0.6709, "entropy": 1.0223, "balance": 1.565, "lr": 0.0005}
+{"step": 6950, "epoch": 15, "trans": 5.3485, "root": 0.1699, "pattern": 0.7587, "entropy": 0.9211, "balance": 1.6694, "lr": 0.0005}
+{"epoch": 15, "dev_loss": 5.304308871850414, "dev_chrf": 9.51785212572004}
+{"step": 7000, "epoch": 16, "trans": 4.9798, "root": 0.1093, "pattern": 0.6784, "entropy": 0.9749, "balance": 1.6035, "lr": 0.0005}
+{"step": 7050, "epoch": 16, "trans": 4.9356, "root": 0.1555, "pattern": 0.6039, "entropy": 0.7785, "balance": 1.9265, "lr": 0.0005}
+{"step": 7100, "epoch": 16, "trans": 5.0421, "root": 0.1873, "pattern": 0.6888, "entropy": 0.915, "balance": 1.7018, "lr": 0.0005}
+{"step": 7150, "epoch": 16, "trans": 5.1591, "root": 0.1, "pattern": 0.7274, "entropy": 0.8734, "balance": 1.7026, "lr": 0.0005}
+{"step": 7200, "epoch": 16, "trans": 4.9293, "root": 0.0353, "pattern": 0.6753, "entropy": 0.8131, "balance": 1.829, "lr": 0.0005}
+{"step": 7250, "epoch": 16, "trans": 4.9858, "root": 0.2486, "pattern": 0.6753, "entropy": 1.0572, "balance": 1.4869, "lr": 0.0005}
+{"step": 7300, "epoch": 16, "trans": 5.3252, "root": 0.0596, "pattern": 0.5925, "entropy": 0.9835, "balance": 1.6077, "lr": 0.0005}
+{"step": 7350, "epoch": 16, "trans": 5.2194, "root": 0.1509, "pattern": 0.7245, "entropy": 0.8202, "balance": 1.8271, "lr": 0.0005}
+{"step": 7400, "epoch": 16, "trans": 5.4502, "root": 0.1111, "pattern": 0.6047, "entropy": 0.823, "balance": 1.8176, "lr": 0.0005}
+{"epoch": 16, "dev_loss": 5.296280890754555, "dev_chrf": 9.82165035775643}
+{"step": 7450, "epoch": 17, "trans": 5.0584, "root": 0.1431, "pattern": 0.7161, "entropy": 0.8375, "balance": 1.8035, "lr": 0.0005}
+{"step": 7500, "epoch": 17, "trans": 4.7091, "root": 0.135, "pattern": 0.5623, "entropy": 0.9145, "balance": 1.6443, "lr": 0.0005}
+{"step": 7550, "epoch": 17, "trans": 5.0436, "root": 0.1036, "pattern": 0.6087, "entropy": 0.8277, "balance": 1.8134, "lr": 0.0005}
+{"step": 7600, "epoch": 17, "trans": 4.836, "root": 0.113, "pattern": 0.6779, "entropy": 0.8765, "balance": 1.7191, "lr": 0.0005}
+{"step": 7650, "epoch": 17, "trans": 4.7843, "root": 0.1033, "pattern": 0.6142, "entropy": 0.9446, "balance": 1.6315, "lr": 0.0005}
+{"step": 7700, "epoch": 17, "trans": 5.0955, "root": 0.1111, "pattern": 0.6147, "entropy": 0.92, "balance": 1.6149, "lr": 0.0005}
+{"step": 7750, "epoch": 17, "trans": 5.1554, "root": 0.1417, "pattern": 0.6701, "entropy": 0.9296, "balance": 1.5775, "lr": 0.0005}
+{"step": 7800, "epoch": 17, "trans": 5.1227, "root": 0.2475, "pattern": 0.7524, "entropy": 0.9235, "balance": 1.5916, "lr": 0.0005}
+{"epoch": 17, "dev_loss": 5.295817226188611, "dev_chrf": 9.79953207201614}
+{"step": 7850, "epoch": 18, "trans": 4.8237, "root": 0.0842, "pattern": 0.5004, "entropy": 1.0308, "balance": 1.4689, "lr": 0.0005}
+{"step": 7900, "epoch": 18, "trans": 4.9426, "root": 0.1305, "pattern": 0.5589, "entropy": 0.9275, "balance": 1.5778, "lr": 0.0005}
+{"step": 7950, "epoch": 18, "trans": 5.0276, "root": 0.1079, "pattern": 0.5993, "entropy": 1.0401, "balance": 1.4671, "lr": 0.0005}
+{"step": 8000, "epoch": 18, "trans": 4.8061, "root": 0.0668, "pattern": 0.6195, "entropy": 0.9711, "balance": 1.534, "lr": 0.0005}
+{"step": 8050, "epoch": 18, "trans": 5.2109, "root": 0.2487, "pattern": 0.7763, "entropy": 0.8953, "balance": 1.6453, "lr": 0.0005}
+{"step": 8100, "epoch": 18, "trans": 5.1013, "root": 0.1446, "pattern": 0.6181, "entropy": 0.8825, "balance": 1.63, "lr": 0.0005}
+{"step": 8150, "epoch": 18, "trans": 5.0388, "root": 0.2265, "pattern": 0.6383, "entropy": 0.8737, "balance": 1.6486, "lr": 0.0005}
+{"step": 8200, "epoch": 18, "trans": 5.0603, "root": 0.2318, "pattern": 0.5656, "entropy": 0.9351, "balance": 1.5462, "lr": 0.0005}
+{"step": 8250, "epoch": 18, "trans": 5.1916, "root": 0.121, "pattern": 0.7217, "entropy": 0.9265, "balance": 1.5907, "lr": 0.0005}
+{"epoch": 18, "dev_loss": 5.275579210672483, "dev_chrf": 9.536111258499147}
+{"step": 8300, "epoch": 19, "trans": 4.5044, "root": 0.0958, "pattern": 0.5949, "entropy": 0.8755, "balance": 1.611, "lr": 0.0005}
+{"step": 8350, "epoch": 19, "trans": 4.6636, "root": 0.1097, "pattern": 0.5944, "entropy": 0.9426, "balance": 1.531, "lr": 0.0005}
+{"step": 8400, "epoch": 19, "trans": 4.8473, "root": 0.1415, "pattern": 0.6833, "entropy": 0.9196, "balance": 1.5498, "lr": 0.0005}
+{"step": 8450, "epoch": 19, "trans": 4.9268, "root": 0.1218, "pattern": 0.7304, "entropy": 0.7011, "balance": 1.9505, "lr": 0.0005}
+{"step": 8500, "epoch": 19, "trans": 4.9468, "root": 0.1405, "pattern": 0.5198, "entropy": 0.8462, "balance": 1.6207, "lr": 0.0005}
+{"step": 8550, "epoch": 19, "trans": 4.9899, "root": 0.0629, "pattern": 0.5767, "entropy": 0.8729, "balance": 1.5968, "lr": 0.0005}
+{"step": 8600, "epoch": 19, "trans": 4.9054, "root": 0.1743, "pattern": 0.6593, "entropy": 0.8837, "balance": 1.5973, "lr": 0.0005}
+{"step": 8650, "epoch": 19, "trans": 5.1257, "root": 0.155, "pattern": 0.7322, "entropy": 0.7303, "balance": 1.8347, "lr": 0.0005}
+{"step": 8700, "epoch": 19, "trans": 5.1546, "root": 0.1706, "pattern": 0.6588, "entropy": 0.8045, "balance": 1.6915, "lr": 0.0005}
+{"epoch": 19, "dev_loss": 5.266768379912576, "dev_chrf": 9.904029050895003}
+{"step": 8750, "epoch": 20, "trans": 4.584, "root": 0.1394, "pattern": 0.6488, "entropy": 0.8494, "balance": 1.6062, "lr": 0.0005}
+{"step": 8800, "epoch": 20, "trans": 4.8279, "root": 0.0653, "pattern": 0.618, "entropy": 0.974, "balance": 1.4553, "lr": 0.0005}
+{"step": 8850, "epoch": 20, "trans": 5.059, "root": 0.0883, "pattern": 0.6121, "entropy": 0.9933, "balance": 1.4373, "lr": 0.0005}
+{"step": 8900, "epoch": 20, "trans": 4.9905, "root": 0.1183, "pattern": 0.5896, "entropy": 0.8149, "balance": 1.6653, "lr": 0.0005}
+{"step": 8950, "epoch": 20, "trans": 4.7855, "root": 0.1139, "pattern": 0.6038, "entropy": 0.857, "balance": 1.5984, "lr": 0.0005}
+{"step": 9000, "epoch": 20, "trans": 4.8384, "root": 0.2124, "pattern": 0.5861, "entropy": 0.6257, "balance": 2.0453, "lr": 0.0005}
+{"step": 9050, "epoch": 20, "trans": 4.918, "root": 0.1384, "pattern": 0.6025, "entropy": 0.882, "balance": 1.5357, "lr": 0.0005}
+{"step": 9100, "epoch": 20, "trans": 5.0285, "root": 0.163, "pattern": 0.6061, "entropy": 0.8341, "balance": 1.5822, "lr": 0.0005}
+{"step": 9150, "epoch": 20, "trans": 5.0629, "root": 0.1205, "pattern": 0.7036, "entropy": 0.8923, "balance": 1.5287, "lr": 0.0005}
+{"epoch": 20, "dev_loss": 5.276388140946267, "dev_chrf": 10.404772572542962}
+{"step": 9200, "epoch": 21, "trans": 4.6886, "root": 0.1499, "pattern": 0.6605, "entropy": 0.8421, "balance": 1.5945, "lr": 0.0005}
+{"step": 9250, "epoch": 21, "trans": 4.6065, "root": 0.0966, "pattern": 0.5503, "entropy": 0.9846, "balance": 1.4121, "lr": 0.0005}
+{"step": 9300, "epoch": 21, "trans": 4.8633, "root": 0.1564, "pattern": 0.7251, "entropy": 0.7651, "balance": 1.7327, "lr": 0.0005}
+{"step": 9350, "epoch": 21, "trans": 4.9101, "root": 0.108, "pattern": 0.6394, "entropy": 1.0175, "balance": 1.3533, "lr": 0.0005}
+{"step": 9400, "epoch": 21, "trans": 4.9193, "root": 0.16, "pattern": 0.6854, "entropy": 0.7675, "balance": 1.6978, "lr": 0.0005}
+{"step": 9450, "epoch": 21, "trans": 5.0198, "root": 0.1533, "pattern": 0.6163, "entropy": 0.9273, "balance": 1.4381, "lr": 0.0005}
+{"step": 9500, "epoch": 21, "trans": 4.9098, "root": 0.1289, "pattern": 0.7246, "entropy": 0.8426, "balance": 1.5912, "lr": 0.0005}
+{"step": 9550, "epoch": 21, "trans": 5.0027, "root": 0.2311, "pattern": 0.7605, "entropy": 0.6978, "balance": 1.787, "lr": 0.0005}
+{"epoch": 21, "dev_loss": 5.26883135028162, "dev_chrf": 10.138753283788759}
+{"step": 9600, "epoch": 22, "trans": 4.6043, "root": 0.1166, "pattern": 0.7179, "entropy": 0.8995, "balance": 1.4621, "lr": 0.0005}
+{"step": 9650, "epoch": 22, "trans": 4.5178, "root": 0.1073, "pattern": 0.5119, "entropy": 0.9415, "balance": 1.4069, "lr": 0.0005}
+{"step": 9700, "epoch": 22, "trans": 4.7417, "root": 0.1196, "pattern": 0.5323, "entropy": 0.9353, "balance": 1.419, "lr": 0.0005}
+{"step": 9750, "epoch": 22, "trans": 4.784, "root": 0.0541, "pattern": 0.5087, "entropy": 0.8454, "balance": 1.5916, "lr": 0.0005}
+{"step": 9800, "epoch": 22, "trans": 4.9468, "root": 0.1275, "pattern": 0.6979, "entropy": 0.787, "balance": 1.6157, "lr": 0.0005}
+{"step": 9850, "epoch": 22, "trans": 4.9644, "root": 0.0985, "pattern": 0.6467, "entropy": 0.8702, "balance": 1.5219, "lr": 0.0005}
+{"step": 9900, "epoch": 22, "trans": 4.8369, "root": 0.07, "pattern": 0.5733, "entropy": 0.6835, "balance": 1.8149, "lr": 0.0005}
+{"step": 9950, "epoch": 22, "trans": 5.0271, "root": 0.0987, "pattern": 0.7367, "entropy": 0.848, "balance": 1.527, "lr": 0.0005}
+{"step": 10000, "epoch": 22, "trans": 4.9359, "root": 0.0582, "pattern": 0.6318, "entropy": 0.864, "balance": 1.4815, "lr": 0.0005}
+{"epoch": 22, "dev_loss": 5.264664519867083, "dev_chrf": 10.398505768455037}
+{"step": 10050, "epoch": 23, "trans": 4.4303, "root": 0.0747, "pattern": 0.5126, "entropy": 0.6785, "balance": 1.7806, "lr": 0.0005}
+{"step": 10100, "epoch": 23, "trans": 4.6044, "root": 0.0854, "pattern": 0.6089, "entropy": 0.8271, "balance": 1.546, "lr": 0.0005}
+{"step": 10150, "epoch": 23, "trans": 4.7385, "root": 0.0868, "pattern": 0.642, "entropy": 0.8329, "balance": 1.5757, "lr": 0.0005}
+{"step": 10200, "epoch": 23, "trans": 4.7299, "root": 0.0664, "pattern": 0.5586, "entropy": 0.808, "balance": 1.546, "lr": 0.0005}
+{"step": 10250, "epoch": 23, "trans": 4.7069, "root": 0.0848, "pattern": 0.5973, "entropy": 0.8419, "balance": 1.4717, "lr": 0.0005}
+{"step": 10300, "epoch": 23, "trans": 4.8907, "root": 0.0754, "pattern": 0.6541, "entropy": 0.7552, "balance": 1.6525, "lr": 0.0005}
+{"step": 10350, "epoch": 23, "trans": 4.7757, "root": 0.1461, "pattern": 0.6708, "entropy": 0.6687, "balance": 1.7381, "lr": 0.0005}
+{"step": 10400, "epoch": 23, "trans": 4.8757, "root": 0.1111, "pattern": 0.5407, "entropy": 0.9239, "balance": 1.3961, "lr": 0.0005}
+{"step": 10450, "epoch": 23, "trans": 4.7882, "root": 0.1005, "pattern": 0.6263, "entropy": 0.8495, "balance": 1.5275, "lr": 0.0005}
+{"epoch": 23, "dev_loss": 5.250333356556024, "dev_chrf": 10.425151345031784}
+{"step": 10500, "epoch": 24, "trans": 4.6046, "root": 0.1156, "pattern": 0.6108, "entropy": 0.8104, "balance": 1.5899, "lr": 0.0005}
+{"step": 10550, "epoch": 24, "trans": 4.5694, "root": 0.1304, "pattern": 0.5462, "entropy": 0.8398, "balance": 1.545, "lr": 0.0005}
+{"step": 10600, "epoch": 24, "trans": 4.6992, "root": 0.1226, "pattern": 0.6081, "entropy": 0.8752, "balance": 1.4459, "lr": 0.0005}
+{"step": 10650, "epoch": 24, "trans": 4.5067, "root": 0.0629, "pattern": 0.5443, "entropy": 0.7835, "balance": 1.6436, "lr": 0.0005}
+{"step": 10700, "epoch": 24, "trans": 4.5806, "root": 0.0873, "pattern": 0.5993, "entropy": 0.7671, "balance": 1.5823, "lr": 0.0005}
+{"step": 10750, "epoch": 24, "trans": 4.8397, "root": 0.0709, "pattern": 0.5873, "entropy": 0.779, "balance": 1.5647, "lr": 0.0005}
+{"step": 10800, "epoch": 24, "trans": 4.7863, "root": 0.0968, "pattern": 0.647, "entropy": 0.9958, "balance": 1.2834, "lr": 0.0005}
+{"step": 10850, "epoch": 24, "trans": 4.9241, "root": 0.0733, "pattern": 0.6274, "entropy": 0.8344, "balance": 1.4587, "lr": 0.0005}
+{"step": 10900, "epoch": 24, "trans": 5.1329, "root": 0.1598, "pattern": 0.6475, "entropy": 0.8056, "balance": 1.5384, "lr": 0.0005}
+{"epoch": 24, "dev_loss": 5.251833298369292, "dev_chrf": 10.491847357271896}
+{"step": 10950, "epoch": 25, "trans": 4.4399, "root": 0.1398, "pattern": 0.5847, "entropy": 0.8427, "balance": 1.5653, "lr": 0.0005}
+{"step": 11000, "epoch": 25, "trans": 4.6138, "root": 0.103, "pattern": 0.6812, "entropy": 0.8045, "balance": 1.5305, "lr": 0.0005}
+{"step": 11050, "epoch": 25, "trans": 4.5495, "root": 0.0579, "pattern": 0.6148, "entropy": 0.7127, "balance": 1.6616, "lr": 0.0005}
+{"step": 11100, "epoch": 25, "trans": 4.8086, "root": 0.2075, "pattern": 0.7267, "entropy": 0.7301, "balance": 1.6576, "lr": 0.0005}
+{"step": 11150, "epoch": 25, "trans": 4.8884, "root": 0.1934, "pattern": 0.5789, "entropy": 0.7446, "balance": 1.6344, "lr": 0.0005}
+{"step": 11200, "epoch": 25, "trans": 4.842, "root": 0.057, "pattern": 0.5162, "entropy": 0.8055, "balance": 1.499, "lr": 0.0005}
+{"step": 11250, "epoch": 25, "trans": 4.6985, "root": 0.12, "pattern": 0.6686, "entropy": 0.664, "balance": 1.7445, "lr": 0.0005}
+{"step": 11300, "epoch": 25, "trans": 4.8279, "root": 0.1269, "pattern": 0.6281, "entropy": 0.7252, "balance": 1.6412, "lr": 0.0005}
+{"epoch": 25, "dev_loss": 5.250328034111168, "dev_chrf": 11.0541858367511}
+{"step": 11350, "epoch": 26, "trans": 4.4664, "root": 0.0343, "pattern": 0.6594, "entropy": 0.8154, "balance": 1.4771, "lr": 0.0005}
+{"step": 11400, "epoch": 26, "trans": 4.2948, "root": 0.1114, "pattern": 0.5577, "entropy": 0.7876, "balance": 1.5166, "lr": 0.0005}
+{"step": 11450, "epoch": 26, "trans": 4.508, "root": 0.0246, "pattern": 0.5505, "entropy": 0.8561, "balance": 1.4337, "lr": 0.0005}
+{"step": 11500, "epoch": 26, "trans": 4.5059, "root": 0.0585, "pattern": 0.4624, "entropy": 0.9495, "balance": 1.3225, "lr": 0.0005}
+{"step": 11550, "epoch": 26, "trans": 4.7326, "root": 0.1063, "pattern": 0.5615, "entropy": 0.8019, "balance": 1.478, "lr": 0.0005}
+{"step": 11600, "epoch": 26, "trans": 4.6754, "root": 0.168, "pattern": 0.4832, "entropy": 0.8824, "balance": 1.3857, "lr": 0.0005}
+{"step": 11650, "epoch": 26, "trans": 4.8027, "root": 0.0973, "pattern": 0.6146, "entropy": 0.9164, "balance": 1.3276, "lr": 0.0005}
+{"step": 11700, "epoch": 26, "trans": 4.7535, "root": 0.0597, "pattern": 0.5244, "entropy": 0.7864, "balance": 1.5285, "lr": 0.0005}
+{"step": 11750, "epoch": 26, "trans": 4.7992, "root": 0.2667, "pattern": 0.597, "entropy": 0.7955, "balance": 1.4638, "lr": 0.0005}
+{"epoch": 26, "dev_loss": 5.240722246789028, "dev_chrf": 10.882770627170183}
+{"step": 11800, "epoch": 27, "trans": 4.4087, "root": 0.0388, "pattern": 0.4757, "entropy": 0.8152, "balance": 1.4514, "lr": 0.0005}
+{"step": 11850, "epoch": 27, "trans": 4.522, "root": 0.0563, "pattern": 0.5376, "entropy": 0.7634, "balance": 1.4882, "lr": 0.0005}
+{"step": 11900, "epoch": 27, "trans": 4.5524, "root": 0.1455, "pattern": 0.5719, "entropy": 0.7991, "balance": 1.4919, "lr": 0.0005}
+{"step": 11950, "epoch": 27, "trans": 4.6723, "root": 0.0473, "pattern": 0.5083, "entropy": 0.8882, "balance": 1.3693, "lr": 0.0005}
+{"step": 12000, "epoch": 27, "trans": 4.7906, "root": 0.0985, "pattern": 0.5288, "entropy": 0.7209, "balance": 1.623, "lr": 0.0005}
+{"step": 12050, "epoch": 27, "trans": 4.5309, "root": 0.1702, "pattern": 0.4886, "entropy": 0.8636, "balance": 1.3484, "lr": 0.0005}
+{"step": 12100, "epoch": 27, "trans": 4.5829, "root": 0.1004, "pattern": 0.5532, "entropy": 0.7486, "balance": 1.5577, "lr": 0.0005}
+{"step": 12150, "epoch": 27, "trans": 4.6721, "root": 0.0834, "pattern": 0.5633, "entropy": 0.6725, "balance": 1.6861, "lr": 0.0005}
+{"step": 12200, "epoch": 27, "trans": 4.7217, "root": 0.1117, "pattern": 0.5369, "entropy": 0.7815, "balance": 1.4888, "lr": 0.0005}
+{"epoch": 27, "dev_loss": 5.235239747609988, "dev_chrf": 11.13399510718546}
+{"step": 12250, "epoch": 28, "trans": 4.4232, "root": 0.0345, "pattern": 0.5625, "entropy": 0.7066, "balance": 1.6543, "lr": 0.0005}
+{"step": 12300, "epoch": 28, "trans": 4.3945, "root": 0.1104, "pattern": 0.6175, "entropy": 0.7484, "balance": 1.5993, "lr": 0.0005}
+{"step": 12350, "epoch": 28, "trans": 4.6562, "root": 0.074, "pattern": 0.5151, "entropy": 0.7614, "balance": 1.5262, "lr": 0.0005}
+{"step": 12400, "epoch": 28, "trans": 4.6918, "root": 0.0726, "pattern": 0.5857, "entropy": 0.6398, "balance": 1.8058, "lr": 0.0005}
+{"step": 12450, "epoch": 28, "trans": 4.4254, "root": 0.0311, "pattern": 0.4982, "entropy": 0.6115, "balance": 1.8646, "lr": 0.0005}
+{"step": 12500, "epoch": 28, "trans": 5.0573, "root": 0.1211, "pattern": 0.6195, "entropy": 0.712, "balance": 1.6191, "lr": 0.0005}
+{"step": 12550, "epoch": 28, "trans": 4.5003, "root": 0.1072, "pattern": 0.5266, "entropy": 0.7142, "balance": 1.5836, "lr": 0.0005}
+{"step": 12600, "epoch": 28, "trans": 4.6386, "root": 0.0354, "pattern": 0.6341, "entropy": 0.8675, "balance": 1.3372, "lr": 0.0005}
+{"epoch": 28, "dev_loss": 5.239569153476213, "dev_chrf": 11.18352306314106}
+{"step": 12650, "epoch": 29, "trans": 4.484, "root": 0.0774, "pattern": 0.6264, "entropy": 0.7489, "balance": 1.4792, "lr": 0.0005}
+{"step": 12700, "epoch": 29, "trans": 4.5025, "root": 0.0909, "pattern": 0.592, "entropy": 0.7348, "balance": 1.5272, "lr": 0.0005}
+{"step": 12750, "epoch": 29, "trans": 4.5807, "root": 0.0435, "pattern": 0.5684, "entropy": 0.7057, "balance": 1.5606, "lr": 0.0005}
+{"step": 12800, "epoch": 29, "trans": 4.6356, "root": 0.0824, "pattern": 0.5893, "entropy": 0.7617, "balance": 1.4793, "lr": 0.0005}
+{"step": 12850, "epoch": 29, "trans": 4.8947, "root": 0.0898, "pattern": 0.776, "entropy": 0.7272, "balance": 1.5342, "lr": 0.0005}
+{"step": 12900, "epoch": 29, "trans": 4.7708, "root": 0.0964, "pattern": 0.6069, "entropy": 0.8428, "balance": 1.3393, "lr": 0.0005}
+{"step": 12950, "epoch": 29, "trans": 4.5577, "root": 0.0613, "pattern": 0.4668, "entropy": 0.6152, "balance": 1.7824, "lr": 0.0005}
+{"step": 13000, "epoch": 29, "trans": 4.6957, "root": 0.0618, "pattern": 0.6497, "entropy": 0.7106, "balance": 1.5703, "lr": 0.0005}
+{"step": 13050, "epoch": 29, "trans": 4.6739, "root": 0.0869, "pattern": 0.5561, "entropy": 0.7988, "balance": 1.4207, "lr": 0.0005}
+{"epoch": 29, "dev_loss": 5.241269410170062, "dev_chrf": 11.623427461675648}
+{"step": 13100, "epoch": 30, "trans": 4.3923, "root": 0.0559, "pattern": 0.5543, "entropy": 0.7543, "balance": 1.4973, "lr": 0.0005}
+{"step": 13150, "epoch": 30, "trans": 4.6092, "root": 0.0902, "pattern": 0.5728, "entropy": 0.825, "balance": 1.3425, "lr": 0.0005}
+{"step": 13200, "epoch": 30, "trans": 4.4159, "root": 0.0326, "pattern": 0.5184, "entropy": 0.6935, "balance": 1.5527, "lr": 0.0005}
+{"step": 13250, "epoch": 30, "trans": 4.395, "root": 0.0938, "pattern": 0.6045, "entropy": 0.8833, "balance": 1.2587, "lr": 0.0005}
+{"step": 13300, "epoch": 30, "trans": 4.5229, "root": 0.0508, "pattern": 0.6199, "entropy": 0.8072, "balance": 1.3685, "lr": 0.0005}
+{"step": 13350, "epoch": 30, "trans": 4.5199, "root": 0.0639, "pattern": 0.6152, "entropy": 0.9049, "balance": 1.2389, "lr": 0.0005}
+{"step": 13400, "epoch": 30, "trans": 4.5231, "root": 0.1101, "pattern": 0.5718, "entropy": 0.7614, "balance": 1.4654, "lr": 0.0005}
+{"step": 13450, "epoch": 30, "trans": 4.6978, "root": 0.0449, "pattern": 0.5162, "entropy": 0.8771, "balance": 1.2838, "lr": 0.0005}
+{"step": 13500, "epoch": 30, "trans": 4.8433, "root": 0.0687, "pattern": 0.5543, "entropy": 0.7741, "balance": 1.4382, "lr": 0.0005}
+{"epoch": 30, "dev_loss": 5.242904893698739, "dev_chrf": 11.301889296782571}
+{"step": 13550, "epoch": 31, "trans": 4.3429, "root": 0.0837, "pattern": 0.5358, "entropy": 0.6, "balance": 1.7922, "lr": 0.00025}
+{"step": 13600, "epoch": 31, "trans": 4.2075, "root": 0.0548, "pattern": 0.4302, "entropy": 0.8585, "balance": 1.2609, "lr": 0.00025}
+{"step": 13650, "epoch": 31, "trans": 4.3186, "root": 0.0565, "pattern": 0.6335, "entropy": 0.6935, "balance": 1.5624, "lr": 0.00025}
+{"step": 13700, "epoch": 31, "trans": 4.5684, "root": 0.0963, "pattern": 0.6061, "entropy": 0.6616, "balance": 1.5833, "lr": 0.00025}
+{"step": 13750, "epoch": 31, "trans": 4.4408, "root": 0.1236, "pattern": 0.6973, "entropy": 0.7133, "balance": 1.4558, "lr": 0.00025}
+{"step": 13800, "epoch": 31, "trans": 4.3562, "root": 0.1006, "pattern": 0.4954, "entropy": 0.8931, "balance": 1.2121, "lr": 0.00025}
+{"step": 13850, "epoch": 31, "trans": 4.4264, "root": 0.145, "pattern": 0.6012, "entropy": 0.6373, "balance": 1.6936, "lr": 0.00025}
+{"step": 13900, "epoch": 31, "trans": 4.4615, "root": 0.135, "pattern": 0.5217, "entropy": 0.9344, "balance": 1.2076, "lr": 0.00025}
+{"step": 13950, "epoch": 31, "trans": 4.5909, "root": 0.0723, "pattern": 0.6369, "entropy": 0.724, "balance": 1.4513, "lr": 0.00025}
+{"epoch": 31, "dev_loss": 5.197171771341463, "dev_chrf": 11.859890688865669}
+{"step": 14000, "epoch": 32, "trans": 4.3037, "root": 0.0723, "pattern": 0.5856, "entropy": 0.759, "balance": 1.4192, "lr": 0.00025}
+{"step": 14050, "epoch": 32, "trans": 4.3231, "root": 0.0517, "pattern": 0.5637, "entropy": 0.7119, "balance": 1.5369, "lr": 0.00025}
+{"step": 14100, "epoch": 32, "trans": 4.3933, "root": 0.0427, "pattern": 0.6035, "entropy": 0.8339, "balance": 1.3129, "lr": 0.00025}
+{"step": 14150, "epoch": 32, "trans": 4.254, "root": 0.1325, "pattern": 0.6529, "entropy": 0.6938, "balance": 1.5258, "lr": 0.00025}
+{"step": 14200, "epoch": 32, "trans": 4.4984, "root": 0.0861, "pattern": 0.635, "entropy": 0.7102, "balance": 1.4823, "lr": 0.00025}
+{"step": 14250, "epoch": 32, "trans": 4.2668, "root": 0.0684, "pattern": 0.5841, "entropy": 0.6558, "balance": 1.6012, "lr": 0.00025}
+{"step": 14300, "epoch": 32, "trans": 4.3401, "root": 0.1135, "pattern": 0.5586, "entropy": 0.8753, "balance": 1.2101, "lr": 0.00025}
+{"step": 14350, "epoch": 32, "trans": 4.1132, "root": 0.0646, "pattern": 0.4548, "entropy": 0.6991, "balance": 1.5071, "lr": 0.00025}
+{"epoch": 32, "dev_loss": 5.186472869206954, "dev_chrf": 11.66831492666473}
+{"step": 14400, "epoch": 33, "trans": 4.2611, "root": 0.0517, "pattern": 0.5234, "entropy": 0.7094, "balance": 1.507, "lr": 0.00025}
+{"step": 14450, "epoch": 33, "trans": 4.2264, "root": 0.045, "pattern": 0.5661, "entropy": 0.757, "balance": 1.3809, "lr": 0.00025}
+{"step": 14500, "epoch": 33, "trans": 4.3275, "root": 0.0761, "pattern": 0.5665, "entropy": 0.6486, "balance": 1.5889, "lr": 0.00025}
+{"step": 14550, "epoch": 33, "trans": 4.3579, "root": 0.0974, "pattern": 0.5266, "entropy": 0.7133, "balance": 1.449, "lr": 0.00025}
+{"step": 14600, "epoch": 33, "trans": 4.4072, "root": 0.059, "pattern": 0.6944, "entropy": 0.7088, "balance": 1.3747, "lr": 0.00025}
+{"step": 14650, "epoch": 33, "trans": 4.0977, "root": 0.0622, "pattern": 0.4569, "entropy": 0.7276, "balance": 1.4207, "lr": 0.00025}
+{"step": 14700, "epoch": 33, "trans": 4.3603, "root": 0.1008, "pattern": 0.4476, "entropy": 0.7088, "balance": 1.4485, "lr": 0.00025}
+{"step": 14750, "epoch": 33, "trans": 4.5312, "root": 0.0882, "pattern": 0.5468, "entropy": 0.714, "balance": 1.4353, "lr": 0.00025}
+{"step": 14800, "epoch": 33, "trans": 4.4649, "root": 0.0857, "pattern": 0.5391, "entropy": 0.5563, "balance": 1.7563, "lr": 0.00025}
+{"epoch": 33, "dev_loss": 5.193403250044067, "dev_chrf": 11.780842292356628}
+{"step": 14850, "epoch": 34, "trans": 4.0647, "root": 0.0597, "pattern": 0.5148, "entropy": 0.7715, "balance": 1.3747, "lr": 0.00025}
+{"step": 14900, "epoch": 34, "trans": 4.1474, "root": 0.0387, "pattern": 0.4811, "entropy": 0.6436, "balance": 1.5263, "lr": 0.00025}
+{"step": 14950, "epoch": 34, "trans": 4.3056, "root": 0.0701, "pattern": 0.5511, "entropy": 0.69, "balance": 1.4913, "lr": 0.00025}
+{"step": 15000, "epoch": 34, "trans": 4.1555, "root": 0.0388, "pattern": 0.4594, "entropy": 0.7493, "balance": 1.3365, "lr": 0.00025}
+{"step": 15050, "epoch": 34, "trans": 4.2083, "root": 0.056, "pattern": 0.5272, "entropy": 0.7209, "balance": 1.3695, "lr": 0.00025}
+{"step": 15100, "epoch": 34, "trans": 4.3374, "root": 0.077, "pattern": 0.5284, "entropy": 0.7909, "balance": 1.2942, "lr": 0.00025}
+{"step": 15150, "epoch": 34, "trans": 4.2282, "root": 0.0842, "pattern": 0.6359, "entropy": 0.804, "balance": 1.2671, "lr": 0.00025}
+{"step": 15200, "epoch": 34, "trans": 4.2938, "root": 0.0568, "pattern": 0.534, "entropy": 0.8673, "balance": 1.185, "lr": 0.00025}
+{"step": 15250, "epoch": 34, "trans": 4.2473, "root": 0.0989, "pattern": 0.643, "entropy": 0.5674, "balance": 1.7004, "lr": 0.00025}
+{"epoch": 34, "dev_loss": 5.18996603690229, "dev_chrf": 11.274751797241912}
+{"step": 15300, "epoch": 35, "trans": 3.9087, "root": 0.0424, "pattern": 0.5008, "entropy": 0.7342, "balance": 1.3611, "lr": 0.00025}
+{"step": 15350, "epoch": 35, "trans": 4.08, "root": 0.0222, "pattern": 0.4788, "entropy": 0.5979, "balance": 1.6902, "lr": 0.00025}
+{"step": 15400, "epoch": 35, "trans": 4.1521, "root": 0.0336, "pattern": 0.4968, "entropy": 0.71, "balance": 1.4026, "lr": 0.00025}
+{"step": 15450, "epoch": 35, "trans": 4.123, "root": 0.0408, "pattern": 0.5192, "entropy": 0.7536, "balance": 1.336, "lr": 0.00025}
+{"step": 15500, "epoch": 35, "trans": 4.4253, "root": 0.11, "pattern": 0.5042, "entropy": 0.6622, "balance": 1.4807, "lr": 0.00025}
+{"step": 15550, "epoch": 35, "trans": 4.1699, "root": 0.0357, "pattern": 0.5135, "entropy": 0.7626, "balance": 1.322, "lr": 0.00025}
+{"step": 15600, "epoch": 35, "trans": 4.3469, "root": 0.0737, "pattern": 0.5627, "entropy": 0.7635, "balance": 1.327, "lr": 0.00025}
+{"step": 15650, "epoch": 35, "trans": 4.3476, "root": 0.0312, "pattern": 0.5637, "entropy": 0.718, "balance": 1.3906, "lr": 0.00025}
+{"epoch": 35, "dev_loss": 5.190895530562645, "dev_chrf": 11.76917204209542}
+{"step": 15700, "epoch": 36, "trans": 4.1269, "root": 0.0348, "pattern": 0.5588, "entropy": 0.6412, "balance": 1.5578, "lr": 0.000125}
+{"step": 15750, "epoch": 36, "trans": 4.0613, "root": 0.0331, "pattern": 0.5632, "entropy": 0.7101, "balance": 1.3901, "lr": 0.000125}
+{"step": 15800, "epoch": 36, "trans": 4.0864, "root": 0.0724, "pattern": 0.5694, "entropy": 0.6804, "balance": 1.4327, "lr": 0.000125}
+{"step": 15850, "epoch": 36, "trans": 4.1884, "root": 0.0586, "pattern": 0.5639, "entropy": 0.681, "balance": 1.4538, "lr": 0.000125}
+{"step": 15900, "epoch": 36, "trans": 4.1797, "root": 0.0973, "pattern": 0.5171, "entropy": 0.6749, "balance": 1.4601, "lr": 0.000125}
+{"step": 15950, "epoch": 36, "trans": 4.0724, "root": 0.0839, "pattern": 0.5258, "entropy": 0.6897, "balance": 1.4379, "lr": 0.000125}
+{"step": 16000, "epoch": 36, "trans": 4.0733, "root": 0.0397, "pattern": 0.4485, "entropy": 0.7446, "balance": 1.3361, "lr": 0.000125}
+{"step": 16050, "epoch": 36, "trans": 4.1255, "root": 0.0294, "pattern": 0.4679, "entropy": 0.86, "balance": 1.1802, "lr": 0.000125}
+{"step": 16100, "epoch": 36, "trans": 4.1546, "root": 0.0864, "pattern": 0.6356, "entropy": 0.6125, "balance": 1.5775, "lr": 0.000125}
+{"epoch": 36, "dev_loss": 5.168406230974718, "dev_chrf": 11.79229616951892}
+{"step": 16150, "epoch": 37, "trans": 4.006, "root": 0.0782, "pattern": 0.5079, "entropy": 0.7295, "balance": 1.3561, "lr": 0.000125}
+{"step": 16200, "epoch": 37, "trans": 4.2498, "root": 0.0356, "pattern": 0.6184, "entropy": 0.6621, "balance": 1.4841, "lr": 0.000125}
+{"step": 16250, "epoch": 37, "trans": 4.0097, "root": 0.0632, "pattern": 0.5205, "entropy": 0.7483, "balance": 1.3065, "lr": 0.000125}
+{"step": 16300, "epoch": 37, "trans": 4.3477, "root": 0.0729, "pattern": 0.6046, "entropy": 0.6606, "balance": 1.4568, "lr": 0.000125}
+{"step": 16350, "epoch": 37, "trans": 4.2323, "root": 0.0703, "pattern": 0.5484, "entropy": 0.8693, "balance": 1.1522, "lr": 0.000125}
+{"step": 16400, "epoch": 37, "trans": 4.176, "root": 0.044, "pattern": 0.4417, "entropy": 0.6867, "balance": 1.4382, "lr": 0.000125}
+{"step": 16450, "epoch": 37, "trans": 3.9229, "root": 0.021, "pattern": 0.5026, "entropy": 0.6538, "balance": 1.5008, "lr": 0.000125}
+{"step": 16500, "epoch": 37, "trans": 4.0965, "root": 0.0394, "pattern": 0.5956, "entropy": 0.7326, "balance": 1.3486, "lr": 0.000125}
+{"step": 16550, "epoch": 37, "trans": 4.271, "root": 0.0241, "pattern": 0.4646, "entropy": 0.6945, "balance": 1.3902, "lr": 0.000125}
+{"epoch": 37, "dev_loss": 5.172871710718671, "dev_chrf": 11.63023670298457}
+{"step": 16600, "epoch": 38, "trans": 3.9059, "root": 0.0168, "pattern": 0.4626, "entropy": 0.616, "balance": 1.5522, "lr": 0.000125}
+{"step": 16650, "epoch": 38, "trans": 4.1333, "root": 0.0441, "pattern": 0.5748, "entropy": 0.6159, "balance": 1.5776, "lr": 0.000125}
+{"step": 16700, "epoch": 38, "trans": 4.0795, "root": 0.0325, "pattern": 0.5486, "entropy": 0.7341, "balance": 1.339, "lr": 0.000125}
+{"step": 16750, "epoch": 38, "trans": 4.0383, "root": 0.0499, "pattern": 0.4722, "entropy": 0.7037, "balance": 1.381, "lr": 0.000125}
+{"step": 16800, "epoch": 38, "trans": 4.2112, "root": 0.0217, "pattern": 0.4952, "entropy": 0.6832, "balance": 1.4275, "lr": 0.000125}
+{"step": 16850, "epoch": 38, "trans": 4.0774, "root": 0.062, "pattern": 0.6148, "entropy": 0.6284, "balance": 1.5247, "lr": 0.000125}
+{"step": 16900, "epoch": 38, "trans": 4.1937, "root": 0.0753, "pattern": 0.5569, "entropy": 0.7673, "balance": 1.3097, "lr": 0.000125}
+{"step": 16950, "epoch": 38, "trans": 4.2402, "root": 0.0678, "pattern": 0.5423, "entropy": 0.6321, "balance": 1.5048, "lr": 0.000125}
+{"step": 17000, "epoch": 38, "trans": 4.0346, "root": 0.0423, "pattern": 0.5366, "entropy": 0.7847, "balance": 1.2718, "lr": 0.000125}
+{"epoch": 38, "dev_loss": 5.179484792169245, "dev_chrf": 11.799639648814399}
+{"step": 17050, "epoch": 39, "trans": 3.9502, "root": 0.0271, "pattern": 0.5404, "entropy": 0.7564, "balance": 1.3057, "lr": 0.000125}
+{"step": 17100, "epoch": 39, "trans": 4.0755, "root": 0.0661, "pattern": 0.4929, "entropy": 0.5896, "balance": 1.6019, "lr": 0.000125}
+{"step": 17150, "epoch": 39, "trans": 4.0396, "root": 0.0379, "pattern": 0.548, "entropy": 0.6122, "balance": 1.5465, "lr": 0.000125}
+{"step": 17200, "epoch": 39, "trans": 3.8022, "root": 0.0232, "pattern": 0.3915, "entropy": 0.5668, "balance": 1.7056, "lr": 0.000125}
+{"step": 17250, "epoch": 39, "trans": 4.1046, "root": 0.0616, "pattern": 0.4767, "entropy": 0.7931, "balance": 1.2539, "lr": 0.000125}
+{"step": 17300, "epoch": 39, "trans": 4.2174, "root": 0.0535, "pattern": 0.5436, "entropy": 0.7162, "balance": 1.3573, "lr": 0.000125}
+{"step": 17350, "epoch": 39, "trans": 4.2542, "root": 0.0303, "pattern": 0.4442, "entropy": 0.7388, "balance": 1.3383, "lr": 0.000125}
+{"step": 17400, "epoch": 39, "trans": 4.0935, "root": 0.0579, "pattern": 0.6182, "entropy": 0.6577, "balance": 1.4856, "lr": 0.000125}
+{"epoch": 39, "dev_loss": 5.175862818459955, "dev_chrf": 11.377641554029557}
+{"step": 17450, "epoch": 40, "trans": 4.0434, "root": 0.0666, "pattern": 0.5237, "entropy": 0.6705, "balance": 1.4233, "lr": 6.25e-05}
+{"step": 17500, "epoch": 40, "trans": 3.8512, "root": 0.0658, "pattern": 0.4978, "entropy": 0.6518, "balance": 1.44, "lr": 6.25e-05}
+{"step": 17550, "epoch": 40, "trans": 3.8804, "root": 0.0278, "pattern": 0.4644, "entropy": 0.8034, "balance": 1.2288, "lr": 6.25e-05}
+{"step": 17600, "epoch": 40, "trans": 3.8878, "root": 0.0829, "pattern": 0.5001, "entropy": 0.627, "balance": 1.5362, "lr": 6.25e-05}
+{"step": 17650, "epoch": 40, "trans": 3.7877, "root": 0.0353, "pattern": 0.4879, "entropy": 0.5868, "balance": 1.5899, "lr": 6.25e-05}
+{"step": 17700, "epoch": 40, "trans": 4.1788, "root": 0.033, "pattern": 0.4644, "entropy": 0.6628, "balance": 1.4475, "lr": 6.25e-05}
+{"step": 17750, "epoch": 40, "trans": 4.1484, "root": 0.0452, "pattern": 0.597, "entropy": 0.6895, "balance": 1.3783, "lr": 6.25e-05}
+{"step": 17800, "epoch": 40, "trans": 4.0363, "root": 0.0633, "pattern": 0.471, "entropy": 0.7252, "balance": 1.3357, "lr": 6.25e-05}
+{"step": 17850, "epoch": 40, "trans": 3.9126, "root": 0.0505, "pattern": 0.4642, "entropy": 0.6388, "balance": 1.4757, "lr": 6.25e-05}
+{"epoch": 40, "dev_loss": 5.16915014925392, "dev_chrf": 12.1006593113211}
+{"step": 17900, "epoch": 41, "trans": 3.9636, "root": 0.0815, "pattern": 0.4736, "entropy": 0.711, "balance": 1.365, "lr": 6.25e-05}
+{"step": 17950, "epoch": 41, "trans": 3.7082, "root": 0.0446, "pattern": 0.4088, "entropy": 0.7016, "balance": 1.3632, "lr": 6.25e-05}
+{"step": 18000, "epoch": 41, "trans": 3.8902, "root": 0.0395, "pattern": 0.4912, "entropy": 0.6068, "balance": 1.5403, "lr": 6.25e-05}
+{"step": 18050, "epoch": 41, "trans": 3.9891, "root": 0.0207, "pattern": 0.5689, "entropy": 0.6325, "balance": 1.4996, "lr": 6.25e-05}
+{"step": 18100, "epoch": 41, "trans": 3.9404, "root": 0.0999, "pattern": 0.5419, "entropy": 0.6273, "balance": 1.5461, "lr": 6.25e-05}
+{"step": 18150, "epoch": 41, "trans": 4.1395, "root": 0.0341, "pattern": 0.591, "entropy": 0.6703, "balance": 1.4329, "lr": 6.25e-05}
+{"step": 18200, "epoch": 41, "trans": 3.8028, "root": 0.0309, "pattern": 0.4944, "entropy": 0.7106, "balance": 1.3554, "lr": 6.25e-05}
+{"step": 18250, "epoch": 41, "trans": 4.0828, "root": 0.0227, "pattern": 0.5794, "entropy": 0.6703, "balance": 1.4244, "lr": 6.25e-05}
+{"step": 18300, "epoch": 41, "trans": 4.0337, "root": 0.0611, "pattern": 0.463, "entropy": 0.7657, "balance": 1.2434, "lr": 6.25e-05}
+{"epoch": 41, "dev_loss": 5.171840342346927, "dev_chrf": 12.49539928704884}
+{"step": 18350, "epoch": 42, "trans": 4.003, "root": 0.0574, "pattern": 0.4321, "entropy": 0.5459, "balance": 1.6872, "lr": 6.25e-05}
+{"step": 18400, "epoch": 42, "trans": 4.0315, "root": 0.0444, "pattern": 0.4356, "entropy": 0.5916, "balance": 1.5717, "lr": 6.25e-05}
+{"step": 18450, "epoch": 42, "trans": 3.9114, "root": 0.1182, "pattern": 0.5222, "entropy": 0.8088, "balance": 1.1857, "lr": 6.25e-05}
+{"step": 18500, "epoch": 42, "trans": 4.0594, "root": 0.0288, "pattern": 0.5126, "entropy": 0.6564, "balance": 1.4464, "lr": 6.25e-05}
+{"step": 18550, "epoch": 42, "trans": 4.0563, "root": 0.026, "pattern": 0.4229, "entropy": 0.642, "balance": 1.4578, "lr": 6.25e-05}
+{"step": 18600, "epoch": 42, "trans": 4.0388, "root": 0.0669, "pattern": 0.4863, "entropy": 0.6972, "balance": 1.3603, "lr": 6.25e-05}
+{"step": 18650, "epoch": 42, "trans": 4.1316, "root": 0.0557, "pattern": 0.4654, "entropy": 0.6364, "balance": 1.4679, "lr": 6.25e-05}
+{"step": 18700, "epoch": 42, "trans": 4.1273, "root": 0.0797, "pattern": 0.4933, "entropy": 0.6723, "balance": 1.419, "lr": 6.25e-05}
+{"epoch": 42, "dev_loss": 5.171695275665494, "dev_chrf": 11.985228350641629}
+{"step": 18750, "epoch": 43, "trans": 3.8946, "root": 0.0333, "pattern": 0.4571, "entropy": 0.5532, "balance": 1.6065, "lr": 3.125e-05}
+{"step": 18800, "epoch": 43, "trans": 3.87, "root": 0.0195, "pattern": 0.3949, "entropy": 0.7925, "balance": 1.1967, "lr": 3.125e-05}
+{"step": 18850, "epoch": 43, "trans": 3.9953, "root": 0.0077, "pattern": 0.5274, "entropy": 0.6758, "balance": 1.3864, "lr": 3.125e-05}
+{"step": 18900, "epoch": 43, "trans": 3.8378, "root": 0.0334, "pattern": 0.4291, "entropy": 0.7132, "balance": 1.3431, "lr": 3.125e-05}
+{"step": 18950, "epoch": 43, "trans": 3.7985, "root": 0.0146, "pattern": 0.4812, "entropy": 0.6929, "balance": 1.3752, "lr": 3.125e-05}
+{"step": 19000, "epoch": 43, "trans": 3.9114, "root": 0.006, "pattern": 0.4798, "entropy": 0.6701, "balance": 1.4354, "lr": 3.125e-05}
+{"step": 19050, "epoch": 43, "trans": 4.1032, "root": 0.0364, "pattern": 0.4467, "entropy": 0.651, "balance": 1.4075, "lr": 3.125e-05}
+{"step": 19100, "epoch": 43, "trans": 3.9966, "root": 0.0698, "pattern": 0.4904, "entropy": 0.5764, "balance": 1.6018, "lr": 3.125e-05}
+{"step": 19150, "epoch": 43, "trans": 3.9492, "root": 0.0557, "pattern": 0.444, "entropy": 0.621, "balance": 1.5285, "lr": 3.125e-05}
+{"epoch": 43, "dev_loss": 5.170179647251767, "dev_chrf": 12.292676359754234}
+{"step": 19200, "epoch": 44, "trans": 3.8271, "root": 0.0364, "pattern": 0.4441, "entropy": 0.6469, "balance": 1.4536, "lr": 3.125e-05}
+{"step": 19250, "epoch": 44, "trans": 3.837, "root": 0.0559, "pattern": 0.5275, "entropy": 0.6119, "balance": 1.5432, "lr": 3.125e-05}
+{"step": 19300, "epoch": 44, "trans": 3.8758, "root": 0.0564, "pattern": 0.5458, "entropy": 0.6339, "balance": 1.4765, "lr": 3.125e-05}
+{"step": 19350, "epoch": 44, "trans": 4.1105, "root": 0.0622, "pattern": 0.5983, "entropy": 0.7121, "balance": 1.34, "lr": 3.125e-05}
+{"step": 19400, "epoch": 44, "trans": 3.9299, "root": 0.0501, "pattern": 0.492, "entropy": 0.6268, "balance": 1.4598, "lr": 3.125e-05}
+{"step": 19450, "epoch": 44, "trans": 3.9435, "root": 0.0997, "pattern": 0.5489, "entropy": 0.7184, "balance": 1.3211, "lr": 3.125e-05}
+{"step": 19500, "epoch": 44, "trans": 4.0242, "root": 0.0271, "pattern": 0.5323, "entropy": 0.6657, "balance": 1.4036, "lr": 3.125e-05}
+{"step": 19550, "epoch": 44, "trans": 3.9526, "root": 0.0363, "pattern": 0.5138, "entropy": 0.5851, "balance": 1.5937, "lr": 3.125e-05}
+{"step": 19600, "epoch": 44, "trans": 3.9425, "root": 0.0099, "pattern": 0.5712, "entropy": 0.665, "balance": 1.4396, "lr": 3.125e-05}
+{"epoch": 44, "dev_loss": 5.170975290174665, "dev_chrf": 12.454108476137863}

@@ -1,0 +1,36 @@
+{
+ "scores": {
+  "plain_bpe_geezrpa_s11": 13.441,
+  "plain_bpe_geezrpa_s22": 13.389,
+  "plain_bpe_geezrpa_s33": 13.194
+ },
+ "plain_seed_sd": 0.13,
+ "contrasts": {
+  "bpe_aux_geezrpa(2 seeds) - plain(3 seeds)": [
+   1.681,
+   1.419,
+   1.973
+  ],
+  "bpe_aux_analyser(2) - plain(3)": [
+   1.859,
+   1.584,
+   2.138
+  ],
+  "gmm_geezrpa(2) - plain(3)": [
+   1.265,
+   1.036,
+   1.501
+  ],
+  "gmm_analyser(2) - plain(3)": [
+   1.492,
+   1.261,
+   1.734
+  ],
+  "cmm_spec_analyser(2) - plain(3)": [
+   1.933,
+   1.646,
+   2.224
+  ]
+ },
+ "min_labelled_minus_max_plain": 1.469
+}

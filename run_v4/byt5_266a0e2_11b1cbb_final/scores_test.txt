@@ -1,0 +1,212 @@
+# Gold test, best_weights_by_val_score (Weights after step 3000 (epoch 2.44) of run byt5_266a0e2_11b1cbb_final.)
+# Rules-only baseline: test 39.9% (622/1558)
+root_accuracy	0.8788
+root_correct	1334
+pairs	1518
+
+Loading model from: /kaggle/working/byt5_266a0e2_11b1cbb_final/best_weights_by_val_score
+
+test: /tmp/geez_code/geez-dataset/data/paradigms/merho_ges_gold_test.jsonl: 1518 pairs (loaded 1518, not loaded: flagged (merho_ges_gold_flagged_rows.tsv) 39, not loaded: row has no root 153)
+========================================================================
+GOLD TEST RESULTS: byt5   (accuracy over pairs where gold has the field)
+========================================================================
+
+[ALL]  pairs=1518
+   root     87.9% (1334/1518)
+   type     88.3% (1341/1518)
+   stem     90.5% (304/336)
+   tense    90.8% (305/336)
+   person   92.3% (310/336)
+   gender   88.1% (598/679)
+   number   95.6% (1451/1518)
+   object   84.2% (16/19)
+   exact    74.8% (1135/1518)
+
+[type:verb]  pairs=336
+   root     91.4% (307/336)
+   type     96.1% (323/336)
+   stem     90.5% (304/336)
+   tense    90.8% (305/336)
+   person   92.3% (310/336)
+   gender   92.9% (312/336)
+   number   98.2% (330/336)
+   object   84.2% (16/19)
+   exact    77.7% (261/336)
+
+[type:noun]  pairs=567
+   root     85.9% (487/567)
+   type     80.1% (454/567)
+   stem       n/a
+   tense      n/a
+   person     n/a
+   gender     n/a
+   number   91.0% (516/567)
+   object     n/a
+   exact    68.6% (389/567)
+
+[type:adjective]  pairs=615
+   root     87.8% (540/615)
+   type     91.7% (564/615)
+   stem       n/a
+   tense      n/a
+   person     n/a
+   gender   83.4% (286/343)
+   number   98.4% (605/615)
+   object     n/a
+   exact    78.9% (485/615)
+
+[class:Type A]  pairs=171
+   root     93.6% (160/171)
+   type     95.3% (163/171)
+   stem     91.2% (156/171)
+   tense    90.6% (155/171)
+   person   91.2% (156/171)
+   gender   92.4% (158/171)
+   number   98.8% (169/171)
+   object  100.0% (13/13)
+   exact    80.1% (137/171)
+
+[class:Type B]  pairs=1
+   root    100.0% (1/1)
+   type    100.0% (1/1)
+   stem    100.0% (1/1)
+   tense   100.0% (1/1)
+   person  100.0% (1/1)
+   gender  100.0% (1/1)
+   number  100.0% (1/1)
+   object     n/a
+   exact   100.0% (1/1)
+
+[class:Type C]  pairs=21
+   root     76.2% (16/21)
+   type    100.0% (21/21)
+   stem     76.2% (16/21)
+   tense    81.0% (17/21)
+   person  100.0% (21/21)
+   gender  100.0% (21/21)
+   number  100.0% (21/21)
+   object     n/a
+   exact    52.4% (11/21)
+
+[class:hollow]  pairs=52
+   root     90.4% (47/52)
+   type     96.2% (50/52)
+   stem     90.4% (47/52)
+   tense    94.2% (49/52)
+   person   92.3% (48/52)
+   gender   94.2% (49/52)
+   number  100.0% (52/52)
+   object  100.0% (1/1)
+   exact    80.8% (42/52)
+
+[class:initial-weak]  pairs=27
+   root    100.0% (27/27)
+   type    100.0% (27/27)
+   stem     96.3% (26/27)
+   tense    96.3% (26/27)
+   person   92.6% (25/27)
+   gender   92.6% (25/27)
+   number   96.3% (26/27)
+   object   66.7% (2/3)
+   exact    85.2% (23/27)
+
+[class:final-weak]  pairs=33
+   root     97.0% (32/33)
+   type     90.9% (30/33)
+   stem     87.9% (29/33)
+   tense    87.9% (29/33)
+   person   90.9% (30/33)
+   gender   84.8% (28/33)
+   number   93.9% (31/33)
+   object    0.0% (0/2)
+   exact    78.8% (26/33)
+
+[class:quadriliteral]  pairs=31
+   root     77.4% (24/31)
+   type    100.0% (31/31)
+   stem     93.5% (29/31)
+   tense    90.3% (28/31)
+   person   93.5% (29/31)
+   gender   96.8% (30/31)
+   number   96.8% (30/31)
+   object     n/a
+   exact    67.7% (21/31)
+
+[tense:imperative]  pairs=10
+   root     70.0% (7/10)
+   type     70.0% (7/10)
+   stem     60.0% (6/10)
+   tense    50.0% (5/10)
+   person   50.0% (5/10)
+   gender   60.0% (6/10)
+   number   90.0% (9/10)
+   object  100.0% (1/1)
+   exact    40.0% (4/10)
+
+[tense:past]  pairs=257
+   root     93.4% (240/257)
+   type     96.1% (247/257)
+   stem     91.1% (234/257)
+   tense    94.6% (243/257)
+   person   93.4% (240/257)
+   gender   95.3% (245/257)
+   number   99.2% (255/257)
+   object  100.0% (13/13)
+   exact    83.7% (215/257)
+
+[tense:present]  pairs=42
+   root     85.7% (36/42)
+   type    100.0% (42/42)
+   stem     95.2% (40/42)
+   tense    95.2% (40/42)
+   person   92.9% (39/42)
+   gender   88.1% (37/42)
+   number   95.2% (40/42)
+   object   33.3% (1/3)
+   exact    69.0% (29/42)
+
+[tense:subjunctive]  pairs=27
+   root     88.9% (24/27)
+   type    100.0% (27/27)
+   stem     88.9% (24/27)
+   tense    63.0% (17/27)
+   person   96.3% (26/27)
+   gender   88.9% (24/27)
+   number   96.3% (26/27)
+   object   50.0% (1/2)
+   exact    48.1% (13/27)
+
+[tier:byt5]  pairs=1518
+   root     87.9% (1334/1518)
+   type     88.3% (1341/1518)
+   stem     90.5% (304/336)
+   tense    90.8% (305/336)
+   person   92.3% (310/336)
+   gender   88.1% (598/679)
+   number   95.6% (1451/1518)
+   object   84.2% (16/19)
+   exact    74.8% (1135/1518)
+
+Sample misses:
+  መዋጥሕ  gold: መ-ጠ-ሐ noun None None p [noun]  -> root: ወ-ጠ-ሐ | type: adjective | number: s
+  ሙጣሔ  gold: መ-ጠ-ሐ noun None None s [noun]  -> root: ወ-ጠ-ሐ | type: noun | number: s
+  መስተቂያሕ  gold: ቀ-ቀ-ሐ adjective None None s [adjective]  -> root: ቀ-የ-ሐ | type: adjective | number: s
+  መብርህ  gold: በ-ረ-ሀ noun None None s [noun]  -> root: በ-ረ-ሀ | type: adjective | number: s
+  ብርሃን  gold: በ-ረ-ሀ noun None None s [noun]  -> root: በ-ረ-ሀ | type: adjective | gender: m | number: p
+  መባርህ  gold: በ-ረ-ሀ noun None None p [noun]  -> root: በ-ረ-ሀ | type: adjective | number: s
+  ኤርሁ  gold: በ-ረ-ሀ noun None None s [noun]  -> root: አ-የ-ረ-ሀ | tense: past | person: 3 | gender: m | number: p | stem: basic
+  በራሕ  gold: በ-ረ-ሐ adjective None None ms [adjective]  -> root: በ-ረ-ሐ | type: adjective | gender: f | number: s
+  ተዋፅኀ  gold: ወ-ፀ-ኀ verb reciprocal past 3ms [initial-weak]  -> root: ወ-ፀ-ኀ | tense: past | person: 3 | gender: m | number: s | stem: passive
+  መወፅኀ  gold: ወ-ፀ-ኀ adjective None None s [adjective]  -> root: ወ-ፀ-ኀ | tense: past | person: 3 | gender: m | number: s | stem: basic
+  መስተወፅኀ  gold: ወ-ፀ-ኀ adjective None None s [adjective]  -> root: ወ-ፀ-ኀ | tense: past | person: 3 | gender: m | number: s | stem: aste
+  መስተዋሰን  gold: ወ-ፀ-ኀ adjective None None s [adjective]  -> root: ወ-ሰ-ነ | type: adjective | number: s
+  ተያሀ  gold: ተ-የ-ሀ verb basic past 3ms [hollow]  -> root: ተ-የ-ሀ | type: adjective | gender: m | number: s
+  አንኅ  gold: ነ-ወ-ኀ verb causative imperative 2ms [hollow]  -> root: አ-ነ-ኀ | type: noun | number: s
+  ነዊኅ  gold: ነ-ወ-ኀ adjective None None ms [adjective]  -> root: ነ-ወ-ኀ | type: noun | number: s
+
+Root accuracy (exact match):
+  test   87.9% (1334/1518)
+
+Loading weights:   0%|          | 0/170 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 170/170 [00:00<00:00, 2425.08it/s]
+[transformers] The tied weights mapping and config for this model specifies to tie shared.weight to lm_head.weight, but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config with `tie_word_embeddings=False` to silence this warning.

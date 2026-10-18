@@ -1,0 +1,583 @@
+{"step": 50, "epoch": 0, "trans": 9.0707, "route_root": 5.5323, "route_pattern": 2.6837, "entropy": 4.1841, "lr": 6.25e-05}
+{"step": 100, "epoch": 0, "trans": 8.3087, "route_root": 5.505, "route_pattern": 2.1544, "entropy": 4.034, "lr": 0.000125}
+{"step": 150, "epoch": 0, "trans": 7.8657, "route_root": 5.3997, "route_pattern": 1.9024, "entropy": 3.828, "lr": 0.0001875}
+{"step": 200, "epoch": 0, "trans": 7.8692, "route_root": 5.2441, "route_pattern": 2.035, "entropy": 3.6723, "lr": 0.00025}
+{"step": 250, "epoch": 0, "trans": 7.8369, "route_root": 5.0889, "route_pattern": 1.8854, "entropy": 3.6896, "lr": 0.0003125}
+{"step": 300, "epoch": 0, "trans": 7.8889, "route_root": 4.9266, "route_pattern": 1.7952, "entropy": 3.6061, "lr": 0.000375}
+{"step": 350, "epoch": 0, "trans": 7.6891, "route_root": 4.6266, "route_pattern": 1.7515, "entropy": 3.4964, "lr": 0.00043750000000000006}
+{"step": 400, "epoch": 0, "trans": 7.7948, "route_root": 4.3169, "route_pattern": 1.5307, "entropy": 3.4034, "lr": 0.0005}
+{"epoch": 0, "dev_loss": 7.264173591499833, "dev_chrf": 4.446120233565124}
+{"step": 450, "epoch": 1, "trans": 7.693, "route_root": 4.2968, "route_pattern": 1.638, "entropy": 3.4042, "lr": 0.0005}
+{"step": 500, "epoch": 1, "trans": 7.5305, "route_root": 3.5798, "route_pattern": 1.4367, "entropy": 3.1903, "lr": 0.0005}
+{"step": 550, "epoch": 1, "trans": 7.5658, "route_root": 3.3051, "route_pattern": 1.4807, "entropy": 3.1432, "lr": 0.0005}
+{"step": 600, "epoch": 1, "trans": 7.6967, "route_root": 3.382, "route_pattern": 1.4329, "entropy": 3.207, "lr": 0.0005}
+{"step": 650, "epoch": 1, "trans": 7.4289, "route_root": 3.0847, "route_pattern": 1.2347, "entropy": 2.8738, "lr": 0.0005}
+{"step": 700, "epoch": 1, "trans": 7.4632, "route_root": 2.5477, "route_pattern": 1.2644, "entropy": 2.7845, "lr": 0.0005}
+{"step": 750, "epoch": 1, "trans": 7.3133, "route_root": 2.6147, "route_pattern": 1.2512, "entropy": 2.6885, "lr": 0.0005}
+{"step": 800, "epoch": 1, "trans": 7.2397, "route_root": 2.1967, "route_pattern": 1.062, "entropy": 2.7015, "lr": 0.0005}
+{"step": 850, "epoch": 1, "trans": 7.5057, "route_root": 2.204, "route_pattern": 1.1578, "entropy": 2.5598, "lr": 0.0005}
+{"epoch": 1, "dev_loss": 6.820229451728921, "dev_chrf": 3.316289090603717}
+{"step": 900, "epoch": 2, "trans": 7.4681, "route_root": 2.3038, "route_pattern": 1.1699, "entropy": 2.5814, "lr": 0.0005}
+{"step": 950, "epoch": 2, "trans": 7.1409, "route_root": 1.8996, "route_pattern": 1.2082, "entropy": 2.3218, "lr": 0.0005}
+{"step": 1000, "epoch": 2, "trans": 7.1588, "route_root": 1.9832, "route_pattern": 1.0584, "entropy": 2.3072, "lr": 0.0005}
+{"step": 1050, "epoch": 2, "trans": 7.3202, "route_root": 1.9043, "route_pattern": 1.1882, "entropy": 2.4602, "lr": 0.0005}
+{"step": 1100, "epoch": 2, "trans": 7.1626, "route_root": 1.5104, "route_pattern": 0.9928, "entropy": 2.258, "lr": 0.0005}
+{"step": 1150, "epoch": 2, "trans": 7.2589, "route_root": 1.489, "route_pattern": 1.0128, "entropy": 2.1952, "lr": 0.0005}
+{"step": 1200, "epoch": 2, "trans": 7.0276, "route_root": 1.4389, "route_pattern": 0.9525, "entropy": 1.9942, "lr": 0.0005}
+{"step": 1250, "epoch": 2, "trans": 7.0468, "route_root": 1.3455, "route_pattern": 0.9652, "entropy": 1.8767, "lr": 0.0005}
+{"step": 1300, "epoch": 2, "trans": 7.2292, "route_root": 1.3872, "route_pattern": 1.0699, "entropy": 2.126, "lr": 0.0005}
+{"epoch": 2, "dev_loss": 6.44508123863435, "dev_chrf": 4.904060198456186}
+{"step": 1350, "epoch": 3, "trans": 6.8791, "route_root": 1.2488, "route_pattern": 0.9827, "entropy": 2.0651, "lr": 0.0005}
+{"step": 1400, "epoch": 3, "trans": 6.8105, "route_root": 1.1805, "route_pattern": 1.0103, "entropy": 1.872, "lr": 0.0005}
+{"step": 1450, "epoch": 3, "trans": 6.8137, "route_root": 1.1873, "route_pattern": 0.9254, "entropy": 1.7597, "lr": 0.0005}
+{"step": 1500, "epoch": 3, "trans": 6.8385, "route_root": 1.1307, "route_pattern": 0.9119, "entropy": 1.9241, "lr": 0.0005}
+{"step": 1550, "epoch": 3, "trans": 6.7209, "route_root": 1.0615, "route_pattern": 0.7391, "entropy": 1.7106, "lr": 0.0005}
+{"step": 1600, "epoch": 3, "trans": 6.7741, "route_root": 1.0265, "route_pattern": 1.0149, "entropy": 1.6587, "lr": 0.0005}
+{"step": 1650, "epoch": 3, "trans": 6.6781, "route_root": 1.3073, "route_pattern": 0.9115, "entropy": 1.6778, "lr": 0.0005}
+{"step": 1700, "epoch": 3, "trans": 6.79, "route_root": 0.9978, "route_pattern": 0.7459, "entropy": 1.6799, "lr": 0.0005}
+{"epoch": 3, "dev_loss": 6.187762981307431, "dev_chrf": 5.264225477940289}
+{"step": 1750, "epoch": 4, "trans": 6.5865, "route_root": 0.9174, "route_pattern": 0.8142, "entropy": 1.6978, "lr": 0.0005}
+{"step": 1800, "epoch": 4, "trans": 6.6473, "route_root": 0.7804, "route_pattern": 0.7139, "entropy": 1.4549, "lr": 0.0005}
+{"step": 1850, "epoch": 4, "trans": 6.6605, "route_root": 0.7011, "route_pattern": 0.7944, "entropy": 1.8172, "lr": 0.0005}
+{"step": 1900, "epoch": 4, "trans": 6.552, "route_root": 0.8638, "route_pattern": 0.7909, "entropy": 1.4901, "lr": 0.0005}
+{"step": 1950, "epoch": 4, "trans": 6.4905, "route_root": 0.8098, "route_pattern": 0.7861, "entropy": 1.3825, "lr": 0.0005}
+{"step": 2000, "epoch": 4, "trans": 6.6079, "route_root": 1.0003, "route_pattern": 0.7362, "entropy": 1.5778, "lr": 0.0005}
+{"step": 2050, "epoch": 4, "trans": 6.5377, "route_root": 0.7558, "route_pattern": 0.6179, "entropy": 1.5729, "lr": 0.0005}
+{"step": 2100, "epoch": 4, "trans": 6.6861, "route_root": 0.6689, "route_pattern": 0.8073, "entropy": 1.6678, "lr": 0.0005}
+{"step": 2150, "epoch": 4, "trans": 6.3816, "route_root": 0.6362, "route_pattern": 0.7214, "entropy": 1.5229, "lr": 0.0005}
+{"epoch": 4, "dev_loss": 5.994969146954198, "dev_chrf": 5.3312120875730615}
+{"step": 2200, "epoch": 5, "trans": 6.4636, "route_root": 0.4838, "route_pattern": 0.713, "entropy": 1.4003, "lr": 0.0005}
+{"step": 2250, "epoch": 5, "trans": 6.3521, "route_root": 0.758, "route_pattern": 0.5365, "entropy": 1.2987, "lr": 0.0005}
+{"step": 2300, "epoch": 5, "trans": 6.3446, "route_root": 0.9249, "route_pattern": 0.6801, "entropy": 1.5211, "lr": 0.0005}
+{"step": 2350, "epoch": 5, "trans": 6.343, "route_root": 0.6343, "route_pattern": 0.6312, "entropy": 1.1938, "lr": 0.0005}
+{"step": 2400, "epoch": 5, "trans": 6.2282, "route_root": 0.6993, "route_pattern": 0.6846, "entropy": 1.4204, "lr": 0.0005}
+{"step": 2450, "epoch": 5, "trans": 6.4709, "route_root": 0.5039, "route_pattern": 0.6212, "entropy": 1.3296, "lr": 0.0005}
+{"step": 2500, "epoch": 5, "trans": 6.0235, "route_root": 0.5591, "route_pattern": 0.7969, "entropy": 1.3073, "lr": 0.0005}
+{"step": 2550, "epoch": 5, "trans": 6.0769, "route_root": 0.5916, "route_pattern": 0.5733, "entropy": 1.1853, "lr": 0.0005}
+{"step": 2600, "epoch": 5, "trans": 6.3362, "route_root": 0.4451, "route_pattern": 0.7879, "entropy": 1.4243, "lr": 0.0005}
+{"epoch": 5, "dev_loss": 5.819614621841106, "dev_chrf": 6.431040294662544}
+{"step": 2650, "epoch": 6, "trans": 6.4079, "route_root": 0.5215, "route_pattern": 0.6412, "entropy": 1.289, "lr": 0.0005}
+{"step": 2700, "epoch": 6, "trans": 5.746, "route_root": 0.46, "route_pattern": 0.6271, "entropy": 1.3994, "lr": 0.0005}
+{"step": 2750, "epoch": 6, "trans": 6.0486, "route_root": 0.691, "route_pattern": 0.7183, "entropy": 1.3126, "lr": 0.0005}
+{"step": 2800, "epoch": 6, "trans": 6.1669, "route_root": 0.5533, "route_pattern": 0.6263, "entropy": 1.3892, "lr": 0.0005}
+{"step": 2850, "epoch": 6, "trans": 6.1415, "route_root": 0.4371, "route_pattern": 0.5223, "entropy": 1.2293, "lr": 0.0005}
+{"step": 2900, "epoch": 6, "trans": 6.0286, "route_root": 0.5, "route_pattern": 0.5536, "entropy": 1.0283, "lr": 0.0005}
+{"step": 2950, "epoch": 6, "trans": 6.0239, "route_root": 0.503, "route_pattern": 0.6348, "entropy": 1.1501, "lr": 0.0005}
+{"step": 3000, "epoch": 6, "trans": 6.3693, "route_root": 0.3622, "route_pattern": 0.4877, "entropy": 1.3051, "lr": 0.0005}
+{"step": 3050, "epoch": 6, "trans": 6.3308, "route_root": 0.5385, "route_pattern": 0.5269, "entropy": 1.0811, "lr": 0.0005}
+{"epoch": 6, "dev_loss": 5.700362590590405, "dev_chrf": 6.288202602220877}
+{"step": 3100, "epoch": 7, "trans": 5.9886, "route_root": 0.3355, "route_pattern": 0.5144, "entropy": 1.1133, "lr": 0.0005}
+{"step": 3150, "epoch": 7, "trans": 5.9943, "route_root": 0.4374, "route_pattern": 0.4865, "entropy": 1.1247, "lr": 0.0005}
+{"step": 3200, "epoch": 7, "trans": 5.896, "route_root": 0.3854, "route_pattern": 0.5947, "entropy": 1.0316, "lr": 0.0005}
+{"step": 3250, "epoch": 7, "trans": 5.9611, "route_root": 0.2657, "route_pattern": 0.594, "entropy": 1.1651, "lr": 0.0005}
+{"step": 3300, "epoch": 7, "trans": 5.8039, "route_root": 0.4263, "route_pattern": 0.5733, "entropy": 1.0318, "lr": 0.0005}
+{"step": 3350, "epoch": 7, "trans": 5.9258, "route_root": 0.2678, "route_pattern": 0.5991, "entropy": 1.1544, "lr": 0.0005}
+{"step": 3400, "epoch": 7, "trans": 5.9469, "route_root": 0.4501, "route_pattern": 0.5407, "entropy": 1.1596, "lr": 0.0005}
+{"step": 3450, "epoch": 7, "trans": 5.9964, "route_root": 0.3907, "route_pattern": 0.5177, "entropy": 1.1137, "lr": 0.0005}
+{"epoch": 7, "dev_loss": 5.60691807093393, "dev_chrf": 6.955436513576631}
+{"step": 3500, "epoch": 8, "trans": 5.6931, "route_root": 0.2027, "route_pattern": 0.5475, "entropy": 0.9824, "lr": 0.0005}
+{"step": 3550, "epoch": 8, "trans": 5.7893, "route_root": 0.2301, "route_pattern": 0.3838, "entropy": 0.9489, "lr": 0.0005}
+{"step": 3600, "epoch": 8, "trans": 5.6243, "route_root": 0.5165, "route_pattern": 0.4802, "entropy": 1.0125, "lr": 0.0005}
+{"step": 3650, "epoch": 8, "trans": 6.0698, "route_root": 0.3178, "route_pattern": 0.5823, "entropy": 1.1063, "lr": 0.0005}
+{"step": 3700, "epoch": 8, "trans": 6.0518, "route_root": 0.3703, "route_pattern": 0.6918, "entropy": 0.8903, "lr": 0.0005}
+{"step": 3750, "epoch": 8, "trans": 5.7865, "route_root": 0.3097, "route_pattern": 0.616, "entropy": 1.025, "lr": 0.0005}
+{"step": 3800, "epoch": 8, "trans": 5.6798, "route_root": 0.2837, "route_pattern": 0.4843, "entropy": 1.0097, "lr": 0.0005}
+{"step": 3850, "epoch": 8, "trans": 5.7914, "route_root": 0.3441, "route_pattern": 0.4757, "entropy": 1.0464, "lr": 0.0005}
+{"step": 3900, "epoch": 8, "trans": 5.9299, "route_root": 0.2912, "route_pattern": 0.6186, "entropy": 1.1369, "lr": 0.0005}
+{"epoch": 8, "dev_loss": 5.550738518433897, "dev_chrf": 7.494345674755104}
+{"step": 3950, "epoch": 9, "trans": 5.7312, "route_root": 0.2354, "route_pattern": 0.4653, "entropy": 0.7586, "lr": 0.0005}
+{"step": 4000, "epoch": 9, "trans": 5.6913, "route_root": 0.2954, "route_pattern": 0.506, "entropy": 1.175, "lr": 0.0005}
+{"step": 4050, "epoch": 9, "trans": 5.6996, "route_root": 0.1817, "route_pattern": 0.5496, "entropy": 0.8157, "lr": 0.0005}
+{"step": 4100, "epoch": 9, "trans": 5.6463, "route_root": 0.2322, "route_pattern": 0.3968, "entropy": 0.8694, "lr": 0.0005}
+{"step": 4150, "epoch": 9, "trans": 5.7498, "route_root": 0.4987, "route_pattern": 0.4801, "entropy": 0.9249, "lr": 0.0005}
+{"step": 4200, "epoch": 9, "trans": 5.5699, "route_root": 0.2494, "route_pattern": 0.3769, "entropy": 0.9506, "lr": 0.0005}
+{"step": 4250, "epoch": 9, "trans": 5.5418, "route_root": 0.269, "route_pattern": 0.479, "entropy": 1.0128, "lr": 0.0005}
+{"step": 4300, "epoch": 9, "trans": 5.516, "route_root": 0.3108, "route_pattern": 0.4636, "entropy": 0.8625, "lr": 0.0005}
+{"step": 4350, "epoch": 9, "trans": 5.897, "route_root": 0.2824, "route_pattern": 0.4259, "entropy": 0.9216, "lr": 0.0005}
+{"epoch": 9, "dev_loss": 5.482443017428254, "dev_chrf": 7.40919284567843}
+{"step": 4400, "epoch": 10, "trans": 5.7191, "route_root": 0.2696, "route_pattern": 0.3899, "entropy": 0.9939, "lr": 0.0005}
+{"step": 4450, "epoch": 10, "trans": 5.5572, "route_root": 0.2074, "route_pattern": 0.3928, "entropy": 0.8955, "lr": 0.0005}
+{"step": 4500, "epoch": 10, "trans": 5.6096, "route_root": 0.1709, "route_pattern": 0.5826, "entropy": 0.9968, "lr": 0.0005}
+{"step": 4550, "epoch": 10, "trans": 5.8338, "route_root": 0.2987, "route_pattern": 0.5382, "entropy": 0.9113, "lr": 0.0005}
+{"step": 4600, "epoch": 10, "trans": 5.5369, "route_root": 0.1696, "route_pattern": 0.3565, "entropy": 0.7612, "lr": 0.0005}
+{"step": 4650, "epoch": 10, "trans": 5.8044, "route_root": 0.2101, "route_pattern": 0.4763, "entropy": 0.9699, "lr": 0.0005}
+{"step": 4700, "epoch": 10, "trans": 5.6746, "route_root": 0.1567, "route_pattern": 0.3946, "entropy": 1.0339, "lr": 0.0005}
+{"step": 4750, "epoch": 10, "trans": 5.6756, "route_root": 0.2021, "route_pattern": 0.3947, "entropy": 0.8577, "lr": 0.0005}
+{"epoch": 10, "dev_loss": 5.455145186216649, "dev_chrf": 7.598036343994334}
+{"step": 4800, "epoch": 11, "trans": 5.4619, "route_root": 0.2452, "route_pattern": 0.4575, "entropy": 0.9195, "lr": 0.0005}
+{"step": 4850, "epoch": 11, "trans": 5.5713, "route_root": 0.1153, "route_pattern": 0.3969, "entropy": 0.8816, "lr": 0.0005}
+{"step": 4900, "epoch": 11, "trans": 5.4309, "route_root": 0.1681, "route_pattern": 0.4909, "entropy": 0.8504, "lr": 0.0005}
+{"step": 4950, "epoch": 11, "trans": 5.5321, "route_root": 0.2506, "route_pattern": 0.4489, "entropy": 1.1626, "lr": 0.0005}
+{"step": 5000, "epoch": 11, "trans": 5.4752, "route_root": 0.2687, "route_pattern": 0.392, "entropy": 0.9076, "lr": 0.0005}
+{"step": 5050, "epoch": 11, "trans": 5.6055, "route_root": 0.176, "route_pattern": 0.4528, "entropy": 0.9552, "lr": 0.0005}
+{"step": 5100, "epoch": 11, "trans": 5.5364, "route_root": 0.1942, "route_pattern": 0.4994, "entropy": 0.9634, "lr": 0.0005}
+{"step": 5150, "epoch": 11, "trans": 5.6737, "route_root": 0.2699, "route_pattern": 0.5546, "entropy": 0.7346, "lr": 0.0005}
+{"step": 5200, "epoch": 11, "trans": 5.6041, "route_root": 0.2221, "route_pattern": 0.4345, "entropy": 0.8159, "lr": 0.0005}
+{"epoch": 11, "dev_loss": 5.41943249820225, "dev_chrf": 8.178439587366299}
+{"step": 5250, "epoch": 12, "trans": 5.3794, "route_root": 0.2296, "route_pattern": 0.5157, "entropy": 0.9233, "lr": 0.0005}
+{"step": 5300, "epoch": 12, "trans": 5.5534, "route_root": 0.0831, "route_pattern": 0.4006, "entropy": 0.8366, "lr": 0.0005}
+{"step": 5350, "epoch": 12, "trans": 5.5545, "route_root": 0.0897, "route_pattern": 0.4445, "entropy": 0.7964, "lr": 0.0005}
+{"step": 5400, "epoch": 12, "trans": 5.4605, "route_root": 0.1415, "route_pattern": 0.4996, "entropy": 0.7706, "lr": 0.0005}
+{"step": 5450, "epoch": 12, "trans": 5.2761, "route_root": 0.1979, "route_pattern": 0.3296, "entropy": 0.7829, "lr": 0.0005}
+{"step": 5500, "epoch": 12, "trans": 5.5017, "route_root": 0.1369, "route_pattern": 0.4445, "entropy": 0.8485, "lr": 0.0005}
+{"step": 5550, "epoch": 12, "trans": 5.4653, "route_root": 0.077, "route_pattern": 0.3945, "entropy": 0.7432, "lr": 0.0005}
+{"step": 5600, "epoch": 12, "trans": 5.3967, "route_root": 0.1665, "route_pattern": 0.375, "entropy": 0.8193, "lr": 0.0005}
+{"step": 5650, "epoch": 12, "trans": 5.3425, "route_root": 0.1412, "route_pattern": 0.4255, "entropy": 0.7122, "lr": 0.0005}
+{"epoch": 12, "dev_loss": 5.390564908110362, "dev_chrf": 8.08615916264801}
+{"step": 5700, "epoch": 13, "trans": 5.3591, "route_root": 0.1693, "route_pattern": 0.3908, "entropy": 0.8643, "lr": 0.0005}
+{"step": 5750, "epoch": 13, "trans": 5.5385, "route_root": 0.126, "route_pattern": 0.4955, "entropy": 0.8212, "lr": 0.0005}
+{"step": 5800, "epoch": 13, "trans": 5.48, "route_root": 0.0774, "route_pattern": 0.4357, "entropy": 0.7827, "lr": 0.0005}
+{"step": 5850, "epoch": 13, "trans": 5.2527, "route_root": 0.1464, "route_pattern": 0.3253, "entropy": 0.7137, "lr": 0.0005}
+{"step": 5900, "epoch": 13, "trans": 5.2066, "route_root": 0.2208, "route_pattern": 0.2709, "entropy": 0.7051, "lr": 0.0005}
+{"step": 5950, "epoch": 13, "trans": 5.2991, "route_root": 0.1815, "route_pattern": 0.4019, "entropy": 0.8521, "lr": 0.0005}
+{"step": 6000, "epoch": 13, "trans": 5.3889, "route_root": 0.1228, "route_pattern": 0.3798, "entropy": 0.8423, "lr": 0.0005}
+{"step": 6050, "epoch": 13, "trans": 5.4777, "route_root": 0.2127, "route_pattern": 0.3858, "entropy": 0.8084, "lr": 0.0005}
+{"step": 6100, "epoch": 13, "trans": 5.3501, "route_root": 0.124, "route_pattern": 0.4676, "entropy": 0.7288, "lr": 0.0005}
+{"epoch": 13, "dev_loss": 5.385615020973254, "dev_chrf": 8.240192240547033}
+{"step": 6150, "epoch": 14, "trans": 5.2836, "route_root": 0.1124, "route_pattern": 0.3145, "entropy": 0.9575, "lr": 0.0005}
+{"step": 6200, "epoch": 14, "trans": 5.3467, "route_root": 0.1379, "route_pattern": 0.273, "entropy": 0.8973, "lr": 0.0005}
+{"step": 6250, "epoch": 14, "trans": 5.1684, "route_root": 0.0862, "route_pattern": 0.3759, "entropy": 0.9577, "lr": 0.0005}
+{"step": 6300, "epoch": 14, "trans": 5.3959, "route_root": 0.1683, "route_pattern": 0.3687, "entropy": 0.8411, "lr": 0.0005}
+{"step": 6350, "epoch": 14, "trans": 5.5276, "route_root": 0.0644, "route_pattern": 0.4213, "entropy": 0.8267, "lr": 0.0005}
+{"step": 6400, "epoch": 14, "trans": 5.408, "route_root": 0.114, "route_pattern": 0.3058, "entropy": 0.6765, "lr": 0.0005}
+{"step": 6450, "epoch": 14, "trans": 5.2566, "route_root": 0.1363, "route_pattern": 0.4597, "entropy": 0.8135, "lr": 0.0005}
+{"step": 6500, "epoch": 14, "trans": 5.3388, "route_root": 0.2274, "route_pattern": 0.3684, "entropy": 0.8196, "lr": 0.0005}
+{"epoch": 14, "dev_loss": 5.3589530158220935, "dev_chrf": 8.294487303363923}
+{"step": 6550, "epoch": 15, "trans": 4.9626, "route_root": 0.2026, "route_pattern": 0.3024, "entropy": 0.734, "lr": 0.0005}
+{"step": 6600, "epoch": 15, "trans": 5.0499, "route_root": 0.2561, "route_pattern": 0.464, "entropy": 0.7535, "lr": 0.0005}
+{"step": 6650, "epoch": 15, "trans": 5.2156, "route_root": 0.151, "route_pattern": 0.3533, "entropy": 0.6809, "lr": 0.0005}
+{"step": 6700, "epoch": 15, "trans": 5.1825, "route_root": 0.1314, "route_pattern": 0.3198, "entropy": 0.7166, "lr": 0.0005}
+{"step": 6750, "epoch": 15, "trans": 5.1136, "route_root": 0.0832, "route_pattern": 0.3008, "entropy": 0.8041, "lr": 0.0005}
+{"step": 6800, "epoch": 15, "trans": 5.1441, "route_root": 0.1745, "route_pattern": 0.2504, "entropy": 0.7486, "lr": 0.0005}
+{"step": 6850, "epoch": 15, "trans": 5.1369, "route_root": 0.0487, "route_pattern": 0.3174, "entropy": 0.7678, "lr": 0.0005}
+{"step": 6900, "epoch": 15, "trans": 5.3584, "route_root": 0.2259, "route_pattern": 0.4806, "entropy": 0.8323, "lr": 0.0005}
+{"step": 6950, "epoch": 15, "trans": 5.3708, "route_root": 0.1143, "route_pattern": 0.3903, "entropy": 0.6377, "lr": 0.0005}
+{"epoch": 15, "dev_loss": 5.349940168522063, "dev_chrf": 8.99945987535456}
+{"step": 7000, "epoch": 16, "trans": 5.0375, "route_root": 0.091, "route_pattern": 0.3827, "entropy": 0.6659, "lr": 0.0005}
+{"step": 7050, "epoch": 16, "trans": 4.9238, "route_root": 0.1247, "route_pattern": 0.3607, "entropy": 0.5948, "lr": 0.0005}
+{"step": 7100, "epoch": 16, "trans": 5.0673, "route_root": 0.1248, "route_pattern": 0.2812, "entropy": 0.6774, "lr": 0.0005}
+{"step": 7150, "epoch": 16, "trans": 5.2641, "route_root": 0.0246, "route_pattern": 0.4554, "entropy": 0.7047, "lr": 0.0005}
+{"step": 7200, "epoch": 16, "trans": 5.0489, "route_root": 0.0416, "route_pattern": 0.355, "entropy": 0.7576, "lr": 0.0005}
+{"step": 7250, "epoch": 16, "trans": 5.0744, "route_root": 0.1547, "route_pattern": 0.3271, "entropy": 0.6656, "lr": 0.0005}
+{"step": 7300, "epoch": 16, "trans": 5.3017, "route_root": 0.1057, "route_pattern": 0.3326, "entropy": 0.7423, "lr": 0.0005}
+{"step": 7350, "epoch": 16, "trans": 5.2584, "route_root": 0.0868, "route_pattern": 0.3864, "entropy": 0.8419, "lr": 0.0005}
+{"step": 7400, "epoch": 16, "trans": 5.3799, "route_root": 0.0603, "route_pattern": 0.287, "entropy": 0.7778, "lr": 0.0005}
+{"epoch": 16, "dev_loss": 5.328476098677949, "dev_chrf": 8.425236477778018}
+{"step": 7450, "epoch": 17, "trans": 5.1138, "route_root": 0.0435, "route_pattern": 0.3781, "entropy": 0.5776, "lr": 0.0005}
+{"step": 7500, "epoch": 17, "trans": 4.8699, "route_root": 0.0889, "route_pattern": 0.3023, "entropy": 0.6288, "lr": 0.0005}
+{"step": 7550, "epoch": 17, "trans": 5.1161, "route_root": 0.145, "route_pattern": 0.3415, "entropy": 0.6857, "lr": 0.0005}
+{"step": 7600, "epoch": 17, "trans": 4.9989, "route_root": 0.0561, "route_pattern": 0.3632, "entropy": 0.7417, "lr": 0.0005}
+{"step": 7650, "epoch": 17, "trans": 4.9065, "route_root": 0.0719, "route_pattern": 0.3332, "entropy": 0.5917, "lr": 0.0005}
+{"step": 7700, "epoch": 17, "trans": 5.104, "route_root": 0.078, "route_pattern": 0.3081, "entropy": 0.7309, "lr": 0.0005}
+{"step": 7750, "epoch": 17, "trans": 5.1927, "route_root": 0.0421, "route_pattern": 0.3089, "entropy": 0.7268, "lr": 0.0005}
+{"step": 7800, "epoch": 17, "trans": 5.2908, "route_root": 0.1495, "route_pattern": 0.4205, "entropy": 0.8464, "lr": 0.0005}
+{"epoch": 17, "dev_loss": 5.324670545675507, "dev_chrf": 9.256495252364797}
+{"step": 7850, "epoch": 18, "trans": 4.8872, "route_root": 0.0578, "route_pattern": 0.2901, "entropy": 0.7116, "lr": 0.0005}
+{"step": 7900, "epoch": 18, "trans": 4.9602, "route_root": 0.1274, "route_pattern": 0.3084, "entropy": 0.7369, "lr": 0.0005}
+{"step": 7950, "epoch": 18, "trans": 5.1159, "route_root": 0.0927, "route_pattern": 0.3391, "entropy": 0.7511, "lr": 0.0005}
+{"step": 8000, "epoch": 18, "trans": 4.8579, "route_root": 0.0468, "route_pattern": 0.3615, "entropy": 0.6913, "lr": 0.0005}
+{"step": 8050, "epoch": 18, "trans": 5.2482, "route_root": 0.1691, "route_pattern": 0.3845, "entropy": 0.8432, "lr": 0.0005}
+{"step": 8100, "epoch": 18, "trans": 5.1622, "route_root": 0.1352, "route_pattern": 0.3283, "entropy": 0.7554, "lr": 0.0005}
+{"step": 8150, "epoch": 18, "trans": 5.0472, "route_root": 0.0853, "route_pattern": 0.3193, "entropy": 0.8624, "lr": 0.0005}
+{"step": 8200, "epoch": 18, "trans": 5.1097, "route_root": 0.1793, "route_pattern": 0.3383, "entropy": 0.6472, "lr": 0.0005}
+{"step": 8250, "epoch": 18, "trans": 5.2615, "route_root": 0.1275, "route_pattern": 0.3451, "entropy": 0.8639, "lr": 0.0005}
+{"epoch": 18, "dev_loss": 5.31821276523956, "dev_chrf": 9.677341495282949}
+{"step": 8300, "epoch": 19, "trans": 4.5972, "route_root": 0.0577, "route_pattern": 0.2845, "entropy": 0.6527, "lr": 0.0005}
+{"step": 8350, "epoch": 19, "trans": 4.7602, "route_root": 0.0785, "route_pattern": 0.3173, "entropy": 0.6526, "lr": 0.0005}
+{"step": 8400, "epoch": 19, "trans": 4.9754, "route_root": 0.0741, "route_pattern": 0.3171, "entropy": 0.6019, "lr": 0.0005}
+{"step": 8450, "epoch": 19, "trans": 4.9664, "route_root": 0.1134, "route_pattern": 0.3664, "entropy": 0.5535, "lr": 0.0005}
+{"step": 8500, "epoch": 19, "trans": 5.1234, "route_root": 0.0899, "route_pattern": 0.2004, "entropy": 0.7867, "lr": 0.0005}
+{"step": 8550, "epoch": 19, "trans": 4.9909, "route_root": 0.0521, "route_pattern": 0.2789, "entropy": 0.667, "lr": 0.0005}
+{"step": 8600, "epoch": 19, "trans": 5.0122, "route_root": 0.1448, "route_pattern": 0.3148, "entropy": 0.5808, "lr": 0.0005}
+{"step": 8650, "epoch": 19, "trans": 5.1376, "route_root": 0.0757, "route_pattern": 0.4145, "entropy": 0.6791, "lr": 0.0005}
+{"step": 8700, "epoch": 19, "trans": 5.2102, "route_root": 0.1399, "route_pattern": 0.3326, "entropy": 0.6396, "lr": 0.0005}
+{"epoch": 19, "dev_loss": 5.3060723167257295, "dev_chrf": 8.965659441380849}
+{"step": 8750, "epoch": 20, "trans": 4.644, "route_root": 0.0885, "route_pattern": 0.2808, "entropy": 0.6175, "lr": 0.0005}
+{"step": 8800, "epoch": 20, "trans": 4.8674, "route_root": 0.0709, "route_pattern": 0.3334, "entropy": 0.8147, "lr": 0.0005}
+{"step": 8850, "epoch": 20, "trans": 5.0744, "route_root": 0.0507, "route_pattern": 0.3187, "entropy": 0.5731, "lr": 0.0005}
+{"step": 8900, "epoch": 20, "trans": 5.127, "route_root": 0.0535, "route_pattern": 0.2437, "entropy": 0.7077, "lr": 0.0005}
+{"step": 8950, "epoch": 20, "trans": 4.9132, "route_root": 0.0692, "route_pattern": 0.3181, "entropy": 0.6934, "lr": 0.0005}
+{"step": 9000, "epoch": 20, "trans": 5.0457, "route_root": 0.1022, "route_pattern": 0.3097, "entropy": 0.5108, "lr": 0.0005}
+{"step": 9050, "epoch": 20, "trans": 5.0414, "route_root": 0.0862, "route_pattern": 0.3205, "entropy": 0.6674, "lr": 0.0005}
+{"step": 9100, "epoch": 20, "trans": 5.0157, "route_root": 0.0849, "route_pattern": 0.2794, "entropy": 0.6358, "lr": 0.0005}
+{"step": 9150, "epoch": 20, "trans": 5.0804, "route_root": 0.0438, "route_pattern": 0.3098, "entropy": 0.6819, "lr": 0.0005}
+{"epoch": 20, "dev_loss": 5.302769022793143, "dev_chrf": 9.737936341141282}
+{"step": 9200, "epoch": 21, "trans": 4.741, "route_root": 0.0766, "route_pattern": 0.2572, "entropy": 0.6354, "lr": 0.0005}
+{"step": 9250, "epoch": 21, "trans": 4.6683, "route_root": 0.0888, "route_pattern": 0.2425, "entropy": 0.6242, "lr": 0.0005}
+{"step": 9300, "epoch": 21, "trans": 4.9674, "route_root": 0.0725, "route_pattern": 0.3662, "entropy": 0.6299, "lr": 0.0005}
+{"step": 9350, "epoch": 21, "trans": 4.987, "route_root": 0.059, "route_pattern": 0.2445, "entropy": 0.6998, "lr": 0.0005}
+{"step": 9400, "epoch": 21, "trans": 5.0225, "route_root": 0.1954, "route_pattern": 0.2869, "entropy": 0.7073, "lr": 0.0005}
+{"step": 9450, "epoch": 21, "trans": 5.0764, "route_root": 0.0544, "route_pattern": 0.2723, "entropy": 0.6983, "lr": 0.0005}
+{"step": 9500, "epoch": 21, "trans": 5.068, "route_root": 0.0968, "route_pattern": 0.3064, "entropy": 0.8347, "lr": 0.0005}
+{"step": 9550, "epoch": 21, "trans": 5.0975, "route_root": 0.0953, "route_pattern": 0.4221, "entropy": 0.699, "lr": 0.0005}
+{"epoch": 21, "dev_loss": 5.290360440336925, "dev_chrf": 9.892595872301799}
+{"step": 9600, "epoch": 22, "trans": 4.6615, "route_root": 0.0679, "route_pattern": 0.3566, "entropy": 0.7594, "lr": 0.0005}
+{"step": 9650, "epoch": 22, "trans": 4.624, "route_root": 0.0985, "route_pattern": 0.208, "entropy": 0.5821, "lr": 0.0005}
+{"step": 9700, "epoch": 22, "trans": 4.7193, "route_root": 0.0888, "route_pattern": 0.2743, "entropy": 0.542, "lr": 0.0005}
+{"step": 9750, "epoch": 22, "trans": 4.8744, "route_root": 0.0487, "route_pattern": 0.2174, "entropy": 0.6173, "lr": 0.0005}
+{"step": 9800, "epoch": 22, "trans": 5.0419, "route_root": 0.0413, "route_pattern": 0.3415, "entropy": 0.5464, "lr": 0.0005}
+{"step": 9850, "epoch": 22, "trans": 4.9854, "route_root": 0.043, "route_pattern": 0.3455, "entropy": 0.7118, "lr": 0.0005}
+{"step": 9900, "epoch": 22, "trans": 4.8593, "route_root": 0.0795, "route_pattern": 0.3258, "entropy": 0.5704, "lr": 0.0005}
+{"step": 9950, "epoch": 22, "trans": 4.9911, "route_root": 0.0595, "route_pattern": 0.3347, "entropy": 0.5855, "lr": 0.0005}
+{"step": 10000, "epoch": 22, "trans": 4.9782, "route_root": 0.0569, "route_pattern": 0.325, "entropy": 0.6382, "lr": 0.0005}
+{"epoch": 22, "dev_loss": 5.296425006774429, "dev_chrf": 10.112075305804073}
+{"step": 10050, "epoch": 23, "trans": 4.4972, "route_root": 0.0424, "route_pattern": 0.2672, "entropy": 0.671, "lr": 0.0005}
+{"step": 10100, "epoch": 23, "trans": 4.7432, "route_root": 0.0814, "route_pattern": 0.1985, "entropy": 0.6086, "lr": 0.0005}
+{"step": 10150, "epoch": 23, "trans": 4.8615, "route_root": 0.0556, "route_pattern": 0.2447, "entropy": 0.6264, "lr": 0.0005}
+{"step": 10200, "epoch": 23, "trans": 4.9384, "route_root": 0.1532, "route_pattern": 0.2744, "entropy": 0.6449, "lr": 0.0005}
+{"step": 10250, "epoch": 23, "trans": 4.7384, "route_root": 0.0724, "route_pattern": 0.2079, "entropy": 0.6035, "lr": 0.0005}
+{"step": 10300, "epoch": 23, "trans": 4.9396, "route_root": 0.113, "route_pattern": 0.2791, "entropy": 0.6209, "lr": 0.0005}
+{"step": 10350, "epoch": 23, "trans": 4.8326, "route_root": 0.1248, "route_pattern": 0.2764, "entropy": 0.5414, "lr": 0.0005}
+{"step": 10400, "epoch": 23, "trans": 4.9646, "route_root": 0.0331, "route_pattern": 0.2254, "entropy": 0.5903, "lr": 0.0005}
+{"step": 10450, "epoch": 23, "trans": 4.9809, "route_root": 0.0229, "route_pattern": 0.3085, "entropy": 0.618, "lr": 0.0005}
+{"epoch": 23, "dev_loss": 5.293909056990534, "dev_chrf": 9.958547912020462}
+{"step": 10500, "epoch": 24, "trans": 4.6339, "route_root": 0.0499, "route_pattern": 0.2223, "entropy": 0.6561, "lr": 0.0005}
+{"step": 10550, "epoch": 24, "trans": 4.6034, "route_root": 0.0849, "route_pattern": 0.2324, "entropy": 0.5074, "lr": 0.0005}
+{"step": 10600, "epoch": 24, "trans": 4.8039, "route_root": 0.0934, "route_pattern": 0.2617, "entropy": 0.53, "lr": 0.0005}
+{"step": 10650, "epoch": 24, "trans": 4.5002, "route_root": 0.0304, "route_pattern": 0.289, "entropy": 0.6652, "lr": 0.0005}
+{"step": 10700, "epoch": 24, "trans": 4.6827, "route_root": 0.0423, "route_pattern": 0.3098, "entropy": 0.6273, "lr": 0.0005}
+{"step": 10750, "epoch": 24, "trans": 5.0263, "route_root": 0.1638, "route_pattern": 0.2669, "entropy": 0.5688, "lr": 0.0005}
+{"step": 10800, "epoch": 24, "trans": 4.8827, "route_root": 0.0192, "route_pattern": 0.3308, "entropy": 0.5792, "lr": 0.0005}
+{"step": 10850, "epoch": 24, "trans": 4.9823, "route_root": 0.0663, "route_pattern": 0.2407, "entropy": 0.6447, "lr": 0.0005}
+{"step": 10900, "epoch": 24, "trans": 5.0503, "route_root": 0.0284, "route_pattern": 0.1921, "entropy": 0.683, "lr": 0.0005}
+{"epoch": 24, "dev_loss": 5.285576967998595, "dev_chrf": 10.46107627149111}
+{"step": 10950, "epoch": 25, "trans": 4.6036, "route_root": 0.0872, "route_pattern": 0.3012, "entropy": 0.6437, "lr": 0.0005}
+{"step": 11000, "epoch": 25, "trans": 4.7129, "route_root": 0.1119, "route_pattern": 0.2964, "entropy": 0.5836, "lr": 0.0005}
+{"step": 11050, "epoch": 25, "trans": 4.7034, "route_root": 0.0261, "route_pattern": 0.2457, "entropy": 0.5925, "lr": 0.0005}
+{"step": 11100, "epoch": 25, "trans": 4.8766, "route_root": 0.1905, "route_pattern": 0.3567, "entropy": 0.6255, "lr": 0.0005}
+{"step": 11150, "epoch": 25, "trans": 4.9336, "route_root": 0.0701, "route_pattern": 0.2342, "entropy": 0.5277, "lr": 0.0005}
+{"step": 11200, "epoch": 25, "trans": 4.8964, "route_root": 0.0464, "route_pattern": 0.2005, "entropy": 0.5586, "lr": 0.0005}
+{"step": 11250, "epoch": 25, "trans": 4.9643, "route_root": 0.0562, "route_pattern": 0.2648, "entropy": 0.6459, "lr": 0.0005}
+{"step": 11300, "epoch": 25, "trans": 4.8919, "route_root": 0.0758, "route_pattern": 0.2451, "entropy": 0.596, "lr": 0.0005}
+{"epoch": 25, "dev_loss": 5.288834388060244, "dev_chrf": 10.686664636473074}
+{"step": 11350, "epoch": 26, "trans": 4.5602, "route_root": 0.0388, "route_pattern": 0.3072, "entropy": 0.6722, "lr": 0.0005}
+{"step": 11400, "epoch": 26, "trans": 4.45, "route_root": 0.0615, "route_pattern": 0.2581, "entropy": 0.6766, "lr": 0.0005}
+{"step": 11450, "epoch": 26, "trans": 4.5627, "route_root": 0.0186, "route_pattern": 0.1993, "entropy": 0.6388, "lr": 0.0005}
+{"step": 11500, "epoch": 26, "trans": 4.5461, "route_root": 0.0159, "route_pattern": 0.1855, "entropy": 0.5535, "lr": 0.0005}
+{"step": 11550, "epoch": 26, "trans": 4.7497, "route_root": 0.0367, "route_pattern": 0.1808, "entropy": 0.5413, "lr": 0.0005}
+{"step": 11600, "epoch": 26, "trans": 4.8123, "route_root": 0.0895, "route_pattern": 0.2083, "entropy": 0.5018, "lr": 0.0005}
+{"step": 11650, "epoch": 26, "trans": 4.8145, "route_root": 0.0434, "route_pattern": 0.2145, "entropy": 0.6302, "lr": 0.0005}
+{"step": 11700, "epoch": 26, "trans": 4.8906, "route_root": 0.0617, "route_pattern": 0.2605, "entropy": 0.5008, "lr": 0.0005}
+{"step": 11750, "epoch": 26, "trans": 4.8634, "route_root": 0.1295, "route_pattern": 0.2775, "entropy": 0.4664, "lr": 0.0005}
+{"epoch": 26, "dev_loss": 5.267359770008506, "dev_chrf": 10.21383387587624}
+{"step": 11800, "epoch": 27, "trans": 4.5025, "route_root": 0.0159, "route_pattern": 0.2255, "entropy": 0.4415, "lr": 0.0005}
+{"step": 11850, "epoch": 27, "trans": 4.5986, "route_root": 0.0568, "route_pattern": 0.2834, "entropy": 0.548, "lr": 0.0005}
+{"step": 11900, "epoch": 27, "trans": 4.6544, "route_root": 0.0689, "route_pattern": 0.1801, "entropy": 0.6104, "lr": 0.0005}
+{"step": 11950, "epoch": 27, "trans": 4.7977, "route_root": 0.0468, "route_pattern": 0.2004, "entropy": 0.4973, "lr": 0.0005}
+{"step": 12000, "epoch": 27, "trans": 4.8709, "route_root": 0.1281, "route_pattern": 0.2987, "entropy": 0.604, "lr": 0.0005}
+{"step": 12050, "epoch": 27, "trans": 4.6561, "route_root": 0.0596, "route_pattern": 0.1828, "entropy": 0.5284, "lr": 0.0005}
+{"step": 12100, "epoch": 27, "trans": 4.7141, "route_root": 0.0537, "route_pattern": 0.2274, "entropy": 0.4423, "lr": 0.0005}
+{"step": 12150, "epoch": 27, "trans": 4.7623, "route_root": 0.0109, "route_pattern": 0.248, "entropy": 0.5885, "lr": 0.0005}
+{"step": 12200, "epoch": 27, "trans": 4.9029, "route_root": 0.0701, "route_pattern": 0.2416, "entropy": 0.4862, "lr": 0.0005}
+{"epoch": 27, "dev_loss": 5.2738008493667765, "dev_chrf": 10.406118261313848}
+{"step": 12250, "epoch": 28, "trans": 4.4774, "route_root": 0.0212, "route_pattern": 0.2254, "entropy": 0.5175, "lr": 0.0005}
+{"step": 12300, "epoch": 28, "trans": 4.5248, "route_root": 0.1306, "route_pattern": 0.242, "entropy": 0.5221, "lr": 0.0005}
+{"step": 12350, "epoch": 28, "trans": 4.8407, "route_root": 0.0535, "route_pattern": 0.2461, "entropy": 0.5072, "lr": 0.0005}
+{"step": 12400, "epoch": 28, "trans": 4.7154, "route_root": 0.0342, "route_pattern": 0.2806, "entropy": 0.4476, "lr": 0.0005}
+{"step": 12450, "epoch": 28, "trans": 4.5528, "route_root": 0.0438, "route_pattern": 0.1817, "entropy": 0.3869, "lr": 0.0005}
+{"step": 12500, "epoch": 28, "trans": 5.1284, "route_root": 0.0588, "route_pattern": 0.3017, "entropy": 0.5495, "lr": 0.0005}
+{"step": 12550, "epoch": 28, "trans": 4.6509, "route_root": 0.0218, "route_pattern": 0.1974, "entropy": 0.5301, "lr": 0.0005}
+{"step": 12600, "epoch": 28, "trans": 4.7387, "route_root": 0.02, "route_pattern": 0.2694, "entropy": 0.6543, "lr": 0.0005}
+{"epoch": 28, "dev_loss": 5.275634611426654, "dev_chrf": 10.35857256576663}
+{"step": 12650, "epoch": 29, "trans": 4.4587, "route_root": 0.0492, "route_pattern": 0.2577, "entropy": 0.6189, "lr": 0.0005}
+{"step": 12700, "epoch": 29, "trans": 4.6252, "route_root": 0.0783, "route_pattern": 0.2759, "entropy": 0.596, "lr": 0.0005}
+{"step": 12750, "epoch": 29, "trans": 4.6847, "route_root": 0.0101, "route_pattern": 0.1941, "entropy": 0.6565, "lr": 0.0005}
+{"step": 12800, "epoch": 29, "trans": 4.7402, "route_root": 0.0233, "route_pattern": 0.2848, "entropy": 0.5377, "lr": 0.0005}
+{"step": 12850, "epoch": 29, "trans": 4.973, "route_root": 0.056, "route_pattern": 0.3642, "entropy": 0.6967, "lr": 0.0005}
+{"step": 12900, "epoch": 29, "trans": 4.8811, "route_root": 0.0188, "route_pattern": 0.234, "entropy": 0.5894, "lr": 0.0005}
+{"step": 12950, "epoch": 29, "trans": 4.5035, "route_root": 0.0205, "route_pattern": 0.211, "entropy": 0.5346, "lr": 0.0005}
+{"step": 13000, "epoch": 29, "trans": 4.7447, "route_root": 0.0808, "route_pattern": 0.2311, "entropy": 0.5666, "lr": 0.0005}
+{"step": 13050, "epoch": 29, "trans": 4.8471, "route_root": 0.0476, "route_pattern": 0.2008, "entropy": 0.5686, "lr": 0.0005}
+{"epoch": 29, "dev_loss": 5.27553457504439, "dev_chrf": 11.262643047243781}
+{"step": 13100, "epoch": 30, "trans": 4.4768, "route_root": 0.0257, "route_pattern": 0.1925, "entropy": 0.4865, "lr": 0.00025}
+{"step": 13150, "epoch": 30, "trans": 4.5474, "route_root": 0.0283, "route_pattern": 0.2426, "entropy": 0.5775, "lr": 0.00025}
+{"step": 13200, "epoch": 30, "trans": 4.3914, "route_root": 0.0102, "route_pattern": 0.2085, "entropy": 0.4813, "lr": 0.00025}
+{"step": 13250, "epoch": 30, "trans": 4.3516, "route_root": 0.0317, "route_pattern": 0.2492, "entropy": 0.5701, "lr": 0.00025}
+{"step": 13300, "epoch": 30, "trans": 4.5018, "route_root": 0.0194, "route_pattern": 0.3002, "entropy": 0.5866, "lr": 0.00025}
+{"step": 13350, "epoch": 30, "trans": 4.4198, "route_root": 0.015, "route_pattern": 0.2905, "entropy": 0.5045, "lr": 0.00025}
+{"step": 13400, "epoch": 30, "trans": 4.4987, "route_root": 0.0114, "route_pattern": 0.2183, "entropy": 0.5695, "lr": 0.00025}
+{"step": 13450, "epoch": 30, "trans": 4.6102, "route_root": 0.0287, "route_pattern": 0.2537, "entropy": 0.5723, "lr": 0.00025}
+{"step": 13500, "epoch": 30, "trans": 4.5495, "route_root": 0.0206, "route_pattern": 0.2279, "entropy": 0.5472, "lr": 0.00025}
+{"epoch": 30, "dev_loss": 5.226370049235055, "dev_chrf": 11.291654447327485}
+{"step": 13550, "epoch": 31, "trans": 4.3484, "route_root": 0.0189, "route_pattern": 0.2327, "entropy": 0.4669, "lr": 0.00025}
+{"step": 13600, "epoch": 31, "trans": 4.3707, "route_root": 0.0159, "route_pattern": 0.1326, "entropy": 0.5343, "lr": 0.00025}
+{"step": 13650, "epoch": 31, "trans": 4.4435, "route_root": 0.0365, "route_pattern": 0.1804, "entropy": 0.5732, "lr": 0.00025}
+{"step": 13700, "epoch": 31, "trans": 4.631, "route_root": 0.0496, "route_pattern": 0.2464, "entropy": 0.5092, "lr": 0.00025}
+{"step": 13750, "epoch": 31, "trans": 4.6079, "route_root": 0.0514, "route_pattern": 0.3539, "entropy": 0.6057, "lr": 0.00025}
+{"step": 13800, "epoch": 31, "trans": 4.485, "route_root": 0.0495, "route_pattern": 0.2033, "entropy": 0.4857, "lr": 0.00025}
+{"step": 13850, "epoch": 31, "trans": 4.5075, "route_root": 0.0513, "route_pattern": 0.27, "entropy": 0.5103, "lr": 0.00025}
+{"step": 13900, "epoch": 31, "trans": 4.495, "route_root": 0.0489, "route_pattern": 0.2498, "entropy": 0.4853, "lr": 0.00025}
+{"step": 13950, "epoch": 31, "trans": 4.5877, "route_root": 0.0481, "route_pattern": 0.3229, "entropy": 0.5139, "lr": 0.00025}
+{"epoch": 31, "dev_loss": 5.223936583241261, "dev_chrf": 11.956521852781673}
+{"step": 14000, "epoch": 32, "trans": 4.2984, "route_root": 0.0403, "route_pattern": 0.2013, "entropy": 0.6219, "lr": 0.00025}
+{"step": 14050, "epoch": 32, "trans": 4.4132, "route_root": 0.0557, "route_pattern": 0.1918, "entropy": 0.4891, "lr": 0.00025}
+{"step": 14100, "epoch": 32, "trans": 4.5849, "route_root": 0.0133, "route_pattern": 0.284, "entropy": 0.5623, "lr": 0.00025}
+{"step": 14150, "epoch": 32, "trans": 4.409, "route_root": 0.0229, "route_pattern": 0.2989, "entropy": 0.6307, "lr": 0.00025}
+{"step": 14200, "epoch": 32, "trans": 4.5978, "route_root": 0.0358, "route_pattern": 0.2765, "entropy": 0.5998, "lr": 0.00025}
+{"step": 14250, "epoch": 32, "trans": 4.3349, "route_root": 0.0424, "route_pattern": 0.1681, "entropy": 0.5698, "lr": 0.00025}
+{"step": 14300, "epoch": 32, "trans": 4.4111, "route_root": 0.0648, "route_pattern": 0.3523, "entropy": 0.531, "lr": 0.00025}
+{"step": 14350, "epoch": 32, "trans": 4.2175, "route_root": 0.0305, "route_pattern": 0.1982, "entropy": 0.4821, "lr": 0.00025}
+{"epoch": 32, "dev_loss": 5.222468700441802, "dev_chrf": 11.320067720066593}
+{"step": 14400, "epoch": 33, "trans": 4.2698, "route_root": 0.0532, "route_pattern": 0.2249, "entropy": 0.4975, "lr": 0.00025}
+{"step": 14450, "epoch": 33, "trans": 4.4206, "route_root": 0.0335, "route_pattern": 0.2249, "entropy": 0.5944, "lr": 0.00025}
+{"step": 14500, "epoch": 33, "trans": 4.4227, "route_root": 0.0239, "route_pattern": 0.2825, "entropy": 0.4876, "lr": 0.00025}
+{"step": 14550, "epoch": 33, "trans": 4.4413, "route_root": 0.0089, "route_pattern": 0.1727, "entropy": 0.6015, "lr": 0.00025}
+{"step": 14600, "epoch": 33, "trans": 4.4261, "route_root": 0.0427, "route_pattern": 0.2636, "entropy": 0.5416, "lr": 0.00025}
+{"step": 14650, "epoch": 33, "trans": 4.2265, "route_root": 0.0597, "route_pattern": 0.1851, "entropy": 0.4955, "lr": 0.00025}
+{"step": 14700, "epoch": 33, "trans": 4.4015, "route_root": 0.0555, "route_pattern": 0.1886, "entropy": 0.5553, "lr": 0.00025}
+{"step": 14750, "epoch": 33, "trans": 4.6566, "route_root": 0.0247, "route_pattern": 0.2282, "entropy": 0.5149, "lr": 0.00025}
+{"step": 14800, "epoch": 33, "trans": 4.6031, "route_root": 0.0149, "route_pattern": 0.236, "entropy": 0.4817, "lr": 0.00025}
+{"epoch": 33, "dev_loss": 5.216409931369104, "dev_chrf": 11.746532069147648}
+{"step": 14850, "epoch": 34, "trans": 4.1685, "route_root": 0.0161, "route_pattern": 0.1733, "entropy": 0.4852, "lr": 0.00025}
+{"step": 14900, "epoch": 34, "trans": 4.2226, "route_root": 0.0083, "route_pattern": 0.2097, "entropy": 0.5707, "lr": 0.00025}
+{"step": 14950, "epoch": 34, "trans": 4.4179, "route_root": 0.0311, "route_pattern": 0.2482, "entropy": 0.5345, "lr": 0.00025}
+{"step": 15000, "epoch": 34, "trans": 4.2313, "route_root": 0.004, "route_pattern": 0.1452, "entropy": 0.6124, "lr": 0.00025}
+{"step": 15050, "epoch": 34, "trans": 4.3829, "route_root": 0.0219, "route_pattern": 0.2475, "entropy": 0.5619, "lr": 0.00025}
+{"step": 15100, "epoch": 34, "trans": 4.4435, "route_root": 0.0454, "route_pattern": 0.1413, "entropy": 0.4191, "lr": 0.00025}
+{"step": 15150, "epoch": 34, "trans": 4.3952, "route_root": 0.0549, "route_pattern": 0.2348, "entropy": 0.6011, "lr": 0.00025}
+{"step": 15200, "epoch": 34, "trans": 4.4191, "route_root": 0.015, "route_pattern": 0.2647, "entropy": 0.4816, "lr": 0.00025}
+{"step": 15250, "epoch": 34, "trans": 4.2934, "route_root": 0.0092, "route_pattern": 0.2623, "entropy": 0.5506, "lr": 0.00025}
+{"epoch": 34, "dev_loss": 5.22086981423349, "dev_chrf": 11.214072183263974}
+{"step": 15300, "epoch": 35, "trans": 4.1109, "route_root": 0.0182, "route_pattern": 0.1662, "entropy": 0.5519, "lr": 0.00025}
+{"step": 15350, "epoch": 35, "trans": 4.3366, "route_root": 0.0239, "route_pattern": 0.1542, "entropy": 0.4033, "lr": 0.00025}
+{"step": 15400, "epoch": 35, "trans": 4.2474, "route_root": 0.0458, "route_pattern": 0.2254, "entropy": 0.4583, "lr": 0.00025}
+{"step": 15450, "epoch": 35, "trans": 4.2328, "route_root": 0.0143, "route_pattern": 0.2191, "entropy": 0.5617, "lr": 0.00025}
+{"step": 15500, "epoch": 35, "trans": 4.523, "route_root": 0.0582, "route_pattern": 0.2163, "entropy": 0.461, "lr": 0.00025}
+{"step": 15550, "epoch": 35, "trans": 4.3391, "route_root": 0.0644, "route_pattern": 0.1969, "entropy": 0.5046, "lr": 0.00025}
+{"step": 15600, "epoch": 35, "trans": 4.4247, "route_root": 0.0159, "route_pattern": 0.2134, "entropy": 0.52, "lr": 0.00025}
+{"step": 15650, "epoch": 35, "trans": 4.4996, "route_root": 0.0447, "route_pattern": 0.2042, "entropy": 0.5881, "lr": 0.00025}
+{"epoch": 35, "dev_loss": 5.226440249469895, "dev_chrf": 11.308048370678641}
+{"step": 15700, "epoch": 36, "trans": 4.2426, "route_root": 0.0542, "route_pattern": 0.2633, "entropy": 0.3906, "lr": 0.00025}
+{"step": 15750, "epoch": 36, "trans": 4.2906, "route_root": 0.0476, "route_pattern": 0.21, "entropy": 0.482, "lr": 0.00025}
+{"step": 15800, "epoch": 36, "trans": 4.2313, "route_root": 0.0199, "route_pattern": 0.1952, "entropy": 0.536, "lr": 0.00025}
+{"step": 15850, "epoch": 36, "trans": 4.4214, "route_root": 0.018, "route_pattern": 0.203, "entropy": 0.531, "lr": 0.00025}
+{"step": 15900, "epoch": 36, "trans": 4.4273, "route_root": 0.0937, "route_pattern": 0.1509, "entropy": 0.4837, "lr": 0.00025}
+{"step": 15950, "epoch": 36, "trans": 4.269, "route_root": 0.0825, "route_pattern": 0.2155, "entropy": 0.5179, "lr": 0.00025}
+{"step": 16000, "epoch": 36, "trans": 4.2841, "route_root": 0.02, "route_pattern": 0.201, "entropy": 0.4293, "lr": 0.00025}
+{"step": 16050, "epoch": 36, "trans": 4.3145, "route_root": 0.0541, "route_pattern": 0.2028, "entropy": 0.4117, "lr": 0.00025}
+{"step": 16100, "epoch": 36, "trans": 4.4207, "route_root": 0.0378, "route_pattern": 0.2204, "entropy": 0.4781, "lr": 0.00025}
+{"epoch": 36, "dev_loss": 5.2313197424602125, "dev_chrf": 11.499363766676062}
+{"step": 16150, "epoch": 37, "trans": 4.188, "route_root": 0.0313, "route_pattern": 0.2159, "entropy": 0.4388, "lr": 0.000125}
+{"step": 16200, "epoch": 37, "trans": 4.3855, "route_root": 0.0452, "route_pattern": 0.279, "entropy": 0.5134, "lr": 0.000125}
+{"step": 16250, "epoch": 37, "trans": 4.1982, "route_root": 0.0175, "route_pattern": 0.1678, "entropy": 0.4972, "lr": 0.000125}
+{"step": 16300, "epoch": 37, "trans": 4.3769, "route_root": 0.0435, "route_pattern": 0.2727, "entropy": 0.51, "lr": 0.000125}
+{"step": 16350, "epoch": 37, "trans": 4.47, "route_root": 0.0199, "route_pattern": 0.2235, "entropy": 0.497, "lr": 0.000125}
+{"step": 16400, "epoch": 37, "trans": 4.3586, "route_root": 0.0162, "route_pattern": 0.1479, "entropy": 0.4744, "lr": 0.000125}
+{"step": 16450, "epoch": 37, "trans": 4.128, "route_root": 0.0136, "route_pattern": 0.2117, "entropy": 0.4554, "lr": 0.000125}
+{"step": 16500, "epoch": 37, "trans": 4.272, "route_root": 0.0252, "route_pattern": 0.2467, "entropy": 0.4515, "lr": 0.000125}
+{"step": 16550, "epoch": 37, "trans": 4.4057, "route_root": 0.0247, "route_pattern": 0.1739, "entropy": 0.556, "lr": 0.000125}
+{"epoch": 37, "dev_loss": 5.210797896541308, "dev_chrf": 11.95631791754999}
+{"step": 16600, "epoch": 38, "trans": 4.0423, "route_root": 0.05, "route_pattern": 0.1861, "entropy": 0.601, "lr": 0.000125}
+{"step": 16650, "epoch": 38, "trans": 4.2281, "route_root": 0.0147, "route_pattern": 0.1749, "entropy": 0.5139, "lr": 0.000125}
+{"step": 16700, "epoch": 38, "trans": 4.2048, "route_root": 0.0118, "route_pattern": 0.2846, "entropy": 0.4634, "lr": 0.000125}
+{"step": 16750, "epoch": 38, "trans": 4.2122, "route_root": 0.0406, "route_pattern": 0.1362, "entropy": 0.4778, "lr": 0.000125}
+{"step": 16800, "epoch": 38, "trans": 4.3827, "route_root": 0.0181, "route_pattern": 0.2311, "entropy": 0.4042, "lr": 0.000125}
+{"step": 16850, "epoch": 38, "trans": 4.2111, "route_root": 0.0145, "route_pattern": 0.2326, "entropy": 0.5984, "lr": 0.000125}
+{"step": 16900, "epoch": 38, "trans": 4.3875, "route_root": 0.0335, "route_pattern": 0.1594, "entropy": 0.5153, "lr": 0.000125}
+{"step": 16950, "epoch": 38, "trans": 4.2737, "route_root": 0.0492, "route_pattern": 0.1902, "entropy": 0.5031, "lr": 0.000125}
+{"step": 17000, "epoch": 38, "trans": 4.2138, "route_root": 0.0077, "route_pattern": 0.1761, "entropy": 0.4452, "lr": 0.000125}
+{"epoch": 38, "dev_loss": 5.209136904552707, "dev_chrf": 11.337467164469652}
+{"step": 17050, "epoch": 39, "trans": 4.0083, "route_root": 0.0101, "route_pattern": 0.1666, "entropy": 0.5819, "lr": 0.000125}
+{"step": 17100, "epoch": 39, "trans": 4.1617, "route_root": 0.0532, "route_pattern": 0.1415, "entropy": 0.4613, "lr": 0.000125}
+{"step": 17150, "epoch": 39, "trans": 4.2575, "route_root": 0.0255, "route_pattern": 0.2067, "entropy": 0.4697, "lr": 0.000125}
+{"step": 17200, "epoch": 39, "trans": 3.9602, "route_root": 0.0449, "route_pattern": 0.1387, "entropy": 0.3719, "lr": 0.000125}
+{"step": 17250, "epoch": 39, "trans": 4.2233, "route_root": 0.041, "route_pattern": 0.1596, "entropy": 0.5153, "lr": 0.000125}
+{"step": 17300, "epoch": 39, "trans": 4.3471, "route_root": 0.0186, "route_pattern": 0.1004, "entropy": 0.5881, "lr": 0.000125}
+{"step": 17350, "epoch": 39, "trans": 4.3521, "route_root": 0.0278, "route_pattern": 0.1267, "entropy": 0.4787, "lr": 0.000125}
+{"step": 17400, "epoch": 39, "trans": 4.305, "route_root": 0.0451, "route_pattern": 0.2674, "entropy": 0.3918, "lr": 0.000125}
+{"epoch": 39, "dev_loss": 5.213381019013836, "dev_chrf": 11.494870875322693}
+{"step": 17450, "epoch": 40, "trans": 4.2008, "route_root": 0.0688, "route_pattern": 0.1687, "entropy": 0.4817, "lr": 0.000125}
+{"step": 17500, "epoch": 40, "trans": 3.9926, "route_root": 0.0176, "route_pattern": 0.1709, "entropy": 0.4232, "lr": 0.000125}
+{"step": 17550, "epoch": 40, "trans": 4.0235, "route_root": 0.0093, "route_pattern": 0.1792, "entropy": 0.4865, "lr": 0.000125}
+{"step": 17600, "epoch": 40, "trans": 4.0591, "route_root": 0.0341, "route_pattern": 0.1676, "entropy": 0.4555, "lr": 0.000125}
+{"step": 17650, "epoch": 40, "trans": 3.9954, "route_root": 0.0049, "route_pattern": 0.2436, "entropy": 0.5693, "lr": 0.000125}
+{"step": 17700, "epoch": 40, "trans": 4.2862, "route_root": 0.0162, "route_pattern": 0.1816, "entropy": 0.4333, "lr": 0.000125}
+{"step": 17750, "epoch": 40, "trans": 4.4151, "route_root": 0.0315, "route_pattern": 0.2109, "entropy": 0.4765, "lr": 0.000125}
+{"step": 17800, "epoch": 40, "trans": 4.1558, "route_root": 0.0328, "route_pattern": 0.1333, "entropy": 0.5141, "lr": 0.000125}
+{"step": 17850, "epoch": 40, "trans": 4.1485, "route_root": 0.0296, "route_pattern": 0.194, "entropy": 0.4885, "lr": 0.000125}
+{"epoch": 40, "dev_loss": 5.212056074246533, "dev_chrf": 11.777119549679922}
+{"step": 17900, "epoch": 41, "trans": 4.0604, "route_root": 0.1044, "route_pattern": 0.1678, "entropy": 0.5032, "lr": 0.000125}
+{"step": 17950, "epoch": 41, "trans": 3.8944, "route_root": 0.0104, "route_pattern": 0.1272, "entropy": 0.5171, "lr": 0.000125}
+{"step": 18000, "epoch": 41, "trans": 4.134, "route_root": 0.0375, "route_pattern": 0.209, "entropy": 0.4951, "lr": 0.000125}
+{"step": 18050, "epoch": 41, "trans": 4.1748, "route_root": 0.014, "route_pattern": 0.237, "entropy": 0.5388, "lr": 0.000125}
+{"step": 18100, "epoch": 41, "trans": 4.2533, "route_root": 0.0356, "route_pattern": 0.2584, "entropy": 0.5175, "lr": 0.000125}
+{"step": 18150, "epoch": 41, "trans": 4.3148, "route_root": 0.0177, "route_pattern": 0.2868, "entropy": 0.5067, "lr": 0.000125}
+{"step": 18200, "epoch": 41, "trans": 3.976, "route_root": 0.0097, "route_pattern": 0.2068, "entropy": 0.5229, "lr": 0.000125}
+{"step": 18250, "epoch": 41, "trans": 4.3217, "route_root": 0.0193, "route_pattern": 0.2343, "entropy": 0.5521, "lr": 0.000125}
+{"step": 18300, "epoch": 41, "trans": 4.3495, "route_root": 0.0247, "route_pattern": 0.1595, "entropy": 0.4416, "lr": 0.000125}
+{"epoch": 41, "dev_loss": 5.212952799252023, "dev_chrf": 11.518158479408243}
+{"step": 18350, "epoch": 42, "trans": 4.2012, "route_root": 0.0053, "route_pattern": 0.1818, "entropy": 0.5067, "lr": 6.25e-05}
+{"step": 18400, "epoch": 42, "trans": 4.2254, "route_root": 0.0212, "route_pattern": 0.1686, "entropy": 0.458, "lr": 6.25e-05}
+{"step": 18450, "epoch": 42, "trans": 3.9809, "route_root": 0.029, "route_pattern": 0.1997, "entropy": 0.493, "lr": 6.25e-05}
+{"step": 18500, "epoch": 42, "trans": 4.2403, "route_root": 0.0451, "route_pattern": 0.2233, "entropy": 0.3977, "lr": 6.25e-05}
+{"step": 18550, "epoch": 42, "trans": 4.2717, "route_root": 0.0106, "route_pattern": 0.211, "entropy": 0.4307, "lr": 6.25e-05}
+{"step": 18600, "epoch": 42, "trans": 4.1966, "route_root": 0.0157, "route_pattern": 0.1454, "entropy": 0.4785, "lr": 6.25e-05}
+{"step": 18650, "epoch": 42, "trans": 4.2001, "route_root": 0.0316, "route_pattern": 0.1863, "entropy": 0.3718, "lr": 6.25e-05}
+{"step": 18700, "epoch": 42, "trans": 4.2917, "route_root": 0.0151, "route_pattern": 0.1648, "entropy": 0.4981, "lr": 6.25e-05}
+{"epoch": 42, "dev_loss": 5.207352466791406, "dev_chrf": 12.030189605232957}
+{"step": 18750, "epoch": 43, "trans": 4.0505, "route_root": 0.0055, "route_pattern": 0.1556, "entropy": 0.4158, "lr": 6.25e-05}
+{"step": 18800, "epoch": 43, "trans": 3.9811, "route_root": 0.0154, "route_pattern": 0.1408, "entropy": 0.4486, "lr": 6.25e-05}
+{"step": 18850, "epoch": 43, "trans": 4.1318, "route_root": 0.0058, "route_pattern": 0.1884, "entropy": 0.436, "lr": 6.25e-05}
+{"step": 18900, "epoch": 43, "trans": 3.9024, "route_root": 0.0242, "route_pattern": 0.1209, "entropy": 0.4735, "lr": 6.25e-05}
+{"step": 18950, "epoch": 43, "trans": 4.0181, "route_root": 0.0358, "route_pattern": 0.2312, "entropy": 0.5027, "lr": 6.25e-05}
+{"step": 19000, "epoch": 43, "trans": 4.0763, "route_root": 0.0131, "route_pattern": 0.1385, "entropy": 0.4402, "lr": 6.25e-05}
+{"step": 19050, "epoch": 43, "trans": 4.2213, "route_root": 0.0145, "route_pattern": 0.1616, "entropy": 0.5575, "lr": 6.25e-05}
+{"step": 19100, "epoch": 43, "trans": 4.0959, "route_root": 0.0554, "route_pattern": 0.1787, "entropy": 0.4105, "lr": 6.25e-05}
+{"step": 19150, "epoch": 43, "trans": 4.1768, "route_root": 0.0266, "route_pattern": 0.1599, "entropy": 0.4848, "lr": 6.25e-05}
+{"epoch": 43, "dev_loss": 5.208072826137904, "dev_chrf": 11.805056493807573}
+{"step": 19200, "epoch": 44, "trans": 4.0125, "route_root": 0.0218, "route_pattern": 0.1339, "entropy": 0.5164, "lr": 6.25e-05}
+{"step": 19250, "epoch": 44, "trans": 3.9762, "route_root": 0.0592, "route_pattern": 0.1688, "entropy": 0.5636, "lr": 6.25e-05}
+{"step": 19300, "epoch": 44, "trans": 3.9324, "route_root": 0.0283, "route_pattern": 0.228, "entropy": 0.5299, "lr": 6.25e-05}
+{"step": 19350, "epoch": 44, "trans": 4.2158, "route_root": 0.0243, "route_pattern": 0.2164, "entropy": 0.4915, "lr": 6.25e-05}
+{"step": 19400, "epoch": 44, "trans": 4.0271, "route_root": 0.0091, "route_pattern": 0.1514, "entropy": 0.5264, "lr": 6.25e-05}
+{"step": 19450, "epoch": 44, "trans": 4.0693, "route_root": 0.0225, "route_pattern": 0.2039, "entropy": 0.5221, "lr": 6.25e-05}
+{"step": 19500, "epoch": 44, "trans": 4.1871, "route_root": 0.0245, "route_pattern": 0.1917, "entropy": 0.5639, "lr": 6.25e-05}
+{"step": 19550, "epoch": 44, "trans": 4.119, "route_root": 0.0342, "route_pattern": 0.241, "entropy": 0.4995, "lr": 6.25e-05}
+{"step": 19600, "epoch": 44, "trans": 4.117, "route_root": 0.0355, "route_pattern": 0.2102, "entropy": 0.6309, "lr": 6.25e-05}
+{"epoch": 44, "dev_loss": 5.210962666922914, "dev_chrf": 12.294171758284834}
+{"step": 19650, "epoch": 45, "trans": 4.0785, "route_root": 0.0113, "route_pattern": 0.2291, "entropy": 0.5144, "lr": 6.25e-05}
+{"step": 19700, "epoch": 45, "trans": 4.067, "route_root": 0.0148, "route_pattern": 0.1264, "entropy": 0.4382, "lr": 6.25e-05}
+{"step": 19750, "epoch": 45, "trans": 3.9649, "route_root": 0.0181, "route_pattern": 0.2158, "entropy": 0.4369, "lr": 6.25e-05}
+{"step": 19800, "epoch": 45, "trans": 4.0331, "route_root": 0.053, "route_pattern": 0.1987, "entropy": 0.4584, "lr": 6.25e-05}
+{"step": 19850, "epoch": 45, "trans": 4.1217, "route_root": 0.0336, "route_pattern": 0.2195, "entropy": 0.5377, "lr": 6.25e-05}
+{"step": 19900, "epoch": 45, "trans": 4.1055, "route_root": 0.0033, "route_pattern": 0.1236, "entropy": 0.4562, "lr": 6.25e-05}
+{"step": 19950, "epoch": 45, "trans": 4.0346, "route_root": 0.0702, "route_pattern": 0.1911, "entropy": 0.4116, "lr": 6.25e-05}
+{"step": 20000, "epoch": 45, "trans": 4.0018, "route_root": 0.0274, "route_pattern": 0.2558, "entropy": 0.5015, "lr": 6.25e-05}
+{"step": 20050, "epoch": 45, "trans": 4.0223, "route_root": 0.0284, "route_pattern": 0.1619, "entropy": 0.4692, "lr": 6.25e-05}
+{"epoch": 45, "dev_loss": 5.21628941399554, "dev_chrf": 11.93288310267641}
+{"step": 20100, "epoch": 46, "trans": 4.1122, "route_root": 0.014, "route_pattern": 0.1665, "entropy": 0.5109, "lr": 3.125e-05}
+{"step": 20150, "epoch": 46, "trans": 4.0053, "route_root": 0.0148, "route_pattern": 0.2337, "entropy": 0.5369, "lr": 3.125e-05}
+{"step": 20200, "epoch": 46, "trans": 4.1759, "route_root": 0.0083, "route_pattern": 0.2305, "entropy": 0.5077, "lr": 3.125e-05}
+{"step": 20250, "epoch": 46, "trans": 4.0605, "route_root": 0.02, "route_pattern": 0.1402, "entropy": 0.5346, "lr": 3.125e-05}
+{"step": 20300, "epoch": 46, "trans": 4.1502, "route_root": 0.0135, "route_pattern": 0.2013, "entropy": 0.5681, "lr": 3.125e-05}
+{"step": 20350, "epoch": 46, "trans": 3.9967, "route_root": 0.0115, "route_pattern": 0.186, "entropy": 0.4741, "lr": 3.125e-05}
+{"step": 20400, "epoch": 46, "trans": 4.3289, "route_root": 0.0678, "route_pattern": 0.1661, "entropy": 0.5285, "lr": 3.125e-05}
+{"step": 20450, "epoch": 46, "trans": 4.1793, "route_root": 0.0173, "route_pattern": 0.1956, "entropy": 0.4596, "lr": 3.125e-05}
+{"epoch": 46, "dev_loss": 5.207451752723461, "dev_chrf": 12.024565508260206}
+{"step": 20500, "epoch": 47, "trans": 4.12, "route_root": 0.0487, "route_pattern": 0.1596, "entropy": 0.4571, "lr": 3.125e-05}
+{"step": 20550, "epoch": 47, "trans": 4.0332, "route_root": 0.0038, "route_pattern": 0.1166, "entropy": 0.4164, "lr": 3.125e-05}
+{"step": 20600, "epoch": 47, "trans": 4.0122, "route_root": 0.0172, "route_pattern": 0.1991, "entropy": 0.4814, "lr": 3.125e-05}
+{"step": 20650, "epoch": 47, "trans": 3.9764, "route_root": 0.0143, "route_pattern": 0.1905, "entropy": 0.3789, "lr": 3.125e-05}
+{"step": 20700, "epoch": 47, "trans": 4.0966, "route_root": 0.0166, "route_pattern": 0.2057, "entropy": 0.4544, "lr": 3.125e-05}
+{"step": 20750, "epoch": 47, "trans": 4.0195, "route_root": 0.0034, "route_pattern": 0.1561, "entropy": 0.3809, "lr": 3.125e-05}
+{"step": 20800, "epoch": 47, "trans": 3.9327, "route_root": 0.0263, "route_pattern": 0.2857, "entropy": 0.4724, "lr": 3.125e-05}
+{"step": 20850, "epoch": 47, "trans": 4.0535, "route_root": 0.0232, "route_pattern": 0.2337, "entropy": 0.5042, "lr": 3.125e-05}
+{"step": 20900, "epoch": 47, "trans": 4.1203, "route_root": 0.0523, "route_pattern": 0.159, "entropy": 0.4265, "lr": 3.125e-05}
+{"epoch": 47, "dev_loss": 5.20639899816409, "dev_chrf": 11.938272641950523}
+{"step": 20950, "epoch": 48, "trans": 3.9555, "route_root": 0.0246, "route_pattern": 0.2574, "entropy": 0.6208, "lr": 3.125e-05}
+{"step": 21000, "epoch": 48, "trans": 3.7719, "route_root": 0.017, "route_pattern": 0.1794, "entropy": 0.5277, "lr": 3.125e-05}
+{"step": 21050, "epoch": 48, "trans": 4.1307, "route_root": 0.0367, "route_pattern": 0.2365, "entropy": 0.5211, "lr": 3.125e-05}
+{"step": 21100, "epoch": 48, "trans": 3.9794, "route_root": 0.0158, "route_pattern": 0.2297, "entropy": 0.4857, "lr": 3.125e-05}
+{"step": 21150, "epoch": 48, "trans": 3.9727, "route_root": 0.0279, "route_pattern": 0.2105, "entropy": 0.4383, "lr": 3.125e-05}
+{"step": 21200, "epoch": 48, "trans": 4.1353, "route_root": 0.023, "route_pattern": 0.1835, "entropy": 0.4651, "lr": 3.125e-05}
+{"step": 21250, "epoch": 48, "trans": 3.8304, "route_root": 0.0385, "route_pattern": 0.1707, "entropy": 0.4576, "lr": 3.125e-05}
+{"step": 21300, "epoch": 48, "trans": 4.1315, "route_root": 0.015, "route_pattern": 0.1529, "entropy": 0.454, "lr": 3.125e-05}
+{"step": 21350, "epoch": 48, "trans": 4.1206, "route_root": 0.0846, "route_pattern": 0.1894, "entropy": 0.4872, "lr": 3.125e-05}
+{"epoch": 48, "dev_loss": 5.207582156593809, "dev_chrf": 12.4304875228315}
+{"step": 21400, "epoch": 49, "trans": 4.1137, "route_root": 0.0116, "route_pattern": 0.1404, "entropy": 0.4446, "lr": 3.125e-05}
+{"step": 21450, "epoch": 49, "trans": 3.9694, "route_root": 0.0104, "route_pattern": 0.1439, "entropy": 0.4868, "lr": 3.125e-05}
+{"step": 21500, "epoch": 49, "trans": 4.174, "route_root": 0.0663, "route_pattern": 0.1732, "entropy": 0.4487, "lr": 3.125e-05}
+{"step": 21550, "epoch": 49, "trans": 4.1387, "route_root": 0.0027, "route_pattern": 0.172, "entropy": 0.4934, "lr": 3.125e-05}
+{"step": 21600, "epoch": 49, "trans": 4.0085, "route_root": 0.0124, "route_pattern": 0.2022, "entropy": 0.4793, "lr": 3.125e-05}
+{"step": 21650, "epoch": 49, "trans": 3.9926, "route_root": 0.0118, "route_pattern": 0.1635, "entropy": 0.3599, "lr": 3.125e-05}
+{"step": 21700, "epoch": 49, "trans": 4.1149, "route_root": 0.0071, "route_pattern": 0.1816, "entropy": 0.4112, "lr": 3.125e-05}
+{"step": 21750, "epoch": 49, "trans": 3.948, "route_root": 0.0669, "route_pattern": 0.2574, "entropy": 0.5362, "lr": 3.125e-05}
+{"step": 21800, "epoch": 49, "trans": 4.0982, "route_root": 0.0172, "route_pattern": 0.1052, "entropy": 0.4869, "lr": 3.125e-05}
+{"epoch": 49, "dev_loss": 5.204746981724318, "dev_chrf": 12.491648192287464}
+{"step": 21850, "epoch": 50, "trans": 3.8458, "route_root": 0.0169, "route_pattern": 0.1821, "entropy": 0.4786, "lr": 3.125e-05}
+{"step": 21900, "epoch": 50, "trans": 3.9287, "route_root": 0.0313, "route_pattern": 0.1963, "entropy": 0.46, "lr": 3.125e-05}
+{"step": 21950, "epoch": 50, "trans": 3.9952, "route_root": 0.0224, "route_pattern": 0.1784, "entropy": 0.4226, "lr": 3.125e-05}
+{"step": 22000, "epoch": 50, "trans": 4.208, "route_root": 0.0132, "route_pattern": 0.1854, "entropy": 0.4178, "lr": 3.125e-05}
+{"step": 22050, "epoch": 50, "trans": 4.0448, "route_root": 0.01, "route_pattern": 0.1971, "entropy": 0.5226, "lr": 3.125e-05}
+{"step": 22100, "epoch": 50, "trans": 3.9801, "route_root": 0.0296, "route_pattern": 0.2204, "entropy": 0.4325, "lr": 3.125e-05}
+{"step": 22150, "epoch": 50, "trans": 3.8145, "route_root": 0.0133, "route_pattern": 0.0784, "entropy": 0.4526, "lr": 3.125e-05}
+{"step": 22200, "epoch": 50, "trans": 4.0851, "route_root": 0.0043, "route_pattern": 0.1703, "entropy": 0.5697, "lr": 3.125e-05}
+{"epoch": 50, "dev_loss": 5.207169172614556, "dev_chrf": 12.691677650278843}
+{"step": 22250, "epoch": 51, "trans": 4.0078, "route_root": 0.0216, "route_pattern": 0.233, "entropy": 0.5018, "lr": 3.125e-05}
+{"step": 22300, "epoch": 51, "trans": 4.1662, "route_root": 0.0543, "route_pattern": 0.2438, "entropy": 0.4393, "lr": 3.125e-05}
+{"step": 22350, "epoch": 51, "trans": 4.0743, "route_root": 0.0184, "route_pattern": 0.1412, "entropy": 0.4896, "lr": 3.125e-05}
+{"step": 22400, "epoch": 51, "trans": 4.1433, "route_root": 0.0066, "route_pattern": 0.2435, "entropy": 0.4434, "lr": 3.125e-05}
+{"step": 22450, "epoch": 51, "trans": 4.2082, "route_root": 0.0171, "route_pattern": 0.1391, "entropy": 0.527, "lr": 3.125e-05}
+{"step": 22500, "epoch": 51, "trans": 4.0509, "route_root": 0.0492, "route_pattern": 0.1693, "entropy": 0.5711, "lr": 3.125e-05}
+{"step": 22550, "epoch": 51, "trans": 3.9761, "route_root": 0.0127, "route_pattern": 0.164, "entropy": 0.3993, "lr": 3.125e-05}
+{"step": 22600, "epoch": 51, "trans": 4.1136, "route_root": 0.0843, "route_pattern": 0.1111, "entropy": 0.5171, "lr": 3.125e-05}
+{"step": 22650, "epoch": 51, "trans": 4.1399, "route_root": 0.0223, "route_pattern": 0.1381, "entropy": 0.4276, "lr": 3.125e-05}
+{"epoch": 51, "dev_loss": 5.206521580097389, "dev_chrf": 11.954619399747893}
+{"step": 22700, "epoch": 52, "trans": 4.0979, "route_root": 0.0637, "route_pattern": 0.2303, "entropy": 0.5559, "lr": 3.125e-05}
+{"step": 22750, "epoch": 52, "trans": 4.0052, "route_root": 0.0187, "route_pattern": 0.1664, "entropy": 0.4814, "lr": 3.125e-05}
+{"step": 22800, "epoch": 52, "trans": 3.8323, "route_root": 0.0397, "route_pattern": 0.1673, "entropy": 0.4742, "lr": 3.125e-05}
+{"step": 22850, "epoch": 52, "trans": 4.0019, "route_root": 0.0825, "route_pattern": 0.1629, "entropy": 0.3938, "lr": 3.125e-05}
+{"step": 22900, "epoch": 52, "trans": 4.1942, "route_root": 0.0064, "route_pattern": 0.2045, "entropy": 0.461, "lr": 3.125e-05}
+{"step": 22950, "epoch": 52, "trans": 4.0995, "route_root": 0.0442, "route_pattern": 0.2382, "entropy": 0.4582, "lr": 3.125e-05}
+{"step": 23000, "epoch": 52, "trans": 4.1301, "route_root": 0.0349, "route_pattern": 0.1502, "entropy": 0.5105, "lr": 3.125e-05}
+{"step": 23050, "epoch": 52, "trans": 3.7751, "route_root": 0.0281, "route_pattern": 0.1249, "entropy": 0.4549, "lr": 3.125e-05}
+{"step": 23100, "epoch": 52, "trans": 3.9375, "route_root": 0.02, "route_pattern": 0.1911, "entropy": 0.3768, "lr": 3.125e-05}
+{"epoch": 52, "dev_loss": 5.205189876074355, "dev_chrf": 12.183306725066522}
+{"step": 23150, "epoch": 53, "trans": 3.976, "route_root": 0.0141, "route_pattern": 0.1565, "entropy": 0.432, "lr": 1.5625e-05}
+{"step": 23200, "epoch": 53, "trans": 3.9355, "route_root": 0.0462, "route_pattern": 0.1513, "entropy": 0.4578, "lr": 1.5625e-05}
+{"step": 23250, "epoch": 53, "trans": 4.0731, "route_root": 0.052, "route_pattern": 0.236, "entropy": 0.5304, "lr": 1.5625e-05}
+{"step": 23300, "epoch": 53, "trans": 3.988, "route_root": 0.0267, "route_pattern": 0.2511, "entropy": 0.4411, "lr": 1.5625e-05}
+{"step": 23350, "epoch": 53, "trans": 3.8928, "route_root": 0.0279, "route_pattern": 0.2165, "entropy": 0.4835, "lr": 1.5625e-05}
+{"step": 23400, "epoch": 53, "trans": 4.0868, "route_root": 0.0459, "route_pattern": 0.1474, "entropy": 0.4572, "lr": 1.5625e-05}
+{"step": 23450, "epoch": 53, "trans": 3.9051, "route_root": 0.011, "route_pattern": 0.2154, "entropy": 0.4957, "lr": 1.5625e-05}
+{"step": 23500, "epoch": 53, "trans": 4.0442, "route_root": 0.0297, "route_pattern": 0.2198, "entropy": 0.561, "lr": 1.5625e-05}
+{"epoch": 53, "dev_loss": 5.20610296774157, "dev_chrf": 12.20103822683352}
+{"step": 23550, "epoch": 54, "trans": 3.9646, "route_root": 0.0111, "route_pattern": 0.1653, "entropy": 0.5188, "lr": 1.5625e-05}
+{"step": 23600, "epoch": 54, "trans": 4.0695, "route_root": 0.0066, "route_pattern": 0.2533, "entropy": 0.4575, "lr": 1.5625e-05}
+{"step": 23650, "epoch": 54, "trans": 4.0808, "route_root": 0.0471, "route_pattern": 0.1541, "entropy": 0.5468, "lr": 1.5625e-05}
+{"step": 23700, "epoch": 54, "trans": 4.0586, "route_root": 0.0587, "route_pattern": 0.236, "entropy": 0.4495, "lr": 1.5625e-05}
+{"step": 23750, "epoch": 54, "trans": 4.0679, "route_root": 0.0185, "route_pattern": 0.2158, "entropy": 0.6369, "lr": 1.5625e-05}
+{"step": 23800, "epoch": 54, "trans": 3.9737, "route_root": 0.0375, "route_pattern": 0.1576, "entropy": 0.4501, "lr": 1.5625e-05}
+{"step": 23850, "epoch": 54, "trans": 4.0283, "route_root": 0.0047, "route_pattern": 0.1557, "entropy": 0.4463, "lr": 1.5625e-05}
+{"step": 23900, "epoch": 54, "trans": 3.9695, "route_root": 0.0192, "route_pattern": 0.2393, "entropy": 0.4924, "lr": 1.5625e-05}
+{"step": 23950, "epoch": 54, "trans": 4.0323, "route_root": 0.0182, "route_pattern": 0.1475, "entropy": 0.4476, "lr": 1.5625e-05}
+{"epoch": 54, "dev_loss": 5.207904993700337, "dev_chrf": 12.047565437316653}
+{"step": 24000, "epoch": 55, "trans": 4.0644, "route_root": 0.0045, "route_pattern": 0.1436, "entropy": 0.4053, "lr": 1.5625e-05}
+{"step": 24050, "epoch": 55, "trans": 3.8713, "route_root": 0.0036, "route_pattern": 0.1842, "entropy": 0.5678, "lr": 1.5625e-05}
+{"step": 24100, "epoch": 55, "trans": 4.0504, "route_root": 0.042, "route_pattern": 0.2428, "entropy": 0.5604, "lr": 1.5625e-05}
+{"step": 24150, "epoch": 55, "trans": 3.8759, "route_root": 0.0094, "route_pattern": 0.161, "entropy": 0.4685, "lr": 1.5625e-05}
+{"step": 24200, "epoch": 55, "trans": 4.0161, "route_root": 0.022, "route_pattern": 0.138, "entropy": 0.4886, "lr": 1.5625e-05}
+{"step": 24250, "epoch": 55, "trans": 3.9417, "route_root": 0.0114, "route_pattern": 0.1661, "entropy": 0.4784, "lr": 1.5625e-05}
+{"step": 24300, "epoch": 55, "trans": 3.8953, "route_root": 0.0238, "route_pattern": 0.1448, "entropy": 0.4526, "lr": 1.5625e-05}
+{"step": 24350, "epoch": 55, "trans": 4.0215, "route_root": 0.0166, "route_pattern": 0.1828, "entropy": 0.4905, "lr": 1.5625e-05}
+{"step": 24400, "epoch": 55, "trans": 4.0963, "route_root": 0.0218, "route_pattern": 0.1857, "entropy": 0.4424, "lr": 1.5625e-05}
+{"epoch": 55, "dev_loss": 5.206217835649275, "dev_chrf": 12.499977149604119}
+{"step": 24450, "epoch": 56, "trans": 3.987, "route_root": 0.0165, "route_pattern": 0.1929, "entropy": 0.5777, "lr": 7.8125e-06}
+{"step": 24500, "epoch": 56, "trans": 3.9222, "route_root": 0.0361, "route_pattern": 0.2647, "entropy": 0.4308, "lr": 7.8125e-06}
+{"step": 24550, "epoch": 56, "trans": 3.8676, "route_root": 0.0091, "route_pattern": 0.1496, "entropy": 0.4023, "lr": 7.8125e-06}
+{"step": 24600, "epoch": 56, "trans": 3.8922, "route_root": 0.0218, "route_pattern": 0.2365, "entropy": 0.4679, "lr": 7.8125e-06}
+{"step": 24650, "epoch": 56, "trans": 3.8977, "route_root": 0.0069, "route_pattern": 0.1585, "entropy": 0.4011, "lr": 7.8125e-06}
+{"step": 24700, "epoch": 56, "trans": 3.9795, "route_root": 0.0222, "route_pattern": 0.191, "entropy": 0.4469, "lr": 7.8125e-06}
+{"step": 24750, "epoch": 56, "trans": 3.9762, "route_root": 0.0348, "route_pattern": 0.1595, "entropy": 0.517, "lr": 7.8125e-06}
+{"step": 24800, "epoch": 56, "trans": 4.1339, "route_root": 0.0063, "route_pattern": 0.2394, "entropy": 0.5688, "lr": 7.8125e-06}
+{"step": 24850, "epoch": 56, "trans": 3.9814, "route_root": 0.0297, "route_pattern": 0.2026, "entropy": 0.4409, "lr": 7.8125e-06}
+{"epoch": 56, "dev_loss": 5.204975714839648, "dev_chrf": 12.297308155955728}
+{"step": 24900, "epoch": 57, "trans": 4.1104, "route_root": 0.0077, "route_pattern": 0.2174, "entropy": 0.394, "lr": 7.8125e-06}
+{"step": 24950, "epoch": 57, "trans": 4.0421, "route_root": 0.0086, "route_pattern": 0.1523, "entropy": 0.4272, "lr": 7.8125e-06}
+{"step": 25000, "epoch": 57, "trans": 3.9844, "route_root": 0.0153, "route_pattern": 0.1572, "entropy": 0.4174, "lr": 7.8125e-06}
+{"step": 25050, "epoch": 57, "trans": 4.068, "route_root": 0.0104, "route_pattern": 0.1168, "entropy": 0.5762, "lr": 7.8125e-06}
+{"step": 25100, "epoch": 57, "trans": 3.9687, "route_root": 0.015, "route_pattern": 0.1959, "entropy": 0.3737, "lr": 7.8125e-06}
+{"step": 25150, "epoch": 57, "trans": 3.9994, "route_root": 0.0201, "route_pattern": 0.169, "entropy": 0.4326, "lr": 7.8125e-06}
+{"step": 25200, "epoch": 57, "trans": 3.9621, "route_root": 0.0617, "route_pattern": 0.223, "entropy": 0.5776, "lr": 7.8125e-06}
+{"step": 25250, "epoch": 57, "trans": 3.9946, "route_root": 0.0209, "route_pattern": 0.2593, "entropy": 0.6248, "lr": 7.8125e-06}
+{"epoch": 57, "dev_loss": 5.204566539258261, "dev_chrf": 12.239950853627143}
+{"step": 25300, "epoch": 58, "trans": 3.9193, "route_root": 0.0169, "route_pattern": 0.1368, "entropy": 0.4702, "lr": 7.8125e-06}
+{"step": 25350, "epoch": 58, "trans": 4.1071, "route_root": 0.0218, "route_pattern": 0.1263, "entropy": 0.4978, "lr": 7.8125e-06}
+{"step": 25400, "epoch": 58, "trans": 4.1066, "route_root": 0.0376, "route_pattern": 0.1975, "entropy": 0.5277, "lr": 7.8125e-06}
+{"step": 25450, "epoch": 58, "trans": 4.0314, "route_root": 0.0072, "route_pattern": 0.2489, "entropy": 0.5181, "lr": 7.8125e-06}
+{"step": 25500, "epoch": 58, "trans": 3.9862, "route_root": 0.0073, "route_pattern": 0.1897, "entropy": 0.4567, "lr": 7.8125e-06}
+{"step": 25550, "epoch": 58, "trans": 3.9552, "route_root": 0.0115, "route_pattern": 0.153, "entropy": 0.507, "lr": 7.8125e-06}
+{"step": 25600, "epoch": 58, "trans": 4.0559, "route_root": 0.0166, "route_pattern": 0.1574, "entropy": 0.538, "lr": 7.8125e-06}
+{"step": 25650, "epoch": 58, "trans": 4.0034, "route_root": 0.0589, "route_pattern": 0.2044, "entropy": 0.6129, "lr": 7.8125e-06}
+{"step": 25700, "epoch": 58, "trans": 3.8972, "route_root": 0.0323, "route_pattern": 0.1784, "entropy": 0.4863, "lr": 7.8125e-06}
+{"epoch": 58, "dev_loss": 5.204922152962375, "dev_chrf": 12.399769188915377}
+{"step": 25750, "epoch": 59, "trans": 4.0489, "route_root": 0.0115, "route_pattern": 0.1933, "entropy": 0.4706, "lr": 3.90625e-06}
+{"step": 25800, "epoch": 59, "trans": 3.9928, "route_root": 0.0456, "route_pattern": 0.2368, "entropy": 0.547, "lr": 3.90625e-06}
+{"step": 25850, "epoch": 59, "trans": 3.996, "route_root": 0.0088, "route_pattern": 0.1464, "entropy": 0.4273, "lr": 3.90625e-06}
+{"step": 25900, "epoch": 59, "trans": 4.0962, "route_root": 0.1033, "route_pattern": 0.299, "entropy": 0.5503, "lr": 3.90625e-06}
+{"step": 25950, "epoch": 59, "trans": 4.0698, "route_root": 0.0346, "route_pattern": 0.1931, "entropy": 0.4271, "lr": 3.90625e-06}
+{"step": 26000, "epoch": 59, "trans": 4.0, "route_root": 0.0434, "route_pattern": 0.1826, "entropy": 0.4253, "lr": 3.90625e-06}
+{"step": 26050, "epoch": 59, "trans": 4.0147, "route_root": 0.0167, "route_pattern": 0.2022, "entropy": 0.5218, "lr": 3.90625e-06}
+{"step": 26100, "epoch": 59, "trans": 3.972, "route_root": 0.0172, "route_pattern": 0.2633, "entropy": 0.5734, "lr": 3.90625e-06}
+{"step": 26150, "epoch": 59, "trans": 4.0236, "route_root": 0.0045, "route_pattern": 0.2115, "entropy": 0.4988, "lr": 3.90625e-06}
+{"epoch": 59, "dev_loss": 5.205498761380287, "dev_chrf": 12.312686566876243}

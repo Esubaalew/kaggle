@@ -1,0 +1,4 @@
+labels_both_s11	60	4.3375	11.5	55
+labels_both_s22	60	4.3289	11.51	59
+labels_both_s33	60	4.3418	11.21	59
+rootin_plain_s11	56	4.436	10.36	47

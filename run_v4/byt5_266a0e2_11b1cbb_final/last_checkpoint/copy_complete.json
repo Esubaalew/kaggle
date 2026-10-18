@@ -1,0 +1,17 @@
+{
+ "checkpoint": "checkpoint-3687",
+ "files": {
+  "checkpoint-3687/trainer_state.json": 14317,
+  "checkpoint-3687/generation_config.json": 142,
+  "checkpoint-3687/optimizer.pt": 1937867,
+  "checkpoint-3687/rng_state.pth": 14645,
+  "checkpoint-3687/training_args.bin": 5393,
+  "checkpoint-3687/config.json": 848,
+  "checkpoint-3687/added_tokens.json": 3018,
+  "checkpoint-3687/tokenizer_config.json": 28276,
+  "checkpoint-3687/scheduler.pt": 1465,
+  "checkpoint-3687/model.safetensors": 1198571496,
+  "run_info.json": 4392
+ },
+ "written_EAT": "2026-10-10 02:08:15"
+}

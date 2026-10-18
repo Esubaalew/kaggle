@@ -1,0 +1,79 @@
+{
+ "run": "gmm_geezrpa_s11",
+ "variant": "gmm",
+ "best_epoch": 58,
+ "source_dir": "/kaggle/input/notebooks/esubalewchekol/drfn-clean-geezrpa/pack/runs/gmm_geezrpa_s11",
+ "decode": {
+  "beam5_nr4": {
+   "chrF_char": 14.520864474505293,
+   "chrF++": 14.314110807363543,
+   "BLEU": 4.269975402104714,
+   "seconds": 47
+  },
+  "beam5": {
+   "chrF_char": 13.651459587257374,
+   "chrF++": 13.419422741988058,
+   "BLEU": 3.8676035357941023,
+   "seconds": 67
+  },
+  "beam1_nr4": {
+   "chrF_char": 14.499402126037083,
+   "chrF++": 14.252886138938567,
+   "BLEU": 3.6417012968031788,
+   "seconds": 17
+  }
+ },
+ "ablation": {
+  "unlinked": {
+   "n_tokens": 39926,
+   "nll_on": 5.496519632726434,
+   "nll_off": 5.536794884042215,
+   "delta": 0.040275251315780594
+  },
+  "50+": {
+   "n_tokens": 1877,
+   "nll_on": 3.594873939634463,
+   "nll_off": 3.695849400021779,
+   "delta": 0.10097546038731633
+  },
+  "5-49": {
+   "n_tokens": 467,
+   "nll_on": 4.657845718556779,
+   "nll_off": 4.8215673612395795,
+   "delta": 0.16372164268279946
+  },
+  "unseen": {
+   "n_tokens": 33,
+   "nll_on": 5.148571463696884,
+   "nll_off": 5.203950689146013,
+   "delta": 0.055379225449128586
+  },
+  "1-4": {
+   "n_tokens": 120,
+   "nll_on": 4.973679583209257,
+   "nll_off": 5.127312247796605,
+   "delta": 0.1536326645873487
+  },
+  "all": {
+   "n_tokens": 42423,
+   "nll_on": 5.401399702986178,
+   "nll_off": 5.446051945036576,
+   "delta": 0.044652242050397646
+  }
+ },
+ "slot_swap": {
+  "n_items": 700,
+  "routed_to_own_root": 1.0,
+  "mean_gate": 0.8930550465413503,
+  "success_swap": 0.0,
+  "success_self": 0.0,
+  "keep_r_self": 1.0,
+  "keep_r_swap": 0.8357142857142857,
+  "keep_r_kill": 0.9328571428571428,
+  "tf_delta_nll_root_tokens": 0.2897122094711291,
+  "n_root_tokens": 898,
+  "tf_delta_nll_other_tokens": -0.004553384266368229,
+  "n_other_tokens": 16638
+ },
+ "seconds": 162
+}

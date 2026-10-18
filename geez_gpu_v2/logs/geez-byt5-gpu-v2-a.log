@@ -1,0 +1,12 @@
+[{"stream_name":"stdout","time":17.323499545,"data":"torch 2.11.0+cu128, CUDA available True, GPU count 2\n"}
+,{"stream_name":"stdout","time":17.346597497,"data":"GPU 0: Tesla T4, 14.6 GB\n"}
+,{"stream_name":"stdout","time":17.346617552,"data":"GPU 1: Tesla T4, 14.6 GB\n"}
+,{"stream_name":"stdout","time":37.235790279,"data":"transformers 5.16.1\n"}
+,{"stream_name":"stderr","time":37.439199049,"data":"dataset esubechekol/geez-morphology-gpu-v2 is not attached (no model.tar.gz under /kaggle/input)\n"}
+,{"stream_name":"stderr","time":46.347308867,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":46.347334223,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":46.728967487,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":46.728990101,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":47.593515154,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":49.09508112,"data":"[NbConvertApp] Writing 395180 bytes to __results__.html\n"}
+]

@@ -1,0 +1,18 @@
+{
+  "id": "esubechekol/geez-byt5-gpu-v2-b",
+  "title": "geez-byt5-gpu-v2-b",
+  "code_file": "geez_byt5_gpu_run_b.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": "true",
+  "enable_gpu": "true",
+  "enable_tpu": "false",
+  "enable_internet": "true",
+  "machine_shape": "NvidiaTeslaT4",
+  "dataset_sources": [
+    "esubechekol/geez-morphology-gpu-v2"
+  ],
+  "competition_sources": [],
+  "kernel_sources": ["esubechekol/geez-byt5-gpu-v2-b"],
+  "model_sources": []
+}

@@ -1,0 +1,21 @@
+Loading weights:   0%|          | 0/172 [00:00<?, ?it/s]Loading weights: 100%|██████████| 172/172 [00:00<00:00, 20453.64it/s]
+[transformers] The tied weights mapping and config for this model specifies to tie shared.weight to lm_head.weight, but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config with `tie_word_embeddings=False` to silence this warning.
+device cpu x1, bf16 False, global batch 4, steps/epoch 1550, total steps 3
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+step 1/3 epoch 0 loss 7.0620 lr 1.00e-03 5.356s/step elapsed 0.00h
+step 2/3 epoch 0 loss 4.0600 lr 5.50e-04 3.456s/step elapsed 0.00h
+step 3/3 epoch 0 loss 4.6930 lr 1.00e-04 3.304s/step elapsed 0.00h
+RESULT: CLEAN (exact roots and pairs)
+train samples 200, dev rows 32: synthetic 118131, gold_verb 1727, gold_nominal 6168, unified_book 9998, dictionary 2787, dictionary_verb 59, word_without_root 31, extra_synthetic 0
+Loading weights:   0%|          | 0/172 [00:00<?, ?it/s]Loading weights:  79%|███████▉  | 136/172 [00:00<00:00, 1346.67it/s]Loading weights: 100%|██████████| 172/172 [00:00<00:00, 1388.99it/s]
+[transformers] The tied weights mapping and config for this model specifies to tie shared.weight to lm_head.weight, but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config with `tie_word_embeddings=False` to silence this warning.
+device cpu x1, bf16 False, global batch 8, steps/epoch 25, total steps 3
+step 1/3 epoch 0 loss 4.0786 lr 1.00e-03 3.662s/step elapsed 0.00h
+step 2/3 epoch 0 loss 5.3458 lr 5.50e-04 16.873s/step elapsed 0.01h
+step 3/3 epoch 0 loss 4.7108 lr 1.00e-04 18.436s/step elapsed 0.01h
+eval {"dev_exact": 0.0, "dev_root": 0.0, "dev_pos": 0.0, "dev_score": 0.0, "step": 3}
+best/ updated (dev_score 0.0000)
+Loading weights:   0%|          | 0/172 [00:00<?, ?it/s]Loading weights:  38%|███▊      | 66/172 [00:00<00:00, 652.26it/s]Loading weights:  77%|███████▋  | 132/172 [00:00<00:00, 461.03it/s]Loading weights: 100%|██████████| 172/172 [00:00<00:00, 412.78it/s]
+[transformers] The tied weights mapping and config for this model specifies to tie shared.weight to lm_head.weight, but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config with `tie_word_embeddings=False` to silence this warning.
+dev_report {"n": 4, "exact": 0.0, "root": 0.0}
+FIN

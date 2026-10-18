@@ -1,0 +1,65 @@
+{
+ "run": "cmm_spec_geezrpa_s11",
+ "variant": "cmm_spec",
+ "best_epoch": 37,
+ "source_dir": "/kaggle/input/notebooks/esubalewchekol/drfn-clean-geezrpa/pack/runs/cmm_spec_geezrpa_s11",
+ "decode": {
+  "beam5_nr4": {
+   "chrF_char": 14.948244245849255,
+   "chrF++": 14.733207690460725,
+   "BLEU": 4.289964062420121,
+   "seconds": 44
+  },
+  "beam5": {
+   "chrF_char": 14.089826041198087,
+   "chrF++": 13.870286787054905,
+   "BLEU": 4.15213830561429,
+   "seconds": 65
+  },
+  "beam1_nr4": {
+   "chrF_char": 14.779951556551001,
+   "chrF++": 14.575167131708039,
+   "BLEU": 4.039354527791122,
+   "seconds": 16
+  }
+ },
+ "ablation": {
+  "unlinked": {
+   "n_tokens": 39926,
+   "nll_on": 5.459787108508415,
+   "nll_off": 5.471546070832622,
+   "delta": 0.011758962324206717
+  },
+  "50+": {
+   "n_tokens": 1877,
+   "nll_on": 3.554579349427759,
+   "nll_off": 3.5328549120187582,
+   "delta": -0.02172443740900093
+  },
+  "5-49": {
+   "n_tokens": 467,
+   "nll_on": 4.561518036754033,
+   "nll_off": 4.580806349873183,
+   "delta": 0.01928831311914974
+  },
+  "unseen": {
+   "n_tokens": 33,
+   "nll_on": 5.6781441315331245,
+   "nll_off": 5.669942166938474,
+   "delta": -0.008201964594649546
+  },
+  "1-4": {
+   "n_tokens": 120,
+   "nll_on": 4.773138900528041,
+   "nll_off": 4.731275236490182,
+   "delta": -0.04186366403785845
+  },
+  "all": {
+   "n_tokens": 42423,
+   "nll_on": 5.363830702231124,
+   "nll_off": 5.374023873351744,
+   "delta": 0.010193171120619926
+  }
+ },
+ "seconds": 130
+}

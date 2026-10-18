@@ -1,0 +1,18 @@
+{
+  "id": "esubalewchekol/geez-byt5-tpu-v2-a",
+  "title": "geez-byt5-tpu-v2-a",
+  "code_file": "geez_byt5_tpu_run_a.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": false,
+  "enable_tpu": true,
+  "enable_internet": true,
+  "machine_shape": "TpuV5E8",
+  "dataset_sources": [
+    "esubalewchekol/geez-morphology-tpu-v2"
+  ],
+  "kernel_sources": [],
+  "competition_sources": [],
+  "model_sources": []
+}

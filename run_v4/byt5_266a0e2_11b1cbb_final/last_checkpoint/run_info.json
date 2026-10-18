@@ -1,0 +1,125 @@
+{
+  "started": "2026-10-09T18:38:35+00:00",
+  "model_repo": {
+    "commit": "266a0e22aa1f66e63b84588f2e75679ec9ce38c6",
+    "dirty": false
+  },
+  "dataset_repo": {
+    "commit": "11b1cbb499f7735c5cbf043884e43b055749cd15",
+    "dirty": false
+  },
+  "data_sha256": {
+    "synthetic": "1b98c5b800f8575c384003e1edeb892278eef3731cce836d3a1b2e6da32971b8",
+    "gold_train": "b499a5a18402bd042960055e7ac3276ae0394f54bfb52868e5dd62713509c011",
+    "gold_flagged_rows": "41d0e878e4d270c1ba727bb6e8ece4342ac530abda8624494bac3abd9516a6e0",
+    "dictionary": "06dc98613e74da4d0c75f37ec2a56e468a01621a3206e7defdf350e5f15cc505",
+    "words_without_root": "adeb802a143991160ce22885ff9ae664b03d3bd2862ab9fcc23fb5b99893e72c"
+  },
+  "data_files": {
+    "synthetic": "/tmp/geez_code/geez-dataset/data/paradigms/synthetic_morphology_train.jsonl",
+    "gold_train": "/tmp/geez_code/geez-dataset/data/paradigms/merho_ges_gold_train.jsonl",
+    "gold_flagged_rows": "/tmp/geez_code/geez-dataset/data/paradigms/merho_ges_gold_flagged_rows.tsv",
+    "dictionary": "/tmp/geez_code/geez-dataset/data/lexicon/classical_dictionary_kidane_wold.jsonl",
+    "words_without_root": "/tmp/geez_code/geez-morphology/data/closed_class_words_without_root.tsv"
+  },
+  "counts": {
+    "synthetic": 125020,
+    "gold_train": 8056,
+    "dictionary_train": 993,
+    "words_without_root": 57,
+    "train": 157240,
+    "train_by_source": {
+      "synthetic": 112518,
+      "gold_verb": 7008,
+      "gold_nominal": 31520,
+      "dictionary": 993,
+      "word_without_root": 57,
+      "book_forms": 5144
+    },
+    "eval": 12502,
+    "eval_dictionary_nominal": 112,
+    "root_accuracy_pairs": 0
+  },
+  "load_counts": {
+    "loaded": 8056,
+    "not loaded: flagged (merho_ges_gold_flagged_rows.tsv)": 187,
+    "not loaded: row has no root": 926
+  },
+  "dictionary_load_counts": {
+    "headwords with conflicting roots": 16,
+    "loaded": 1106,
+    "not loaded: definition names a Greek source": 311,
+    "not loaded: duplicate (form, target)": 143,
+    "not loaded: entry cannot be checked": 1,
+    "not loaded: form is a gold val/test form": 12,
+    "not loaded: form is a gold val/test form up to spelling": 1,
+    "not loaded: form is in the gold train file": 411,
+    "not loaded: headword does not hold the root's radicals": 993,
+    "not loaded: headword has conflicting roots": 8,
+    "not loaded: headword is a word without root": 23,
+    "not loaded: headword is not one Ge'ez word": 343,
+    "not loaded: headword is the root's 3ms perfect": 61,
+    "not loaded: headword_type artifact": 381,
+    "not loaded: headword_type character": 40,
+    "not loaded: headword_type phrase": 488,
+    "not loaded: no root": 26,
+    "not loaded: pos adverb": 2,
+    "not loaded: pos conjunction": 1,
+    "not loaded: pos missing": 544,
+    "not loaded: pos name": 136,
+    "not loaded: pos particle": 74,
+    "not loaded: pos preposition": 1,
+    "not loaded: pos pronoun": 4,
+    "not loaded: pos verb": 3885,
+    "not loaded: root has 2 radicals": 1440,
+    "not loaded: root has 5 radicals": 142,
+    "not loaded: root is a gold val/test root": 172,
+    "not loaded: root is a root of the held-out synthetic lines": 64,
+    "not loaded: root is not 2-5 letters": 254,
+    "not loaded: root not on the synthetic allow-list": 2168
+  },
+  "words_without_root_load_counts": {
+    "loaded": 57
+  },
+  "device": "cuda",
+  "n_devices": 1,
+  "precision": "fp32",
+  "optimizer_steps": 3687,
+  "warmup_steps": 0,
+  "resumed_from": null,
+  "versions": {
+    "python": "3.13.15",
+    "torch": "2.11.0+cu128",
+    "transformers": "5.19.0"
+  },
+  "args": {
+    "dataset_dir": "/tmp/geez_code/geez-dataset",
+    "output_dir": "/tmp/geez_trainer_checkpoints/byt5_266a0e2_11b1cbb_final",
+    "resume_from": null,
+    "sample_limit": 0,
+    "batch_size": 64,
+    "grad_accum": 2,
+    "epochs": 3.0,
+    "lr": 0.001,
+    "warmup_ratio": 0.0,
+    "save_steps": 250,
+    "save_total_limit": 2,
+    "logging_steps": 50,
+    "max_steps": 0,
+    "max_eval_samples": 0,
+    "num_workers": 2,
+    "device": "auto",
+    "load_only": false,
+    "export_dir": null,
+    "no_dictionary_pairs": false,
+    "no_words_without_root": false,
+    "no_book_forms": false,
+    "single_prefix": false,
+    "gold_upsample": 4,
+    "gold_nominal_upsample": 5,
+    "root_accuracy_rows": 0,
+    "eval_steps": 0,
+    "metric_for_best_model": null,
+    "no_test_inference": false
+  }
+}

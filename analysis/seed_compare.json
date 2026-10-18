@@ -1,0 +1,217 @@
+{
+ "scores": {
+  "bpe_aux_analyser_s11": 12.819,
+  "bpe_aux_analyser_s22": 13.632,
+  "bpe_aux_geezrpa_s11": 13.495,
+  "bpe_aux_geezrpa_s11_wstok": 13.254,
+  "bpe_aux_geezrpa_s22": 13.178,
+  "cmm_spec_analyser_s11": 13.691,
+  "cmm_spec_analyser_s22": 13.458,
+  "cmm_spec_geezrpa_s11": 13.034,
+  "gmm_analyser_s11": 13.413,
+  "gmm_analyser_s22": 12.791,
+  "gmm_dec_analyser_s11": 12.91,
+  "gmm_dec_free_analyser_s11": 13.004,
+  "gmm_dec_sep_analyser_s11": 13.008,
+  "gmm_geezrpa_s11": 13.077,
+  "gmm_geezrpa_s22": 12.952,
+  "plain_bpe_geezrpa_s11": 12.122
+ },
+ "contrasts": {
+  "gmm-bpe_aux|geezrpa|s11": [
+   -0.418,
+   -0.75,
+   -0.069
+  ],
+  "cmm_spec-bpe_aux|geezrpa|s11": [
+   -0.462,
+   -0.797,
+   -0.117
+  ],
+  "gmm-cmm_spec|geezrpa|s11": [
+   0.043,
+   -0.294,
+   0.386
+  ],
+  "gmm-bpe_aux|analyser|s11": [
+   0.594,
+   0.247,
+   0.962
+  ],
+  "cmm_spec-bpe_aux|analyser|s11": [
+   0.872,
+   0.538,
+   1.228
+  ],
+  "gmm-cmm_spec|analyser|s11": [
+   -0.278,
+   -0.622,
+   0.085
+  ],
+  "bpe_aux:analyser-geezrpa|s11": [
+   -0.676,
+   -1.007,
+   -0.315
+  ],
+  "gmm:analyser-geezrpa|s11": [
+   0.336,
+   0.028,
+   0.67
+  ],
+  "cmm_spec:analyser-geezrpa|s11": [
+   0.657,
+   0.314,
+   0.973
+  ],
+  "interaction_gmm_vs_heads|s11": [
+   0.506,
+   0.273,
+   0.736
+  ],
+  "gmm-bpe_aux|geezrpa|s22": [
+   -0.226,
+   -0.575,
+   0.121
+  ],
+  "gmm-bpe_aux|analyser|s22": [
+   -0.841,
+   -1.201,
+   -0.452
+  ],
+  "cmm_spec-bpe_aux|analyser|s22": [
+   -0.174,
+   -0.526,
+   0.169
+  ],
+  "gmm-cmm_spec|analyser|s22": [
+   -0.667,
+   -1.032,
+   -0.301
+  ],
+  "bpe_aux:analyser-geezrpa|s22": [
+   0.454,
+   0.095,
+   0.832
+  ],
+  "gmm:analyser-geezrpa|s22": [
+   -0.161,
+   -0.486,
+   0.181
+  ],
+  "interaction_gmm_vs_heads|s22": [
+   -0.307,
+   -0.558,
+   -0.054
+  ],
+  "seed22-seed11|bpe_aux_geezrpa": [
+   -0.317,
+   -0.664,
+   0.023
+  ],
+  "seed22-seed11|bpe_aux_analyser": [
+   0.813,
+   0.449,
+   1.168
+  ],
+  "seed22-seed11|gmm_geezrpa": [
+   -0.125,
+   -0.457,
+   0.197
+  ],
+  "seed22-seed11|gmm_analyser": [
+   -0.622,
+   -0.95,
+   -0.276
+  ],
+  "seed22-seed11|cmm_spec_analyser": [
+   -0.232,
+   -0.588,
+   0.132
+  ],
+  "2seed gmm-bpe_aux|geezrpa": [
+   -0.322,
+   -0.569,
+   -0.06
+  ],
+  "2seed gmm-bpe_aux|analyser": [
+   -0.124,
+   -0.385,
+   0.141
+  ],
+  "2seed cmm_spec-bpe_aux|analyser": [
+   0.349,
+   0.116,
+   0.591
+  ],
+  "2seed gmm-cmm_spec|analyser": [
+   -0.473,
+   -0.736,
+   -0.21
+  ],
+  "2seed bpe_aux:analyser-geezrpa": [
+   -0.111,
+   -0.368,
+   0.15
+  ],
+  "2seed gmm:analyser-geezrpa": [
+   0.087,
+   -0.14,
+   0.321
+  ],
+  "2seed interaction_gmm_vs_heads": [
+   0.099,
+   -0.079,
+   0.275
+  ],
+  "2seed labels: bpe_aux_geezrpa - plain_bpe(s11 only)": [
+   1.215,
+   0.912,
+   1.511
+  ],
+  "wstok - metaspace|bpe_aux_geezrpa_s11": [
+   -0.241,
+   -0.568,
+   0.134
+  ],
+  "wstok - 2seed metaspace mean": [
+   -0.083,
+   -0.39,
+   0.249
+  ],
+  "gmm_dec-gmm|analyser|s11": [
+   -0.503,
+   -0.863,
+   -0.142
+  ],
+  "gmm_dec-2seed gmm|analyser": [
+   -0.192,
+   -0.515,
+   0.121
+  ],
+  "gmm_dec_free-gmm|analyser|s11": [
+   -0.408,
+   -0.729,
+   -0.103
+  ],
+  "gmm_dec_free-2seed gmm|analyser": [
+   -0.097,
+   -0.378,
+   0.169
+  ],
+  "gmm_dec_sep-gmm|analyser|s11": [
+   -0.405,
+   -0.744,
+   -0.056
+  ],
+  "gmm_dec_sep-2seed gmm|analyser": [
+   -0.094,
+   -0.381,
+   0.213
+  ],
+  "gmm_dec-gmm_dec_free|s11": [
+   -0.095,
+   -0.429,
+   0.249
+  ]
+ }
+}

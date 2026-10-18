@@ -1,0 +1,530 @@
+/usr/local/lib/python3.12/site-packages/torch_xla/__init__.py:258: UserWarning: `tensorflow` can conflict with `torch-xla`. Prefer `tensorflow-cpu` when using PyTorch/XLA. To silence this warning, `pip uninstall -y tensorflow && pip install tensorflow-cpu`. If you are in a notebook environment such as Colab or Kaggle, restart your notebook runtime afterwards.
+  warnings.warn(
+/usr/local/lib/python3.12/site-packages/torch_xla/__init__.py:258: UserWarning: `tensorflow` can conflict with `torch-xla`. Prefer `tensorflow-cpu` when using PyTorch/XLA. To silence this warning, `pip uninstall -y tensorflow && pip install tensorflow-cpu`. If you are in a notebook environment such as Colab or Kaggle, restart your notebook runtime afterwards.
+  warnings.warn(
+/usr/local/lib/python3.12/site-packages/torch_xla/__init__.py:258: UserWarning: `tensorflow` can conflict with `torch-xla`. Prefer `tensorflow-cpu` when using PyTorch/XLA. To silence this warning, `pip uninstall -y tensorflow && pip install tensorflow-cpu`. If you are in a notebook environment such as Colab or Kaggle, restart your notebook runtime afterwards.
+  warnings.warn(
+/usr/local/lib/python3.12/site-packages/torch_xla/__init__.py:258: UserWarning: `tensorflow` can conflict with `torch-xla`. Prefer `tensorflow-cpu` when using PyTorch/XLA. To silence this warning, `pip uninstall -y tensorflow && pip install tensorflow-cpu`. If you are in a notebook environment such as Colab or Kaggle, restart your notebook runtime afterwards.
+  warnings.warn(
+/usr/local/lib/python3.12/site-packages/torch_xla/__init__.py:258: UserWarning: `tensorflow` can conflict with `torch-xla`. Prefer `tensorflow-cpu` when using PyTorch/XLA. To silence this warning, `pip uninstall -y tensorflow && pip install tensorflow-cpu`. If you are in a notebook environment such as Colab or Kaggle, restart your notebook runtime afterwards.
+  warnings.warn(
+/usr/local/lib/python3.12/site-packages/torch_xla/__init__.py:258: UserWarning: `tensorflow` can conflict with `torch-xla`. Prefer `tensorflow-cpu` when using PyTorch/XLA. To silence this warning, `pip uninstall -y tensorflow && pip install tensorflow-cpu`. If you are in a notebook environment such as Colab or Kaggle, restart your notebook runtime afterwards.
+  warnings.warn(
+/usr/local/lib/python3.12/site-packages/torch_xla/__init__.py:258: UserWarning: `tensorflow` can conflict with `torch-xla`. Prefer `tensorflow-cpu` when using PyTorch/XLA. To silence this warning, `pip uninstall -y tensorflow && pip install tensorflow-cpu`. If you are in a notebook environment such as Colab or Kaggle, restart your notebook runtime afterwards.
+  warnings.warn(
+/usr/local/lib/python3.12/site-packages/torch_xla/__init__.py:258: UserWarning: `tensorflow` can conflict with `torch-xla`. Prefer `tensorflow-cpu` when using PyTorch/XLA. To silence this warning, `pip uninstall -y tensorflow && pip install tensorflow-cpu`. If you are in a notebook environment such as Colab or Kaggle, restart your notebook runtime afterwards.
+  warnings.warn(
+/usr/local/lib/python3.12/site-packages/torch_xla/__init__.py:258: UserWarning: `tensorflow` can conflict with `torch-xla`. Prefer `tensorflow-cpu` when using PyTorch/XLA. To silence this warning, `pip uninstall -y tensorflow && pip install tensorflow-cpu`. If you are in a notebook environment such as Colab or Kaggle, restart your notebook runtime afterwards.
+  warnings.warn(
+WARNING: Logging before InitGoogle() is written to STDERR
+E0000 00:00:1792109739.690368    1069 common_lib.cc:648] Could not set metric server port: INVALID_ARGUMENT: Could not find SliceBuilder port 8482 in any of the 0 ports provided in `tpu_process_addresses`="local"
+=== Source Location Trace: ===
+learning/45eac/tfrc/runtime/common_lib.cc:238
+WARNING: Logging before InitGoogle() is written to STDERR
+WARNING: Logging before InitGoogle() is written to STDERR
+E0000 00:00:1792109739.712291    1070 common_lib.cc:648] Could not set metric server port: INVALID_ARGUMENT: Could not find SliceBuilder port 8480 in any of the 0 ports provided in `tpu_process_addresses`="local"
+=== Source Location Trace: === 
+learning/45eac/tfrc/runtime/common_lib.cc:238
+E0000 00:00:1792109739.712285    1066 common_lib.cc:648] Could not set metric server port: INVALID_ARGUMENT: Could not find SliceBuilder port 8477 in any of the 0 ports provided in `tpu_process_addresses`="local"
+=== Source Location Trace: === 
+learning/45eac/tfrc/runtime/common_lib.cc:238
+WARNING: Logging before InitGoogle() is written to STDERR
+E0000 00:00:1792109739.716911    1062 common_lib.cc:648] Could not set metric server port: INVALID_ARGUMENT: Could not find SliceBuilder port 8476 in any of the 0 ports provided in `tpu_process_addresses`="local"
+=== Source Location Trace: ===
+learning/45eac/tfrc/runtime/common_lib.cc:238
+WARNING: Logging before InitGoogle() is written to STDERR
+E0000 00:00:1792109739.750468    1065 common_lib.cc:648] Could not set metric server port: INVALID_ARGUMENT: Could not find SliceBuilder port 8479 in any of the 0 ports provided in `tpu_process_addresses`="local"
+=== Source Location Trace: === 
+learning/45eac/tfrc/runtime/common_lib.cc:238
+WARNING: Logging before InitGoogle() is written to STDERR
+E0000 00:00:1792109739.764777    1068 common_lib.cc:648] Could not set metric server port: INVALID_ARGUMENT: Could not find SliceBuilder port 8481 in any of the 0 ports provided in `tpu_process_addresses`="local"
+=== Source Location Trace: ===
+learning/45eac/tfrc/runtime/common_lib.cc:238
+WARNING: Logging before InitGoogle() is written to STDERR
+E0000 00:00:1792109739.773036    1067 common_lib.cc:648] Could not set metric server port: INVALID_ARGUMENT: Could not find SliceBuilder port 8478 in any of the 0 ports provided in `tpu_process_addresses`="local"
+=== Source Location Trace: === 
+learning/45eac/tfrc/runtime/common_lib.cc:238
+WARNING: Logging before InitGoogle() is written to STDERR
+E0000 00:00:1792109739.814013    1071 common_lib.cc:648] Could not set metric server port: INVALID_ARGUMENT: Could not find SliceBuilder port 8483 in any of the 0 ports provided in `tpu_process_addresses`="local"
+=== Source Location Trace: === 
+learning/45eac/tfrc/runtime/common_lib.cc:238
+F1016 00:15:39.940152    1066 runtime.cpp:21] Check failed: !g_computation_client_initialized InitializeComputationClient() can only be called once.
+F1016 00:15:39.940172    1069 runtime.cpp:21] Check failed: !g_computation_client_initialized InitializeComputationClient() can only be called once.
+F1016 00:15:39.940192    1070 runtime.cpp:21] Check failed: !g_computation_client_initialized InitializeComputationClient() can only be called once.
+F1016 00:15:39.940282    1062 runtime.cpp:21] Check failed: !g_computation_client_initialized InitializeComputationClient() can only be called once.
+F1016 00:15:39.940320    1065 runtime.cpp:21] Check failed: !g_computation_client_initialized InitializeComputationClient() can only be called once.
+F1016 00:15:39.940428    1068 runtime.cpp:21] Check failed: !g_computation_client_initialized InitializeComputationClient() can only be called once.
+F1016 00:15:39.940483    1067 runtime.cpp:21] Check failed: !g_computation_client_initialized InitializeComputationClient() can only be called once.
+F1016 00:15:39.940494    1071 runtime.cpp:21] Check failed: !g_computation_client_initialized InitializeComputationClient() can only be called once.
+*** Check failure stack trace: ***
+    @     0x7cbd9610f41f  absl::lts_20230802::log_internal::LogMessageFatal::~LogMessageFatal()
+    @     0x7cbd8f1d4991  torch_xla::runtime::GetComputationClient()
+    @     0x7cbd8f1d4a12  torch_xla::runtime::GetComputationClientOrDie()
+    @     0x7cbd8edf5d34  torch_xla::(anonymous namespace)::PrepareToExit()
+    @     0x7cbd8edf237b  torch_xla::(anonymous namespace)::PythonScope<>::PythonFunctionBinder<>::Bind<>()::{lambda()#1}::operator()()
+    @     0x7cbd8edf46a2  pybind11::cpp_function::initialize<>()::{lambda()#3}::_FUN()
+    @     0x7cbd8ee412d7  pybind11::cpp_function::dispatcher()
+    @     0x7cbe5509eb06  cfunction_call
+    @     0x7cbe55078e46  _PyObject_MakeTpCall
+    @     0x7cbe5508503d  _PyEval_EvalFrameDefault
+    @     0x7cbe55147d07  atexit_callfuncs
+    @     0x7cbe5512baf4  Py_FinalizeEx
+    @     0x7cbe55149061  Py_Exit
+    @     0x7cbe5514671a  handle_system_exit
+    @     0x7cbe55146530  _PyErr_PrintEx
+    @     0x7cbe5513f8b6  PyRun_SimpleStringFlags
+    @     0x7cbe5513c485  Py_RunMain
+    @     0x7cbe550f3bbc  Py_BytesMain
+    @     0x7cbe54cbbca8  (unknown)
+https://symbolize.stripped_domain/r/?trace=7cbe54d2669c,7cbe54cd1d6f,7cbd9610f0be,7cbd9610f41e,7cbd8f1d4990,7cbd8f1d4a11,7cbd8edf5d33,7cbd8edf237a,7cbd8edf46a1,7cbd8ee412d6,7cbe5509eb05,7cbe55078e45,7cbe5508503c,7cbe55147d06,7cbe5512baf3,7cbe55149060,7cbe55146719,7cbe5514652f,7cbe5513f8b5,7cbe5513c484,7cbe550f3bbb,7cbe54cbbca7&map= 
+*** SIGABRT received by PID 1068 (TID 1068) on cpu 94 from PID 1068; stack trace: ***
+PC: @     0x7cbe54d2669c  (unknown)  (unknown)
+    @     0x7cb996db47e5       1904  (unknown)
+    @     0x7cbe54cd1d70  (unknown)  (unknown)
+    @     0x7cbd9610f0bf         32  absl::lts_20230802::log_internal::LogMessage::Die()
+    @     0x7cbd9610f41f         16  absl::lts_20230802::log_internal::LogMessageFatal::~LogMessageFatal()
+*** Check failure stack trace: ***
+    @     0x794ddb40f41f  absl::lts_20230802::log_internal::LogMessageFatal::~LogMessageFatal()
+    @     0x794dd44d4991  torch_xla::runtime::GetComputationClient()
+    @     0x794dd44d4a12  torch_xla::runtime::GetComputationClientOrDie()
+    @     0x794dd40f5d34  torch_xla::(anonymous namespace)::PrepareToExit()
+    @     0x794dd40f237b  torch_xla::(anonymous namespace)::PythonScope<>::PythonFunctionBinder<>::Bind<>()::{lambda()#1}::operator()()
+    @     0x794dd40f46a2  pybind11::cpp_function::initialize<>()::{lambda()#3}::_FUN()
+    @     0x794dd41412d7  pybind11::cpp_function::dispatcher()
+    @     0x794e9a383b06  cfunction_call
+    @     0x794e9a35de46  _PyObject_MakeTpCall
+    @     0x794e9a36a03d  _PyEval_EvalFrameDefault
+    @     0x794e9a42cd07  atexit_callfuncs
+    @     0x794e9a410af4  Py_FinalizeEx
+    @     0x794e9a42e061  Py_Exit
+    @     0x794e9a42b71a  handle_system_exit
+    @     0x794e9a42b530  _PyErr_PrintEx
+    @     0x794e9a4248b6  PyRun_SimpleStringFlags
+    @     0x794e9a421485  Py_RunMain
+    @     0x794e9a3d8bbc  Py_BytesMain
+    @     0x794e99fa0ca8  (unknown)
+*** Check failure stack trace: ***
+    @     0x7afd4880f41f  absl::lts_20230802::log_internal::LogMessageFatal::~LogMessageFatal()
+    @     0x7afd418d4991  torch_xla::runtime::GetComputationClient()
+    @     0x7afd418d4a12  torch_xla::runtime::GetComputationClientOrDie()
+    @     0x7afd414f5d34  torch_xla::(anonymous namespace)::PrepareToExit()
+    @     0x7afd414f237b  torch_xla::(anonymous namespace)::PythonScope<>::PythonFunctionBinder<>::Bind<>()::{lambda()#1}::operator()()
+    @     0x7afd414f46a2  pybind11::cpp_function::initialize<>()::{lambda()#3}::_FUN()
+    @     0x7afd415412d7  pybind11::cpp_function::dispatcher()
+    @     0x7afe077ceb06  cfunction_call
+    @     0x7afe077a8e46  _PyObject_MakeTpCall
+    @     0x7afe077b503d  _PyEval_EvalFrameDefault
+    @     0x7afe07877d07  atexit_callfuncs
+    @     0x7afe0785baf4  Py_FinalizeEx
+    @     0x7afe07879061  Py_Exit
+    @     0x7afe0787671a  handle_system_exit
+    @     0x7afe07876530  _PyErr_PrintEx
+    @     0x7afe0786f8b6  PyRun_SimpleStringFlags
+    @     0x7afe0786c485  Py_RunMain
+    @     0x7afe07823bbc  Py_BytesMain
+    @     0x7afe073ebca8  (unknown)
+https://symbolize.stripped_domain/r/?trace=794e9a00b69c,794e99fb6d6f,794ddb40f0be,794ddb40f41e,794dd44d4990,794dd44d4a11,794dd40f5d33,794dd40f237a,794dd40f46a1,794dd41412d6,794e9a383b05,794e9a35de45,794e9a36a03c,794e9a42cd06,794e9a410af3,794e9a42e060,794e9a42b719,794e9a42b52f,794e9a4248b5,794e9a421484,794e9a3d8bbb,794e99fa0ca7&map= 
+*** SIGABRT received by PID 1071 (TID 1071) on cpu 75 from PID 1071; stack trace: ***
+https://symbolize.stripped_domain/r/?trace=7afe0745669c,7afe07401d6f,7afd4880f0be,7afd4880f41e,7afd418d4990,7afd418d4a11,7afd414f5d33,7afd414f237a,7afd414f46a1,7afd415412d6,7afe077ceb05,7afe077a8e45,7afe077b503c,7afe07877d06,*** Check failure stack trace: ***
+    @     0x7f067300f41f  absl::lts_20230802::log_internal::LogMessageFatal::~LogMessageFatal()
+    @     0x7f066c0d4991  torch_xla::runtime::GetComputationClient()
+    @     0x7f066c0d4a12  torch_xla::runtime::GetComputationClientOrDie()
+    @     0x7f066bcf5d34  torch_xla::(anonymous namespace)::PrepareToExit()
+    @     0x7f066bcf237b  torch_xla::(anonymous namespace)::PythonScope<>::PythonFunctionBinder<>::Bind<>()::{lambda()#1}::operator()()
+    @     0x7f066bcf46a2  pybind11::cpp_function::initialize<>()::{lambda()#3}::_FUN()
+    @     0x7f066bd412d7  pybind11::cpp_function::dispatcher()
+    @     0x7f0731fd7b06  cfunction_call
+    @     0x7f0731fb1e46  _PyObject_MakeTpCall
+    @     0x7f0731fbe03d  _PyEval_EvalFrameDefault
+    @     0x7f0732080d07  atexit_callfuncs
+    @     0x7f0732064af4  Py_FinalizeEx
+    @     0x7f0732082061  Py_Exit
+    @     0x7f073207f71a  handle_system_exit
+    @     0x7f073207f530  _PyErr_PrintEx
+    @     0x7f07320788b6  PyRun_SimpleStringFlags
+    @     0x7f0732075485  Py_RunMain
+    @     0x7f073202cbbc  Py_BytesMain
+    @     0x7f0731bf4ca8  (unknown)
+7afe0785baf3,7afe07879060,7afe07876719,7afe0787652f,7afe0786f8b5,7afe0786c484,7afe07823bbb,7afe073ebca7&map= 
+*** SIGABRT received by PID 1062 (TID 1062) on cpu 58 from PID 1062; stack trace: ***
+https://symbolize.stripped_domain/r/?trace=7f0731c5f69c,7f0731c0ad6f,7f067300f0be,7f067300f41e,7f066c0d4990,7f066c0d4a11,7f066bcf5d33,7f066bcf237a,7f066bcf46a1,7f066bd412d6,7f0731fd7b05,7f0731fb1e45,7f0731fbe03c,7f0732080d06,7f0732064af3,7f0732082060,7f073207f719,7f073207f52f,7f07320788b5,7f0732075484,7f073202cbbb,7f0731bf4ca7&map= 
+*** SIGABRT received by PID 1070 (TID 1070) on cpu 87 from PID 1070; stack trace: ***
+    @     0x7cbd8f1d4991        144  torch_xla::runtime::GetComputationClient()
+    @     0x7cbd8f1d4a12         48  torch_xla::runtime::GetComputationClientOrDie()
+    @     0x7cbd8edf5d34        128  torch_xla::(anonymous namespace)::PrepareToExit()
+PC: @     0x7f0731c5f69c  (unknown)  (unknown)
+    @     0x7f025adb47e5       1904  (unknown)
+    @     0x7f0731c0ad70  (unknown)  (unknown)
+    @     0x7cbd8edf237b         80  torch_xla::(anonymous namespace)::PythonScope<>::PythonFunctionBinder<>::Bind<>()::{lambda()#1}::operator()()
+*** Check failure stack trace: ***
+    @     0x7f297840f41f  absl::lts_20230802::log_internal::LogMessageFatal::~LogMessageFatal()
+    @     0x7f29714d4991  torch_xla::runtime::GetComputationClient()
+    @     0x7f29714d4a12  torch_xla::runtime::GetComputationClientOrDie()
+    @     0x7f29710f5d34  torch_xla::(anonymous namespace)::PrepareToExit()
+    @     0x7f29710f237b  torch_xla::(anonymous namespace)::PythonScope<>::PythonFunctionBinder<>::Bind<>()::{lambda()#1}::operator()()
+    @     0x7f29710f46a2  pybind11::cpp_function::initialize<>()::{lambda()#3}::_FUN()
+    @     0x7f29711412d7  pybind11::cpp_function::dispatcher()
+    @     0x7f2a373f3b06  cfunction_call
+    @     0x7f2a373cde46  _PyObject_MakeTpCall
+    @     0x7f2a373da03d  _PyEval_EvalFrameDefault
+    @     0x7f2a3749cd07  atexit_callfuncs
+    @     0x7f2a37480af4  Py_FinalizeEx
+    @     0x7f2a3749e061  Py_Exit
+    @     0x7f2a3749b71a  handle_system_exit
+    @     0x7f2a3749b530  _PyErr_PrintEx
+    @     0x7f2a374948b6  PyRun_SimpleStringFlags
+    @     0x7f2a37491485  Py_RunMain
+    @     0x7f2a37448bbc  Py_BytesMain
+    @     0x7f2a37010ca8  (unknown)
+*** Check failure stack trace: ***
+    @     0x7b1d70b0f41f  absl::lts_20230802::log_internal::LogMessageFatal::~LogMessageFatal()
+    @     0x7b1d69bd4991  torch_xla::runtime::GetComputationClient()
+    @     0x7b1d69bd4a12  torch_xla::runtime::GetComputationClientOrDie()
+    @     0x7b1d697f5d34  torch_xla::(anonymous namespace)::PrepareToExit()
+    @     0x7b1d697f237b  torch_xla::(anonymous namespace)::PythonScope<>::PythonFunctionBinder<>::Bind<>()::{lambda()#1}::operator()()
+    @     0x7b1d697f46a2  pybind11::cpp_function::initialize<>()::{lambda()#3}::_FUN()
+    @     0x7b1d698412d7  pybind11::cpp_function::dispatcher()
+    @     0x7b1e2facbb06  cfunction_call
+    @     0x7b1e2faa5e46  _PyObject_MakeTpCall
+    @     0x7b1e2fab203d  _PyEval_EvalFrameDefault
+    @     0x7b1e2fb74d07  atexit_callfuncs
+    @     0x7b1e2fb58af4  Py_FinalizeEx
+    @     0x7b1e2fb76061  Py_Exit
+    @     0x7b1e2fb7371a  handle_system_exit
+    @     0x7b1e2fb73530  _PyErr_PrintEx
+    @     0x7b1e2fb6c8b6  PyRun_SimpleStringFlags
+    @     0x7b1e2fb69485  Py_RunMain
+    @     0x7b1e2fb20bbc  Py_BytesMain
+    @     0x7b1e2f6e8ca8  (unknown)
+https://symbolize.stripped_domain/r/?trace=7f2a3707b69c,7f2a37026d6f,7f297840f0be,7f297840f41e,7f29714d4990,7f29714d4a11,7f29710f5d33,7f29710f237a,7f29710f46a1,7f29711412d6,7f2a373f3b05,7f2a373cde45,7f2a373da03c,7f2a3749cd06,7f2a37480af3,7f2a3749e060,7f2a3749b719,7f2a3749b52f,7f2a374948b5,7f2a37491484,7f2a37448bbb,7f2a37010ca7&map= 
+*** SIGABRT received by PID 1067 (TID 1067) on cpu 24 from PID 1067; stack trace: ***
+https://symbolize.stripped_domain/r/?trace=7b1e2f75369c,7b1e2f6fed6f,7b1d70b0f0be,7b1d70b0f41e,7b1d69bd4990,7b1d69bd4a11,7b1d697f5d33,7b1d697f237a,7b1d697f46a1,7b1d698412d6,7b1e2facbb05,7b1e2faa5e45,7b1e2fab203c,7b1e2fb74d06,7b1e2fb58af3,7b1e2fb76060,7b1e2fb73719,7b1e2fb7352f,7b1e2fb6c8b5,7b1e2fb69484,7b1e2fb20bbb,7b1e2f6e8ca7&map= 
+*** SIGABRT received by PID 1065 (TID 1065) on cpu 16 from PID 1065; stack trace: ***
+    @     0x7f067300f0bf         32  absl::lts_20230802::log_internal::LogMessage::Die()
+*** Check failure stack trace: ***
+    @     0x78183870f41f  absl::lts_20230802::log_internal::LogMessageFatal::~LogMessageFatal()
+    @     0x7818317d4991  torch_xla::runtime::GetComputationClient()
+    @     0x7818317d4a12  torch_xla::runtime::GetComputationClientOrDie()
+    @     0x7818313f5d34  torch_xla::(anonymous namespace)::PrepareToExit()
+    @     0x7818313f237b  torch_xla::(anonymous namespace)::PythonScope<>::PythonFunctionBinder<>::Bind<>()::{lambda()#1}::operator()()
+    @     0x7818313f46a2  pybind11::cpp_function::initialize<>()::{lambda()#3}::_FUN()
+    @     0x7818314412d7  pybind11::cpp_function::dispatcher()
+    @     0x7818f7651b06  cfunction_call
+    @     0x7818f762be46  _PyObject_MakeTpCall
+    @     0x7818f763803d  _PyEval_EvalFrameDefault
+    @     0x7818f76fad07  atexit_callfuncs
+    @     0x7818f76deaf4  Py_FinalizeEx
+    @     0x7818f76fc061  Py_Exit
+    @     0x7818f76f971a  handle_system_exit
+    @     0x7818f76f9530  _PyErr_PrintEx
+    @     0x7818f76f28b6  PyRun_SimpleStringFlags
+    @     0x7818f76ef485  Py_RunMain
+    @     0x7818f76a6bbc  Py_BytesMain
+    @     0x7818f726eca8  (unknown)
+https://symbolize.stripped_domain/r/?trace=7818f72d969c,7818f7284d6f,78183870f0be,78183870f41e,7818317d4990,7818317d4a11,7818313f5d33,7818313f237a,7818313f46a1,7818314412d6,7818f7651b05,7818f762be45,7818f763803c,7818f76fad06,7818f76deaf3,7818f76fc060,7818f76f9719,7818f76f952f,7818f76f28b5,7818f76ef484,7818f76a6bbb,7818f726eca7&map= 
+*** SIGABRT received by PID 1066 (TID 1066) on cpu 32 from PID 1066; stack trace: ***
+    @     0x7cbd8edf46a2         48  pybind11::cpp_function::initialize<>()::{lambda()#3}::_FUN()
+PC: @     0x7afe0745669c  (unknown)  (unknown)
+    @     0x7af92adb47e5       1904  (unknown)
+    @     0x7afe07401d70  (unknown)  (unknown)
+PC: @     0x794e9a00b69c  (unknown)  (unknown)
+    @     0x7949c2db47e5       1904  (unknown)
+    @     0x794e99fb6d70  (unknown)  (unknown)
+*** Check failure stack trace: ***
+    @     0x7c6a81b0f41f  absl::lts_20230802::log_internal::LogMessageFatal::~LogMessageFatal()
+    @     0x7c6a7abd4991  torch_xla::runtime::GetComputationClient()
+    @     0x7c6a7abd4a12  torch_xla::runtime::GetComputationClientOrDie()
+    @     0x7c6a7a7f5d34  torch_xla::(anonymous namespace)::PrepareToExit()
+    @     0x7c6a7a7f237b  torch_xla::(anonymous namespace)::PythonScope<>::PythonFunctionBinder<>::Bind<>()::{lambda()#1}::operator()()
+    @     0x7c6a7a7f46a2  pybind11::cpp_function::initialize<>()::{lambda()#3}::_FUN()
+    @     0x7c6a7a8412d7  pybind11::cpp_function::dispatcher()
+    @     0x7c6b40adcb06  cfunction_call
+    @     0x7c6b40ab6e46  _PyObject_MakeTpCall
+    @     0x7c6b40ac303d  _PyEval_EvalFrameDefault
+    @     0x7c6b40b85d07  atexit_callfuncs
+    @     0x7c6b40b69af4  Py_FinalizeEx
+    @     0x7c6b40b87061  Py_Exit
+    @     0x7c6b40b8471a  handle_system_exit
+    @     0x7c6b40b84530  _PyErr_PrintEx
+    @     0x7c6b40b7d8b6  PyRun_SimpleStringFlags
+    @     0x7c6b40b7a485  Py_RunMain
+    @     0x7c6b40b31bbc  Py_BytesMain
+    @     0x7c6b406f9ca8  (unknown)
+https://symbolize.stripped_domain/r/?trace=7c6b4076469c,7c6b4070fd6f,7c6a81b0f0be,7c6a81b0f41e,7c6a7abd4990,7c6a7abd4a11,7c6a7a7f5d33,7c6a7a7f237a,7c6a7a7f46a1,7c6a7a8412d6,7c6b40adcb05,7c6b40ab6e45,7c6b40ac303c,7c6b40b85d06,7c6b40b69af3,7c6b40b87060,7c6b40b84719,7c6b40b8452f,7c6b40b7d8b5,7c6b40b7a484,7c6b40b31bbb,7c6b406f9ca7&map= 
+*** SIGABRT received by PID 1069 (TID 1069) on cpu 50 from PID 1069; stack trace: ***
+    @     0x7f067300f41f         16  absl::lts_20230802::log_internal::LogMessageFatal::~LogMessageFatal()
+    @     0x7cbd8ee412d7        688  pybind11::cpp_function::dispatcher()
+    @     0x7cbe5509eb06         48  cfunction_call
+    @     0x7afd4880f0bf         32  absl::lts_20230802::log_internal::LogMessage::Die()
+    @     0x794ddb40f0bf         32  absl::lts_20230802::log_internal::LogMessage::Die()
+    @     0x7cbe55078e46         80  _PyObject_MakeTpCall
+    @     0x7cbe5508503d        464  _PyEval_EvalFrameDefault
+    @     0x7cbe55147d07         48  atexit_callfuncs
+    @     0x7cbe5512baf4        144  Py_FinalizeEx
+    @     0x7cbe55149061         32  Py_Exit
+    @     0x7cbe5514671a         32  handle_system_exit
+    @     0x7cbe55146530        128  _PyErr_PrintEx
+    @     0x7cbe5513f8b6         32  PyRun_SimpleStringFlags
+    @     0x7cbe5513c485        352  Py_RunMain
+    @     0x7cbe550f3bbc         64  Py_BytesMain
+    @     0x7cbe54cbbca8  (unknown)  (unknown)
+https://symbolize.stripped_domain/r/?trace=7cbe54d2669c,7cb996db47e4,7cbe54cd1d6f,7cbd9610f0be,7cbd9610f41e,7cbd8f1d4990,7cbd8f1d4a11,7cbd8edf5d33,7cbd8edf237a,7cbd8edf46a1,7cbd8ee412d6,7cbe5509eb05,7cbe55078e45,7cbe5508503c,7cbe55147d06,7cbe5512baf3,7cbe55149060,7cbe55146719,7cbe5514652f,7cbe5513f8b5,7cbe5513c484,7cbe550f3bbb,7cbe54cbbca7&map= 
+E1016 00:15:41.118465    1068 coredump_hook.cc:301] RAW: Remote crash data gathering hook invoked.
+E1016 00:15:41.118479    1068 client.cc:270] RAW: Coroner client retries enabled, will retry for up to 30 sec.
+E1016 00:15:41.118482    1068 coredump_hook.cc:396] RAW: Sending fingerprint to remote end.
+E1016 00:15:41.118504    1068 coredump_hook.cc:405] RAW: Cannot send fingerprint to Coroner: [NOT_FOUND] stat failed on crash reporting socket /var/google/services/logmanagerd/remote_coredump.socket (Is the listener running?): No such file or directory
+E1016 00:15:41.118509    1068 coredump_hook.cc:457] RAW: Dumping core locally.
+    @     0x7f066c0d4991        144  torch_xla::runtime::GetComputationClient()
+    @     0x7afd4880f41f         16  absl::lts_20230802::log_internal::LogMessageFatal::~LogMessageFatal()
+    @     0x794ddb40f41f         16  absl::lts_20230802::log_internal::LogMessageFatal::~LogMessageFatal()
+    @     0x7f066c0d4a12         48  torch_xla::runtime::GetComputationClientOrDie()
+    @     0x7afd418d4991        144  torch_xla::runtime::GetComputationClient()
+    @     0x794dd44d4991        144  torch_xla::runtime::GetComputationClient()
+PC: @     0x7c6b4076469c  (unknown)  (unknown)
+PC: @     0x7b1e2f75369c  (unknown)  (unknown)
+    @     0x7c6696db47e5       1904  (unknown)
+    @     0x7c6b4070fd70  1103238336  (unknown)
+PC: @     0x7f2a3707b69c  (unknown)  (unknown)
+    @     0x7b1956db47e5       1904  (unknown)
+PC: @     0x7818f72d969c  (unknown)  (unknown)
+    @     0x7b1e2f6fed70  487165248  (unknown)
+    @     0x7f255edb47e5       1904  (unknown)
+    @     0x78141adb47e5       1904  (unknown)
+    @     0x7f2a37026d70  (unknown)  (unknown)
+    @     0x7818f7284d70  534995856  (unknown)
+    @     0x7f066bcf5d34        128  torch_xla::(anonymous namespace)::PrepareToExit()
+    @     0x7afd418d4a12         48  torch_xla::runtime::GetComputationClientOrDie()
+    @     0x794dd44d4a12         48  torch_xla::runtime::GetComputationClientOrDie()
+    @     0x7c6a81b0f0bf         32  absl::lts_20230802::log_internal::LogMessage::Die()
+    @     0x78183870f0bf         32  absl::lts_20230802::log_internal::LogMessage::Die()
+    @     0x7b1d70b0f0bf         32  absl::lts_20230802::log_internal::LogMessage::Die()
+    @     0x7f297840f0bf         32  absl::lts_20230802::log_internal::LogMessage::Die()
+    @     0x7f066bcf237b         80  torch_xla::(anonymous namespace)::PythonScope<>::PythonFunctionBinder<>::Bind<>()::{lambda()#1}::operator()()
+    @     0x7afd414f5d34        128  torch_xla::(anonymous namespace)::PrepareToExit()
+    @     0x794dd40f5d34        128  torch_xla::(anonymous namespace)::PrepareToExit()
+    @     0x7c6a81b0f41f         16  absl::lts_20230802::log_internal::LogMessageFatal::~LogMessageFatal()
+    @     0x78183870f41f         16  absl::lts_20230802::log_internal::LogMessageFatal::~LogMessageFatal()
+    @     0x7b1d70b0f41f         16  absl::lts_20230802::log_internal::LogMessageFatal::~LogMessageFatal()
+    @     0x7f297840f41f         16  absl::lts_20230802::log_internal::LogMessageFatal::~LogMessageFatal()
+    @     0x7f066bcf46a2         48  pybind11::cpp_function::initialize<>()::{lambda()#3}::_FUN()
+    @     0x7afd414f237b         80  torch_xla::(anonymous namespace)::PythonScope<>::PythonFunctionBinder<>::Bind<>()::{lambda()#1}::operator()()
+    @     0x794dd40f237b         80  torch_xla::(anonymous namespace)::PythonScope<>::PythonFunctionBinder<>::Bind<>()::{lambda()#1}::operator()()
+    @     0x7c6a7abd4991        144  torch_xla::runtime::GetComputationClient()
+    @     0x7818317d4991        144  torch_xla::runtime::GetComputationClient()
+    @     0x7b1d69bd4991        144  torch_xla::runtime::GetComputationClient()
+    @     0x7f29714d4991        144  torch_xla::runtime::GetComputationClient()
+    @     0x7f066bd412d7        688  pybind11::cpp_function::dispatcher()
+    @     0x7f0731fd7b06         48  cfunction_call
+    @     0x7f0731fb1e46         80  _PyObject_MakeTpCall
+    @     0x7f0731fbe03d        464  _PyEval_EvalFrameDefault
+    @     0x7f0732080d07         48  atexit_callfuncs
+    @     0x7f0732064af4        144  Py_FinalizeEx
+    @     0x7afd414f46a2         48  pybind11::cpp_function::initialize<>()::{lambda()#3}::_FUN()
+    @     0x794dd40f46a2         48  pybind11::cpp_function::initialize<>()::{lambda()#3}::_FUN()
+    @     0x7f0732082061         32  Py_Exit
+    @     0x7f073207f71a         32  handle_system_exit
+    @     0x7f073207f530        128  _PyErr_PrintEx
+    @     0x7c6a7abd4a12         48  torch_xla::runtime::GetComputationClientOrDie()
+    @     0x7f07320788b6         32  PyRun_SimpleStringFlags
+    @     0x7818317d4a12         48  torch_xla::runtime::GetComputationClientOrDie()
+    @     0x7f0732075485        352  Py_RunMain
+    @     0x7f073202cbbc         64  Py_BytesMain
+    @     0x7f0731bf4ca8  (unknown)  (unknown)
+https://symbolize.stripped_domain/r/?trace=7f0731c5f69c,7f025adb47e4,7f0731c0ad6f,7f067300f0be,7f067300f41e,7f066c0d4990,7f066c0d4a11,7f066bcf5d33,7f066bcf237a,7f066bcf46a1,7f066bd412d6,7f0731fd7b05,7f0731fb1e45,7f0731fbe03c,7f0732080d06,7f0732064af3,7f0732082060,7f073207f719,7f073207f52f,7f07320788b5,7f0732075484,7f073202cbbb,7f0731bf4ca7&map= 
+E1016 00:15:41.151064    1070 coredump_hook.cc:301] RAW: Remote crash data gathering hook invoked.
+E1016 00:15:41.151076    1070 client.cc:270] RAW: Coroner client retries enabled, will retry for up to 30 sec.
+E1016 00:15:41.151079    1070 coredump_hook.cc:396] RAW: Sending fingerprint to remote end.
+E1016 00:15:41.151101    1070 coredump_hook.cc:405] RAW: Cannot send fingerprint to Coroner: [NOT_FOUND] stat failed on crash reporting socket /var/google/services/logmanagerd/remote_coredump.socket (Is the listener running?): No such file or directory
+E1016 00:15:41.151107    1070 coredump_hook.cc:457] RAW: Dumping core locally.
+    @     0x7f29714d4a12         48  torch_xla::runtime::GetComputationClientOrDie()
+    @     0x7b1d69bd4a12         48  torch_xla::runtime::GetComputationClientOrDie()
+    @     0x7afd415412d7        688  pybind11::cpp_function::dispatcher()
+    @     0x794dd41412d7        688  pybind11::cpp_function::dispatcher()
+    @     0x7afe077ceb06         48  cfunction_call
+    @     0x794e9a383b06         48  cfunction_call
+    @     0x7afe077a8e46         80  _PyObject_MakeTpCall
+    @     0x794e9a35de46         80  _PyObject_MakeTpCall
+    @     0x7afe077b503d        464  _PyEval_EvalFrameDefault
+    @     0x7c6a7a7f5d34        128  torch_xla::(anonymous namespace)::PrepareToExit()
+    @     0x794e9a36a03d        464  _PyEval_EvalFrameDefault
+    @     0x7818313f5d34        128  torch_xla::(anonymous namespace)::PrepareToExit()
+    @     0x7afe07877d07         48  atexit_callfuncs
+    @     0x794e9a42cd07         48  atexit_callfuncs
+    @     0x7afe0785baf4        144  Py_FinalizeEx
+    @     0x794e9a410af4        144  Py_FinalizeEx
+    @     0x7afe07879061         32  Py_Exit
+    @     0x794e9a42e061         32  Py_Exit
+    @     0x7afe0787671a         32  handle_system_exit
+    @     0x794e9a42b71a         32  handle_system_exit
+    @     0x7afe07876530        128  _PyErr_PrintEx
+    @     0x794e9a42b530        128  _PyErr_PrintEx
+    @     0x7afe0786f8b6         32  PyRun_SimpleStringFlags
+    @     0x794e9a4248b6         32  PyRun_SimpleStringFlags
+    @     0x7b1d697f5d34        128  torch_xla::(anonymous namespace)::PrepareToExit()
+    @     0x7f29710f5d34        128  torch_xla::(anonymous namespace)::PrepareToExit()
+    @     0x7afe0786c485        352  Py_RunMain
+    @     0x794e9a421485        352  Py_RunMain
+    @     0x7afe07823bbc         64  Py_BytesMain
+    @     0x7afe073ebca8  (unknown)  (unknown)
+https://symbolize.stripped_domain/r/?trace=7afe0745669c,7af92adb47e4,7afe07401d6f,7afd4880f0be,7afd4880f41e,7afd418d4990,7afd418d4a11,7afd414f5d33,7afd414f237a,7afd414f46a1,7afd415412d6,7afe077ceb05,7afe077a8e45,7afe077b503c,7afe07877d06,7afe0785baf3,7afe07879060,7afe07876719,7afe0787652f,7afe0786f8b5,7afe0786c484,7afe07823bbb,7afe073ebca7&map= 
+E1016 00:15:41.158950    1062 coredump_hook.cc:301] RAW: Remote crash data gathering hook invoked.
+E1016 00:15:41.158968    1062 client.cc:270] RAW: Coroner client retries enabled, will retry for up to 30 sec.
+E1016 00:15:41.158972    1062 coredump_hook.cc:396] RAW: Sending fingerprint to remote end.
+E1016 00:15:41.158995    1062 coredump_hook.cc:405] RAW: Cannot send fingerprint to Coroner: [NOT_FOUND] stat failed on crash reporting socket /var/google/services/logmanagerd/remote_coredump.socket (Is the listener running?): No such file or directory
+E1016 00:15:41.159001    1062 coredump_hook.cc:457] RAW: Dumping core locally.
+    @     0x794e9a3d8bbc         64  Py_BytesMain
+    @     0x794e99fa0ca8  (unknown)  (unknown)
+https://symbolize.stripped_domain/r/?trace=794e9a00b69c,7949c2db47e4,794e99fb6d6f,794ddb40f0be,794ddb40f41e,794dd44d4990,794dd44d4a11,794dd40f5d33,794dd40f237a,794dd40f46a1,794dd41412d6,794e9a383b05,794e9a35de45,794e9a36a03c,794e9a42cd06,794e9a410af3,794e9a42e060,794e9a42b719,794e9a42b52f,794e9a4248b5,794e9a421484,794e9a3d8bbb,794e99fa0ca7&map= 
+E1016 00:15:41.159193    1071 coredump_hook.cc:301] RAW: Remote crash data gathering hook invoked.
+E1016 00:15:41.159208    1071 client.cc:270] RAW: Coroner client retries enabled, will retry for up to 30 sec.
+E1016 00:15:41.159212    1071 coredump_hook.cc:396] RAW: Sending fingerprint to remote end.
+E1016 00:15:41.159236    1071 coredump_hook.cc:405] RAW: Cannot send fingerprint to Coroner: [NOT_FOUND] stat failed on crash reporting socket /var/google/services/logmanagerd/remote_coredump.socket (Is the listener running?): No such file or directory
+E1016 00:15:41.159240    1071 coredump_hook.cc:457] RAW: Dumping core locally.
+    @     0x7c6a7a7f237b         80  torch_xla::(anonymous namespace)::PythonScope<>::PythonFunctionBinder<>::Bind<>()::{lambda()#1}::operator()()
+    @     0x7818313f237b         80  torch_xla::(anonymous namespace)::PythonScope<>::PythonFunctionBinder<>::Bind<>()::{lambda()#1}::operator()()
+    @     0x7b1d697f237b         80  torch_xla::(anonymous namespace)::PythonScope<>::PythonFunctionBinder<>::Bind<>()::{lambda()#1}::operator()()
+    @     0x7f29710f237b         80  torch_xla::(anonymous namespace)::PythonScope<>::PythonFunctionBinder<>::Bind<>()::{lambda()#1}::operator()()
+    @     0x7c6a7a7f46a2         48  pybind11::cpp_function::initialize<>()::{lambda()#3}::_FUN()
+    @     0x7818313f46a2         48  pybind11::cpp_function::initialize<>()::{lambda()#3}::_FUN()
+    @     0x7f29710f46a2         48  pybind11::cpp_function::initialize<>()::{lambda()#3}::_FUN()
+    @     0x7b1d697f46a2         48  pybind11::cpp_function::initialize<>()::{lambda()#3}::_FUN()
+    @     0x7c6a7a8412d7        688  pybind11::cpp_function::dispatcher()
+    @     0x7818314412d7        688  pybind11::cpp_function::dispatcher()
+    @     0x7c6b40adcb06         48  cfunction_call
+    @     0x7818f7651b06         48  cfunction_call
+    @     0x7c6b40ab6e46         80  _PyObject_MakeTpCall
+    @     0x7818f762be46         80  _PyObject_MakeTpCall
+    @     0x7c6b40ac303d        464  _PyEval_EvalFrameDefault
+    @     0x7818f763803d        464  _PyEval_EvalFrameDefault
+    @     0x7c6b40b85d07         48  atexit_callfuncs
+    @     0x7818f76fad07         48  atexit_callfuncs
+    @     0x7c6b40b69af4        144  Py_FinalizeEx
+    @     0x7818f76deaf4        144  Py_FinalizeEx
+    @     0x7c6b40b87061         32  Py_Exit
+    @     0x7818f76fc061         32  Py_Exit
+    @     0x7c6b40b8471a         32  handle_system_exit
+    @     0x7818f76f971a         32  handle_system_exit
+    @     0x7c6b40b84530        128  _PyErr_PrintEx
+    @     0x7818f76f9530        128  _PyErr_PrintEx
+    @     0x7c6b40b7d8b6         32  PyRun_SimpleStringFlags
+    @     0x7818f76f28b6         32  PyRun_SimpleStringFlags
+    @     0x7c6b40b7a485        352  Py_RunMain
+    @     0x7818f76ef485        352  Py_RunMain
+    @     0x7c6b40b31bbc         64  Py_BytesMain
+    @     0x7c6b406f9ca8  (unknown)  (unknown)
+https://symbolize.stripped_domain/r/?trace=7c6b4076469c,7c6696db47e4,7c6b4070fd6f,7c6a81b0f0be,7c6a81b0f41e,7c6a7abd4990,7c6a7abd4a11,7c6a7a7f5d33,7c6a7a7f237a,7c6a7a7f46a1,7c6a7a8412d6,7c6b40adcb05,7c6b40ab6e45,7c6b40ac303c,7c6b40b85d06,7c6b40b69af3,7c6b40b87060,7c6b40b84719,7c6b40b8452f,7c6b40b7d8b5,7c6b40b7a484,7c6b40b31bbb,7c6b406f9ca7&map= 
+E1016 00:15:41.177463    1069 coredump_hook.cc:301] RAW: Remote crash data gathering hook invoked.
+E1016 00:15:41.177484    1069 client.cc:270] RAW: Coroner client retries enabled, will retry for up to 30 sec.
+E1016 00:15:41.177487    1069 coredump_hook.cc:396] RAW: Sending fingerprint to remote end.
+E1016 00:15:41.177513    1069 coredump_hook.cc:405] RAW: Cannot send fingerprint to Coroner: [NOT_FOUND] stat failed on crash reporting socket /var/google/services/logmanagerd/remote_coredump.socket (Is the listener running?): No such file or directory
+E1016 00:15:41.177517    1069 coredump_hook.cc:457] RAW: Dumping core locally.
+    @     0x7f29711412d7        688  pybind11::cpp_function::dispatcher()
+    @     0x7b1d698412d7        688  pybind11::cpp_function::dispatcher()
+    @     0x7818f76a6bbc         64  Py_BytesMain
+    @     0x7818f726eca8  (unknown)  (unknown)
+https://symbolize.stripped_domain/r/?trace=7818f72d969c,78141adb47e4,7818f7284d6f,78183870f0be,78183870f41e,7818317d4990,7818317d4a11,7818313f5d33,7818313f237a,7818313f46a1,7818314412d6,7818f7651b05,7818f762be45,7818f763803c,7818f76fad06,7818f76deaf3,7818f76fc060,7818f76f9719,7818f76f952f,7818f76f28b5,7818f76ef484,7818f76a6bbb,7818f726eca7&map= 
+E1016 00:15:41.177702    1066 coredump_hook.cc:301] RAW: Remote crash data gathering hook invoked.
+E1016 00:15:41.177718    1066 client.cc:270] RAW: Coroner client retries enabled, will retry for up to 30 sec.
+E1016 00:15:41.177723    1066 coredump_hook.cc:396] RAW: Sending fingerprint to remote end.
+E1016 00:15:41.177747    1066 coredump_hook.cc:405] RAW: Cannot send fingerprint to Coroner: [NOT_FOUND] stat failed on crash reporting socket /var/google/services/logmanagerd/remote_coredump.socket (Is the listener running?): No such file or directory
+E1016 00:15:41.177752    1066 coredump_hook.cc:457] RAW: Dumping core locally.
+    @     0x7b1e2facbb06         48  cfunction_call
+    @     0x7f2a373f3b06         48  cfunction_call
+    @     0x7b1e2faa5e46         80  _PyObject_MakeTpCall
+    @     0x7f2a373cde46         80  _PyObject_MakeTpCall
+    @     0x7b1e2fab203d        464  _PyEval_EvalFrameDefault
+    @     0x7f2a373da03d        464  _PyEval_EvalFrameDefault
+    @     0x7f2a3749cd07         48  atexit_callfuncs
+    @     0x7b1e2fb74d07         48  atexit_callfuncs
+    @     0x7f2a37480af4        144  Py_FinalizeEx
+    @     0x7b1e2fb58af4        144  Py_FinalizeEx
+    @     0x7f2a3749e061         32  Py_Exit
+    @     0x7b1e2fb76061         32  Py_Exit
+    @     0x7b1e2fb7371a         32  handle_system_exit
+    @     0x7f2a3749b71a         32  handle_system_exit
+    @     0x7f2a3749b530        128  _PyErr_PrintEx
+    @     0x7b1e2fb73530        128  _PyErr_PrintEx
+    @     0x7b1e2fb6c8b6         32  PyRun_SimpleStringFlags
+    @     0x7f2a374948b6         32  PyRun_SimpleStringFlags
+    @     0x7f2a37491485        352  Py_RunMain
+    @     0x7b1e2fb69485        352  Py_RunMain
+    @     0x7b1e2fb20bbc         64  Py_BytesMain
+    @     0x7f2a37448bbc         64  Py_BytesMain
+    @     0x7b1e2f6e8ca8  (unknown)  (unknown)
+https://symbolize.stripped_domain/r/?trace=    @     0x7f2a37010ca8  (unknown)  (unknown)
+7b1e2f75369c,7b1956db47e4,https://symbolize.stripped_domain/r/?trace=7b1e2f6fed6f,7b1d70b0f0be,7b1d70b0f41e,7b1d69bd4990,7f2a3707b69c,7b1d69bd4a11,7f255edb47e4,7b1d697f5d33,7b1d697f237a,7f2a37026d6f,7b1d697f46a1,7f297840f0be,7b1d698412d6,7f297840f41e,7b1e2facbb05,7f29714d4990,7b1e2faa5e45,7f29714d4a11,7b1e2fab203c,7f29710f5d33,7b1e2fb74d06,7f29710f237a,7b1e2fb58af3,7f29710f46a1,7b1e2fb76060,7f29711412d6,7b1e2fb73719,7f2a373f3b05,7b1e2fb7352f,7b1e2fb6c8b5,7f2a373cde45,7b1e2fb69484,7f2a373da03c,7b1e2fb20bbb,7f2a3749cd06,7b1e2f6e8ca7&map=7f2a37480af3,7f2a3749e060, 
+7f2a3749b719,7f2a3749b52f,7f2a374948b5,7f2a37491484,7f2a37448bbb,7f2a37010ca7&map= 
+E1016 00:15:41.181850    1065 coredump_hook.cc:301] RAW: Remote crash data gathering hook invoked.
+E1016 00:15:41.181864    1065 client.cc:270] RAW: Coroner client retries enabled, will retry for up to 30 sec.
+E1016 00:15:41.181868    1065 coredump_hook.cc:396] RAW: Sending fingerprint to remote end.
+E1016 00:15:41.181860    1067 coredump_hook.cc:301] RAW: Remote crash data gathering hook invoked.
+E1016 00:15:41.181881    1067 client.cc:270] RAW: Coroner client retries enabled, will retry for up to 30 sec.
+E1016 00:15:41.181885    1067 coredump_hook.cc:396] RAW: Sending fingerprint to remote end.
+E1016 00:15:41.181892    1065 coredump_hook.cc:405] RAW: Cannot send fingerprint to Coroner: [NOT_FOUND] stat failed on crash reporting socket /var/google/services/logmanagerd/remote_coredump.socket (Is the listener running?): No such file or directory
+E1016 00:15:41.181895    1065 coredump_hook.cc:457] RAW: Dumping core locally.
+E1016 00:15:41.181912    1067 coredump_hook.cc:405] RAW: Cannot send fingerprint to Coroner: [NOT_FOUND] stat failed on crash reporting socket /var/google/services/logmanagerd/remote_coredump.socket (Is the listener running?): No such file or directory
+E1016 00:15:41.181916    1067 coredump_hook.cc:457] RAW: Dumping core locally.
+E1016 00:15:42.603057    1068 process_state.cc:808] RAW: Raising signal 6 with default behavior
+E1016 00:15:42.637870    1070 process_state.cc:808] RAW: Raising signal 6 with default behavior
+E1016 00:15:42.660973    1065 process_state.cc:808] RAW: Raising signal 6 with default behavior
+E1016 00:15:42.705239    1067 process_state.cc:808] RAW: Raising signal 6 with default behavior
+E1016 00:15:42.742598    1069 process_state.cc:808] RAW: Raising signal 6 with default behavior
+E1016 00:15:42.802356    1066 process_state.cc:808] RAW: Raising signal 6 with default behavior
+E1016 00:15:42.805425    1071 process_state.cc:808] RAW: Raising signal 6 with default behavior
+E1016 00:15:42.806148    1062 process_state.cc:808] RAW: Raising signal 6 with default behavior
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/concurrent/futures/process.py", line 264, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/concurrent/futures/process.py", line 213, in _process_chunk
+    return [fn(*args) for args in chunk]
+            ^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/torch_xla/_internal/pjrt.py", line 58, in _run_thread_per_device
+    initializer_fn(local_rank, local_world_size)
+  File "/usr/local/lib/python3.12/site-packages/torch_xla/_internal/pjrt.py", line 121, in initialize_multiprocess
+    devices = xm.get_xla_supported_devices()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/torch_xla/core/xla_model.py", line 79, in get_xla_supported_devices
+    devices = torch_xla._XLAC._xla_get_devices()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Bad StatusOr access: UNKNOWN: TPU initialization failed: Invalid --2a886c8_slice_builder_worker_addresses specified. Expected 8 worker addresses, got 1.
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/kaggle/input/datasets/esubalewchekol/geez-morphology-tpu-v2/model/model/train_tpu.py", line 591, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/kaggle/input/datasets/esubalewchekol/geez-morphology-tpu-v2/model/model/train_tpu.py", line 581, in main
+    torch_xla.launch(_mp_fn, args=(args,))
+  File "/usr/local/lib/python3.12/site-packages/torch_xla/torch_xla.py", line 266, in launch
+    xmp.spawn(fn, args=args, nprocs=nprocs, start_method=start_method)
+  File "/usr/local/lib/python3.12/site-packages/torch_xla/distributed/xla_multiprocessing.py", line 43, in spawn
+    return pjrt.spawn(fn, nprocs, start_method, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/torch_xla/_internal/pjrt.py", line 213, in spawn
+    run_multiprocess(spawn_fn, start_method=start_method)
+  File "/usr/local/lib/python3.12/site-packages/torch_xla/_internal/pjrt.py", line 169, in run_multiprocess
+    replica_results = list(
+                      ^^^^^
+  File "/usr/local/lib/python3.12/site-packages/torch_xla/_internal/pjrt.py", line 171, in <genexpr>
+    result.items() for result in process_results))
+                                 ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/concurrent/futures/process.py", line 636, in _chain_from_iterable_of_lists
+    for element in iterable:
+                   ^^^^^^^^
+  File "/usr/local/lib/python3.12/concurrent/futures/_base.py", line 619, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/concurrent/futures/_base.py", line 317, in _result_or_cancel
+    return fut.result(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+RuntimeError: Bad StatusOr access: UNKNOWN: TPU initialization failed: Invalid --2a886c8_slice_builder_worker_addresses specified. Expected 8 worker addresses, got 1.

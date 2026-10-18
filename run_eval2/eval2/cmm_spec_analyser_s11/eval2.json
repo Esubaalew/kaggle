@@ -1,0 +1,65 @@
+{
+ "run": "cmm_spec_analyser_s11",
+ "variant": "cmm_spec",
+ "best_epoch": 48,
+ "source_dir": "/kaggle/input/notebooks/esubalewchekol/drfn-clean-analyser/pack/runs/cmm_spec_analyser_s11",
+ "decode": {
+  "beam5_nr4": {
+   "chrF_char": 15.255998574067494,
+   "chrF++": 15.110242581261666,
+   "BLEU": 4.529260488060585,
+   "seconds": 43
+  },
+  "beam5": {
+   "chrF_char": 14.533491747657168,
+   "chrF++": 14.387076358909837,
+   "BLEU": 4.602146252710953,
+   "seconds": 63
+  },
+  "beam1_nr4": {
+   "chrF_char": 14.99633679611711,
+   "chrF++": 14.783115803001861,
+   "BLEU": 4.02425670935884,
+   "seconds": 15
+  }
+ },
+ "ablation": {
+  "unlinked": {
+   "n_tokens": 39386,
+   "nll_on": 5.4395195118049005,
+   "nll_off": 5.446201360700567,
+   "delta": 0.006681848895666141
+  },
+  "50+": {
+   "n_tokens": 1889,
+   "nll_on": 3.673546947341951,
+   "nll_off": 3.630579336629752,
+   "delta": -0.042967610712199324
+  },
+  "5-49": {
+   "n_tokens": 743,
+   "nll_on": 5.095893041425182,
+   "nll_off": 5.096506597458705,
+   "delta": 0.0006135560335242973
+  },
+  "unseen": {
+   "n_tokens": 125,
+   "nll_on": 5.945251215741038,
+   "nll_off": 5.9303235391825435,
+   "delta": -0.014927676558494567
+  },
+  "1-4": {
+   "n_tokens": 280,
+   "nll_on": 4.872217788221315,
+   "nll_off": 4.85739300748932,
+   "delta": -0.014824780731994126
+  },
+  "all": {
+   "n_tokens": 42423,
+   "nll_on": 5.352612299647014,
+   "nll_off": 5.356771469388134,
+   "delta": 0.004159169741119559
+  }
+ },
+ "seconds": 126
+}

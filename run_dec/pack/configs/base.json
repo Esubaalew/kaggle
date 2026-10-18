@@ -1,0 +1,71 @@
+{
+ "_comment": "Base protocol config. Values from the 2026-08-01 advisor report (matched replication). Six seeds per the 2026-09-30 decision rule. Do not change without recording the reason.",
+ "_comment_clean": "drfn_clean: cleaned AGE text (invisible chars removed, punctuation detached), word-boundary BPE, grounded_balance_reg 0. See build_report.json.",
+ "_comment_dec": "drfn_dec: decoder root memory in decoder layers dec_mem_layers (0-based), CE weight dec_route_weight; labels shifted by one so position j learns the root of the word that tgt[j+1] belongs to.",
+ "_comment_grounded": "Added for the grounded-routing grid: d_key is the routing key width of protocol Eq.(4-5); ignore_pattern_ids can drop the 'unknown' pattern class from the routing CE. entropy_sign is deliberately NOT set here. It defaults to +1 (sharpen, section 3.6) inside grounding_loss for the gmm variants, and to -1 in the legacy cmm/flat path so published cmm results stay reproducible. Pass --entropy-sign to override either.",
+ "adam_betas": [
+  0.9,
+  0.98
+ ],
+ "adam_eps": 1e-09,
+ "aux_ignore_index": -100,
+ "aux_pattern_weight": 0.5,
+ "aux_root_weight": 0.5,
+ "balance_reg": 0.01,
+ "batch_size": 32,
+ "beam_size": 5,
+ "bos_id": 1,
+ "cmm_layers": [
+  1,
+  2
+ ],
+ "d_key": 64,
+ "d_model": 256,
+ "dec_mem_layers": [
+  1,
+  2
+ ],
+ "dec_route_weight": 0.5,
+ "dropout": 0.3,
+ "early_stop_patience": 8,
+ "entropy_reg": 0.01,
+ "eos_id": 2,
+ "ffn_dim": 1024,
+ "flat_slots": 320,
+ "grounded_balance_reg": 0.0,
+ "ignore_pattern_ids": [],
+ "label_smoothing": 0.1,
+ "length_penalty": 1.0,
+ "lr": 0.0005,
+ "max_len": 128,
+ "n_decoder_layers": 4,
+ "n_encoder_layers": 4,
+ "n_heads": 4,
+ "n_pattern_slots": 64,
+ "n_root_slots": 256,
+ "pad_id": 0,
+ "param_match_tol": 0.0001,
+ "plateau_factor": 0.5,
+ "plateau_patience": 2,
+ "seeds": [
+  11,
+  22,
+  33,
+  44,
+  55,
+  66
+ ],
+ "target_params": 20343170,
+ "unk_id": 3,
+ "variants": [
+  "plain_bpe",
+  "bpe_aux",
+  "bpe_placebo",
+  "cmm",
+  "cmm_nobind",
+  "cmm_placebo",
+  "flat"
+ ],
+ "vocab_size": 16000,
+ "warmup_steps": 400
+}

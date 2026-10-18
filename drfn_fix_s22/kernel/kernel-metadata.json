@@ -1,0 +1,21 @@
+{
+  "id": "esubaalew/drfn-fix-wide-s22",
+  "title": "drfn-fix-wide-s22",
+  "code_file": "drfn-fix-wide-s22.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "keywords": [
+    "gpu"
+  ],
+  "dataset_sources": [
+    "esubaalew/drfn-fix-wide-pack"
+  ],
+  "kernel_sources": [],
+  "competition_sources": [],
+  "model_sources": [],
+  "machine_shape": "NvidiaTeslaT4"
+}

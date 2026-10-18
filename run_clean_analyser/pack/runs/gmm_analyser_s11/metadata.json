@@ -1,0 +1,149 @@
+{
+ "variant": "gmm",
+ "seed": 11,
+ "cfg": {
+  "_comment": "Base protocol config. Values from the 2026-08-01 advisor report (matched replication). Six seeds per the 2026-09-30 decision rule. Do not change without recording the reason.",
+  "_comment_clean": "drfn_clean: cleaned AGE text (invisible chars removed, punctuation detached), word-boundary BPE, grounded_balance_reg 0. See build_report.json.",
+  "_comment_grounded": "Added for the grounded-routing grid: d_key is the routing key width of protocol Eq.(4-5); ignore_pattern_ids can drop the 'unknown' pattern class from the routing CE. entropy_sign is deliberately NOT set here. It defaults to +1 (sharpen, section 3.6) inside grounding_loss for the gmm variants, and to -1 in the legacy cmm/flat path so published cmm results stay reproducible. Pass --entropy-sign to override either.",
+  "adam_betas": [
+   0.9,
+   0.98
+  ],
+  "adam_eps": 1e-09,
+  "aux_ignore_index": -100,
+  "aux_pattern_weight": 0.5,
+  "aux_root_weight": 0.5,
+  "balance_reg": 0.01,
+  "batch_size": 32,
+  "beam_size": 5,
+  "bos_id": 1,
+  "cmm_layers": [
+   1,
+   2
+  ],
+  "d_key": 64,
+  "d_model": 256,
+  "dropout": 0.3,
+  "early_stop_patience": 8,
+  "entropy_reg": 0.01,
+  "eos_id": 2,
+  "ffn_dim": 1031,
+  "flat_slots": 320,
+  "grounded_balance_reg": 0.0,
+  "ignore_pattern_ids": [],
+  "label_smoothing": 0.1,
+  "length_penalty": 1.0,
+  "lr": 0.0005,
+  "max_len": 128,
+  "n_decoder_layers": 4,
+  "n_encoder_layers": 4,
+  "n_heads": 4,
+  "n_pattern_slots": 17,
+  "n_root_slots": 256,
+  "pad_id": 0,
+  "param_match_tol": 0.0001,
+  "plateau_factor": 0.5,
+  "plateau_patience": 2,
+  "seeds": [
+   11,
+   22,
+   33,
+   44,
+   55,
+   66
+  ],
+  "target_params": 20343170,
+  "unk_id": 3,
+  "variants": [
+   "plain_bpe",
+   "bpe_aux",
+   "bpe_placebo",
+   "cmm",
+   "cmm_nobind",
+   "cmm_placebo",
+   "flat"
+  ],
+  "vocab_size": 16000,
+  "warmup_steps": 400,
+  "variant": "gmm",
+  "seed": 11,
+  "src_vocab_size": 16000,
+  "tgt_vocab_size": 16000,
+  "n_root_classes": 256,
+  "n_pattern_classes": 17,
+  "grounded_routing": true
+ },
+ "git_hash": null,
+ "hostname": "aba4717e5721",
+ "torch_version": "2.11.0+cu128",
+ "device": "cuda",
+ "data_hashes": {
+  "train": "9ae8e2d77aee546ae3d8657cb29109712302f8ebd34f6be46b27cce40cbf9ddb",
+  "dev": "c4a2e44c53afda6becbd0f0bdb76bea04f014ab0f6fe7afc00501e428a78880a"
+ },
+ "tokenizer_hash": "fa9e468ffc5c1179dbcd9e507ce1890518c12ec2385aa4f1b22adc9452a6ee87",
+ "src_tokenizer": "bpe",
+ "morpheme_vocab_hash": null,
+ "label_cache_hash": "86ee125ce1972f0b03a34fb4308e4b07227cf634ad6d37747fd5e9aa32c377f0",
+ "params": 20341818,
+ "placebo": false,
+ "started_at": "2026-10-12T20:37:36+0000",
+ "final_eval": {
+  "best_epoch": 52,
+  "chrF_char_full_dev": 13.41266064863599,
+  "chrF++_full_dev": 13.101486188799214,
+  "n_dev": 1741,
+  "probe_root": {
+   "all_types": {
+    "consistency": 0.9239380510219437,
+    "permutation": 0.19124787660667297,
+    "perm_sd": 0.003106600699430188,
+    "p_value": 0.004975124378109453,
+    "n_roots": 235,
+    "n_types": 3438,
+    "slots_used": 255,
+    "top10_slot_share": 0.2181500872600349
+   },
+   "unseen_with_siblings": {
+    "consistency": 0.9058628916647652,
+    "permutation": 0.14552973108814127,
+    "perm_sd": 0.003454720053461481,
+    "p_value": 0.004975124378109453,
+    "n_roots": 168,
+    "n_types": 3127,
+    "slots_used": 178,
+    "top10_slot_share": 0.2395267029101375
+   },
+   "n_unseen_types": 788,
+   "unseen_slot_accuracy": 0.8071065989847716
+  },
+  "probe_pattern": {
+   "all_types": {
+    "consistency": 0.8291784673354993,
+    "permutation": 0.3181606738692148,
+    "perm_sd": 0.009353203278182396,
+    "p_value": 0.004975124378109453,
+    "n_roots": 16,
+    "n_types": 9282,
+    "slots_used": 16,
+    "top10_slot_share": 0.95582848524025
+   },
+   "unseen_with_siblings": {
+    "consistency": 0.8177903651578659,
+    "permutation": 0.3155609004029643,
+    "perm_sd": 0.007498434070695163,
+    "p_value": 0.004975124378109453,
+    "n_roots": 15,
+    "n_types": 9269,
+    "slots_used": 16,
+    "top10_slot_share": 0.9571690581508253
+   },
+   "n_unseen_types": 2903,
+   "unseen_slot_accuracy": 0.6858422321736135
+  },
+  "seconds": 100
+ },
+ "ended_at": "2026-10-12T21:53:27+0000",
+ "best_dev_loss": 5.181787574928016,
+ "final_step": 26160
+}

@@ -1,0 +1,10 @@
+training pairs: 562403; distinct training roots: 1946
+held-out test: 2310 pairs, 217 roots
+   training pairs with the same root: 0   same form and root: 0   (must be 0)
+   training pairs with a test form (any root): 0   (reported; 0 with the trainer's leak gate)
+   training pairs whose root is only a spelling variant of a test root (folded): 0   (reported)
+held-out val: 1736 pairs, 147 roots
+   training pairs with the same root: 0   same form and root: 0   (must be 0)
+   training pairs with a val form (any root): 0   (reported; 0 with the trainer's leak gate)
+   training pairs whose root is only a spelling variant of a val root (folded): 0   (reported)
+RESULT: CLEAN (exact roots and pairs)

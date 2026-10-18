@@ -1,0 +1,22 @@
+  File "<string>", line 1, in <module>
+    import torch_xla.runtime as xr; print('xla devices', xr.global_runtime_device_count())
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'torch_xla'
+RUN /workspace/venv_tpuv2/bin/python3 /tmp/kg/tmp/src/model/train_tpu.py --dataset_dir /tmp/kg/tmp/src/geez-dataset --output_dir /tmp/kg/working/run_b/dapt --time_budget_hours 8.15 --stage dapt --device cpu --per_core_batch 4 --max_steps 2 --warmup_steps 1 --save_every 2
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+
+device cpu x1, bf16 False, global batch 4, steps/epoch 1551, total steps 2
+step 1/2 epoch 0 loss 7.1143 lr 1.00e-03 7.129s/step elapsed 0.00h
+stage dapt exit 0 after 0.01 h
+RUN /workspace/venv_tpuv2/bin/python3 /tmp/kg/tmp/src/model/train_tpu.py --dataset_dir /tmp/kg/tmp/src/geez-dataset --output_dir /tmp/kg/working/run_b/finetune --time_budget_hours 8.14 --device cpu --train_limit 160 --dev_cap 16 --report_cap 8 --per_core_batch 8 --max_steps 2 --eval_every 2 --warmup_steps 1 --init_from /tmp/kg/working/run_b/dapt/best
+RESULT: CLEAN (exact roots and pairs)
+train samples 160, dev rows 32: synthetic 118131, gold_verb 1727, gold_nominal 6168, unified_book 9998, dictionary 2787, dictionary_verb 59, word_without_root 31, extra_synthetic 0
+
+device cpu x1, bf16 False, global batch 8, steps/epoch 20, total steps 2
+step 1/2 epoch 0 loss 3.8880 lr 1.00e-03 2.784s/step elapsed 0.00h
+eval {"dev_exact": 0.0, "dev_root": 0.0, "dev_pos": 0.0, "dev_score": 0.0, "step": 2}
+best/ updated (dev_score 0.0000)
+
+dev_report {"n": 4, "exact": 0.0, "root": 0.0}
+stage finetune exit 0 after 0.02 h
+done

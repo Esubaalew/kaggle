@@ -1,0 +1,82 @@
+Data check for byt5_266a0e2_11b1cbb_final at 2026-10-09 21:37 EAT
+geez-morphology 266a0e22aa1f66e63b84588f2e75679ec9ce38c6
+geez-dataset 11b1cbb499f7735c5cbf043884e43b055749cd15
+Generator generate_synthetic_data.py: done in 5s
+  regenerated/synthetic_morphology_analyze.jsonl: 138389 lines, sha256 1b48cada7fb619ac0662cae6581847f7665480caaa6cd7ac0987a3160880edae
+  regenerated/synthetic_morphology_train.jsonl: 138389 lines, sha256 4508c61fc10e3a6847146f139f311ada6dce80d5c2e67b166ccd86661f5b2a79
+  dataset/data/paradigms/synthetic_morphology_train.jsonl: sha256 1b98c5b800f8575c384003e1edeb892278eef3731cce836d3a1b2e6da32971b8
+sha256: no expected values listed for this commit pair; relying on the splitter --check below. Add the values above to KNOWN_SYNTHETIC_SHA256 once reviewed.
+  held out: 13350 lines, 116 roots; per split {'test': 4439, 'val': 8911}
+  of these, held out as the same root up to spelling: 4574 lines, 39 roots
+  near-duplicates of gold val/test forms dropped from the training pair: 19 lines, 16 roots
+  lines whose surface form is a gold val/test form: 0
+  training lines whose folded surface form is a folded gold val/test form: 0
+  training lines whose folded root is a folded gold val/test root: 0
+  split == dataset files
+Splitter split_heldout_synthetic.py --check: passed
+Trainer --load_only:
+  Reading synthetic pairs from /tmp/geez_code/geez-dataset/data/paradigms/synthetic_morphology_train.jsonl
+  Read 8056 Merho Ges gold-train pairs from /tmp/geez_code/geez-dataset/data/paradigms/merho_ges_gold_train.jsonl
+  Read 1106 dictionary noun and adjective pairs from /tmp/geez_code/geez-dataset/data/lexicon/classical_dictionary_kidane_wold.jsonl
+  Read 57 words without root from /tmp/geez_code/geez-morphology/data/closed_class_words_without_root.tsv
+  Read 5144 book-form pairs from data/lexicon/book_forms.jsonl
+  Gold-train load counts:
+  loaded: 8056
+  not loaded: flagged (merho_ges_gold_flagged_rows.tsv): 187
+  not loaded: row has no root: 926
+  Dictionary load counts:
+  headwords with conflicting roots: 16
+  loaded: 1106
+  not loaded: definition names a Greek source: 311
+  not loaded: duplicate (form, target): 143
+  not loaded: entry cannot be checked: 1
+  not loaded: form is a gold val/test form: 12
+  not loaded: form is a gold val/test form up to spelling: 1
+  not loaded: form is in the gold train file: 411
+  not loaded: headword does not hold the root's radicals: 993
+  not loaded: headword has conflicting roots: 8
+  not loaded: headword is a word without root: 23
+  not loaded: headword is not one Ge'ez word: 343
+  not loaded: headword is the root's 3ms perfect: 61
+  not loaded: headword_type artifact: 381
+  not loaded: headword_type character: 40
+  not loaded: headword_type phrase: 488
+  not loaded: no root: 26
+  not loaded: pos adverb: 2
+  not loaded: pos conjunction: 1
+  not loaded: pos missing: 544
+  not loaded: pos name: 136
+  not loaded: pos particle: 74
+  not loaded: pos preposition: 1
+  not loaded: pos pronoun: 4
+  not loaded: pos verb: 3885
+  not loaded: root has 2 radicals: 1440
+  not loaded: root has 5 radicals: 142
+  not loaded: root is a gold val/test root: 172
+  not loaded: root is a root of the held-out synthetic lines: 64
+  not loaded: root is not 2-5 letters: 254
+  not loaded: root not on the synthetic allow-list: 2168
+  Book-form load counts:
+  loaded: 5144
+  not loaded: status CHECK: 3014
+  not loaded: status CONFLICT: 4
+  not loaded: status NO_ROOT: 5037
+  not loaded: type or labels missing: 81
+  Words-without-root load counts:
+  loaded: 57
+  Synthetic pairs: 125020. Gold-train pairs: 8056. Dictionary pairs: 993 train, 112 eval. Words without root: 57. Book forms: 5144.
+  Gold upsampling: verbs x4, nouns and adjectives x5. Prefixes: one per task.
+  Train: 157240 pairs (synthetic 112518, gold_verb 7008, gold_nominal 31520, dictionary 993, word_without_root 57, book_forms 5144). Eval: 12502 synthetic pairs; dictionary_nominal: 112 pairs.
+  Exported train/eval pairs to /tmp/geez_code/exported_pairs
+Held-out roots: 116 roots in data/synthetic/, 1118 in the synthetic train file, overlap 0
+Gold val/test roots: 306; synthetic roots the trainer loaded: 1119; overlap 0
+Held-out test-roots list: 185 roots; overlap with loaded synthetic roots 0
+Lengths in UTF-8 bytes (ByT5 uses one token per byte plus an end token; Ge'ez letters are 3 bytes):
+  eval_pairs_dictionary_nominal.jsonl: longest input 21, longest target 17
+  eval_pairs_synthetic.jsonl: longest input 39, longest target 106
+  train_pairs.jsonl: longest input 39, longest target 112
+  longest target: root: ቀ-ተ-ለ | tense: subjunctive | person: 3 | gender: m | number: s | stem: aste_reciprocal | object: 3ms
+  gold val targets: longest 100; gold test targets: longest 105
+  the trainer has no length flag; its fixed limit(s) in the source: [128]
+  evaluate_gold.py generates up to 128 tokens; longest gold target needs 106
+  the trainer's tokenized training pairs are checked against these (no truncation) when it starts

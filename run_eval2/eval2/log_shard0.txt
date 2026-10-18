@@ -1,0 +1,35 @@
+dev 1741 train 13932
+runs on this shard: ['bpe_aux_analyser_s11', 'bpe_aux_geezrpa_s11', 'bpe_aux_geezrpa_s22', 'cmm_spec_analyser_s22', 'gmm_analyser_s11', 'gmm_dec_analyser_s11', 'gmm_dec_sep_analyser_s11', 'gmm_geezrpa_s22']
+bpe_aux_analyser_s11           beam5_nr4  chrF 14.91 BLEU 4.40 (44s)
+bpe_aux_analyser_s11           beam5      chrF 14.26 BLEU 4.47 (70s)
+bpe_aux_analyser_s11           beam1_nr4  chrF 14.31 BLEU 3.64 (16s)
+bpe_aux_geezrpa_s11            beam5_nr4  chrF 15.07 BLEU 4.53 (50s)
+bpe_aux_geezrpa_s11            beam5      chrF 14.37 BLEU 4.42 (72s)
+bpe_aux_geezrpa_s11            beam1_nr4  chrF 14.87 BLEU 3.82 (16s)
+bpe_aux_geezrpa_s22            beam5_nr4  chrF 14.97 BLEU 4.40 (43s)
+bpe_aux_geezrpa_s22            beam5      chrF 14.30 BLEU 4.27 (69s)
+bpe_aux_geezrpa_s22            beam1_nr4  chrF 14.60 BLEU 3.77 (16s)
+cmm_spec_analyser_s22          beam5_nr4  chrF 15.29 BLEU 4.57 (47s)
+cmm_spec_analyser_s22          beam5      chrF 14.44 BLEU 4.43 (65s)
+cmm_spec_analyser_s22          beam1_nr4  chrF 15.07 BLEU 4.20 (17s)
+  ablation {'unlinked': 0.0115, '50+': -0.0449, '5-49': 0.0123, 'unseen': -0.0304, '1-4': -0.033, 'all': 0.0085}
+gmm_analyser_s11               beam5_nr4  chrF 15.01 BLEU 4.12 (52s)
+gmm_analyser_s11               beam5      chrF 14.16 BLEU 3.71 (69s)
+gmm_analyser_s11               beam1_nr4  chrF 14.87 BLEU 3.34 (17s)
+  ablation {'unlinked': 0.0547, '50+': 0.087, '5-49': 0.1602, 'unseen': 0.1134, '1-4': 0.2234, 'all': 0.0593}
+  swap {'n_items': 700, 'routed_to_own_root': 0.9986, 'mean_gate': 0.6983, 'success_swap': 0.0014, 'success_self': 0.0, 'keep_r_self': 1.0, 'keep_r_swap': 0.8457, 'keep_r_kill': 0.8843, 'tf_delta_nll_root_tokens': 0.178, 'n_root_tokens': 909, 'tf_delta_nll_other_tokens': -0.0047, 'n_other_tokens': 16201}
+gmm_dec_analyser_s11           beam5_nr4  chrF 14.42 BLEU 3.97 (52s)
+gmm_dec_analyser_s11           beam5      chrF 13.65 BLEU 3.85 (72s)
+gmm_dec_analyser_s11           beam1_nr4  chrF 14.56 BLEU 3.55 (19s)
+  ablation {'unlinked': 0.0256, '50+': 0.0428, '5-49': 0.3027, 'unseen': 0.2712, '1-4': 0.4968, 'all': 0.0351}
+  swap {'n_items': 700, 'routed_to_own_root': 1.0, 'mean_gate': 0.9734, 'success_swap': 0.0029, 'success_self': 0.0, 'keep_r_self': 1.0, 'keep_r_swap': 0.8329, 'keep_r_kill': 0.92, 'tf_delta_nll_root_tokens': 0.2632, 'n_root_tokens': 949, 'tf_delta_nll_other_tokens': -0.0098, 'n_other_tokens': 16626}
+gmm_dec_sep_analyser_s11       beam5_nr4  chrF 14.37 BLEU 3.77 (51s)
+gmm_dec_sep_analyser_s11       beam5      chrF 13.49 BLEU 3.66 (71s)
+gmm_dec_sep_analyser_s11       beam1_nr4  chrF 14.46 BLEU 3.37 (17s)
+  ablation {'unlinked': 0.0329, '50+': 0.0751, '5-49': 0.3147, 'unseen': 0.3831, '1-4': 0.5575, 'all': 0.0442}
+  swap {'n_items': 700, 'routed_to_own_root': 0.9986, 'mean_gate': 0.9358, 'success_swap': 0.0029, 'success_self': 0.0, 'keep_r_self': 1.0, 'keep_r_swap': 0.8357, 'keep_r_kill': 0.8886, 'tf_delta_nll_root_tokens': 0.2594, 'n_root_tokens': 944, 'tf_delta_nll_other_tokens': -0.0082, 'n_other_tokens': 16676}
+gmm_geezrpa_s22                beam5_nr4  chrF 14.69 BLEU 4.34 (47s)
+gmm_geezrpa_s22                beam5      chrF 13.76 BLEU 3.93 (66s)
+gmm_geezrpa_s22                beam1_nr4  chrF 14.55 BLEU 3.44 (17s)
+  ablation {'unlinked': 0.0434, '50+': 0.112, '5-49': 0.1636, 'unseen': 0.1035, '1-4': 0.2106, 'all': 0.0483}
+  swap {'n_items': 700, 'routed_to_own_root': 1.0, 'mean_gate': 0.8599, 'success_swap': 0.0029, 'success_self': 0.0, 'keep_r_self': 1.0, 'keep_r_swap': 0.8214, 'keep_r_kill': 0.91, 'tf_delta_nll_root_tokens': 0.3203, 'n_root_tokens': 880, 'tf_delta_nll_other_tokens': -0.006, 'n_other_tokens': 16788}

@@ -1,0 +1,550 @@
+[{"stream_name":"stdout","time":1.092653078,"data":"code /kaggle/input/datasets/esubalewchekol/geez-morphology-tpu-v2/model/model data /kaggle/input/datasets/esubalewchekol/geez-morphology-tpu-v2/geez-dataset/geez-dataset\n"}
+,{"stream_name":"stdout","time":1.188468144,"data":"MODEL_COMMIT 1a8e7ad 1a8e7ad5bc30a60f3a1210d6a6f82f16bdda65aa\n"}
+,{"stream_name":"stdout","time":1.271922811,"data":"DATA_COMMIT 970f815ba8a9aedcc55817421b9be4c64cb1f3bd\n"}
+,{"stream_name":"stderr","time":17.876948818,"data":"/usr/local/lib/python3.12/site-packages/torch_xla/experimental/gru.py:113: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":17.877003788,"data":"  * **h_n**: tensor of shape :math:`(D * \\text{num\\_layers}, H_{out})` or\n"}
+,{"stream_name":"stderr","time":25.155211436,"data":"/usr/local/lib/python3.12/site-packages/torch_xla/__init__.py:258: UserWarning: `tensorflow` can conflict with `torch-xla`. Prefer `tensorflow-cpu` when using PyTorch/XLA. To silence this warning, `pip uninstall -y tensorflow \u0026\u0026 pip install tensorflow-cpu`. If you are in a notebook environment such as Colab or Kaggle, restart your notebook runtime afterwards.\n"}
+,{"stream_name":"stderr","time":25.155242076,"data":"  warnings.warn(\n"}
+,{"stream_name":"stdout","time":32.425096424,"data":"torch 2.8.0+cpu torch_xla 2.8.0 transformers 5.12.1\n"}
+,{"stream_name":"stderr","time":35.734680196,"data":"/usr/local/lib/python3.12/site-packages/torch_xla/__init__.py:258: UserWarning: `tensorflow` can conflict with `torch-xla`. Prefer `tensorflow-cpu` when using PyTorch/XLA. To silence this warning, `pip uninstall -y tensorflow \u0026\u0026 pip install tensorflow-cpu`. If you are in a notebook environment such as Colab or Kaggle, restart your notebook runtime afterwards.\n"}
+,{"stream_name":"stderr","time":35.734717466,"data":"  warnings.warn(\n"}
+,{"stream_name":"stderr","time":40.432203224,"data":"WARNING: Logging before InitGoogle() is written to STDERR\n"}
+,{"stream_name":"stderr","time":40.432242044,"data":"E0000 00:00:1792109714.305293      74 common_lib.cc:648] Could not set metric server port: INVALID_ARGUMENT: Could not find SliceBuilder port 8471 in any of the 0 ports provided in `tpu_process_addresses`=\"local\"\n"}
+,{"stream_name":"stderr","time":40.432248534,"data":"=== Source Location Trace: === \n"}
+,{"stream_name":"stderr","time":40.432252594,"data":"learning/45eac/tfrc/runtime/common_lib.cc:238\n"}
+,{"stream_name":"stdout","time":50.373849389,"data":"xla devices 8\n"}
+,{"stream_name":"stdout","time":58.506246754,"data":"RUN /usr/local/bin/python /kaggle/input/datasets/esubalewchekol/geez-morphology-tpu-v2/model/model/train_tpu.py --dataset_dir /kaggle/input/datasets/esubalewchekol/geez-morphology-tpu-v2/geez-dataset/geez-dataset --output_dir /kaggle/working/run_a/finetune --time_budget_hours 8.13 --model_name google/byt5-small --per_core_batch 64 --lr 1e-3 --epochs 10 --warmup_steps 500 --eval_every 1000 --save_every 1000 --unified_upsample 3 --rare_class_min 400\n"}
+,{"stream_name":"stdout","time":61.145103341,"data":"/usr/local/lib/python3.12/site-packages/torch_xla/__init__.py:258: UserWarning: `tensorflow` can conflict with `torch-xla`. Prefer `tensorflow-cpu` when using PyTorch/XLA. To silence this warning, `pip uninstall -y tensorflow \u0026\u0026 pip install tensorflow-cpu`. If you are in a notebook environment such as Colab or Kaggle, restart your notebook runtime afterwards.\n"}
+,{"stream_name":"stdout","time":61.145141211,"data":"  warnings.warn(\n"}
+,{"stream_name":"stdout","time":64.911923085,"data":"/usr/local/lib/python3.12/site-packages/torch_xla/__init__.py:258: UserWarning: `tensorflow` can conflict with `torch-xla`. Prefer `tensorflow-cpu` when using PyTorch/XLA. To silence this warning, `pip uninstall -y tensorflow \u0026\u0026 pip install tensorflow-cpu`. If you are in a notebook environment such as Colab or Kaggle, restart your notebook runtime afterwards.\n"}
+,{"stream_name":"stdout","time":64.911975296,"data":"  warnings.warn(\n"}
+,{"stream_name":"stdout","time":64.919474815,"data":"/usr/local/lib/python3.12/site-packages/torch_xla/__init__.py:258: UserWarning: `tensorflow` can conflict with `torch-xla`. Prefer `tensorflow-cpu` when using PyTorch/XLA. To silence this warning, `pip uninstall -y tensorflow \u0026\u0026 pip install tensorflow-cpu`. If you are in a notebook environment such as Colab or Kaggle, restart your notebook runtime afterwards.\n"}
+,{"stream_name":"stdout","time":64.919506335,"data":"  warnings.warn(\n"}
+,{"stream_name":"stdout","time":64.920518745,"data":"/usr/local/lib/python3.12/site-packages/torch_xla/__init__.py:258: UserWarning: `tensorflow` can conflict with `torch-xla`. Prefer `tensorflow-cpu` when using PyTorch/XLA. To silence this warning, `pip uninstall -y tensorflow \u0026\u0026 pip install tensorflow-cpu`. If you are in a notebook environment such as Colab or Kaggle, restart your notebook runtime afterwards.\n"}
+,{"stream_name":"stdout","time":64.920530695,"data":"  warnings.warn(\n"}
+,{"stream_name":"stdout","time":64.925829805,"data":"/usr/local/lib/python3.12/site-packages/torch_xla/__init__.py:258: UserWarning: `tensorflow` can conflict with `torch-xla`. Prefer `tensorflow-cpu` when using PyTorch/XLA. To silence this warning, `pip uninstall -y tensorflow \u0026\u0026 pip install tensorflow-cpu`. If you are in a notebook environment such as Colab or Kaggle, restart your notebook runtime afterwards.\n"}
+,{"stream_name":"stdout","time":64.925864965,"data":"  warnings.warn(\n"}
+,{"stream_name":"stdout","time":64.929048775,"data":"/usr/local/lib/python3.12/site-packages/torch_xla/__init__.py:258: UserWarning: `tensorflow` can conflict with `torch-xla`. Prefer `tensorflow-cpu` when using PyTorch/XLA. To silence this warning, `pip uninstall -y tensorflow \u0026\u0026 pip install tensorflow-cpu`. If you are in a notebook environment such as Colab or Kaggle, restart your notebook runtime afterwards.\n"}
+,{"stream_name":"stdout","time":64.929084405,"data":"  warnings.warn(\n"}
+,{"stream_name":"stdout","time":64.944508604,"data":"/usr/local/lib/python3.12/site-packages/torch_xla/__init__.py:258: UserWarning: `tensorflow` can conflict with `torch-xla`. Prefer `tensorflow-cpu` when using PyTorch/XLA. To silence this warning, `pip uninstall -y tensorflow \u0026\u0026 pip install tensorflow-cpu`. If you are in a notebook environment such as Colab or Kaggle, restart your notebook runtime afterwards.\n"}
+,{"stream_name":"stdout","time":64.944533894,"data":"  warnings.warn(\n"}
+,{"stream_name":"stdout","time":64.944537774,"data":"/usr/local/lib/python3.12/site-packages/torch_xla/__init__.py:258: UserWarning: `tensorflow` can conflict with `torch-xla`. Prefer `tensorflow-cpu` when using PyTorch/XLA. To silence this warning, `pip uninstall -y tensorflow \u0026\u0026 pip install tensorflow-cpu`. If you are in a notebook environment such as Colab or Kaggle, restart your notebook runtime afterwards.\n"}
+,{"stream_name":"stdout","time":64.944541384,"data":"  warnings.warn(\n"}
+,{"stream_name":"stdout","time":64.973582273,"data":"/usr/local/lib/python3.12/site-packages/torch_xla/__init__.py:258: UserWarning: `tensorflow` can conflict with `torch-xla`. Prefer `tensorflow-cpu` when using PyTorch/XLA. To silence this warning, `pip uninstall -y tensorflow \u0026\u0026 pip install tensorflow-cpu`. If you are in a notebook environment such as Colab or Kaggle, restart your notebook runtime afterwards.\n"}
+,{"stream_name":"stdout","time":64.973616333,"data":"  warnings.warn(\n"}
+,{"stream_name":"stdout","time":65.81744055,"data":"WARNING: Logging before InitGoogle() is written to STDERR\n"}
+,{"stream_name":"stdout","time":65.81748144,"data":"E0000 00:00:1792109739.690368    1069 common_lib.cc:648] Could not set metric server port: INVALID_ARGUMENT: Could not find SliceBuilder port 8482 in any of the 0 ports provided in `tpu_process_addresses`=\"local\"\n"}
+,{"stream_name":"stdout","time":65.81750759,"data":"=== Source Location Trace: ===\n"}
+,{"stream_name":"stdout","time":65.8175112,"data":"learning/45eac/tfrc/runtime/common_lib.cc:238\n"}
+,{"stream_name":"stdout","time":65.83938064,"data":"WARNING: Logging before InitGoogle() is written to STDERR\n"}
+,{"stream_name":"stdout","time":65.83940328,"data":"WARNING: Logging before InitGoogle() is written to STDERR\n"}
+,{"stream_name":"stdout","time":65.83940758,"data":"E0000 00:00:1792109739.712291    1070 common_lib.cc:648] Could not set metric server port: INVALID_ARGUMENT: Could not find SliceBuilder port 8480 in any of the 0 ports provided in `tpu_process_addresses`=\"local\"\n"}
+,{"stream_name":"stdout","time":65.839411649,"data":"=== Source Location Trace: === \n"}
+,{"stream_name":"stdout","time":65.83941454,"data":"learning/45eac/tfrc/runtime/common_lib.cc:238\n"}
+,{"stream_name":"stdout","time":65.839424849,"data":"E0000 00:00:1792109739.712285    1066 common_lib.cc:648] Could not set metric server port: INVALID_ARGUMENT: Could not find SliceBuilder port 8477 in any of the 0 ports provided in `tpu_process_addresses`=\"local\"\n"}
+,{"stream_name":"stdout","time":65.83942824,"data":"=== Source Location Trace: === \n"}
+,{"stream_name":"stdout","time":65.83943126,"data":"learning/45eac/tfrc/runtime/common_lib.cc:238\n"}
+,{"stream_name":"stdout","time":65.843936409,"data":"WARNING: Logging before InitGoogle() is written to STDERR\n"}
+,{"stream_name":"stdout","time":65.843970049,"data":"E0000 00:00:1792109739.716911    1062 common_lib.cc:648] Could not set metric server port: INVALID_ARGUMENT: Could not find SliceBuilder port 8476 in any of the 0 ports provided in `tpu_process_addresses`=\"local\"\n"}
+,{"stream_name":"stdout","time":65.843975809,"data":"=== Source Location Trace: ===\n"}
+,{"stream_name":"stdout","time":65.843980169,"data":"learning/45eac/tfrc/runtime/common_lib.cc:238\n"}
+,{"stream_name":"stdout","time":65.877469608,"data":"WARNING: Logging before InitGoogle() is written to STDERR\n"}
+,{"stream_name":"stdout","time":65.877497248,"data":"E0000 00:00:1792109739.750468    1065 common_lib.cc:648] Could not set metric server port: INVALID_ARGUMENT: Could not find SliceBuilder port 8479 in any of the 0 ports provided in `tpu_process_addresses`=\"local\"\n"}
+,{"stream_name":"stdout","time":65.877502638,"data":"=== Source Location Trace: === \n"}
+,{"stream_name":"stdout","time":65.877506138,"data":"learning/45eac/tfrc/runtime/common_lib.cc:238\n"}
+,{"stream_name":"stdout","time":65.891811938,"data":"WARNING: Logging before InitGoogle() is written to STDERR\n"}
+,{"stream_name":"stdout","time":65.891835507,"data":"E0000 00:00:1792109739.764777    1068 common_lib.cc:648] Could not set metric server port: INVALID_ARGUMENT: Could not find SliceBuilder port 8481 in any of the 0 ports provided in `tpu_process_addresses`=\"local\"\n"}
+,{"stream_name":"stdout","time":65.891840998,"data":"=== Source Location Trace: ===\n"}
+,{"stream_name":"stdout","time":65.891844727,"data":"learning/45eac/tfrc/runtime/common_lib.cc:238\n"}
+,{"stream_name":"stdout","time":65.899894347,"data":"WARNING: Logging before InitGoogle() is written to STDERR\n"}
+,{"stream_name":"stdout","time":65.899913727,"data":"E0000 00:00:1792109739.773036    1067 common_lib.cc:648] Could not set metric server port: INVALID_ARGUMENT: Could not find SliceBuilder port 8478 in any of the 0 ports provided in `tpu_process_addresses`=\"local\"\n"}
+,{"stream_name":"stdout","time":65.899918247,"data":"=== Source Location Trace: === \n"}
+,{"stream_name":"stdout","time":65.899930047,"data":"learning/45eac/tfrc/runtime/common_lib.cc:238\n"}
+,{"stream_name":"stdout","time":65.941006645,"data":"WARNING: Logging before InitGoogle() is written to STDERR\n"}
+,{"stream_name":"stdout","time":65.941042536,"data":"E0000 00:00:1792109739.814013    1071 common_lib.cc:648] Could not set metric server port: INVALID_ARGUMENT: Could not find SliceBuilder port 8483 in any of the 0 ports provided in `tpu_process_addresses`=\"local\"\n"}
+,{"stream_name":"stdout","time":65.941051045,"data":"=== Source Location Trace: === \n"}
+,{"stream_name":"stdout","time":65.941055416,"data":"learning/45eac/tfrc/runtime/common_lib.cc:238\n"}
+,{"stream_name":"stdout","time":66.067059301,"data":"F1016 00:15:39.940152    1066 runtime.cpp:21] Check failed: !g_computation_client_initialized InitializeComputationClient() can only be called once.\n"}
+,{"stream_name":"stdout","time":66.067083711,"data":"F1016 00:15:39.940172    1069 runtime.cpp:21] Check failed: !g_computation_client_initialized InitializeComputationClient() can only be called once.\n"}
+,{"stream_name":"stdout","time":66.067087671,"data":"F1016 00:15:39.940192    1070 runtime.cpp:21] Check failed: !g_computation_client_initialized InitializeComputationClient() can only be called once.\n"}
+,{"stream_name":"stdout","time":66.067249281,"data":"F1016 00:15:39.940282    1062 runtime.cpp:21] Check failed: !g_computation_client_initialized InitializeComputationClient() can only be called once.\n"}
+,{"stream_name":"stdout","time":66.067268591,"data":"F1016 00:15:39.940320    1065 runtime.cpp:21] Check failed: !g_computation_client_initialized InitializeComputationClient() can only be called once.\n"}
+,{"stream_name":"stdout","time":66.067302291,"data":"F1016 00:15:39.940428    1068 runtime.cpp:21] Check failed: !g_computation_client_initialized InitializeComputationClient() can only be called once.\n"}
+,{"stream_name":"stdout","time":66.067316431,"data":"F1016 00:15:39.940483    1067 runtime.cpp:21] Check failed: !g_computation_client_initialized InitializeComputationClient() can only be called once.\n"}
+,{"stream_name":"stdout","time":66.067321401,"data":"F1016 00:15:39.940494    1071 runtime.cpp:21] Check failed: !g_computation_client_initialized InitializeComputationClient() can only be called once.\n"}
+,{"stream_name":"stdout","time":67.176175878,"data":"*** Check failure stack trace: ***\n"}
+,{"stream_name":"stdout","time":67.176219628,"data":"    @     0x7cbd9610f41f  absl::lts_20230802::log_internal::LogMessageFatal::~LogMessageFatal()\n"}
+,{"stream_name":"stdout","time":67.176226278,"data":"    @     0x7cbd8f1d4991  torch_xla::runtime::GetComputationClient()\n"}
+,{"stream_name":"stdout","time":67.176229698,"data":"    @     0x7cbd8f1d4a12  torch_xla::runtime::GetComputationClientOrDie()\n"}
+,{"stream_name":"stdout","time":67.176232508,"data":"    @     0x7cbd8edf5d34  torch_xla::(anonymous namespace)::PrepareToExit()\n"}
+,{"stream_name":"stdout","time":67.176235278,"data":"    @     0x7cbd8edf237b  torch_xla::(anonymous namespace)::PythonScope\u003c\u003e::PythonFunctionBinder\u003c\u003e::Bind\u003c\u003e()::{lambda()#1}::operator()()\n"}
+,{"stream_name":"stdout","time":67.176238988,"data":"    @     0x7cbd8edf46a2  pybind11::cpp_function::initialize\u003c\u003e()::{lambda()#3}::_FUN()\n"}
+,{"stream_name":"stdout","time":67.176241958,"data":"    @     0x7cbd8ee412d7  pybind11::cpp_function::dispatcher()\n"}
+,{"stream_name":"stdout","time":67.176245028,"data":"    @     0x7cbe5509eb06  cfunction_call\n"}
+,{"stream_name":"stdout","time":67.176247778,"data":"    @     0x7cbe55078e46  _PyObject_MakeTpCall\n"}
+,{"stream_name":"stdout","time":67.176250518,"data":"    @     0x7cbe5508503d  _PyEval_EvalFrameDefault\n"}
+,{"stream_name":"stdout","time":67.176253248,"data":"    @     0x7cbe55147d07  atexit_callfuncs\n"}
+,{"stream_name":"stdout","time":67.176266058,"data":"    @     0x7cbe5512baf4  Py_FinalizeEx\n"}
+,{"stream_name":"stdout","time":67.176268908,"data":"    @     0x7cbe55149061  Py_Exit\n"}
+,{"stream_name":"stdout","time":67.176271618,"data":"    @     0x7cbe5514671a  handle_system_exit\n"}
+,{"stream_name":"stdout","time":67.176274288,"data":"    @     0x7cbe55146530  _PyErr_PrintEx\n"}
+,{"stream_name":"stdout","time":67.176277028,"data":"    @     0x7cbe5513f8b6  PyRun_SimpleStringFlags\n"}
+,{"stream_name":"stdout","time":67.176279738,"data":"    @     0x7cbe5513c485  Py_RunMain\n"}
+,{"stream_name":"stdout","time":67.176282398,"data":"    @     0x7cbe550f3bbc  Py_BytesMain\n"}
+,{"stream_name":"stdout","time":67.176285088,"data":"    @     0x7cbe54cbbca8  (unknown)\n"}
+,{"stream_name":"stdout","time":67.176291488,"data":"https://symbolize.stripped_domain/r/?trace=7cbe54d2669c,7cbe54cd1d6f,7cbd9610f0be,7cbd9610f41e,7cbd8f1d4990,7cbd8f1d4a11,7cbd8edf5d33,7cbd8edf237a,7cbd8edf46a1,7cbd8ee412d6,7cbe5509eb05,7cbe55078e45,7cbe5508503c,7cbe55147d06,7cbe5512baf3,7cbe55149060,7cbe55146719,7cbe5514652f,7cbe5513f8b5,7cbe5513c484,7cbe550f3bbb,7cbe54cbbca7\u0026map= \n"}
+,{"stream_name":"stdout","time":67.176298368,"data":"*** SIGABRT received by PID 1068 (TID 1068) on cpu 94 from PID 1068; stack trace: ***\n"}
+,{"stream_name":"stdout","time":67.196219177,"data":"PC: @     0x7cbe54d2669c  (unknown)  (unknown)\n"}
+,{"stream_name":"stdout","time":67.196231537,"data":"    @     0x7cb996db47e5       1904  (unknown)\n"}
+,{"stream_name":"stdout","time":67.196235797,"data":"    @     0x7cbe54cd1d70  (unknown)  (unknown)\n"}
+,{"stream_name":"stdout","time":67.202067767,"data":"    @     0x7cbd9610f0bf         32  absl::lts_20230802::log_internal::LogMessage::Die()\n"}
+,{"stream_name":"stdout","time":67.207731607,"data":"    @     0x7cbd9610f41f         16  absl::lts_20230802::log_internal::LogMessageFatal::~LogMessageFatal()\n"}
+,{"stream_name":"stdout","time":67.212468586,"data":"*** Check failure stack trace: ***\n"}
+,{"stream_name":"stdout","time":67.212495786,"data":"    @     0x794ddb40f41f  absl::lts_20230802::log_internal::LogMessageFatal::~LogMessageFatal()\n"}
+,{"stream_name":"stdout","time":67.212500056,"data":"    @     0x794dd44d4991  torch_xla::runtime::GetComputationClient()\n"}
+,{"stream_name":"stdout","time":67.212503006,"data":"    @     0x794dd44d4a12  torch_xla::runtime::GetComputationClientOrDie()\n"}
+,{"stream_name":"stdout","time":67.212505826,"data":"    @     0x794dd40f5d34  torch_xla::(anonymous namespace)::PrepareToExit()\n"}
+,{"stream_name":"stdout","time":67.212509546,"data":"    @     0x794dd40f237b  torch_xla::(anonymous namespace)::PythonScope\u003c\u003e::PythonFunctionBinder\u003c\u003e::Bind\u003c\u003e()::{lambda()#1}::operator()()\n"}
+,{"stream_name":"stdout","time":67.212513296,"data":"    @     0x794dd40f46a2  pybind11::cpp_function::initialize\u003c\u003e()::{lambda()#3}::_FUN()\n"}
+,{"stream_name":"stdout","time":67.212516226,"data":"    @     0x794dd41412d7  pybind11::cpp_function::dispatcher()\n"}
+,{"stream_name":"stdout","time":67.212519006,"data":"    @     0x794e9a383b06  cfunction_call\n"}
+,{"stream_name":"stdout","time":67.212521756,"data":"    @     0x794e9a35de46  _PyObject_MakeTpCall\n"}
+,{"stream_name":"stdout","time":67.212524436,"data":"    @     0x794e9a36a03d  _PyEval_EvalFrameDefault\n"}
+,{"stream_name":"stdout","time":67.212527126,"data":"    @     0x794e9a42cd07  atexit_callfuncs\n"}
+,{"stream_name":"stdout","time":67.212529796,"data":"    @     0x794e9a410af4  Py_FinalizeEx\n"}
+,{"stream_name":"stdout","time":67.212532786,"data":"    @     0x794e9a42e061  Py_Exit\n"}
+,{"stream_name":"stdout","time":67.212545996,"data":"    @     0x794e9a42b71a  handle_system_exit\n"}
+,{"stream_name":"stdout","time":67.212548836,"data":"    @     0x794e9a42b530  _PyErr_PrintEx\n"}
+,{"stream_name":"stdout","time":67.212552366,"data":"    @     0x794e9a4248b6  PyRun_SimpleStringFlags\n"}
+,{"stream_name":"stdout","time":67.212555436,"data":"    @     0x794e9a421485  Py_RunMain\n"}
+,{"stream_name":"stdout","time":67.212558226,"data":"    @     0x794e9a3d8bbc  Py_BytesMain\n"}
+,{"stream_name":"stdout","time":67.212560946,"data":"    @     0x794e99fa0ca8  (unknown)\n"}
+,{"stream_name":"stdout","time":67.212567306,"data":"*** Check failure stack trace: ***\n"}
+,{"stream_name":"stdout","time":67.212570366,"data":"    @     0x7afd4880f41f  absl::lts_20230802::log_internal::LogMessageFatal::~LogMessageFatal()\n"}
+,{"stream_name":"stdout","time":67.212573136,"data":"    @     0x7afd418d4991  torch_xla::runtime::GetComputationClient()\n"}
+,{"stream_name":"stdout","time":67.212576276,"data":"    @     0x7afd418d4a12  torch_xla::runtime::GetComputationClientOrDie()\n"}
+,{"stream_name":"stdout","time":67.212579346,"data":"    @     0x7afd414f5d34  torch_xla::(anonymous namespace)::PrepareToExit()\n"}
+,{"stream_name":"stdout","time":67.212582276,"data":"    @     0x7afd414f237b  torch_xla::(anonymous namespace)::PythonScope\u003c\u003e::PythonFunctionBinder\u003c\u003e::Bind\u003c\u003e()::{lambda()#1}::operator()()\n"}
+,{"stream_name":"stdout","time":67.212585336,"data":"    @     0x7afd414f46a2  pybind11::cpp_function::initialize\u003c\u003e()::{lambda()#3}::_FUN()\n"}
+,{"stream_name":"stdout","time":67.212588166,"data":"    @     0x7afd415412d7  pybind11::cpp_function::dispatcher()\n"}
+,{"stream_name":"stdout","time":67.212590896,"data":"    @     0x7afe077ceb06  cfunction_call\n"}
+,{"stream_name":"stdout","time":67.212593916,"data":"    @     0x7afe077a8e46  _PyObject_MakeTpCall\n"}
+,{"stream_name":"stdout","time":67.212596976,"data":"    @     0x7afe077b503d  _PyEval_EvalFrameDefault\n"}
+,{"stream_name":"stdout","time":67.212599856,"data":"    @     0x7afe07877d07  atexit_callfuncs\n"}
+,{"stream_name":"stdout","time":67.212602666,"data":"    @     0x7afe0785baf4  Py_FinalizeEx\n"}
+,{"stream_name":"stdout","time":67.212605726,"data":"    @     0x7afe07879061  Py_Exit\n"}
+,{"stream_name":"stdout","time":67.212623766,"data":"    @     0x7afe0787671a  handle_system_exit\n"}
+,{"stream_name":"stdout","time":67.212634096,"data":"    @     0x7afe07876530  _PyErr_PrintEx\n"}
+,{"stream_name":"stdout","time":67.212638146,"data":"    @     0x7afe0786f8b6  PyRun_SimpleStringFlags\n"}
+,{"stream_name":"stdout","time":67.212641196,"data":"    @     0x7afe0786c485  Py_RunMain\n"}
+,{"stream_name":"stdout","time":67.212644226,"data":"    @     0x7afe07823bbc  Py_BytesMain\n"}
+,{"stream_name":"stdout","time":67.212646996,"data":"    @     0x7afe073ebca8  (unknown)\n"}
+,{"stream_name":"stdout","time":67.212650726,"data":"https://symbolize.stripped_domain/r/?trace=794e9a00b69c,794e99fb6d6f,794ddb40f0be,794ddb40f41e,794dd44d4990,794dd44d4a11,794dd40f5d33,794dd40f237a,794dd40f46a1,794dd41412d6,794e9a383b05,794e9a35de45,794e9a36a03c,794e9a42cd06,794e9a410af3,794e9a42e060,794e9a42b719,794e9a42b52f,794e9a4248b5,794e9a421484,794e9a3d8bbb,794e99fa0ca7\u0026map= \n"}
+,{"stream_name":"stdout","time":67.212654336,"data":"*** SIGABRT received by PID 1071 (TID 1071) on cpu 75 from PID 1071; stack trace: ***\n"}
+,{"stream_name":"stdout","time":67.212657316,"data":"https://symbolize.stripped_domain/r/?trace=7afe0745669c,7afe07401d6f,7afd4880f0be,7afd4880f41e,7afd418d4990,7afd418d4a11,7afd414f5d33,7afd414f237a,7afd414f46a1,7afd415412d6,7afe077ceb05,7afe077a8e45,7afe077b503c,7afe07877d06,*** Check failure stack trace: ***\n"}
+,{"stream_name":"stdout","time":67.212670226,"data":"    @     0x7f067300f41f  absl::lts_20230802::log_internal::LogMessageFatal::~LogMessageFatal()\n"}
+,{"stream_name":"stdout","time":67.212673216,"data":"    @     0x7f066c0d4991  torch_xla::runtime::GetComputationClient()\n"}
+,{"stream_name":"stdout","time":67.212675916,"data":"    @     0x7f066c0d4a12  torch_xla::runtime::GetComputationClientOrDie()\n"}
+,{"stream_name":"stdout","time":67.212678646,"data":"    @     0x7f066bcf5d34  torch_xla::(anonymous namespace)::PrepareToExit()\n"}
+,{"stream_name":"stdout","time":67.212681556,"data":"    @     0x7f066bcf237b  torch_xla::(anonymous namespace)::PythonScope\u003c\u003e::PythonFunctionBinder\u003c\u003e::Bind\u003c\u003e()::{lambda()#1}::operator()()\n"}
+,{"stream_name":"stdout","time":67.212684816,"data":"    @     0x7f066bcf46a2  pybind11::cpp_function::initialize\u003c\u003e()::{lambda()#3}::_FUN()\n"}
+,{"stream_name":"stdout","time":67.212687676,"data":"    @     0x7f066bd412d7  pybind11::cpp_function::dispatcher()\n"}
+,{"stream_name":"stdout","time":67.212690486,"data":"    @     0x7f0731fd7b06  cfunction_call\n"}
+,{"stream_name":"stdout","time":67.212693226,"data":"    @     0x7f0731fb1e46  _PyObject_MakeTpCall\n"}
+,{"stream_name":"stdout","time":67.212695946,"data":"    @     0x7f0731fbe03d  _PyEval_EvalFrameDefault\n"}
+,{"stream_name":"stdout","time":67.212698726,"data":"    @     0x7f0732080d07  atexit_callfuncs\n"}
+,{"stream_name":"stdout","time":67.212701436,"data":"    @     0x7f0732064af4  Py_FinalizeEx\n"}
+,{"stream_name":"stdout","time":67.212704196,"data":"    @     0x7f0732082061  Py_Exit\n"}
+,{"stream_name":"stdout","time":67.212706896,"data":"    @     0x7f073207f71a  handle_system_exit\n"}
+,{"stream_name":"stdout","time":67.212709586,"data":"    @     0x7f073207f530  _PyErr_PrintEx\n"}
+,{"stream_name":"stdout","time":67.212712266,"data":"    @     0x7f07320788b6  PyRun_SimpleStringFlags\n"}
+,{"stream_name":"stdout","time":67.212714966,"data":"    @     0x7f0732075485  Py_RunMain\n"}
+,{"stream_name":"stdout","time":67.212717666,"data":"    @     0x7f073202cbbc  Py_BytesMain\n"}
+,{"stream_name":"stdout","time":67.212720336,"data":"    @     0x7f0731bf4ca8  (unknown)\n"}
+,{"stream_name":"stdout","time":67.212723566,"data":"7afe0785baf3,7afe07879060,7afe07876719,7afe0787652f,7afe0786f8b5,7afe0786c484,7afe07823bbb,7afe073ebca7\u0026map= \n"}
+,{"stream_name":"stdout","time":67.212726596,"data":"*** SIGABRT received by PID 1062 (TID 1062) on cpu 58 from PID 1062; stack trace: ***\n"}
+,{"stream_name":"stdout","time":67.213013086,"data":"https://symbolize.stripped_domain/r/?trace=7f0731c5f69c,7f0731c0ad6f,7f067300f0be,7f067300f41e,7f066c0d4990,7f066c0d4a11,7f066bcf5d33,7f066bcf237a,7f066bcf46a1,7f066bd412d6,7f0731fd7b05,7f0731fb1e45,7f0731fbe03c,7f0732080d06,7f0732064af3,7f0732082060,7f073207f719,7f073207f52f,7f07320788b5,7f0732075484,7f073202cbbb,7f0731bf4ca7\u0026map= \n"}
+,{"stream_name":"stdout","time":67.213031216,"data":"*** SIGABRT received by PID 1070 (TID 1070) on cpu 87 from PID 1070; stack trace: ***\n"}
+,{"stream_name":"stdout","time":67.213578716,"data":"    @     0x7cbd8f1d4991        144  torch_xla::runtime::GetComputationClient()\n"}
+,{"stream_name":"stdout","time":67.219407276,"data":"    @     0x7cbd8f1d4a12         48  torch_xla::runtime::GetComputationClientOrDie()\n"}
+,{"stream_name":"stdout","time":67.225204196,"data":"    @     0x7cbd8edf5d34        128  torch_xla::(anonymous namespace)::PrepareToExit()\n"}
+,{"stream_name":"stdout","time":67.229272206,"data":"PC: @     0x7f0731c5f69c  (unknown)  (unknown)\n"}
+,{"stream_name":"stdout","time":67.229291386,"data":"    @     0x7f025adb47e5       1904  (unknown)\n"}
+,{"stream_name":"stdout","time":67.229307506,"data":"    @     0x7f0731c0ad70  (unknown)  (unknown)\n"}
+,{"stream_name":"stdout","time":67.231138026,"data":"    @     0x7cbd8edf237b         80  torch_xla::(anonymous namespace)::PythonScope\u003c\u003e::PythonFunctionBinder\u003c\u003e::Bind\u003c\u003e()::{lambda()#1}::operator()()\n"}
+,{"stream_name":"stdout","time":67.233802626,"data":"*** Check failure stack trace: ***\n"}
+,{"stream_name":"stdout","time":67.233831746,"data":"    @     0x7f297840f41f  absl::lts_20230802::log_internal::LogMessageFatal::~LogMessageFatal()\n"}
+,{"stream_name":"stdout","time":67.233836355,"data":"    @     0x7f29714d4991  torch_xla::runtime::GetComputationClient()\n"}
+,{"stream_name":"stdout","time":67.233839706,"data":"    @     0x7f29714d4a12  torch_xla::runtime::GetComputationClientOrDie()\n"}
+,{"stream_name":"stdout","time":67.233842886,"data":"    @     0x7f29710f5d34  torch_xla::(anonymous namespace)::PrepareToExit()\n"}
+,{"stream_name":"stdout","time":67.233845866,"data":"    @     0x7f29710f237b  torch_xla::(anonymous namespace)::PythonScope\u003c\u003e::PythonFunctionBinder\u003c\u003e::Bind\u003c\u003e()::{lambda()#1}::operator()()\n"}
+,{"stream_name":"stdout","time":67.233849475,"data":"    @     0x7f29710f46a2  pybind11::cpp_function::initialize\u003c\u003e()::{lambda()#3}::_FUN()\n"}
+,{"stream_name":"stdout","time":67.233853115,"data":"    @     0x7f29711412d7  pybind11::cpp_function::dispatcher()\n"}
+,{"stream_name":"stdout","time":67.233856135,"data":"    @     0x7f2a373f3b06  cfunction_call\n"}
+,{"stream_name":"stdout","time":67.233858855,"data":"    @     0x7f2a373cde46  _PyObject_MakeTpCall\n"}
+,{"stream_name":"stdout","time":67.233861566,"data":"    @     0x7f2a373da03d  _PyEval_EvalFrameDefault\n"}
+,{"stream_name":"stdout","time":67.233864266,"data":"    @     0x7f2a3749cd07  atexit_callfuncs\n"}
+,{"stream_name":"stdout","time":67.233867366,"data":"    @     0x7f2a37480af4  Py_FinalizeEx\n"}
+,{"stream_name":"stdout","time":67.233870435,"data":"    @     0x7f2a3749e061  Py_Exit\n"}
+,{"stream_name":"stdout","time":67.233873095,"data":"    @     0x7f2a3749b71a  handle_system_exit\n"}
+,{"stream_name":"stdout","time":67.233875815,"data":"    @     0x7f2a3749b530  _PyErr_PrintEx\n"}
+,{"stream_name":"stdout","time":67.233878855,"data":"    @     0x7f2a374948b6  PyRun_SimpleStringFlags\n"}
+,{"stream_name":"stdout","time":67.233881566,"data":"    @     0x7f2a37491485  Py_RunMain\n"}
+,{"stream_name":"stdout","time":67.233884246,"data":"    @     0x7f2a37448bbc  Py_BytesMain\n"}
+,{"stream_name":"stdout","time":67.233886906,"data":"    @     0x7f2a37010ca8  (unknown)\n"}
+,{"stream_name":"stdout","time":67.233889546,"data":"*** Check failure stack trace: ***\n"}
+,{"stream_name":"stdout","time":67.233892215,"data":"    @     0x7b1d70b0f41f  absl::lts_20230802::log_internal::LogMessageFatal::~LogMessageFatal()\n"}
+,{"stream_name":"stdout","time":67.233895035,"data":"    @     0x7b1d69bd4991  torch_xla::runtime::GetComputationClient()\n"}
+,{"stream_name":"stdout","time":67.233897795,"data":"    @     0x7b1d69bd4a12  torch_xla::runtime::GetComputationClientOrDie()\n"}
+,{"stream_name":"stdout","time":67.233900595,"data":"    @     0x7b1d697f5d34  torch_xla::(anonymous namespace)::PrepareToExit()\n"}
+,{"stream_name":"stdout","time":67.233903715,"data":"    @     0x7b1d697f237b  torch_xla::(anonymous namespace)::PythonScope\u003c\u003e::PythonFunctionBinder\u003c\u003e::Bind\u003c\u003e()::{lambda()#1}::operator()()\n"}
+,{"stream_name":"stdout","time":67.233906766,"data":"    @     0x7b1d697f46a2  pybind11::cpp_function::initialize\u003c\u003e()::{lambda()#3}::_FUN()\n"}
+,{"stream_name":"stdout","time":67.233918895,"data":"    @     0x7b1d698412d7  pybind11::cpp_function::dispatcher()\n"}
+,{"stream_name":"stdout","time":67.233921786,"data":"    @     0x7b1e2facbb06  cfunction_call\n"}
+,{"stream_name":"stdout","time":67.233924495,"data":"    @     0x7b1e2faa5e46  _PyObject_MakeTpCall\n"}
+,{"stream_name":"stdout","time":67.233927295,"data":"    @     0x7b1e2fab203d  _PyEval_EvalFrameDefault\n"}
+,{"stream_name":"stdout","time":67.233941455,"data":"    @     0x7b1e2fb74d07  atexit_callfuncs\n"}
+,{"stream_name":"stdout","time":67.233944706,"data":"    @     0x7b1e2fb58af4  Py_FinalizeEx\n"}
+,{"stream_name":"stdout","time":67.233947426,"data":"    @     0x7b1e2fb76061  Py_Exit\n"}
+,{"stream_name":"stdout","time":67.233950075,"data":"    @     0x7b1e2fb7371a  handle_system_exit\n"}
+,{"stream_name":"stdout","time":67.233952755,"data":"    @     0x7b1e2fb73530  _PyErr_PrintEx\n"}
+,{"stream_name":"stdout","time":67.233955426,"data":"    @     0x7b1e2fb6c8b6  PyRun_SimpleStringFlags\n"}
+,{"stream_name":"stdout","time":67.233958095,"data":"    @     0x7b1e2fb69485  Py_RunMain\n"}
+,{"stream_name":"stdout","time":67.233960726,"data":"    @     0x7b1e2fb20bbc  Py_BytesMain\n"}
+,{"stream_name":"stdout","time":67.233963386,"data":"    @     0x7b1e2f6e8ca8  (unknown)\n"}
+,{"stream_name":"stdout","time":67.233966306,"data":"https://symbolize.stripped_domain/r/?trace=7f2a3707b69c,7f2a37026d6f,7f297840f0be,7f297840f41e,7f29714d4990,7f29714d4a11,7f29710f5d33,7f29710f237a,7f29710f46a1,7f29711412d6,7f2a373f3b05,7f2a373cde45,7f2a373da03c,7f2a3749cd06,7f2a37480af3,7f2a3749e060,7f2a3749b719,7f2a3749b52f,7f2a374948b5,7f2a37491484,7f2a37448bbb,7f2a37010ca7\u0026map= \n"}
+,{"stream_name":"stdout","time":67.233969755,"data":"*** SIGABRT received by PID 1067 (TID 1067) on cpu 24 from PID 1067; stack trace: ***\n"}
+,{"stream_name":"stdout","time":67.234194346,"data":"https://symbolize.stripped_domain/r/?trace=7b1e2f75369c,7b1e2f6fed6f,7b1d70b0f0be,7b1d70b0f41e,7b1d69bd4990,7b1d69bd4a11,7b1d697f5d33,7b1d697f237a,7b1d697f46a1,7b1d698412d6,7b1e2facbb05,7b1e2faa5e45,7b1e2fab203c,7b1e2fb74d06,7b1e2fb58af3,7b1e2fb76060,7b1e2fb73719,7b1e2fb7352f,7b1e2fb6c8b5,7b1e2fb69484,7b1e2fb20bbb,7b1e2f6e8ca7\u0026map= \n"}
+,{"stream_name":"stdout","time":67.234212955,"data":"*** SIGABRT received by PID 1065 (TID 1065) on cpu 16 from PID 1065; stack trace: ***\n"}
+,{"stream_name":"stdout","time":67.235406546,"data":"    @     0x7f067300f0bf         32  absl::lts_20230802::log_internal::LogMessage::Die()\n"}
+,{"stream_name":"stdout","time":67.236625265,"data":"*** Check failure stack trace: ***\n"}
+,{"stream_name":"stdout","time":67.236650175,"data":"    @     0x78183870f41f  absl::lts_20230802::log_internal::LogMessageFatal::~LogMessageFatal()\n"}
+,{"stream_name":"stdout","time":67.236654555,"data":"    @     0x7818317d4991  torch_xla::runtime::GetComputationClient()\n"}
+,{"stream_name":"stdout","time":67.236657795,"data":"    @     0x7818317d4a12  torch_xla::runtime::GetComputationClientOrDie()\n"}
+,{"stream_name":"stdout","time":67.236660595,"data":"    @     0x7818313f5d34  torch_xla::(anonymous namespace)::PrepareToExit()\n"}
+,{"stream_name":"stdout","time":67.236663775,"data":"    @     0x7818313f237b  torch_xla::(anonymous namespace)::PythonScope\u003c\u003e::PythonFunctionBinder\u003c\u003e::Bind\u003c\u003e()::{lambda()#1}::operator()()\n"}
+,{"stream_name":"stdout","time":67.236667335,"data":"    @     0x7818313f46a2  pybind11::cpp_function::initialize\u003c\u003e()::{lambda()#3}::_FUN()\n"}
+,{"stream_name":"stdout","time":67.236670445,"data":"    @     0x7818314412d7  pybind11::cpp_function::dispatcher()\n"}
+,{"stream_name":"stdout","time":67.236673445,"data":"    @     0x7818f7651b06  cfunction_call\n"}
+,{"stream_name":"stdout","time":67.236689615,"data":"    @     0x7818f762be46  _PyObject_MakeTpCall\n"}
+,{"stream_name":"stdout","time":67.236692765,"data":"    @     0x7818f763803d  _PyEval_EvalFrameDefault\n"}
+,{"stream_name":"stdout","time":67.236695565,"data":"    @     0x7818f76fad07  atexit_callfuncs\n"}
+,{"stream_name":"stdout","time":67.236698335,"data":"    @     0x7818f76deaf4  Py_FinalizeEx\n"}
+,{"stream_name":"stdout","time":67.236701045,"data":"    @     0x7818f76fc061  Py_Exit\n"}
+,{"stream_name":"stdout","time":67.236703805,"data":"    @     0x7818f76f971a  handle_system_exit\n"}
+,{"stream_name":"stdout","time":67.236706505,"data":"    @     0x7818f76f9530  _PyErr_PrintEx\n"}
+,{"stream_name":"stdout","time":67.236709355,"data":"    @     0x7818f76f28b6  PyRun_SimpleStringFlags\n"}
+,{"stream_name":"stdout","time":67.236712265,"data":"    @     0x7818f76ef485  Py_RunMain\n"}
+,{"stream_name":"stdout","time":67.236714945,"data":"    @     0x7818f76a6bbc  Py_BytesMain\n"}
+,{"stream_name":"stdout","time":67.236717965,"data":"    @     0x7818f726eca8  (unknown)\n"}
+,{"stream_name":"stdout","time":67.236723965,"data":"https://symbolize.stripped_domain/r/?trace=7818f72d969c,7818f7284d6f,78183870f0be,78183870f41e,7818317d4990,7818317d4a11,7818313f5d33,7818313f237a,7818313f46a1,7818314412d6,7818f7651b05,7818f762be45,7818f763803c,7818f76fad06,7818f76deaf3,7818f76fc060,7818f76f9719,7818f76f952f,7818f76f28b5,7818f76ef484,7818f76a6bbb,7818f726eca7\u0026map= \n"}
+,{"stream_name":"stdout","time":67.236727905,"data":"*** SIGABRT received by PID 1066 (TID 1066) on cpu 32 from PID 1066; stack trace: ***\n"}
+,{"stream_name":"stdout","time":67.236856725,"data":"    @     0x7cbd8edf46a2         48  pybind11::cpp_function::initialize\u003c\u003e()::{lambda()#3}::_FUN()\n"}
+,{"stream_name":"stdout","time":67.237345745,"data":"PC: @     0x7afe0745669c  (unknown)  (unknown)\n"}
+,{"stream_name":"stdout","time":67.237410775,"data":"    @     0x7af92adb47e5       1904  (unknown)\n"}
+,{"stream_name":"stdout","time":67.237415135,"data":"    @     0x7afe07401d70  (unknown)  (unknown)\n"}
+,{"stream_name":"stdout","time":67.237418345,"data":"PC: @     0x794e9a00b69c  (unknown)  (unknown)\n"}
+,{"stream_name":"stdout","time":67.237421215,"data":"    @     0x7949c2db47e5       1904  (unknown)\n"}
+,{"stream_name":"stdout","time":67.237424165,"data":"    @     0x794e99fb6d70  (unknown)  (unknown)\n"}
+,{"stream_name":"stdout","time":67.238088805,"data":"*** Check failure stack trace: ***\n"}
+,{"stream_name":"stdout","time":67.238109375,"data":"    @     0x7c6a81b0f41f  absl::lts_20230802::log_internal::LogMessageFatal::~LogMessageFatal()\n"}
+,{"stream_name":"stdout","time":67.238113875,"data":"    @     0x7c6a7abd4991  torch_xla::runtime::GetComputationClient()\n"}
+,{"stream_name":"stdout","time":67.238117105,"data":"    @     0x7c6a7abd4a12  torch_xla::runtime::GetComputationClientOrDie()\n"}
+,{"stream_name":"stdout","time":67.238119905,"data":"    @     0x7c6a7a7f5d34  torch_xla::(anonymous namespace)::PrepareToExit()\n"}
+,{"stream_name":"stdout","time":67.238123215,"data":"    @     0x7c6a7a7f237b  torch_xla::(anonymous namespace)::PythonScope\u003c\u003e::PythonFunctionBinder\u003c\u003e::Bind\u003c\u003e()::{lambda()#1}::operator()()\n"}
+,{"stream_name":"stdout","time":67.238127135,"data":"    @     0x7c6a7a7f46a2  pybind11::cpp_function::initialize\u003c\u003e()::{lambda()#3}::_FUN()\n"}
+,{"stream_name":"stdout","time":67.238130115,"data":"    @     0x7c6a7a8412d7  pybind11::cpp_function::dispatcher()\n"}
+,{"stream_name":"stdout","time":67.238133175,"data":"    @     0x7c6b40adcb06  cfunction_call\n"}
+,{"stream_name":"stdout","time":67.238136065,"data":"    @     0x7c6b40ab6e46  _PyObject_MakeTpCall\n"}
+,{"stream_name":"stdout","time":67.238149565,"data":"    @     0x7c6b40ac303d  _PyEval_EvalFrameDefault\n"}
+,{"stream_name":"stdout","time":67.238152775,"data":"    @     0x7c6b40b85d07  atexit_callfuncs\n"}
+,{"stream_name":"stdout","time":67.238155555,"data":"    @     0x7c6b40b69af4  Py_FinalizeEx\n"}
+,{"stream_name":"stdout","time":67.238158225,"data":"    @     0x7c6b40b87061  Py_Exit\n"}
+,{"stream_name":"stdout","time":67.238160915,"data":"    @     0x7c6b40b8471a  handle_system_exit\n"}
+,{"stream_name":"stdout","time":67.238164105,"data":"    @     0x7c6b40b84530  _PyErr_PrintEx\n"}
+,{"stream_name":"stdout","time":67.238166865,"data":"    @     0x7c6b40b7d8b6  PyRun_SimpleStringFlags\n"}
+,{"stream_name":"stdout","time":67.238169635,"data":"    @     0x7c6b40b7a485  Py_RunMain\n"}
+,{"stream_name":"stdout","time":67.238172305,"data":"    @     0x7c6b40b31bbc  Py_BytesMain\n"}
+,{"stream_name":"stdout","time":67.238175005,"data":"    @     0x7c6b406f9ca8  (unknown)\n"}
+,{"stream_name":"stdout","time":67.238178925,"data":"https://symbolize.stripped_domain/r/?trace=7c6b4076469c,7c6b4070fd6f,7c6a81b0f0be,7c6a81b0f41e,7c6a7abd4990,7c6a7abd4a11,7c6a7a7f5d33,7c6a7a7f237a,7c6a7a7f46a1,7c6a7a8412d6,7c6b40adcb05,7c6b40ab6e45,7c6b40ac303c,7c6b40b85d06,7c6b40b69af3,7c6b40b87060,7c6b40b84719,7c6b40b8452f,7c6b40b7d8b5,7c6b40b7a484,7c6b40b31bbb,7c6b406f9ca7\u0026map= \n"}
+,{"stream_name":"stdout","time":67.238182585,"data":"*** SIGABRT received by PID 1069 (TID 1069) on cpu 50 from PID 1069; stack trace: ***\n"}
+,{"stream_name":"stdout","time":67.240558175,"data":"    @     0x7f067300f41f         16  absl::lts_20230802::log_internal::LogMessageFatal::~LogMessageFatal()\n"}
+,{"stream_name":"stdout","time":67.241809785,"data":"    @     0x7cbd8ee412d7        688  pybind11::cpp_function::dispatcher()\n"}
+,{"stream_name":"stdout","time":67.242097905,"data":"    @     0x7cbe5509eb06         48  cfunction_call\n"}
+,{"stream_name":"stdout","time":67.242348285,"data":"    @     0x7afd4880f0bf         32  absl::lts_20230802::log_internal::LogMessage::Die()\n"}
+,{"stream_name":"stdout","time":67.242376765,"data":"    @     0x794ddb40f0bf         32  absl::lts_20230802::log_internal::LogMessage::Die()\n"}
+,{"stream_name":"stdout","time":67.242424475,"data":"    @     0x7cbe55078e46         80  _PyObject_MakeTpCall\n"}
+,{"stream_name":"stdout","time":67.242745365,"data":"    @     0x7cbe5508503d        464  _PyEval_EvalFrameDefault\n"}
+,{"stream_name":"stdout","time":67.242996785,"data":"    @     0x7cbe55147d07         48  atexit_callfuncs\n"}
+,{"stream_name":"stdout","time":67.243335355,"data":"    @     0x7cbe5512baf4        144  Py_FinalizeEx\n"}
+,{"stream_name":"stdout","time":67.243654035,"data":"    @     0x7cbe55149061         32  Py_Exit\n"}
+,{"stream_name":"stdout","time":67.243934835,"data":"    @     0x7cbe5514671a         32  handle_system_exit\n"}
+,{"stream_name":"stdout","time":67.244234145,"data":"    @     0x7cbe55146530        128  _PyErr_PrintEx\n"}
+,{"stream_name":"stdout","time":67.244546575,"data":"    @     0x7cbe5513f8b6         32  PyRun_SimpleStringFlags\n"}
+,{"stream_name":"stdout","time":67.244860795,"data":"    @     0x7cbe5513c485        352  Py_RunMain\n"}
+,{"stream_name":"stdout","time":67.245162995,"data":"    @     0x7cbe550f3bbc         64  Py_BytesMain\n"}
+,{"stream_name":"stdout","time":67.245167325,"data":"    @     0x7cbe54cbbca8  (unknown)  (unknown)\n"}
+,{"stream_name":"stdout","time":67.245176995,"data":"https://symbolize.stripped_domain/r/?trace=7cbe54d2669c,7cb996db47e4,7cbe54cd1d6f,7cbd9610f0be,7cbd9610f41e,7cbd8f1d4990,7cbd8f1d4a11,7cbd8edf5d33,7cbd8edf237a,7cbd8edf46a1,7cbd8ee412d6,7cbe5509eb05,7cbe55078e45,7cbe5508503c,7cbe55147d06,7cbe5512baf3,7cbe55149060,7cbe55146719,7cbe5514652f,7cbe5513f8b5,7cbe5513c484,7cbe550f3bbb,7cbe54cbbca7\u0026map= \n"}
+,{"stream_name":"stdout","time":67.245186825,"data":"E1016 00:15:41.118465    1068 coredump_hook.cc:301] RAW: Remote crash data gathering hook invoked.\n"}
+,{"stream_name":"stdout","time":67.245189275,"data":"E1016 00:15:41.118479    1068 client.cc:270] RAW: Coroner client retries enabled, will retry for up to 30 sec.\n"}
+,{"stream_name":"stdout","time":67.245202165,"data":"E1016 00:15:41.118482    1068 coredump_hook.cc:396] RAW: Sending fingerprint to remote end.\n"}
+,{"stream_name":"stdout","time":67.245285375,"data":"E1016 00:15:41.118504    1068 coredump_hook.cc:405] RAW: Cannot send fingerprint to Coroner: [NOT_FOUND] stat failed on crash reporting socket /var/google/services/logmanagerd/remote_coredump.socket (Is the listener running?): No such file or directory\n"}
+,{"stream_name":"stdout","time":67.245292445,"data":"E1016 00:15:41.118509    1068 coredump_hook.cc:457] RAW: Dumping core locally.\n"}
+,{"stream_name":"stdout","time":67.245294985,"data":"    @     0x7f066c0d4991        144  torch_xla::runtime::GetComputationClient()\n"}
+,{"stream_name":"stdout","time":67.247234775,"data":"    @     0x7afd4880f41f         16  absl::lts_20230802::log_internal::LogMessageFatal::~LogMessageFatal()\n"}
+,{"stream_name":"stdout","time":67.247444635,"data":"    @     0x794ddb40f41f         16  absl::lts_20230802::log_internal::LogMessageFatal::~LogMessageFatal()\n"}
+,{"stream_name":"stdout","time":67.250577095,"data":"    @     0x7f066c0d4a12         48  torch_xla::runtime::GetComputationClientOrDie()\n"}
+,{"stream_name":"stdout","time":67.252502145,"data":"    @     0x7afd418d4991        144  torch_xla::runtime::GetComputationClient()\n"}
+,{"stream_name":"stdout","time":67.252660075,"data":"    @     0x794dd44d4991        144  torch_xla::runtime::GetComputationClient()\n"}
+,{"stream_name":"stdout","time":67.253258075,"data":"PC: @     0x7c6b4076469c  (unknown)  (unknown)\n"}
+,{"stream_name":"stdout","time":67.253266515,"data":"PC: @     0x7b1e2f75369c  (unknown)  (unknown)\n"}
+,{"stream_name":"stdout","time":67.253269945,"data":"    @     0x7c6696db47e5       1904  (unknown)\n"}
+,{"stream_name":"stdout","time":67.253272345,"data":"    @     0x7c6b4070fd70  1103238336  (unknown)\n"}
+,{"stream_name":"stdout","time":67.253274905,"data":"PC: @     0x7f2a3707b69c  (unknown)  (unknown)\n"}
+,{"stream_name":"stdout","time":67.253277475,"data":"    @     0x7b1956db47e5       1904  (unknown)\n"}
+,{"stream_name":"stdout","time":67.253279985,"data":"PC: @     0x7818f72d969c  (unknown)  (unknown)\n"}
+,{"stream_name":"stdout","time":67.253282695,"data":"    @     0x7b1e2f6fed70  487165248  (unknown)\n"}
+,{"stream_name":"stdout","time":67.253284845,"data":"    @     0x7f255edb47e5       1904  (unknown)\n"}
+,{"stream_name":"stdout","time":67.253287525,"data":"    @     0x78141adb47e5       1904  (unknown)\n"}
+,{"stream_name":"stdout","time":67.253456615,"data":"    @     0x7f2a37026d70  (unknown)  (unknown)\n"}
+,{"stream_name":"stdout","time":67.253489475,"data":"    @     0x7818f7284d70  534995856  (unknown)\n"}
+,{"stream_name":"stdout","time":67.256073595,"data":"    @     0x7f066bcf5d34        128  torch_xla::(anonymous namespace)::PrepareToExit()\n"}
+,{"stream_name":"stdout","time":67.258165214,"data":"    @     0x7afd418d4a12         48  torch_xla::runtime::GetComputationClientOrDie()\n"}
+,{"stream_name":"stdout","time":67.258396885,"data":"    @     0x794dd44d4a12         48  torch_xla::runtime::GetComputationClientOrDie()\n"}
+,{"stream_name":"stdout","time":67.259382265,"data":"    @     0x7c6a81b0f0bf         32  absl::lts_20230802::log_internal::LogMessage::Die()\n"}
+,{"stream_name":"stdout","time":67.259592525,"data":"    @     0x78183870f0bf         32  absl::lts_20230802::log_internal::LogMessage::Die()\n"}
+,{"stream_name":"stdout","time":67.260109474,"data":"    @     0x7b1d70b0f0bf         32  absl::lts_20230802::log_internal::LogMessage::Die()\n"}
+,{"stream_name":"stdout","time":67.260119765,"data":"    @     0x7f297840f0bf         32  absl::lts_20230802::log_internal::LogMessage::Die()\n"}
+,{"stream_name":"stdout","time":67.261911354,"data":"    @     0x7f066bcf237b         80  torch_xla::(anonymous namespace)::PythonScope\u003c\u003e::PythonFunctionBinder\u003c\u003e::Bind\u003c\u003e()::{lambda()#1}::operator()()\n"}
+,{"stream_name":"stdout","time":67.263977184,"data":"    @     0x7afd414f5d34        128  torch_xla::(anonymous namespace)::PrepareToExit()\n"}
+,{"stream_name":"stdout","time":67.264236974,"data":"    @     0x794dd40f5d34        128  torch_xla::(anonymous namespace)::PrepareToExit()\n"}
+,{"stream_name":"stdout","time":67.265247094,"data":"    @     0x7c6a81b0f41f         16  absl::lts_20230802::log_internal::LogMessageFatal::~LogMessageFatal()\n"}
+,{"stream_name":"stdout","time":67.265463034,"data":"    @     0x78183870f41f         16  absl::lts_20230802::log_internal::LogMessageFatal::~LogMessageFatal()\n"}
+,{"stream_name":"stdout","time":67.266342564,"data":"    @     0x7b1d70b0f41f         16  absl::lts_20230802::log_internal::LogMessageFatal::~LogMessageFatal()\n"}
+,{"stream_name":"stdout","time":67.266367674,"data":"    @     0x7f297840f41f         16  absl::lts_20230802::log_internal::LogMessageFatal::~LogMessageFatal()\n"}
+,{"stream_name":"stdout","time":67.267797234,"data":"    @     0x7f066bcf46a2         48  pybind11::cpp_function::initialize\u003c\u003e()::{lambda()#3}::_FUN()\n"}
+,{"stream_name":"stdout","time":67.269856974,"data":"    @     0x7afd414f237b         80  torch_xla::(anonymous namespace)::PythonScope\u003c\u003e::PythonFunctionBinder\u003c\u003e::Bind\u003c\u003e()::{lambda()#1}::operator()()\n"}
+,{"stream_name":"stdout","time":67.270087144,"data":"    @     0x794dd40f237b         80  torch_xla::(anonymous namespace)::PythonScope\u003c\u003e::PythonFunctionBinder\u003c\u003e::Bind\u003c\u003e()::{lambda()#1}::operator()()\n"}
+,{"stream_name":"stdout","time":67.271196704,"data":"    @     0x7c6a7abd4991        144  torch_xla::runtime::GetComputationClient()\n"}
+,{"stream_name":"stdout","time":67.271478954,"data":"    @     0x7818317d4991        144  torch_xla::runtime::GetComputationClient()\n"}
+,{"stream_name":"stdout","time":67.272834864,"data":"    @     0x7b1d69bd4991        144  torch_xla::runtime::GetComputationClient()\n"}
+,{"stream_name":"stdout","time":67.272848484,"data":"    @     0x7f29714d4991        144  torch_xla::runtime::GetComputationClient()\n"}
+,{"stream_name":"stdout","time":67.273763784,"data":"    @     0x7f066bd412d7        688  pybind11::cpp_function::dispatcher()\n"}
+,{"stream_name":"stdout","time":67.274140354,"data":"    @     0x7f0731fd7b06         48  cfunction_call\n"}
+,{"stream_name":"stdout","time":67.274521604,"data":"    @     0x7f0731fb1e46         80  _PyObject_MakeTpCall\n"}
+,{"stream_name":"stdout","time":67.274845704,"data":"    @     0x7f0731fbe03d        464  _PyEval_EvalFrameDefault\n"}
+,{"stream_name":"stdout","time":67.275242994,"data":"    @     0x7f0732080d07         48  atexit_callfuncs\n"}
+,{"stream_name":"stdout","time":67.275630354,"data":"    @     0x7f0732064af4        144  Py_FinalizeEx\n"}
+,{"stream_name":"stdout","time":67.275839844,"data":"    @     0x7afd414f46a2         48  pybind11::cpp_function::initialize\u003c\u003e()::{lambda()#3}::_FUN()\n"}
+,{"stream_name":"stdout","time":67.276013494,"data":"    @     0x794dd40f46a2         48  pybind11::cpp_function::initialize\u003c\u003e()::{lambda()#3}::_FUN()\n"}
+,{"stream_name":"stdout","time":67.276031134,"data":"    @     0x7f0732082061         32  Py_Exit\n"}
+,{"stream_name":"stdout","time":67.276400214,"data":"    @     0x7f073207f71a         32  handle_system_exit\n"}
+,{"stream_name":"stdout","time":67.276724704,"data":"    @     0x7f073207f530        128  _PyErr_PrintEx\n"}
+,{"stream_name":"stdout","time":67.277084354,"data":"    @     0x7c6a7abd4a12         48  torch_xla::runtime::GetComputationClientOrDie()\n"}
+,{"stream_name":"stdout","time":67.277092624,"data":"    @     0x7f07320788b6         32  PyRun_SimpleStringFlags\n"}
+,{"stream_name":"stdout","time":67.277335344,"data":"    @     0x7818317d4a12         48  torch_xla::runtime::GetComputationClientOrDie()\n"}
+,{"stream_name":"stdout","time":67.277468834,"data":"    @     0x7f0732075485        352  Py_RunMain\n"}
+,{"stream_name":"stdout","time":67.277771434,"data":"    @     0x7f073202cbbc         64  Py_BytesMain\n"}
+,{"stream_name":"stdout","time":67.277776294,"data":"    @     0x7f0731bf4ca8  (unknown)  (unknown)\n"}
+,{"stream_name":"stdout","time":67.277787214,"data":"https://symbolize.stripped_domain/r/?trace=7f0731c5f69c,7f025adb47e4,7f0731c0ad6f,7f067300f0be,7f067300f41e,7f066c0d4990,7f066c0d4a11,7f066bcf5d33,7f066bcf237a,7f066bcf46a1,7f066bd412d6,7f0731fd7b05,7f0731fb1e45,7f0731fbe03c,7f0732080d06,7f0732064af3,7f0732082060,7f073207f719,7f073207f52f,7f07320788b5,7f0732075484,7f073202cbbb,7f0731bf4ca7\u0026map= \n"}
+,{"stream_name":"stdout","time":67.277790864,"data":"E1016 00:15:41.151064    1070 coredump_hook.cc:301] RAW: Remote crash data gathering hook invoked.\n"}
+,{"stream_name":"stdout","time":67.277793194,"data":"E1016 00:15:41.151076    1070 client.cc:270] RAW: Coroner client retries enabled, will retry for up to 30 sec.\n"}
+,{"stream_name":"stdout","time":67.277795544,"data":"E1016 00:15:41.151079    1070 coredump_hook.cc:396] RAW: Sending fingerprint to remote end.\n"}
+,{"stream_name":"stdout","time":67.277858424,"data":"E1016 00:15:41.151101    1070 coredump_hook.cc:405] RAW: Cannot send fingerprint to Coroner: [NOT_FOUND] stat failed on crash reporting socket /var/google/services/logmanagerd/remote_coredump.socket (Is the listener running?): No such file or directory\n"}
+,{"stream_name":"stdout","time":67.277862564,"data":"E1016 00:15:41.151107    1070 coredump_hook.cc:457] RAW: Dumping core locally.\n"}
+,{"stream_name":"stdout","time":67.279219274,"data":"    @     0x7f29714d4a12         48  torch_xla::runtime::GetComputationClientOrDie()\n"}
+,{"stream_name":"stdout","time":67.279237154,"data":"    @     0x7b1d69bd4a12         48  torch_xla::runtime::GetComputationClientOrDie()\n"}
+,{"stream_name":"stdout","time":67.281544764,"data":"    @     0x7afd415412d7        688  pybind11::cpp_function::dispatcher()\n"}
+,{"stream_name":"stdout","time":67.281807034,"data":"    @     0x794dd41412d7        688  pybind11::cpp_function::dispatcher()\n"}
+,{"stream_name":"stdout","time":67.282003384,"data":"    @     0x7afe077ceb06         48  cfunction_call\n"}
+,{"stream_name":"stdout","time":67.282284653,"data":"    @     0x794e9a383b06         48  cfunction_call\n"}
+,{"stream_name":"stdout","time":67.282291864,"data":"    @     0x7afe077a8e46         80  _PyObject_MakeTpCall\n"}
+,{"stream_name":"stdout","time":67.282486473,"data":"    @     0x794e9a35de46         80  _PyObject_MakeTpCall\n"}
+,{"stream_name":"stdout","time":67.282724913,"data":"    @     0x7afe077b503d        464  _PyEval_EvalFrameDefault\n"}
+,{"stream_name":"stdout","time":67.282762324,"data":"    @     0x7c6a7a7f5d34        128  torch_xla::(anonymous namespace)::PrepareToExit()\n"}
+,{"stream_name":"stdout","time":67.282921224,"data":"    @     0x794e9a36a03d        464  _PyEval_EvalFrameDefault\n"}
+,{"stream_name":"stdout","time":67.282935184,"data":"    @     0x7818313f5d34        128  torch_xla::(anonymous namespace)::PrepareToExit()\n"}
+,{"stream_name":"stdout","time":67.283084184,"data":"    @     0x7afe07877d07         48  atexit_callfuncs\n"}
+,{"stream_name":"stdout","time":67.283279013,"data":"    @     0x794e9a42cd07         48  atexit_callfuncs\n"}
+,{"stream_name":"stdout","time":67.283446224,"data":"    @     0x7afe0785baf4        144  Py_FinalizeEx\n"}
+,{"stream_name":"stdout","time":67.283680293,"data":"    @     0x794e9a410af4        144  Py_FinalizeEx\n"}
+,{"stream_name":"stdout","time":67.283798644,"data":"    @     0x7afe07879061         32  Py_Exit\n"}
+,{"stream_name":"stdout","time":67.284052824,"data":"    @     0x794e9a42e061         32  Py_Exit\n"}
+,{"stream_name":"stdout","time":67.284132084,"data":"    @     0x7afe0787671a         32  handle_system_exit\n"}
+,{"stream_name":"stdout","time":67.284453193,"data":"    @     0x794e9a42b71a         32  handle_system_exit\n"}
+,{"stream_name":"stdout","time":67.284565373,"data":"    @     0x7afe07876530        128  _PyErr_PrintEx\n"}
+,{"stream_name":"stdout","time":67.284827704,"data":"    @     0x794e9a42b530        128  _PyErr_PrintEx\n"}
+,{"stream_name":"stdout","time":67.284943324,"data":"    @     0x7afe0786f8b6         32  PyRun_SimpleStringFlags\n"}
+,{"stream_name":"stdout","time":67.285179073,"data":"    @     0x794e9a4248b6         32  PyRun_SimpleStringFlags\n"}
+,{"stream_name":"stdout","time":67.285183964,"data":"    @     0x7b1d697f5d34        128  torch_xla::(anonymous namespace)::PrepareToExit()\n"}
+,{"stream_name":"stdout","time":67.285186513,"data":"    @     0x7f29710f5d34        128  torch_xla::(anonymous namespace)::PrepareToExit()\n"}
+,{"stream_name":"stdout","time":67.285283753,"data":"    @     0x7afe0786c485        352  Py_RunMain\n"}
+,{"stream_name":"stdout","time":67.285547284,"data":"    @     0x794e9a421485        352  Py_RunMain\n"}
+,{"stream_name":"stdout","time":67.285677173,"data":"    @     0x7afe07823bbc         64  Py_BytesMain\n"}
+,{"stream_name":"stdout","time":67.285682293,"data":"    @     0x7afe073ebca8  (unknown)  (unknown)\n"}
+,{"stream_name":"stdout","time":67.285685324,"data":"https://symbolize.stripped_domain/r/?trace=7afe0745669c,7af92adb47e4,7afe07401d6f,7afd4880f0be,7afd4880f41e,7afd418d4990,7afd418d4a11,7afd414f5d33,7afd414f237a,7afd414f46a1,7afd415412d6,7afe077ceb05,7afe077a8e45,7afe077b503c,7afe07877d06,7afe0785baf3,7afe07879060,7afe07876719,7afe0787652f,7afe0786f8b5,7afe0786c484,7afe07823bbb,7afe073ebca7\u0026map= \n"}
+,{"stream_name":"stdout","time":67.285688644,"data":"E1016 00:15:41.158950    1062 coredump_hook.cc:301] RAW: Remote crash data gathering hook invoked.\n"}
+,{"stream_name":"stdout","time":67.285691164,"data":"E1016 00:15:41.158968    1062 client.cc:270] RAW: Coroner client retries enabled, will retry for up to 30 sec.\n"}
+,{"stream_name":"stdout","time":67.285694413,"data":"E1016 00:15:41.158972    1062 coredump_hook.cc:396] RAW: Sending fingerprint to remote end.\n"}
+,{"stream_name":"stdout","time":67.285763513,"data":"E1016 00:15:41.158995    1062 coredump_hook.cc:405] RAW: Cannot send fingerprint to Coroner: [NOT_FOUND] stat failed on crash reporting socket /var/google/services/logmanagerd/remote_coredump.socket (Is the listener running?): No such file or directory\n"}
+,{"stream_name":"stdout","time":67.285767813,"data":"E1016 00:15:41.159001    1062 coredump_hook.cc:457] RAW: Dumping core locally.\n"}
+,{"stream_name":"stdout","time":67.285961153,"data":"    @     0x794e9a3d8bbc         64  Py_BytesMain\n"}
+,{"stream_name":"stdout","time":67.285967744,"data":"    @     0x794e99fa0ca8  (unknown)  (unknown)\n"}
+,{"stream_name":"stdout","time":67.285978733,"data":"https://symbolize.stripped_domain/r/?trace=794e9a00b69c,7949c2db47e4,794e99fb6d6f,794ddb40f0be,794ddb40f41e,794dd44d4990,794dd44d4a11,794dd40f5d33,794dd40f237a,794dd40f46a1,794dd41412d6,794e9a383b05,794e9a35de45,794e9a36a03c,794e9a42cd06,794e9a410af3,794e9a42e060,794e9a42b719,794e9a42b52f,794e9a4248b5,794e9a421484,794e9a3d8bbb,794e99fa0ca7\u0026map= \n"}
+,{"stream_name":"stdout","time":67.285982264,"data":"E1016 00:15:41.159193    1071 coredump_hook.cc:301] RAW: Remote crash data gathering hook invoked.\n"}
+,{"stream_name":"stdout","time":67.285985004,"data":"E1016 00:15:41.159208    1071 client.cc:270] RAW: Coroner client retries enabled, will retry for up to 30 sec.\n"}
+,{"stream_name":"stdout","time":67.285987744,"data":"E1016 00:15:41.159212    1071 coredump_hook.cc:396] RAW: Sending fingerprint to remote end.\n"}
+,{"stream_name":"stdout","time":67.285991544,"data":"E1016 00:15:41.159236    1071 coredump_hook.cc:405] RAW: Cannot send fingerprint to Coroner: [NOT_FOUND] stat failed on crash reporting socket /var/google/services/logmanagerd/remote_coredump.socket (Is the listener running?): No such file or directory\n"}
+,{"stream_name":"stdout","time":67.285994433,"data":"E1016 00:15:41.159240    1071 coredump_hook.cc:457] RAW: Dumping core locally.\n"}
+,{"stream_name":"stdout","time":67.288433973,"data":"    @     0x7c6a7a7f237b         80  torch_xla::(anonymous namespace)::PythonScope\u003c\u003e::PythonFunctionBinder\u003c\u003e::Bind\u003c\u003e()::{lambda()#1}::operator()()\n"}
+,{"stream_name":"stdout","time":67.288671723,"data":"    @     0x7818313f237b         80  torch_xla::(anonymous namespace)::PythonScope\u003c\u003e::PythonFunctionBinder\u003c\u003e::Bind\u003c\u003e()::{lambda()#1}::operator()()\n"}
+,{"stream_name":"stdout","time":67.291519623,"data":"    @     0x7b1d697f237b         80  torch_xla::(anonymous namespace)::PythonScope\u003c\u003e::PythonFunctionBinder\u003c\u003e::Bind\u003c\u003e()::{lambda()#1}::operator()()\n"}
+,{"stream_name":"stdout","time":67.291533323,"data":"    @     0x7f29710f237b         80  torch_xla::(anonymous namespace)::PythonScope\u003c\u003e::PythonFunctionBinder\u003c\u003e::Bind\u003c\u003e()::{lambda()#1}::operator()()\n"}
+,{"stream_name":"stdout","time":67.294331463,"data":"    @     0x7c6a7a7f46a2         48  pybind11::cpp_function::initialize\u003c\u003e()::{lambda()#3}::_FUN()\n"}
+,{"stream_name":"stdout","time":67.294606473,"data":"    @     0x7818313f46a2         48  pybind11::cpp_function::initialize\u003c\u003e()::{lambda()#3}::_FUN()\n"}
+,{"stream_name":"stdout","time":67.297928823,"data":"    @     0x7f29710f46a2         48  pybind11::cpp_function::initialize\u003c\u003e()::{lambda()#3}::_FUN()\n"}
+,{"stream_name":"stdout","time":67.297943263,"data":"    @     0x7b1d697f46a2         48  pybind11::cpp_function::initialize\u003c\u003e()::{lambda()#3}::_FUN()\n"}
+,{"stream_name":"stdout","time":67.300105813,"data":"    @     0x7c6a7a8412d7        688  pybind11::cpp_function::dispatcher()\n"}
+,{"stream_name":"stdout","time":67.300382543,"data":"    @     0x7818314412d7        688  pybind11::cpp_function::dispatcher()\n"}
+,{"stream_name":"stdout","time":67.300529673,"data":"    @     0x7c6b40adcb06         48  cfunction_call\n"}
+,{"stream_name":"stdout","time":67.300761533,"data":"    @     0x7818f7651b06         48  cfunction_call\n"}
+,{"stream_name":"stdout","time":67.300873373,"data":"    @     0x7c6b40ab6e46         80  _PyObject_MakeTpCall\n"}
+,{"stream_name":"stdout","time":67.301110813,"data":"    @     0x7818f762be46         80  _PyObject_MakeTpCall\n"}
+,{"stream_name":"stdout","time":67.301242683,"data":"    @     0x7c6b40ac303d        464  _PyEval_EvalFrameDefault\n"}
+,{"stream_name":"stdout","time":67.301488003,"data":"    @     0x7818f763803d        464  _PyEval_EvalFrameDefault\n"}
+,{"stream_name":"stdout","time":67.301630373,"data":"    @     0x7c6b40b85d07         48  atexit_callfuncs\n"}
+,{"stream_name":"stdout","time":67.301845053,"data":"    @     0x7818f76fad07         48  atexit_callfuncs\n"}
+,{"stream_name":"stdout","time":67.301996303,"data":"    @     0x7c6b40b69af4        144  Py_FinalizeEx\n"}
+,{"stream_name":"stdout","time":67.302195753,"data":"    @     0x7818f76deaf4        144  Py_FinalizeEx\n"}
+,{"stream_name":"stdout","time":67.302342743,"data":"    @     0x7c6b40b87061         32  Py_Exit\n"}
+,{"stream_name":"stdout","time":67.302580483,"data":"    @     0x7818f76fc061         32  Py_Exit\n"}
+,{"stream_name":"stdout","time":67.302724823,"data":"    @     0x7c6b40b8471a         32  handle_system_exit\n"}
+,{"stream_name":"stdout","time":67.302940513,"data":"    @     0x7818f76f971a         32  handle_system_exit\n"}
+,{"stream_name":"stdout","time":67.303086693,"data":"    @     0x7c6b40b84530        128  _PyErr_PrintEx\n"}
+,{"stream_name":"stdout","time":67.303304993,"data":"    @     0x7818f76f9530        128  _PyErr_PrintEx\n"}
+,{"stream_name":"stdout","time":67.303442453,"data":"    @     0x7c6b40b7d8b6         32  PyRun_SimpleStringFlags\n"}
+,{"stream_name":"stdout","time":67.303680963,"data":"    @     0x7818f76f28b6         32  PyRun_SimpleStringFlags\n"}
+,{"stream_name":"stdout","time":67.303812963,"data":"    @     0x7c6b40b7a485        352  Py_RunMain\n"}
+,{"stream_name":"stdout","time":67.304047623,"data":"    @     0x7818f76ef485        352  Py_RunMain\n"}
+,{"stream_name":"stdout","time":67.304178563,"data":"    @     0x7c6b40b31bbc         64  Py_BytesMain\n"}
+,{"stream_name":"stdout","time":67.304184493,"data":"    @     0x7c6b406f9ca8  (unknown)  (unknown)\n"}
+,{"stream_name":"stdout","time":67.304187393,"data":"https://symbolize.stripped_domain/r/?trace=7c6b4076469c,7c6696db47e4,7c6b4070fd6f,7c6a81b0f0be,7c6a81b0f41e,7c6a7abd4990,7c6a7abd4a11,7c6a7a7f5d33,7c6a7a7f237a,7c6a7a7f46a1,7c6a7a8412d6,7c6b40adcb05,7c6b40ab6e45,7c6b40ac303c,7c6b40b85d06,7c6b40b69af3,7c6b40b87060,7c6b40b84719,7c6b40b8452f,7c6b40b7d8b5,7c6b40b7a484,7c6b40b31bbb,7c6b406f9ca7\u0026map= \n"}
+,{"stream_name":"stdout","time":67.304220113,"data":"E1016 00:15:41.177463    1069 coredump_hook.cc:301] RAW: Remote crash data gathering hook invoked.\n"}
+,{"stream_name":"stdout","time":67.304223853,"data":"E1016 00:15:41.177484    1069 client.cc:270] RAW: Coroner client retries enabled, will retry for up to 30 sec.\n"}
+,{"stream_name":"stdout","time":67.304226523,"data":"E1016 00:15:41.177487    1069 coredump_hook.cc:396] RAW: Sending fingerprint to remote end.\n"}
+,{"stream_name":"stdout","time":67.304242283,"data":"E1016 00:15:41.177513    1069 coredump_hook.cc:405] RAW: Cannot send fingerprint to Coroner: [NOT_FOUND] stat failed on crash reporting socket /var/google/services/logmanagerd/remote_coredump.socket (Is the listener running?): No such file or directory\n"}
+,{"stream_name":"stdout","time":67.304245533,"data":"E1016 00:15:41.177517    1069 coredump_hook.cc:457] RAW: Dumping core locally.\n"}
+,{"stream_name":"stdout","time":67.304248123,"data":"    @     0x7f29711412d7        688  pybind11::cpp_function::dispatcher()\n"}
+,{"stream_name":"stdout","time":67.304250593,"data":"    @     0x7b1d698412d7        688  pybind11::cpp_function::dispatcher()\n"}
+,{"stream_name":"stdout","time":67.304415463,"data":"    @     0x7818f76a6bbc         64  Py_BytesMain\n"}
+,{"stream_name":"stdout","time":67.304424483,"data":"    @     0x7818f726eca8  (unknown)  (unknown)\n"}
+,{"stream_name":"stdout","time":67.304427363,"data":"https://symbolize.stripped_domain/r/?trace=7818f72d969c,78141adb47e4,7818f7284d6f,78183870f0be,78183870f41e,7818317d4990,7818317d4a11,7818313f5d33,7818313f237a,7818313f46a1,7818314412d6,7818f7651b05,7818f762be45,7818f763803c,7818f76fad06,7818f76deaf3,7818f76fc060,7818f76f9719,7818f76f952f,7818f76f28b5,7818f76ef484,7818f76a6bbb,7818f726eca7\u0026map= \n"}
+,{"stream_name":"stdout","time":67.304438723,"data":"E1016 00:15:41.177702    1066 coredump_hook.cc:301] RAW: Remote crash data gathering hook invoked.\n"}
+,{"stream_name":"stdout","time":67.304462163,"data":"E1016 00:15:41.177718    1066 client.cc:270] RAW: Coroner client retries enabled, will retry for up to 30 sec.\n"}
+,{"stream_name":"stdout","time":67.304473323,"data":"E1016 00:15:41.177723    1066 coredump_hook.cc:396] RAW: Sending fingerprint to remote end.\n"}
+,{"stream_name":"stdout","time":67.304486293,"data":"E1016 00:15:41.177747    1066 coredump_hook.cc:405] RAW: Cannot send fingerprint to Coroner: [NOT_FOUND] stat failed on crash reporting socket /var/google/services/logmanagerd/remote_coredump.socket (Is the listener running?): No such file or directory\n"}
+,{"stream_name":"stdout","time":67.304492873,"data":"E1016 00:15:41.177752    1066 coredump_hook.cc:457] RAW: Dumping core locally.\n"}
+,{"stream_name":"stdout","time":67.304866233,"data":"    @     0x7b1e2facbb06         48  cfunction_call\n"}
+,{"stream_name":"stdout","time":67.304881023,"data":"    @     0x7f2a373f3b06         48  cfunction_call\n"}
+,{"stream_name":"stdout","time":67.305231973,"data":"    @     0x7b1e2faa5e46         80  _PyObject_MakeTpCall\n"}
+,{"stream_name":"stdout","time":67.305240813,"data":"    @     0x7f2a373cde46         80  _PyObject_MakeTpCall\n"}
+,{"stream_name":"stdout","time":67.305590163,"data":"    @     0x7b1e2fab203d        464  _PyEval_EvalFrameDefault\n"}
+,{"stream_name":"stdout","time":67.305604873,"data":"    @     0x7f2a373da03d        464  _PyEval_EvalFrameDefault\n"}
+,{"stream_name":"stdout","time":67.305912753,"data":"    @     0x7f2a3749cd07         48  atexit_callfuncs\n"}
+,{"stream_name":"stdout","time":67.305924533,"data":"    @     0x7b1e2fb74d07         48  atexit_callfuncs\n"}
+,{"stream_name":"stdout","time":67.306248233,"data":"    @     0x7f2a37480af4        144  Py_FinalizeEx\n"}
+,{"stream_name":"stdout","time":67.306254733,"data":"    @     0x7b1e2fb58af4        144  Py_FinalizeEx\n"}
+,{"stream_name":"stdout","time":67.306637123,"data":"    @     0x7f2a3749e061         32  Py_Exit\n"}
+,{"stream_name":"stdout","time":67.306647883,"data":"    @     0x7b1e2fb76061         32  Py_Exit\n"}
+,{"stream_name":"stdout","time":67.307040833,"data":"    @     0x7b1e2fb7371a         32  handle_system_exit\n"}
+,{"stream_name":"stdout","time":67.307049753,"data":"    @     0x7f2a3749b71a         32  handle_system_exit\n"}
+,{"stream_name":"stdout","time":67.307418683,"data":"    @     0x7f2a3749b530        128  _PyErr_PrintEx\n"}
+,{"stream_name":"stdout","time":67.307427813,"data":"    @     0x7b1e2fb73530        128  _PyErr_PrintEx\n"}
+,{"stream_name":"stdout","time":67.307819583,"data":"    @     0x7b1e2fb6c8b6         32  PyRun_SimpleStringFlags\n"}
+,{"stream_name":"stdout","time":67.307826143,"data":"    @     0x7f2a374948b6         32  PyRun_SimpleStringFlags\n"}
+,{"stream_name":"stdout","time":67.308190963,"data":"    @     0x7f2a37491485        352  Py_RunMain\n"}
+,{"stream_name":"stdout","time":67.308197183,"data":"    @     0x7b1e2fb69485        352  Py_RunMain\n"}
+,{"stream_name":"stdout","time":67.308558332,"data":"    @     0x7b1e2fb20bbc         64  Py_BytesMain\n"}
+,{"stream_name":"stdout","time":67.308568952,"data":"    @     0x7f2a37448bbc         64  Py_BytesMain\n"}
+,{"stream_name":"stdout","time":67.308571543,"data":"    @     0x7b1e2f6e8ca8  (unknown)  (unknown)\n"}
+,{"stream_name":"stdout","time":67.308582512,"data":"https://symbolize.stripped_domain/r/?trace=    @     0x7f2a37010ca8  (unknown)  (unknown)\n"}
+,{"stream_name":"stdout","time":67.308595332,"data":"7b1e2f75369c,7b1956db47e4,https://symbolize.stripped_domain/r/?trace=7b1e2f6fed6f,7b1d70b0f0be,7b1d70b0f41e,7b1d69bd4990,7f2a3707b69c,7b1d69bd4a11,7f255edb47e4,7b1d697f5d33,7b1d697f237a,7f2a37026d6f,7b1d697f46a1,7f297840f0be,7b1d698412d6,7f297840f41e,7b1e2facbb05,7f29714d4990,7b1e2faa5e45,7f29714d4a11,7b1e2fab203c,7f29710f5d33,7b1e2fb74d06,7f29710f237a,7b1e2fb58af3,7f29710f46a1,7b1e2fb76060,7f29711412d6,7b1e2fb73719,7f2a373f3b05,7b1e2fb7352f,7b1e2fb6c8b5,7f2a373cde45,7b1e2fb69484,7f2a373da03c,7b1e2fb20bbb,7f2a3749cd06,7b1e2f6e8ca7\u0026map=7f2a37480af3,7f2a3749e060, \n"}
+,{"stream_name":"stdout","time":67.308600512,"data":"7f2a3749b719,7f2a3749b52f,7f2a374948b5,7f2a37491484,7f2a37448bbb,7f2a37010ca7\u0026map= \n"}
+,{"stream_name":"stdout","time":67.308603163,"data":"E1016 00:15:41.181850    1065 coredump_hook.cc:301] RAW: Remote crash data gathering hook invoked.\n"}
+,{"stream_name":"stdout","time":67.308606183,"data":"E1016 00:15:41.181864    1065 client.cc:270] RAW: Coroner client retries enabled, will retry for up to 30 sec.\n"}
+,{"stream_name":"stdout","time":67.308608672,"data":"E1016 00:15:41.181868    1065 coredump_hook.cc:396] RAW: Sending fingerprint to remote end.\n"}
+,{"stream_name":"stdout","time":67.308611252,"data":"E1016 00:15:41.181860    1067 coredump_hook.cc:301] RAW: Remote crash data gathering hook invoked.\n"}
+,{"stream_name":"stdout","time":67.308614203,"data":"E1016 00:15:41.181881    1067 client.cc:270] RAW: Coroner client retries enabled, will retry for up to 30 sec.\n"}
+,{"stream_name":"stdout","time":67.308616872,"data":"E1016 00:15:41.181885    1067 coredump_hook.cc:396] RAW: Sending fingerprint to remote end.\n"}
+,{"stream_name":"stdout","time":67.308688163,"data":"E1016 00:15:41.181892    1065 coredump_hook.cc:405] RAW: Cannot send fingerprint to Coroner: [NOT_FOUND] stat failed on crash reporting socket /var/google/services/logmanagerd/remote_coredump.socket (Is the listener running?): No such file or directory\n"}
+,{"stream_name":"stdout","time":67.308696163,"data":"E1016 00:15:41.181895    1065 coredump_hook.cc:457] RAW: Dumping core locally.\n"}
+,{"stream_name":"stdout","time":67.308699832,"data":"E1016 00:15:41.181912    1067 coredump_hook.cc:405] RAW: Cannot send fingerprint to Coroner: [NOT_FOUND] stat failed on crash reporting socket /var/google/services/logmanagerd/remote_coredump.socket (Is the listener running?): No such file or directory\n"}
+,{"stream_name":"stdout","time":67.308702763,"data":"E1016 00:15:41.181916    1067 coredump_hook.cc:457] RAW: Dumping core locally.\n"}
+,{"stream_name":"stdout","time":68.730764177,"data":"E1016 00:15:42.603057    1068 process_state.cc:808] RAW: Raising signal 6 with default behavior\n"}
+,{"stream_name":"stdout","time":68.764752736,"data":"E1016 00:15:42.637870    1070 process_state.cc:808] RAW: Raising signal 6 with default behavior\n"}
+,{"stream_name":"stdout","time":68.787940555,"data":"E1016 00:15:42.660973    1065 process_state.cc:808] RAW: Raising signal 6 with default behavior\n"}
+,{"stream_name":"stdout","time":68.832100124,"data":"E1016 00:15:42.705239    1067 process_state.cc:808] RAW: Raising signal 6 with default behavior\n"}
+,{"stream_name":"stdout","time":68.869463972,"data":"E1016 00:15:42.742598    1069 process_state.cc:808] RAW: Raising signal 6 with default behavior\n"}
+,{"stream_name":"stdout","time":68.92929451,"data":"E1016 00:15:42.802356    1066 process_state.cc:808] RAW: Raising signal 6 with default behavior\n"}
+,{"stream_name":"stdout","time":68.9322794,"data":"E1016 00:15:42.805425    1071 process_state.cc:808] RAW: Raising signal 6 with default behavior\n"}
+,{"stream_name":"stdout","time":68.93306801,"data":"E1016 00:15:42.806148    1062 process_state.cc:808] RAW: Raising signal 6 with default behavior\n"}
+,{"stream_name":"stdout","time":68.981334088,"data":"concurrent.futures.process._RemoteTraceback: \n"}
+,{"stream_name":"stdout","time":68.981366948,"data":"\"\"\"\n"}
+,{"stream_name":"stdout","time":68.981373118,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stdout","time":68.981375998,"data":"  File \"/usr/local/lib/python3.12/concurrent/futures/process.py\", line 264, in _process_worker\n"}
+,{"stream_name":"stdout","time":68.981378898,"data":"    r = call_item.fn(*call_item.args, **call_item.kwargs)\n"}
+,{"stream_name":"stdout","time":68.981381418,"data":"        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stdout","time":68.981383788,"data":"  File \"/usr/local/lib/python3.12/concurrent/futures/process.py\", line 213, in _process_chunk\n"}
+,{"stream_name":"stdout","time":68.981386268,"data":"    return [fn(*args) for args in chunk]\n"}
+,{"stream_name":"stdout","time":68.981388778,"data":"            ^^^^^^^^^\n"}
+,{"stream_name":"stdout","time":68.981391128,"data":"  File \"/usr/local/lib/python3.12/site-packages/torch_xla/_internal/pjrt.py\", line 58, in _run_thread_per_device\n"}
+,{"stream_name":"stdout","time":68.981393758,"data":"    initializer_fn(local_rank, local_world_size)\n"}
+,{"stream_name":"stdout","time":68.981396168,"data":"  File \"/usr/local/lib/python3.12/site-packages/torch_xla/_internal/pjrt.py\", line 121, in initialize_multiprocess\n"}
+,{"stream_name":"stdout","time":68.981398828,"data":"    devices = xm.get_xla_supported_devices()\n"}
+,{"stream_name":"stdout","time":68.981401248,"data":"              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stdout","time":68.981403778,"data":"  File \"/usr/local/lib/python3.12/site-packages/torch_xla/core/xla_model.py\", line 79, in get_xla_supported_devices\n"}
+,{"stream_name":"stdout","time":68.981406338,"data":"    devices = torch_xla._XLAC._xla_get_devices()\n"}
+,{"stream_name":"stdout","time":68.981408888,"data":"              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stdout","time":68.981415318,"data":"RuntimeError: Bad StatusOr access: UNKNOWN: TPU initialization failed: Invalid --2a886c8_slice_builder_worker_addresses specified. Expected 8 worker addresses, got 1.\n"}
+,{"stream_name":"stdout","time":68.981421268,"data":"\"\"\"\n"}
+,{"stream_name":"stdout","time":68.981424128,"data":"\n"}
+,{"stream_name":"stdout","time":68.981426648,"data":"The above exception was the direct cause of the following exception:\n"}
+,{"stream_name":"stdout","time":68.981429098,"data":"\n"}
+,{"stream_name":"stdout","time":68.981465968,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stdout","time":68.981473108,"data":"  File \"/kaggle/input/datasets/esubalewchekol/geez-morphology-tpu-v2/model/model/train_tpu.py\", line 591, in \u003cmodule\u003e\n"}
+,{"stream_name":"stdout","time":68.982871198,"data":"    sys.exit(main())\n"}
+,{"stream_name":"stdout","time":68.982882958,"data":"             ^^^^^^\n"}
+,{"stream_name":"stdout","time":68.982885688,"data":"  File \"/kaggle/input/datasets/esubalewchekol/geez-morphology-tpu-v2/model/model/train_tpu.py\", line 581, in main\n"}
+,{"stream_name":"stdout","time":68.984036968,"data":"    torch_xla.launch(_mp_fn, args=(args,))\n"}
+,{"stream_name":"stdout","time":68.984044118,"data":"  File \"/usr/local/lib/python3.12/site-packages/torch_xla/torch_xla.py\", line 266, in launch\n"}
+,{"stream_name":"stdout","time":68.984165608,"data":"    xmp.spawn(fn, args=args, nprocs=nprocs, start_method=start_method)\n"}
+,{"stream_name":"stdout","time":68.984180008,"data":"  File \"/usr/local/lib/python3.12/site-packages/torch_xla/distributed/xla_multiprocessing.py\", line 43, in spawn\n"}
+,{"stream_name":"stdout","time":68.984261058,"data":"    return pjrt.spawn(fn, nprocs, start_method, args)\n"}
+,{"stream_name":"stdout","time":68.984268498,"data":"           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stdout","time":68.984272028,"data":"  File \"/usr/local/lib/python3.12/site-packages/torch_xla/_internal/pjrt.py\", line 213, in spawn\n"}
+,{"stream_name":"stdout","time":68.984380268,"data":"    run_multiprocess(spawn_fn, start_method=start_method)\n"}
+,{"stream_name":"stdout","time":68.984387508,"data":"  File \"/usr/local/lib/python3.12/site-packages/torch_xla/_internal/pjrt.py\", line 169, in run_multiprocess\n"}
+,{"stream_name":"stdout","time":68.984461328,"data":"    replica_results = list(\n"}
+,{"stream_name":"stdout","time":68.984464578,"data":"                      ^^^^^\n"}
+,{"stream_name":"stdout","time":68.984467118,"data":"  File \"/usr/local/lib/python3.12/site-packages/torch_xla/_internal/pjrt.py\", line 171, in \u003cgenexpr\u003e\n"}
+,{"stream_name":"stdout","time":68.984536528,"data":"    result.items() for result in process_results))\n"}
+,{"stream_name":"stdout","time":68.984558028,"data":"                                 ^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stdout","time":68.984560878,"data":"  File \"/usr/local/lib/python3.12/concurrent/futures/process.py\", line 636, in _chain_from_iterable_of_lists\n"}
+,{"stream_name":"stdout","time":68.984759448,"data":"    for element in iterable:\n"}
+,{"stream_name":"stdout","time":68.984763448,"data":"                   ^^^^^^^^\n"}
+,{"stream_name":"stdout","time":68.984765868,"data":"  File \"/usr/local/lib/python3.12/concurrent/futures/_base.py\", line 619, in result_iterator\n"}
+,{"stream_name":"stdout","time":68.984891818,"data":"    yield _result_or_cancel(fs.pop())\n"}
+,{"stream_name":"stdout","time":68.984908588,"data":"          ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stdout","time":68.984914438,"data":"  File \"/usr/local/lib/python3.12/concurrent/futures/_base.py\", line 317, in _result_or_cancel\n"}
+,{"stream_name":"stdout","time":68.985023468,"data":"    return fut.result(timeout)\n"}
+,{"stream_name":"stdout","time":68.985027708,"data":"           ^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stdout","time":68.985030088,"data":"  File \"/usr/local/lib/python3.12/concurrent/futures/_base.py\", line 456, in result\n"}
+,{"stream_name":"stdout","time":68.985159458,"data":"    return self.__get_result()\n"}
+,{"stream_name":"stdout","time":68.985162688,"data":"           ^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stdout","time":68.985169678,"data":"  File \"/usr/local/lib/python3.12/concurrent/futures/_base.py\", line 401, in __get_result\n"}
+,{"stream_name":"stdout","time":68.985291238,"data":"    raise self._exception\n"}
+,{"stream_name":"stdout","time":68.985294128,"data":"RuntimeError: Bad StatusOr access: UNKNOWN: TPU initialization failed: Invalid --2a886c8_slice_builder_worker_addresses specified. Expected 8 worker addresses, got 1.\n"}
+,{"stream_name":"stdout","time":69.578668305,"data":"stage finetune exit 1 after 0.02 h\n"}
+,{"stream_name":"stderr","time":77.221266759,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":77.838869435,"data":"[NbConvertApp] Writing 289121 bytes to __results__.html\n"}
+]

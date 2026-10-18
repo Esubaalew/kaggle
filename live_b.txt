@@ -1,0 +1,40 @@
+torch 2.11.0+cu128, CUDA available True, GPU count 2
+GPU 0: Tesla T4, 14.6 GB
+GPU 1: Tesla T4, 14.6 GB
+transformers 5.16.1
+using Kaggle-extracted folder /kaggle/input/datasets/esubechekol/geez-morphology-gpu-v2/model/model
+using Kaggle-extracted folder /kaggle/input/datasets/esubechekol/geez-morphology-gpu-v2/geez-dataset/geez-dataset
+MODEL commit a1ad2b611d2014dd8c11fe94670fec3bef7f7e32
+DATA commit  04f45a71a1af00f3dad4877ec2a91970f7fc42bd
+previous checkpoints: /kaggle/input/geez-byt5-gpu-v2-b/ckpt
+launching DDP on 2 GPUs: torchrun --nproc_per_node 2
+
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+RUN B
+MODEL commit a1ad2b611d2014dd8c11fe94670fec3bef7f7e32
+DATA commit  04f45a71a1af00f3dad4877ec2a91970f7fc42bd
+world size 2, device cuda, torch 2.11.0+cu128
+GPU 0: Tesla T4
+GPU 1: Tesla T4
+RESULT: CLEAN (exact roots and pairs)
+train samples 562403, dev rows 3472: synthetic 118131, gold_verb 1727, gold_nominal 6168, unified_book 10002, dictionary 1080, dictionary_verb 59, word_without_root 32, extra_synthetic 247
+/usr/local/lib/python3.13/dist-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+[rank0]:[W1017 05:31:28.295965761 ProcessGroupNCCL.cpp:5188] Guessing device ID based on global rank. This can cause a hang if rank to GPU mapping is heterogeneous. You can specify device_id in init_process_group()
+LOAD CHECK train 562,403 (expect 562,403), dev 3,472 (expect 3,472), leak audit CLEAN
+LOAD CHECK OK
+PRETRAIN CORPUS 16,181 lines, 1,410,781 bytes
+PRETRAIN chunks per epoch 6,204
+PHASE pretrain: 512 rows/step, steps/epoch 12, epochs 6.0, total steps 72, warmup 7
+PHASE finetune: 512 rows/step, steps/epoch 1098, epochs 10.0, total steps 10980, warmup 500
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/172 [00:00<?, ?it/s]Loading weights:   0%|          | 0/172 [00:00<?, ?it/s]Loading weights: 100%|ââââââââââ| 172/172 [00:00<00:00, 14166.33it/s]
+Loading weights: 100%|ââââââââââ| 172/172 [00:00<00:00, 12076.61it/s]
+[transformers] The tied weights mapping and config for this model specifies to tie shared.weight to lm_head.weight, but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config with `tie_word_embeddings=False` to silence this warning.
+[transformers] The tied weights mapping and config for this model specifies to tie shared.weight to lm_head.weight, but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config with `tie_word_embeddings=False` to silence this warning.
+RESUMED from /kaggle/input/geez-byt5-gpu-v2-b/ckpt/step_1fi_003685.pt: phase finetune, step 3685 (epoch 3, batch 400)
+=== PHASE finetune: micro-batch 32 x 2 GPU(s) x 8 accumulation = 512 rows/step, precision fp32, from step 3685/10980
+[finetune] step 3686/10980 epoch 3 loss 0.0231 lr 7.26e-04 0.062 steps/s elapsed 0.06h ETA finetune 32.64h, this session 11.19h (~6187 steps by the session stop)

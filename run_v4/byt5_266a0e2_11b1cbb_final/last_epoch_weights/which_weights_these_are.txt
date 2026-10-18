@@ -1,0 +1,1 @@
+Weights at step 3687 of run byt5_266a0e2_11b1cbb_final (the last save; training finished).

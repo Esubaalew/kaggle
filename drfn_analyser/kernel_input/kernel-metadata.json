@@ -1,0 +1,24 @@
+{
+  "id": "esubaalew/drfn-analyser-input",
+  "title": "drfn-analyser-input",
+  "code_file": "drfn-analyser-input.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "keywords": [
+    "gpu"
+  ],
+  "dataset_sources": [
+    "esubaalew/drfn-analyser-pack",
+    "esubaalew/geez-morphology-training-inputs"
+  ],
+  "kernel_sources": [
+    "esubaalew/geez-morphology-byt5-training"
+  ],
+  "competition_sources": [],
+  "model_sources": [],
+  "machine_shape": "NvidiaTeslaT4"
+}

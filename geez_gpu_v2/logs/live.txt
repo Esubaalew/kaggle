@@ -1,0 +1,36 @@
+torch 2.11.0+cu128, CUDA available True, GPU count 2
+GPU 0: Tesla T4, 14.6 GB
+GPU 1: Tesla T4, 14.6 GB
+transformers 5.16.1
+using Kaggle-extracted folder /kaggle/input/datasets/esubechekol/geez-morphology-gpu-v2/model/model
+using Kaggle-extracted folder /kaggle/input/datasets/esubechekol/geez-morphology-gpu-v2/geez-dataset/geez-dataset
+MODEL commit a1ad2b611d2014dd8c11fe94670fec3bef7f7e32
+DATA commit  04f45a71a1af00f3dad4877ec2a91970f7fc42bd
+previous checkpoints: none attached, starting from google/byt5-small
+launching DDP on 2 GPUs: torchrun --nproc_per_node 2
+
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+MODEL commit a1ad2b611d2014dd8c11fe94670fec3bef7f7e32
+DATA commit  04f45a71a1af00f3dad4877ec2a91970f7fc42bd
+world size 2, device cuda, torch 2.11.0+cu128
+GPU 0: Tesla T4
+GPU 1: Tesla T4
+RESULT: CLEAN (exact roots and pairs)
+train samples 562403, dev rows 3472: synthetic 118131, gold_verb 1727, gold_nominal 6168, unified_book 10002, dictionary 1080, dictionary_verb 59, word_without_root 32, extra_synthetic 247
+/usr/local/lib/python3.13/dist-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+[rank0]:[W1016 12:49:59.169607787 ProcessGroupNCCL.cpp:5188] Guessing device ID based on global rank. This can cause a hang if rank to GPU mapping is heterogeneous. You can specify device_id in init_process_group()
+LOAD CHECK train 562,403 (expect 562,403), dev 3,472 (expect 3,472), leak audit CLEAN
+LOAD CHECK OK
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/172 [00:00<?, ?it/s]Loading weights: 100%|██████████| 172/172 [00:00<00:00, 7672.24it/s]
+[transformers] The tied weights mapping and config for this model specifies to tie shared.weight to lm_head.weight, but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config with `tie_word_embeddings=False` to silence this warning.
+no checkpoint found, starting from google/byt5-small
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/172 [00:00<?, ?it/s]Loading weights: 100%|██████████| 172/172 [00:00<00:00, 9051.36it/s]
+[transformers] The tied weights mapping and config for this model specifies to tie shared.weight to lm_head.weight, but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config with `tie_word_embeddings=False` to silence this warning.
+precision fp32, micro-batch 32 x 2 GPU(s) x 8 accumulation = 512 rows/step, steps/epoch 1098, epochs 10.0, total steps 10980
+step 1/10980 epoch 0 loss 5.6704 lr 4.00e-06 0.064 steps/s elapsed 0.02h ETA full run 47.46h, this session 11.23h (~2597 steps by the session stop)
+step 50/10980 epoch 0 loss 3.8196 lr 1.02e-04 0.110 steps/s elapsed 0.15h ETA full run 27.95h, this session 11.10h (~4391 steps by the session stop)

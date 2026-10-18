@@ -1,0 +1,19 @@
+{
+  "id": "esubaalew/drfn-grounded-probe",
+  "title": "drfn-grounded-probe",
+  "code_file": "drfn-grounded-probe.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "keywords": [],
+  "dataset_sources": [],
+  "kernel_sources": [
+    "esubaalew/drfn-grounded-runs",
+    "esubaalew/drfn-grounded-entropy"
+  ],
+  "competition_sources": [],
+  "model_sources": []
+}

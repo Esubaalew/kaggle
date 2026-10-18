@@ -1,0 +1,23 @@
+{
+ "run": "aux_w01_s11",
+ "system": "aux",
+ "seed": 11,
+ "labels": "analyser",
+ "model": "facebook/nllb-200-distilled-600M",
+ "src_lang": "tir_Ethi",
+ "tgt_lang": "amh_Ethi",
+ "mem_layers": null,
+ "aux_weight": 0.1,
+ "new_params": 279825,
+ "nllb_params": 615073792,
+ "trainable_params": 352998673,
+ "best_epoch": 8,
+ "best_dev_loss": 1.9099376343904473,
+ "train_seconds": 2152,
+ "dev_beam5_nr4": {
+  "chrF_char": 31.960959342400567,
+  "chrF++": 30.902208948806003,
+  "BLEU": 11.74541673429262
+ },
+ "seconds": 2302
+}

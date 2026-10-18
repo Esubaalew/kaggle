@@ -1,0 +1,27 @@
+# weights, archives, caches
+*.pt
+*.pth
+*.bin
+*.ckpt
+*.safetensors
+*.zip
+*.gz
+*.tgz
+*.bundle
+*.npz
+*.crdownload
+__pycache__/
+*.pyc
+.cache/
+.DS_Store
+# fetched duplicate copies of input data (canonical copies stay in the drfn_*/pack folders)
+run_*/pack/data/
+run_*/data/
+**/runs/*/tokenizer.json
+staging/
+geez_gpu_v2/dataset/
+geez_tpu_v2/dataset/
+# secrets, never commit
+*access_token*
+kaggle.json
+.env

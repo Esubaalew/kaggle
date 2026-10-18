@@ -1,0 +1,7 @@
+# byt5_3dc784e_337cdf0_books_s1  (final run), 2026-10-11 17:39 EAT
+# geez-morphology 3dc784eb7c41133712560c33ebdbd7f80d2f0634
+# geez-dataset    337cdf01b84ae7fe17ee2f3f4c0b91f7ee9042ea
+# precision fp32; length-grouped True; DDP False; effective batch 128 = 64 x 2 x 1
+# trainer_wrapper.py runs train_byt5_morphology.py unchanged and applies the precision/sampler settings (wrapper_config.json: {"precision": "fp32", "group_by_length": true, "guard": true, "guard_after_steps": 10, "guard_marker": "/tmp/geez_code/guard_tripped.json", "guard_log": "/kaggle/working/byt5_3dc784e_337cdf0_books_s1/train_loss_log.jsonl", "test_nan_at_step": null, "extra_training_args": {"optim": "adafactor", "lr_scheduler_type": "constant"}, "dropout": 0.1, "expect_max_tokens": {"input_ids": 40, "labels": 113}})
+# run from the geez-morphology checkout; CUDA_VISIBLE_DEVICES=0
+/usr/bin/python3 -u /tmp/geez_code/trainer_wrapper.py train_byt5_morphology.py --dataset_dir /tmp/geez_code/geez-dataset --output_dir /tmp/geez_trainer_checkpoints/byt5_3dc784e_337cdf0_books_s1 --batch_size 64 --grad_accum 2 --epochs 3 --lr 0.001 --warmup_ratio 0.0 --save_steps 250 --save_total_limit 2 --logging_steps 50 --num_workers 2 --seed 1

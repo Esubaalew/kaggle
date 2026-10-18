@@ -1,0 +1,102 @@
+{
+  "settings": {
+    "run_name": "byt5_3dc784e_337cdf0_books_s1",
+    "run_mode": "final",
+    "morphology_repo": "/kaggle/input/geez-morphology-training-inputs/geez-morphology_3dc784e.bundle",
+    "morphology_commit": "3dc784eb7c41133712560c33ebdbd7f80d2f0634",
+    "dataset_repo": "/kaggle/input/geez-morphology-training-inputs/geez-dataset_337cdf0.bundle",
+    "dataset_commit": "337cdf01b84ae7fe17ee2f3f4c0b91f7ee9042ea",
+    "github_token_secret": "GITHUB_TOKEN",
+    "work_dir": "/kaggle/working",
+    "code_dir": "/tmp/geez_code",
+    "resume_search_dirs": [
+      "/tmp/geez_trainer_checkpoints/byt5_3dc784e_337cdf0_books_s1",
+      "/kaggle/working/byt5_3dc784e_337cdf0_books_s1/last_checkpoint",
+      "/kaggle/input"
+    ],
+    "resume_from": "",
+    "trainer": {
+      "batch_size": 32,
+      "grad_accum": 1,
+      "epochs": 3,
+      "lr": 0.001,
+      "warmup_ratio": 0.0,
+      "logging_steps": 50,
+      "num_workers": 2
+    },
+    "save_total_limit": 2,
+    "train_gpus": "auto",
+    "eval_gpu": "auto",
+    "time_budget_hours": 11.25,
+    "smoke": {
+      "max_steps": 300,
+      "save_every_steps": 150,
+      "max_eval_samples": 256,
+      "val_limit": 40
+    },
+    "score_test_at_end": true,
+    "python": "/usr/bin/python3",
+    "bundle_dir": "/kaggle/input/geez-morphology-training-inputs",
+    "local_trainer_dir": "/tmp/geez_trainer_checkpoints",
+    "save_every_minutes": 30.0,
+    "stable_run_name": true,
+    "bundle_search_dirs": [
+      "/kaggle/input"
+    ],
+    "efficiency": {
+      "precision": "fp32",
+      "loss_guard": true,
+      "group_by_length": true,
+      "effective_batch": 128,
+      "per_device_batch": "auto",
+      "ddp": false,
+      "early_stopping": {
+        "metric": "val_root_accuracy",
+        "patience": 12,
+        "min_delta": 0.0
+      }
+    },
+    "recipe": {
+      "optimizer": "adafactor",
+      "lr_schedule": "constant",
+      "dropout": 0.1,
+      "label_smoothing": null
+    },
+    "trainer_extra_args": "--seed 1",
+    "max_source_bytes": "auto",
+    "max_target_bytes": "auto",
+    "val_every_steps": 250,
+    "val_limit": 0,
+    "probe": {
+      "steps": 30,
+      "configs": "auto",
+      "timeout_minutes": 15,
+      "include_mixed_precision": false
+    },
+    "test_hooks": {},
+    "keep_previous_checkpoint_minutes": 0
+  },
+  "versions": {
+    "python": "3.13.15",
+    "torch": "2.11.0+cu128",
+    "transformers": "5.19.0",
+    "cuda": "12.8",
+    "gpus": [
+      "Tesla T4",
+      "Tesla T4"
+    ]
+  },
+  "train_pairs": 156261,
+  "steps_per_epoch": 1221,
+  "total_steps": 3663,
+  "save_every": 250,
+  "resumed_from": null,
+  "precision": "fp32",
+  "precision_reason": "the trainer's own setting",
+  "effective_batch": 128,
+  "per_device_batch": 64,
+  "grad_accum": 2,
+  "train_gpus": "0",
+  "ddp": false,
+  "eval_gpu": "1"
+}

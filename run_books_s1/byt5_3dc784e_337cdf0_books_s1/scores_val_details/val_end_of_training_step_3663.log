@@ -1,0 +1,343 @@
+Loading model from: /tmp/geez_code/scoring_in_progress_end_of_training_step_3663
+Loading weights:   0%|          | 0/170 [00:00<?, ?it/s]Loading weights: 100%|██████████| 170/170 [00:00<00:00, 2303.70it/s]
+[transformers] The tied weights mapping and config for this model specifies to tie shared.weight to lm_head.weight, but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config with `tie_word_embeddings=False` to silence this warning.
+--dev_unified: 388 unified book val rows added to the 1154 gold val pairs
+
+val: /tmp/geez_code/geez-dataset/data/paradigms/merho_ges_gold_val.jsonl: 1542 pairs (loaded 1542, not loaded: flagged (merho_ges_gold_flagged_rows.tsv) 24, not loaded: row has no root 50, not loaded: status CHECK 50, not loaded: status EXCLUDED 24, not loaded: status NO_ROOT 202)
+50 pair(s) repeat a spelling that has another analysis in this split: exact accuracy of a single-answer system cannot exceed 96.8%
+========================================================================
+GOLD VAL RESULTS: byt5   (accuracy over pairs where gold has the field)
+========================================================================
+
+[ALL]  pairs=1542
+   root      84.0% (1295/1542)
+   type      87.0% (1341/1542)
+   stem      86.7% (417/481)
+   tense     84.4% (389/461)
+   person    88.6% (411/464)
+   gender    88.6% (757/854)
+   number    96.0% (1441/1501)
+   object    75.0% (3/4)
+   possessor  30.8% (4/13)
+   exact     71.6% (1104/1542)
+
+[type:verb]  pairs=461
+   root      85.2% (393/461)
+   type      94.1% (434/461)
+   stem      89.8% (414/461)
+   tense     84.4% (389/461)
+   person    88.9% (410/461)
+   gender    93.1% (429/461)
+   number    96.1% (443/461)
+   object    75.0% (3/4)
+   possessor   0.0% (0/2)
+   exact     71.8% (331/461)
+
+[type:noun]  pairs=466
+   root      82.2% (383/466)
+   type      85.2% (397/466)
+   number    94.0% (438/466)
+   possessor   0.0% (0/1)
+   exact     71.5% (333/466)
+
+[type:adjective]  pairs=567
+   root      85.4% (484/567)
+   type      88.7% (503/567)
+   gender    84.6% (324/383)
+   number    97.5% (553/567)
+   exact     76.5% (434/567)
+
+[type:infinitive]  pairs=20
+   root      85.0% (17/20)
+   type       5.0% (1/20)
+   stem      15.0% (3/20)
+   exact      5.0% (1/20)
+
+[type:pronoun]  pairs=5
+   root      40.0% (2/5)
+   type      40.0% (2/5)
+   person    33.3% (1/3)
+   gender    66.7% (2/3)
+   number   100.0% (3/3)
+   possessor   0.0% (0/1)
+   exact     20.0% (1/5)
+
+[type:demonstrative]  pairs=2
+   root     100.0% (2/2)
+   type       0.0% (0/2)
+   gender     0.0% (0/1)
+   number   100.0% (1/1)
+   exact      0.0% (0/2)
+
+[type:preposition]  pairs=5
+   root     100.0% (5/5)
+   type       0.0% (0/5)
+   possessor   0.0% (0/2)
+   exact      0.0% (0/5)
+
+[type:particle]  pairs=8
+   root     100.0% (8/8)
+   type      50.0% (4/8)
+   possessor  57.1% (4/7)
+   exact     50.0% (4/8)
+
+[type:numeral]  pairs=8
+   root      12.5% (1/8)
+   type       0.0% (0/8)
+   gender    33.3% (2/6)
+   number   100.0% (3/3)
+   exact      0.0% (0/8)
+
+[source:book]  pairs=388
+   root      83.8% (325/388)
+   type      84.0% (326/388)
+   stem      86.5% (225/260)
+   tense     85.4% (205/240)
+   person    86.8% (211/243)
+   gender    90.9% (289/318)
+   number    96.0% (333/347)
+   possessor  40.0% (4/10)
+   exact     68.6% (266/388)
+
+[source:gold]  pairs=1154
+   root      84.1% (970/1154)
+   type      88.0% (1015/1154)
+   stem      86.9% (192/221)
+   tense     83.3% (184/221)
+   person    90.5% (200/221)
+   gender    87.3% (468/536)
+   number    96.0% (1108/1154)
+   object    75.0% (3/4)
+   possessor   0.0% (0/3)
+   exact     72.6% (838/1154)
+
+[book:Fre Geez]  pairs=218
+   root      86.2% (188/218)
+   type      83.5% (182/218)
+   stem      86.0% (141/164)
+   tense     82.1% (124/151)
+   person    85.4% (129/151)
+   gender    89.5% (170/190)
+   number    94.4% (186/197)
+   possessor   0.0% (0/3)
+   exact     67.0% (146/218)
+
+[book:Kidane Wold]  pairs=115
+   root      86.1% (99/115)
+   type      96.5% (111/115)
+   stem      91.8% (56/61)
+   tense     93.4% (57/61)
+   person    93.4% (57/61)
+   gender    97.8% (88/90)
+   number    98.3% (113/115)
+   exact     84.3% (97/115)
+
+[book:Memariya]  pairs=30
+   root      90.0% (27/30)
+   type      73.3% (22/30)
+   stem      76.7% (23/30)
+   tense     82.6% (19/23)
+   person    82.6% (19/23)
+   gender    95.7% (22/23)
+   number    95.7% (22/23)
+   exact     60.0% (18/30)
+
+[book:Quanqua 2]  pairs=5
+   root       0.0% (0/5)
+   type     100.0% (5/5)
+   stem     100.0% (5/5)
+   tense    100.0% (5/5)
+   person   100.0% (5/5)
+   gender   100.0% (5/5)
+   number   100.0% (5/5)
+   exact      0.0% (0/5)
+
+[book:Rebaha]  pairs=20
+   root      55.0% (11/20)
+   type      30.0% (6/20)
+   person    33.3% (1/3)
+   gender    40.0% (4/10)
+   number   100.0% (7/7)
+   possessor  57.1% (4/7)
+   exact     25.0% (5/20)
+
+[rootvar:disjoint]  pairs=1512
+   root      83.9% (1268/1512)
+   type      87.0% (1315/1512)
+   stem      87.1% (412/473)
+   tense     84.5% (383/453)
+   person    88.8% (405/456)
+   gender    89.0% (741/833)
+   number    96.0% (1412/1471)
+   object    75.0% (3/4)
+   possessor  30.8% (4/13)
+   exact     71.8% (1086/1512)
+
+[rootvar:variant_in_train]  pairs=30
+   root      90.0% (27/30)
+   type      86.7% (26/30)
+   stem      62.5% (5/8)
+   tense     75.0% (6/8)
+   person    75.0% (6/8)
+   gender    76.2% (16/21)
+   number    96.7% (29/30)
+   exact     60.0% (18/30)
+
+[class:Type A]  pairs=132
+   root      88.6% (117/132)
+   type      93.2% (123/132)
+   stem      84.1% (111/132)
+   tense     83.3% (110/132)
+   person    89.4% (118/132)
+   gender    93.9% (124/132)
+   number    98.5% (130/132)
+   object   100.0% (2/2)
+   possessor   0.0% (0/2)
+   exact     72.0% (95/132)
+
+[class:Type B]  pairs=1
+   root     100.0% (1/1)
+   type     100.0% (1/1)
+   stem     100.0% (1/1)
+   tense    100.0% (1/1)
+   person   100.0% (1/1)
+   gender   100.0% (1/1)
+   number   100.0% (1/1)
+   exact    100.0% (1/1)
+
+[class:Type C]  pairs=3
+   root      33.3% (1/3)
+   type     100.0% (3/3)
+   stem     100.0% (3/3)
+   tense    100.0% (3/3)
+   person   100.0% (3/3)
+   gender   100.0% (3/3)
+   number   100.0% (3/3)
+   exact     33.3% (1/3)
+
+[class:hollow]  pairs=21
+   root      90.5% (19/21)
+   type      95.2% (20/21)
+   stem      95.2% (20/21)
+   tense     76.2% (16/21)
+   person    90.5% (19/21)
+   gender   100.0% (21/21)
+   number    95.2% (20/21)
+   exact     76.2% (16/21)
+
+[class:initial-weak]  pairs=18
+   root      94.4% (17/18)
+   type     100.0% (18/18)
+   stem      94.4% (17/18)
+   tense     88.9% (16/18)
+   person   100.0% (18/18)
+   gender   100.0% (18/18)
+   number    94.4% (17/18)
+   object     0.0% (0/1)
+   exact     66.7% (12/18)
+
+[class:final-weak]  pairs=17
+   root      88.2% (15/17)
+   type     100.0% (17/17)
+   stem      82.4% (14/17)
+   tense     82.4% (14/17)
+   person    88.2% (15/17)
+   gender    94.1% (16/17)
+   number    94.1% (16/17)
+   exact     76.5% (13/17)
+
+[class:quadriliteral]  pairs=29
+   root      72.4% (21/29)
+   type      96.6% (28/29)
+   stem      89.7% (26/29)
+   tense     82.8% (24/29)
+   person    89.7% (26/29)
+   gender    93.1% (27/29)
+   number   100.0% (29/29)
+   object   100.0% (1/1)
+   exact     58.6% (17/29)
+
+[class:unknown]  pairs=240
+   root      84.2% (202/240)
+   type      93.3% (224/240)
+   stem      92.5% (222/240)
+   tense     85.4% (205/240)
+   person    87.5% (210/240)
+   gender    91.2% (219/240)
+   number    94.6% (227/240)
+   exact     73.3% (176/240)
+
+[tense:imperative]  pairs=21
+   root      76.2% (16/21)
+   type      85.7% (18/21)
+   stem      85.7% (18/21)
+   tense     66.7% (14/21)
+   person    71.4% (15/21)
+   gender    81.0% (17/21)
+   number    90.5% (19/21)
+   exact     52.4% (11/21)
+
+[tense:past]  pairs=245
+   root      86.1% (211/245)
+   type      93.9% (230/245)
+   stem      87.8% (215/245)
+   tense     91.0% (223/245)
+   person    88.6% (217/245)
+   gender    94.3% (231/245)
+   number    96.3% (236/245)
+   object    66.7% (2/3)
+   possessor   0.0% (0/2)
+   exact     75.9% (186/245)
+
+[tense:present]  pairs=112
+   root      88.4% (99/112)
+   type      96.4% (108/112)
+   stem      92.9% (104/112)
+   tense     78.6% (88/112)
+   person    91.1% (102/112)
+   gender    92.9% (104/112)
+   number    98.2% (110/112)
+   object   100.0% (1/1)
+   exact     71.4% (80/112)
+
+[tense:subjunctive]  pairs=83
+   root      80.7% (67/83)
+   type      94.0% (78/83)
+   stem      92.8% (77/83)
+   tense     77.1% (64/83)
+   person    91.6% (76/83)
+   gender    92.8% (77/83)
+   number    94.0% (78/83)
+   exact     65.1% (54/83)
+
+[tier:byt5]  pairs=1542
+   root      84.0% (1295/1542)
+   type      87.0% (1341/1542)
+   stem      86.7% (417/481)
+   tense     84.4% (389/461)
+   person    88.6% (411/464)
+   gender    88.6% (757/854)
+   number    96.0% (1441/1501)
+   object    75.0% (3/4)
+   possessor  30.8% (4/13)
+   exact     71.6% (1104/1542)
+
+Sample misses:
+  ስሕ  gold: ሰ-ሐ noun None None s [noun]  -> root: ሰ-ሐ-የ | type: noun | number: s
+  መርጋሕ  gold: ረ-መ-ሐ adjective None None s [adjective]  -> root: ረ-ገ-ሐ | type: adjective | number: s
+  መርምሕ  gold: ረ-መ-ሐ noun None None s [noun]  -> root: ረ-መ-ሐ | type: adjective | number: s
+  ተጋ  gold: ተ-ገ-ሀ adjective None None ms [adjective]  -> root: ወ-ዐ-ገ | tense: imperative | person: 2 | gender: f | number: p | stem: basic
+  ትጉህ  gold: ተ-ገ-ሀ adjective None None ms [adjective]  -> root: ገ-ወ-ሀ | tense: subjunctive | person: 2 | gender: m | number: s | stem: basic
+  ትጉሃን  gold: ተ-ገ-ሀ adjective None None mp [adjective]  -> root: ገ-ወ-ሀ | tense: subjunctive | person: 2 | gender: f | number: p | stem: basic | object: 3fp
+  ትግህት  gold: ተ-ገ-ሀ adjective None None fs [adjective]  -> root: ገ-ሀ-ተ | tense: present | person: 3 | gender: f | number: s | stem: basic
+  ትጉሃት  gold: ተ-ገ-ሀ adjective None None fp [adjective]  -> root: ገ-ወ-ሀ | tense: subjunctive | person: 2 | gender: f | number: p | stem: basic
+  ወአመርግሑ  gold: መ-ረ-ገ-ሐ verb causative past 3mp [quadriliteral]  -> root: አ-መ-ረ-ገ-ሐ | tense: past | person: 3 | gender: m | number: p | stem: basic
+  ይግንሕ  gold: ገ-ነ-ሐ verb basic present 3ms [Type A]  -> root: ገ-ነ-ሐ | tense: subjunctive | person: 3 | gender: m | number: s | stem: basic
+  ይትመዝጐል  gold: መ-ዘ-ጐ-ለ verb passive present 3ms [quadriliteral]  -> root: መ-ዘ-ጐ-ለ | tense: subjunctive | person: 3 | gender: m | number: s | stem: passive
+  አንዝሀለለ  gold: ነ-ዘ-ሀ-ለ-ለ verb causative past 3ms [quadriliteral]  -> root: ነ-ዘ-ለ-ለ | tense: past | person: 3 | gender: m | number: s | stem: causative
+  ኢታንዝሀልል  gold: ነ-ዘ-ሀ-ለ-ለ verb causative subjunctive 2ms [quadriliteral]  -> root: ነ-ዘ-ለ-ለ | tense: present | person: 2 | gender: m | number: s | stem: causative
+  ነዘህሊል  gold: ነ-ዘ-ሀ-ለ-ለ adjective None None ms [adjective]  -> root: ዘ-ሀ-ለ-ለ | type: adjective | gender: m | number: s
+  ነዛህለልት  gold: ነ-ዘ-ሀ-ለ-ለ noun None None s [noun]  -> root: ነ-ዘ-ሀ-ለ-ለ | type: noun | number: p
+
+Root accuracy (exact match):
+  val           84.0% (1295/1542)  95% CI 82.1-85.7

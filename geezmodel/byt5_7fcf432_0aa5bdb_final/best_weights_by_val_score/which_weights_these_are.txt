@@ -1,0 +1,3 @@
+Weights after step 2000 (epoch 1.69) of run byt5_7fcf432_0aa5bdb_final.
+Picked by generated root accuracy on gold val (exact match breaks ties): root 87.04%, exact match 71.61%.
+Load with: python evaluate_gold.py --system byt5 --model_dir <this folder>

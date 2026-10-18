@@ -1,0 +1,8 @@
+{
+ "n_labelled_positions": 4596,
+ "accuracy_by_layer": {
+  "0": 0.5543951261966927,
+  "1": 0.5620104438642297
+ },
+ "majority_class_rate": 0.09551784160139251
+}

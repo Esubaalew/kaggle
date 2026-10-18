@@ -1,0 +1,94 @@
+{
+ "scores": {
+  "gmm_wide_s11": 15.352,
+  "gmm_wide_s22": 15.56,
+  "gmm_wide_s33": 15.252,
+  "bpe_aux_wide_s11": 15.375,
+  "bpe_aux_wide_s22": 14.961,
+  "bpe_aux_wide_s33": 14.587,
+  "gmm_256_s11": 15.126,
+  "gmm_256_s22": 14.639,
+  "bpe_aux_256_s11": 14.928,
+  "bpe_aux_256_s22": 14.952
+ },
+ "per_seed_gap_wide": {
+  "11": -0.022,
+  "22": 0.599,
+  "33": 0.666
+ },
+ "contrasts": {
+  "gmm_wide - bpe_aux_wide (3 seeds)": {
+   "diff": 0.414,
+   "ci95": [
+    0.232,
+    0.596
+   ],
+   "p_le0": 0.0,
+   "seeds": [
+    11,
+    22,
+    33
+   ]
+  },
+  "gmm_wide - bpe_aux_wide (seed 33 only, same session)": {
+   "diff": 0.666,
+   "ci95": [
+    0.342,
+    0.974
+   ],
+   "p_le0": 0.0,
+   "seeds": [
+    33
+   ]
+  },
+  "gmm_wide - bpe_aux_wide (seeds 11,22)": {
+   "diff": 0.289,
+   "ci95": [
+    0.079,
+    0.516
+   ],
+   "p_le0": 0.0045,
+   "seeds": [
+    11,
+    22
+   ]
+  },
+  "gmm_256 - bpe_aux_256 (seeds 11,22)": {
+   "diff": -0.057,
+   "ci95": [
+    -0.298,
+    0.176
+   ],
+   "p_le0": 0.6915,
+   "seeds": [
+    11,
+    22
+   ]
+  },
+  "gmm_wide - gmm_256 (seeds 11,22)": {
+   "diff": 0.574,
+   "ci95": [
+    0.34,
+    0.809
+   ],
+   "p_le0": 0.0,
+   "seeds": [
+    11,
+    22
+   ]
+  },
+  "bpe_aux_wide - bpe_aux_256 (seeds 11,22)": {
+   "diff": 0.228,
+   "ci95": [
+    0.008,
+    0.43
+   ],
+   "p_le0": 0.0215,
+   "seeds": [
+    11,
+    22
+   ]
+  }
+ },
+ "note": "seed 11 both Colab; seed 22 gmm Colab, bpe_aux Kaggle; seed 33 both Kaggle. Configs identical except torch build (cu130 vs cu128)."
+}

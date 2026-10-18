@@ -1,0 +1,27 @@
+{
+ "run": "bpe_aux_analyser_s22",
+ "variant": "bpe_aux",
+ "best_epoch": 50,
+ "source_dir": "/kaggle/input/notebooks/esubalewchekol/drfn-clean-overnight/pack/runs/bpe_aux_analyser_s22",
+ "decode": {
+  "beam5_nr4": {
+   "chrF_char": 15.490401710853549,
+   "chrF++": 15.308893920915404,
+   "BLEU": 4.696591023387304,
+   "seconds": 50
+  },
+  "beam5": {
+   "chrF_char": 14.645047663676882,
+   "chrF++": 14.433783158903346,
+   "BLEU": 4.571470358180394,
+   "seconds": 72
+  },
+  "beam1_nr4": {
+   "chrF_char": 15.101790038888673,
+   "chrF++": 14.873649732018048,
+   "BLEU": 4.074764752824521,
+   "seconds": 16
+  }
+ },
+ "seconds": 141
+}

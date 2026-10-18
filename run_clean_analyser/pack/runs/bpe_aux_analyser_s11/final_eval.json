@@ -1,0 +1,7 @@
+{
+ "best_epoch": 43,
+ "chrF_char_full_dev": 12.819101558268157,
+ "chrF++_full_dev": 12.585122086241975,
+ "n_dev": 1741,
+ "seconds": 57
+}

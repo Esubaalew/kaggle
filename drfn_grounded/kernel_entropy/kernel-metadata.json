@@ -1,0 +1,21 @@
+{
+  "id": "esubaalew/drfn-grounded-entropy",
+  "title": "drfn-grounded-entropy",
+  "code_file": "drfn-grounded-entropy.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "keywords": [
+    "gpu"
+  ],
+  "dataset_sources": [
+    "esubaalew/drfn-grounded-pack"
+  ],
+  "kernel_sources": [],
+  "competition_sources": [],
+  "model_sources": [],
+  "machine_shape": "NvidiaTeslaT4"
+}

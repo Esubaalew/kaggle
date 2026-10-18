@@ -1,0 +1,411 @@
+[wrapper] precision fp32; length-grouped batches on; loss guard on; TrainingArguments overrides {'train_sampling_strategy': 'group_by_length', 'optim': 'adafactor', 'lr_scheduler_type': 'constant'}
+Reading synthetic pairs from /tmp/geez_code/geez-dataset/data/paradigms/synthetic_morphology_train.jsonl
+Read 8060 Merho Ges gold-train pairs from /tmp/geez_code/geez-dataset/data/paradigms/merho_ges_gold_train.jsonl
+Read 1086 dictionary noun and adjective pairs from /tmp/geez_code/geez-dataset/data/lexicon/classical_dictionary_kidane_wold.jsonl
+Read 57 words without root from /tmp/geez_code/geez-morphology/data/closed_class_words_without_root.tsv
+Read 7599 unified book rows (split train) from data/unified/geez_morphology_rows.jsonl
+3 word(s) without root dropped: held out in the unified file.
+Unified rows replace book_forms.jsonl; 0 word(s) without root dropped (same form in the unified rows).
+Gold-train load counts:
+  loaded: 8060
+  not loaded: flagged (merho_ges_gold_flagged_rows.tsv): 187
+  not loaded: row has no root: 926
+Dictionary load counts:
+  headwords with conflicting roots: 16
+  loaded: 1086
+  not loaded: definition names a Greek source: 311
+  not loaded: duplicate (form, target): 142
+  not loaded: entry cannot be checked: 1
+  not loaded: form is a gold val/test form: 12
+  not loaded: form is a gold val/test form up to spelling: 1
+  not loaded: form is in the gold train file: 410
+  not loaded: headword does not hold the root's radicals: 993
+  not loaded: headword has conflicting roots: 7
+  not loaded: headword is a word without root: 23
+  not loaded: headword is not one Ge'ez word: 343
+  not loaded: headword is the root's 3ms perfect: 61
+  not loaded: headword_type artifact: 381
+  not loaded: headword_type character: 40
+  not loaded: headword_type phrase: 488
+  not loaded: no root: 26
+  not loaded: pos adverb: 2
+  not loaded: pos conjunction: 1
+  not loaded: pos missing: 544
+  not loaded: pos name: 136
+  not loaded: pos particle: 74
+  not loaded: pos preposition: 1
+  not loaded: pos pronoun: 4
+  not loaded: pos verb: 3885
+  not loaded: root has 2 radicals: 1440
+  not loaded: root has 5 radicals: 142
+  not loaded: root is a gold val/test root: 186
+  not loaded: root is a root of the held-out synthetic lines: 73
+  not loaded: root is not 2-5 letters: 254
+  not loaded: root not on the synthetic allow-list: 2168
+Words-without-root load counts:
+  loaded: 57
+Synthetic pairs: 121206. Gold-train pairs: 8060. Dictionary pairs: 976 train, 109 eval. Words without root: 54. Book forms: 0. Unified book rows: 7599.
+Gold upsampling: verbs x4, nouns and adjectives x5. Prefixes: one per task.
+Train: 156261 pairs (synthetic 109085, gold_verb 7012, gold_nominal 31535, dictionary 976, word_without_root 54, unified_book 7599). Eval: 12121 synthetic pairs; dictionary_nominal: 109 pairs.
+Device: cuda x1 (Tesla T4). Precision: fp32.
+Effective batch: 64 x 2 accum x 1 device(s) = 128
+Starting from the pretrained model (no checkpoint found).
+Optimizer steps: 3663. Warmup: 0. Save every 250.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/172 [00:00<?, ?it/s]
+[transformers] The tied weights mapping and config for this model specifies to tie shared.weight to lm_head.weight, but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config with `tie_word_embeddings=False` to silence this warning.
+[wrapper] dropout 0.1 (the model's own)
+[wrapper] longest tokenized input 40 (pairs need 40), labels 113 (pairs need 113); checked in 33s
+0%|          | 0/3663 [00:00<?, ?it/s]
+[wrapper] optimizer Adafactor {'lr': 0.001, 'eps': (1e-30, 0.001), 'weight_decay': 0.0, 'scale_parameter': False, 'relative_step': False, 'warmup_init': False}; lr schedule SchedulerType.CONSTANT; label smoothing 0.0; dropout 0.1
+0%|          | 15/3663 [00:58<4:01:04,  3.97s/it]
+[speed] 2026-10-11 17:42 EAT: step 21/3663, 0.25 steps/s (3.98 s/step); ETA 4h01m for the remaining steps, finishing about 2026-10-11 21:44 EAT (training steps only; the per-epoch eval passes add a little)
+1%|          | 31/3663 [02:02<3:47:05,  3.75s/it]
+1%|▏         | 48/3663 [03:04<3:30:11,  3.49s/it]
+{'loss': '0.7584', 'grad_norm': '0.5065', 'learning_rate': '0.001', 'epoch': '0.04095'}
+2%|▏         | 62/3663 [04:03<4:17:10,  4.29s/it]
+2%|▏         | 77/3663 [05:04<3:51:09,  3.87s/it]
+3%|▎         | 94/3663 [06:08<3:37:58,  3.66s/it]
+{'loss': '0.1683', 'grad_norm': '0.4232', 'learning_rate': '0.001', 'epoch': '0.0819'}
+3%|▎         | 109/3663 [07:08<4:15:09,  4.31s/it]
+3%|▎         | 124/3663 [08:10<3:53:53,  3.97s/it]
+4%|▍         | 140/3663 [09:13<3:48:21,  3.89s/it]
+{'loss': '0.1265', 'grad_norm': '0.2389', 'learning_rate': '0.001', 'epoch': '0.1229'}
+4%|▍         | 156/3663 [10:15<4:16:19,  4.39s/it]
+5%|▍         | 171/3663 [11:19<4:03:23,  4.18s/it]
+5%|▌         | 187/3663 [12:20<3:42:01,  3.83s/it]
+{'loss': '0.08421', 'grad_norm': '0.1676', 'learning_rate': '0.001', 'epoch': '0.1638'}
+6%|▌         | 203/3663 [13:22<4:06:13,  4.27s/it]
+6%|▌         | 218/3663 [14:26<4:04:05,  4.25s/it]
+6%|▋         | 234/3663 [15:28<3:39:57,  3.85s/it]
+{'loss': '0.06182', 'grad_norm': '0.2839', 'learning_rate': '0.001', 'epoch': '0.2048'}
+[speed] 2026-10-11 17:57 EAT: step 251/3663, 0.25 steps/s (3.96 s/step); ETA 3h45m for the remaining steps, finishing about 2026-10-11 21:42 EAT (training steps only; the per-epoch eval passes add a little)
+7%|▋         | 251/3663 [16:33<4:00:49,  4.23s/it]
+7%|▋         | 265/3663 [17:34<4:02:41,  4.29s/it]
+8%|▊         | 281/3663 [18:37<3:35:52,  3.83s/it]
+8%|▊         | 298/3663 [19:41<3:18:03,  3.53s/it]
+{'loss': '0.05684', 'grad_norm': '0.3163', 'learning_rate': '0.001', 'epoch': '0.2457'}
+9%|▊         | 312/3663 [20:41<3:59:30,  4.29s/it]
+9%|▉         | 327/3663 [21:42<3:33:46,  3.84s/it]
+9%|▉         | 343/3663 [22:43<3:27:09,  3.74s/it]
+{'loss': '0.042', 'grad_norm': '0.1976', 'learning_rate': '0.001', 'epoch': '0.2867'}
+10%|▉         | 358/3663 [23:43<3:59:03,  4.34s/it]
+10%|█         | 373/3663 [24:46<3:38:46,  3.99s/it]
+11%|█         | 389/3663 [25:46<3:28:00,  3.81s/it]
+{'loss': '0.03694', 'grad_norm': '0.2071', 'learning_rate': '0.001', 'epoch': '0.3276'}
+11%|█         | 405/3663 [26:48<3:53:42,  4.30s/it]
+11%|█▏        | 420/3663 [27:52<3:47:16,  4.20s/it]
+12%|█▏        | 436/3663 [28:53<3:24:36,  3.80s/it]
+{'loss': '0.03284', 'grad_norm': '0.1563', 'learning_rate': '0.001', 'epoch': '0.3686'}
+12%|█▏        | 452/3663 [29:54<3:40:38,  4.12s/it]
+13%|█▎        | 466/3663 [30:54<3:46:40,  4.25s/it]
+[speed] 2026-10-11 18:12 EAT: step 476/3663, 0.25 steps/s (4.00 s/step); ETA 3h32m for the remaining steps, finishing about 2026-10-11 21:45 EAT (training steps only; the per-epoch eval passes add a little)
+13%|█▎        | 482/3663 [31:57<3:25:21,  3.87s/it]
+14%|█▎        | 499/3663 [32:59<3:07:17,  3.55s/it]
+{'loss': '0.03038', 'grad_norm': '0.1442', 'learning_rate': '0.001', 'epoch': '0.4095'}
+14%|█▍        | 513/3663 [34:01<3:44:43,  4.28s/it]
+14%|█▍        | 528/3663 [35:02<3:23:04,  3.89s/it]
+15%|█▍        | 544/3663 [36:03<3:11:28,  3.68s/it]
+{'loss': '0.03107', 'grad_norm': '0.1547', 'learning_rate': '0.001', 'epoch': '0.4505'}
+15%|█▌        | 559/3663 [37:04<3:43:29,  4.32s/it]
+16%|█▌        | 574/3663 [38:06<3:22:31,  3.93s/it]
+16%|█▌        | 590/3663 [39:06<3:12:05,  3.75s/it]
+{'loss': '0.02756', 'grad_norm': '0.1286', 'learning_rate': '0.001', 'epoch': '0.4914'}
+17%|█▋        | 606/3663 [40:09<3:40:09,  4.32s/it]
+17%|█▋        | 621/3663 [41:12<3:32:31,  4.19s/it]
+17%|█▋        | 637/3663 [42:13<3:11:47,  3.80s/it]
+{'loss': '0.02735', 'grad_norm': '0.129', 'learning_rate': '0.001', 'epoch': '0.5324'}
+18%|█▊        | 653/3663 [43:14<3:33:37,  4.26s/it]
+18%|█▊        | 668/3663 [44:18<3:32:42,  4.26s/it]
+19%|█▊        | 684/3663 [45:19<3:07:46,  3.78s/it]
+{'loss': '0.03733', 'grad_norm': '0.115', 'learning_rate': '0.001', 'epoch': '0.5733'}
+19%|█▉        | 701/3663 [46:22<3:07:38,  3.80s/it]
+[speed] 2026-10-11 18:27 EAT: step 704/3663, 0.25 steps/s (3.96 s/step); ETA 3h15m for the remaining steps, finishing about 2026-10-11 21:43 EAT (training steps only; the per-epoch eval passes add a little)
+20%|█▉        | 715/3663 [47:23<3:28:24,  4.24s/it]
+20%|█▉        | 731/3663 [48:26<3:04:27,  3.77s/it]
+20%|██        | 748/3663 [49:29<2:50:09,  3.50s/it]
+{'loss': '0.02313', 'grad_norm': '0.1195', 'learning_rate': '0.001', 'epoch': '0.6143'}
+21%|██        | 762/3663 [50:29<3:26:37,  4.27s/it]
+21%|██        | 777/3663 [51:30<3:05:57,  3.87s/it]
+22%|██▏       | 793/3663 [52:31<3:03:04,  3.83s/it]
+{'loss': '0.02272', 'grad_norm': '0.1089', 'learning_rate': '0.001', 'epoch': '0.6552'}
+22%|██▏       | 808/3663 [53:31<3:24:51,  4.31s/it]
+22%|██▏       | 823/3663 [54:33<3:09:16,  4.00s/it]
+23%|██▎       | 839/3663 [55:34<2:55:37,  3.73s/it]
+{'loss': '0.0228', 'grad_norm': '0.1374', 'learning_rate': '0.001', 'epoch': '0.6962'}
+23%|██▎       | 855/3663 [56:35<3:20:56,  4.29s/it]
+24%|██▍       | 870/3663 [57:40<3:16:37,  4.22s/it]
+24%|██▍       | 886/3663 [58:40<2:55:58,  3.80s/it]
+{'loss': '0.02771', 'grad_norm': '0.09685', 'learning_rate': '0.001', 'epoch': '0.7371'}
+25%|██▍       | 902/3663 [59:40<3:06:26,  4.05s/it]
+25%|██▌       | 916/3663 [1:00:41<3:16:09,  4.28s/it]
+[speed] 2026-10-11 18:42 EAT: step 931/3663, 0.25 steps/s (3.98 s/step); ETA 3h01m for the remaining steps, finishing about 2026-10-11 21:43 EAT (training steps only; the per-epoch eval passes add a little)
+25%|██▌       | 932/3663 [1:01:44<2:51:23,  3.77s/it]
+26%|██▌       | 949/3663 [1:02:47<2:38:58,  3.51s/it]
+{'loss': '0.01918', 'grad_norm': '0.101', 'learning_rate': '0.001', 'epoch': '0.7781'}
+26%|██▋       | 963/3663 [1:03:47<3:10:59,  4.24s/it]
+27%|██▋       | 979/3663 [1:04:51<2:50:01,  3.80s/it]
+27%|██▋       | 996/3663 [1:05:55<2:37:51,  3.55s/it]
+{'loss': '0.02224', 'grad_norm': '0.09974', 'learning_rate': '0.001', 'epoch': '0.819'}
+28%|██▊       | 1010/3663 [1:06:55<3:12:09,  4.35s/it]
+28%|██▊       | 1025/3663 [1:07:56<2:49:38,  3.86s/it]
+28%|██▊       | 1041/3663 [1:08:57<2:44:15,  3.76s/it]
+{'loss': '0.01941', 'grad_norm': '0.1226', 'learning_rate': '0.001', 'epoch': '0.86'}
+29%|██▉       | 1057/3663 [1:10:00<3:08:55,  4.35s/it]
+29%|██▉       | 1072/3663 [1:11:03<2:55:28,  4.06s/it]
+30%|██▉       | 1088/3663 [1:12:03<2:40:44,  3.75s/it]
+{'loss': '0.01871', 'grad_norm': '0.08877', 'learning_rate': '0.001', 'epoch': '0.9009'}
+30%|███       | 1104/3663 [1:13:05<3:03:52,  4.31s/it]
+31%|███       | 1119/3663 [1:14:09<3:00:16,  4.25s/it]
+31%|███       | 1135/3663 [1:15:10<2:40:50,  3.82s/it]
+{'loss': '0.01967', 'grad_norm': '0.1053', 'learning_rate': '0.001', 'epoch': '0.9419'}
+31%|███▏      | 1151/3663 [1:16:10<2:41:00,  3.85s/it]
+[speed] 2026-10-11 18:57 EAT: step 1158/3663, 0.25 steps/s (3.97 s/step); ETA 2h45m for the remaining steps, finishing about 2026-10-11 21:43 EAT (training steps only; the per-epoch eval passes add a little)
+32%|███▏      | 1165/3663 [1:17:11<2:55:42,  4.22s/it]
+32%|███▏      | 1181/3663 [1:18:14<2:38:21,  3.83s/it]
+33%|███▎      | 1198/3663 [1:19:17<2:26:26,  3.56s/it]
+{'loss': '0.01958', 'grad_norm': '0.1114', 'learning_rate': '0.001', 'epoch': '0.9828'}
+33%|███▎      | 1213/3663 [1:20:18<2:39:22,  3.90s/it]
+26%|██▌       | 49/190 [00:31<01:37,  1.45it/s][A
+74%|███████▍  | 141/190 [01:32<00:29,  1.68it/s][A
+[A{'eval_loss': '0.00472', 'eval_runtime': '125.1', 'eval_samples_per_second': '96.89', 'eval_steps_per_second': '1.519', 'epoch': '1'}
+                                                 [A
+[A{'eval_dictionary_nominal_loss': '0.08388', 'eval_dictionary_nominal_runtime': '0.6644', 'eval_dictionary_nominal_samples_per_second': '164.1', 'eval_dictionary_nominal_steps_per_second': '3.01', 'epoch': '1'}
+                                             [A
+33%|███▎      | 1227/3663 [1:23:23<7:20:10, 10.84s/it]
+34%|███▍      | 1242/3663 [1:24:27<2:52:30,  4.28s/it]
+{'loss': '0.01598', 'grad_norm': '0.03716', 'learning_rate': '0.001', 'epoch': '1.024'}
+34%|███▍      | 1258/3663 [1:25:30<2:32:10,  3.80s/it]
+35%|███▍      | 1274/3663 [1:26:31<2:50:45,  4.29s/it]
+35%|███▌      | 1289/3663 [1:27:35<2:47:33,  4.23s/it]
+{'loss': '0.01714', 'grad_norm': '0.04797', 'learning_rate': '0.001', 'epoch': '1.065'}
+36%|███▌      | 1305/3663 [1:28:37<2:31:31,  3.86s/it]
+36%|███▌      | 1322/3663 [1:29:41<2:29:55,  3.84s/it]
+36%|███▋      | 1336/3663 [1:30:41<2:44:10,  4.23s/it]
+{'loss': '0.01801', 'grad_norm': '0.0362', 'learning_rate': '0.001', 'epoch': '1.106'}
+[speed] 2026-10-11 19:12 EAT: step 1352/3663, 0.21 steps/s (4.66 s/step); ETA 2h59m for the remaining steps, finishing about 2026-10-11 22:12 EAT (training steps only; the per-epoch eval passes add a little)
+37%|███▋      | 1352/3663 [1:31:45<2:29:10,  3.87s/it]
+37%|███▋      | 1369/3663 [1:32:48<2:16:17,  3.56s/it]
+38%|███▊      | 1383/3663 [1:33:47<2:42:01,  4.26s/it]
+38%|███▊      | 1398/3663 [1:34:48<2:26:09,  3.87s/it]
+{'loss': '0.01747', 'grad_norm': '0.1425', 'learning_rate': '0.001', 'epoch': '1.147'}
+39%|███▊      | 1414/3663 [1:35:48<2:21:42,  3.78s/it]
+39%|███▉      | 1429/3663 [1:36:49<2:41:44,  4.34s/it]
+39%|███▉      | 1444/3663 [1:37:51<2:26:09,  3.95s/it]
+{'loss': '0.02238', 'grad_norm': '0.03928', 'learning_rate': '0.001', 'epoch': '1.188'}
+40%|███▉      | 1460/3663 [1:38:52<2:18:53,  3.78s/it]
+40%|████      | 1476/3663 [1:39:54<2:36:00,  4.28s/it]
+41%|████      | 1491/3663 [1:40:58<2:33:55,  4.25s/it]
+{'loss': '0.01749', 'grad_norm': '0.03368', 'learning_rate': '0.001', 'epoch': '1.229'}
+41%|████      | 1507/3663 [1:42:00<2:17:56,  3.84s/it]
+42%|████▏     | 1523/3663 [1:43:00<2:22:15,  3.99s/it]
+42%|████▏     | 1538/3663 [1:44:04<2:30:08,  4.24s/it]
+{'loss': '0.01645', 'grad_norm': '0.03538', 'learning_rate': '0.001', 'epoch': '1.269'}
+42%|████▏     | 1554/3663 [1:45:07<2:15:18,  3.85s/it]
+43%|████▎     | 1571/3663 [1:46:08<1:58:01,  3.39s/it]
+[speed] 2026-10-11 19:27 EAT: step 1579/3663, 0.25 steps/s (3.97 s/step); ETA 2h17m for the remaining steps, finishing about 2026-10-11 21:45 EAT (training steps only; the per-epoch eval passes add a little)
+43%|████▎     | 1585/3663 [1:47:10<2:27:48,  4.27s/it]
+{'loss': '0.01663', 'grad_norm': '0.04564', 'learning_rate': '0.001', 'epoch': '1.31'}
+44%|████▎     | 1600/3663 [1:48:10<2:15:00,  3.93s/it]
+44%|████▍     | 1617/3663 [1:49:14<2:00:48,  3.54s/it]
+45%|████▍     | 1632/3663 [1:50:16<2:25:14,  4.29s/it]
+45%|████▍     | 1647/3663 [1:51:17<2:07:54,  3.81s/it]
+{'loss': '0.01507', 'grad_norm': '0.05616', 'learning_rate': '0.001', 'epoch': '1.351'}
+45%|████▌     | 1663/3663 [1:52:19<2:08:48,  3.86s/it]
+46%|████▌     | 1679/3663 [1:53:22<2:23:30,  4.34s/it]
+46%|████▌     | 1694/3663 [1:54:25<2:10:02,  3.96s/it]
+{'loss': '0.02061', 'grad_norm': '0.03807', 'learning_rate': '0.001', 'epoch': '1.392'}
+47%|████▋     | 1710/3663 [1:55:26<2:02:10,  3.75s/it]
+47%|████▋     | 1726/3663 [1:56:28<2:20:28,  4.35s/it]
+48%|████▊     | 1741/3663 [1:57:32<2:16:14,  4.25s/it]
+{'loss': '0.01423', 'grad_norm': '0.03764', 'learning_rate': '0.001', 'epoch': '1.433'}
+48%|████▊     | 1757/3663 [1:58:34<2:00:05,  3.78s/it]
+48%|████▊     | 1773/3663 [1:59:33<2:08:26,  4.08s/it]
+49%|████▉     | 1787/3663 [2:00:34<2:12:52,  4.25s/it]
+{'loss': '0.0141', 'grad_norm': '0.08718', 'learning_rate': '0.001', 'epoch': '1.474'}
+49%|████▉     | 1803/3663 [2:01:36<1:55:57,  3.74s/it]
+[speed] 2026-10-11 19:42 EAT: step 1806/3663, 0.25 steps/s (3.97 s/step); ETA 2h02m for the remaining steps, finishing about 2026-10-11 21:45 EAT (training steps only; the per-epoch eval passes add a little)
+50%|████▉     | 1820/3663 [2:02:38<1:46:53,  3.48s/it]
+50%|█████     | 1834/3663 [2:03:39<2:10:44,  4.29s/it]
+{'loss': '0.01429', 'grad_norm': '0.06209', 'learning_rate': '0.001', 'epoch': '1.515'}
+51%|█████     | 1850/3663 [2:04:42<1:53:02,  3.74s/it]
+51%|█████     | 1867/3663 [2:05:45<1:47:22,  3.59s/it]
+51%|█████▏    | 1882/3663 [2:06:48<2:07:13,  4.29s/it]
+52%|█████▏    | 1897/3663 [2:07:49<1:54:05,  3.88s/it]
+{'loss': '0.01701', 'grad_norm': '0.03524', 'learning_rate': '0.001', 'epoch': '1.556'}
+52%|█████▏    | 1913/3663 [2:08:50<1:50:47,  3.80s/it]
+53%|█████▎    | 1928/3663 [2:09:49<2:05:35,  4.34s/it]
+53%|█████▎    | 1943/3663 [2:10:53<1:56:06,  4.05s/it]
+{'loss': '0.01481', 'grad_norm': '0.02764', 'learning_rate': '0.001', 'epoch': '1.597'}
+53%|█████▎    | 1959/3663 [2:11:53<1:48:26,  3.82s/it]
+54%|█████▍    | 1975/3663 [2:12:54<2:00:09,  4.27s/it]
+54%|█████▍    | 1990/3663 [2:13:59<1:58:05,  4.24s/it]
+{'loss': '0.01391', 'grad_norm': '0.05681', 'learning_rate': '0.001', 'epoch': '1.638'}
+55%|█████▍    | 2006/3663 [2:15:02<1:47:52,  3.91s/it]
+55%|█████▌    | 2023/3663 [2:16:05<1:49:38,  4.01s/it]
+[speed] 2026-10-11 19:57 EAT: step 2033/3663, 0.25 steps/s (3.98 s/step); ETA 1h48m for the remaining steps, finishing about 2026-10-11 21:45 EAT (training steps only; the per-epoch eval passes add a little)
+56%|█████▌    | 2037/3663 [2:17:06<1:54:33,  4.23s/it]
+{'loss': '0.01402', 'grad_norm': '0.03402', 'learning_rate': '0.001', 'epoch': '1.679'}
+56%|█████▌    | 2053/3663 [2:18:08<1:41:57,  3.80s/it]
+57%|█████▋    | 2070/3663 [2:19:11<1:33:26,  3.52s/it]
+57%|█████▋    | 2084/3663 [2:20:12<1:52:50,  4.29s/it]
+{'loss': '0.01412', 'grad_norm': '0.04844', 'learning_rate': '0.001', 'epoch': '1.72'}
+57%|█████▋    | 2100/3663 [2:21:16<1:39:19,  3.81s/it]
+58%|█████▊    | 2116/3663 [2:22:17<1:35:36,  3.71s/it]
+58%|█████▊    | 2131/3663 [2:23:18<1:48:46,  4.26s/it]
+59%|█████▊    | 2146/3663 [2:24:20<1:39:22,  3.93s/it]
+{'loss': '0.01365', 'grad_norm': '0.03097', 'learning_rate': '0.001', 'epoch': '1.761'}
+59%|█████▉    | 2162/3663 [2:25:21<1:34:15,  3.77s/it]
+59%|█████▉    | 2178/3663 [2:26:24<1:47:12,  4.33s/it]
+60%|█████▉    | 2193/3663 [2:27:28<1:40:50,  4.12s/it]
+{'loss': '0.01404', 'grad_norm': '0.03959', 'learning_rate': '0.001', 'epoch': '1.802'}
+60%|██████    | 2209/3663 [2:28:28<1:32:03,  3.80s/it]
+61%|██████    | 2225/3663 [2:29:30<1:43:04,  4.30s/it]
+61%|██████    | 2240/3663 [2:30:34<1:39:59,  4.22s/it]
+{'loss': '0.014', 'grad_norm': '0.01984', 'learning_rate': '0.001', 'epoch': '1.843'}
+62%|██████▏   | 2256/3663 [2:31:36<1:30:14,  3.85s/it]
+[speed] 2026-10-11 20:12 EAT: step 2260/3663, 0.25 steps/s (3.97 s/step); ETA 1h32m for the remaining steps, finishing about 2026-10-11 21:45 EAT (training steps only; the per-epoch eval passes add a little)
+62%|██████▏   | 2272/3663 [2:32:36<1:26:51,  3.75s/it]
+62%|██████▏   | 2286/3663 [2:33:37<1:38:21,  4.29s/it]
+{'loss': '0.01422', 'grad_norm': '0.03685', 'learning_rate': '0.001', 'epoch': '1.884'}
+63%|██████▎   | 2302/3663 [2:34:40<1:25:47,  3.78s/it]
+63%|██████▎   | 2319/3663 [2:35:43<1:18:50,  3.52s/it]
+64%|██████▎   | 2333/3663 [2:36:42<1:34:47,  4.28s/it]
+64%|██████▍   | 2348/3663 [2:37:44<1:24:43,  3.87s/it]
+{'loss': '0.01374', 'grad_norm': '0.07866', 'learning_rate': '0.001', 'epoch': '1.925'}
+65%|██████▍   | 2364/3663 [2:38:44<1:20:55,  3.74s/it]
+65%|██████▍   | 2379/3663 [2:39:44<1:32:39,  4.33s/it]
+65%|██████▌   | 2394/3663 [2:40:47<1:24:07,  3.98s/it]
+{'loss': '0.01391', 'grad_norm': '0.04377', 'learning_rate': '0.001', 'epoch': '1.966'}
+66%|██████▌   | 2410/3663 [2:41:48<1:20:09,  3.84s/it]
+66%|██████▌   | 2426/3663 [2:42:49<1:25:57,  4.17s/it]
+0%|          | 0/190 [00:00<?, ?it/s][A
+48%|████▊     | 92/190 [01:00<00:58,  1.69it/s][A
+96%|█████████▋| 183/190 [02:00<00:04,  1.58it/s][A
+[A{'eval_loss': '0.003545', 'eval_runtime': '125.1', 'eval_samples_per_second': '96.88', 'eval_steps_per_second': '1.519', 'epoch': '2'}
+                                                 [A
+[A{'eval_dictionary_nominal_loss': '0.05474', 'eval_dictionary_nominal_runtime': '0.6608', 'eval_dictionary_nominal_samples_per_second': '164.9', 'eval_dictionary_nominal_steps_per_second': '3.026', 'epoch': '2'}
+                                             [A
+{'loss': '0.01227', 'grad_norm': '0.04062', 'learning_rate': '0.001', 'epoch': '2.007'}
+67%|██████▋   | 2454/3663 [2:46:51<1:41:39,  5.05s/it]
+[speed] 2026-10-11 20:28 EAT: step 2455/3663, 0.22 steps/s (4.64 s/step); ETA 1h33m for the remaining steps, finishing about 2026-10-11 22:01 EAT (training steps only; the per-epoch eval passes add a little)
+67%|██████▋   | 2470/3663 [2:47:55<1:15:36,  3.80s/it]
+68%|██████▊   | 2487/3663 [2:48:59<1:09:42,  3.56s/it]
+{'loss': '0.01211', 'grad_norm': '0.03448', 'learning_rate': '0.001', 'epoch': '2.048'}
+68%|██████▊   | 2501/3663 [2:49:59<1:35:42,  4.94s/it]
+69%|██████▊   | 2516/3663 [2:51:00<1:13:46,  3.86s/it]
+69%|██████▉   | 2532/3663 [2:52:02<1:12:20,  3.84s/it]
+70%|██████▉   | 2548/3663 [2:53:04<1:20:06,  4.31s/it]
+{'loss': '0.01219', 'grad_norm': '0.02986', 'learning_rate': '0.001', 'epoch': '2.088'}
+70%|██████▉   | 2563/3663 [2:54:08<1:16:01,  4.15s/it]
+70%|███████   | 2579/3663 [2:55:09<1:08:25,  3.79s/it]
+71%|███████   | 2595/3663 [2:56:09<1:14:44,  4.20s/it]
+{'loss': '0.01237', 'grad_norm': '0.03532', 'learning_rate': '0.001', 'epoch': '2.129'}
+71%|███████▏  | 2610/3663 [2:57:14<1:14:09,  4.23s/it]
+72%|███████▏  | 2626/3663 [2:58:16<1:06:17,  3.84s/it]
+72%|███████▏  | 2643/3663 [2:59:19<1:05:37,  3.86s/it]
+{'loss': '0.01833', 'grad_norm': '6.414', 'learning_rate': '0.001', 'epoch': '2.17'}
+73%|███████▎  | 2657/3663 [3:00:20<1:11:29,  4.26s/it]
+73%|███████▎  | 2673/3663 [3:01:23<1:02:35,  3.79s/it]
+[speed] 2026-10-11 20:43 EAT: step 2682/3663, 0.25 steps/s (3.97 s/step); ETA 1h04m for the remaining steps, finishing about 2026-10-11 21:47 EAT (training steps only; the per-epoch eval passes add a little)
+73%|███████▎  | 2690/3663 [3:02:26<56:53,  3.51s/it]
+{'loss': '0.01748', 'grad_norm': '0.2941', 'learning_rate': '0.001', 'epoch': '2.211'}
+74%|███████▍  | 2704/3663 [3:03:26<1:09:11,  4.33s/it]
+74%|███████▍  | 2719/3663 [3:04:27<1:00:39,  3.85s/it]
+75%|███████▍  | 2735/3663 [3:05:27<58:56,  3.81s/it]
+{'loss': '0.01551', 'grad_norm': '2.047', 'learning_rate': '0.001', 'epoch': '2.252'}
+75%|███████▌  | 2751/3663 [3:06:33<1:10:31,  4.64s/it]
+76%|███████▌  | 2766/3663 [3:07:35<58:44,  3.93s/it]
+76%|███████▌  | 2783/3663 [3:08:39<54:58,  3.75s/it]
+76%|███████▋  | 2799/3663 [3:09:42<1:02:20,  4.33s/it]
+{'loss': '0.01464', 'grad_norm': '0.02412', 'learning_rate': '0.001', 'epoch': '2.293'}
+77%|███████▋  | 2814/3663 [3:10:45<58:24,  4.13s/it]
+77%|███████▋  | 2830/3663 [3:11:45<52:21,  3.77s/it]
+78%|███████▊  | 2846/3663 [3:12:46<58:13,  4.28s/it]
+{'loss': '0.0117', 'grad_norm': '0.02749', 'learning_rate': '0.001', 'epoch': '2.334'}
+78%|███████▊  | 2861/3663 [3:13:50<56:34,  4.23s/it]
+79%|███████▊  | 2877/3663 [3:14:51<49:50,  3.81s/it]
+79%|███████▉  | 2894/3663 [3:15:55<52:19,  4.08s/it]
+{'loss': '0.01126', 'grad_norm': '0.02809', 'learning_rate': '0.001', 'epoch': '2.375'}
+79%|███████▉  | 2908/3663 [3:16:55<53:43,  4.27s/it]
+[speed] 2026-10-11 20:58 EAT: step 2909/3663, 0.25 steps/s (3.98 s/step); ETA 0h49m for the remaining steps, finishing about 2026-10-11 21:48 EAT (training steps only; the per-epoch eval passes add a little)
+80%|███████▉  | 2924/3663 [3:17:58<46:55,  3.81s/it]
+80%|████████  | 2941/3663 [3:19:01<43:13,  3.59s/it]
+{'loss': '0.01129', 'grad_norm': '0.01221', 'learning_rate': '0.001', 'epoch': '2.416'}
+81%|████████  | 2955/3663 [3:20:02<50:22,  4.27s/it]
+81%|████████  | 2971/3663 [3:21:06<44:30,  3.86s/it]
+82%|████████▏ | 2988/3663 [3:22:10<40:00,  3.56s/it]
+{'loss': '0.01112', 'grad_norm': '0.01469', 'learning_rate': '0.001', 'epoch': '2.457'}
+82%|████████▏ | 3002/3663 [3:23:09<49:46,  4.52s/it]
+82%|████████▏ | 3017/3663 [3:24:11<42:20,  3.93s/it]
+83%|████████▎ | 3033/3663 [3:25:12<39:46,  3.79s/it]
+83%|████████▎ | 3049/3663 [3:26:16<44:34,  4.36s/it]
+{'loss': '0.01101', 'grad_norm': '0.02338', 'learning_rate': '0.001', 'epoch': '2.498'}
+84%|████████▎ | 3064/3663 [3:27:19<40:21,  4.04s/it]
+84%|████████▍ | 3080/3663 [3:28:21<37:26,  3.85s/it]
+85%|████████▍ | 3096/3663 [3:29:22<40:46,  4.32s/it]
+{'loss': '0.01111', 'grad_norm': '0.1014', 'learning_rate': '0.001', 'epoch': '2.539'}
+85%|████████▍ | 3110/3663 [3:30:22<39:31,  4.29s/it]
+85%|████████▌ | 3126/3663 [3:31:25<33:59,  3.80s/it]
+[speed] 2026-10-11 21:13 EAT: step 3136/3663, 0.25 steps/s (3.97 s/step); ETA 0h34m for the remaining steps, finishing about 2026-10-11 21:48 EAT (training steps only; the per-epoch eval passes add a little)
+86%|████████▌ | 3143/3663 [3:32:28<33:19,  3.84s/it]
+{'loss': '0.01151', 'grad_norm': '0.02844', 'learning_rate': '0.001', 'epoch': '2.58'}
+86%|████████▌ | 3157/3663 [3:33:28<35:43,  4.24s/it]
+87%|████████▋ | 3173/3663 [3:34:32<31:09,  3.82s/it]
+87%|████████▋ | 3190/3663 [3:35:35<27:56,  3.54s/it]
+{'loss': '0.01172', 'grad_norm': '0.05895', 'learning_rate': '0.001', 'epoch': '2.621'}
+87%|████████▋ | 3204/3663 [3:36:35<32:47,  4.29s/it]
+88%|████████▊ | 3220/3663 [3:37:39<28:18,  3.83s/it]
+88%|████████▊ | 3237/3663 [3:38:43<25:47,  3.63s/it]
+{'loss': '0.01086', 'grad_norm': '0.06375', 'learning_rate': '0.001', 'epoch': '2.662'}
+89%|████████▉ | 3252/3663 [3:39:45<30:50,  4.50s/it]
+89%|████████▉ | 3267/3663 [3:40:48<26:02,  3.95s/it]
+90%|████████▉ | 3283/3663 [3:41:49<23:52,  3.77s/it]
+90%|█████████ | 3299/3663 [3:42:51<26:18,  4.34s/it]
+{'loss': '0.01043', 'grad_norm': '0.01911', 'learning_rate': '0.001', 'epoch': '2.703'}
+90%|█████████ | 3314/3663 [3:43:54<23:19,  4.01s/it]
+91%|█████████ | 3330/3663 [3:44:55<21:21,  3.85s/it]
+91%|█████████▏| 3346/3663 [3:45:56<22:40,  4.29s/it]
+{'loss': '0.01161', 'grad_norm': '0.01375', 'learning_rate': '0.001', 'epoch': '2.744'}
+92%|█████████▏| 3361/3663 [3:47:01<21:28,  4.27s/it]
+[speed] 2026-10-11 21:28 EAT: step 3362/3663, 0.25 steps/s (4.00 s/step); ETA 0h20m for the remaining steps, finishing about 2026-10-11 21:48 EAT (training steps only; the per-epoch eval passes add a little)
+92%|█████████▏| 3377/3663 [3:48:03<18:28,  3.87s/it]
+93%|█████████▎| 3393/3663 [3:49:02<17:19,  3.85s/it]
+{'loss': '0.01016', 'grad_norm': '0.03425', 'learning_rate': '0.001', 'epoch': '2.785'}
+93%|█████████▎| 3407/3663 [3:50:03<18:09,  4.26s/it]
+93%|█████████▎| 3423/3663 [3:51:07<15:25,  3.86s/it]
+94%|█████████▍| 3440/3663 [3:52:10<13:10,  3.55s/it]
+{'loss': '0.01076', 'grad_norm': '0.02076', 'learning_rate': '0.001', 'epoch': '2.826'}
+94%|█████████▍| 3454/3663 [3:53:09<14:49,  4.26s/it]
+95%|█████████▍| 3469/3663 [3:54:10<12:34,  3.89s/it]
+95%|█████████▌| 3485/3663 [3:55:11<11:13,  3.78s/it]
+{'loss': '0.00989', 'grad_norm': '0.03197', 'learning_rate': '0.001', 'epoch': '2.867'}
+96%|█████████▌| 3501/3663 [3:56:16<12:22,  4.58s/it]
+96%|█████████▌| 3516/3663 [3:57:18<09:39,  3.94s/it]
+96%|█████████▋| 3532/3663 [3:58:19<08:22,  3.83s/it]
+97%|█████████▋| 3548/3663 [3:59:22<08:18,  4.34s/it]
+{'loss': '0.01094', 'grad_norm': '0.01637', 'learning_rate': '0.001', 'epoch': '2.907'}
+97%|█████████▋| 3563/3663 [4:00:25<06:56,  4.16s/it]
+98%|█████████▊| 3579/3663 [4:01:26<05:23,  3.85s/it]
+[speed] 2026-10-11 21:43 EAT: step 3590/3663, 0.25 steps/s (3.95 s/step); ETA 0h04m for the remaining steps, finishing about 2026-10-11 21:48 EAT (training steps only; the per-epoch eval passes add a little)
+98%|█████████▊| 3595/3663 [4:02:26<04:47,  4.24s/it]
+{'loss': '0.01169', 'grad_norm': '0.04347', 'learning_rate': '0.001', 'epoch': '2.948'}
+99%|█████████▊| 3610/3663 [4:03:31<03:44,  4.23s/it]
+99%|█████████▉| 3626/3663 [4:04:32<02:20,  3.79s/it]
+99%|█████████▉| 3643/3663 [4:05:35<01:16,  3.83s/it]
+{'loss': '0.01226', 'grad_norm': '0.03662', 'learning_rate': '0.001', 'epoch': '2.989'}
+100%|█████████▉| 3658/3663 [4:06:36<00:19,  3.84s/it]
+33%|███▎      | 63/190 [00:41<01:28,  1.44it/s][A
+82%|████████▏ | 155/190 [01:41<00:24,  1.44it/s][A
+[A{'eval_loss': '0.003572', 'eval_runtime': '124.7', 'eval_samples_per_second': '97.21', 'eval_steps_per_second': '1.524', 'epoch': '3'}
+                                                 [A
+[A{'eval_dictionary_nominal_loss': '0.07151', 'eval_dictionary_nominal_runtime': '0.6626', 'eval_dictionary_nominal_samples_per_second': '164.5', 'eval_dictionary_nominal_steps_per_second': '3.018', 'epoch': '3'}
+                                             [A
+{'train_runtime': '1.494e+04', 'train_samples_per_second': '31.37', 'train_steps_per_second': '0.245', 'train_loss': '0.03305', 'epoch': '3'}
+Root accuracy on dictionary_nominal (109 pairs): 0.7706
+Training finished at step 3663. Output: /tmp/geez_trainer_checkpoints/byt5_3dc784e_337cdf0_books_s1
+  ይቀትሉ -> root: ቀ-ተ-ለ | tense: present | person: 3 | gender: m | number: p | stem: basic
+  ተቀተለት -> root: ቀ-ተ-ለ | tense: past | person: 3 | gender: f | number: s | stem: passive
+  ይባርኩ -> root: በ-ረ-ከ | tense: present | person: 3 | gender: m | number: p | stem: basic
+  ይቀድሱ -> root: ቀ-ደ-ሰ | tense: subjunctive | person: 3 | gender: m | number: p | stem: basic
+  ቀተለ -> root: ቀ-ተ-ለ | tense: past | person: 3 | gender: m | number: s | stem: basic
