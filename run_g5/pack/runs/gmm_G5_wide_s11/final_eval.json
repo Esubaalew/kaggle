@@ -1,0 +1,123 @@
+{
+ "best_epoch": 50,
+ "chrF_char_full_dev": 14.140312512701295,
+ "chrF++_full_dev": 13.868911376615896,
+ "BLEU_greedy_full_dev": 3.108915366289306,
+ "beam5_nr4": {
+  "chrF_char": 15.934597753104295,
+  "chrF++": 15.687669230452647,
+  "BLEU": 4.5539662414307545
+ },
+ "n_dev": 1741,
+ "probe_root": {
+  "all_types": {
+   "consistency": 0.7637372662071269,
+   "permutation": 0.2684223756273707,
+   "perm_sd": 0.0010811050488424591,
+   "p_value": 0.004975124378109453,
+   "n_roots": 801,
+   "n_types": 6732,
+   "slots_used": 959,
+   "top10_slot_share": 0.1319073083778966
+  },
+  "gate_probe": {
+   "mean_gate_rooted": 0.6790918685813663,
+   "n_rooted_tokens": 13398,
+   "mean_gate_rootless": 0.06418229395114627,
+   "n_rootless_tokens": 9869,
+   "mean_gate_out_of_bank": 0.40943813073563584,
+   "n_out_of_bank_tokens": 2021,
+   "mean_gate_unknown": 0.33611031324913104,
+   "n_unknown_tokens": 300
+  },
+  "unseen_with_siblings": {
+   "consistency": 0.7244126028482679,
+   "permutation": 0.21656478113732436,
+   "perm_sd": 0.001543793335849203,
+   "p_value": 0.004975124378109453,
+   "n_roots": 554,
+   "n_types": 5798,
+   "slots_used": 683,
+   "top10_slot_share": 0.15143152811314245
+  },
+  "n_unseen_types": 1841,
+  "unseen_slot_accuracy": 0.5893536121673004
+ },
+ "probe_pattern": {
+  "all_types": {
+   "consistency": 0.7588677321331461,
+   "permutation": 0.3490100961562876,
+   "perm_sd": 0.017858229524356894,
+   "p_value": 0.004975124378109453,
+   "n_roots": 25,
+   "n_types": 8521,
+   "slots_used": 22,
+   "top10_slot_share": 0.9223095880765169
+  },
+  "unseen_with_siblings": {
+   "consistency": 0.7488205543053605,
+   "permutation": 0.3407496623747485,
+   "perm_sd": 0.01845988591981659,
+   "p_value": 0.004975124378109453,
+   "n_roots": 24,
+   "n_types": 8517,
+   "slots_used": 22,
+   "top10_slot_share": 0.9227427497945286
+  },
+  "n_unseen_types": 3073,
+  "unseen_slot_accuracy": 0.6339082329970712
+ },
+ "ablation": {
+  "unlinked": {
+   "n_tokens": 38200,
+   "nll_on": 5.545924648486258,
+   "nll_off": 5.7076232705026175,
+   "delta": 0.16169862201635976
+  },
+  "50+": {
+   "n_tokens": 1567,
+   "nll_on": 3.3266087173401133,
+   "nll_off": 3.88194837515301,
+   "delta": 0.5553396578128968
+  },
+  "unseen": {
+   "n_tokens": 295,
+   "nll_on": 5.204059783162518,
+   "nll_off": 5.752337371295129,
+   "delta": 0.5482775881326111
+  },
+  "5-49": {
+   "n_tokens": 1675,
+   "nll_on": 4.718292221637032,
+   "nll_off": 5.3577118891358735,
+   "delta": 0.639419667498841
+  },
+  "1-4": {
+   "n_tokens": 686,
+   "nll_on": 4.734375800524361,
+   "nll_off": 5.360198475768703,
+   "delta": 0.6258226752443423
+  },
+  "all": {
+   "n_tokens": 42423,
+   "nll_on": 5.415770604122332,
+   "nll_off": 5.621064637820917,
+   "delta": 0.2052940336985845
+  }
+ },
+ "slot_swap": {
+  "n_items": 600,
+  "routed_to_own_root": 1.0,
+  "mean_gate": 0.9596512227505446,
+  "success_swap": 0.011666666666666667,
+  "success_self": 0.0,
+  "keep_r_self": 0.9983333333333333,
+  "keep_r_swap": 0.5383333333333333,
+  "keep_r_kill": 0.7083333333333334,
+  "tf_delta_nll_root_tokens": 0.8619445952613565,
+  "n_root_tokens": 897,
+  "tf_delta_nll_other_tokens": 0.0009927675265748877,
+  "n_other_tokens": 13945
+ },
+ "seconds": 177
+}

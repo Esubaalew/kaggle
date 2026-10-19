@@ -1,0 +1,22 @@
+{
+  "beam.py": "4d77ad67f776dc455a1b4b11c3ff9f988cf3c454ec17d2d6d1e7632811d74d2c",
+  "build_labels.py": "249f5a6b3ec3d0055391f37b0ae5154fe7b50930286639308617005bab7d57f0",
+  "cmm.py": "0342c89280ccb5c3e14ea03f38224ee96b482032d4fccd96d7345cdc914403a9",
+  "configs/base.json": "d474f3546c802edcd4cc8d84125a8142a392419a42fbaeac305cdfa7166c45fc",
+  "data/age_dev.tsv": "3220607fb4a5c30a51d65e802b1eea85f00c730b1c081316c2f2e3066f22c8cd",
+  "data/age_train.tsv": "2490142faebdf8460a9e232f8aae67c5afa5732c2820c2c6817993801a4fd1af",
+  "data/label_build_report_xhosa_v2.json": "fcd75d45c78d85dd5d3d9d79c7b261a06667a9b1066e540bc86a232230fa0feb",
+  "data/labels_analyser_wide.json": "eb5d71ee0a0c88d942c3a733634cbbff9ecfbc04c293af340473c38831649ea4",
+  "data/preparation_report.json": "678327a8c62115fc3f1cd8860554bc865c28bc6c7f245aa675fda9629d8f1c7f",
+  "data/tokenizer.json": "79bc3316b6f1dfb3d702c2a3980f613587ee3b3a8fa7c97dd30598a8c09f683b",
+  "data.py": "c0052ca90aa05634d6ca0e6e49c39a9225b3ae46129f5a1b47181e427f99a0a6",
+  "final_eval.py": "9af98a7209c6c5af6ab0c5eea8b11fb61ecfade4fb5c754317e3e6738f28d521",
+  "grounded.py": "af550343e3ca052ed02de3cbcc8556e4401289d95e0201d7250822692af0e83a",
+  "model.py": "de89b4048d4e7e13abe0b5ab828aa54e238fcbe28a1821010210d481d6235d27",
+  "routing_ablation.py": "ac7261f911f245aec3eca7f50b661f34b60c165c0c149590221b0d287d00342a",
+  "run_fix.sh": "5a15ad16fbf5315a4f382afbb9a4fcea328c495c6ff188e39cb175dd00907ae1",
+  "run_queue.py": "d173b2efa1b549623969303d0dea26536cc79ff173f7483cbe83e4d317a59548",
+  "slot_tests.py": "dee79a2b41b902d933730eec7d078f879913e8321e26d584865181a46de877e5",
+  "test_labels.py": "aed0bd2313b3c8246f747153e4e493f1eeec49b1a28b2e0daa9c003058577636",
+  "train.py": "bb3dc07193298a37fe758ec877924fe5cbcf1af61085bbe7464b523b2b913e1c"
+}

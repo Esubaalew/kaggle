@@ -1,0 +1,51 @@
+{
+ "run": "gmm_wide_feat_gateany_s33",
+ "system": "gmm",
+ "seed": 33,
+ "labels": "analyser_wide_feat",
+ "model": "facebook/nllb-200-distilled-600M",
+ "src_lang": "tir_Ethi",
+ "tgt_lang": "amh_Ethi",
+ "mem_layers": [
+  5,
+  11
+ ],
+ "aux_weight": 0.15,
+ "gate_target": "any",
+ "freeze_epochs": 0,
+ "new_params": 10300418,
+ "nllb_params": 615073792,
+ "trainable_params": 363019266,
+ "best_epoch": 8,
+ "best_dev_loss": 1.9217558752094897,
+ "train_seconds": 2191,
+ "dev_beam5_nr4": {
+  "chrF_char": 32.770059550396304,
+  "chrF++": 31.644474659161837,
+  "BLEU": 12.364592175322935
+ },
+ "probe": {
+  "own_slot_seen": 0.9707823638123735,
+  "n_seen": 11363,
+  "own_slot_unseen": 0.8216939078751857,
+  "n_unseen": 2019,
+  "majority_class_rate": 0.04244507547451801,
+  "mean_gate_rooted": 0.9809290567323974,
+  "n_rooted": 13382,
+  "mean_gate_oob_rooted": 0.8907698745203965,
+  "n_oob_rooted": 2316,
+  "mean_gate_rootless": 0.03212337649771094,
+  "n_rootless": 9858
+ },
+ "slot_swap": {
+  "n_items": 600,
+  "routed_to_own_root": 0.985,
+  "mean_gate": 0.989254399339358,
+  "success_swap": 0.0,
+  "success_self": 0.0,
+  "keep_r_self": 0.9983333333333333,
+  "keep_r_swap": 0.975,
+  "keep_r_kill": 0.98
+ },
+ "seconds": 2559
+}

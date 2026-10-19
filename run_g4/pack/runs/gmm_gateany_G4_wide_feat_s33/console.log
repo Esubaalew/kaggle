@@ -1,0 +1,630 @@
+device=cuda variant=gmm seed=33
+train=13932 (skipped 0) dev=1741 (skipped 0)
+label cache: 1024 root classes, 128 pattern classes
+grounded routing: 1024 root slots, 128 pattern slots, entropy_sign=1.0
+params=20342706 ffn_dim=822
+{'step': 50, 'epoch': 0, 'trans': 9.0019, 'route_root': 6.9272, 'route_pattern': 4.8075, 'val_root': 6.9251, 'val_pat': 4.7802, 'gate_bce': 0.5966, 'entropy': 5.8864, 'root': 6.8369, 'pattern': 3.4456, 'lr': 6.25e-05}
+{'step': 100, 'epoch': 0, 'trans': 8.2563, 'route_root': 6.8988, 'route_pattern': 4.5519, 'val_root': 6.8986, 'val_pat': 4.5993, 'gate_bce': 0.5878, 'entropy': 5.8743, 'root': 6.3171, 'pattern': 3.5829, 'lr': 0.000125}
+{'step': 150, 'epoch': 0, 'trans': 8.0304, 'route_root': 6.7605, 'route_pattern': 3.9813, 'val_root': 6.8481, 'val_pat': 4.4395, 'gate_bce': 0.5639, 'entropy': 5.6946, 'root': 6.409, 'pattern': 3.6042, 'lr': 0.0001875}
+{'step': 200, 'epoch': 0, 'trans': 7.7495, 'route_root': 6.201, 'route_pattern': 3.4474, 'val_root': 6.7064, 'val_pat': 4.2006, 'gate_bce': 0.5248, 'entropy': 5.2258, 'root': 5.928, 'pattern': 3.4721, 'lr': 0.00025}
+{'step': 250, 'epoch': 0, 'trans': 7.724, 'route_root': 6.2803, 'route_pattern': 3.7595, 'val_root': 6.6659, 'val_pat': 4.1467, 'gate_bce': 0.4077, 'entropy': 4.8687, 'root': 6.3155, 'pattern': 3.7831, 'lr': 0.0003125}
+{'step': 300, 'epoch': 0, 'trans': 7.7009, 'route_root': 6.1688, 'route_pattern': 3.3423, 'val_root': 6.5394, 'val_pat': 3.7765, 'gate_bce': 0.4277, 'entropy': 4.8304, 'root': 6.2125, 'pattern': 3.3609, 'lr': 0.000375}
+{'step': 350, 'epoch': 0, 'trans': 7.6684, 'route_root': 6.146, 'route_pattern': 3.5759, 'val_root': 6.4229, 'val_pat': 3.7598, 'gate_bce': 0.3652, 'entropy': 4.8454, 'root': 6.1805, 'pattern': 3.5958, 'lr': 0.00043750000000000006}
+{'step': 400, 'epoch': 0, 'trans': 7.7434, 'route_root': 6.2744, 'route_pattern': 3.208, 'val_root': 6.3827, 'val_pat': 3.3782, 'gate_bce': 0.3378, 'entropy': 4.7563, 'root': 6.2873, 'pattern': 3.2468, 'lr': 0.0005}
+epoch=0 dev_loss=7.2447 dev_chrf++=4.34
+  new best dev_loss=7.2447
+{'step': 450, 'epoch': 1, 'trans': 7.5538, 'route_root': 6.1209, 'route_pattern': 3.1766, 'val_root': 6.2344, 'val_pat': 3.2849, 'gate_bce': 0.3415, 'entropy': 4.8099, 'root': 6.1238, 'pattern': 3.2086, 'lr': 0.0005}
+{'step': 500, 'epoch': 1, 'trans': 7.5565, 'route_root': 6.2991, 'route_pattern': 3.8093, 'val_root': 6.3536, 'val_pat': 3.8519, 'gate_bce': 0.3264, 'entropy': 4.8221, 'root': 6.3095, 'pattern': 3.8849, 'lr': 0.0005}
+{'step': 550, 'epoch': 1, 'trans': 7.5428, 'route_root': 6.192, 'route_pattern': 3.2528, 'val_root': 6.2613, 'val_pat': 3.3111, 'gate_bce': 0.3253, 'entropy': 4.95, 'root': 6.0469, 'pattern': 3.2669, 'lr': 0.0005}
+{'step': 600, 'epoch': 1, 'trans': 7.7107, 'route_root': 6.2172, 'route_pattern': 3.5992, 'val_root': 6.2856, 'val_pat': 3.6735, 'gate_bce': 0.3176, 'entropy': 4.798, 'root': 6.0793, 'pattern': 3.5822, 'lr': 0.0005}
+{'step': 650, 'epoch': 1, 'trans': 7.518, 'route_root': 6.243, 'route_pattern': 3.4995, 'val_root': 6.3367, 'val_pat': 3.624, 'gate_bce': 0.3794, 'entropy': 4.8585, 'root': 5.978, 'pattern': 3.4448, 'lr': 0.0005}
+{'step': 700, 'epoch': 1, 'trans': 7.4879, 'route_root': 6.0594, 'route_pattern': 3.5842, 'val_root': 6.1549, 'val_pat': 3.704, 'gate_bce': 0.2978, 'entropy': 4.8355, 'root': 5.8317, 'pattern': 3.5316, 'lr': 0.0005}
+{'step': 750, 'epoch': 1, 'trans': 7.5597, 'route_root': 6.0663, 'route_pattern': 3.333, 'val_root': 6.1896, 'val_pat': 3.4312, 'gate_bce': 0.3851, 'entropy': 4.6823, 'root': 5.8519, 'pattern': 3.302, 'lr': 0.0005}
+{'step': 800, 'epoch': 1, 'trans': 7.2575, 'route_root': 5.9183, 'route_pattern': 3.2644, 'val_root': 6.0426, 'val_pat': 3.3981, 'gate_bce': 0.4234, 'entropy': 4.603, 'root': 5.4033, 'pattern': 3.1804, 'lr': 0.0005}
+{'step': 850, 'epoch': 1, 'trans': 7.3237, 'route_root': 6.104, 'route_pattern': 3.4142, 'val_root': 6.1934, 'val_pat': 3.6067, 'gate_bce': 0.375, 'entropy': 4.8484, 'root': 5.786, 'pattern': 3.2855, 'lr': 0.0005}
+epoch=1 dev_loss=6.8408 dev_chrf++=5.50
+  new best dev_loss=6.8408
+{'step': 900, 'epoch': 2, 'trans': 7.2965, 'route_root': 5.9036, 'route_pattern': 3.2588, 'val_root': 6.0542, 'val_pat': 3.4392, 'gate_bce': 0.3826, 'entropy': 4.7834, 'root': 5.2805, 'pattern': 3.1438, 'lr': 0.0005}
+{'step': 950, 'epoch': 2, 'trans': 7.2677, 'route_root': 6.0744, 'route_pattern': 3.2915, 'val_root': 6.2014, 'val_pat': 3.4652, 'gate_bce': 0.3562, 'entropy': 4.7108, 'root': 5.4404, 'pattern': 3.1779, 'lr': 0.0005}
+{'step': 1000, 'epoch': 2, 'trans': 7.2081, 'route_root': 5.9295, 'route_pattern': 3.288, 'val_root': 6.1035, 'val_pat': 3.4214, 'gate_bce': 0.4651, 'entropy': 4.6327, 'root': 5.4224, 'pattern': 3.1231, 'lr': 0.0005}
+{'step': 1050, 'epoch': 2, 'trans': 7.2808, 'route_root': 5.8935, 'route_pattern': 3.1436, 'val_root': 6.076, 'val_pat': 3.3172, 'gate_bce': 0.3953, 'entropy': 4.674, 'root': 5.2319, 'pattern': 3.0674, 'lr': 0.0005}
+{'step': 1100, 'epoch': 2, 'trans': 7.105, 'route_root': 5.7369, 'route_pattern': 3.1144, 'val_root': 5.9711, 'val_pat': 3.3832, 'gate_bce': 0.4438, 'entropy': 4.4943, 'root': 4.8508, 'pattern': 2.9605, 'lr': 0.0005}
+{'step': 1150, 'epoch': 2, 'trans': 7.2078, 'route_root': 5.7844, 'route_pattern': 3.2258, 'val_root': 5.9706, 'val_pat': 3.4755, 'gate_bce': 0.4605, 'entropy': 4.6066, 'root': 5.1382, 'pattern': 3.1072, 'lr': 0.0005}
+{'step': 1200, 'epoch': 2, 'trans': 7.1212, 'route_root': 5.7789, 'route_pattern': 2.957, 'val_root': 6.0149, 'val_pat': 3.1896, 'gate_bce': 0.4316, 'entropy': 4.6236, 'root': 4.7678, 'pattern': 2.8823, 'lr': 0.0005}
+{'step': 1250, 'epoch': 2, 'trans': 6.9251, 'route_root': 5.8254, 'route_pattern': 3.1122, 'val_root': 6.0433, 'val_pat': 3.3026, 'gate_bce': 0.3861, 'entropy': 4.596, 'root': 4.9732, 'pattern': 2.9404, 'lr': 0.0005}
+{'step': 1300, 'epoch': 2, 'trans': 7.1082, 'route_root': 5.8596, 'route_pattern': 2.9152, 'val_root': 6.0343, 'val_pat': 3.1124, 'gate_bce': 0.4641, 'entropy': 4.5437, 'root': 4.7876, 'pattern': 2.7819, 'lr': 0.0005}
+epoch=2 dev_loss=6.4777 dev_chrf++=4.75
+  new best dev_loss=6.4777
+{'step': 1350, 'epoch': 3, 'trans': 6.8621, 'route_root': 5.6442, 'route_pattern': 3.1515, 'val_root': 5.873, 'val_pat': 3.3884, 'gate_bce': 0.4577, 'entropy': 4.5733, 'root': 4.5761, 'pattern': 2.9819, 'lr': 0.0005}
+{'step': 1400, 'epoch': 3, 'trans': 6.8385, 'route_root': 5.6119, 'route_pattern': 2.6472, 'val_root': 5.9094, 'val_pat': 2.9124, 'gate_bce': 0.4973, 'entropy': 4.3694, 'root': 4.4156, 'pattern': 2.4388, 'lr': 0.0005}
+{'step': 1450, 'epoch': 3, 'trans': 6.6847, 'route_root': 5.767, 'route_pattern': 2.6694, 'val_root': 6.0675, 'val_pat': 2.9328, 'gate_bce': 0.4832, 'entropy': 4.4676, 'root': 4.6015, 'pattern': 2.4826, 'lr': 0.0005}
+{'step': 1500, 'epoch': 3, 'trans': 6.5878, 'route_root': 5.3949, 'route_pattern': 2.7804, 'val_root': 5.7262, 'val_pat': 3.1108, 'gate_bce': 0.4557, 'entropy': 4.2335, 'root': 4.1937, 'pattern': 2.5612, 'lr': 0.0005}
+{'step': 1550, 'epoch': 3, 'trans': 6.6813, 'route_root': 5.4421, 'route_pattern': 2.7352, 'val_root': 5.7562, 'val_pat': 3.0641, 'gate_bce': 0.4631, 'entropy': 4.2522, 'root': 4.2117, 'pattern': 2.4845, 'lr': 0.0005}
+{'step': 1600, 'epoch': 3, 'trans': 6.7361, 'route_root': 5.5207, 'route_pattern': 2.765, 'val_root': 5.8621, 'val_pat': 3.0013, 'gate_bce': 0.4748, 'entropy': 4.38, 'root': 4.4238, 'pattern': 2.595, 'lr': 0.0005}
+{'step': 1650, 'epoch': 3, 'trans': 6.9283, 'route_root': 5.6857, 'route_pattern': 2.9747, 'val_root': 5.9511, 'val_pat': 3.2215, 'gate_bce': 0.4736, 'entropy': 4.4039, 'root': 4.7812, 'pattern': 2.77, 'lr': 0.0005}
+{'step': 1700, 'epoch': 3, 'trans': 6.9314, 'route_root': 5.6331, 'route_pattern': 2.9866, 'val_root': 5.9285, 'val_pat': 3.2365, 'gate_bce': 0.4541, 'entropy': 4.4592, 'root': 4.6516, 'pattern': 2.8919, 'lr': 0.0005}
+epoch=3 dev_loss=6.2361 dev_chrf++=3.75
+  new best dev_loss=6.2361
+{'step': 1750, 'epoch': 4, 'trans': 6.6748, 'route_root': 5.2912, 'route_pattern': 2.7496, 'val_root': 5.7471, 'val_pat': 3.0144, 'gate_bce': 0.5077, 'entropy': 4.2121, 'root': 4.0641, 'pattern': 2.5405, 'lr': 0.0005}
+{'step': 1800, 'epoch': 4, 'trans': 6.6699, 'route_root': 5.2937, 'route_pattern': 2.413, 'val_root': 5.7112, 'val_pat': 2.7572, 'gate_bce': 0.5285, 'entropy': 4.1007, 'root': 3.8634, 'pattern': 2.2806, 'lr': 0.0005}
+{'step': 1850, 'epoch': 4, 'trans': 6.5653, 'route_root': 5.3446, 'route_pattern': 2.9295, 'val_root': 5.7124, 'val_pat': 3.2198, 'gate_bce': 0.5046, 'entropy': 4.2495, 'root': 4.3224, 'pattern': 2.737, 'lr': 0.0005}
+{'step': 1900, 'epoch': 4, 'trans': 6.7635, 'route_root': 5.5517, 'route_pattern': 2.8183, 'val_root': 5.8412, 'val_pat': 3.0881, 'gate_bce': 0.5227, 'entropy': 4.3888, 'root': 4.2586, 'pattern': 2.6044, 'lr': 0.0005}
+{'step': 1950, 'epoch': 4, 'trans': 6.4564, 'route_root': 5.1684, 'route_pattern': 2.5425, 'val_root': 5.6767, 'val_pat': 2.8602, 'gate_bce': 0.5238, 'entropy': 4.1142, 'root': 3.9498, 'pattern': 2.3405, 'lr': 0.0005}
+{'step': 2000, 'epoch': 4, 'trans': 6.5005, 'route_root': 5.1659, 'route_pattern': 2.5892, 'val_root': 5.6443, 'val_pat': 2.8907, 'gate_bce': 0.5145, 'entropy': 4.1087, 'root': 3.7174, 'pattern': 2.3038, 'lr': 0.0005}
+{'step': 2050, 'epoch': 4, 'trans': 6.4861, 'route_root': 5.1227, 'route_pattern': 2.2949, 'val_root': 5.6108, 'val_pat': 2.633, 'gate_bce': 0.5014, 'entropy': 3.9717, 'root': 3.8635, 'pattern': 2.1417, 'lr': 0.0005}
+{'step': 2100, 'epoch': 4, 'trans': 6.7158, 'route_root': 5.4393, 'route_pattern': 2.7632, 'val_root': 5.7545, 'val_pat': 3.0053, 'gate_bce': 0.4851, 'entropy': 4.2659, 'root': 4.3627, 'pattern': 2.6252, 'lr': 0.0005}
+{'step': 2150, 'epoch': 4, 'trans': 6.6258, 'route_root': 4.9146, 'route_pattern': 2.5388, 'val_root': 5.4204, 'val_pat': 2.8496, 'gate_bce': 0.5238, 'entropy': 4.0056, 'root': 3.7387, 'pattern': 2.3114, 'lr': 0.0005}
+epoch=4 dev_loss=5.9894 dev_chrf++=5.49
+  new best dev_loss=5.9894
+{'step': 2200, 'epoch': 5, 'trans': 6.2801, 'route_root': 4.9022, 'route_pattern': 2.3243, 'val_root': 5.5243, 'val_pat': 2.7088, 'gate_bce': 0.5404, 'entropy': 3.8601, 'root': 3.4746, 'pattern': 2.1371, 'lr': 0.0005}
+{'step': 2250, 'epoch': 5, 'trans': 6.4416, 'route_root': 5.1418, 'route_pattern': 2.5105, 'val_root': 5.6757, 'val_pat': 2.7444, 'gate_bce': 0.5401, 'entropy': 4.0195, 'root': 3.715, 'pattern': 2.3008, 'lr': 0.0005}
+{'step': 2300, 'epoch': 5, 'trans': 6.3922, 'route_root': 5.1073, 'route_pattern': 2.4381, 'val_root': 5.587, 'val_pat': 2.8026, 'gate_bce': 0.5246, 'entropy': 4.0601, 'root': 3.677, 'pattern': 2.1875, 'lr': 0.0005}
+{'step': 2350, 'epoch': 5, 'trans': 6.3307, 'route_root': 4.8524, 'route_pattern': 2.472, 'val_root': 5.512, 'val_pat': 2.7018, 'gate_bce': 0.5045, 'entropy': 3.823, 'root': 3.4312, 'pattern': 2.2401, 'lr': 0.0005}
+{'step': 2400, 'epoch': 5, 'trans': 6.2043, 'route_root': 4.6621, 'route_pattern': 2.3203, 'val_root': 5.3356, 'val_pat': 2.7254, 'gate_bce': 0.5301, 'entropy': 3.7734, 'root': 3.2984, 'pattern': 2.1064, 'lr': 0.0005}
+{'step': 2450, 'epoch': 5, 'trans': 6.5074, 'route_root': 5.0059, 'route_pattern': 2.2934, 'val_root': 5.5199, 'val_pat': 2.5844, 'gate_bce': 0.5246, 'entropy': 3.8784, 'root': 3.8746, 'pattern': 2.1222, 'lr': 0.0005}
+{'step': 2500, 'epoch': 5, 'trans': 6.3718, 'route_root': 5.1794, 'route_pattern': 2.5209, 'val_root': 5.7001, 'val_pat': 2.7867, 'gate_bce': 0.5266, 'entropy': 4.064, 'root': 3.9541, 'pattern': 2.3938, 'lr': 0.0005}
+{'step': 2550, 'epoch': 5, 'trans': 6.3342, 'route_root': 4.7527, 'route_pattern': 2.3189, 'val_root': 5.3761, 'val_pat': 2.5631, 'gate_bce': 0.5499, 'entropy': 3.7761, 'root': 3.1688, 'pattern': 2.0964, 'lr': 0.0005}
+{'step': 2600, 'epoch': 5, 'trans': 5.9845, 'route_root': 4.7314, 'route_pattern': 2.2249, 'val_root': 5.4235, 'val_pat': 2.5203, 'gate_bce': 0.5195, 'entropy': 3.7998, 'root': 3.1321, 'pattern': 1.952, 'lr': 0.0005}
+epoch=5 dev_loss=5.8089 dev_chrf++=5.71
+  new best dev_loss=5.8089
+{'step': 2650, 'epoch': 6, 'trans': 6.2528, 'route_root': 4.708, 'route_pattern': 2.3212, 'val_root': 5.3738, 'val_pat': 2.6895, 'gate_bce': 0.5489, 'entropy': 3.9236, 'root': 3.6017, 'pattern': 2.1016, 'lr': 0.0005}
+{'step': 2700, 'epoch': 6, 'trans': 6.3593, 'route_root': 4.9378, 'route_pattern': 2.3838, 'val_root': 5.6087, 'val_pat': 2.6599, 'gate_bce': 0.561, 'entropy': 3.8134, 'root': 3.4537, 'pattern': 2.1579, 'lr': 0.0005}
+{'step': 2750, 'epoch': 6, 'trans': 6.1723, 'route_root': 4.4548, 'route_pattern': 2.4323, 'val_root': 5.1772, 'val_pat': 2.7831, 'gate_bce': 0.5121, 'entropy': 3.6692, 'root': 3.0558, 'pattern': 2.162, 'lr': 0.0005}
+{'step': 2800, 'epoch': 6, 'trans': 6.2697, 'route_root': 4.6821, 'route_pattern': 2.2534, 'val_root': 5.3807, 'val_pat': 2.6494, 'gate_bce': 0.5282, 'entropy': 3.7916, 'root': 3.3167, 'pattern': 2.1741, 'lr': 0.0005}
+{'step': 2850, 'epoch': 6, 'trans': 6.2143, 'route_root': 4.6648, 'route_pattern': 2.2892, 'val_root': 5.2923, 'val_pat': 2.5764, 'gate_bce': 0.5072, 'entropy': 3.7821, 'root': 3.4184, 'pattern': 2.069, 'lr': 0.0005}
+{'step': 2900, 'epoch': 6, 'trans': 6.1648, 'route_root': 4.5838, 'route_pattern': 2.4416, 'val_root': 5.3166, 'val_pat': 2.6946, 'gate_bce': 0.5627, 'entropy': 3.8658, 'root': 3.112, 'pattern': 2.3161, 'lr': 0.0005}
+{'step': 2950, 'epoch': 6, 'trans': 6.2408, 'route_root': 4.2591, 'route_pattern': 2.2005, 'val_root': 4.9735, 'val_pat': 2.6721, 'gate_bce': 0.5009, 'entropy': 3.664, 'root': 3.1194, 'pattern': 2.0779, 'lr': 0.0005}
+{'step': 3000, 'epoch': 6, 'trans': 6.332, 'route_root': 4.9387, 'route_pattern': 2.4072, 'val_root': 5.524, 'val_pat': 2.6943, 'gate_bce': 0.509, 'entropy': 3.8121, 'root': 3.562, 'pattern': 2.2398, 'lr': 0.0005}
+{'step': 3050, 'epoch': 6, 'trans': 5.8633, 'route_root': 4.4385, 'route_pattern': 2.0644, 'val_root': 5.1738, 'val_pat': 2.43, 'gate_bce': 0.5434, 'entropy': 3.5425, 'root': 3.0327, 'pattern': 1.8438, 'lr': 0.0005}
+epoch=6 dev_loss=5.6824 dev_chrf++=6.88
+  new best dev_loss=5.6824
+{'step': 3100, 'epoch': 7, 'trans': 5.8646, 'route_root': 4.5149, 'route_pattern': 2.3069, 'val_root': 5.2874, 'val_pat': 2.684, 'gate_bce': 0.5505, 'entropy': 3.6285, 'root': 2.9685, 'pattern': 2.1767, 'lr': 0.0005}
+{'step': 3150, 'epoch': 7, 'trans': 5.9694, 'route_root': 4.7024, 'route_pattern': 2.469, 'val_root': 5.5231, 'val_pat': 2.6889, 'gate_bce': 0.5234, 'entropy': 3.6814, 'root': 3.2218, 'pattern': 2.2624, 'lr': 0.0005}
+{'step': 3200, 'epoch': 7, 'trans': 6.0302, 'route_root': 4.4969, 'route_pattern': 2.3273, 'val_root': 5.2725, 'val_pat': 2.6771, 'gate_bce': 0.5417, 'entropy': 3.6339, 'root': 2.9548, 'pattern': 2.2095, 'lr': 0.0005}
+{'step': 3250, 'epoch': 7, 'trans': 6.0002, 'route_root': 4.4301, 'route_pattern': 2.2058, 'val_root': 5.2456, 'val_pat': 2.5259, 'gate_bce': 0.56, 'entropy': 3.6898, 'root': 3.162, 'pattern': 1.9804, 'lr': 0.0005}
+{'step': 3300, 'epoch': 7, 'trans': 6.0865, 'route_root': 4.4477, 'route_pattern': 2.0011, 'val_root': 5.2739, 'val_pat': 2.2756, 'gate_bce': 0.5618, 'entropy': 3.5584, 'root': 3.0015, 'pattern': 1.9243, 'lr': 0.0005}
+{'step': 3350, 'epoch': 7, 'trans': 6.1729, 'route_root': 4.1957, 'route_pattern': 2.0732, 'val_root': 5.1375, 'val_pat': 2.4181, 'gate_bce': 0.5481, 'entropy': 3.3972, 'root': 2.7329, 'pattern': 1.8917, 'lr': 0.0005}
+{'step': 3400, 'epoch': 7, 'trans': 5.844, 'route_root': 3.8583, 'route_pattern': 2.2285, 'val_root': 4.663, 'val_pat': 2.5547, 'gate_bce': 0.5154, 'entropy': 3.2432, 'root': 2.7758, 'pattern': 1.9631, 'lr': 0.0005}
+{'step': 3450, 'epoch': 7, 'trans': 5.9942, 'route_root': 4.1661, 'route_pattern': 2.2564, 'val_root': 5.0761, 'val_pat': 2.5848, 'gate_bce': 0.5508, 'entropy': 3.5676, 'root': 2.7156, 'pattern': 1.9688, 'lr': 0.0005}
+epoch=7 dev_loss=5.5812 dev_chrf++=7.49
+  new best dev_loss=5.5812
+{'step': 3500, 'epoch': 8, 'trans': 5.8766, 'route_root': 4.3022, 'route_pattern': 1.9616, 'val_root': 5.2338, 'val_pat': 2.2752, 'gate_bce': 0.5201, 'entropy': 3.4731, 'root': 2.9745, 'pattern': 1.8831, 'lr': 0.0005}
+{'step': 3550, 'epoch': 8, 'trans': 5.8036, 'route_root': 4.0441, 'route_pattern': 1.9129, 'val_root': 4.88, 'val_pat': 2.2549, 'gate_bce': 0.5233, 'entropy': 3.3226, 'root': 2.9075, 'pattern': 1.8197, 'lr': 0.0005}
+{'step': 3600, 'epoch': 8, 'trans': 5.8809, 'route_root': 4.0336, 'route_pattern': 2.1731, 'val_root': 4.9346, 'val_pat': 2.4839, 'gate_bce': 0.4765, 'entropy': 3.3902, 'root': 2.7905, 'pattern': 2.0022, 'lr': 0.0005}
+{'step': 3650, 'epoch': 8, 'trans': 5.6471, 'route_root': 4.01, 'route_pattern': 2.0493, 'val_root': 4.9217, 'val_pat': 2.3787, 'gate_bce': 0.4904, 'entropy': 3.3479, 'root': 2.609, 'pattern': 1.834, 'lr': 0.0005}
+{'step': 3700, 'epoch': 8, 'trans': 5.9572, 'route_root': 4.4176, 'route_pattern': 2.2949, 'val_root': 5.2732, 'val_pat': 2.5004, 'gate_bce': 0.5654, 'entropy': 3.454, 'root': 3.0504, 'pattern': 2.0888, 'lr': 0.0005}
+{'step': 3750, 'epoch': 8, 'trans': 5.8788, 'route_root': 3.717, 'route_pattern': 1.9146, 'val_root': 4.9541, 'val_pat': 2.2076, 'gate_bce': 0.5521, 'entropy': 3.296, 'root': 2.6153, 'pattern': 1.7706, 'lr': 0.0005}
+{'step': 3800, 'epoch': 8, 'trans': 5.6676, 'route_root': 4.0502, 'route_pattern': 2.1563, 'val_root': 5.0328, 'val_pat': 2.4816, 'gate_bce': 0.5575, 'entropy': 3.3553, 'root': 2.8154, 'pattern': 1.9932, 'lr': 0.0005}
+{'step': 3850, 'epoch': 8, 'trans': 5.8067, 'route_root': 3.7099, 'route_pattern': 2.1557, 'val_root': 4.833, 'val_pat': 2.4319, 'gate_bce': 0.5213, 'entropy': 3.2148, 'root': 2.4747, 'pattern': 1.9159, 'lr': 0.0005}
+{'step': 3900, 'epoch': 8, 'trans': 5.8583, 'route_root': 3.8626, 'route_pattern': 2.044, 'val_root': 4.7984, 'val_pat': 2.3553, 'gate_bce': 0.5272, 'entropy': 3.3372, 'root': 2.6077, 'pattern': 1.8495, 'lr': 0.0005}
+epoch=8 dev_loss=5.5232 dev_chrf++=8.18
+  new best dev_loss=5.5232
+{'step': 3950, 'epoch': 9, 'trans': 5.6014, 'route_root': 3.8977, 'route_pattern': 1.8765, 'val_root': 4.9097, 'val_pat': 2.1771, 'gate_bce': 0.5265, 'entropy': 3.2559, 'root': 2.508, 'pattern': 1.6992, 'lr': 0.0005}
+{'step': 4000, 'epoch': 9, 'trans': 5.5773, 'route_root': 3.5318, 'route_pattern': 2.0825, 'val_root': 4.6063, 'val_pat': 2.328, 'gate_bce': 0.5487, 'entropy': 3.135, 'root': 2.3428, 'pattern': 2.0049, 'lr': 0.0005}
+{'step': 4050, 'epoch': 9, 'trans': 5.65, 'route_root': 3.7331, 'route_pattern': 1.8082, 'val_root': 4.8858, 'val_pat': 2.2087, 'gate_bce': 0.5813, 'entropy': 3.21, 'root': 2.3134, 'pattern': 1.5991, 'lr': 0.0005}
+{'step': 4100, 'epoch': 9, 'trans': 5.6443, 'route_root': 3.7291, 'route_pattern': 1.9951, 'val_root': 4.749, 'val_pat': 2.2956, 'gate_bce': 0.5284, 'entropy': 3.1184, 'root': 2.3897, 'pattern': 1.7437, 'lr': 0.0005}
+{'step': 4150, 'epoch': 9, 'trans': 5.7046, 'route_root': 3.7263, 'route_pattern': 1.8706, 'val_root': 4.7698, 'val_pat': 2.1987, 'gate_bce': 0.5434, 'entropy': 3.1543, 'root': 2.2296, 'pattern': 1.69, 'lr': 0.0005}
+{'step': 4200, 'epoch': 9, 'trans': 5.7572, 'route_root': 3.7416, 'route_pattern': 2.041, 'val_root': 4.7075, 'val_pat': 2.3758, 'gate_bce': 0.5554, 'entropy': 3.2876, 'root': 2.7439, 'pattern': 1.8942, 'lr': 0.0005}
+{'step': 4250, 'epoch': 9, 'trans': 5.6093, 'route_root': 3.5816, 'route_pattern': 1.7923, 'val_root': 4.8356, 'val_pat': 2.0862, 'gate_bce': 0.5766, 'entropy': 3.0361, 'root': 2.3666, 'pattern': 1.6439, 'lr': 0.0005}
+{'step': 4300, 'epoch': 9, 'trans': 5.3751, 'route_root': 3.8566, 'route_pattern': 1.939, 'val_root': 4.9501, 'val_pat': 2.231, 'gate_bce': 0.5345, 'entropy': 3.2236, 'root': 2.3465, 'pattern': 1.8613, 'lr': 0.0005}
+{'step': 4350, 'epoch': 9, 'trans': 5.7587, 'route_root': 3.958, 'route_pattern': 1.9795, 'val_root': 4.8683, 'val_pat': 2.2152, 'gate_bce': 0.5578, 'entropy': 3.2453, 'root': 2.6848, 'pattern': 1.804, 'lr': 0.0005}
+epoch=9 dev_loss=5.4614 dev_chrf++=8.25
+  new best dev_loss=5.4614
+{'step': 4400, 'epoch': 10, 'trans': 5.4403, 'route_root': 3.8454, 'route_pattern': 1.9248, 'val_root': 5.0237, 'val_pat': 2.2376, 'gate_bce': 0.4882, 'entropy': 3.1499, 'root': 2.4624, 'pattern': 1.7222, 'lr': 0.0005}
+{'step': 4450, 'epoch': 10, 'trans': 5.5961, 'route_root': 3.299, 'route_pattern': 1.5388, 'val_root': 4.4186, 'val_pat': 1.8772, 'gate_bce': 0.5539, 'entropy': 2.8594, 'root': 2.1525, 'pattern': 1.4599, 'lr': 0.0005}
+{'step': 4500, 'epoch': 10, 'trans': 5.5842, 'route_root': 3.4307, 'route_pattern': 2.1614, 'val_root': 4.486, 'val_pat': 2.5642, 'gate_bce': 0.5762, 'entropy': 3.2057, 'root': 2.3512, 'pattern': 1.8813, 'lr': 0.0005}
+{'step': 4550, 'epoch': 10, 'trans': 5.597, 'route_root': 3.5963, 'route_pattern': 1.8409, 'val_root': 4.863, 'val_pat': 2.1409, 'gate_bce': 0.5001, 'entropy': 3.1388, 'root': 2.5018, 'pattern': 1.7193, 'lr': 0.0005}
+{'step': 4600, 'epoch': 10, 'trans': 5.6419, 'route_root': 3.4391, 'route_pattern': 1.7416, 'val_root': 4.6286, 'val_pat': 2.0913, 'gate_bce': 0.5394, 'entropy': 3.1269, 'root': 2.3478, 'pattern': 1.5791, 'lr': 0.0005}
+{'step': 4650, 'epoch': 10, 'trans': 5.8182, 'route_root': 3.7901, 'route_pattern': 2.0054, 'val_root': 4.8095, 'val_pat': 2.3212, 'gate_bce': 0.5283, 'entropy': 3.1847, 'root': 2.6796, 'pattern': 1.8215, 'lr': 0.0005}
+{'step': 4700, 'epoch': 10, 'trans': 5.7847, 'route_root': 3.3451, 'route_pattern': 1.8367, 'val_root': 4.4888, 'val_pat': 2.0755, 'gate_bce': 0.5505, 'entropy': 2.9353, 'root': 2.3809, 'pattern': 1.7019, 'lr': 0.0005}
+{'step': 4750, 'epoch': 10, 'trans': 5.5636, 'route_root': 3.661, 'route_pattern': 2.08, 'val_root': 4.8476, 'val_pat': 2.2883, 'gate_bce': 0.5711, 'entropy': 3.0888, 'root': 2.2632, 'pattern': 1.9004, 'lr': 0.0005}
+epoch=10 dev_loss=5.4207 dev_chrf++=8.65
+  new best dev_loss=5.4207
+{'step': 4800, 'epoch': 11, 'trans': 5.629, 'route_root': 3.6079, 'route_pattern': 1.9167, 'val_root': 4.7318, 'val_pat': 2.2834, 'gate_bce': 0.539, 'entropy': 3.1164, 'root': 2.3755, 'pattern': 1.8356, 'lr': 0.0005}
+{'step': 4850, 'epoch': 11, 'trans': 5.3732, 'route_root': 3.2553, 'route_pattern': 1.7552, 'val_root': 4.2235, 'val_pat': 2.1089, 'gate_bce': 0.4808, 'entropy': 2.9566, 'root': 2.2565, 'pattern': 1.5575, 'lr': 0.0005}
+{'step': 4900, 'epoch': 11, 'trans': 5.4041, 'route_root': 3.3858, 'route_pattern': 1.5017, 'val_root': 4.6238, 'val_pat': 1.7443, 'gate_bce': 0.5027, 'entropy': 2.8511, 'root': 2.3132, 'pattern': 1.4903, 'lr': 0.0005}
+{'step': 4950, 'epoch': 11, 'trans': 5.3397, 'route_root': 2.999, 'route_pattern': 1.6819, 'val_root': 4.1906, 'val_pat': 1.9024, 'gate_bce': 0.5332, 'entropy': 2.7325, 'root': 1.9652, 'pattern': 1.5971, 'lr': 0.0005}
+{'step': 5000, 'epoch': 11, 'trans': 5.4424, 'route_root': 3.3125, 'route_pattern': 1.5759, 'val_root': 4.4323, 'val_pat': 1.8739, 'gate_bce': 0.5068, 'entropy': 2.7651, 'root': 2.0182, 'pattern': 1.4382, 'lr': 0.0005}
+{'step': 5050, 'epoch': 11, 'trans': 5.2931, 'route_root': 3.2874, 'route_pattern': 1.7179, 'val_root': 4.4153, 'val_pat': 1.9907, 'gate_bce': 0.5243, 'entropy': 2.837, 'root': 2.1708, 'pattern': 1.6112, 'lr': 0.0005}
+{'step': 5100, 'epoch': 11, 'trans': 5.4146, 'route_root': 3.1206, 'route_pattern': 1.702, 'val_root': 4.2683, 'val_pat': 1.9091, 'gate_bce': 0.5234, 'entropy': 2.7551, 'root': 1.9734, 'pattern': 1.6141, 'lr': 0.0005}
+{'step': 5150, 'epoch': 11, 'trans': 5.5752, 'route_root': 3.363, 'route_pattern': 1.6712, 'val_root': 4.5372, 'val_pat': 1.9731, 'gate_bce': 0.5495, 'entropy': 3.0045, 'root': 2.0028, 'pattern': 1.4442, 'lr': 0.0005}
+{'step': 5200, 'epoch': 11, 'trans': 5.6501, 'route_root': 3.4782, 'route_pattern': 1.7278, 'val_root': 4.4955, 'val_pat': 1.9803, 'gate_bce': 0.5287, 'entropy': 2.9258, 'root': 2.4093, 'pattern': 1.6214, 'lr': 0.0005}
+epoch=11 dev_loss=5.3934 dev_chrf++=8.54
+  new best dev_loss=5.3934
+{'step': 5250, 'epoch': 12, 'trans': 5.2956, 'route_root': 2.9339, 'route_pattern': 1.7641, 'val_root': 4.1777, 'val_pat': 2.0878, 'gate_bce': 0.5242, 'entropy': 2.7658, 'root': 1.8619, 'pattern': 1.5654, 'lr': 0.0005}
+{'step': 5300, 'epoch': 12, 'trans': 5.3378, 'route_root': 3.2307, 'route_pattern': 1.8369, 'val_root': 4.3915, 'val_pat': 2.0861, 'gate_bce': 0.537, 'entropy': 2.969, 'root': 2.0917, 'pattern': 1.6597, 'lr': 0.0005}
+{'step': 5350, 'epoch': 12, 'trans': 5.5051, 'route_root': 3.2237, 'route_pattern': 1.7487, 'val_root': 4.2438, 'val_pat': 1.9083, 'gate_bce': 0.5184, 'entropy': 2.7374, 'root': 2.0839, 'pattern': 1.6511, 'lr': 0.0005}
+{'step': 5400, 'epoch': 12, 'trans': 5.3184, 'route_root': 3.0645, 'route_pattern': 1.5313, 'val_root': 4.2411, 'val_pat': 1.7843, 'gate_bce': 0.5374, 'entropy': 2.7576, 'root': 1.861, 'pattern': 1.4396, 'lr': 0.0005}
+{'step': 5450, 'epoch': 12, 'trans': 5.4305, 'route_root': 3.2015, 'route_pattern': 1.4565, 'val_root': 4.4252, 'val_pat': 1.6873, 'gate_bce': 0.5405, 'entropy': 2.7869, 'root': 1.9313, 'pattern': 1.298, 'lr': 0.0005}
+{'step': 5500, 'epoch': 12, 'trans': 5.5414, 'route_root': 3.1635, 'route_pattern': 1.8543, 'val_root': 4.3437, 'val_pat': 2.0905, 'gate_bce': 0.5271, 'entropy': 2.7977, 'root': 2.1515, 'pattern': 1.6738, 'lr': 0.0005}
+{'step': 5550, 'epoch': 12, 'trans': 5.3568, 'route_root': 2.9504, 'route_pattern': 1.5202, 'val_root': 4.0985, 'val_pat': 1.7479, 'gate_bce': 0.4778, 'entropy': 2.6469, 'root': 1.9995, 'pattern': 1.3723, 'lr': 0.0005}
+{'step': 5600, 'epoch': 12, 'trans': 5.5389, 'route_root': 2.7577, 'route_pattern': 1.6662, 'val_root': 3.9636, 'val_pat': 1.9852, 'gate_bce': 0.5279, 'entropy': 2.6737, 'root': 1.8447, 'pattern': 1.4664, 'lr': 0.0005}
+{'step': 5650, 'epoch': 12, 'trans': 5.6527, 'route_root': 3.2627, 'route_pattern': 1.427, 'val_root': 4.3434, 'val_pat': 1.6834, 'gate_bce': 0.5068, 'entropy': 2.6614, 'root': 2.3041, 'pattern': 1.3131, 'lr': 0.0005}
+epoch=12 dev_loss=5.3661 dev_chrf++=8.12
+  new best dev_loss=5.3661
+{'step': 5700, 'epoch': 13, 'trans': 5.151, 'route_root': 2.8411, 'route_pattern': 1.5125, 'val_root': 4.0984, 'val_pat': 1.706, 'gate_bce': 0.5144, 'entropy': 2.6244, 'root': 1.9222, 'pattern': 1.402, 'lr': 0.0005}
+{'step': 5750, 'epoch': 13, 'trans': 5.2116, 'route_root': 2.7377, 'route_pattern': 1.6476, 'val_root': 3.8255, 'val_pat': 1.9201, 'gate_bce': 0.4863, 'entropy': 2.5681, 'root': 1.6985, 'pattern': 1.4794, 'lr': 0.0005}
+{'step': 5800, 'epoch': 13, 'trans': 5.4027, 'route_root': 2.6662, 'route_pattern': 1.6881, 'val_root': 3.8964, 'val_pat': 1.9279, 'gate_bce': 0.5172, 'entropy': 2.6424, 'root': 1.8283, 'pattern': 1.5954, 'lr': 0.0005}
+{'step': 5850, 'epoch': 13, 'trans': 5.1694, 'route_root': 2.6047, 'route_pattern': 1.6456, 'val_root': 3.8688, 'val_pat': 1.8999, 'gate_bce': 0.5012, 'entropy': 2.441, 'root': 1.7173, 'pattern': 1.6063, 'lr': 0.0005}
+{'step': 5900, 'epoch': 13, 'trans': 5.2827, 'route_root': 2.8482, 'route_pattern': 1.5713, 'val_root': 3.8604, 'val_pat': 1.883, 'gate_bce': 0.4549, 'entropy': 2.5316, 'root': 1.7709, 'pattern': 1.5154, 'lr': 0.0005}
+{'step': 5950, 'epoch': 13, 'trans': 5.6674, 'route_root': 3.1949, 'route_pattern': 1.6914, 'val_root': 4.3455, 'val_pat': 1.9737, 'gate_bce': 0.558, 'entropy': 2.8969, 'root': 2.2067, 'pattern': 1.5689, 'lr': 0.0005}
+{'step': 6000, 'epoch': 13, 'trans': 5.468, 'route_root': 2.6271, 'route_pattern': 1.6624, 'val_root': 3.9165, 'val_pat': 1.9414, 'gate_bce': 0.5375, 'entropy': 2.5584, 'root': 1.71, 'pattern': 1.5922, 'lr': 0.0005}
+{'step': 6050, 'epoch': 13, 'trans': 5.2789, 'route_root': 2.6865, 'route_pattern': 1.6574, 'val_root': 3.8756, 'val_pat': 1.9214, 'gate_bce': 0.4667, 'entropy': 2.5556, 'root': 1.8953, 'pattern': 1.5721, 'lr': 0.0005}
+{'step': 6100, 'epoch': 13, 'trans': 5.4064, 'route_root': 2.8221, 'route_pattern': 1.5168, 'val_root': 4.043, 'val_pat': 1.7999, 'gate_bce': 0.5045, 'entropy': 2.6453, 'root': 2.0285, 'pattern': 1.3098, 'lr': 0.0005}
+epoch=13 dev_loss=5.3406 dev_chrf++=8.56
+  new best dev_loss=5.3406
+{'step': 6150, 'epoch': 14, 'trans': 5.196, 'route_root': 3.0384, 'route_pattern': 1.7392, 'val_root': 4.1887, 'val_pat': 1.928, 'gate_bce': 0.5208, 'entropy': 2.6991, 'root': 1.9375, 'pattern': 1.5651, 'lr': 0.0005}
+{'step': 6200, 'epoch': 14, 'trans': 5.2806, 'route_root': 2.8481, 'route_pattern': 1.6412, 'val_root': 4.0134, 'val_pat': 1.8158, 'gate_bce': 0.5304, 'entropy': 2.5877, 'root': 1.825, 'pattern': 1.5125, 'lr': 0.0005}
+{'step': 6250, 'epoch': 14, 'trans': 5.0215, 'route_root': 2.9019, 'route_pattern': 1.6394, 'val_root': 4.1982, 'val_pat': 1.9233, 'gate_bce': 0.5023, 'entropy': 2.5425, 'root': 1.8014, 'pattern': 1.4391, 'lr': 0.0005}
+{'step': 6300, 'epoch': 14, 'trans': 5.2857, 'route_root': 2.5388, 'route_pattern': 1.5347, 'val_root': 3.6178, 'val_pat': 1.7709, 'gate_bce': 0.5333, 'entropy': 2.4436, 'root': 1.651, 'pattern': 1.4578, 'lr': 0.0005}
+{'step': 6350, 'epoch': 14, 'trans': 5.538, 'route_root': 2.9758, 'route_pattern': 1.5562, 'val_root': 4.0168, 'val_pat': 1.8526, 'gate_bce': 0.4674, 'entropy': 2.5105, 'root': 2.1462, 'pattern': 1.4599, 'lr': 0.0005}
+{'step': 6400, 'epoch': 14, 'trans': 5.1518, 'route_root': 2.3241, 'route_pattern': 1.6519, 'val_root': 3.4262, 'val_pat': 1.9227, 'gate_bce': 0.468, 'entropy': 2.3264, 'root': 1.4622, 'pattern': 1.5424, 'lr': 0.0005}
+{'step': 6450, 'epoch': 14, 'trans': 5.3648, 'route_root': 3.0906, 'route_pattern': 1.5789, 'val_root': 4.1983, 'val_pat': 1.8792, 'gate_bce': 0.5366, 'entropy': 2.6729, 'root': 2.1131, 'pattern': 1.5716, 'lr': 0.0005}
+{'step': 6500, 'epoch': 14, 'trans': 5.4213, 'route_root': 3.077, 'route_pattern': 1.5879, 'val_root': 4.1132, 'val_pat': 1.7463, 'gate_bce': 0.5265, 'entropy': 2.4941, 'root': 2.1626, 'pattern': 1.5183, 'lr': 0.0005}
+epoch=14 dev_loss=5.3401 dev_chrf++=8.83
+  new best dev_loss=5.3401
+{'step': 6550, 'epoch': 15, 'trans': 4.916, 'route_root': 2.7311, 'route_pattern': 1.6411, 'val_root': 3.8287, 'val_pat': 1.8149, 'gate_bce': 0.5004, 'entropy': 2.6311, 'root': 1.6007, 'pattern': 1.4494, 'lr': 0.0005}
+{'step': 6600, 'epoch': 15, 'trans': 5.2118, 'route_root': 2.7666, 'route_pattern': 1.6562, 'val_root': 3.7741, 'val_pat': 1.8363, 'gate_bce': 0.4835, 'entropy': 2.4783, 'root': 1.7407, 'pattern': 1.6728, 'lr': 0.0005}
+{'step': 6650, 'epoch': 15, 'trans': 5.2665, 'route_root': 2.6683, 'route_pattern': 1.9687, 'val_root': 3.7875, 'val_pat': 2.2917, 'gate_bce': 0.4946, 'entropy': 2.6304, 'root': 1.8783, 'pattern': 1.9207, 'lr': 0.0005}
+{'step': 6700, 'epoch': 15, 'trans': 5.3293, 'route_root': 2.5411, 'route_pattern': 1.4736, 'val_root': 3.6651, 'val_pat': 1.6947, 'gate_bce': 0.552, 'entropy': 2.418, 'root': 1.6168, 'pattern': 1.3391, 'lr': 0.0005}
+{'step': 6750, 'epoch': 15, 'trans': 5.3544, 'route_root': 2.8328, 'route_pattern': 1.5653, 'val_root': 4.1025, 'val_pat': 1.8038, 'gate_bce': 0.4801, 'entropy': 2.5586, 'root': 1.7971, 'pattern': 1.5, 'lr': 0.0005}
+{'step': 6800, 'epoch': 15, 'trans': 5.2554, 'route_root': 2.6123, 'route_pattern': 1.4933, 'val_root': 3.6853, 'val_pat': 1.6869, 'gate_bce': 0.4881, 'entropy': 2.4992, 'root': 1.794, 'pattern': 1.3393, 'lr': 0.0005}
+{'step': 6850, 'epoch': 15, 'trans': 5.4624, 'route_root': 2.3841, 'route_pattern': 1.4187, 'val_root': 3.556, 'val_pat': 1.6524, 'gate_bce': 0.4995, 'entropy': 2.307, 'root': 1.5862, 'pattern': 1.279, 'lr': 0.0005}
+{'step': 6900, 'epoch': 15, 'trans': 5.1414, 'route_root': 2.7373, 'route_pattern': 1.5161, 'val_root': 3.8565, 'val_pat': 1.6926, 'gate_bce': 0.4873, 'entropy': 2.3958, 'root': 1.7386, 'pattern': 1.3905, 'lr': 0.0005}
+{'step': 6950, 'epoch': 15, 'trans': 5.3575, 'route_root': 2.4979, 'route_pattern': 1.2595, 'val_root': 3.5509, 'val_pat': 1.5375, 'gate_bce': 0.4916, 'entropy': 2.2587, 'root': 1.6239, 'pattern': 1.1851, 'lr': 0.0005}
+epoch=15 dev_loss=5.3244 dev_chrf++=9.68
+  new best dev_loss=5.3244
+{'step': 7000, 'epoch': 16, 'trans': 4.9635, 'route_root': 2.3799, 'route_pattern': 1.6698, 'val_root': 3.5575, 'val_pat': 1.9442, 'gate_bce': 0.5312, 'entropy': 2.3067, 'root': 1.4138, 'pattern': 1.5555, 'lr': 0.0005}
+{'step': 7050, 'epoch': 16, 'trans': 5.0335, 'route_root': 2.1768, 'route_pattern': 1.4363, 'val_root': 3.3576, 'val_pat': 1.5983, 'gate_bce': 0.5195, 'entropy': 2.2119, 'root': 1.3867, 'pattern': 1.2765, 'lr': 0.0005}
+{'step': 7100, 'epoch': 16, 'trans': 5.1807, 'route_root': 2.2351, 'route_pattern': 1.4331, 'val_root': 3.5078, 'val_pat': 1.668, 'gate_bce': 0.5029, 'entropy': 2.2049, 'root': 1.3914, 'pattern': 1.2696, 'lr': 0.0005}
+{'step': 7150, 'epoch': 16, 'trans': 4.9394, 'route_root': 2.0199, 'route_pattern': 1.4247, 'val_root': 3.1367, 'val_pat': 1.6879, 'gate_bce': 0.5125, 'entropy': 2.1594, 'root': 1.3043, 'pattern': 1.277, 'lr': 0.0005}
+{'step': 7200, 'epoch': 16, 'trans': 5.2934, 'route_root': 2.6022, 'route_pattern': 1.5981, 'val_root': 3.8269, 'val_pat': 1.8464, 'gate_bce': 0.4855, 'entropy': 2.489, 'root': 2.0817, 'pattern': 1.441, 'lr': 0.0005}
+{'step': 7250, 'epoch': 16, 'trans': 5.3008, 'route_root': 2.1819, 'route_pattern': 1.3629, 'val_root': 3.1998, 'val_pat': 1.5814, 'gate_bce': 0.5013, 'entropy': 2.1521, 'root': 1.4756, 'pattern': 1.316, 'lr': 0.0005}
+{'step': 7300, 'epoch': 16, 'trans': 5.3211, 'route_root': 2.6931, 'route_pattern': 1.4932, 'val_root': 3.8341, 'val_pat': 1.7182, 'gate_bce': 0.4962, 'entropy': 2.4246, 'root': 1.7914, 'pattern': 1.3003, 'lr': 0.0005}
+{'step': 7350, 'epoch': 16, 'trans': 5.2042, 'route_root': 2.2086, 'route_pattern': 1.3096, 'val_root': 3.325, 'val_pat': 1.5588, 'gate_bce': 0.4471, 'entropy': 2.1397, 'root': 1.4377, 'pattern': 1.2465, 'lr': 0.0005}
+{'step': 7400, 'epoch': 16, 'trans': 5.4831, 'route_root': 2.3118, 'route_pattern': 1.5329, 'val_root': 3.4885, 'val_pat': 1.6858, 'gate_bce': 0.5259, 'entropy': 2.3843, 'root': 1.4019, 'pattern': 1.4376, 'lr': 0.0005}
+epoch=16 dev_loss=5.3018 dev_chrf++=10.02
+  new best dev_loss=5.3018
+{'step': 7450, 'epoch': 17, 'trans': 5.0771, 'route_root': 2.138, 'route_pattern': 1.3397, 'val_root': 3.2608, 'val_pat': 1.5313, 'gate_bce': 0.5191, 'entropy': 2.1474, 'root': 1.1948, 'pattern': 1.2566, 'lr': 0.0005}
+{'step': 7500, 'epoch': 17, 'trans': 5.0206, 'route_root': 2.2472, 'route_pattern': 1.3007, 'val_root': 3.3136, 'val_pat': 1.443, 'gate_bce': 0.4894, 'entropy': 2.2032, 'root': 1.5431, 'pattern': 1.2226, 'lr': 0.0005}
+{'step': 7550, 'epoch': 17, 'trans': 5.1514, 'route_root': 2.237, 'route_pattern': 1.3723, 'val_root': 3.3213, 'val_pat': 1.5896, 'gate_bce': 0.4885, 'entropy': 2.1226, 'root': 1.5988, 'pattern': 1.2444, 'lr': 0.0005}
+{'step': 7600, 'epoch': 17, 'trans': 4.8626, 'route_root': 1.9993, 'route_pattern': 1.3772, 'val_root': 3.1862, 'val_pat': 1.6542, 'gate_bce': 0.4817, 'entropy': 2.1844, 'root': 1.2382, 'pattern': 1.3036, 'lr': 0.0005}
+{'step': 7650, 'epoch': 17, 'trans': 4.8981, 'route_root': 2.2609, 'route_pattern': 1.3572, 'val_root': 3.4, 'val_pat': 1.5679, 'gate_bce': 0.5211, 'entropy': 2.3043, 'root': 1.4041, 'pattern': 1.2969, 'lr': 0.0005}
+{'step': 7700, 'epoch': 17, 'trans': 5.1694, 'route_root': 2.5189, 'route_pattern': 1.4955, 'val_root': 3.6268, 'val_pat': 1.702, 'gate_bce': 0.5217, 'entropy': 2.1711, 'root': 1.7809, 'pattern': 1.463, 'lr': 0.0005}
+{'step': 7750, 'epoch': 17, 'trans': 5.1241, 'route_root': 2.2258, 'route_pattern': 1.4794, 'val_root': 3.4368, 'val_pat': 1.6996, 'gate_bce': 0.5079, 'entropy': 2.2507, 'root': 1.4598, 'pattern': 1.4248, 'lr': 0.0005}
+{'step': 7800, 'epoch': 17, 'trans': 5.216, 'route_root': 1.9519, 'route_pattern': 1.4926, 'val_root': 2.9372, 'val_pat': 1.7737, 'gate_bce': 0.4975, 'entropy': 2.1085, 'root': 1.3813, 'pattern': 1.4583, 'lr': 0.0005}
+epoch=17 dev_loss=5.2958 dev_chrf++=9.59
+  new best dev_loss=5.2958
+{'step': 7850, 'epoch': 18, 'trans': 5.0669, 'route_root': 2.3168, 'route_pattern': 1.3675, 'val_root': 3.4969, 'val_pat': 1.5558, 'gate_bce': 0.5091, 'entropy': 2.2117, 'root': 1.3565, 'pattern': 1.2463, 'lr': 0.0005}
+{'step': 7900, 'epoch': 18, 'trans': 4.6542, 'route_root': 2.0653, 'route_pattern': 1.3296, 'val_root': 3.0195, 'val_pat': 1.5715, 'gate_bce': 0.458, 'entropy': 2.0059, 'root': 1.211, 'pattern': 1.2157, 'lr': 0.0005}
+{'step': 7950, 'epoch': 18, 'trans': 4.8938, 'route_root': 2.5339, 'route_pattern': 1.1643, 'val_root': 3.5533, 'val_pat': 1.3627, 'gate_bce': 0.4769, 'entropy': 2.1191, 'root': 1.6375, 'pattern': 1.0715, 'lr': 0.0005}
+{'step': 8000, 'epoch': 18, 'trans': 4.8984, 'route_root': 1.7044, 'route_pattern': 1.066, 'val_root': 2.763, 'val_pat': 1.2406, 'gate_bce': 0.4371, 'entropy': 1.8869, 'root': 1.004, 'pattern': 0.9188, 'lr': 0.0005}
+{'step': 8050, 'epoch': 18, 'trans': 4.9765, 'route_root': 1.7348, 'route_pattern': 1.2091, 'val_root': 2.6904, 'val_pat': 1.3857, 'gate_bce': 0.468, 'entropy': 1.8485, 'root': 1.0501, 'pattern': 1.1599, 'lr': 0.0005}
+{'step': 8100, 'epoch': 18, 'trans': 5.0083, 'route_root': 2.4229, 'route_pattern': 1.5712, 'val_root': 3.3754, 'val_pat': 1.7476, 'gate_bce': 0.5005, 'entropy': 2.266, 'root': 1.8657, 'pattern': 1.4608, 'lr': 0.0005}
+{'step': 8150, 'epoch': 18, 'trans': 4.8688, 'route_root': 2.1222, 'route_pattern': 1.4362, 'val_root': 3.1091, 'val_pat': 1.6361, 'gate_bce': 0.5004, 'entropy': 2.1367, 'root': 1.4841, 'pattern': 1.3179, 'lr': 0.0005}
+{'step': 8200, 'epoch': 18, 'trans': 5.2595, 'route_root': 1.8716, 'route_pattern': 1.3716, 'val_root': 2.9345, 'val_pat': 1.5758, 'gate_bce': 0.4892, 'entropy': 1.989, 'root': 1.2613, 'pattern': 1.2609, 'lr': 0.0005}
+{'step': 8250, 'epoch': 18, 'trans': 5.3611, 'route_root': 2.3624, 'route_pattern': 1.4266, 'val_root': 3.316, 'val_pat': 1.6679, 'gate_bce': 0.5135, 'entropy': 2.3306, 'root': 1.6112, 'pattern': 1.3735, 'lr': 0.0005}
+epoch=18 dev_loss=5.2901 dev_chrf++=9.66
+  new best dev_loss=5.2901
+{'step': 8300, 'epoch': 19, 'trans': 4.7762, 'route_root': 2.1647, 'route_pattern': 1.3365, 'val_root': 3.3007, 'val_pat': 1.557, 'gate_bce': 0.4933, 'entropy': 2.1486, 'root': 1.2389, 'pattern': 1.2638, 'lr': 0.0005}
+{'step': 8350, 'epoch': 19, 'trans': 4.8341, 'route_root': 1.8737, 'route_pattern': 1.2776, 'val_root': 2.8117, 'val_pat': 1.4592, 'gate_bce': 0.454, 'entropy': 2.0229, 'root': 1.2287, 'pattern': 1.1224, 'lr': 0.0005}
+{'step': 8400, 'epoch': 19, 'trans': 4.7705, 'route_root': 1.3205, 'route_pattern': 1.1238, 'val_root': 2.4652, 'val_pat': 1.3501, 'gate_bce': 0.4481, 'entropy': 1.6648, 'root': 0.6947, 'pattern': 1.0338, 'lr': 0.0005}
+{'step': 8450, 'epoch': 19, 'trans': 4.9386, 'route_root': 1.9526, 'route_pattern': 1.5364, 'val_root': 2.7946, 'val_pat': 1.7671, 'gate_bce': 0.4668, 'entropy': 1.9176, 'root': 1.2883, 'pattern': 1.4686, 'lr': 0.0005}
+{'step': 8500, 'epoch': 19, 'trans': 4.8295, 'route_root': 1.8288, 'route_pattern': 1.4317, 'val_root': 2.8314, 'val_pat': 1.6135, 'gate_bce': 0.4659, 'entropy': 2.0109, 'root': 1.2244, 'pattern': 1.3922, 'lr': 0.0005}
+{'step': 8550, 'epoch': 19, 'trans': 4.7817, 'route_root': 1.7618, 'route_pattern': 1.3377, 'val_root': 2.8202, 'val_pat': 1.5153, 'gate_bce': 0.4691, 'entropy': 1.9587, 'root': 1.0531, 'pattern': 1.2389, 'lr': 0.0005}
+{'step': 8600, 'epoch': 19, 'trans': 4.8752, 'route_root': 1.3753, 'route_pattern': 1.054, 'val_root': 2.2104, 'val_pat': 1.2611, 'gate_bce': 0.3985, 'entropy': 1.5854, 'root': 0.852, 'pattern': 0.8758, 'lr': 0.0005}
+{'step': 8650, 'epoch': 19, 'trans': 5.0846, 'route_root': 2.0092, 'route_pattern': 1.508, 'val_root': 2.9207, 'val_pat': 1.698, 'gate_bce': 0.4399, 'entropy': 2.0545, 'root': 1.2169, 'pattern': 1.4323, 'lr': 0.0005}
+{'step': 8700, 'epoch': 19, 'trans': 5.0099, 'route_root': 1.9379, 'route_pattern': 1.4704, 'val_root': 2.9894, 'val_pat': 1.6835, 'gate_bce': 0.4593, 'entropy': 1.9727, 'root': 1.3002, 'pattern': 1.384, 'lr': 0.0005}
+epoch=19 dev_loss=5.2849 dev_chrf++=9.86
+  new best dev_loss=5.2849
+{'step': 8750, 'epoch': 20, 'trans': 4.7321, 'route_root': 2.2494, 'route_pattern': 1.3382, 'val_root': 3.21, 'val_pat': 1.5363, 'gate_bce': 0.47, 'entropy': 2.192, 'root': 1.3375, 'pattern': 1.2653, 'lr': 0.0005}
+{'step': 8800, 'epoch': 20, 'trans': 4.6879, 'route_root': 1.8528, 'route_pattern': 1.177, 'val_root': 2.7605, 'val_pat': 1.398, 'gate_bce': 0.4724, 'entropy': 1.9682, 'root': 1.198, 'pattern': 1.1331, 'lr': 0.0005}
+{'step': 8850, 'epoch': 20, 'trans': 5.059, 'route_root': 1.9876, 'route_pattern': 1.4307, 'val_root': 2.8951, 'val_pat': 1.6212, 'gate_bce': 0.5309, 'entropy': 2.0452, 'root': 1.4569, 'pattern': 1.2823, 'lr': 0.0005}
+{'step': 8900, 'epoch': 20, 'trans': 4.9428, 'route_root': 1.7319, 'route_pattern': 1.3958, 'val_root': 2.5591, 'val_pat': 1.5285, 'gate_bce': 0.4314, 'entropy': 1.8521, 'root': 0.9491, 'pattern': 1.2648, 'lr': 0.0005}
+{'step': 8950, 'epoch': 20, 'trans': 4.744, 'route_root': 1.86, 'route_pattern': 1.3061, 'val_root': 2.6941, 'val_pat': 1.4608, 'gate_bce': 0.4748, 'entropy': 1.9004, 'root': 1.277, 'pattern': 1.2684, 'lr': 0.0005}
+{'step': 9000, 'epoch': 20, 'trans': 5.02, 'route_root': 1.668, 'route_pattern': 1.4659, 'val_root': 2.4847, 'val_pat': 1.7475, 'gate_bce': 0.4559, 'entropy': 1.7947, 'root': 1.0438, 'pattern': 1.3978, 'lr': 0.0005}
+{'step': 9050, 'epoch': 20, 'trans': 5.0914, 'route_root': 1.7627, 'route_pattern': 1.4088, 'val_root': 2.6873, 'val_pat': 1.592, 'gate_bce': 0.4249, 'entropy': 1.9329, 'root': 1.2953, 'pattern': 1.3377, 'lr': 0.0005}
+{'step': 9100, 'epoch': 20, 'trans': 5.225, 'route_root': 1.6685, 'route_pattern': 1.528, 'val_root': 2.5523, 'val_pat': 1.706, 'gate_bce': 0.4878, 'entropy': 1.8775, 'root': 1.0797, 'pattern': 1.4009, 'lr': 0.0005}
+{'step': 9150, 'epoch': 20, 'trans': 5.149, 'route_root': 1.9109, 'route_pattern': 1.2957, 'val_root': 2.8355, 'val_pat': 1.5249, 'gate_bce': 0.4663, 'entropy': 1.9051, 'root': 1.2313, 'pattern': 1.2282, 'lr': 0.0005}
+epoch=20 dev_loss=5.2637 dev_chrf++=9.88
+  new best dev_loss=5.2637
+{'step': 9200, 'epoch': 21, 'trans': 4.8534, 'route_root': 1.6427, 'route_pattern': 1.33, 'val_root': 2.567, 'val_pat': 1.4629, 'gate_bce': 0.5235, 'entropy': 1.8757, 'root': 0.9687, 'pattern': 1.1794, 'lr': 0.0005}
+{'step': 9250, 'epoch': 21, 'trans': 4.8016, 'route_root': 1.7981, 'route_pattern': 1.2134, 'val_root': 2.5211, 'val_pat': 1.3063, 'gate_bce': 0.4445, 'entropy': 1.7588, 'root': 1.1183, 'pattern': 1.1071, 'lr': 0.0005}
+{'step': 9300, 'epoch': 21, 'trans': 4.9686, 'route_root': 1.836, 'route_pattern': 1.1831, 'val_root': 2.5854, 'val_pat': 1.3253, 'gate_bce': 0.4446, 'entropy': 1.8235, 'root': 1.1338, 'pattern': 1.1778, 'lr': 0.0005}
+{'step': 9350, 'epoch': 21, 'trans': 5.0265, 'route_root': 1.6622, 'route_pattern': 1.263, 'val_root': 2.4355, 'val_pat': 1.4361, 'gate_bce': 0.492, 'entropy': 1.7938, 'root': 1.1283, 'pattern': 1.1821, 'lr': 0.0005}
+{'step': 9400, 'epoch': 21, 'trans': 4.8807, 'route_root': 1.6128, 'route_pattern': 1.1987, 'val_root': 2.4521, 'val_pat': 1.4012, 'gate_bce': 0.46, 'entropy': 1.7846, 'root': 1.1145, 'pattern': 1.0657, 'lr': 0.0005}
+{'step': 9450, 'epoch': 21, 'trans': 5.0555, 'route_root': 1.4106, 'route_pattern': 1.1563, 'val_root': 2.161, 'val_pat': 1.2975, 'gate_bce': 0.4414, 'entropy': 1.7175, 'root': 0.8725, 'pattern': 1.0842, 'lr': 0.0005}
+{'step': 9500, 'epoch': 21, 'trans': 4.9177, 'route_root': 1.4266, 'route_pattern': 1.3039, 'val_root': 2.2488, 'val_pat': 1.4562, 'gate_bce': 0.4405, 'entropy': 1.6275, 'root': 0.9605, 'pattern': 1.1739, 'lr': 0.0005}
+{'step': 9550, 'epoch': 21, 'trans': 5.1371, 'route_root': 1.8934, 'route_pattern': 1.4063, 'val_root': 2.7385, 'val_pat': 1.5903, 'gate_bce': 0.4761, 'entropy': 1.8909, 'root': 1.2432, 'pattern': 1.4209, 'lr': 0.0005}
+epoch=21 dev_loss=5.2667 dev_chrf++=10.59
+{'step': 9600, 'epoch': 22, 'trans': 4.65, 'route_root': 1.7486, 'route_pattern': 1.4963, 'val_root': 2.6958, 'val_pat': 1.6344, 'gate_bce': 0.4631, 'entropy': 1.8928, 'root': 1.0042, 'pattern': 1.3805, 'lr': 0.0005}
+{'step': 9650, 'epoch': 22, 'trans': 4.5133, 'route_root': 1.4738, 'route_pattern': 1.0899, 'val_root': 2.3371, 'val_pat': 1.3131, 'gate_bce': 0.481, 'entropy': 1.6204, 'root': 0.9062, 'pattern': 0.9979, 'lr': 0.0005}
+{'step': 9700, 'epoch': 22, 'trans': 4.7551, 'route_root': 1.5881, 'route_pattern': 1.294, 'val_root': 2.3354, 'val_pat': 1.4865, 'gate_bce': 0.4516, 'entropy': 1.7453, 'root': 0.9988, 'pattern': 1.177, 'lr': 0.0005}
+{'step': 9750, 'epoch': 22, 'trans': 4.7993, 'route_root': 1.809, 'route_pattern': 1.5143, 'val_root': 2.6571, 'val_pat': 1.6374, 'gate_bce': 0.5092, 'entropy': 1.8872, 'root': 1.3361, 'pattern': 1.4697, 'lr': 0.0005}
+{'step': 9800, 'epoch': 22, 'trans': 4.9158, 'route_root': 1.5137, 'route_pattern': 1.2754, 'val_root': 2.4284, 'val_pat': 1.4169, 'gate_bce': 0.4414, 'entropy': 1.6829, 'root': 0.9466, 'pattern': 1.1939, 'lr': 0.0005}
+{'step': 9850, 'epoch': 22, 'trans': 4.8196, 'route_root': 1.7784, 'route_pattern': 1.4028, 'val_root': 2.5114, 'val_pat': 1.527, 'gate_bce': 0.3943, 'entropy': 1.7554, 'root': 1.1588, 'pattern': 1.27, 'lr': 0.0005}
+{'step': 9900, 'epoch': 22, 'trans': 4.8839, 'route_root': 1.6203, 'route_pattern': 1.2364, 'val_root': 2.3174, 'val_pat': 1.3842, 'gate_bce': 0.4755, 'entropy': 1.7004, 'root': 1.0041, 'pattern': 1.1989, 'lr': 0.0005}
+{'step': 9950, 'epoch': 22, 'trans': 5.0571, 'route_root': 1.781, 'route_pattern': 1.1904, 'val_root': 2.4307, 'val_pat': 1.3342, 'gate_bce': 0.4779, 'entropy': 1.9172, 'root': 1.2269, 'pattern': 1.0869, 'lr': 0.0005}
+{'step': 10000, 'epoch': 22, 'trans': 4.9825, 'route_root': 1.4421, 'route_pattern': 1.2701, 'val_root': 2.124, 'val_pat': 1.505, 'gate_bce': 0.447, 'entropy': 1.6727, 'root': 0.9973, 'pattern': 1.215, 'lr': 0.0005}
+epoch=22 dev_loss=5.2511 dev_chrf++=10.91
+  new best dev_loss=5.2511
+{'step': 10050, 'epoch': 23, 'trans': 4.634, 'route_root': 1.5112, 'route_pattern': 1.0491, 'val_root': 2.2664, 'val_pat': 1.1927, 'gate_bce': 0.4613, 'entropy': 1.6633, 'root': 0.7782, 'pattern': 0.9591, 'lr': 0.0005}
+{'step': 10100, 'epoch': 23, 'trans': 4.7918, 'route_root': 1.4108, 'route_pattern': 1.1581, 'val_root': 2.3356, 'val_pat': 1.3032, 'gate_bce': 0.45, 'entropy': 1.6519, 'root': 0.9746, 'pattern': 1.0, 'lr': 0.0005}
+{'step': 10150, 'epoch': 23, 'trans': 4.7381, 'route_root': 1.4212, 'route_pattern': 1.1965, 'val_root': 2.2719, 'val_pat': 1.3467, 'gate_bce': 0.4202, 'entropy': 1.7072, 'root': 0.9743, 'pattern': 1.2048, 'lr': 0.0005}
+{'step': 10200, 'epoch': 23, 'trans': 4.8841, 'route_root': 1.5034, 'route_pattern': 1.2833, 'val_root': 2.219, 'val_pat': 1.4169, 'gate_bce': 0.4507, 'entropy': 1.7055, 'root': 0.9929, 'pattern': 1.1457, 'lr': 0.0005}
+{'step': 10250, 'epoch': 23, 'trans': 4.7997, 'route_root': 1.2644, 'route_pattern': 1.268, 'val_root': 1.9648, 'val_pat': 1.372, 'gate_bce': 0.41, 'entropy': 1.55, 'root': 0.7136, 'pattern': 1.1797, 'lr': 0.0005}
+{'step': 10300, 'epoch': 23, 'trans': 4.9006, 'route_root': 1.7119, 'route_pattern': 1.261, 'val_root': 2.5001, 'val_pat': 1.4321, 'gate_bce': 0.5247, 'entropy': 1.8654, 'root': 1.1127, 'pattern': 1.1477, 'lr': 0.0005}
+{'step': 10350, 'epoch': 23, 'trans': 4.9333, 'route_root': 1.7471, 'route_pattern': 1.3118, 'val_root': 2.5325, 'val_pat': 1.4714, 'gate_bce': 0.4335, 'entropy': 1.7433, 'root': 1.0772, 'pattern': 1.2521, 'lr': 0.0005}
+{'step': 10400, 'epoch': 23, 'trans': 4.975, 'route_root': 1.2408, 'route_pattern': 1.0102, 'val_root': 2.0229, 'val_pat': 1.1065, 'gate_bce': 0.4106, 'entropy': 1.5502, 'root': 0.7228, 'pattern': 0.8902, 'lr': 0.0005}
+{'step': 10450, 'epoch': 23, 'trans': 5.164, 'route_root': 1.5875, 'route_pattern': 1.4854, 'val_root': 2.1832, 'val_pat': 1.73, 'gate_bce': 0.462, 'entropy': 1.6748, 'root': 1.0656, 'pattern': 1.4499, 'lr': 0.0005}
+epoch=23 dev_loss=5.2640 dev_chrf++=10.51
+{'step': 10500, 'epoch': 24, 'trans': 4.729, 'route_root': 1.3899, 'route_pattern': 1.2098, 'val_root': 2.094, 'val_pat': 1.3041, 'gate_bce': 0.4395, 'entropy': 1.6068, 'root': 0.9029, 'pattern': 1.0831, 'lr': 0.0005}
+{'step': 10550, 'epoch': 24, 'trans': 4.5312, 'route_root': 1.7628, 'route_pattern': 1.1553, 'val_root': 2.4423, 'val_pat': 1.3218, 'gate_bce': 0.432, 'entropy': 1.7511, 'root': 1.084, 'pattern': 1.1465, 'lr': 0.0005}
+{'step': 10600, 'epoch': 24, 'trans': 4.6039, 'route_root': 1.3905, 'route_pattern': 1.0929, 'val_root': 2.1297, 'val_pat': 1.2616, 'gate_bce': 0.4594, 'entropy': 1.533, 'root': 0.8874, 'pattern': 1.0333, 'lr': 0.0005}
+{'step': 10650, 'epoch': 24, 'trans': 4.5391, 'route_root': 1.6324, 'route_pattern': 1.2691, 'val_root': 2.4318, 'val_pat': 1.4071, 'gate_bce': 0.4742, 'entropy': 1.6633, 'root': 0.9468, 'pattern': 1.2007, 'lr': 0.0005}
+{'step': 10700, 'epoch': 24, 'trans': 4.904, 'route_root': 1.6129, 'route_pattern': 1.1672, 'val_root': 2.387, 'val_pat': 1.3828, 'gate_bce': 0.4345, 'entropy': 1.6655, 'root': 0.9637, 'pattern': 1.0887, 'lr': 0.0005}
+{'step': 10750, 'epoch': 24, 'trans': 4.8008, 'route_root': 1.4363, 'route_pattern': 1.2631, 'val_root': 2.1049, 'val_pat': 1.4294, 'gate_bce': 0.4344, 'entropy': 1.5957, 'root': 0.848, 'pattern': 1.2227, 'lr': 0.0005}
+{'step': 10800, 'epoch': 24, 'trans': 4.675, 'route_root': 1.4831, 'route_pattern': 1.17, 'val_root': 2.1053, 'val_pat': 1.2886, 'gate_bce': 0.4664, 'entropy': 1.5598, 'root': 0.9567, 'pattern': 0.9568, 'lr': 0.0005}
+{'step': 10850, 'epoch': 24, 'trans': 5.0519, 'route_root': 1.576, 'route_pattern': 1.3967, 'val_root': 2.3819, 'val_pat': 1.5037, 'gate_bce': 0.4951, 'entropy': 1.7935, 'root': 1.1308, 'pattern': 1.3583, 'lr': 0.0005}
+{'step': 10900, 'epoch': 24, 'trans': 4.9735, 'route_root': 0.8701, 'route_pattern': 0.9588, 'val_root': 1.6164, 'val_pat': 1.1627, 'gate_bce': 0.4441, 'entropy': 1.4195, 'root': 0.4966, 'pattern': 0.992, 'lr': 0.0005}
+epoch=24 dev_loss=5.2579 dev_chrf++=10.36
+{'step': 10950, 'epoch': 25, 'trans': 4.7806, 'route_root': 1.2525, 'route_pattern': 1.1445, 'val_root': 1.8696, 'val_pat': 1.3094, 'gate_bce': 0.4347, 'entropy': 1.5581, 'root': 0.7014, 'pattern': 1.0856, 'lr': 0.0005}
+{'step': 11000, 'epoch': 25, 'trans': 4.763, 'route_root': 1.532, 'route_pattern': 1.1317, 'val_root': 2.1108, 'val_pat': 1.291, 'gate_bce': 0.4625, 'entropy': 1.6153, 'root': 0.8379, 'pattern': 1.0411, 'lr': 0.0005}
+{'step': 11050, 'epoch': 25, 'trans': 4.7207, 'route_root': 1.3135, 'route_pattern': 1.1234, 'val_root': 1.9061, 'val_pat': 1.2798, 'gate_bce': 0.4431, 'entropy': 1.6357, 'root': 0.8216, 'pattern': 1.0453, 'lr': 0.0005}
+{'step': 11100, 'epoch': 25, 'trans': 4.7239, 'route_root': 1.3676, 'route_pattern': 1.2105, 'val_root': 1.9391, 'val_pat': 1.2665, 'gate_bce': 0.4327, 'entropy': 1.5397, 'root': 0.8676, 'pattern': 1.1127, 'lr': 0.0005}
+{'step': 11150, 'epoch': 25, 'trans': 4.9637, 'route_root': 1.296, 'route_pattern': 1.2094, 'val_root': 1.8066, 'val_pat': 1.3021, 'gate_bce': 0.4388, 'entropy': 1.5745, 'root': 0.7252, 'pattern': 1.1329, 'lr': 0.0005}
+{'step': 11200, 'epoch': 25, 'trans': 4.8509, 'route_root': 1.6653, 'route_pattern': 1.2742, 'val_root': 2.1115, 'val_pat': 1.55, 'gate_bce': 0.4039, 'entropy': 1.7199, 'root': 1.0053, 'pattern': 1.2903, 'lr': 0.0005}
+{'step': 11250, 'epoch': 25, 'trans': 4.9243, 'route_root': 1.5051, 'route_pattern': 1.077, 'val_root': 2.2302, 'val_pat': 1.241, 'gate_bce': 0.4379, 'entropy': 1.6247, 'root': 0.9064, 'pattern': 0.9774, 'lr': 0.0005}
+{'step': 11300, 'epoch': 25, 'trans': 5.0375, 'route_root': 1.495, 'route_pattern': 1.2323, 'val_root': 2.1981, 'val_pat': 1.4179, 'gate_bce': 0.4868, 'entropy': 1.6947, 'root': 0.8688, 'pattern': 1.2022, 'lr': 0.0005}
+epoch=25 dev_loss=5.2315 dev_chrf++=10.38
+  new best dev_loss=5.2315
+{'step': 11350, 'epoch': 26, 'trans': 4.5749, 'route_root': 1.2975, 'route_pattern': 0.9809, 'val_root': 1.8585, 'val_pat': 1.1227, 'gate_bce': 0.4423, 'entropy': 1.4875, 'root': 0.8019, 'pattern': 0.8593, 'lr': 0.0005}
+{'step': 11400, 'epoch': 26, 'trans': 4.7543, 'route_root': 1.3026, 'route_pattern': 1.2743, 'val_root': 1.9788, 'val_pat': 1.3365, 'gate_bce': 0.4657, 'entropy': 1.6265, 'root': 0.6229, 'pattern': 1.0337, 'lr': 0.0005}
+{'step': 11450, 'epoch': 26, 'trans': 4.6502, 'route_root': 1.5234, 'route_pattern': 1.0982, 'val_root': 2.1356, 'val_pat': 1.2205, 'gate_bce': 0.4615, 'entropy': 1.6366, 'root': 1.0106, 'pattern': 1.0654, 'lr': 0.0005}
+{'step': 11500, 'epoch': 26, 'trans': 4.8532, 'route_root': 1.439, 'route_pattern': 1.2259, 'val_root': 1.9432, 'val_pat': 1.385, 'gate_bce': 0.4596, 'entropy': 1.5946, 'root': 0.7716, 'pattern': 1.0979, 'lr': 0.0005}
+{'step': 11550, 'epoch': 26, 'trans': 5.0088, 'route_root': 1.4177, 'route_pattern': 1.2151, 'val_root': 2.0714, 'val_pat': 1.3284, 'gate_bce': 0.4486, 'entropy': 1.5133, 'root': 0.8311, 'pattern': 1.1832, 'lr': 0.0005}
+{'step': 11600, 'epoch': 26, 'trans': 4.6441, 'route_root': 1.429, 'route_pattern': 1.2906, 'val_root': 2.0498, 'val_pat': 1.5018, 'gate_bce': 0.4492, 'entropy': 1.62, 'root': 0.7669, 'pattern': 1.1978, 'lr': 0.0005}
+{'step': 11650, 'epoch': 26, 'trans': 4.7958, 'route_root': 1.3671, 'route_pattern': 1.1488, 'val_root': 1.938, 'val_pat': 1.3536, 'gate_bce': 0.4436, 'entropy': 1.5418, 'root': 0.8774, 'pattern': 1.1642, 'lr': 0.0005}
+{'step': 11700, 'epoch': 26, 'trans': 5.0137, 'route_root': 1.5415, 'route_pattern': 1.2275, 'val_root': 2.1922, 'val_pat': 1.3752, 'gate_bce': 0.4523, 'entropy': 1.6527, 'root': 1.0097, 'pattern': 1.1898, 'lr': 0.0005}
+{'step': 11750, 'epoch': 26, 'trans': 5.0394, 'route_root': 1.5741, 'route_pattern': 1.22, 'val_root': 2.2242, 'val_pat': 1.3416, 'gate_bce': 0.4804, 'entropy': 1.7147, 'root': 1.0769, 'pattern': 1.106, 'lr': 0.0005}
+epoch=26 dev_loss=5.2291 dev_chrf++=10.62
+  new best dev_loss=5.2291
+{'step': 11800, 'epoch': 27, 'trans': 4.4285, 'route_root': 1.2696, 'route_pattern': 1.2956, 'val_root': 1.9756, 'val_pat': 1.4843, 'gate_bce': 0.4746, 'entropy': 1.5902, 'root': 0.6894, 'pattern': 1.1631, 'lr': 0.0005}
+{'step': 11850, 'epoch': 27, 'trans': 4.6893, 'route_root': 1.1913, 'route_pattern': 1.2289, 'val_root': 1.7721, 'val_pat': 1.2821, 'gate_bce': 0.4854, 'entropy': 1.4805, 'root': 0.6466, 'pattern': 1.1989, 'lr': 0.0005}
+{'step': 11900, 'epoch': 27, 'trans': 4.6974, 'route_root': 1.3753, 'route_pattern': 1.0286, 'val_root': 1.9172, 'val_pat': 1.1789, 'gate_bce': 0.403, 'entropy': 1.3993, 'root': 0.9008, 'pattern': 1.0292, 'lr': 0.0005}
+{'step': 11950, 'epoch': 27, 'trans': 4.8134, 'route_root': 1.3699, 'route_pattern': 1.0753, 'val_root': 1.8984, 'val_pat': 1.221, 'gate_bce': 0.4444, 'entropy': 1.5684, 'root': 0.7996, 'pattern': 0.97, 'lr': 0.0005}
+{'step': 12000, 'epoch': 27, 'trans': 4.803, 'route_root': 1.3157, 'route_pattern': 1.2037, 'val_root': 1.8167, 'val_pat': 1.2533, 'gate_bce': 0.4469, 'entropy': 1.5213, 'root': 0.7924, 'pattern': 1.0664, 'lr': 0.0005}
+{'step': 12050, 'epoch': 27, 'trans': 4.822, 'route_root': 1.2154, 'route_pattern': 1.1629, 'val_root': 1.7134, 'val_pat': 1.258, 'gate_bce': 0.4196, 'entropy': 1.4417, 'root': 0.7724, 'pattern': 1.0537, 'lr': 0.0005}
+{'step': 12100, 'epoch': 27, 'trans': 4.6544, 'route_root': 1.231, 'route_pattern': 1.0589, 'val_root': 1.8174, 'val_pat': 1.2505, 'gate_bce': 0.4464, 'entropy': 1.4252, 'root': 0.7874, 'pattern': 1.0729, 'lr': 0.0005}
+{'step': 12150, 'epoch': 27, 'trans': 4.7305, 'route_root': 1.2417, 'route_pattern': 1.0565, 'val_root': 1.7826, 'val_pat': 1.1746, 'gate_bce': 0.4309, 'entropy': 1.4751, 'root': 0.7515, 'pattern': 0.9201, 'lr': 0.0005}
+{'step': 12200, 'epoch': 27, 'trans': 4.6952, 'route_root': 1.5158, 'route_pattern': 1.2214, 'val_root': 2.1153, 'val_pat': 1.3155, 'gate_bce': 0.4703, 'entropy': 1.5098, 'root': 1.0601, 'pattern': 1.1031, 'lr': 0.0005}
+epoch=27 dev_loss=5.2168 dev_chrf++=10.38
+  new best dev_loss=5.2168
+{'step': 12250, 'epoch': 28, 'trans': 4.6096, 'route_root': 1.1184, 'route_pattern': 0.8279, 'val_root': 1.5877, 'val_pat': 0.9858, 'gate_bce': 0.4365, 'entropy': 1.3104, 'root': 0.5925, 'pattern': 0.7012, 'lr': 0.0005}
+{'step': 12300, 'epoch': 28, 'trans': 4.5395, 'route_root': 1.2135, 'route_pattern': 0.9486, 'val_root': 1.911, 'val_pat': 1.119, 'gate_bce': 0.442, 'entropy': 1.4537, 'root': 0.7957, 'pattern': 0.8138, 'lr': 0.0005}
+{'step': 12350, 'epoch': 28, 'trans': 4.8167, 'route_root': 1.1311, 'route_pattern': 1.2963, 'val_root': 1.5946, 'val_pat': 1.3969, 'gate_bce': 0.4807, 'entropy': 1.3952, 'root': 0.7435, 'pattern': 1.1776, 'lr': 0.0005}
+{'step': 12400, 'epoch': 28, 'trans': 4.6284, 'route_root': 0.9663, 'route_pattern': 1.0507, 'val_root': 1.4458, 'val_pat': 1.1356, 'gate_bce': 0.4174, 'entropy': 1.2567, 'root': 0.6506, 'pattern': 0.9838, 'lr': 0.0005}
+{'step': 12450, 'epoch': 28, 'trans': 4.5619, 'route_root': 1.1589, 'route_pattern': 1.102, 'val_root': 1.6054, 'val_pat': 1.1882, 'gate_bce': 0.4366, 'entropy': 1.4027, 'root': 0.7084, 'pattern': 0.968, 'lr': 0.0005}
+{'step': 12500, 'epoch': 28, 'trans': 4.6137, 'route_root': 1.3908, 'route_pattern': 1.1331, 'val_root': 1.8278, 'val_pat': 1.2544, 'gate_bce': 0.4418, 'entropy': 1.5086, 'root': 0.7173, 'pattern': 1.0182, 'lr': 0.0005}
+{'step': 12550, 'epoch': 28, 'trans': 4.6445, 'route_root': 1.1831, 'route_pattern': 1.0078, 'val_root': 1.7884, 'val_pat': 1.15, 'gate_bce': 0.4318, 'entropy': 1.2281, 'root': 0.7332, 'pattern': 0.9497, 'lr': 0.0005}
+{'step': 12600, 'epoch': 28, 'trans': 4.8033, 'route_root': 1.132, 'route_pattern': 1.0196, 'val_root': 1.5271, 'val_pat': 1.1286, 'gate_bce': 0.386, 'entropy': 1.2753, 'root': 0.789, 'pattern': 1.0426, 'lr': 0.0005}
+epoch=28 dev_loss=5.2204 dev_chrf++=10.94
+{'step': 12650, 'epoch': 29, 'trans': 4.5046, 'route_root': 0.8598, 'route_pattern': 0.9889, 'val_root': 1.3251, 'val_pat': 1.139, 'gate_bce': 0.4249, 'entropy': 1.3541, 'root': 0.4715, 'pattern': 0.9585, 'lr': 0.0005}
+{'step': 12700, 'epoch': 29, 'trans': 4.4244, 'route_root': 1.1279, 'route_pattern': 1.0021, 'val_root': 1.4979, 'val_pat': 1.0691, 'gate_bce': 0.4128, 'entropy': 1.2702, 'root': 0.6266, 'pattern': 0.8754, 'lr': 0.0005}
+{'step': 12750, 'epoch': 29, 'trans': 4.844, 'route_root': 0.8895, 'route_pattern': 1.2031, 'val_root': 1.2723, 'val_pat': 1.3064, 'gate_bce': 0.436, 'entropy': 1.3807, 'root': 0.4988, 'pattern': 0.9999, 'lr': 0.0005}
+{'step': 12800, 'epoch': 29, 'trans': 4.7133, 'route_root': 1.2598, 'route_pattern': 1.148, 'val_root': 1.6411, 'val_pat': 1.3324, 'gate_bce': 0.4515, 'entropy': 1.4968, 'root': 0.6772, 'pattern': 1.148, 'lr': 0.0005}
+{'step': 12850, 'epoch': 29, 'trans': 4.5213, 'route_root': 0.9499, 'route_pattern': 1.1983, 'val_root': 1.372, 'val_pat': 1.2543, 'gate_bce': 0.4189, 'entropy': 1.456, 'root': 0.4904, 'pattern': 1.0113, 'lr': 0.0005}
+{'step': 12900, 'epoch': 29, 'trans': 4.5856, 'route_root': 1.3803, 'route_pattern': 1.0997, 'val_root': 1.7862, 'val_pat': 1.2013, 'gate_bce': 0.4166, 'entropy': 1.4411, 'root': 0.8413, 'pattern': 1.0303, 'lr': 0.0005}
+{'step': 12950, 'epoch': 29, 'trans': 4.8105, 'route_root': 0.9834, 'route_pattern': 0.9774, 'val_root': 1.4296, 'val_pat': 1.0384, 'gate_bce': 0.3933, 'entropy': 1.3033, 'root': 0.7218, 'pattern': 0.8359, 'lr': 0.0005}
+{'step': 13000, 'epoch': 29, 'trans': 4.5881, 'route_root': 1.2153, 'route_pattern': 0.9205, 'val_root': 1.5962, 'val_pat': 0.9774, 'gate_bce': 0.4375, 'entropy': 1.3469, 'root': 0.7675, 'pattern': 0.8118, 'lr': 0.0005}
+{'step': 13050, 'epoch': 29, 'trans': 4.7864, 'route_root': 1.6258, 'route_pattern': 1.1598, 'val_root': 2.072, 'val_pat': 1.2341, 'gate_bce': 0.451, 'entropy': 1.5321, 'root': 0.9697, 'pattern': 1.118, 'lr': 0.0005}
+epoch=29 dev_loss=5.2199 dev_chrf++=11.00
+{'step': 13100, 'epoch': 30, 'trans': 4.5883, 'route_root': 0.9711, 'route_pattern': 1.1044, 'val_root': 1.4721, 'val_pat': 1.2073, 'gate_bce': 0.442, 'entropy': 1.4022, 'root': 0.5678, 'pattern': 0.9243, 'lr': 0.0005}
+{'step': 13150, 'epoch': 30, 'trans': 4.5873, 'route_root': 1.0817, 'route_pattern': 1.1694, 'val_root': 1.4307, 'val_pat': 1.3744, 'gate_bce': 0.4226, 'entropy': 1.396, 'root': 0.5329, 'pattern': 1.014, 'lr': 0.0005}
+{'step': 13200, 'epoch': 30, 'trans': 4.5969, 'route_root': 0.9567, 'route_pattern': 1.3029, 'val_root': 1.4019, 'val_pat': 1.4048, 'gate_bce': 0.4189, 'entropy': 1.4426, 'root': 0.5611, 'pattern': 1.0854, 'lr': 0.0005}
+{'step': 13250, 'epoch': 30, 'trans': 4.63, 'route_root': 1.2883, 'route_pattern': 1.2795, 'val_root': 1.8238, 'val_pat': 1.3901, 'gate_bce': 0.4523, 'entropy': 1.5431, 'root': 0.8021, 'pattern': 1.2064, 'lr': 0.0005}
+{'step': 13300, 'epoch': 30, 'trans': 4.7935, 'route_root': 1.1593, 'route_pattern': 1.0657, 'val_root': 1.5475, 'val_pat': 1.1322, 'gate_bce': 0.4286, 'entropy': 1.3923, 'root': 0.6408, 'pattern': 0.9316, 'lr': 0.0005}
+{'step': 13350, 'epoch': 30, 'trans': 4.8165, 'route_root': 1.1806, 'route_pattern': 1.0893, 'val_root': 1.5841, 'val_pat': 1.2824, 'gate_bce': 0.4219, 'entropy': 1.4506, 'root': 0.8108, 'pattern': 1.0228, 'lr': 0.0005}
+{'step': 13400, 'epoch': 30, 'trans': 4.6135, 'route_root': 1.1324, 'route_pattern': 1.0522, 'val_root': 1.6164, 'val_pat': 1.2311, 'gate_bce': 0.4479, 'entropy': 1.3041, 'root': 0.6977, 'pattern': 1.0117, 'lr': 0.0005}
+{'step': 13450, 'epoch': 30, 'trans': 4.989, 'route_root': 1.0785, 'route_pattern': 1.0404, 'val_root': 1.5195, 'val_pat': 1.1882, 'gate_bce': 0.407, 'entropy': 1.3929, 'root': 0.6309, 'pattern': 0.9793, 'lr': 0.0005}
+{'step': 13500, 'epoch': 30, 'trans': 4.714, 'route_root': 1.0692, 'route_pattern': 0.9062, 'val_root': 1.483, 'val_pat': 0.9359, 'gate_bce': 0.4215, 'entropy': 1.272, 'root': 0.6363, 'pattern': 0.8076, 'lr': 0.0005}
+epoch=30 dev_loss=5.2195 dev_chrf++=10.72
+{'step': 13550, 'epoch': 31, 'trans': 4.1635, 'route_root': 1.0103, 'route_pattern': 1.0175, 'val_root': 1.4717, 'val_pat': 1.1335, 'gate_bce': 0.4077, 'entropy': 1.2951, 'root': 0.6431, 'pattern': 1.0218, 'lr': 0.00025}
+{'step': 13600, 'epoch': 31, 'trans': 4.3114, 'route_root': 0.979, 'route_pattern': 1.1541, 'val_root': 1.3501, 'val_pat': 1.3013, 'gate_bce': 0.4243, 'entropy': 1.3205, 'root': 0.4786, 'pattern': 1.065, 'lr': 0.00025}
+{'step': 13650, 'epoch': 31, 'trans': 4.258, 'route_root': 1.1559, 'route_pattern': 1.1191, 'val_root': 1.6198, 'val_pat': 1.2465, 'gate_bce': 0.437, 'entropy': 1.3383, 'root': 0.6127, 'pattern': 1.0057, 'lr': 0.00025}
+{'step': 13700, 'epoch': 31, 'trans': 4.438, 'route_root': 1.0404, 'route_pattern': 0.9482, 'val_root': 1.4633, 'val_pat': 1.1094, 'gate_bce': 0.356, 'entropy': 1.295, 'root': 0.5918, 'pattern': 0.8699, 'lr': 0.00025}
+{'step': 13750, 'epoch': 31, 'trans': 4.353, 'route_root': 0.6763, 'route_pattern': 1.0684, 'val_root': 1.0686, 'val_pat': 1.1636, 'gate_bce': 0.4013, 'entropy': 1.1132, 'root': 0.3945, 'pattern': 0.8695, 'lr': 0.00025}
+{'step': 13800, 'epoch': 31, 'trans': 4.6689, 'route_root': 1.1945, 'route_pattern': 1.054, 'val_root': 1.5978, 'val_pat': 1.2218, 'gate_bce': 0.4148, 'entropy': 1.3446, 'root': 0.7725, 'pattern': 0.9697, 'lr': 0.00025}
+{'step': 13850, 'epoch': 31, 'trans': 4.4879, 'route_root': 0.8711, 'route_pattern': 1.1208, 'val_root': 1.2591, 'val_pat': 1.2982, 'gate_bce': 0.3887, 'entropy': 1.2872, 'root': 0.4873, 'pattern': 0.9904, 'lr': 0.00025}
+{'step': 13900, 'epoch': 31, 'trans': 4.4769, 'route_root': 1.2564, 'route_pattern': 1.3859, 'val_root': 1.7223, 'val_pat': 1.5192, 'gate_bce': 0.4435, 'entropy': 1.5166, 'root': 0.648, 'pattern': 1.1904, 'lr': 0.00025}
+{'step': 13950, 'epoch': 31, 'trans': 4.5741, 'route_root': 0.9725, 'route_pattern': 0.954, 'val_root': 1.3475, 'val_pat': 1.1856, 'gate_bce': 0.3898, 'entropy': 1.3024, 'root': 0.5132, 'pattern': 0.9317, 'lr': 0.00025}
+epoch=31 dev_loss=5.1618 dev_chrf++=11.49
+  new best dev_loss=5.1618
+{'step': 14000, 'epoch': 32, 'trans': 4.3271, 'route_root': 1.0505, 'route_pattern': 1.0951, 'val_root': 1.456, 'val_pat': 1.1948, 'gate_bce': 0.3926, 'entropy': 1.2396, 'root': 0.6998, 'pattern': 0.9783, 'lr': 0.00025}
+{'step': 14050, 'epoch': 32, 'trans': 4.376, 'route_root': 1.2525, 'route_pattern': 1.0977, 'val_root': 1.6361, 'val_pat': 1.1579, 'gate_bce': 0.44, 'entropy': 1.4024, 'root': 0.6697, 'pattern': 0.9317, 'lr': 0.00025}
+{'step': 14100, 'epoch': 32, 'trans': 4.219, 'route_root': 0.8465, 'route_pattern': 0.87, 'val_root': 1.1974, 'val_pat': 0.9971, 'gate_bce': 0.3979, 'entropy': 1.1711, 'root': 0.5104, 'pattern': 0.8115, 'lr': 0.00025}
+{'step': 14150, 'epoch': 32, 'trans': 4.3857, 'route_root': 1.0552, 'route_pattern': 0.9745, 'val_root': 1.3711, 'val_pat': 0.9909, 'gate_bce': 0.4193, 'entropy': 1.319, 'root': 0.4926, 'pattern': 0.8313, 'lr': 0.00025}
+{'step': 14200, 'epoch': 32, 'trans': 4.4413, 'route_root': 1.0223, 'route_pattern': 1.1142, 'val_root': 1.415, 'val_pat': 1.2251, 'gate_bce': 0.407, 'entropy': 1.3666, 'root': 0.5356, 'pattern': 0.9704, 'lr': 0.00025}
+{'step': 14250, 'epoch': 32, 'trans': 4.5616, 'route_root': 1.0293, 'route_pattern': 1.2081, 'val_root': 1.4153, 'val_pat': 1.3869, 'gate_bce': 0.4174, 'entropy': 1.3879, 'root': 0.5795, 'pattern': 1.0217, 'lr': 0.00025}
+{'step': 14300, 'epoch': 32, 'trans': 4.4583, 'route_root': 0.7851, 'route_pattern': 0.972, 'val_root': 1.0703, 'val_pat': 1.0326, 'gate_bce': 0.3541, 'entropy': 1.1282, 'root': 0.3629, 'pattern': 0.8516, 'lr': 0.00025}
+{'step': 14350, 'epoch': 32, 'trans': 4.2475, 'route_root': 0.984, 'route_pattern': 0.888, 'val_root': 1.3082, 'val_pat': 0.93, 'gate_bce': 0.3738, 'entropy': 1.2337, 'root': 0.4649, 'pattern': 0.709, 'lr': 0.00025}
+epoch=32 dev_loss=5.1563 dev_chrf++=11.18
+  new best dev_loss=5.1563
+{'step': 14400, 'epoch': 33, 'trans': 4.261, 'route_root': 0.7042, 'route_pattern': 1.1021, 'val_root': 0.9922, 'val_pat': 1.2717, 'gate_bce': 0.3838, 'entropy': 1.1076, 'root': 0.3776, 'pattern': 0.9665, 'lr': 0.00025}
+{'step': 14450, 'epoch': 33, 'trans': 4.3275, 'route_root': 1.1881, 'route_pattern': 0.8296, 'val_root': 1.5839, 'val_pat': 0.9376, 'gate_bce': 0.3864, 'entropy': 1.3062, 'root': 0.6538, 'pattern': 0.7517, 'lr': 0.00025}
+{'step': 14500, 'epoch': 33, 'trans': 4.3829, 'route_root': 0.8981, 'route_pattern': 0.9913, 'val_root': 1.1198, 'val_pat': 1.1146, 'gate_bce': 0.4197, 'entropy': 1.2556, 'root': 0.4688, 'pattern': 0.9262, 'lr': 0.00025}
+{'step': 14550, 'epoch': 33, 'trans': 4.281, 'route_root': 0.9909, 'route_pattern': 0.9615, 'val_root': 1.4249, 'val_pat': 1.045, 'gate_bce': 0.3886, 'entropy': 1.2039, 'root': 0.6099, 'pattern': 0.9081, 'lr': 0.00025}
+{'step': 14600, 'epoch': 33, 'trans': 4.096, 'route_root': 0.8154, 'route_pattern': 0.901, 'val_root': 1.0955, 'val_pat': 0.9669, 'gate_bce': 0.3972, 'entropy': 1.2303, 'root': 0.3595, 'pattern': 0.7281, 'lr': 0.00025}
+{'step': 14650, 'epoch': 33, 'trans': 4.3551, 'route_root': 0.8983, 'route_pattern': 1.0566, 'val_root': 1.2206, 'val_pat': 1.2087, 'gate_bce': 0.4121, 'entropy': 1.257, 'root': 0.4102, 'pattern': 1.0295, 'lr': 0.00025}
+{'step': 14700, 'epoch': 33, 'trans': 4.3996, 'route_root': 1.0169, 'route_pattern': 1.234, 'val_root': 1.3252, 'val_pat': 1.3163, 'gate_bce': 0.4256, 'entropy': 1.3702, 'root': 0.5299, 'pattern': 1.0575, 'lr': 0.00025}
+{'step': 14750, 'epoch': 33, 'trans': 4.4061, 'route_root': 0.9685, 'route_pattern': 0.9706, 'val_root': 1.2458, 'val_pat': 1.0881, 'gate_bce': 0.3835, 'entropy': 1.2226, 'root': 0.532, 'pattern': 0.8983, 'lr': 0.00025}
+{'step': 14800, 'epoch': 33, 'trans': 4.4708, 'route_root': 1.0441, 'route_pattern': 0.9292, 'val_root': 1.4739, 'val_pat': 1.0705, 'gate_bce': 0.4124, 'entropy': 1.3068, 'root': 0.5431, 'pattern': 0.8721, 'lr': 0.00025}
+epoch=33 dev_loss=5.1581 dev_chrf++=11.34
+{'step': 14850, 'epoch': 34, 'trans': 4.2821, 'route_root': 0.8801, 'route_pattern': 1.0544, 'val_root': 1.1995, 'val_pat': 1.1091, 'gate_bce': 0.3898, 'entropy': 1.2922, 'root': 0.4579, 'pattern': 0.9544, 'lr': 0.00025}
+{'step': 14900, 'epoch': 34, 'trans': 4.2017, 'route_root': 1.0831, 'route_pattern': 1.0994, 'val_root': 1.4814, 'val_pat': 1.2208, 'gate_bce': 0.45, 'entropy': 1.3036, 'root': 0.5896, 'pattern': 1.0455, 'lr': 0.00025}
+{'step': 14950, 'epoch': 34, 'trans': 4.1938, 'route_root': 1.1497, 'route_pattern': 0.9981, 'val_root': 1.4758, 'val_pat': 1.1181, 'gate_bce': 0.3527, 'entropy': 1.1753, 'root': 0.6968, 'pattern': 0.884, 'lr': 0.00025}
+{'step': 15000, 'epoch': 34, 'trans': 4.2164, 'route_root': 0.7248, 'route_pattern': 0.9371, 'val_root': 1.0159, 'val_pat': 1.1412, 'gate_bce': 0.3625, 'entropy': 1.101, 'root': 0.3884, 'pattern': 0.8706, 'lr': 0.00025}
+{'step': 15050, 'epoch': 34, 'trans': 4.6122, 'route_root': 1.0647, 'route_pattern': 1.0298, 'val_root': 1.4051, 'val_pat': 1.072, 'gate_bce': 0.4089, 'entropy': 1.2244, 'root': 0.5456, 'pattern': 0.8461, 'lr': 0.00025}
+{'step': 15100, 'epoch': 34, 'trans': 4.189, 'route_root': 1.0359, 'route_pattern': 0.9044, 'val_root': 1.2675, 'val_pat': 0.9769, 'gate_bce': 0.3531, 'entropy': 1.166, 'root': 0.5303, 'pattern': 0.785, 'lr': 0.00025}
+{'step': 15150, 'epoch': 34, 'trans': 4.5361, 'route_root': 1.2029, 'route_pattern': 1.0404, 'val_root': 1.5798, 'val_pat': 1.1647, 'gate_bce': 0.3903, 'entropy': 1.3654, 'root': 0.7596, 'pattern': 0.9237, 'lr': 0.00025}
+{'step': 15200, 'epoch': 34, 'trans': 4.3343, 'route_root': 0.8422, 'route_pattern': 0.9175, 'val_root': 1.2803, 'val_pat': 1.0443, 'gate_bce': 0.3531, 'entropy': 1.0467, 'root': 0.5317, 'pattern': 0.8109, 'lr': 0.00025}
+{'step': 15250, 'epoch': 34, 'trans': 4.2666, 'route_root': 0.8479, 'route_pattern': 0.9806, 'val_root': 1.124, 'val_pat': 1.1738, 'gate_bce': 0.3753, 'entropy': 1.2105, 'root': 0.3262, 'pattern': 0.8851, 'lr': 0.00025}
+epoch=34 dev_loss=5.1592 dev_chrf++=11.57
+{'step': 15300, 'epoch': 35, 'trans': 4.169, 'route_root': 0.995, 'route_pattern': 0.9844, 'val_root': 1.304, 'val_pat': 1.1041, 'gate_bce': 0.404, 'entropy': 1.1951, 'root': 0.5256, 'pattern': 0.873, 'lr': 0.00025}
+{'step': 15350, 'epoch': 35, 'trans': 4.3261, 'route_root': 0.9273, 'route_pattern': 0.905, 'val_root': 1.2169, 'val_pat': 0.9603, 'gate_bce': 0.3679, 'entropy': 1.1982, 'root': 0.4396, 'pattern': 0.7832, 'lr': 0.00025}
+{'step': 15400, 'epoch': 35, 'trans': 4.3562, 'route_root': 0.7917, 'route_pattern': 0.8393, 'val_root': 1.1668, 'val_pat': 0.919, 'gate_bce': 0.3983, 'entropy': 1.1537, 'root': 0.4393, 'pattern': 0.7371, 'lr': 0.00025}
+{'step': 15450, 'epoch': 35, 'trans': 4.1601, 'route_root': 0.8715, 'route_pattern': 1.0598, 'val_root': 1.1656, 'val_pat': 1.136, 'gate_bce': 0.3943, 'entropy': 1.1964, 'root': 0.4671, 'pattern': 0.8915, 'lr': 0.00025}
+{'step': 15500, 'epoch': 35, 'trans': 4.3524, 'route_root': 0.8822, 'route_pattern': 1.0609, 'val_root': 1.1783, 'val_pat': 1.1853, 'gate_bce': 0.3976, 'entropy': 1.2492, 'root': 0.4801, 'pattern': 0.9564, 'lr': 0.00025}
+{'step': 15550, 'epoch': 35, 'trans': 4.3828, 'route_root': 0.7223, 'route_pattern': 0.8708, 'val_root': 1.0216, 'val_pat': 1.0157, 'gate_bce': 0.3574, 'entropy': 1.0775, 'root': 0.3633, 'pattern': 0.7881, 'lr': 0.00025}
+{'step': 15600, 'epoch': 35, 'trans': 4.5823, 'route_root': 0.8735, 'route_pattern': 0.9236, 'val_root': 1.17, 'val_pat': 1.0299, 'gate_bce': 0.3725, 'entropy': 1.2605, 'root': 0.3739, 'pattern': 0.8452, 'lr': 0.00025}
+{'step': 15650, 'epoch': 35, 'trans': 4.4809, 'route_root': 1.0162, 'route_pattern': 0.985, 'val_root': 1.2479, 'val_pat': 1.0208, 'gate_bce': 0.377, 'entropy': 1.1824, 'root': 0.4799, 'pattern': 0.8903, 'lr': 0.00025}
+epoch=35 dev_loss=5.1508 dev_chrf++=11.34
+  new best dev_loss=5.1508
+{'step': 15700, 'epoch': 36, 'trans': 4.2455, 'route_root': 0.8782, 'route_pattern': 0.9126, 'val_root': 1.188, 'val_pat': 1.0258, 'gate_bce': 0.3953, 'entropy': 1.2403, 'root': 0.4181, 'pattern': 0.7255, 'lr': 0.00025}
+{'step': 15750, 'epoch': 36, 'trans': 4.2147, 'route_root': 1.0062, 'route_pattern': 0.9326, 'val_root': 1.2669, 'val_pat': 0.9974, 'gate_bce': 0.3735, 'entropy': 1.1687, 'root': 0.5253, 'pattern': 0.8024, 'lr': 0.00025}
+{'step': 15800, 'epoch': 36, 'trans': 4.165, 'route_root': 0.6494, 'route_pattern': 0.9047, 'val_root': 0.9165, 'val_pat': 0.9714, 'gate_bce': 0.3529, 'entropy': 1.0433, 'root': 0.3183, 'pattern': 0.7554, 'lr': 0.00025}
+{'step': 15850, 'epoch': 36, 'trans': 4.159, 'route_root': 0.8151, 'route_pattern': 0.9057, 'val_root': 1.047, 'val_pat': 0.9769, 'gate_bce': 0.387, 'entropy': 1.2184, 'root': 0.3515, 'pattern': 0.7423, 'lr': 0.00025}
+{'step': 15900, 'epoch': 36, 'trans': 4.1911, 'route_root': 0.8665, 'route_pattern': 1.0565, 'val_root': 1.1697, 'val_pat': 1.1497, 'gate_bce': 0.3672, 'entropy': 1.185, 'root': 0.4222, 'pattern': 0.8507, 'lr': 0.00025}
+{'step': 15950, 'epoch': 36, 'trans': 4.5007, 'route_root': 1.4907, 'route_pattern': 1.079, 'val_root': 1.7655, 'val_pat': 1.0831, 'gate_bce': 0.4459, 'entropy': 1.429, 'root': 0.7742, 'pattern': 0.833, 'lr': 0.00025}
+{'step': 16000, 'epoch': 36, 'trans': 4.3259, 'route_root': 1.0463, 'route_pattern': 1.0771, 'val_root': 1.344, 'val_pat': 1.2096, 'gate_bce': 0.4237, 'entropy': 1.3617, 'root': 0.5068, 'pattern': 0.9463, 'lr': 0.00025}
+{'step': 16050, 'epoch': 36, 'trans': 4.4862, 'route_root': 0.8345, 'route_pattern': 0.8905, 'val_root': 1.1013, 'val_pat': 0.9077, 'gate_bce': 0.4142, 'entropy': 1.2878, 'root': 0.4536, 'pattern': 0.8335, 'lr': 0.00025}
+{'step': 16100, 'epoch': 36, 'trans': 4.3941, 'route_root': 0.6559, 'route_pattern': 0.7712, 'val_root': 0.8594, 'val_pat': 0.8944, 'gate_bce': 0.3862, 'entropy': 1.0344, 'root': 0.3637, 'pattern': 0.6556, 'lr': 0.00025}
+epoch=36 dev_loss=5.1540 dev_chrf++=11.27
+{'step': 16150, 'epoch': 37, 'trans': 4.1925, 'route_root': 1.1116, 'route_pattern': 0.8885, 'val_root': 1.3549, 'val_pat': 0.9564, 'gate_bce': 0.4154, 'entropy': 1.2637, 'root': 0.6042, 'pattern': 0.806, 'lr': 0.00025}
+{'step': 16200, 'epoch': 37, 'trans': 4.1517, 'route_root': 0.9463, 'route_pattern': 0.9233, 'val_root': 1.2871, 'val_pat': 1.0178, 'gate_bce': 0.3228, 'entropy': 1.115, 'root': 0.5342, 'pattern': 0.9061, 'lr': 0.00025}
+{'step': 16250, 'epoch': 37, 'trans': 4.2639, 'route_root': 0.7413, 'route_pattern': 0.9288, 'val_root': 0.954, 'val_pat': 1.0407, 'gate_bce': 0.3755, 'entropy': 1.1202, 'root': 0.4275, 'pattern': 0.881, 'lr': 0.00025}
+{'step': 16300, 'epoch': 37, 'trans': 4.1611, 'route_root': 0.7688, 'route_pattern': 1.01, 'val_root': 1.0194, 'val_pat': 1.1108, 'gate_bce': 0.4105, 'entropy': 1.1973, 'root': 0.3984, 'pattern': 0.8417, 'lr': 0.00025}
+{'step': 16350, 'epoch': 37, 'trans': 4.16, 'route_root': 0.8041, 'route_pattern': 0.8135, 'val_root': 1.1508, 'val_pat': 0.9441, 'gate_bce': 0.369, 'entropy': 1.1248, 'root': 0.5248, 'pattern': 0.7474, 'lr': 0.00025}
+{'step': 16400, 'epoch': 37, 'trans': 4.2657, 'route_root': 0.8784, 'route_pattern': 1.066, 'val_root': 1.1785, 'val_pat': 1.1722, 'gate_bce': 0.3877, 'entropy': 1.2337, 'root': 0.4232, 'pattern': 0.8712, 'lr': 0.00025}
+{'step': 16450, 'epoch': 37, 'trans': 4.4712, 'route_root': 0.8987, 'route_pattern': 1.1072, 'val_root': 1.2688, 'val_pat': 1.2019, 'gate_bce': 0.3645, 'entropy': 1.1523, 'root': 0.4787, 'pattern': 1.0169, 'lr': 0.00025}
+{'step': 16500, 'epoch': 37, 'trans': 4.4227, 'route_root': 0.7179, 'route_pattern': 0.8271, 'val_root': 1.0084, 'val_pat': 0.8406, 'gate_bce': 0.3625, 'entropy': 0.9923, 'root': 0.4208, 'pattern': 0.641, 'lr': 0.00025}
+{'step': 16550, 'epoch': 37, 'trans': 4.4819, 'route_root': 1.0038, 'route_pattern': 1.1149, 'val_root': 1.2825, 'val_pat': 1.2003, 'gate_bce': 0.4257, 'entropy': 1.2995, 'root': 0.5116, 'pattern': 0.9951, 'lr': 0.00025}
+epoch=37 dev_loss=5.1614 dev_chrf++=11.30
+{'step': 16600, 'epoch': 38, 'trans': 4.1907, 'route_root': 0.8102, 'route_pattern': 0.904, 'val_root': 1.0656, 'val_pat': 0.9733, 'gate_bce': 0.4134, 'entropy': 1.1418, 'root': 0.3396, 'pattern': 0.8184, 'lr': 0.00025}
+{'step': 16650, 'epoch': 38, 'trans': 4.2002, 'route_root': 0.7928, 'route_pattern': 0.9443, 'val_root': 1.0292, 'val_pat': 0.976, 'gate_bce': 0.3835, 'entropy': 1.1733, 'root': 0.3428, 'pattern': 0.7415, 'lr': 0.00025}
+{'step': 16700, 'epoch': 38, 'trans': 4.4069, 'route_root': 0.8402, 'route_pattern': 1.0461, 'val_root': 1.1355, 'val_pat': 1.1233, 'gate_bce': 0.375, 'entropy': 1.2557, 'root': 0.4684, 'pattern': 0.9702, 'lr': 0.00025}
+{'step': 16750, 'epoch': 38, 'trans': 4.1932, 'route_root': 0.7865, 'route_pattern': 0.8385, 'val_root': 0.9828, 'val_pat': 0.9156, 'gate_bce': 0.3451, 'entropy': 1.1692, 'root': 0.3637, 'pattern': 0.7334, 'lr': 0.00025}
+{'step': 16800, 'epoch': 38, 'trans': 4.3759, 'route_root': 0.893, 'route_pattern': 0.961, 'val_root': 1.0393, 'val_pat': 1.032, 'gate_bce': 0.3842, 'entropy': 1.1952, 'root': 0.4622, 'pattern': 0.7746, 'lr': 0.00025}
+{'step': 16850, 'epoch': 38, 'trans': 4.3871, 'route_root': 1.0395, 'route_pattern': 0.8175, 'val_root': 1.2293, 'val_pat': 0.8927, 'gate_bce': 0.3643, 'entropy': 1.1704, 'root': 0.5045, 'pattern': 0.7355, 'lr': 0.00025}
+{'step': 16900, 'epoch': 38, 'trans': 4.4914, 'route_root': 0.7652, 'route_pattern': 0.9298, 'val_root': 1.0484, 'val_pat': 1.0604, 'gate_bce': 0.3915, 'entropy': 1.0766, 'root': 0.4541, 'pattern': 0.862, 'lr': 0.00025}
+{'step': 16950, 'epoch': 38, 'trans': 4.3636, 'route_root': 0.7917, 'route_pattern': 0.8419, 'val_root': 1.0013, 'val_pat': 0.9194, 'gate_bce': 0.3735, 'entropy': 1.0897, 'root': 0.3885, 'pattern': 0.71, 'lr': 0.00025}
+{'step': 17000, 'epoch': 38, 'trans': 4.3818, 'route_root': 0.8055, 'route_pattern': 1.0929, 'val_root': 1.2217, 'val_pat': 1.1234, 'gate_bce': 0.4092, 'entropy': 1.1885, 'root': 0.3872, 'pattern': 0.9566, 'lr': 0.00025}
+epoch=38 dev_loss=5.1605 dev_chrf++=11.22
+{'step': 17050, 'epoch': 39, 'trans': 4.0903, 'route_root': 0.7655, 'route_pattern': 0.7516, 'val_root': 1.0045, 'val_pat': 0.8091, 'gate_bce': 0.3242, 'entropy': 1.1028, 'root': 0.2864, 'pattern': 0.6217, 'lr': 0.000125}
+{'step': 17100, 'epoch': 39, 'trans': 4.0974, 'route_root': 0.8343, 'route_pattern': 0.8728, 'val_root': 1.2019, 'val_pat': 0.9376, 'gate_bce': 0.3481, 'entropy': 1.1078, 'root': 0.3876, 'pattern': 0.742, 'lr': 0.000125}
+{'step': 17150, 'epoch': 39, 'trans': 4.1071, 'route_root': 1.0238, 'route_pattern': 0.9038, 'val_root': 1.1951, 'val_pat': 1.1188, 'gate_bce': 0.3515, 'entropy': 1.1528, 'root': 0.4702, 'pattern': 0.8566, 'lr': 0.000125}
+{'step': 17200, 'epoch': 39, 'trans': 4.1648, 'route_root': 0.6269, 'route_pattern': 1.0011, 'val_root': 0.9148, 'val_pat': 1.1741, 'gate_bce': 0.3663, 'entropy': 1.0355, 'root': 0.279, 'pattern': 0.9461, 'lr': 0.000125}
+{'step': 17250, 'epoch': 39, 'trans': 4.0358, 'route_root': 0.861, 'route_pattern': 0.9488, 'val_root': 1.1355, 'val_pat': 1.0224, 'gate_bce': 0.3426, 'entropy': 1.1178, 'root': 0.4026, 'pattern': 0.8103, 'lr': 0.000125}
+{'step': 17300, 'epoch': 39, 'trans': 3.9976, 'route_root': 0.8977, 'route_pattern': 1.0391, 'val_root': 1.0828, 'val_pat': 1.0377, 'gate_bce': 0.4059, 'entropy': 1.1881, 'root': 0.447, 'pattern': 0.7592, 'lr': 0.000125}
+{'step': 17350, 'epoch': 39, 'trans': 4.0819, 'route_root': 0.8776, 'route_pattern': 0.8504, 'val_root': 1.1354, 'val_pat': 0.926, 'gate_bce': 0.3641, 'entropy': 1.0964, 'root': 0.4904, 'pattern': 0.6939, 'lr': 0.000125}
+{'step': 17400, 'epoch': 39, 'trans': 4.3232, 'route_root': 0.7311, 'route_pattern': 0.9906, 'val_root': 0.9263, 'val_pat': 1.0977, 'gate_bce': 0.407, 'entropy': 1.1611, 'root': 0.2899, 'pattern': 0.8811, 'lr': 0.000125}
+epoch=39 dev_loss=5.1418 dev_chrf++=11.56
+  new best dev_loss=5.1418
+{'step': 17450, 'epoch': 40, 'trans': 4.0217, 'route_root': 1.0062, 'route_pattern': 0.9636, 'val_root': 1.2308, 'val_pat': 1.0005, 'gate_bce': 0.3963, 'entropy': 1.2689, 'root': 0.3514, 'pattern': 0.7849, 'lr': 0.000125}
+{'step': 17500, 'epoch': 40, 'trans': 4.0091, 'route_root': 0.9024, 'route_pattern': 0.9654, 'val_root': 1.1649, 'val_pat': 1.0741, 'gate_bce': 0.3943, 'entropy': 1.1496, 'root': 0.4567, 'pattern': 0.8416, 'lr': 0.000125}
+{'step': 17550, 'epoch': 40, 'trans': 4.0932, 'route_root': 1.1061, 'route_pattern': 0.8168, 'val_root': 1.4213, 'val_pat': 0.9279, 'gate_bce': 0.434, 'entropy': 1.3054, 'root': 0.5307, 'pattern': 0.734, 'lr': 0.000125}
+{'step': 17600, 'epoch': 40, 'trans': 4.1403, 'route_root': 0.7882, 'route_pattern': 0.9782, 'val_root': 1.029, 'val_pat': 1.0779, 'gate_bce': 0.3986, 'entropy': 1.1578, 'root': 0.419, 'pattern': 0.8601, 'lr': 0.000125}
+{'step': 17650, 'epoch': 40, 'trans': 4.0527, 'route_root': 0.7154, 'route_pattern': 0.8708, 'val_root': 0.9402, 'val_pat': 0.8896, 'gate_bce': 0.3772, 'entropy': 1.0781, 'root': 0.3348, 'pattern': 0.6899, 'lr': 0.000125}
+{'step': 17700, 'epoch': 40, 'trans': 4.2123, 'route_root': 0.6719, 'route_pattern': 0.794, 'val_root': 0.938, 'val_pat': 0.9013, 'gate_bce': 0.3751, 'entropy': 1.0595, 'root': 0.4028, 'pattern': 0.6739, 'lr': 0.000125}
+{'step': 17750, 'epoch': 40, 'trans': 4.0936, 'route_root': 0.8019, 'route_pattern': 0.9155, 'val_root': 1.0031, 'val_pat': 0.972, 'gate_bce': 0.3468, 'entropy': 0.9981, 'root': 0.3678, 'pattern': 0.7407, 'lr': 0.000125}
+{'step': 17800, 'epoch': 40, 'trans': 4.2001, 'route_root': 0.7658, 'route_pattern': 0.8703, 'val_root': 1.0581, 'val_pat': 0.9433, 'gate_bce': 0.3733, 'entropy': 1.0565, 'root': 0.3611, 'pattern': 0.7363, 'lr': 0.000125}
+{'step': 17850, 'epoch': 40, 'trans': 3.9896, 'route_root': 0.9441, 'route_pattern': 1.0949, 'val_root': 1.2065, 'val_pat': 1.126, 'gate_bce': 0.3945, 'entropy': 1.2166, 'root': 0.3912, 'pattern': 0.8609, 'lr': 0.000125}
+epoch=40 dev_loss=5.1339 dev_chrf++=11.90
+  new best dev_loss=5.1339
+{'step': 17900, 'epoch': 41, 'trans': 4.3048, 'route_root': 0.8099, 'route_pattern': 0.772, 'val_root': 0.9351, 'val_pat': 0.8243, 'gate_bce': 0.3685, 'entropy': 1.0442, 'root': 0.4137, 'pattern': 0.6158, 'lr': 0.000125}
+{'step': 17950, 'epoch': 41, 'trans': 4.1038, 'route_root': 0.9142, 'route_pattern': 0.8136, 'val_root': 1.2644, 'val_pat': 0.8953, 'gate_bce': 0.3598, 'entropy': 1.1476, 'root': 0.4077, 'pattern': 0.6592, 'lr': 0.000125}
+{'step': 18000, 'epoch': 41, 'trans': 4.0041, 'route_root': 0.6266, 'route_pattern': 0.847, 'val_root': 0.7982, 'val_pat': 0.8109, 'gate_bce': 0.3382, 'entropy': 1.0172, 'root': 0.2953, 'pattern': 0.6267, 'lr': 0.000125}
+{'step': 18050, 'epoch': 41, 'trans': 4.1471, 'route_root': 0.8401, 'route_pattern': 0.8639, 'val_root': 1.0445, 'val_pat': 0.972, 'gate_bce': 0.3959, 'entropy': 1.199, 'root': 0.3783, 'pattern': 0.6497, 'lr': 0.000125}
+{'step': 18100, 'epoch': 41, 'trans': 4.1475, 'route_root': 0.7971, 'route_pattern': 0.9737, 'val_root': 1.0456, 'val_pat': 1.0291, 'gate_bce': 0.3447, 'entropy': 1.0784, 'root': 0.4652, 'pattern': 0.7841, 'lr': 0.000125}
+{'step': 18150, 'epoch': 41, 'trans': 4.3036, 'route_root': 0.7297, 'route_pattern': 0.7663, 'val_root': 0.9501, 'val_pat': 0.8244, 'gate_bce': 0.3817, 'entropy': 1.1208, 'root': 0.2996, 'pattern': 0.7162, 'lr': 0.000125}
+{'step': 18200, 'epoch': 41, 'trans': 4.3443, 'route_root': 0.914, 'route_pattern': 0.9188, 'val_root': 1.2219, 'val_pat': 1.0702, 'gate_bce': 0.3833, 'entropy': 1.1869, 'root': 0.4369, 'pattern': 0.8332, 'lr': 0.000125}
+{'step': 18250, 'epoch': 41, 'trans': 4.249, 'route_root': 0.9648, 'route_pattern': 1.0698, 'val_root': 1.1713, 'val_pat': 1.1809, 'gate_bce': 0.3668, 'entropy': 1.2098, 'root': 0.5334, 'pattern': 0.9613, 'lr': 0.000125}
+{'step': 18300, 'epoch': 41, 'trans': 4.1764, 'route_root': 0.6883, 'route_pattern': 0.941, 'val_root': 0.867, 'val_pat': 1.0336, 'gate_bce': 0.3851, 'entropy': 1.1277, 'root': 0.2983, 'pattern': 0.8302, 'lr': 0.000125}
+epoch=41 dev_loss=5.1384 dev_chrf++=11.57
+{'step': 18350, 'epoch': 42, 'trans': 4.1039, 'route_root': 0.9075, 'route_pattern': 0.9767, 'val_root': 1.1957, 'val_pat': 1.044, 'gate_bce': 0.3771, 'entropy': 1.1606, 'root': 0.4709, 'pattern': 0.811, 'lr': 0.000125}
+{'step': 18400, 'epoch': 42, 'trans': 4.1266, 'route_root': 0.8428, 'route_pattern': 1.0148, 'val_root': 1.0749, 'val_pat': 1.1175, 'gate_bce': 0.3393, 'entropy': 1.1049, 'root': 0.422, 'pattern': 0.8239, 'lr': 0.000125}
+{'step': 18450, 'epoch': 42, 'trans': 4.1921, 'route_root': 0.7652, 'route_pattern': 0.8572, 'val_root': 0.9645, 'val_pat': 0.8997, 'gate_bce': 0.3973, 'entropy': 1.059, 'root': 0.3011, 'pattern': 0.7007, 'lr': 0.000125}
+{'step': 18500, 'epoch': 42, 'trans': 4.0905, 'route_root': 0.6049, 'route_pattern': 0.9721, 'val_root': 0.8632, 'val_pat': 1.03, 'gate_bce': 0.3615, 'entropy': 1.034, 'root': 0.3315, 'pattern': 0.7946, 'lr': 0.000125}
+{'step': 18550, 'epoch': 42, 'trans': 4.0904, 'route_root': 1.0354, 'route_pattern': 1.0503, 'val_root': 1.2528, 'val_pat': 1.1487, 'gate_bce': 0.3655, 'entropy': 1.2407, 'root': 0.4638, 'pattern': 0.8701, 'lr': 0.000125}
+{'step': 18600, 'epoch': 42, 'trans': 4.2643, 'route_root': 0.8532, 'route_pattern': 1.0173, 'val_root': 1.0626, 'val_pat': 1.1332, 'gate_bce': 0.4046, 'entropy': 1.2696, 'root': 0.3919, 'pattern': 0.8033, 'lr': 0.000125}
+{'step': 18650, 'epoch': 42, 'trans': 4.1811, 'route_root': 0.8202, 'route_pattern': 1.0509, 'val_root': 1.091, 'val_pat': 1.0727, 'gate_bce': 0.3345, 'entropy': 1.1252, 'root': 0.3686, 'pattern': 0.895, 'lr': 0.000125}
+{'step': 18700, 'epoch': 42, 'trans': 4.1923, 'route_root': 0.8067, 'route_pattern': 0.8636, 'val_root': 1.0532, 'val_pat': 0.9172, 'gate_bce': 0.33, 'entropy': 1.0516, 'root': 0.3888, 'pattern': 0.7103, 'lr': 0.000125}
+epoch=42 dev_loss=5.1360 dev_chrf++=12.16
+{'step': 18750, 'epoch': 43, 'trans': 4.1575, 'route_root': 0.9933, 'route_pattern': 0.8562, 'val_root': 1.1316, 'val_pat': 0.9261, 'gate_bce': 0.4109, 'entropy': 1.1026, 'root': 0.3869, 'pattern': 0.7564, 'lr': 0.000125}
+{'step': 18800, 'epoch': 43, 'trans': 4.0111, 'route_root': 0.6388, 'route_pattern': 0.9315, 'val_root': 0.8858, 'val_pat': 0.986, 'gate_bce': 0.3441, 'entropy': 1.0098, 'root': 0.3033, 'pattern': 0.7435, 'lr': 0.000125}
+{'step': 18850, 'epoch': 43, 'trans': 4.1252, 'route_root': 0.9029, 'route_pattern': 0.8918, 'val_root': 1.1511, 'val_pat': 0.9288, 'gate_bce': 0.3749, 'entropy': 1.1347, 'root': 0.3328, 'pattern': 0.7459, 'lr': 0.000125}
+{'step': 18900, 'epoch': 43, 'trans': 4.0876, 'route_root': 0.7547, 'route_pattern': 1.0023, 'val_root': 0.9716, 'val_pat': 1.0157, 'gate_bce': 0.3629, 'entropy': 1.0611, 'root': 0.3858, 'pattern': 0.8656, 'lr': 0.000125}
+{'step': 18950, 'epoch': 43, 'trans': 4.1358, 'route_root': 0.6108, 'route_pattern': 1.1239, 'val_root': 0.7849, 'val_pat': 1.2045, 'gate_bce': 0.3261, 'entropy': 1.0057, 'root': 0.2704, 'pattern': 0.9139, 'lr': 0.000125}
+{'step': 19000, 'epoch': 43, 'trans': 4.1208, 'route_root': 0.7474, 'route_pattern': 0.8992, 'val_root': 0.997, 'val_pat': 0.9905, 'gate_bce': 0.3383, 'entropy': 1.1478, 'root': 0.345, 'pattern': 0.7795, 'lr': 0.000125}
+{'step': 19050, 'epoch': 43, 'trans': 3.9583, 'route_root': 0.6932, 'route_pattern': 0.8422, 'val_root': 0.9861, 'val_pat': 0.918, 'gate_bce': 0.3591, 'entropy': 1.0349, 'root': 0.4087, 'pattern': 0.7157, 'lr': 0.000125}
+{'step': 19100, 'epoch': 43, 'trans': 4.1354, 'route_root': 0.6004, 'route_pattern': 0.8962, 'val_root': 0.7819, 'val_pat': 1.0289, 'gate_bce': 0.3493, 'entropy': 0.9684, 'root': 0.2747, 'pattern': 0.8306, 'lr': 0.000125}
+{'step': 19150, 'epoch': 43, 'trans': 4.1656, 'route_root': 0.5431, 'route_pattern': 0.6998, 'val_root': 0.7256, 'val_pat': 0.7705, 'gate_bce': 0.3713, 'entropy': 0.9659, 'root': 0.2136, 'pattern': 0.5245, 'lr': 0.000125}
+epoch=43 dev_loss=5.1367 dev_chrf++=12.02
+{'step': 19200, 'epoch': 44, 'trans': 3.9365, 'route_root': 0.5861, 'route_pattern': 0.7765, 'val_root': 0.6933, 'val_pat': 0.8682, 'gate_bce': 0.3652, 'entropy': 1.0182, 'root': 0.2261, 'pattern': 0.6533, 'lr': 6.25e-05}
+{'step': 19250, 'epoch': 44, 'trans': 4.0792, 'route_root': 0.8241, 'route_pattern': 1.0073, 'val_root': 1.1164, 'val_pat': 1.1151, 'gate_bce': 0.3678, 'entropy': 1.2183, 'root': 0.428, 'pattern': 0.8227, 'lr': 6.25e-05}
+{'step': 19300, 'epoch': 44, 'trans': 3.929, 'route_root': 0.7934, 'route_pattern': 0.9493, 'val_root': 1.0221, 'val_pat': 1.1396, 'gate_bce': 0.382, 'entropy': 1.1123, 'root': 0.4054, 'pattern': 0.8403, 'lr': 6.25e-05}
+{'step': 19350, 'epoch': 44, 'trans': 4.0924, 'route_root': 0.6719, 'route_pattern': 0.934, 'val_root': 0.8861, 'val_pat': 0.9824, 'gate_bce': 0.357, 'entropy': 1.0281, 'root': 0.3917, 'pattern': 0.7644, 'lr': 6.25e-05}
+{'step': 19400, 'epoch': 44, 'trans': 4.0913, 'route_root': 1.0109, 'route_pattern': 0.9143, 'val_root': 1.3236, 'val_pat': 0.9845, 'gate_bce': 0.4286, 'entropy': 1.2379, 'root': 0.5543, 'pattern': 0.808, 'lr': 6.25e-05}
+{'step': 19450, 'epoch': 44, 'trans': 4.1056, 'route_root': 0.7698, 'route_pattern': 1.0302, 'val_root': 0.9044, 'val_pat': 1.0467, 'gate_bce': 0.4095, 'entropy': 1.1748, 'root': 0.2281, 'pattern': 0.8074, 'lr': 6.25e-05}
+{'step': 19500, 'epoch': 44, 'trans': 3.9161, 'route_root': 0.7167, 'route_pattern': 0.9901, 'val_root': 0.9774, 'val_pat': 1.0824, 'gate_bce': 0.3684, 'entropy': 1.1065, 'root': 0.3117, 'pattern': 0.8265, 'lr': 6.25e-05}
+{'step': 19550, 'epoch': 44, 'trans': 4.0918, 'route_root': 0.7327, 'route_pattern': 0.844, 'val_root': 0.9122, 'val_pat': 0.902, 'gate_bce': 0.3509, 'entropy': 1.1044, 'root': 0.3063, 'pattern': 0.7054, 'lr': 6.25e-05}
+{'step': 19600, 'epoch': 44, 'trans': 3.896, 'route_root': 0.6166, 'route_pattern': 0.8347, 'val_root': 0.8633, 'val_pat': 0.8496, 'gate_bce': 0.378, 'entropy': 1.0649, 'root': 0.3193, 'pattern': 0.7099, 'lr': 6.25e-05}
+epoch=44 dev_loss=5.1311 dev_chrf++=12.12
+  new best dev_loss=5.1311
+{'step': 19650, 'epoch': 45, 'trans': 4.0846, 'route_root': 0.636, 'route_pattern': 0.7428, 'val_root': 0.8418, 'val_pat': 0.7586, 'gate_bce': 0.383, 'entropy': 1.0393, 'root': 0.2368, 'pattern': 0.5476, 'lr': 6.25e-05}
+{'step': 19700, 'epoch': 45, 'trans': 3.9865, 'route_root': 0.6462, 'route_pattern': 0.7428, 'val_root': 0.8142, 'val_pat': 0.8171, 'gate_bce': 0.3341, 'entropy': 0.9586, 'root': 0.2353, 'pattern': 0.6261, 'lr': 6.25e-05}
+{'step': 19750, 'epoch': 45, 'trans': 3.9985, 'route_root': 0.9677, 'route_pattern': 1.0575, 'val_root': 1.1809, 'val_pat': 1.1167, 'gate_bce': 0.3704, 'entropy': 1.239, 'root': 0.4189, 'pattern': 0.8408, 'lr': 6.25e-05}
+{'step': 19800, 'epoch': 45, 'trans': 4.0411, 'route_root': 1.0145, 'route_pattern': 0.9083, 'val_root': 1.3213, 'val_pat': 1.0198, 'gate_bce': 0.4315, 'entropy': 1.3246, 'root': 0.3894, 'pattern': 0.7845, 'lr': 6.25e-05}
+{'step': 19850, 'epoch': 45, 'trans': 3.9633, 'route_root': 0.9176, 'route_pattern': 0.7671, 'val_root': 1.1055, 'val_pat': 0.8509, 'gate_bce': 0.3595, 'entropy': 1.0972, 'root': 0.3505, 'pattern': 0.6433, 'lr': 6.25e-05}
+{'step': 19900, 'epoch': 45, 'trans': 4.2856, 'route_root': 0.9759, 'route_pattern': 0.966, 'val_root': 1.1987, 'val_pat': 1.0539, 'gate_bce': 0.398, 'entropy': 1.2351, 'root': 0.366, 'pattern': 0.8195, 'lr': 6.25e-05}
+{'step': 19950, 'epoch': 45, 'trans': 4.0671, 'route_root': 0.7513, 'route_pattern': 0.7945, 'val_root': 0.937, 'val_pat': 0.8684, 'gate_bce': 0.3297, 'entropy': 1.0448, 'root': 0.3612, 'pattern': 0.659, 'lr': 6.25e-05}
+{'step': 20000, 'epoch': 45, 'trans': 4.1652, 'route_root': 0.551, 'route_pattern': 0.7317, 'val_root': 0.7474, 'val_pat': 0.8308, 'gate_bce': 0.3343, 'entropy': 0.9629, 'root': 0.298, 'pattern': 0.6661, 'lr': 6.25e-05}
+{'step': 20050, 'epoch': 45, 'trans': 4.0952, 'route_root': 0.7244, 'route_pattern': 1.0288, 'val_root': 0.8736, 'val_pat': 1.0886, 'gate_bce': 0.3625, 'entropy': 1.0078, 'root': 0.3459, 'pattern': 0.8961, 'lr': 6.25e-05}
+epoch=45 dev_loss=5.1300 dev_chrf++=11.88
+  new best dev_loss=5.1300
+{'step': 20100, 'epoch': 46, 'trans': 4.0472, 'route_root': 0.8735, 'route_pattern': 1.1507, 'val_root': 1.048, 'val_pat': 1.2672, 'gate_bce': 0.4023, 'entropy': 1.081, 'root': 0.3991, 'pattern': 1.0124, 'lr': 6.25e-05}
+{'step': 20150, 'epoch': 46, 'trans': 4.0613, 'route_root': 0.9614, 'route_pattern': 0.8765, 'val_root': 1.1865, 'val_pat': 0.8919, 'gate_bce': 0.3702, 'entropy': 1.131, 'root': 0.5537, 'pattern': 0.7138, 'lr': 6.25e-05}
+{'step': 20200, 'epoch': 46, 'trans': 3.9786, 'route_root': 0.8403, 'route_pattern': 1.0212, 'val_root': 1.1645, 'val_pat': 1.0985, 'gate_bce': 0.3914, 'entropy': 1.1357, 'root': 0.3635, 'pattern': 0.868, 'lr': 6.25e-05}
+{'step': 20250, 'epoch': 46, 'trans': 3.8018, 'route_root': 0.5394, 'route_pattern': 0.9925, 'val_root': 0.6887, 'val_pat': 1.0975, 'gate_bce': 0.3508, 'entropy': 0.9312, 'root': 0.1592, 'pattern': 0.8424, 'lr': 6.25e-05}
+{'step': 20300, 'epoch': 46, 'trans': 3.9184, 'route_root': 0.7895, 'route_pattern': 0.8614, 'val_root': 1.0759, 'val_pat': 0.9686, 'gate_bce': 0.4041, 'entropy': 1.1522, 'root': 0.2768, 'pattern': 0.7413, 'lr': 6.25e-05}
+{'step': 20350, 'epoch': 46, 'trans': 3.8637, 'route_root': 0.8866, 'route_pattern': 0.8715, 'val_root': 1.2568, 'val_pat': 0.9658, 'gate_bce': 0.363, 'entropy': 1.2753, 'root': 0.4233, 'pattern': 0.7395, 'lr': 6.25e-05}
+{'step': 20400, 'epoch': 46, 'trans': 3.9441, 'route_root': 0.6104, 'route_pattern': 0.7966, 'val_root': 0.7964, 'val_pat': 0.8337, 'gate_bce': 0.3486, 'entropy': 0.9613, 'root': 0.2389, 'pattern': 0.5782, 'lr': 6.25e-05}
+{'step': 20450, 'epoch': 46, 'trans': 4.2748, 'route_root': 0.8386, 'route_pattern': 0.797, 'val_root': 1.0801, 'val_pat': 0.8392, 'gate_bce': 0.3584, 'entropy': 1.1213, 'root': 0.4964, 'pattern': 0.6756, 'lr': 6.25e-05}
+epoch=46 dev_loss=5.1334 dev_chrf++=12.10
+{'step': 20500, 'epoch': 47, 'trans': 4.1651, 'route_root': 0.779, 'route_pattern': 0.8824, 'val_root': 0.9712, 'val_pat': 0.9929, 'gate_bce': 0.3742, 'entropy': 1.1212, 'root': 0.2824, 'pattern': 0.6981, 'lr': 6.25e-05}
+{'step': 20550, 'epoch': 47, 'trans': 3.9283, 'route_root': 0.7171, 'route_pattern': 0.8625, 'val_root': 0.966, 'val_pat': 0.8922, 'gate_bce': 0.356, 'entropy': 1.0112, 'root': 0.3359, 'pattern': 0.6918, 'lr': 6.25e-05}
+{'step': 20600, 'epoch': 47, 'trans': 3.9433, 'route_root': 0.7375, 'route_pattern': 0.9626, 'val_root': 0.986, 'val_pat': 0.9165, 'gate_bce': 0.3454, 'entropy': 1.0811, 'root': 0.2881, 'pattern': 0.6558, 'lr': 6.25e-05}
+{'step': 20650, 'epoch': 47, 'trans': 3.9599, 'route_root': 0.7533, 'route_pattern': 0.7885, 'val_root': 0.9793, 'val_pat': 0.8888, 'gate_bce': 0.3335, 'entropy': 0.9944, 'root': 0.2852, 'pattern': 0.6567, 'lr': 6.25e-05}
+{'step': 20700, 'epoch': 47, 'trans': 3.9442, 'route_root': 0.5986, 'route_pattern': 0.8578, 'val_root': 0.7898, 'val_pat': 0.9385, 'gate_bce': 0.3694, 'entropy': 1.0484, 'root': 0.2284, 'pattern': 0.6821, 'lr': 6.25e-05}
+{'step': 20750, 'epoch': 47, 'trans': 3.9793, 'route_root': 0.8092, 'route_pattern': 0.8572, 'val_root': 0.9678, 'val_pat': 0.89, 'gate_bce': 0.3517, 'entropy': 1.0837, 'root': 0.4263, 'pattern': 0.6665, 'lr': 6.25e-05}
+{'step': 20800, 'epoch': 47, 'trans': 3.8764, 'route_root': 0.6584, 'route_pattern': 0.6711, 'val_root': 0.7922, 'val_pat': 0.7355, 'gate_bce': 0.3285, 'entropy': 0.9561, 'root': 0.2535, 'pattern': 0.5464, 'lr': 6.25e-05}
+{'step': 20850, 'epoch': 47, 'trans': 4.0457, 'route_root': 0.8675, 'route_pattern': 0.9202, 'val_root': 1.0563, 'val_pat': 0.9489, 'gate_bce': 0.3633, 'entropy': 1.079, 'root': 0.4411, 'pattern': 0.7481, 'lr': 6.25e-05}
+{'step': 20900, 'epoch': 47, 'trans': 4.078, 'route_root': 0.7757, 'route_pattern': 0.9433, 'val_root': 1.0152, 'val_pat': 1.0258, 'gate_bce': 0.3871, 'entropy': 1.1437, 'root': 0.3048, 'pattern': 0.8286, 'lr': 6.25e-05}
+epoch=47 dev_loss=5.1325 dev_chrf++=11.75
+{'step': 20950, 'epoch': 48, 'trans': 4.0396, 'route_root': 0.8446, 'route_pattern': 0.9036, 'val_root': 1.1275, 'val_pat': 1.0355, 'gate_bce': 0.4041, 'entropy': 1.1688, 'root': 0.3484, 'pattern': 0.7297, 'lr': 6.25e-05}
+{'step': 21000, 'epoch': 48, 'trans': 3.8854, 'route_root': 0.5933, 'route_pattern': 0.7706, 'val_root': 0.75, 'val_pat': 0.8855, 'gate_bce': 0.3253, 'entropy': 0.8715, 'root': 0.2941, 'pattern': 0.6633, 'lr': 6.25e-05}
+{'step': 21050, 'epoch': 48, 'trans': 4.097, 'route_root': 0.8322, 'route_pattern': 0.9896, 'val_root': 1.0107, 'val_pat': 1.1315, 'gate_bce': 0.3934, 'entropy': 1.1466, 'root': 0.3303, 'pattern': 0.7914, 'lr': 6.25e-05}
+{'step': 21100, 'epoch': 48, 'trans': 4.0395, 'route_root': 0.5491, 'route_pattern': 0.7317, 'val_root': 0.7822, 'val_pat': 0.7818, 'gate_bce': 0.3409, 'entropy': 0.9331, 'root': 0.284, 'pattern': 0.5389, 'lr': 6.25e-05}
+{'step': 21150, 'epoch': 48, 'trans': 3.8127, 'route_root': 0.6816, 'route_pattern': 0.768, 'val_root': 0.8874, 'val_pat': 0.8825, 'gate_bce': 0.3736, 'entropy': 1.0183, 'root': 0.3606, 'pattern': 0.6692, 'lr': 6.25e-05}
+{'step': 21200, 'epoch': 48, 'trans': 4.0125, 'route_root': 0.8211, 'route_pattern': 1.0771, 'val_root': 1.0251, 'val_pat': 1.1645, 'gate_bce': 0.3756, 'entropy': 1.1199, 'root': 0.4206, 'pattern': 0.9279, 'lr': 6.25e-05}
+{'step': 21250, 'epoch': 48, 'trans': 4.1072, 'route_root': 0.7212, 'route_pattern': 0.931, 'val_root': 0.9069, 'val_pat': 0.9243, 'gate_bce': 0.3933, 'entropy': 1.0693, 'root': 0.2788, 'pattern': 0.7685, 'lr': 6.25e-05}
+{'step': 21300, 'epoch': 48, 'trans': 3.9148, 'route_root': 0.6821, 'route_pattern': 0.9052, 'val_root': 0.9269, 'val_pat': 0.9641, 'gate_bce': 0.3875, 'entropy': 1.0694, 'root': 0.252, 'pattern': 0.7139, 'lr': 6.25e-05}
+{'step': 21350, 'epoch': 48, 'trans': 3.9901, 'route_root': 0.6572, 'route_pattern': 0.8391, 'val_root': 0.8014, 'val_pat': 0.9322, 'gate_bce': 0.3251, 'entropy': 0.9998, 'root': 0.3003, 'pattern': 0.6543, 'lr': 6.25e-05}
+epoch=48 dev_loss=5.1327 dev_chrf++=12.12
+{'step': 21400, 'epoch': 49, 'trans': 3.7208, 'route_root': 0.6284, 'route_pattern': 0.7585, 'val_root': 0.8059, 'val_pat': 0.7757, 'gate_bce': 0.3326, 'entropy': 0.9391, 'root': 0.3029, 'pattern': 0.59, 'lr': 3.125e-05}
+{'step': 21450, 'epoch': 49, 'trans': 3.9675, 'route_root': 0.7659, 'route_pattern': 0.8143, 'val_root': 1.0258, 'val_pat': 0.884, 'gate_bce': 0.3701, 'entropy': 0.9898, 'root': 0.4165, 'pattern': 0.6975, 'lr': 3.125e-05}
+{'step': 21500, 'epoch': 49, 'trans': 3.8155, 'route_root': 0.7349, 'route_pattern': 0.9485, 'val_root': 1.011, 'val_pat': 1.0229, 'gate_bce': 0.3515, 'entropy': 1.0907, 'root': 0.3724, 'pattern': 0.7222, 'lr': 3.125e-05}
+{'step': 21550, 'epoch': 49, 'trans': 3.9104, 'route_root': 0.6466, 'route_pattern': 0.8053, 'val_root': 0.8915, 'val_pat': 0.9207, 'gate_bce': 0.3679, 'entropy': 1.0513, 'root': 0.2646, 'pattern': 0.7157, 'lr': 3.125e-05}
+{'step': 21600, 'epoch': 49, 'trans': 3.9546, 'route_root': 0.6953, 'route_pattern': 0.8571, 'val_root': 0.8485, 'val_pat': 0.9421, 'gate_bce': 0.3691, 'entropy': 1.0834, 'root': 0.2127, 'pattern': 0.6748, 'lr': 3.125e-05}
+{'step': 21650, 'epoch': 49, 'trans': 4.0339, 'route_root': 0.9473, 'route_pattern': 0.9844, 'val_root': 1.0968, 'val_pat': 1.0732, 'gate_bce': 0.348, 'entropy': 1.1009, 'root': 0.4764, 'pattern': 0.8688, 'lr': 3.125e-05}
+{'step': 21700, 'epoch': 49, 'trans': 3.9032, 'route_root': 0.6737, 'route_pattern': 0.7654, 'val_root': 0.9485, 'val_pat': 0.8661, 'gate_bce': 0.342, 'entropy': 1.0132, 'root': 0.3773, 'pattern': 0.6484, 'lr': 3.125e-05}
+{'step': 21750, 'epoch': 49, 'trans': 3.9148, 'route_root': 0.6481, 'route_pattern': 0.8395, 'val_root': 0.8895, 'val_pat': 0.9479, 'gate_bce': 0.32, 'entropy': 0.9389, 'root': 0.2881, 'pattern': 0.7457, 'lr': 3.125e-05}
+{'step': 21800, 'epoch': 49, 'trans': 4.0891, 'route_root': 0.78, 'route_pattern': 1.0168, 'val_root': 1.1082, 'val_pat': 1.1065, 'gate_bce': 0.4021, 'entropy': 1.1862, 'root': 0.2612, 'pattern': 0.969, 'lr': 3.125e-05}
+epoch=49 dev_loss=5.1255 dev_chrf++=12.49
+  new best dev_loss=5.1255
+{'step': 21850, 'epoch': 50, 'trans': 3.9248, 'route_root': 0.8469, 'route_pattern': 0.9992, 'val_root': 1.0556, 'val_pat': 1.0176, 'gate_bce': 0.3802, 'entropy': 1.2305, 'root': 0.3353, 'pattern': 0.8303, 'lr': 3.125e-05}
+{'step': 21900, 'epoch': 50, 'trans': 3.9472, 'route_root': 0.954, 'route_pattern': 0.8724, 'val_root': 1.2461, 'val_pat': 0.9323, 'gate_bce': 0.3728, 'entropy': 1.1414, 'root': 0.4251, 'pattern': 0.7128, 'lr': 3.125e-05}
+{'step': 21950, 'epoch': 50, 'trans': 3.863, 'route_root': 0.6465, 'route_pattern': 0.825, 'val_root': 0.9182, 'val_pat': 0.8534, 'gate_bce': 0.3596, 'entropy': 1.081, 'root': 0.3086, 'pattern': 0.6478, 'lr': 3.125e-05}
+{'step': 22000, 'epoch': 50, 'trans': 3.9871, 'route_root': 0.7301, 'route_pattern': 0.7844, 'val_root': 0.9662, 'val_pat': 0.8442, 'gate_bce': 0.3026, 'entropy': 1.0157, 'root': 0.3684, 'pattern': 0.5884, 'lr': 3.125e-05}
+{'step': 22050, 'epoch': 50, 'trans': 3.8473, 'route_root': 0.6738, 'route_pattern': 0.8947, 'val_root': 0.8662, 'val_pat': 0.94, 'gate_bce': 0.364, 'entropy': 1.0579, 'root': 0.2893, 'pattern': 0.7212, 'lr': 3.125e-05}
+{'step': 22100, 'epoch': 50, 'trans': 3.9201, 'route_root': 0.7341, 'route_pattern': 0.8131, 'val_root': 0.945, 'val_pat': 0.8331, 'gate_bce': 0.3422, 'entropy': 1.0454, 'root': 0.3518, 'pattern': 0.6174, 'lr': 3.125e-05}
+{'step': 22150, 'epoch': 50, 'trans': 3.9631, 'route_root': 0.6301, 'route_pattern': 0.9649, 'val_root': 0.8156, 'val_pat': 1.0092, 'gate_bce': 0.3242, 'entropy': 1.0181, 'root': 0.2744, 'pattern': 0.6423, 'lr': 3.125e-05}
+{'step': 22200, 'epoch': 50, 'trans': 4.0526, 'route_root': 0.8207, 'route_pattern': 0.8663, 'val_root': 1.0434, 'val_pat': 0.8977, 'gate_bce': 0.3776, 'entropy': 1.1506, 'root': 0.3711, 'pattern': 0.725, 'lr': 3.125e-05}
+epoch=50 dev_loss=5.1279 dev_chrf++=12.15
+{'step': 22250, 'epoch': 51, 'trans': 4.0411, 'route_root': 0.8774, 'route_pattern': 0.9841, 'val_root': 1.1092, 'val_pat': 1.0877, 'gate_bce': 0.3728, 'entropy': 1.1575, 'root': 0.4132, 'pattern': 0.8626, 'lr': 3.125e-05}
+{'step': 22300, 'epoch': 51, 'trans': 3.999, 'route_root': 0.6051, 'route_pattern': 0.9376, 'val_root': 0.7763, 'val_pat': 1.0151, 'gate_bce': 0.351, 'entropy': 1.0404, 'root': 0.2348, 'pattern': 0.7131, 'lr': 3.125e-05}
+{'step': 22350, 'epoch': 51, 'trans': 3.9798, 'route_root': 0.6448, 'route_pattern': 0.9995, 'val_root': 0.8629, 'val_pat': 1.0795, 'gate_bce': 0.3415, 'entropy': 0.9879, 'root': 0.3212, 'pattern': 0.8083, 'lr': 3.125e-05}
+{'step': 22400, 'epoch': 51, 'trans': 4.0356, 'route_root': 0.9129, 'route_pattern': 0.908, 'val_root': 1.1829, 'val_pat': 0.9938, 'gate_bce': 0.3757, 'entropy': 1.2192, 'root': 0.3542, 'pattern': 0.7194, 'lr': 3.125e-05}
+{'step': 22450, 'epoch': 51, 'trans': 3.9536, 'route_root': 0.7424, 'route_pattern': 0.6679, 'val_root': 1.0017, 'val_pat': 0.761, 'gate_bce': 0.3676, 'entropy': 0.9826, 'root': 0.2711, 'pattern': 0.5891, 'lr': 3.125e-05}
+{'step': 22500, 'epoch': 51, 'trans': 4.041, 'route_root': 0.7261, 'route_pattern': 0.828, 'val_root': 0.922, 'val_pat': 0.899, 'gate_bce': 0.3879, 'entropy': 1.0275, 'root': 0.3241, 'pattern': 0.698, 'lr': 3.125e-05}
+{'step': 22550, 'epoch': 51, 'trans': 4.1406, 'route_root': 0.6252, 'route_pattern': 0.8379, 'val_root': 0.7953, 'val_pat': 0.9547, 'gate_bce': 0.36, 'entropy': 1.083, 'root': 0.2651, 'pattern': 0.6887, 'lr': 3.125e-05}
+{'step': 22600, 'epoch': 51, 'trans': 4.0058, 'route_root': 0.8803, 'route_pattern': 1.0262, 'val_root': 1.1721, 'val_pat': 1.0867, 'gate_bce': 0.3791, 'entropy': 1.1243, 'root': 0.467, 'pattern': 0.8202, 'lr': 3.125e-05}
+{'step': 22650, 'epoch': 51, 'trans': 3.9506, 'route_root': 0.8281, 'route_pattern': 0.7567, 'val_root': 1.0448, 'val_pat': 0.7785, 'gate_bce': 0.351, 'entropy': 1.0876, 'root': 0.3715, 'pattern': 0.6495, 'lr': 3.125e-05}
+epoch=51 dev_loss=5.1267 dev_chrf++=12.36
+{'step': 22700, 'epoch': 52, 'trans': 4.1012, 'route_root': 0.7304, 'route_pattern': 0.8702, 'val_root': 0.9699, 'val_pat': 0.9642, 'gate_bce': 0.365, 'entropy': 1.167, 'root': 0.2759, 'pattern': 0.6702, 'lr': 3.125e-05}
+{'step': 22750, 'epoch': 52, 'trans': 4.0666, 'route_root': 0.7692, 'route_pattern': 1.057, 'val_root': 0.9884, 'val_pat': 1.132, 'gate_bce': 0.3734, 'entropy': 1.1054, 'root': 0.4475, 'pattern': 0.8603, 'lr': 3.125e-05}
+{'step': 22800, 'epoch': 52, 'trans': 3.9112, 'route_root': 0.9148, 'route_pattern': 0.9061, 'val_root': 1.1056, 'val_pat': 1.0226, 'gate_bce': 0.3743, 'entropy': 1.0752, 'root': 0.4354, 'pattern': 0.7362, 'lr': 3.125e-05}
+{'step': 22850, 'epoch': 52, 'trans': 3.9681, 'route_root': 0.8119, 'route_pattern': 0.8964, 'val_root': 1.0414, 'val_pat': 0.9179, 'gate_bce': 0.3424, 'entropy': 1.0667, 'root': 0.4105, 'pattern': 0.6849, 'lr': 3.125e-05}
+{'step': 22900, 'epoch': 52, 'trans': 4.0432, 'route_root': 0.7422, 'route_pattern': 0.9098, 'val_root': 0.8923, 'val_pat': 1.005, 'gate_bce': 0.3533, 'entropy': 1.0858, 'root': 0.3675, 'pattern': 0.798, 'lr': 3.125e-05}
+{'step': 22950, 'epoch': 52, 'trans': 4.0191, 'route_root': 0.5831, 'route_pattern': 0.8671, 'val_root': 0.7983, 'val_pat': 0.9262, 'gate_bce': 0.3257, 'entropy': 1.0135, 'root': 0.2772, 'pattern': 0.6934, 'lr': 3.125e-05}
+{'step': 23000, 'epoch': 52, 'trans': 3.8742, 'route_root': 0.6087, 'route_pattern': 0.7683, 'val_root': 0.8297, 'val_pat': 0.8055, 'gate_bce': 0.3248, 'entropy': 0.9616, 'root': 0.3109, 'pattern': 0.6284, 'lr': 3.125e-05}
+{'step': 23050, 'epoch': 52, 'trans': 3.9616, 'route_root': 0.6811, 'route_pattern': 0.7511, 'val_root': 0.9228, 'val_pat': 0.7684, 'gate_bce': 0.348, 'entropy': 0.9802, 'root': 0.3496, 'pattern': 0.588, 'lr': 3.125e-05}
+{'step': 23100, 'epoch': 52, 'trans': 3.9291, 'route_root': 0.6035, 'route_pattern': 0.9856, 'val_root': 0.7779, 'val_pat': 1.1204, 'gate_bce': 0.3605, 'entropy': 1.0209, 'root': 0.2543, 'pattern': 0.875, 'lr': 3.125e-05}
+epoch=52 dev_loss=5.1252 dev_chrf++=12.48
+  new best dev_loss=5.1252
+{'step': 23150, 'epoch': 53, 'trans': 3.7633, 'route_root': 0.6204, 'route_pattern': 0.7102, 'val_root': 0.7272, 'val_pat': 0.7792, 'gate_bce': 0.3131, 'entropy': 1.0689, 'root': 0.3006, 'pattern': 0.5576, 'lr': 1.5625e-05}
+{'step': 23200, 'epoch': 53, 'trans': 4.0744, 'route_root': 0.5982, 'route_pattern': 0.9509, 'val_root': 0.8372, 'val_pat': 1.091, 'gate_bce': 0.3568, 'entropy': 1.0315, 'root': 0.3117, 'pattern': 0.8366, 'lr': 1.5625e-05}
+{'step': 23250, 'epoch': 53, 'trans': 3.9917, 'route_root': 0.7232, 'route_pattern': 1.043, 'val_root': 0.9254, 'val_pat': 1.0886, 'gate_bce': 0.3463, 'entropy': 1.0686, 'root': 0.3056, 'pattern': 0.7584, 'lr': 1.5625e-05}
+{'step': 23300, 'epoch': 53, 'trans': 3.6763, 'route_root': 0.7231, 'route_pattern': 0.71, 'val_root': 0.9486, 'val_pat': 0.8084, 'gate_bce': 0.3444, 'entropy': 1.0252, 'root': 0.2457, 'pattern': 0.5832, 'lr': 1.5625e-05}
+{'step': 23350, 'epoch': 53, 'trans': 3.7457, 'route_root': 0.5071, 'route_pattern': 0.6619, 'val_root': 0.6959, 'val_pat': 0.7009, 'gate_bce': 0.3043, 'entropy': 0.8914, 'root': 0.2258, 'pattern': 0.6205, 'lr': 1.5625e-05}
+{'step': 23400, 'epoch': 53, 'trans': 3.9452, 'route_root': 0.5977, 'route_pattern': 0.8817, 'val_root': 0.7932, 'val_pat': 0.948, 'gate_bce': 0.3442, 'entropy': 1.015, 'root': 0.2174, 'pattern': 0.7499, 'lr': 1.5625e-05}
+{'step': 23450, 'epoch': 53, 'trans': 3.7756, 'route_root': 0.8614, 'route_pattern': 1.0793, 'val_root': 1.0337, 'val_pat': 1.187, 'gate_bce': 0.3641, 'entropy': 1.2429, 'root': 0.2419, 'pattern': 0.8352, 'lr': 1.5625e-05}
+{'step': 23500, 'epoch': 53, 'trans': 4.102, 'route_root': 0.7467, 'route_pattern': 0.8632, 'val_root': 1.0817, 'val_pat': 0.9028, 'gate_bce': 0.3711, 'entropy': 1.104, 'root': 0.2469, 'pattern': 0.7451, 'lr': 1.5625e-05}
+epoch=53 dev_loss=5.1258 dev_chrf++=12.34
+{'step': 23550, 'epoch': 54, 'trans': 3.9823, 'route_root': 0.7454, 'route_pattern': 0.9474, 'val_root': 1.0222, 'val_pat': 0.9801, 'gate_bce': 0.352, 'entropy': 1.094, 'root': 0.2945, 'pattern': 0.7041, 'lr': 1.5625e-05}
+{'step': 23600, 'epoch': 54, 'trans': 3.9819, 'route_root': 0.8431, 'route_pattern': 0.7943, 'val_root': 1.0746, 'val_pat': 0.8205, 'gate_bce': 0.358, 'entropy': 1.1091, 'root': 0.3417, 'pattern': 0.6891, 'lr': 1.5625e-05}
+{'step': 23650, 'epoch': 54, 'trans': 3.9814, 'route_root': 0.5515, 'route_pattern': 0.8014, 'val_root': 0.6623, 'val_pat': 0.8362, 'gate_bce': 0.3495, 'entropy': 0.995, 'root': 0.2028, 'pattern': 0.6333, 'lr': 1.5625e-05}
+{'step': 23700, 'epoch': 54, 'trans': 3.9142, 'route_root': 0.8748, 'route_pattern': 0.7985, 'val_root': 1.1278, 'val_pat': 0.8391, 'gate_bce': 0.3328, 'entropy': 1.1036, 'root': 0.351, 'pattern': 0.685, 'lr': 1.5625e-05}
+{'step': 23750, 'epoch': 54, 'trans': 3.9604, 'route_root': 0.81, 'route_pattern': 0.8801, 'val_root': 0.9312, 'val_pat': 0.9256, 'gate_bce': 0.3402, 'entropy': 1.139, 'root': 0.314, 'pattern': 0.6725, 'lr': 1.5625e-05}
+{'step': 23800, 'epoch': 54, 'trans': 4.0088, 'route_root': 0.5153, 'route_pattern': 0.9727, 'val_root': 0.6987, 'val_pat': 1.0149, 'gate_bce': 0.3727, 'entropy': 0.9761, 'root': 0.2811, 'pattern': 0.7421, 'lr': 1.5625e-05}
+{'step': 23850, 'epoch': 54, 'trans': 3.9573, 'route_root': 0.8387, 'route_pattern': 0.9546, 'val_root': 1.0438, 'val_pat': 1.012, 'gate_bce': 0.3551, 'entropy': 1.0571, 'root': 0.3316, 'pattern': 0.8049, 'lr': 1.5625e-05}
+{'step': 23900, 'epoch': 54, 'trans': 3.761, 'route_root': 0.7347, 'route_pattern': 0.9608, 'val_root': 0.9005, 'val_pat': 1.0347, 'gate_bce': 0.3309, 'entropy': 1.0135, 'root': 0.386, 'pattern': 0.7384, 'lr': 1.5625e-05}
+{'step': 23950, 'epoch': 54, 'trans': 3.6539, 'route_root': 0.7042, 'route_pattern': 0.8443, 'val_root': 0.9445, 'val_pat': 0.9037, 'gate_bce': 0.3706, 'entropy': 1.1616, 'root': 0.2592, 'pattern': 0.6716, 'lr': 1.5625e-05}
+epoch=54 dev_loss=5.1255 dev_chrf++=12.40
+{'step': 24000, 'epoch': 55, 'trans': 3.8719, 'route_root': 0.7016, 'route_pattern': 0.7504, 'val_root': 0.9343, 'val_pat': 0.8324, 'gate_bce': 0.3409, 'entropy': 1.0367, 'root': 0.3294, 'pattern': 0.6447, 'lr': 1.5625e-05}
+{'step': 24050, 'epoch': 55, 'trans': 3.8432, 'route_root': 0.678, 'route_pattern': 0.798, 'val_root': 0.8532, 'val_pat': 0.8681, 'gate_bce': 0.3115, 'entropy': 0.9431, 'root': 0.2924, 'pattern': 0.7251, 'lr': 1.5625e-05}
+{'step': 24100, 'epoch': 55, 'trans': 3.716, 'route_root': 0.7608, 'route_pattern': 0.7339, 'val_root': 0.9749, 'val_pat': 0.8087, 'gate_bce': 0.324, 'entropy': 0.944, 'root': 0.3259, 'pattern': 0.6152, 'lr': 1.5625e-05}
+{'step': 24150, 'epoch': 55, 'trans': 3.976, 'route_root': 0.8452, 'route_pattern': 0.7735, 'val_root': 1.1105, 'val_pat': 0.8479, 'gate_bce': 0.3575, 'entropy': 1.0506, 'root': 0.4369, 'pattern': 0.6366, 'lr': 1.5625e-05}
+{'step': 24200, 'epoch': 55, 'trans': 3.8637, 'route_root': 0.7803, 'route_pattern': 0.7705, 'val_root': 0.9908, 'val_pat': 0.829, 'gate_bce': 0.3545, 'entropy': 1.0284, 'root': 0.3981, 'pattern': 0.6791, 'lr': 1.5625e-05}
+{'step': 24250, 'epoch': 55, 'trans': 4.0082, 'route_root': 0.8824, 'route_pattern': 0.9631, 'val_root': 1.0941, 'val_pat': 0.9775, 'gate_bce': 0.4087, 'entropy': 1.1434, 'root': 0.3474, 'pattern': 0.7472, 'lr': 1.5625e-05}
+{'step': 24300, 'epoch': 55, 'trans': 3.881, 'route_root': 0.5187, 'route_pattern': 0.9122, 'val_root': 0.6549, 'val_pat': 0.9638, 'gate_bce': 0.3524, 'entropy': 0.9671, 'root': 0.2061, 'pattern': 0.8167, 'lr': 1.5625e-05}
+{'step': 24350, 'epoch': 55, 'trans': 3.984, 'route_root': 0.9643, 'route_pattern': 0.86, 'val_root': 1.1435, 'val_pat': 0.9127, 'gate_bce': 0.3545, 'entropy': 1.1839, 'root': 0.3784, 'pattern': 0.7799, 'lr': 1.5625e-05}
+{'step': 24400, 'epoch': 55, 'trans': 3.8686, 'route_root': 0.8113, 'route_pattern': 0.8712, 'val_root': 1.0136, 'val_pat': 0.9621, 'gate_bce': 0.3272, 'entropy': 1.0871, 'root': 0.3882, 'pattern': 0.6429, 'lr': 1.5625e-05}
+epoch=55 dev_loss=5.1260 dev_chrf++=12.19
+{'step': 24450, 'epoch': 56, 'trans': 3.7927, 'route_root': 0.8807, 'route_pattern': 0.6859, 'val_root': 1.0006, 'val_pat': 0.7615, 'gate_bce': 0.3575, 'entropy': 1.0711, 'root': 0.3124, 'pattern': 0.5558, 'lr': 7.8125e-06}
+{'step': 24500, 'epoch': 56, 'trans': 3.7349, 'route_root': 0.5794, 'route_pattern': 0.8486, 'val_root': 0.8147, 'val_pat': 0.923, 'gate_bce': 0.3247, 'entropy': 0.9983, 'root': 0.313, 'pattern': 0.6414, 'lr': 7.8125e-06}
+{'step': 24550, 'epoch': 56, 'trans': 3.9424, 'route_root': 0.5771, 'route_pattern': 0.772, 'val_root': 0.7274, 'val_pat': 0.8729, 'gate_bce': 0.3428, 'entropy': 0.8911, 'root': 0.2355, 'pattern': 0.6741, 'lr': 7.8125e-06}
+{'step': 24600, 'epoch': 56, 'trans': 3.8684, 'route_root': 0.9715, 'route_pattern': 0.8857, 'val_root': 1.1717, 'val_pat': 0.8804, 'gate_bce': 0.322, 'entropy': 1.0853, 'root': 0.3344, 'pattern': 0.6054, 'lr': 7.8125e-06}
+{'step': 24650, 'epoch': 56, 'trans': 3.967, 'route_root': 0.7075, 'route_pattern': 0.8172, 'val_root': 0.8885, 'val_pat': 0.9188, 'gate_bce': 0.3859, 'entropy': 1.0146, 'root': 0.3641, 'pattern': 0.659, 'lr': 7.8125e-06}
+{'step': 24700, 'epoch': 56, 'trans': 4.0113, 'route_root': 0.7136, 'route_pattern': 0.9574, 'val_root': 0.9115, 'val_pat': 0.9482, 'gate_bce': 0.3497, 'entropy': 1.0335, 'root': 0.3505, 'pattern': 0.7104, 'lr': 7.8125e-06}
+{'step': 24750, 'epoch': 56, 'trans': 3.8647, 'route_root': 0.7181, 'route_pattern': 0.9686, 'val_root': 1.0465, 'val_pat': 0.9517, 'gate_bce': 0.3715, 'entropy': 1.103, 'root': 0.3784, 'pattern': 0.7374, 'lr': 7.8125e-06}
+{'step': 24800, 'epoch': 56, 'trans': 3.8472, 'route_root': 0.8941, 'route_pattern': 0.7272, 'val_root': 1.0595, 'val_pat': 0.8308, 'gate_bce': 0.3714, 'entropy': 1.0499, 'root': 0.3144, 'pattern': 0.5173, 'lr': 7.8125e-06}
+{'step': 24850, 'epoch': 56, 'trans': 3.8225, 'route_root': 0.5686, 'route_pattern': 0.7767, 'val_root': 0.7569, 'val_pat': 0.8361, 'gate_bce': 0.3195, 'entropy': 1.0069, 'root': 0.2449, 'pattern': 0.5859, 'lr': 7.8125e-06}
+epoch=56 dev_loss=5.1256 dev_chrf++=12.27
+{'step': 24900, 'epoch': 57, 'trans': 3.7747, 'route_root': 0.6548, 'route_pattern': 0.863, 'val_root': 0.7945, 'val_pat': 0.966, 'gate_bce': 0.3598, 'entropy': 0.9451, 'root': 0.285, 'pattern': 0.7285, 'lr': 7.8125e-06}
+{'step': 24950, 'epoch': 57, 'trans': 3.8096, 'route_root': 0.7908, 'route_pattern': 0.8946, 'val_root': 0.9378, 'val_pat': 0.934, 'gate_bce': 0.3485, 'entropy': 1.0697, 'root': 0.3516, 'pattern': 0.6875, 'lr': 7.8125e-06}
+{'step': 25000, 'epoch': 57, 'trans': 3.9065, 'route_root': 0.4589, 'route_pattern': 0.6818, 'val_root': 0.5862, 'val_pat': 0.7388, 'gate_bce': 0.3379, 'entropy': 0.8397, 'root': 0.1665, 'pattern': 0.5658, 'lr': 7.8125e-06}
+{'step': 25050, 'epoch': 57, 'trans': 3.5969, 'route_root': 0.717, 'route_pattern': 0.8392, 'val_root': 0.8784, 'val_pat': 0.9017, 'gate_bce': 0.3037, 'entropy': 0.9977, 'root': 0.2635, 'pattern': 0.6988, 'lr': 7.8125e-06}
+{'step': 25100, 'epoch': 57, 'trans': 3.7907, 'route_root': 0.8003, 'route_pattern': 0.9085, 'val_root': 0.9512, 'val_pat': 0.9816, 'gate_bce': 0.3695, 'entropy': 1.0351, 'root': 0.3061, 'pattern': 0.7087, 'lr': 7.8125e-06}
+{'step': 25150, 'epoch': 57, 'trans': 4.0769, 'route_root': 0.5327, 'route_pattern': 0.9034, 'val_root': 0.6907, 'val_pat': 0.9732, 'gate_bce': 0.3507, 'entropy': 0.9447, 'root': 0.2943, 'pattern': 0.7337, 'lr': 7.8125e-06}
+{'step': 25200, 'epoch': 57, 'trans': 3.9056, 'route_root': 0.65, 'route_pattern': 0.8395, 'val_root': 0.8598, 'val_pat': 0.9048, 'gate_bce': 0.3722, 'entropy': 1.0481, 'root': 0.3148, 'pattern': 0.6734, 'lr': 7.8125e-06}
+{'step': 25250, 'epoch': 57, 'trans': 3.7777, 'route_root': 0.5708, 'route_pattern': 0.6901, 'val_root': 0.7058, 'val_pat': 0.7417, 'gate_bce': 0.3388, 'entropy': 0.9178, 'root': 0.2758, 'pattern': 0.6002, 'lr': 7.8125e-06}
+epoch=57 dev_loss=5.1251 dev_chrf++=12.27
+  new best dev_loss=5.1251
+{'step': 25300, 'epoch': 58, 'trans': 3.8589, 'route_root': 0.679, 'route_pattern': 0.6839, 'val_root': 0.8172, 'val_pat': 0.7159, 'gate_bce': 0.3652, 'entropy': 0.9756, 'root': 0.218, 'pattern': 0.5025, 'lr': 7.8125e-06}
+{'step': 25350, 'epoch': 58, 'trans': 3.7632, 'route_root': 0.9363, 'route_pattern': 1.0422, 'val_root': 1.1345, 'val_pat': 1.0811, 'gate_bce': 0.3448, 'entropy': 1.1944, 'root': 0.3842, 'pattern': 0.8756, 'lr': 7.8125e-06}
+{'step': 25400, 'epoch': 58, 'trans': 4.0696, 'route_root': 0.5347, 'route_pattern': 0.7928, 'val_root': 0.6513, 'val_pat': 0.889, 'gate_bce': 0.3566, 'entropy': 0.978, 'root': 0.1838, 'pattern': 0.6584, 'lr': 7.8125e-06}
+{'step': 25450, 'epoch': 58, 'trans': 3.9587, 'route_root': 0.6974, 'route_pattern': 0.8793, 'val_root': 0.8705, 'val_pat': 0.9395, 'gate_bce': 0.3761, 'entropy': 1.0417, 'root': 0.2593, 'pattern': 0.7725, 'lr': 7.8125e-06}
+{'step': 25500, 'epoch': 58, 'trans': 4.0536, 'route_root': 0.6033, 'route_pattern': 0.8098, 'val_root': 0.7605, 'val_pat': 0.93, 'gate_bce': 0.3932, 'entropy': 0.9756, 'root': 0.2404, 'pattern': 0.7051, 'lr': 7.8125e-06}
+{'step': 25550, 'epoch': 58, 'trans': 4.1108, 'route_root': 0.8147, 'route_pattern': 0.9608, 'val_root': 0.9824, 'val_pat': 1.0174, 'gate_bce': 0.4031, 'entropy': 1.1266, 'root': 0.2867, 'pattern': 0.8211, 'lr': 7.8125e-06}
+{'step': 25600, 'epoch': 58, 'trans': 4.0848, 'route_root': 0.9737, 'route_pattern': 0.8753, 'val_root': 1.2153, 'val_pat': 0.9471, 'gate_bce': 0.3875, 'entropy': 1.162, 'root': 0.3939, 'pattern': 0.7507, 'lr': 7.8125e-06}
+{'step': 25650, 'epoch': 58, 'trans': 4.0895, 'route_root': 0.598, 'route_pattern': 0.8156, 'val_root': 0.8072, 'val_pat': 0.9005, 'gate_bce': 0.3594, 'entropy': 1.0751, 'root': 0.2539, 'pattern': 0.6808, 'lr': 7.8125e-06}
+{'step': 25700, 'epoch': 58, 'trans': 3.8178, 'route_root': 0.7373, 'route_pattern': 0.746, 'val_root': 0.8863, 'val_pat': 0.8404, 'gate_bce': 0.3793, 'entropy': 1.0393, 'root': 0.2408, 'pattern': 0.6455, 'lr': 7.8125e-06}
+epoch=58 dev_loss=5.1248 dev_chrf++=12.36
+  new best dev_loss=5.1248
+{'step': 25750, 'epoch': 59, 'trans': 3.8412, 'route_root': 0.6742, 'route_pattern': 0.8584, 'val_root': 0.8269, 'val_pat': 0.8567, 'gate_bce': 0.3225, 'entropy': 1.0542, 'root': 0.2478, 'pattern': 0.6856, 'lr': 7.8125e-06}
+{'step': 25800, 'epoch': 59, 'trans': 3.9297, 'route_root': 0.4734, 'route_pattern': 0.7928, 'val_root': 0.6261, 'val_pat': 0.8042, 'gate_bce': 0.3407, 'entropy': 0.972, 'root': 0.156, 'pattern': 0.5856, 'lr': 7.8125e-06}
+{'step': 25850, 'epoch': 59, 'trans': 3.8362, 'route_root': 0.8254, 'route_pattern': 0.9716, 'val_root': 0.9458, 'val_pat': 1.0423, 'gate_bce': 0.332, 'entropy': 1.1554, 'root': 0.2388, 'pattern': 0.7241, 'lr': 7.8125e-06}
+{'step': 25900, 'epoch': 59, 'trans': 3.8243, 'route_root': 0.5766, 'route_pattern': 0.7458, 'val_root': 0.8173, 'val_pat': 0.8489, 'gate_bce': 0.379, 'entropy': 0.9852, 'root': 0.2366, 'pattern': 0.6329, 'lr': 7.8125e-06}
+{'step': 25950, 'epoch': 59, 'trans': 3.8975, 'route_root': 0.7994, 'route_pattern': 0.894, 'val_root': 0.9904, 'val_pat': 0.9141, 'gate_bce': 0.3567, 'entropy': 1.0977, 'root': 0.4003, 'pattern': 0.6842, 'lr': 7.8125e-06}
+{'step': 26000, 'epoch': 59, 'trans': 4.0554, 'route_root': 0.5497, 'route_pattern': 0.7481, 'val_root': 0.7778, 'val_pat': 0.827, 'gate_bce': 0.3387, 'entropy': 0.97, 'root': 0.1913, 'pattern': 0.6059, 'lr': 7.8125e-06}
+{'step': 26050, 'epoch': 59, 'trans': 3.7872, 'route_root': 0.7788, 'route_pattern': 1.2227, 'val_root': 0.8822, 'val_pat': 1.2412, 'gate_bce': 0.39, 'entropy': 1.1372, 'root': 0.4169, 'pattern': 1.0207, 'lr': 7.8125e-06}
+{'step': 26100, 'epoch': 59, 'trans': 3.905, 'route_root': 0.5594, 'route_pattern': 0.6603, 'val_root': 0.7672, 'val_pat': 0.6627, 'gate_bce': 0.3565, 'entropy': 0.9354, 'root': 0.2738, 'pattern': 0.4657, 'lr': 7.8125e-06}
+{'step': 26150, 'epoch': 59, 'trans': 3.9507, 'route_root': 0.6979, 'route_pattern': 0.7964, 'val_root': 0.8538, 'val_pat': 0.8408, 'gate_bce': 0.3521, 'entropy': 1.0421, 'root': 0.3064, 'pattern': 0.6999, 'lr': 7.8125e-06}
+epoch=59 dev_loss=5.1242 dev_chrf++=12.24
+  new best dev_loss=5.1242
+final eval: beam5_nr4 chrF 15.21 chrF++ 15.01 BLEU 4.53 (greedy chrF 13.40) (181s)
+  probe root: 0.770 vs chance 0.268; unseen own-slot 0.5947456679709335
+  probe pattern: 0.633 vs chance 0.278; unseen own-slot 0.5192118226600986
+  gate probe: rooted=0.660 (n=13398) vs rootless=0.075 (n=9869)
+done. best_dev_loss=5.1242 run_dir=/kaggle/working/pack/runs/gmm_gateany_G4_wide_feat_s33

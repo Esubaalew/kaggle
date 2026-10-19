@@ -1,0 +1,299 @@
+{
+ "forms": 1445,
+ "groups": {
+  "settled_in_A2_training": {
+   "A": {
+    "forms": 466,
+    "root_agree": 0.6137,
+    "type_agree": 0.4185,
+    "root_agree_token_weighted": 0.6707,
+    "type_agree_token_weighted": 0.5139
+   },
+   "A2": {
+    "forms": 466,
+    "root_agree": 0.8219,
+    "type_agree": 0.8433,
+    "root_agree_token_weighted": 0.8939,
+    "type_agree_token_weighted": 0.868
+   }
+  },
+  "held_not_trained": {
+   "A": {
+    "forms": 969,
+    "root_agree": 0.4303,
+    "type_agree": 0.4613,
+    "root_agree_token_weighted": 0.3767,
+    "type_agree_token_weighted": 0.4073
+   },
+   "A2": {
+    "forms": 969,
+    "root_agree": 0.4396,
+    "type_agree": 0.5284,
+    "root_agree_token_weighted": 0.3972,
+    "type_agree_token_weighted": 0.4464
+   }
+  }
+ },
+ "examples": {
+  "ሕዝብ": {
+   "A": {
+    "analyze": "root: ሐ-ዘ-በ | tense: imperative | person: 2 | gender: m | number: s | stem: basic",
+    "pos": "type: verb"
+   },
+   "A2": {
+    "analyze": "root: ሐ-ዘ-በ | type: noun | number: s",
+    "pos": "type: noun"
+   }
+  },
+  "ለሕዝብ": {
+   "A": {
+    "analyze": "root: ለ-ሐ-ዘ-በ | tense: imperative | person: 2 | gender: m | number: s | stem: basic",
+    "pos": "type: verb"
+   },
+   "A2": {
+    "analyze": "root: ሐ-ዘ-በ | type: noun | number: s",
+    "pos": "type: noun"
+   }
+  },
+  "ሕዝበ": {
+   "A": {
+    "analyze": "root: ሐ-ዘ-በ | tense: past | person: 3 | gender: m | number: s | stem: basic",
+    "pos": "type: verb"
+   },
+   "A2": {
+    "analyze": "root: ሐ-ዘ-በ | type: noun | number: s",
+    "pos": "type: noun"
+   }
+  },
+  "ቃለ": {
+   "A": {
+    "analyze": "root: ቀ-ሀ-ለ | tense: past | person: 3 | gender: m | number: s | stem: basic",
+    "pos": "type: verb"
+   },
+   "A2": {
+    "analyze": "root: ቀ-ወ-ለ | type: noun | number: s",
+    "pos": "type: noun"
+   }
+  },
+  "ቃል": {
+   "A": {
+    "analyze": "root: ቀ-ሀ-ለ | type: nominal",
+    "pos": "type: verb"
+   },
+   "A2": {
+    "analyze": "root: ቀ-ወ-ለ | type: noun | number: s",
+    "pos": "type: noun"
+   }
+  },
+  "ምድረ": {
+   "A": {
+    "analyze": "root: መ-ደ-ረ | tense: past | person: 3 | gender: m | number: s | stem: basic",
+    "pos": "type: verb"
+   },
+   "A2": {
+    "analyze": "root: መ-ደ-ረ | tense: past | person: 3 | gender: m | number: s | stem: basic",
+    "pos": "type: verb"
+   }
+  },
+  "ምድር": {
+   "A": {
+    "analyze": "root: መ-ደ-ረ | type: nominal",
+    "pos": "type: nominal"
+   },
+   "A2": {
+    "analyze": "root: መ-ደ-ረ | type: noun | number: s",
+    "pos": "type: noun"
+   }
+  },
+  "ብእሲ": {
+   "A": {
+    "analyze": "root: በ-አ-ሰ | tense: imperative | person: 2 | gender: f | number: s | stem: basic",
+    "pos": "type: verb"
+   },
+   "A2": {
+    "analyze": "root: በ-አ-ሰ | tense: imperative | person: 2 | gender: f | number: s | stem: basic",
+    "pos": "type: verb"
+   }
+  },
+  "ሀገር": {
+   "A": {
+    "analyze": "root: ሀ-ገ-ረ | type: noun | number: s",
+    "pos": "type: noun"
+   },
+   "A2": {
+    "analyze": "root: ሀ-ገ-ረ | type: noun | number: s",
+    "pos": "type: noun"
+   }
+  },
+  "ዓለም": {
+   "A": {
+    "analyze": "root: ዐ-ለ-መ | type: noun | number: s",
+    "pos": "type: noun"
+   },
+   "A2": {
+    "analyze": "root: ዐ-ለ-መ | type: noun | number: s",
+    "pos": "type: noun"
+   }
+  },
+  "ኵሉ": {
+   "A": {
+    "analyze": "root: ኰ-ለ-ወ | tense: imperative | person: 2 | gender: m | number: p | stem: basic",
+    "pos": "type: verb"
+   },
+   "A2": {
+    "analyze": "root: none | type: pronoun | person: 3 | gender: m | number: p",
+    "pos": "type: pronoun"
+   }
+  },
+  "ናሁ": {
+   "A": {
+    "analyze": "root: none | type: pronoun | person: 1 | gender: c | number: p",
+    "pos": "type: verb"
+   },
+   "A2": {
+    "analyze": "root: none | type: pronoun | person: 3 | gender: f | number: p",
+    "pos": "type: verb"
+   }
+  },
+  "እለ": {
+   "A": {
+    "analyze": "root: none | type: demonstrative | gender: m | number: s",
+    "pos": "type: particle"
+   },
+   "A2": {
+    "analyze": "root: none | type: demonstrative",
+    "pos": "type: particle"
+   }
+  },
+  "ከመ": {
+   "A": {
+    "analyze": "root: none | type: particle",
+    "pos": "type: particle"
+   },
+   "A2": {
+    "analyze": "root: none | type: particle | possessor: 2ms",
+    "pos": "type: particle"
+   }
+  },
+  "እስመ": {
+   "A": {
+    "analyze": "root: none | type: particle | possessor: 3ms",
+    "pos": "type: particle"
+   },
+   "A2": {
+    "analyze": "root: none | type: particle | possessor: 3ms",
+    "pos": "type: particle"
+   }
+  },
+  "ይቤ": {
+   "A": {
+    "analyze": "root: በ-የ-በ | tense: past | person: 3 | gender: m | number: s | stem: basic",
+    "pos": "type: verb"
+   },
+   "A2": {
+    "analyze": "root: በ-የ-በ | tense: past | person: 3 | gender: m | number: s | stem: basic",
+    "pos": "type: verb"
+   }
+  },
+  "ወይቤ": {
+   "A": {
+    "analyze": "root: ወ-የ-በ | type: noun | number: s",
+    "pos": "type: noun"
+   },
+   "A2": {
+    "analyze": "root: በ-የ-በ | tense: past | person: 3 | gender: m | number: s | stem: basic",
+    "pos": "type: verb"
+   }
+  },
+  "ወይቤሎ": {
+   "A": {
+    "analyze": "root: በ-ሀ-ለ | tense: past | person: 3 | gender: m | number: s | stem: basic | object: 3ms",
+    "pos": "type: verb"
+   },
+   "A2": {
+    "analyze": "root: በ-ሀ-ለ | tense: past | person: 3 | gender: m | number: s | stem: basic | object: 3ms",
+    "pos": "type: verb"
+   }
+  },
+  "እግዚአብሔር": {
+   "A": {
+    "analyze": "root: ገ-ዘ-አ-በ-ሐ-ረ | type: noun | number: s",
+    "pos": "type: noun"
+   },
+   "A2": {
+    "analyze": "root: በ-ሐ-ረ | type: noun | number: p",
+    "pos": "type: noun"
+   }
+  },
+  "ሙሴ": {
+   "A": {
+    "analyze": "root: መ-ወ-ሰ | type: nominal",
+    "pos": "type: noun"
+   },
+   "A2": {
+    "analyze": "root: none | type: name",
+    "pos": "type: name"
+   }
+  },
+  "ወሙሴ": {
+   "A": {
+    "analyze": "root: ወ-መ-ሰ | type: noun | number: s",
+    "pos": "type: noun"
+   },
+   "A2": {
+    "analyze": "root: ወ-መ-ሰ | type: nominal",
+    "pos": "type: noun"
+   }
+  },
+  "ዳዊት": {
+   "A": {
+    "analyze": "root: ደ-ወ-ወ | type: adjective | gender: f | number: s",
+    "pos": "type: noun"
+   },
+   "A2": {
+    "analyze": "root: ደ-ወ-ወ | type: noun | number: s",
+    "pos": "type: noun"
+   }
+  },
+  "ኢየሩሳሌም": {
+   "A": {
+    "analyze": "root: የ-ረ-ሰ-መ | type: name | number: s",
+    "pos": "type: name"
+   },
+   "A2": {
+    "analyze": "root: የ-ረ-ሰ | type: name",
+    "pos": "type: name"
+   }
+  },
+  "ንጉሥ": {
+   "A": {
+    "analyze": "root: ነ-ገ-ሠ | type: adjective | number: s",
+    "pos": "type: adjective"
+   },
+   "A2": {
+    "analyze": "root: ነ-ገ-ሠ | type: adjective | gender: m | number: s",
+    "pos": "type: adjective"
+   }
+  },
+  "ንጉሠ": {
+   "A": {
+    "analyze": "root: ነ-ገ-ሠ | type: nominal",
+    "pos": "type: nominal"
+   },
+   "A2": {
+    "analyze": "root: ነ-ገ-ሠ | type: nominal",
+    "pos": "type: noun"
+   }
+  },
+  "ወንጉሥ": {
+   "A": {
+    "analyze": "root: ነ-ገ-ሠ | type: adjective | gender: m | number: s",
+    "pos": "type: adjective"
+   },
+   "A2": {
+    "analyze": "root: ነ-ገ-ሠ | type: adjective | number: s",
+    "pos": "type: adjective"
+   }
+  }
+ }
+}

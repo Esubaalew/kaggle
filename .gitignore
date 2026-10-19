@@ -25,3 +25,7 @@ geez_tpu_v2/dataset/
 *access_token*
 kaggle.json
 .env
+
+# Kaggle upload staging (copies of weights already listed in out_*/best and on Kaggle)
+*.tar
+geez_gpu_v2_a2/dataset/

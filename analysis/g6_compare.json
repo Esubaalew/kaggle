@@ -1,0 +1,411 @@
+{
+ "mean_chrF_char": {
+  "full": {
+   "G6 bpe_aux": 15.58,
+   "G6 gmm gate-any": 15.9,
+   "G4 bpe_aux feat": 14.89,
+   "G4 gmm feat gate-any": 15.28,
+   "G5 bpe_aux": 15.4,
+   "G5 gmm-1024": 15.79
+  },
+  "aligned": {
+   "G6 bpe_aux": 17.19,
+   "G6 gmm gate-any": 17.54,
+   "G4 bpe_aux feat": 16.27,
+   "G4 gmm feat gate-any": 16.61,
+   "G5 bpe_aux": 16.94,
+   "G5 gmm-1024": 17.46
+  }
+ },
+ "mean_chrF_char_seeds_11_22_33": {
+  "full": {
+   "G6 bpe_aux": 15.57,
+   "G6 gmm gate-any": 15.78,
+   "G4 bpe_aux feat": 14.89,
+   "G4 gmm feat gate-any": 15.28,
+   "G5 bpe_aux": 15.4,
+   "G5 gmm-1024": 15.79
+  },
+  "aligned": {
+   "G6 bpe_aux": 17.2,
+   "G6 gmm gate-any": 17.41,
+   "G4 bpe_aux feat": 16.27,
+   "G4 gmm feat gate-any": 16.61,
+   "G5 bpe_aux": 16.94,
+   "G5 gmm-1024": 17.46
+  }
+ },
+ "per_seed_full": {
+  "G6 bpe_aux": {
+   "11": 15.65,
+   "22": 15.66,
+   "33": 15.38,
+   "44": 15.61,
+   "55": 15.57
+  },
+  "G6 gmm gate-any": {
+   "11": 16.03,
+   "22": 15.59,
+   "33": 15.73,
+   "44": 15.93,
+   "55": 16.2
+  },
+  "G4 bpe_aux feat": {
+   "11": 14.97,
+   "22": 14.86,
+   "33": 14.83
+  },
+  "G4 gmm feat gate-any": {
+   "11": 15.43,
+   "22": 15.21,
+   "33": 15.21
+  },
+  "G5 bpe_aux": {
+   "11": 15.5,
+   "22": 15.33,
+   "33": 15.36
+  },
+  "G5 gmm-1024": {
+   "11": 15.93,
+   "22": 15.5,
+   "33": 15.94
+  }
+ },
+ "mean_chrF++_full": {
+  "G6 bpe_aux": 15.41,
+  "G6 gmm gate-any": 15.69,
+  "G4 bpe_aux feat": 14.75,
+  "G4 gmm feat gate-any": 15.07,
+  "G5 bpe_aux": 15.26,
+  "G5 gmm-1024": 15.57
+ },
+ "mean_BLEU_full": {
+  "G6 bpe_aux": 4.56,
+  "G6 gmm gate-any": 4.55,
+  "G4 bpe_aux feat": 4.38,
+  "G4 gmm feat gate-any": 4.52,
+  "G5 bpe_aux": 4.56,
+  "G5 gmm-1024": 4.47
+ },
+ "contrasts": {
+  "G6 gmm gate-any - G6 bpe_aux [full, 5 seeds]": {
+   "seeds": [
+    11,
+    22,
+    33,
+    44,
+    55
+   ],
+   "diff": 0.32,
+   "ci95": [
+    0.18,
+    0.46
+   ],
+   "p_le0": 0.0,
+   "per_seed": [
+    0.38,
+    -0.07,
+    0.35,
+    0.32,
+    0.63
+   ],
+   "seed_t": 2.83,
+   "seed_p": 0.0475
+  },
+  "G6 gmm gate-any - G6 bpe_aux [aligned, 5 seeds]": {
+   "seeds": [
+    11,
+    22,
+    33,
+    44,
+    55
+   ],
+   "diff": 0.35,
+   "ci95": [
+    0.18,
+    0.52
+   ],
+   "p_le0": 0.0,
+   "per_seed": [
+    0.4,
+    -0.2,
+    0.43,
+    0.34,
+    0.77
+   ],
+   "seed_t": 2.23,
+   "seed_p": 0.0898
+  },
+  "G6 gmm gate-any - G6 bpe_aux [full, 3 seeds]": {
+   "seeds": [
+    11,
+    22,
+    33
+   ],
+   "diff": 0.22,
+   "ci95": [
+    0.02,
+    0.41
+   ],
+   "p_le0": 0.017,
+   "per_seed": [
+    0.38,
+    -0.07,
+    0.35
+   ],
+   "seed_t": 1.49,
+   "seed_p": 0.2748
+  },
+  "G6 gmm gate-any - G6 bpe_aux [aligned, 3 seeds]": {
+   "seeds": [
+    11,
+    22,
+    33
+   ],
+   "diff": 0.21,
+   "ci95": [
+    -0.03,
+    0.44
+   ],
+   "p_le0": 0.038,
+   "per_seed": [
+    0.4,
+    -0.2,
+    0.43
+   ],
+   "seed_t": 1.02,
+   "seed_p": 0.4147
+  },
+  "G6 gmm gate-any - G5 gmm-1024 [full, 3 seeds]": {
+   "seeds": [
+    11,
+    22,
+    33
+   ],
+   "diff": -0.01,
+   "ci95": [
+    -0.19,
+    0.17
+   ],
+   "p_le0": 0.511,
+   "per_seed": [
+    0.1,
+    0.09,
+    -0.22
+   ],
+   "seed_t": -0.1,
+   "seed_p": 0.9302
+  },
+  "G6 gmm gate-any - G5 gmm-1024 [aligned, 3 seeds]": {
+   "seeds": [
+    11,
+    22,
+    33
+   ],
+   "diff": -0.05,
+   "ci95": [
+    -0.27,
+    0.16
+   ],
+   "p_le0": 0.685,
+   "per_seed": [
+    0.04,
+    0.13,
+    -0.33
+   ],
+   "seed_t": -0.37,
+   "seed_p": 0.7454
+  },
+  "G6 gmm gate-any - G4 gmm feat gate-any [full, 3 seeds]": {
+   "seeds": [
+    11,
+    22,
+    33
+   ],
+   "diff": 0.5,
+   "ci95": [
+    0.21,
+    0.73
+   ],
+   "p_le0": 0.0,
+   "per_seed": [
+    0.6,
+    0.38,
+    0.51
+   ],
+   "seed_t": 7.74,
+   "seed_p": 0.0163
+  },
+  "G6 gmm gate-any - G4 gmm feat gate-any [aligned, 3 seeds]": {
+   "seeds": [
+    11,
+    22,
+    33
+   ],
+   "diff": 0.8,
+   "ci95": [
+    0.55,
+    1.06
+   ],
+   "p_le0": 0.0,
+   "per_seed": [
+    0.89,
+    0.68,
+    0.83
+   ],
+   "seed_t": 12.83,
+   "seed_p": 0.006
+  },
+  "G6 bpe_aux - G4 bpe_aux feat [full, 3 seeds]": {
+   "seeds": [
+    11,
+    22,
+    33
+   ],
+   "diff": 0.68,
+   "ci95": [
+    0.46,
+    0.89
+   ],
+   "p_le0": 0.0,
+   "per_seed": [
+    0.68,
+    0.8,
+    0.55
+   ],
+   "seed_t": 9.1,
+   "seed_p": 0.0119
+  },
+  "G6 bpe_aux - G4 bpe_aux feat [aligned, 3 seeds]": {
+   "seeds": [
+    11,
+    22,
+    33
+   ],
+   "diff": 0.92,
+   "ci95": [
+    0.71,
+    1.16
+   ],
+   "p_le0": 0.0,
+   "per_seed": [
+    0.81,
+    1.18,
+    0.77
+   ],
+   "seed_t": 7.05,
+   "seed_p": 0.0195
+  },
+  "G6 bpe_aux - G5 bpe_aux [full, 3 seeds]": {
+   "seeds": [
+    11,
+    22,
+    33
+   ],
+   "diff": 0.17,
+   "ci95": [
+    -0.01,
+    0.34
+   ],
+   "p_le0": 0.028,
+   "per_seed": [
+    0.15,
+    0.34,
+    0.02
+   ],
+   "seed_t": 1.82,
+   "seed_p": 0.2111
+  },
+  "G6 bpe_aux - G5 bpe_aux [aligned, 3 seeds]": {
+   "seeds": [
+    11,
+    22,
+    33
+   ],
+   "diff": 0.26,
+   "ci95": [
+    0.06,
+    0.49
+   ],
+   "p_le0": 0.01,
+   "per_seed": [
+    0.25,
+    0.49,
+    0.05
+   ],
+   "seed_t": 2.05,
+   "seed_p": 0.1764
+  }
+ },
+ "mechanism_gmm": {
+  "11": {
+   "root_consistency": 0.7653484410759728,
+   "permutation": 0.26828224124155675,
+   "unseen_with_siblings": 0.7376533832449949,
+   "gate": {
+    "mean_gate_rooted": 0.669,
+    "mean_gate_rootless": 0.064,
+    "mean_gate_out_of_bank": 0.49,
+    "mean_gate_unknown": 0.591
+   },
+   "best_epoch": 60
+  },
+  "22": {
+   "root_consistency": 0.7301277956561348,
+   "permutation": 0.26869479566713694,
+   "unseen_with_siblings": 0.6914242436592611,
+   "gate": {
+    "mean_gate_rooted": 0.617,
+    "mean_gate_rootless": 0.075,
+    "mean_gate_out_of_bank": 0.437,
+    "mean_gate_unknown": 0.537
+   },
+   "best_epoch": 53
+  },
+  "33": {
+   "root_consistency": 0.7347495954521842,
+   "permutation": 0.26848732723096924,
+   "unseen_with_siblings": 0.7014904256290062,
+   "gate": {
+    "mean_gate_rooted": 0.614,
+    "mean_gate_rootless": 0.077,
+    "mean_gate_out_of_bank": 0.454,
+    "mean_gate_unknown": 0.507
+   },
+   "best_epoch": 47
+  },
+  "44": {
+   "root_consistency": 0.7405974737832303,
+   "permutation": 0.2685993525114265,
+   "unseen_with_siblings": 0.7066040719592904,
+   "gate": {
+    "mean_gate_rooted": 0.633,
+    "mean_gate_rootless": 0.068,
+    "mean_gate_out_of_bank": 0.461,
+    "mean_gate_unknown": 0.561
+   },
+   "best_epoch": 56
+  },
+  "55": {
+   "root_consistency": 0.7541378655087985,
+   "permutation": 0.2685946548788312,
+   "unseen_with_siblings": 0.7175264771981691,
+   "gate": {
+    "mean_gate_rooted": 0.642,
+    "mean_gate_rootless": 0.069,
+    "mean_gate_out_of_bank": 0.458,
+    "mean_gate_unknown": 0.57
+   },
+   "best_epoch": 60
+  }
+ },
+ "routing_ablation_s11": {
+  "natural": 15.86,
+  "off": 13.83,
+  "0.0": 12.57,
+  "0.4": 14.04,
+  "0.8": 15.18,
+  "0.95": 15.42,
+  "1.0": 15.9
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "run": "ft_wide_feat_s33",
+ "system": "ft",
+ "seed": 33,
+ "labels": "analyser_wide_feat",
+ "model": "facebook/nllb-200-distilled-600M",
+ "src_lang": "tir_Ethi",
+ "tgt_lang": "amh_Ethi",
+ "mem_layers": null,
+ "aux_weight": 0.15,
+ "gate_target": "root",
+ "freeze_epochs": 0,
+ "new_params": 0,
+ "nllb_params": 615073792,
+ "trainable_params": 352718848,
+ "best_epoch": 8,
+ "best_dev_loss": 1.9390267920701665,
+ "train_seconds": 2065,
+ "dev_beam5_nr4": {
+  "chrF_char": 32.550711643628546,
+  "chrF++": 31.47642815573233,
+  "BLEU": 12.439324590783336
+ },
+ "seconds": 2216
+}

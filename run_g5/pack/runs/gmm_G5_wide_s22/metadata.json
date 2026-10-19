@@ -1,0 +1,215 @@
+{
+ "variant": "gmm",
+ "seed": 22,
+ "cfg": {
+  "_comment": "Base protocol config. Values from the 2026-08-01 advisor report (matched replication). Six seeds per the 2026-09-30 decision rule. Do not change without recording the reason.",
+  "_comment_clean": "drfn_clean: cleaned AGE text (invisible chars removed, punctuation detached), word-boundary BPE, grounded_balance_reg 0. See build_report.json.",
+  "_comment_grounded": "Added for the grounded-routing grid: d_key is the routing key width of protocol Eq.(4-5); ignore_pattern_ids can drop the 'unknown' pattern class from the routing CE. entropy_sign is deliberately NOT set here. It defaults to +1 (sharpen, section 3.6) inside grounding_loss for the gmm variants, and to -1 in the legacy cmm/flat path so published cmm results stay reproducible. Pass --entropy-sign to override either.",
+  "adam_betas": [
+   0.9,
+   0.98
+  ],
+  "adam_eps": 1e-09,
+  "aux_ignore_index": -100,
+  "aux_pattern_weight": 0.5,
+  "aux_root_weight": 0.5,
+  "balance_reg": 0.01,
+  "batch_size": 32,
+  "beam_size": 5,
+  "bos_id": 1,
+  "cmm_layers": [
+   1,
+   2
+  ],
+  "d_key": 64,
+  "d_model": 256,
+  "dropout": 0.3,
+  "early_stop_patience": 8,
+  "entropy_reg": 0.01,
+  "eos_id": 2,
+  "ffn_dim": 844,
+  "flat_slots": 320,
+  "grounded_balance_reg": 0.0,
+  "ignore_pattern_ids": [],
+  "label_smoothing": 0.1,
+  "length_penalty": 1.0,
+  "lr": 0.0005,
+  "max_len": 128,
+  "n_decoder_layers": 4,
+  "n_encoder_layers": 4,
+  "n_heads": 4,
+  "n_pattern_slots": 30,
+  "n_root_slots": 1024,
+  "pad_id": 0,
+  "param_match_tol": 0.0001,
+  "plateau_factor": 0.5,
+  "plateau_patience": 2,
+  "seeds": [
+   11,
+   22,
+   33,
+   44,
+   55,
+   66
+  ],
+  "target_params": 20343170,
+  "unk_id": 3,
+  "variants": [
+   "plain_bpe",
+   "bpe_aux",
+   "bpe_placebo",
+   "cmm",
+   "cmm_nobind",
+   "cmm_placebo",
+   "flat"
+  ],
+  "vocab_size": 16000,
+  "warmup_steps": 400,
+  "variant": "gmm",
+  "seed": 22,
+  "src_vocab_size": 16000,
+  "tgt_vocab_size": 16000,
+  "n_root_classes": 1024,
+  "n_pattern_classes": 30,
+  "grounded_routing": true
+ },
+ "git_hash": null,
+ "hostname": "2b6d6e23ef4c",
+ "torch_version": "2.11.0+cu128",
+ "device": "cuda",
+ "data_hashes": {
+  "train": "447e3587c404a163dc3359acbf03f32d75b3eb8eeb9b18a59d31f24edca1189a",
+  "dev": "c4a2e44c53afda6becbd0f0bdb76bea04f014ab0f6fe7afc00501e428a78880a"
+ },
+ "tokenizer_hash": "fa9e468ffc5c1179dbcd9e507ce1890518c12ec2385aa4f1b22adc9452a6ee87",
+ "label_cache_hash": "6d1c3c8a253bfa95c3981976f4d3cd8f15f61001e1ae546fb1a9f64fd354befb",
+ "params": 20345088,
+ "placebo": false,
+ "started_at": "2026-10-18T22:41:22+0000",
+ "final_eval": {
+  "best_epoch": 43,
+  "chrF_char_full_dev": 13.377498103141077,
+  "chrF++_full_dev": 13.120469678944835,
+  "BLEU_greedy_full_dev": 2.6189726958137705,
+  "beam5_nr4": {
+   "chrF_char": 15.50084200593082,
+   "chrF++": 15.260039346239584,
+   "BLEU": 4.264963394259972
+  },
+  "n_dev": 1741,
+  "probe_root": {
+   "all_types": {
+    "consistency": 0.7042758256109881,
+    "permutation": 0.268945194025507,
+    "perm_sd": 0.0011492043999313754,
+    "p_value": 0.004975124378109453,
+    "n_roots": 801,
+    "n_types": 6732,
+    "slots_used": 931,
+    "top10_slot_share": 0.13606654783125371
+   },
+   "gate_probe": {
+    "mean_gate_rooted": 0.6170800070342715,
+    "n_rooted_tokens": 13398,
+    "mean_gate_rootless": 0.062314065117083685,
+    "n_rootless_tokens": 9869,
+    "mean_gate_out_of_bank": 0.39315463870741657,
+    "n_out_of_bank_tokens": 2021,
+    "mean_gate_unknown": 0.3112919603722791,
+    "n_unknown_tokens": 300
+   },
+   "unseen_with_siblings": {
+    "consistency": 0.6679608901440403,
+    "permutation": 0.21716962636301113,
+    "perm_sd": 0.0015613251218908764,
+    "p_value": 0.004975124378109453,
+    "n_roots": 554,
+    "n_types": 5798,
+    "slots_used": 661,
+    "top10_slot_share": 0.15626077957916523
+   },
+   "n_unseen_types": 1841,
+   "unseen_slot_accuracy": 0.518739815317762
+  },
+  "probe_pattern": {
+   "all_types": {
+    "consistency": 0.7288315739034039,
+    "permutation": 0.3501984530626098,
+    "perm_sd": 0.017715011295039856,
+    "p_value": 0.004975124378109453,
+    "n_roots": 25,
+    "n_types": 8521,
+    "slots_used": 22,
+    "top10_slot_share": 0.9280600868442671
+   },
+   "unseen_with_siblings": {
+    "consistency": 0.7383662228160457,
+    "permutation": 0.3396115288369543,
+    "perm_sd": 0.017713065136104447,
+    "p_value": 0.004975124378109453,
+    "n_roots": 24,
+    "n_types": 8517,
+    "slots_used": 22,
+    "top10_slot_share": 0.9284959492779148
+   },
+   "n_unseen_types": 3073,
+   "unseen_slot_accuracy": 0.6247966156849983
+  },
+  "ablation": {
+   "unlinked": {
+    "n_tokens": 38200,
+    "nll_on": 5.569571211201782,
+    "nll_off": 5.691930970571217,
+    "delta": 0.12235975936943459
+   },
+   "50+": {
+    "n_tokens": 1567,
+    "nll_on": 3.3767817892368415,
+    "nll_off": 3.8686180127293985,
+    "delta": 0.49183622349255735
+   },
+   "unseen": {
+    "n_tokens": 295,
+    "nll_on": 5.242049300883723,
+    "nll_off": 5.596449511875478,
+    "delta": 0.3544002109917544
+   },
+   "5-49": {
+    "n_tokens": 1675,
+    "nll_on": 4.826691832216179,
+    "nll_off": 5.2361389731965025,
+    "delta": 0.40944714098032425
+   },
+   "1-4": {
+    "n_tokens": 686,
+    "nll_on": 4.902041281667828,
+    "nll_off": 5.287563889808396,
+    "delta": 0.38552260814056766
+   },
+   "all": {
+    "n_tokens": 42423,
+    "nll_on": 5.446171911783447,
+    "nll_off": 5.599383393826072,
+    "delta": 0.15321148204262464
+   }
+  },
+  "slot_swap": {
+   "n_items": 600,
+   "routed_to_own_root": 0.9983333333333333,
+   "mean_gate": 0.9230293652415276,
+   "success_swap": 0.005,
+   "success_self": 0.0,
+   "keep_r_self": 0.995,
+   "keep_r_swap": 0.5816666666666667,
+   "keep_r_kill": 0.74,
+   "tf_delta_nll_root_tokens": 0.7348008789701829,
+   "n_root_tokens": 866,
+   "tf_delta_nll_other_tokens": -0.0030808026669062265,
+   "n_other_tokens": 14471
+  },
+  "seconds": 179
+ },
+ "ended_at": "2026-10-18T23:46:39+0000",
+ "best_dev_loss": 5.249916078303478,
+ "final_step": 20757
+}

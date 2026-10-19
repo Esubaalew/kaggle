@@ -1,0 +1,216 @@
+{
+ "variant": "gmm",
+ "seed": 33,
+ "cfg": {
+  "_comment": "Base protocol config. Values from the 2026-08-01 advisor report (matched replication). Six seeds per the 2026-09-30 decision rule. Do not change without recording the reason.",
+  "_comment_clean": "drfn_clean: cleaned AGE text (invisible chars removed, punctuation detached), word-boundary BPE, grounded_balance_reg 0. See build_report.json.",
+  "_comment_grounded": "Added for the grounded-routing grid: d_key is the routing key width of protocol Eq.(4-5); ignore_pattern_ids can drop the 'unknown' pattern class from the routing CE. entropy_sign is deliberately NOT set here. It defaults to +1 (sharpen, section 3.6) inside grounding_loss for the gmm variants, and to -1 in the legacy cmm/flat path so published cmm results stay reproducible. Pass --entropy-sign to override either.",
+  "adam_betas": [
+   0.9,
+   0.98
+  ],
+  "adam_eps": 1e-09,
+  "aux_ignore_index": -100,
+  "aux_pattern_weight": 0.5,
+  "aux_root_weight": 0.5,
+  "balance_reg": 0.01,
+  "batch_size": 32,
+  "beam_size": 5,
+  "bos_id": 1,
+  "cmm_layers": [
+   1,
+   2
+  ],
+  "d_key": 64,
+  "d_model": 256,
+  "dropout": 0.3,
+  "early_stop_patience": 8,
+  "entropy_reg": 0.01,
+  "eos_id": 2,
+  "ffn_dim": 822,
+  "flat_slots": 320,
+  "grounded_balance_reg": 0.0,
+  "ignore_pattern_ids": [],
+  "label_smoothing": 0.1,
+  "length_penalty": 1.0,
+  "lr": 0.0005,
+  "max_len": 128,
+  "n_decoder_layers": 4,
+  "n_encoder_layers": 4,
+  "n_heads": 4,
+  "n_pattern_slots": 128,
+  "n_root_slots": 1024,
+  "pad_id": 0,
+  "param_match_tol": 0.0001,
+  "plateau_factor": 0.5,
+  "plateau_patience": 2,
+  "seeds": [
+   11,
+   22,
+   33,
+   44,
+   55,
+   66
+  ],
+  "target_params": 20343170,
+  "unk_id": 3,
+  "variants": [
+   "plain_bpe",
+   "bpe_aux",
+   "bpe_placebo",
+   "cmm",
+   "cmm_nobind",
+   "cmm_placebo",
+   "flat"
+  ],
+  "vocab_size": 16000,
+  "warmup_steps": 400,
+  "variant": "gmm",
+  "seed": 33,
+  "src_vocab_size": 16000,
+  "tgt_vocab_size": 16000,
+  "n_root_classes": 1024,
+  "n_pattern_classes": 128,
+  "grounded_routing": true,
+  "gate_target": "any"
+ },
+ "git_hash": null,
+ "hostname": "549c5bbae0e2",
+ "torch_version": "2.11.0+cu128",
+ "device": "cuda",
+ "data_hashes": {
+  "train": "447e3587c404a163dc3359acbf03f32d75b3eb8eeb9b18a59d31f24edca1189a",
+  "dev": "c4a2e44c53afda6becbd0f0bdb76bea04f014ab0f6fe7afc00501e428a78880a"
+ },
+ "tokenizer_hash": "fa9e468ffc5c1179dbcd9e507ce1890518c12ec2385aa4f1b22adc9452a6ee87",
+ "label_cache_hash": "8cee609785699ee114f76a416885bb3cb0751f1fc9c4d57df679d4f0a810aacc",
+ "params": 20342706,
+ "placebo": false,
+ "started_at": "2026-10-19T09:09:07+0000",
+ "final_eval": {
+  "best_epoch": 47,
+  "chrF_char_full_dev": 13.84925824422208,
+  "chrF++_full_dev": 13.586145228755084,
+  "BLEU_greedy_full_dev": 2.958280837271747,
+  "beam5_nr4": {
+   "chrF_char": 15.727366940908455,
+   "chrF++": 15.535798361553773,
+   "BLEU": 4.486858332493167
+  },
+  "n_dev": 1741,
+  "probe_root": {
+   "all_types": {
+    "consistency": 0.7347495954521842,
+    "permutation": 0.26848732723096924,
+    "perm_sd": 0.001126633583407529,
+    "p_value": 0.004975124378109453,
+    "n_roots": 801,
+    "n_types": 6732,
+    "slots_used": 956,
+    "top10_slot_share": 0.13205585264408795
+   },
+   "gate_probe": {
+    "mean_gate_rooted": 0.6144008870024008,
+    "n_rooted_tokens": 13398,
+    "mean_gate_rootless": 0.07675520528713915,
+    "n_rootless_tokens": 9869,
+    "mean_gate_out_of_bank": 0.4543629750307098,
+    "n_out_of_bank_tokens": 2021,
+    "mean_gate_unknown": 0.5070643014212449,
+    "n_unknown_tokens": 300
+   },
+   "unseen_with_siblings": {
+    "consistency": 0.7014904256290062,
+    "permutation": 0.21654148923318536,
+    "perm_sd": 0.0015861613173699573,
+    "p_value": 0.004975124378109453,
+    "n_roots": 554,
+    "n_types": 5798,
+    "slots_used": 689,
+    "top10_slot_share": 0.15108658157985513
+   },
+   "n_unseen_types": 1841,
+   "unseen_slot_accuracy": 0.5551330798479087
+  },
+  "probe_pattern": {
+   "all_types": {
+    "consistency": 0.5995438383777661,
+    "permutation": 0.28096740290704925,
+    "perm_sd": 0.0075136477449213104,
+    "p_value": 0.004975124378109453,
+    "n_roots": 119,
+    "n_types": 8666,
+    "slots_used": 120,
+    "top10_slot_share": 0.6155088852988692
+   },
+   "unseen_with_siblings": {
+    "consistency": 0.5948197828687305,
+    "permutation": 0.26225049464551325,
+    "perm_sd": 0.007555285812215803,
+    "p_value": 0.004975124378109453,
+    "n_roots": 107,
+    "n_types": 8622,
+    "slots_used": 110,
+    "top10_slot_share": 0.6181860357225701
+   },
+   "n_unseen_types": 3113,
+   "unseen_slot_accuracy": 0.5072277545775778
+  },
+  "ablation": {
+   "unlinked": {
+    "n_tokens": 38200,
+    "nll_on": 5.54197900425901,
+    "nll_off": 5.711132697730713,
+    "delta": 0.1691536934717038
+   },
+   "50+": {
+    "n_tokens": 1567,
+    "nll_on": 3.3452631117994573,
+    "nll_off": 3.9543098895327926,
+    "delta": 0.6090467777333352
+   },
+   "unseen": {
+    "n_tokens": 295,
+    "nll_on": 5.3463285178766915,
+    "nll_off": 5.7006427580636725,
+    "delta": 0.3543142401869803
+   },
+   "5-49": {
+    "n_tokens": 1675,
+    "nll_on": 4.804880358634357,
+    "nll_off": 5.362696788793798,
+    "delta": 0.5578164301594414
+   },
+   "1-4": {
+    "n_tokens": 686,
+    "nll_on": 4.802506961557015,
+    "nll_off": 5.338584635765821,
+    "delta": 0.5360776742088063
+   },
+   "all": {
+    "n_tokens": 42423,
+    "nll_on": 5.418416579402639,
+    "nll_off": 5.626385414638401,
+    "delta": 0.20796883523576146
+   }
+  },
+  "slot_swap": {
+   "n_items": 600,
+   "routed_to_own_root": 0.99,
+   "mean_gate": 0.9521110019087792,
+   "success_swap": 0.0033333333333333335,
+   "success_self": 0.0,
+   "keep_r_self": 0.995,
+   "keep_r_swap": 0.51,
+   "keep_r_kill": 0.6966666666666667,
+   "tf_delta_nll_root_tokens": 0.7975908300449565,
+   "n_root_tokens": 882,
+   "tf_delta_nll_other_tokens": -0.0019947923865772607,
+   "n_other_tokens": 14140
+  },
+  "seconds": 184
+ },
+ "ended_at": "2026-10-19T10:17:07+0000",
+ "best_dev_loss": 5.22125507702025,
+ "final_step": 22385
+}

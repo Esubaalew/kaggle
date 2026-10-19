@@ -1,0 +1,413 @@
+{
+ "mean": {
+  "full": {
+   "G3 plain": 13.08,
+   "G3 bpe_aux": 14.87,
+   "G3 gmm-1024": 15.06,
+   "G3 gmm-2048": 15.02,
+   "G4 bpe_aux feat": 14.89,
+   "G4 gmm feat": 15.14,
+   "G4 gmm feat gate-any": 15.28,
+   "G5 bpe_aux": 15.4,
+   "G5 gmm-1024": 15.79
+  },
+  "aligned": {
+   "G3 plain": 14.21,
+   "G3 bpe_aux": 16.19,
+   "G3 gmm-1024": 16.42,
+   "G3 gmm-2048": 16.37,
+   "G4 bpe_aux feat": 16.27,
+   "G4 gmm feat": 16.46,
+   "G4 gmm feat gate-any": 16.61,
+   "G5 bpe_aux": 16.94,
+   "G5 gmm-1024": 17.46
+  }
+ },
+ "per_seed_full": {
+  "G3 plain": [
+   13.28,
+   13.12,
+   12.86
+  ],
+  "G3 bpe_aux": [
+   15.13,
+   15.07,
+   14.4
+  ],
+  "G3 gmm-1024": [
+   15.21,
+   15.2,
+   14.78
+  ],
+  "G3 gmm-2048": [
+   15.09,
+   15.1,
+   14.88
+  ],
+  "G4 bpe_aux feat": [
+   14.97,
+   14.86,
+   14.83
+  ],
+  "G4 gmm feat": [
+   15.26,
+   14.74,
+   15.44
+  ],
+  "G4 gmm feat gate-any": [
+   15.43,
+   15.21,
+   15.21
+  ],
+  "G5 bpe_aux": [
+   15.5,
+   15.33,
+   15.36
+  ],
+  "G5 gmm-1024": [
+   15.93,
+   15.5,
+   15.94
+  ]
+ },
+ "contrasts": {
+  "G3 gmm-1024 - G3 bpe_aux [full]": {
+   "diff": 0.19,
+   "ci95": [
+    -0.01,
+    0.4
+   ],
+   "per_seed": [
+    0.08,
+    0.13,
+    0.38
+   ],
+   "seed_p": 0.175
+  },
+  "G3 gmm-1024 - G3 bpe_aux [aligned]": {
+   "diff": 0.23,
+   "ci95": [
+    -0.0,
+    0.48
+   ],
+   "per_seed": [
+    0.11,
+    0.2,
+    0.39
+   ],
+   "seed_p": 0.108
+  },
+  "G3 gmm-2048 - G3 bpe_aux [full]": {
+   "diff": 0.16,
+   "ci95": [
+    -0.05,
+    0.38
+   ],
+   "per_seed": [
+    -0.04,
+    0.03,
+    0.48
+   ],
+   "seed_p": 0.442
+  },
+  "G3 gmm-2048 - G3 bpe_aux [aligned]": {
+   "diff": 0.18,
+   "ci95": [
+    -0.07,
+    0.44
+   ],
+   "per_seed": [
+    0.05,
+    0.01,
+    0.5
+   ],
+   "seed_p": 0.361
+  },
+  "G3 gmm-2048 - G3 gmm-1024 [full]": {
+   "diff": -0.04,
+   "ci95": [
+    -0.2,
+    0.15
+   ],
+   "per_seed": [
+    -0.12,
+    -0.1,
+    0.1
+   ],
+   "seed_p": 0.628
+  },
+  "G3 gmm-2048 - G3 gmm-1024 [aligned]": {
+   "diff": -0.05,
+   "ci95": [
+    -0.27,
+    0.17
+   ],
+   "per_seed": [
+    -0.06,
+    -0.19,
+    0.11
+   ],
+   "seed_p": 0.632
+  },
+  "G3 bpe_aux - G3 plain [full]": {
+   "diff": 1.78,
+   "ci95": [
+    1.51,
+    2.05
+   ],
+   "per_seed": [
+    1.85,
+    1.95,
+    1.54
+   ],
+   "seed_p": 0.005
+  },
+  "G3 bpe_aux - G3 plain [aligned]": {
+   "diff": 1.98,
+   "ci95": [
+    1.69,
+    2.27
+   ],
+   "per_seed": [
+    2.08,
+    2.17,
+    1.68
+   ],
+   "seed_p": 0.006
+  },
+  "G4 gmm feat - G4 bpe_aux feat [full]": {
+   "diff": 0.25,
+   "ci95": [
+    0.04,
+    0.47
+   ],
+   "per_seed": [
+    0.28,
+    -0.12,
+    0.6
+   ],
+   "seed_p": 0.35
+  },
+  "G4 gmm feat - G4 bpe_aux feat [aligned]": {
+   "diff": 0.19,
+   "ci95": [
+    -0.06,
+    0.45
+   ],
+   "per_seed": [
+    0.1,
+    -0.19,
+    0.65
+   ],
+   "seed_p": 0.53
+  },
+  "G4 gmm feat gate-any - G4 bpe_aux feat [full]": {
+   "diff": 0.39,
+   "ci95": [
+    0.2,
+    0.62
+   ],
+   "per_seed": [
+    0.45,
+    0.35,
+    0.38
+   ],
+   "seed_p": 0.006
+  },
+  "G4 gmm feat gate-any - G4 bpe_aux feat [aligned]": {
+   "diff": 0.33,
+   "ci95": [
+    0.11,
+    0.58
+   ],
+   "per_seed": [
+    0.33,
+    0.3,
+    0.37
+   ],
+   "seed_p": 0.003
+  },
+  "G4 gmm feat gate-any - G4 gmm feat [full]": {
+   "diff": 0.14,
+   "ci95": [
+    -0.05,
+    0.34
+   ],
+   "per_seed": [
+    0.17,
+    0.47,
+    -0.22
+   ],
+   "seed_p": 0.558
+  },
+  "G4 gmm feat gate-any - G4 gmm feat [aligned]": {
+   "diff": 0.15,
+   "ci95": [
+    -0.07,
+    0.38
+   ],
+   "per_seed": [
+    0.23,
+    0.5,
+    -0.28
+   ],
+   "seed_p": 0.582
+  },
+  "G4 gmm feat - G3 gmm-1024 [full]": {
+   "diff": 0.08,
+   "ci95": [
+    -0.11,
+    0.29
+   ],
+   "per_seed": [
+    0.05,
+    -0.46,
+    0.65
+   ],
+   "seed_p": 0.823
+  },
+  "G4 gmm feat - G3 gmm-1024 [aligned]": {
+   "diff": 0.04,
+   "ci95": [
+    -0.19,
+    0.28
+   ],
+   "per_seed": [
+    -0.02,
+    -0.57,
+    0.71
+   ],
+   "seed_p": 0.921
+  },
+  "G4 bpe_aux feat - G3 bpe_aux [full]": {
+   "diff": 0.02,
+   "ci95": [
+    -0.17,
+    0.2
+   ],
+   "per_seed": [
+    -0.16,
+    -0.21,
+    0.43
+   ],
+   "seed_p": 0.923
+  },
+  "G4 bpe_aux feat - G3 bpe_aux [aligned]": {
+   "diff": 0.09,
+   "ci95": [
+    -0.13,
+    0.31
+   ],
+   "per_seed": [
+    -0.01,
+    -0.17,
+    0.45
+   ],
+   "seed_p": 0.682
+  },
+  "G4 gmm feat gate-any - G3 bpe_aux [full]": {
+   "diff": 0.42,
+   "ci95": [
+    0.23,
+    0.63
+   ],
+   "per_seed": [
+    0.3,
+    0.14,
+    0.81
+   ],
+   "seed_p": 0.177
+  },
+  "G4 gmm feat gate-any - G3 bpe_aux [aligned]": {
+   "diff": 0.42,
+   "ci95": [
+    0.18,
+    0.68
+   ],
+   "per_seed": [
+    0.32,
+    0.13,
+    0.82
+   ],
+   "seed_p": 0.176
+  },
+  "G5 gmm-1024 - G5 bpe_aux [full]": {
+   "diff": 0.4,
+   "ci95": [
+    0.2,
+    0.57
+   ],
+   "per_seed": [
+    0.43,
+    0.17,
+    0.58
+   ],
+   "seed_p": 0.08
+  },
+  "G5 gmm-1024 - G5 bpe_aux [aligned]": {
+   "diff": 0.52,
+   "ci95": [
+    0.3,
+    0.75
+   ],
+   "per_seed": [
+    0.61,
+    0.16,
+    0.8
+   ],
+   "seed_p": 0.112
+  },
+  "G5 gmm-1024 - G3 gmm-1024 [full]": {
+   "diff": 0.73,
+   "ci95": [
+    0.49,
+    0.94
+   ],
+   "per_seed": [
+    0.73,
+    0.31,
+    1.16
+   ],
+   "seed_p": 0.098
+  },
+  "G5 gmm-1024 - G3 gmm-1024 [aligned]": {
+   "diff": 1.04,
+   "ci95": [
+    0.8,
+    1.29
+   ],
+   "per_seed": [
+    1.05,
+    0.48,
+    1.59
+   ],
+   "seed_p": 0.083
+  },
+  "G5 bpe_aux - G3 bpe_aux [full]": {
+   "diff": 0.53,
+   "ci95": [
+    0.32,
+    0.73
+   ],
+   "per_seed": [
+    0.37,
+    0.26,
+    0.96
+   ],
+   "seed_p": 0.135
+  },
+  "G5 bpe_aux - G3 bpe_aux [aligned]": {
+   "diff": 0.75,
+   "ci95": [
+    0.54,
+    0.96
+   ],
+   "per_seed": [
+    0.55,
+    0.52,
+    1.18
+   ],
+   "seed_p": 0.073
+  }
+ }
+}

@@ -1,0 +1,219 @@
+{
+ "set": "rows",
+ "rows_file": "data/unified/geez_morphology_rows_reviewed.jsonl",
+ "data_dir": "/tmp/gd_new",
+ "model_dir": "/Users/esubalew/is/researcher/kaggle/geez_gpu_v2_a2/out/best",
+ "words": 2375,
+ "rows": 4750,
+ "by_slice_task_class": {
+  "gold_test/analyze/adjective": {
+   "n": 627,
+   "exact": 481,
+   "root": 567,
+   "parsed": 627
+  },
+  "gold_test/analyze/noun": {
+   "n": 580,
+   "exact": 420,
+   "root": 501,
+   "parsed": 579
+  },
+  "gold_test/analyze/verb": {
+   "n": 336,
+   "exact": 249,
+   "root": 302,
+   "parsed": 336
+  },
+  "gold_test/pos/adjective": {
+   "n": 627,
+   "exact": 563
+  },
+  "gold_test/pos/noun": {
+   "n": 580,
+   "exact": 472
+  },
+  "gold_test/pos/verb": {
+   "n": 336,
+   "exact": 309
+  },
+  "unified_test/analyze/adjective": {
+   "n": 256,
+   "exact": 89,
+   "root": 231,
+   "parsed": 256
+  },
+  "unified_test/analyze/demonstrative": {
+   "n": 3,
+   "exact": 1,
+   "root": 3,
+   "parsed": 3
+  },
+  "unified_test/analyze/infinitive": {
+   "n": 28,
+   "exact": 4,
+   "root": 26,
+   "parsed": 28
+  },
+  "unified_test/analyze/nominal": {
+   "n": 5,
+   "exact": 2,
+   "root": 5,
+   "parsed": 5
+  },
+  "unified_test/analyze/noun": {
+   "n": 144,
+   "exact": 53,
+   "root": 107,
+   "parsed": 143
+  },
+  "unified_test/analyze/numeral": {
+   "n": 4,
+   "exact": 0,
+   "root": 1,
+   "parsed": 4
+  },
+  "unified_test/analyze/particle": {
+   "n": 9,
+   "exact": 6,
+   "root": 9,
+   "parsed": 9
+  },
+  "unified_test/analyze/preposition": {
+   "n": 11,
+   "exact": 5,
+   "root": 7,
+   "parsed": 11
+  },
+  "unified_test/analyze/pronoun": {
+   "n": 9,
+   "exact": 4,
+   "root": 7,
+   "parsed": 8
+  },
+  "unified_test/analyze/verb": {
+   "n": 363,
+   "exact": 270,
+   "root": 327,
+   "parsed": 362
+  },
+  "unified_test/pos/adjective": {
+   "n": 256,
+   "exact": 225
+  },
+  "unified_test/pos/demonstrative": {
+   "n": 3,
+   "exact": 2
+  },
+  "unified_test/pos/infinitive": {
+   "n": 28,
+   "exact": 1
+  },
+  "unified_test/pos/nominal": {
+   "n": 5,
+   "exact": 2
+  },
+  "unified_test/pos/noun": {
+   "n": 144,
+   "exact": 77
+  },
+  "unified_test/pos/numeral": {
+   "n": 4,
+   "exact": 1
+  },
+  "unified_test/pos/particle": {
+   "n": 9,
+   "exact": 8
+  },
+  "unified_test/pos/preposition": {
+   "n": 11,
+   "exact": 4
+  },
+  "unified_test/pos/pronoun": {
+   "n": 9,
+   "exact": 8
+  },
+  "unified_test/pos/verb": {
+   "n": 363,
+   "exact": 334
+  }
+ },
+ "pos_confusion": {
+  "adjective": {
+   "adjective": 788,
+   "noun": 52,
+   "nominal": 26,
+   "verb": 10,
+   "numeral": 2,
+   "name": 4,
+   "loanword": 1
+  },
+  "demonstrative": {
+   "pronoun": 1,
+   "demonstrative": 2
+  },
+  "infinitive": {
+   "noun": 22,
+   "infinitive": 1,
+   "gerund": 1,
+   "verb": 3,
+   "adjective": 1
+  },
+  "nominal": {
+   "nominal": 2,
+   "adjective": 2,
+   "verb": 1
+  },
+  "noun": {
+   "noun": 549,
+   "nominal": 49,
+   "adjective": 69,
+   "verb": 47,
+   "name": 3,
+   "particle": 2,
+   "pronoun": 1,
+   "numeral": 1,
+   "preposition": 1,
+   "infinitive": 2
+  },
+  "numeral": {
+   "verb": 1,
+   "noun": 1,
+   "adjective": 1,
+   "numeral": 1
+  },
+  "particle": {
+   "pronoun": 1,
+   "particle": 8
+  },
+  "preposition": {
+   "particle": 3,
+   "preposition": 4,
+   "noun": 4
+  },
+  "pronoun": {
+   "pronoun": 8,
+   "noun": 1
+  },
+  "verb": {
+   "verb": 643,
+   "adjective": 8,
+   "noun": 32,
+   "name": 1,
+   "pronoun": 4,
+   "numeral": 2,
+   "nominal": 6,
+   "particle": 2,
+   "preposition": 1
+  }
+ },
+ "analyze_total": {
+  "n": 2375,
+  "exact": 0.6669473684210526,
+  "root": 0.8812631578947369
+ },
+ "pos_total": {
+  "n": 2375,
+  "exact": 0.8446315789473684
+ },
+ "score": 0.7741052631578947
+}

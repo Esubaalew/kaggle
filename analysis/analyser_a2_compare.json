@@ -1,0 +1,169 @@
+{
+ "what": "Analyser run A (ByT5-small, 10,980 steps) vs A2 (run A + 450 fine-tune steps on geez-dataset 2.1.0: reviewed rows, clitic forms, rootless names/nouns, 15% synthetic). Same scoring code (byte-identical sample/encode/greedy/decode since run A). Test roots (218) are identical across dataset versions and held out from both models' training.",
+ "model_commit": "68ac6c07ef8d5f1bdeeacdd70684c4a2bb35b060",
+ "data_commit": "dd2e7270341425ade2e2b4c0a8552d296c1ca2a5",
+ "A2_dev_evals": [
+  {
+   "dev_exact": 0.6786315199102636,
+   "dev_root": 0.8996074032529445,
+   "dev_pos": 0.8541783510936624,
+   "dev_score": 0.7891194615816041,
+   "step": 150
+  },
+  {
+   "dev_exact": 0.683679192372406,
+   "dev_root": 0.9063376332024677,
+   "dev_pos": 0.8564217610768368,
+   "dev_score": 0.7950084127874368,
+   "step": 300
+  },
+  {
+   "dev_exact": 0.6797532249018509,
+   "dev_root": 0.9040942232192933,
+   "dev_pos": 0.8536174985978687,
+   "dev_score": 0.7919237240605721,
+   "step": 450
+  }
+ ],
+ "test": {
+  "old_2c67ac1": {
+   "A": {
+    "words": 2302,
+    "exact": 0.6768,
+    "root": 0.8979,
+    "pos": 0.8566,
+    "score": 0.7874
+   },
+   "A2": {
+    "words": 2302,
+    "exact": 0.6772,
+    "root": 0.8905,
+    "pos": 0.8532,
+    "score": 0.7839
+   }
+  },
+  "reviewed_2.1.0": {
+   "A": {
+    "words": 2375,
+    "exact": 0.6636,
+    "root": 0.8863,
+    "pos": 0.8451,
+    "score": 0.7749
+   },
+   "A2": {
+    "words": 2375,
+    "exact": 0.6669,
+    "root": 0.8813,
+    "pos": 0.8446,
+    "score": 0.7741
+   },
+   "mcnemar_A_only_vs_A2_only": {
+    "root": [
+     46,
+     34,
+     0.2185
+    ],
+    "exact": [
+     100,
+     108,
+     0.6275
+    ],
+    "pos": [
+     76,
+     75,
+     1.0
+    ]
+   }
+  },
+  "clitic_forms_of_test_roots": {
+   "A": {
+    "words": 7128,
+    "exact": 0.101,
+    "root": 0.2964,
+    "pos": 0.5912,
+    "score": 0.1987
+   },
+   "A2": {
+    "words": 7128,
+    "exact": 0.655,
+    "root": 0.8732,
+    "pos": 0.8502,
+    "score": 0.7641
+   },
+   "mcnemar_A_only_vs_A2_only": {
+    "root": [
+     54,
+     4165,
+     0.0
+    ],
+    "exact": [
+     58,
+     4007,
+     0.0
+    ],
+    "pos": [
+     290,
+     2136,
+     0.0
+    ]
+   },
+   "root_by_first_letter_n_A_A2": {
+    "ወ": [
+     2470,
+     0.34,
+     0.87
+    ],
+    "ዘ": [
+     1470,
+     0.22,
+     0.88
+    ],
+    "ለ": [
+     883,
+     0.12,
+     0.85
+    ],
+    "በ": [
+     289,
+     0.19,
+     0.88
+    ]
+   }
+  }
+ },
+ "age_review_forms": {
+  "settled_in_A2_training": {
+   "A": {
+    "forms": 466,
+    "root_agree": 0.6137,
+    "type_agree": 0.4185,
+    "root_agree_token_weighted": 0.6707,
+    "type_agree_token_weighted": 0.5139
+   },
+   "A2": {
+    "forms": 466,
+    "root_agree": 0.8219,
+    "type_agree": 0.8433,
+    "root_agree_token_weighted": 0.8939,
+    "type_agree_token_weighted": 0.868
+   }
+  },
+  "held_not_trained": {
+   "A": {
+    "forms": 969,
+    "root_agree": 0.4303,
+    "type_agree": 0.4613,
+    "root_agree_token_weighted": 0.3767,
+    "type_agree_token_weighted": 0.4073
+   },
+   "A2": {
+    "forms": 969,
+    "root_agree": 0.4396,
+    "type_agree": 0.5284,
+    "root_agree_token_weighted": 0.3972,
+    "type_agree_token_weighted": 0.4464
+   }
+  }
+ },
+ "age_review_note": "Reference = the 18 Oct review verdicts (not gold). 'settled' forms are in A2's training data; 'held' forms were trained on by neither model."
+}
